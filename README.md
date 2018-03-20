@@ -1,2 +1,0 @@
-# bicalho
-Bicalho Refrigeração
