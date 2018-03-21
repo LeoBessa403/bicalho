@@ -64,8 +64,7 @@ a:active, a:hover {
 
 abbr[title] {
     border-bottom: none;
-    text-decoration: underline;
-    text-decoration: underline dotted
+    text-decoration: underline dotted;
 }
 
 b, strong {
@@ -985,7 +984,7 @@ input.input-error {
 }
 
 select {
-    background: url(../arquivos/v1-arrow-select.png) 100% 50% no-repeat #fff;
+    background: url(../img/v1-arrow-select.png) 100% 50% no-repeat #fff;
     background-size: auto 50%;
     border: 1px solid #d1d1d1;
     border-radius: 3px;
@@ -1023,7 +1022,7 @@ ul {
 }
 
 #ajaxBusy {
-    background: url(../arquivos/v1-ajax-loader-black.gif) 50% 50% no-repeat #2b2b2b;
+    background: url(../img/v1-ajax-loader-black.gif) 50% 50% no-repeat #2b2b2b;
     border: none;
     border-radius: 3px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
@@ -1047,7 +1046,7 @@ ul {
 }
 
 .icon-25, .icon-30, .icon-35 {
-    background: url(../arquivos/v1-sprite-icon.png) no-repeat;
+    background: url(../img/v1-sprite-icon.png) no-repeat;
     background-size: 150px 90px
 }
 
@@ -1176,7 +1175,7 @@ ul {
 }
 
 .footer-checkout .line-1 .footer-payment ul li {
-    background: url(../arquivos/v1-sprite-payment.png) no-repeat;
+    background: url(/img/v1-sprite-payment.png) no-repeat;
     background-size: auto 100%;
     display: inline-block;
     height: 25px;
@@ -1314,7 +1313,7 @@ ul {
 }
 
 .header-checkout .header-logo h1 {
-    background: url(../arquivos/v1-logo-catral.png) no-repeat;
+    background: url(../img/v1-logo-catral.png) no-repeat;
     background-size: 100% auto;
     display: inline-block;
     height: 48px;
@@ -1401,7 +1400,7 @@ body .vtexIdUI button.vtexIdUI-others-send-email {
 }
 
 body .vtexIdUI button.vtexIdUI-others-send-email:before {
-    background: url(../arquivos/v1-sprite-login.png) -60px 50% no-repeat
+    background: url(../img/v1-sprite-login.png) -60px 50% no-repeat
 }
 
 body .vtexIdUI button.vtexIdUI-others-send-email.active, body .vtexIdUI button.vtexIdUI-others-send-email.disabled, body .vtexIdUI button.vtexIdUI-others-send-email:active, body .vtexIdUI button.vtexIdUI-others-send-email:focus, body .vtexIdUI button.vtexIdUI-others-send-email:hover, body .vtexIdUI button.vtexIdUI-others-send-email[disabled] {
@@ -1415,7 +1414,7 @@ body .vtexIdUI button#vtexIdUI-facebook {
 }
 
 body .vtexIdUI button#vtexIdUI-facebook:before {
-    background: url(../arquivos/v1-sprite-login.png) 0 50% no-repeat
+    background: url(../img/v1-sprite-login.png) 0 50% no-repeat
 }
 
 body .vtexIdUI button#vtexIdUI-facebook.active, body .vtexIdUI button#vtexIdUI-facebook.disabled, body .vtexIdUI button#vtexIdUI-facebook:active, body .vtexIdUI button#vtexIdUI-facebook:focus, body .vtexIdUI button#vtexIdUI-facebook:hover, body .vtexIdUI button#vtexIdUI-facebook[disabled] {
@@ -1429,7 +1428,7 @@ body .vtexIdUI button#vtexIdUI-google-plus {
 }
 
 body .vtexIdUI button#vtexIdUI-google-plus:before {
-    background: url(../arquivos/v1-sprite-login.png) -30px 50% no-repeat
+    background: url(../img/v1-sprite-login.png) -30px 50% no-repeat
 }
 
 body .vtexIdUI button#vtexIdUI-google-plus.active, body .vtexIdUI button#vtexIdUI-google-plus.disabled, body .vtexIdUI button#vtexIdUI-google-plus:active, body .vtexIdUI button#vtexIdUI-google-plus:focus, body .vtexIdUI button#vtexIdUI-google-plus:hover, body .vtexIdUI button#vtexIdUI-google-plus[disabled] {
@@ -1573,7 +1572,7 @@ body .vtexIdUI .modal-header h4 {
 }
 
 body .vtexIdUI .modal-header .vtexIdUI-close {
-    background: url(../arquivos/v1-icon-close.png) 50% 50% no-repeat;
+    background: url(../img/v1-icon-close.png) 50% 50% no-repeat;
     background-size: auto 100%;
     border-radius: 3px;
     height: 35px;
@@ -1589,7 +1588,7 @@ body .vtexIdUI .modal-header .vtexIdUI-close {
 }
 
 body .vtexIdUI .modal-header .vtexIdUI-close:active, body .vtexIdUI .modal-header .vtexIdUI-close:focus, body .vtexIdUI .modal-header .vtexIdUI-close:hover {
-    background: url(../arquivos/v1-icon-close.png) 50% 50% no-repeat #e0e0e0;
+    background: url(../img/v1-icon-close.png) 50% 50% no-repeat #e0e0e0;
     background-size: auto 100%
 }
 
@@ -1707,7 +1706,7 @@ body .vtexIdUI-loading {
 }
 
 .modal .modal-header .close, .modal .modal-header .link-close {
-    background: url(../arquivos/v1-icon-close.png) 50% 50% no-repeat;
+    background: url(../img/v1-icon-close.png) 50% 50% no-repeat;
     background-size: auto 100%;
     border-radius: 3px;
     height: 35px;

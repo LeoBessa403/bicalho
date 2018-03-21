@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width"/><!-- /Meta tags --><!-- Template: Header Scripts -->
     <meta name="google-site-verification" content="OPrnom4RdwEh63dxJmDTat3ipeyM0LkQRtFUR9oQeyw"/>
     <meta property="og:image" content="//catral.vteximg.com.br/arquivos/catral-post.png?v=636167908760530000"/>
-    <link href="images/favicon.ico" rel="shortcut icon"/>
+    <link href="img/favicon.ico" rel="shortcut icon"/>
     <title>Catral</title>
     <script language="javascript" src="js/mdetect.js"
             type="text/javascript"></script>
