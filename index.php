@@ -22,48 +22,6 @@
     <meta property="og:image" content="//catral.vteximg.com.br/arquivos/catral-post.png?v=636167908760530000"/>
     <link href="/arquivos/favicon.ico?v=635783472848530000" rel="shortcut icon"/>
     <title>Catral</title>
-    <script type="text/javascript"
-            language="javascript">var jscheckoutUrl = 'https://www.catral.com.br/checkout/#/cart';
-        var jscheckoutAddUrl = 'https://www.catral.com.br/checkout/cart/add';
-        var jscheckoutGiftListId = '';
-        var jsnomeSite = 'catral';
-        var jsnomeLoja = 'catral';
-        var jssalesChannel = '1';
-        var defaultStoreCurrency = 'R$';
-        var localeInfo = {
-            "CountryCode": "BRA",
-            "CultureCode": "pt-BR",
-            "CurrencyLocale": {
-                "RegionDisplayName": "Brazil",
-                "RegionName": "BR",
-                "RegionNativeName": "Brasil",
-                "TwoLetterIsoRegionName": "BR",
-                "CurrencyEnglishName": "Real",
-                "CurrencyNativeName": "Real",
-                "CurrencySymbol": "R$",
-                "ISOCurrencySymbol": "BRL",
-                "Locale": 1046,
-                "Format": {
-                    "CurrencyDecimalDigits": 2,
-                    "CurrencyDecimalSeparator": ",",
-                    "CurrencyGroupSeparator": ".",
-                    "CurrencyGroupSize": 3,
-                    "StartsWithCurrencySymbol": true
-                },
-                "FlagUrl": "http://www.geonames.org/flags/x/br.gif"
-            }
-        };</script>
-    <script type="text/javascript" language="javascript">vtxctx = {
-            searchTerm: "",
-            isOrder: "0",
-            isCheck: "0",
-            isCart: "0",
-            actionType: "",
-            actionValue: "",
-            login: "",
-            url: "www.catral.com.br",
-            transurl: "www.catral.com.br"
-        };</script>
     <script language="javascript" src="https://catral.vteximg.com.br/Scripts/mobile/mdetect.js?v=1.4.907.1593"
             type="text/javascript"></script>
     <script language="javascript" src="https://catral.vteximg.com.br/Scripts/mobile/mdetect2.js?v=1.4.907.1593"
