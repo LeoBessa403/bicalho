@@ -92,16 +92,12 @@
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
     <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
 
-
     <script src="/arquivos/v1-header-plugins.js?v=636167909494600000"></script><!-- /Template: Header Scripts -->
-    <script language="javascript">var ___scriptPathTransac = '';</script>
-    <script language="javascript">var ___scriptPath = '';</script>
     <link rel="canonical" href="https://www.catral.com.br/"/>
 </head>
 <!-- /Head -->
 <body class="v1 home">
 <!-- End - WebAnalyticsViewPart -->
-<div class="ajax-content-loader" rel="/no-cache/callcenter/disclaimer"></div><!-- Template: Header -->
 <aside id="fixed-bar">
     <div class="line margin">
         <div class="header-search unit"><!-- CMC: Full Text Search Box -->
@@ -142,20 +138,6 @@
                 </li>
             </ul>
         </div>
-        <div class="header-cart unitExt"><!-- CMC: Amount Items In Cart -->
-            <div class="portal-totalizers-ref"></div>
-            <script>$('.portal-totalizers-ref').minicart({
-                    showMinicart: false,
-                    showTotalizers: true,
-                    showShippingOptions: false
-                });</script><!-- /CMC: Amount Items In Cart --><!-- CMC: Mini Cart -->
-            <div class="portal-minicart-ref"></div>
-            <script>$('.portal-minicart-ref').minicart({
-                    showMinicart: true,
-                    showTotalizers: false,
-                    showShippingOptions: false
-                });</script><!-- /CMC: Mini Cart --></div>
-        <div class="header-login unitExt"><a href="/login"><i class="icon-30 i-login"></i><span>Entrar</span></a></div>
     </div>
 </aside>
 <header>
@@ -2076,12 +2058,7 @@
 <script src="/arquivos/v1-main.js?v=636565441990630000"></script>
 <script type="text/javascript" id="getSelo"
         src="https://imgs.ebit.com.br/ebitBR/selo-ebit/js/getSelo.js?13171"></script>
-<script type="text/javascript">
-    <
-    script
-    language = "javascript"
-    src = "https://catral.vteximg.com.br/Scripts/Track.js?v=1.4.907.1593"
-    type = "text/javascript" ></script>
+<script type="text/javascript" src="https://catral.vteximg.com.br/Scripts/Track.js?v=1.4.907.1593"></script>
 <script language="javascript" src="https://catral.vteximg.com.br/Scripts/thickbox.js?v=1.4.907.1593"
         type="text/javascript"></script>
 <script language="javascript" src="https://catral.vteximg.com.br/Scripts/json2.js?v=1.4.907.1593"
