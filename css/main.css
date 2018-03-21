@@ -134,14 +134,14 @@ header .line-2 .header-logo {
 }
 
 header .line-2 .header-logo h1 {
-    background: url(../arquivos/v1-logo-catral.png) no-repeat;
+    background: url(../images/logo.png) no-repeat;
     background-size: 100% auto;
     display: block;
     height: 48px;
     overflow: hidden;
     text-indent: -9999px;
     white-space: nowrap;
-    width: 174px
+    width: 174px;
 }
 
 #departments {
