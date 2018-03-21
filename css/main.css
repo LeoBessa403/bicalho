@@ -200,7 +200,7 @@ header .line-2 .header-logo h1 {
 }
 
 #departments .menu > li:hover > a {
-    background-color: #f7532d;
+    background-color: #db7b2e;
     color: #fff;
     padding-top: 10px
 }
@@ -294,7 +294,7 @@ header .line-2 .header-logo h1 {
 }
 
 #departments .menu .sub-menu {
-    background-color: #f7532d;
+    background-color: #db7b2e;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .25);
     color: #fff;
     display: none;
@@ -404,7 +404,7 @@ body.fixed-bar-active #fixed-bar {
 }
 
 .header-cart .portal-totalizers-ref .amount-items-em {
-    background-color: #f7532d;
+    background-color: #db7b2e;
     border-radius: 12px;
     display: inline-block;
     font-style: normal;
@@ -449,7 +449,7 @@ body.fixed-bar-active #fixed-bar {
 }
 
 .header-cart .portal-minicart-ref .cartFooter .cartCheckout {
-    background-color: #f7532d;
+    background-color: #db7b2e;
     border-radius: 3px;
     color: #fff;
     float: right;
@@ -515,7 +515,7 @@ body.fixed-bar-active #fixed-bar {
 }
 
 .header-cart .portal-minicart-ref .vtexsc-productList .cartSkuActions .cartSkuRemove a:hover {
-    background-color: #f7532d
+    background-color: #db7b2e
 }
 
 .header-cart .portal-minicart-ref .vtexsc-productList .cartSkuActions .cartSkuRemove a:before {
@@ -657,7 +657,7 @@ body.fixed-bar-active #fixed-bar {
 }
 
 .header-search .btn-buscar {
-    background: url(../arquivos/v1-icon-search.png) 50% 50% no-repeat #f7532d;
+    background: url(../arquivos/v1-icon-search.png) 50% 50% no-repeat #db7b2e;
     background-size: auto 50%;
     border-radius: 0 3px 3px 0;
     overflow: hidden;
@@ -817,12 +817,12 @@ footer .line-1 .footer-social ul li .tooltip.top {
 }
 
 footer .line-1 .footer-social ul li .tooltip-arrow {
-    border-top-color: #f7532d;
+    border-top-color: #db7b2e;
     bottom: 5px
 }
 
 footer .line-1 .footer-social ul li .tooltip-inner {
-    background-color: #f7532d;
+    background-color: #db7b2e;
     padding: 4px 8px
 }
 
@@ -1130,7 +1130,7 @@ section {
 }
 
 .collection .pages li.pgCurrent, .collection .pages li.pgCurrent:hover {
-    background-color: #f7532d;
+    background-color: #db7b2e;
     color: #fff;
     cursor: default
 }
@@ -1284,7 +1284,7 @@ section {
 }
 
 .v1-default-shelf .link-youtube {
-    background-color: #f7532d;
+    background-color: #db7b2e;
     border-radius: 15px;
     bottom: 0;
     color: #fff;
@@ -1310,7 +1310,7 @@ section {
 .v1-default-shelf .link-youtube i:after {
     border-top: transparent 5px solid;
     border-bottom: transparent 5px solid;
-    border-left: #f7532d 5px solid;
+    border-left: #db7b2e 5px solid;
     content: '';
     height: 0;
     margin: 5px 0 0 -2px;
@@ -1636,11 +1636,11 @@ section {
 }
 
 .home #content .collection.super-ofertas h2 {
-    border-bottom: #f7532d 3px solid
+    border-bottom: #db7b2e 3px solid
 }
 
 .home #content .collection.super-ofertas .margin {
-    border-bottom: #f7532d 3px solid;
+    border-bottom: #db7b2e 3px solid;
     padding-bottom: 40px
 }
 
@@ -1918,7 +1918,7 @@ section {
 }
 
 .page-institucional.primeira-compra #content .stage .text p {
-    color: #f7532d;
+    color: #db7b2e;
     font-size: 145%;
     line-height: 120%;
     margin-top: 10px
@@ -1955,7 +1955,7 @@ section {
 }
 
 .page-institucional.primeira-compra #content .stage-0 .text p strong {
-    color: #f7532d;
+    color: #db7b2e;
     margin-top: 20px
 }
 
@@ -2000,7 +2000,7 @@ section {
     -moz-transition: background .1s ease-in-out;
     -o-transition: background .1s ease-in-out;
     transition: background .1s ease-in-out;
-    background-color: #f7532d;
+    background-color: #db7b2e;
     border-radius: 3px;
     color: #fff;
     display: inline-block;
@@ -2130,11 +2130,11 @@ section {
 }
 
 .listing.page-search #content .collection.super-ofertas h2 {
-    border-bottom: #f7532d 3px solid
+    border-bottom: #db7b2e 3px solid
 }
 
 .listing.page-search #content .collection.super-ofertas .margin {
-    border-bottom: #f7532d 3px solid;
+    border-bottom: #db7b2e 3px solid;
     padding-bottom: 40px
 }
 
@@ -2149,7 +2149,7 @@ section {
 }
 
 .listing.page-search #content .collection .searchResultsTime .value {
-    color: #f7532d;
+    color: #db7b2e;
     font-weight: 600
 }
 
