@@ -20,18 +20,16 @@
     <meta name="viewport" content="width=device-width"/><!-- /Meta tags --><!-- Template: Header Scripts -->
     <meta name="google-site-verification" content="OPrnom4RdwEh63dxJmDTat3ipeyM0LkQRtFUR9oQeyw"/>
     <meta property="og:image" content="//catral.vteximg.com.br/arquivos/catral-post.png?v=636167908760530000"/>
-    <link href="/arquivos/favicon.ico?v=635783472848530000" rel="shortcut icon"/>
+    <link href="images/favicon.ico" rel="shortcut icon"/>
     <title>Catral</title>
-    <script language="javascript" src="https://catral.vteximg.com.br/Scripts/mobile/mdetect.js?v=1.4.907.1593"
+    <script language="javascript" src="js/mdetect.js"
             type="text/javascript"></script>
-    <script language="javascript" src="https://catral.vteximg.com.br/Scripts/mobile/mdetect2.js?v=1.4.907.1593"
+    <script language="javascript" src="js/mdetect2.js"
             type="text/javascript"></script>
     <script language="javascript"
-            src="https://io.vtex.com.br/front-libs/jquery/1.8.3/jquery-1.8.3.min.js?v=1.4.907.1593"
+            src="js/jquery.js"
             type="text/javascript"></script>
-    <script language="javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js?v=1.4.907.1593"
-            type="text/javascript"></script>
-    <script language="javascript" src="https://catral.vteximg.com.br/Scripts/vtex.ajax.wait.js?v=1.4.907.1593"
+    <script language="javascript" src="js/ajax.wait.js"
             type="text/javascript"></script>
     <script language="javascript" src="https://catral.vteximg.com.br/Scripts/vtex.common.js?v=1.4.907.1593"
             type="text/javascript"></script>
