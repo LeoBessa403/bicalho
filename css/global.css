@@ -890,7 +890,7 @@ button, input, select, textarea {
 
 a {
     background-color: transparent;
-    -webkit-text-decoration-skip: objects
+    -webkit-text-decoration-style: dashed;
 }
 
 .footer-checkout .line-1 .footer-telesales .link-phone:active strong, .footer-checkout .line-1 .footer-telesales .link-phone:focus strong, .footer-checkout .line-1 .footer-telesales .link-phone:hover strong, .footer-checkout .line-2 a:active, .footer-checkout .line-2 a:focus, .footer-checkout .line-2 a:hover {
@@ -989,7 +989,7 @@ select {
     border: 1px solid #d1d1d1;
     border-radius: 3px;
     -moz-appearance: button;
-    appearance: button
+    -webkit-appearance: button;
 }
 
 select:focus {
