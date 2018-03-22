@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
       xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
 <!-- Head -->
-<title>Catral - Equipamentos de Automação e Refrigeração Comercial para o seu negócio</title>
+<title>Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio</title>
 <head>
     <meta name="language" content="pt-BR"/>
     <meta name="country" content="BRA"/>
