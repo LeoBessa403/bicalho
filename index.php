@@ -19,7 +19,7 @@
     <meta http-equiv="pragma" content="no-cache"/>
     <meta name="viewport" content="width=device-width"/><!-- /Meta tags --><!-- Template: Header Scripts -->
     <meta name="google-site-verification" content="OPrnom4RdwEh63dxJmDTat3ipeyM0LkQRtFUR9oQeyw"/>
-    <meta property="og:image" content="//catral.vteximg.com.br/arquivos/catral-post.png?v=636167908760530000"/>
+    <meta property="og:image" content="//catral.vteximg.com.br/arquivos/catral-post.png"/>
     <link href="img/favicon.ico" rel="shortcut icon"/>
     <title>Catral</title>
     <script language="javascript" src="js/mdetect.js"
@@ -31,57 +31,57 @@
             type="text/javascript"></script>
     <script language="javascript" src="js/ajax.wait.js"
             type="text/javascript"></script>
-    <script language="javascript" src="https://catral.vteximg.com.br/Scripts/vtex.common.js?v=1.4.907.1593"
+    <script language="javascript" src="js/common.js"
             type="text/javascript"></script>
     <script language="javascript"
-            src="https://io.vtex.com.br/front-libs/front-i18n/0.4.1/vtex-i18n.min.js?v=1.4.907.1593"
+            src="js/vtex-i18n.min.js"
             type="text/javascript"></script>
     <script language="javascript"
-            src="https://io.vtex.com.br/front-libs/front-utils/1.0.1/vtex-utils.min.js?v=1.4.907.1593"
+            src="js/vtex-utils.min.js"
             type="text/javascript"></script>
     <script language="javascript"
-            src="https://io.vtex.com.br/front-libs/dustjs-linkedin/2.3.5/dust-core-2.3.5.min.js?v=1.4.907.1593"
+            src="js/dust-core-2.3.5.min.js"
             type="text/javascript"></script>
-    <script language="javascript" src="https://io.vtex.com.br/rc/rc.js?v=1.4.907.1593" type="text/javascript"></script>
-    <script language="javascript" src="https://catral.vteximg.com.br/Scripts/vtex.tagmanager.helper.js?v=1.4.907.1593"
-            type="text/javascript"></script>
-    <script language="javascript"
-            src="https://io.vtex.com.br/portal-ui/1.11.7/scripts/vtex-events-all.min.js?v=1.4.907.1593"
-            type="text/javascript"></script>
-    <script language="javascript" src="https://io.vtex.com.br/portal-ui/1.11.7/scripts/vtex-analytics.js?v=1.4.907.1593"
-            type="text/javascript"></script>
-    <script language="javascript" src="https://io.vtex.com.br/vtex.js/2.8.0/vtex.min.js?v=1.4.907.1593"
-            type="text/javascript"></script>
-    <script language="javascript" src="https://catral.vteximg.com.br/Scripts/jquery.ui.core.js?v=1.4.907.1593"
+    <script language="javascript" src="js/rc.js" type="text/javascript"></script>
+    <script language="javascript" src="js/vtex.tagmanager.helper.js"
             type="text/javascript"></script>
     <script language="javascript"
-            src="https://catral.vteximg.com.br/Scripts/autocomplete/jquery.ui.widget.js?v=1.4.907.1593"
+            src="js/vtex-events-all.min.js"
+            type="text/javascript"></script>
+    <script language="javascript" src="js/vtex-analytics.js"
+            type="text/javascript"></script>
+    <script language="javascript" src="js/vtex.min.js"
+            type="text/javascript"></script>
+    <script language="javascript" src="js/jquery.ui.core.js"
             type="text/javascript"></script>
     <script language="javascript"
-            src="https://catral.vteximg.com.br/Scripts/autocomplete/jquery.ui.position.js?v=1.4.907.1593"
+            src="js/jquery.ui.widget.js"
             type="text/javascript"></script>
     <script language="javascript"
-            src="https://catral.vteximg.com.br/Scripts/autocomplete/jquery.ui.autocomplete.js?v=1.4.907.1593"
-            type="text/javascript"></script>
-    <script language="javascript" src="https://catral.vteximg.com.br/Scripts/vtex.commerce.search.js?v=1.4.907.1593"
+            src="js/jquery.ui.position.js"
             type="text/javascript"></script>
     <script language="javascript"
-            src="https://catral.vteximg.com.br/Scripts/vtex.viewPart.fullTextSearchBox.js?v=1.4.907.1593"
+            src="js/jquery.ui.autocomplete.js"
+            type="text/javascript"></script>
+    <script language="javascript" src="js/vtex.commerce.search.js"
             type="text/javascript"></script>
     <script language="javascript"
-            src="https://io.vtex.com.br/portal-plugins/2.9.13/js/portal-minicart-with-template.min.js?v=1.4.907.1593"
-            type="text/javascript"></script>
-    <script language="javascript" src="https://io.vtex.com.br/vtex-id-ui/3.13.43/vtexid-jquery.min.js?v=1.4.907.1593"
+            src="js/vtex.viewPart.fullTextSearchBox.js"
             type="text/javascript"></script>
     <script language="javascript"
-            src="https://io.vtex.com.br/portal-plugins/2.9.13/js/portal-template-as-modal.min.js?v=1.4.907.1593"
+            src="js/portal-minicart-with-template.min.js"
+            type="text/javascript"></script>
+    <script language="javascript" src="js/vtexid-jquery.min.js"
             type="text/javascript"></script>
     <script language="javascript"
-            src="https://io.vtex.com.br/portal-plugins/2.9.13/js/portal-sku-selector-with-template.min.js?v=1.4.907.1593"
+            src="js/portal-template-as-modal.min.js"
             type="text/javascript"></script>
-    <script language="javascript" src="https://catral.vteximg.com.br/Scripts/vtex.cookie.js?v=1.4.907.1593"
+    <script language="javascript"
+            src="js/portal-sku-selector-with-template.min.js"
             type="text/javascript"></script>
-    <script language="javascript" src="https://catral.vteximg.com.br/Scripts/jquery.pager.js?v=1.4.907.1593"
+    <script language="javascript" src="js/vtex.cookie.js"
+            type="text/javascript"></script>
+    <script language="javascript" src="js/jquery.pager.js"
             type="text/javascript"></script>
 
 
@@ -90,7 +90,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
     <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
 
-    <script src="/arquivos/v1-header-plugins.js?v=636167909494600000"></script><!-- /Template: Header Scripts -->
+    <script src="/arquivos/v1-header-plugins.js"></script><!-- /Template: Header Scripts -->
     <link rel="canonical" href="https://www.catral.com.br/"/>
 </head>
 <!-- /Head -->
@@ -141,6 +141,7 @@
 <header>
     <div class="line-1">
         <div class="line margin">
+            <div class="ajax-content-loader" rel="/no-cache/user/welcome"></div><!-- /CMC: Welcome Message -->
             <div class="header-account unitExt">
                 <ul>
                     <li><a href="/institucional/nossas-lojas">Nossas Lojas</a></li>
@@ -605,52 +606,52 @@
     <div class="banner-main">
         <div class="slick-carousel"><!-- Content Place Holder: Banner Main -->
             <div class="box-banner"><a><img width="1920" height="360"
-                                            id="ihttps://catral.vteximg.com.br/arquivos/ids/159366/banner-principal-cervejeiras.jpg?v=636528172965630000"
+                                            id="ihttps://catral.vteximg.com.br/arquivos/ids/159366/banner-principal-cervejeiras.jpg"
                                             alt="Festival Cervejeiras - Capa"
-                                            src="https://catral.vteximg.com.br/arquivos/ids/159366/banner-principal-cervejeiras.jpg?v=636528172965630000"
+                                            src="https://catral.vteximg.com.br/arquivos/ids/159366/banner-principal-cervejeiras.jpg"
                                             complete="complete"/></a></div>
             <div class="box-banner"><a
                         href="/cervejeira-gelopar-112-litros-frost-free-temperatura-regulavel-grba-112/p"><img
                             width="1920" height="360"
-                            id="ihttps://catral.vteximg.com.br/arquivos/ids/159367/banner-principal-cervejeiras-1.jpg?v=636567988371700000"
+                            id="ihttps://catral.vteximg.com.br/arquivos/ids/159367/banner-principal-cervejeiras-1.jpg"
                             alt="Festival Cervejeiras - Produto 1"
-                            src="https://catral.vteximg.com.br/arquivos/ids/159367/banner-principal-cervejeiras-1.jpg?v=636567988371700000"
+                            src="https://catral.vteximg.com.br/arquivos/ids/159367/banner-principal-cervejeiras-1.jpg"
                             complete="complete"/></a></div>
             <div class="box-banner"><a
                         href="/cervejeira-gelopar-228-litros-controlador-digital-porta-em-vidro-grba230pva/p"><img
                             width="1920" height="360"
-                            id="ihttps://catral.vteximg.com.br/arquivos/ids/159368/banner-principal-cervejeiras-2.jpg?v=636567989082630000"
+                            id="ihttps://catral.vteximg.com.br/arquivos/ids/159368/banner-principal-cervejeiras-2.jpg"
                             alt="Festival Cervejeiras - Produto 2"
-                            src="https://catral.vteximg.com.br/arquivos/ids/159368/banner-principal-cervejeiras-2.jpg?v=636567989082630000"
+                            src="https://catral.vteximg.com.br/arquivos/ids/159368/banner-principal-cervejeiras-2.jpg"
                             complete="complete"/></a></div>
             <div class="box-banner"><a
                         href="/cervejeira-gelopar-441-litros-controlador-digital-painel-em-led-grba450gw/p"><img
                             width="1920" height="360"
-                            id="ihttps://catral.vteximg.com.br/arquivos/ids/159369/banner-principal-cervejeiras-3.jpg?v=636567989627830000"
+                            id="ihttps://catral.vteximg.com.br/arquivos/ids/159369/banner-principal-cervejeiras-3.jpg"
                             alt="Festival Cervejeiras - Produto 3"
-                            src="https://catral.vteximg.com.br/arquivos/ids/159369/banner-principal-cervejeiras-3.jpg?v=636567989627830000"
+                            src="https://catral.vteximg.com.br/arquivos/ids/159369/banner-principal-cervejeiras-3.jpg"
                             complete="complete"/></a></div>
             <div class="box-banner"><a href="/cervejeira-fricon-431-litros-porta-de-vidro-vcfc431v/p"><img width="1920"
                                                                                                            height="360"
-                                                                                                           id="ihttps://catral.vteximg.com.br/arquivos/ids/159370/banner-principal-cervejeiras-4.jpg?v=636567990449470000"
+                                                                                                           id="ihttps://catral.vteximg.com.br/arquivos/ids/159370/banner-principal-cervejeiras-4.jpg"
                                                                                                            alt="Festival Cervejeiras - Produto 4"
-                                                                                                           src="https://catral.vteximg.com.br/arquivos/ids/159370/banner-principal-cervejeiras-4.jpg?v=636567990449470000"
+                                                                                                           src="https://catral.vteximg.com.br/arquivos/ids/159370/banner-principal-cervejeiras-4.jpg"
                                                                                                            complete="complete"/></a>
             </div>
             <div class="box-banner"><a href="/cervejeira-metalfrio-beer-maxx-300-frost-free-vn28te/p"><img width="1920"
                                                                                                            height="360"
-                                                                                                           id="ihttps://catral.vteximg.com.br/arquivos/ids/159371/banner-principal-cervejeiras-5.jpg?v=636567991115000000"
+                                                                                                           id="ihttps://catral.vteximg.com.br/arquivos/ids/159371/banner-principal-cervejeiras-5.jpg"
                                                                                                            alt="Festival Cervejeiras - Produto 5"
-                                                                                                           src="https://catral.vteximg.com.br/arquivos/ids/159371/banner-principal-cervejeiras-5.jpg?v=636567991115000000"
+                                                                                                           src="https://catral.vteximg.com.br/arquivos/ids/159371/banner-principal-cervejeiras-5.jpg"
                                                                                                            complete="complete"/></a>
             </div><!-- /Content Place Holder: Banner Main --></div>
     </div>
     <div class="margin">
         <div class="banner-full-1"><!-- Content Place Holder: Banner Full 1 -->
             <div class="box-banner"><a href="/acerte-na-compra"><img width="1280" height="81"
-                                                                     id="ihttps://catral.vteximg.com.br/arquivos/ids/163323/banner-horizontal-acerte-na-compra-2.png?v=636416129465330000"
+                                                                     id="ihttps://catral.vteximg.com.br/arquivos/ids/163323/banner-horizontal-acerte-na-compra-2.png"
                                                                      alt="Banners Horizontais"
-                                                                     src="https://catral.vteximg.com.br/arquivos/ids/163323/banner-horizontal-acerte-na-compra-2.png?v=636416129465330000"
+                                                                     src="https://catral.vteximg.com.br/arquivos/ids/163323/banner-horizontal-acerte-na-compra-2.png"
                                                                      complete="complete"/></a></div>
             <!-- /Content Place Holder: Banner Full 1 --></div>
     </div>
@@ -663,7 +664,7 @@
                         <a class="product-image"
                            href="https://www.catral.com.br/balcao-vitrine-neutra-gelopar-138m-star-plus-top-mvsp140pr-preto/p"
                            title="Balc&#227;o Vitrine Neutra Gelopar 1,38m Star Plus Top MVSP-140PR Preto">
-                            <img src="https://catral.vteximg.com.br/arquivos/ids/155719-200-200/1571058.jpg?v=635771602923570000"
+                            <img src="https://catral.vteximg.com.br/arquivos/ids/155719-200-200/1571058.jpg"
                                  width="200" height="200" alt="Balcao-Vitrine-Neutra-Gelopar-138m-MVSP-140PR" id=""/>
                         </a>
 
@@ -2052,43 +2053,43 @@
         </div>
     </div>
 </footer><!-- /Template: Footer --><!-- Template: Footer Scripts -->
-<script src="/arquivos/v1-plugins.js?v=636565442025370000"></script>
-<script src="/arquivos/v1-main.js?v=636565441990630000"></script>
+<script src="js/v1-plugins.js"></script>
+<script src="js/v1-main.js"></script>
 <script type="text/javascript" id="getSelo"
-        src="https://imgs.ebit.com.br/ebitBR/selo-ebit/js/getSelo.js?13171"></script>
-<script type="text/javascript" src="https://catral.vteximg.com.br/Scripts/Track.js?v=1.4.907.1593"></script>
-<script language="javascript" src="https://catral.vteximg.com.br/Scripts/thickbox.js?v=1.4.907.1593"
+        src="js/getSelo.js"></script>
+<script type="text/javascript" src="js/Track.js"></script>
+<script language="javascript" src="js/thickbox.js"
         type="text/javascript"></script>
-<script language="javascript" src="https://catral.vteximg.com.br/Scripts/json2.js?v=1.4.907.1593"
-        type="text/javascript"></script>
-<script language="javascript"
-        src="https://catral.vteximg.com.br/Scripts/vtex.viewPart.CallCenterDisclaimer.js?v=1.4.907.1593"
-        type="text/javascript"></script>
-<script language="javascript" src="https://catral.vteximg.com.br/Scripts/vtex.viewPart.ajaxLoader_V2.js?v=1.4.907.1593"
-        type="text/javascript"></script>
-<script language="javascript" src="https://catral.vteximg.com.br/Scripts/social/vtex-view-part.js?v=1.4.907.1593"
-        type="text/javascript"></script>
-<script language="javascript" src="https://catral.vteximg.com.br/Scripts/vtex.commerce.batchbuy.js?v=1.4.907.1593"
-        type="text/javascript"></script>
-<script language="javascript" src="https://catral.vteximg.com.br/Scripts/vtex.jsevents.js?v=1.4.907.1593"
-        type="text/javascript"></script>
-<script language="javascript" src="https://catral.vteximg.com.br/Scripts/vtex.skuEvents.js?v=1.4.907.1593"
+<script language="javascript" src="js/json2.js"
         type="text/javascript"></script>
 <script language="javascript"
-        src="https://catral.vteximg.com.br/Scripts/vtex.skuEvents.skuDataFetcher.js?v=1.4.907.1593"
+        src="js/vtex.viewPart.CallCenterDisclaimer.js"
         type="text/javascript"></script>
-<script language="javascript" src="https://catral.vteximg.com.br/Scripts/jquery.livequery.min.js?v=1.4.907.1593"
+<script language="javascript" src="js/vtex.viewPart.ajaxLoader_V2.js"
+        type="text/javascript"></script>
+<script language="javascript" src="js/vtex-view-part.js"
+        type="text/javascript"></script>
+<script language="javascript" src="js/vtex.commerce.batchbuy.js"
+        type="text/javascript"></script>
+<script language="javascript" src="js/vtex.jsevents.js"
+        type="text/javascript"></script>
+<script language="javascript" src="js/vtex.skuEvents.js"
         type="text/javascript"></script>
 <script language="javascript"
-        src="https://catral.vteximg.com.br/Scripts/prettyPhoto/js/jquery.prettyPhoto.js?v=1.4.907.1593"
+        src="js/vtex.skuEvents.skuDataFetcher.js"
+        type="text/javascript"></script>
+<script language="javascript" src="js/jquery.livequery.min.js"
         type="text/javascript"></script>
 <script language="javascript"
-        src="https://catral.vteximg.com.br/Scripts/prettyPhoto/js/lean-prettyPhoto.js?v=1.4.907.1593"
-        type="text/javascript"></script>
-<script language="javascript" src="https://catral.vteximg.com.br/Scripts/vtex.commerce.Compare.js?v=1.4.907.1593"
+        src="js/jquery.prettyPhoto.js"
         type="text/javascript"></script>
 <script language="javascript"
-        src="https://catral.vteximg.com.br/Scripts/mobile/vtex.make.mobile.pager.js?v=1.4.907.1593"
+        src="js/lean-prettyPhoto.js"
+        type="text/javascript"></script>
+<script language="javascript" src="js/vtex.commerce.Compare.js"
+        type="text/javascript"></script>
+<script language="javascript"
+        src="js/vtex.make.mobile.pager.js"
         type="text/javascript"></script>
 </body>
 </html>
