@@ -22,10 +22,10 @@
     <meta property="og:image" content="//catral.vteximg.com.br/arquivos/catral-post.png"/>
     <link href="img/favicon.ico" rel="shortcut icon"/>
     <title>Catral</title>
-    <script language="javascript" src="js/mdetect.js"
-            type="text/javascript"></script>
-    <script language="javascript" src="js/mdetect2.js"
-            type="text/javascript"></script>
+<!--    <script language="javascript" src="js/mdetect.js"-->
+<!--            type="text/javascript"></script>-->
+<!--    <script language="javascript" src="js/mdetect2.js"-->
+<!--            type="text/javascript"></script>-->
     <script language="javascript"
             src="js/jquery.js"
             type="text/javascript"></script>
