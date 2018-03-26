@@ -322,7 +322,7 @@ header .line-2 .header-logo h1 {
 }
 
 #departments .menu .sub-menu .col ul li a:before {
-    content: 'â€º';
+    content: '>';
     display: inline-block;
     margin-right: 5px;
     vertical-align: text-bottom
@@ -844,7 +844,7 @@ footer .line-2 ul li a {
 }
 
 footer .line-2 ul li a:before {
-    content: 'â€º';
+    content: '>';
     display: inline-block;
     margin-right: 5px;
     vertical-align: text-top
@@ -1041,7 +1041,7 @@ section {
 
 .bread-crumb ul li + li:before {
     color: #929292;
-    content: 'â€º';
+    content: '>';
     display: inline-block;
     padding: 0 10px
 }
