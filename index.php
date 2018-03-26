@@ -102,7 +102,7 @@
             <fieldset class="">
                 <legend>Buscar no site</legend>
                 <label>Buscar</label>
-                <input type="hidden" id= value=""/><input
+                <input type="hidden" id=value=""/><input
                         id="ftBox2fdd7e39812444fea9a52e73f6d155c5" class="fulltext-search-box" type="text" size="20"
                         accesskey="b"/><input id="ftBtn2fdd7e39812444fea9a52e73f6d155c5" type="button" value="Buscar"
                                               class="btn-buscar"/>
@@ -140,38 +140,24 @@
             <div class="header-search unit"><!-- CMC: Full Text Search Box -->
                 <fieldset class="busca">
                     <legend>Buscar no site</legend>
-                    <label>Buscar</label><select id="ftDeptb8b569d1479a452c8734670548bcf742">
-                        <option value="">Todo o site</option>
-                        <option value="8">Refrigeração Comercial</option>
-                        <option value="9">Expositores de Alimentos</option>
-                        <option value="10">Equipamentos para Cocção</option>
-                        <option value="11">Maquinário de Produção</option>
-                        <option value="12">Portáteis Industriais</option>
-                        <option value="13">Mobiliário Comercial</option>
-                        <option value="14">Equipamentos para Embalagens</option>
-                        <option value="15">Pesagem e Medição</option>
-                        <option value="16">Segurança e Geradores</option>
-                        <option value="17">Jardinagem e Limpeza</option>
-                        <option value="18">Carrinhos</option>
-                        <option value="4">Automação Comercial</option>
-                        <option value="1">Ar Condicionado e Ventilação</option>
-                        <option value="20">Eletroportáteis</option>
-                        <option value="19">Eletrodomésticos</option>
-                        <option value="152">Utilidades</option>
-                        <option value="48">NULO (Utilidades)</option>
-                        <option value="181">Utilidade Comercial</option>
-                    </select><input type="hidden" id=ftIdxb8b569d1479a452c8734670548bcf742 value=""/><input
-                            id="ftBoxb8b569d1479a452c8734670548bcf742" class="fulltext-search-box" type="text" size="20"
-                            accesskey="b"/><input id="ftBtnb8b569d1479a452c8734670548bcf742" type="button"
-                                                  value="Buscar" class="btn-buscar"/></fieldset>
+                    <label>Buscar</label><input type="hidden" id=ftIdxb8b569d1479a452c8734670548bcf742 value=""/>
+                    <input id="ftBoxb8b569d1479a452c8734670548bcf742" class="fulltext-search-box" type="text" size="20"
+                           accesskey="b"/><input id="ftBtnb8b569d1479a452c8734670548bcf742" type="button"
+                                                 value="Buscar" class="btn-buscar"/>
+                </fieldset>
                 <!-- /CMC: Full Text Search Box --></div>
             <div class="header-menu unit">
                 <ul>
                     <li><a href="/institucional/fale-conosco"><i
                                     class="icon-25 i-attendance"></i><span>Atendimento</span></a></li>
-                    <li><a class="link-chat" href="javascript:void(0);"><i class="icon-30 i-chat"></i><span>Chat</span></a>
+                    <li>
+                        <a class="link-chat" href="javascript:void(0);"><i class="icon-30 i-chat"></i><span>Chat</span>
+                        </a>
                     </li>
-                    <li><a class="link-phone" href="tel:06240087000" target="_blank"><i class="icon-30 i-telesales"></i><span>Televendas <strong>62 4008 7000</strong></span></a>
+                    <li>
+                        <a class="link-phone" href="tel:06240087000" target="_blank"><i class="icon-30 i-telesales"></i>
+                            <span>Televendas <strong>62 4008 7000</strong></span>
+                        </a>
                     </li>
                 </ul>
             </div>
