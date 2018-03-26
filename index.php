@@ -90,7 +90,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
     <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
 
-    <script src="/arquivos/v1-header-plugins.js"></script><!-- /Template: Header Scripts -->
+    <script src="js/v1-header-plugins.js"></script><!-- /Template: Header Scripts -->
     <link rel="canonical" href="https://www.catral.com.br/"/>
 </head>
 <!-- /Head -->
