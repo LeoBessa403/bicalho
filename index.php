@@ -22,10 +22,10 @@
     <meta property="og:image" content="//catral.vteximg.com.br/arquivos/catral-post.png"/>
     <link href="img/favicon.ico" rel="shortcut icon"/>
     <title>Catral</title>
-<!--    <script language="javascript" src="js/mdetect.js"-->
-<!--            type="text/javascript"></script>-->
-<!--    <script language="javascript" src="js/mdetect2.js"-->
-<!--            type="text/javascript"></script>-->
+    <!--    <script language="javascript" src="js/mdetect.js"-->
+    <!--            type="text/javascript"></script>-->
+    <!--    <script language="javascript" src="js/mdetect2.js"-->
+    <!--            type="text/javascript"></script>-->
     <script language="javascript"
             src="js/jquery.js"
             type="text/javascript"></script>
@@ -98,33 +98,16 @@
 <!-- End - WebAnalyticsViewPart -->
 <aside id="fixed-bar">
     <div class="line margin">
-        <div class="header-search unit"><!-- CMC: Full Text Search Box -->
-            <fieldset class="busca">
+        <div class="header-search"><!-- CMC: Full Text Search Box -->
+            <fieldset class="">
                 <legend>Buscar no site</legend>
-                <label>Buscar</label><select id="ftDept2fdd7e39812444fea9a52e73f6d155c5">
-                    <option value="">Todo o site</option>
-                    <option value="8">Refrigeração Comercial</option>
-                    <option value="9">Expositores de Alimentos</option>
-                    <option value="10">Equipamentos para Cocção</option>
-                    <option value="11">Maquinário de Produção</option>
-                    <option value="12">Portáteis Industriais</option>
-                    <option value="13">Mobiliário Comercial</option>
-                    <option value="14">Equipamentos para Embalagens</option>
-                    <option value="15">Pesagem e Medição</option>
-                    <option value="16">Segurança e Geradores</option>
-                    <option value="17">Jardinagem e Limpeza</option>
-                    <option value="18">Carrinhos</option>
-                    <option value="4">Automação Comercial</option>
-                    <option value="1">Ar Condicionado e Ventilação</option>
-                    <option value="20">Eletroportáteis</option>
-                    <option value="19">Eletrodomésticos</option>
-                    <option value="152">Utilidades</option>
-                    <option value="48">NULO (Utilidades)</option>
-                    <option value="181">Utilidade Comercial</option>
-                </select><input type="hidden" id=ftIdx2fdd7e39812444fea9a52e73f6d155c5 value=""/><input
+                <label>Buscar</label>
+                <input type="hidden" id= value=""/><input
                         id="ftBox2fdd7e39812444fea9a52e73f6d155c5" class="fulltext-search-box" type="text" size="20"
                         accesskey="b"/><input id="ftBtn2fdd7e39812444fea9a52e73f6d155c5" type="button" value="Buscar"
-                                              class="btn-buscar"/></fieldset><!-- /CMC: Full Text Search Box --></div>
+                                              class="btn-buscar"/>
+            </fieldset><!-- /CMC: Full Text Search Box -->
+        </div>
         <div class="header-menu unit">
             <ul>
                 <li><a href="/institucional/fale-conosco"><i

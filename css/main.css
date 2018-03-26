@@ -188,13 +188,13 @@ header .line-2 .header-logo h1 {
 }
 
 #departments .menu > li > a:after {
-    background: url(../arquivos/v1-divider-vertical.png) repeat-y;
+    background: url(../img/v1-divider-vertical.png) repeat-y;
     left: 0;
     position: absolute
 }
 
 #departments .menu > li > a:before {
-    background: url(../arquivos/v1-divider-vertical.png) 100% 0 repeat-y;
+    background: url(../img/v1-divider-vertical.png) 100% 0 repeat-y;
     position: absolute;
     right: 0
 }
@@ -389,7 +389,7 @@ body.fixed-bar-active #fixed-bar {
 }
 
 .header-cart .portal-totalizers-ref {
-    background: url(../arquivos/v1-icon-cart.png) 40% 40% no-repeat #13255e;
+    background: url(../img/v1-icon-cart.png) 40% 40% no-repeat #13255e;
     background-size: 35px 35px;
     color: #fff;
     cursor: default;
@@ -657,7 +657,7 @@ body.fixed-bar-active #fixed-bar {
 }
 
 .header-search .btn-buscar {
-    background: url(../arquivos/v1-icon-search.png) 50% 50% no-repeat #db7b2e;
+    background: url(../img/v1-icon-search.png) 50% 50% no-repeat #db7b2e;
     background-size: auto 50%;
     border-radius: 0 3px 3px 0;
     overflow: hidden;
@@ -705,7 +705,7 @@ footer .line-1 {
 }
 
 footer .line-1 .footer-logo {
-    background: url(../arquivos/v1-logo-catral-40-anos.png) no-repeat;
+    background: url(../img/v1-logo-catral-40-anos.png) no-repeat;
     background-size: 100% auto;
     display: inline-block;
     height: 53px;
@@ -777,7 +777,7 @@ footer .line-1 .footer-social ul li + li {
 }
 
 footer .line-1 .footer-social ul li a {
-    background: url(../arquivos/v1-sprite-social.png) no-repeat;
+    background: url(../img/v1-sprite-social.png) no-repeat;
     background-size: auto 100%;
     height: 30px;
     opacity: .7;
@@ -866,7 +866,7 @@ footer .line-2 .col + .col {
 }
 
 footer .line-2 .footer-payment ul li {
-    background: url(../arquivos/v1-sprite-payment.png) no-repeat;
+    background: url(../img/v1-sprite-payment.png) no-repeat;
     background-size: auto 100%;
     display: inline-block;
     height: 25px;
@@ -1071,7 +1071,7 @@ section {
 }
 
 .collection h2:before {
-    background: url(../arquivos/v1-icon-catral.png) 50% 50% no-repeat;
+    background: url(../img/v1-icon-catral.png) 50% 50% no-repeat;
     background-size: auto 100%;
     content: '';
     display: inline-block;
@@ -1153,7 +1153,7 @@ section {
 }
 
 .collection .slick-carousel .slick-next, .collection .slick-carousel .slick-prev {
-    background: url(../arquivos/v1-sprite-slick-2.png) no-repeat;
+    background: url(../img/v1-sprite-slick-2.png) no-repeat;
     height: 88px;
     top: 230px;
     width: 50px
@@ -1210,7 +1210,7 @@ section {
     -moz-transition: transform .1s ease-in-out;
     -o-transition: transform .1s ease-in-out;
     transition: transform .1s ease-in-out;
-    background: url(../arquivos/v1-sprite-slick.png) 0 -50px no-repeat;
+    background: url(../img/v1-sprite-slick.png) 0 -50px no-repeat;
     background-size: 100px 70px;
     display: inline-block;
     height: 20px;
@@ -1232,7 +1232,7 @@ section {
 }
 
 .slick-carousel .slick-next, .slick-carousel .slick-prev {
-    background: url(../arquivos/v1-sprite-slick.png) no-repeat;
+    background: url(../img/v1-sprite-slick.png) no-repeat;
     background-size: 100px 70px;
     display: inline-block;
     height: 50px;
@@ -1410,19 +1410,19 @@ section {
 }
 
 .v1-default-shelf .selo-black-friday:before {
-    background: url(../arquivos/selo-black-friday.gif)
+    background: url(../img/selo-black-friday.gif)
 }
 
 .v1-default-shelf .selo-frete-gratis:before {
-    background: url(../arquivos/selo-frete-gratis.gif)
+    background: url(../img/selo-frete-gratis.gif)
 }
 
 .v1-default-shelf .selo-natal:before {
-    background: url(../arquivos/selo-oferta-natal.gif)
+    background: url(../img/selo-oferta-natal.gif)
 }
 
 .v1-default-shelf .selo-super-oferta .product-image:before {
-    background: url(../arquivos/selo-super-oferta.png);
+    background: url(../img/selo-super-oferta.png);
     content: '';
     display: inline-block;
     height: 75px;
@@ -1446,7 +1446,7 @@ section {
 }
 
 .v1-default-shelf .selo-acerte-na-compra:before {
-    background: url(../arquivos/selo-acerte-na-compra.gif?v=2);
+    background: url(../img/selo-acerte-na-compra.gif);
     margin-top: 4px
 }
 
@@ -1455,7 +1455,7 @@ section {
 }
 
 .v1-default-shelf .selo-oferta-exclusiva:before {
-    background: url(../arquivos/selo-oferta-exclusiva.gif);
+    background: url(../img/selo-oferta-exclusiva.gif);
     margin-top: 4px
 }
 
@@ -1464,7 +1464,7 @@ section {
 }
 
 .v1-default-shelf .selo-oferta-contador:before {
-    background: url(../arquivos/selo-oferta-contador.gif);
+    background: url(../img/selo-oferta-contador.gif);
     margin-top: 3px
 }
 
@@ -1473,7 +1473,7 @@ section {
 }
 
 .v1-default-shelf .selo-semana-do-consumidor:before {
-    background: url(../arquivos/selo-semana-consumidor.gif);
+    background: url(../img/selo-semana-consumidor.gif);
     margin-top: 5px
 }
 
@@ -1543,7 +1543,7 @@ section {
 }
 
 .home #content .banner-main {
-    background: url(../arquivos/v1-bg-banner-main.png)
+    background: url(../img/v1-bg-banner-main.png)
 }
 
 .home #content .banner-main .box-banner {
@@ -1555,7 +1555,7 @@ section {
 }
 
 .home #content .banner-main .slick-carousel .slick-list {
-    background: url(../arquivos/v1-ajax-loader.gif) 50% 50% no-repeat
+    background: url(../img/v1-ajax-loader.gif) 50% 50% no-repeat
 }
 
 .home #content .brands .slick-carousel ul li, .home #content .collection.super-ofertas .margin .v1-default-shelf ul li, .home #modal-ofertas-exclusivas .modal-footer {
@@ -1606,7 +1606,7 @@ section {
 }
 
 .home #content .brands .slick-carousel .slick-next, .home #content .brands .slick-carousel .slick-prev {
-    background: url(../arquivos/v1-sprite-slick-2.png) no-repeat;
+    background: url(../img/v1-sprite-slick-2.png) no-repeat;
     height: 52px;
     top: 35px;
     width: 40px
@@ -1631,7 +1631,7 @@ section {
 }
 
 .home #content .collection.super-ofertas {
-    background: url(../arquivos/v1-bg-collection.jpg) 50% 100% repeat-x;
+    background: url(../img/v1-bg-collection.jpg) 50% 100% repeat-x;
     margin-top: 20px
 }
 
@@ -1666,7 +1666,7 @@ section {
 }
 
 .home #modal-ofertas-exclusivas .modal-body .col-1 {
-    background: url(../arquivos/modal-ofertas-exclusivas.jpg) no-repeat;
+    background: url(../img/modal-ofertas-exclusivas.jpg) no-repeat;
     height: 370px;
     width: 360px
 }
@@ -1756,7 +1756,7 @@ section {
 }
 
 .page-institucional #content h2:before {
-    background: url(../arquivos/v1-icon-catral.png) 50% 50% no-repeat;
+    background: url(../img/v1-icon-catral.png) 50% 50% no-repeat;
     background-size: auto 100%;
     content: '';
     display: inline-block;
@@ -1929,7 +1929,7 @@ section {
 }
 
 .page-institucional.primeira-compra #content .stage-0 {
-    background: url(../arquivos/v1-bg-stage-0.jpg) 50% 0 no-repeat;
+    background: url(../img/v1-bg-stage-0.jpg) 50% 0 no-repeat;
     height: 400px
 }
 
@@ -1964,7 +1964,7 @@ section {
 }
 
 .page-institucional.primeira-compra #content .stage-2 {
-    background: url(../arquivos/v1-bg-stage-2.jpg) 50% 0 no-repeat;
+    background: url(../img/v1-bg-stage-2.jpg) 50% 0 no-repeat;
     height: 460px
 }
 
@@ -1973,7 +1973,7 @@ section {
 }
 
 .page-institucional.primeira-compra #content .stage-4 {
-    background: url(../arquivos/v1-bg-stage-4.jpg) 50% 0 no-repeat;
+    background: url(../img/v1-bg-stage-4.jpg) 50% 0 no-repeat;
     height: 460px
 }
 
@@ -1986,7 +1986,7 @@ section {
 }
 
 .page-institucional.primeira-compra #content .stage-6 {
-    background: url(../arquivos/v1-bg-stage-6.jpg) 50% 0 no-repeat #ebebeb;
+    background: url(../img/v1-bg-stage-6.jpg) 50% 0 no-repeat #ebebeb;
     height: 578px
 }
 
@@ -2025,7 +2025,7 @@ section {
 }
 
 .listing #content .col-content h2:before {
-    background: url(../arquivos/v1-icon-catral.png) 50% 50% no-repeat;
+    background: url(../img/v1-icon-catral.png) 50% 50% no-repeat;
     background-size: auto 100%;
     content: '';
     display: inline-block;
@@ -2077,7 +2077,7 @@ section {
 }
 
 .listing #content .sidebar h4, .listing #content .sidebar h5 {
-    background: url(../arquivos/v1-divider-horizontal.png) repeat-x;
+    background: url(../img/v1-divider-horizontal.png) repeat-x;
     font-weight: 700;
     margin: 0 15px
 }
