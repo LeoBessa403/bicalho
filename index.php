@@ -17,7 +17,7 @@
     <meta name="copyright" content="Bicalho Refrigeração"/>
     <meta http-equiv="pragma" content="no-cache"/>
     <meta name="viewport" content="width=device-width"/><!-- /Meta tags --><!-- Template: Header Scripts -->
-<!--    <meta name="google-site-verification" content="OPrnom4RdwEh63dxJmDTat3ipeyM0LkQRtFUR9oQeyw"/>-->
+    <!--    <meta name="google-site-verification" content="OPrnom4RdwEh63dxJmDTat3ipeyM0LkQRtFUR9oQeyw"/>-->
     <meta property="og:image" content="http://bicalhorefrigeracao.com/images/logo.png"/>
     <link href="images/favicon.ico" rel="shortcut icon"/>
     <title>Catral</title>
@@ -174,405 +174,44 @@
 <nav id="departments">
     <div class="margin">
         <ul class="menu line">
-            <li class="menu-acougue"><a href="/A%C3%A7ougue">Açougue</a>
-                <div class="sub-menu">
-                    <div class="col">
-                        <ul>
-                            <li><a href="/maquinario-de-producao/amaciador-de-carne">Amaciador de Carne Industrial</a>
-                            </li>
-                            <li><a href="/pesagem-e-medicao/balanca-comercial">Balança Comercial</a></li>
-                            <li><a href="/refrigeracao-comercial/balcao-refrigerado-acougue">Balcão Açougue</a></li>
-                            <li><a href="/mobiliario-comercial/balcao-check-out">Balcão Checkout</a></li>
-                            <li><a href="/refrigeracao-comercial/camara-fria-para-carnes">Câmara Fria para Carnes</a>
-                            </li>
-                            <li><a href="/equipamentos-para-embalagens/ensacadeira">Ensacadeira</a></li>
-                            <li><a href="/FacaseChaira">Facas / Chaira</a></li>
-                            <li><a href="/Gancho">Gancho</a></li>
-                            <li><a href="/refrigeracao-comercial/ilha-para-congelados">Ilha de Congelados</a></li>
-                            <li><a href="/Luva%20Malha%20de%20A%C3%A7o">Luva Malha de Aço</a></li>
-                            <li><a href="/portateis-industriais/moedor-de-carne-industrial">Moedor de Carne
-                                    Industrial</a></li>
-                            <li><a href="/equipamentos-para-embalagens/seladora-e-embaladora">Seladora e Embaladora</a>
-                            </li>
-                        </ul>
+            <?php
+            for ($i = 1; $i < 13; $i++) {
+                ?>
+                <li class="menu-acougue">
+                    <a href="#">Categoria <?php echo $i; ?></a>
+                    <div class="sub-menu">
+                        <div class="col">
+                            <ul>
+                                <?php
+                                for ($p = 1; $p < 21; $p++) {
+                                    ?>
+                                    <li>
+                                        <a href="#">Sub Categoria <?php echo $p; ?></a>
+                                    </li>
+                                <?php } ?>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col">
-                        <ul>
-                            <li><a href="/maquinario-de-producao/serra-fita-para-ossos">Serra Fita para Ossos</a></li>
-                            <li><a href="/Tabua">Tábuas de Corte</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="menu-ar-ventilacao"><a href="/ar-condicionado-e-ventilacao">Ar e Ventilação</a>
-                <div class="sub-menu">
-                    <div class="col">
-                        <ul>
-                            <li><a href="/ar-condicionado-e-ventilacao/ar-condicionado-janela">Ar Condicionado de
-                                    Janela</a></li>
-                            <li><a href="/ar-condicionado-e-ventilacao/ar-condicionado-portatil">Ar Condicionado
-                                    Portátil</a></li>
-                            <li><a href="/ar-condicionado-e-ventilacao/ar-condicionado-split">Ar Condicionado Split</a>
-                            </li>
-                            <li><a href="/ar-condicionado-e-ventilacao/climatizador">Climatizador</a></li>
-                            <li><a href="/ar-condicionado-e-ventilacao/cortina-de-ar">Cortina de Ar</a></li>
-                            <li><a href="/ar-condicionado-e-ventilacao/exaustor">Exaustor</a></li>
-                            <li><a href="/ar-condicionado-e-ventilacao/ventilador-e-circulador-de-ar">Ventilador e
-                                    Circulador de Ar</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="menu-automacao-comercial"><a href="/automacao-comercial">Automação Comercial</a>
-                <div class="sub-menu">
-                    <div class="col">
-                        <ul>
-                            <li><a href="/automacao-comercial/bobina">Bobina</a></li>
-                            <li><a href="/automacao-comercial/computador-para-pdv">Computador para PDV</a></li>
-                            <li><a href="/automacao-comercial/gaveta-de-dinheiro">Gaveta de Dinheiro</a></li>
-                            <li><a href="/automacao-comercial/impressora-de-codigo-de-barras">Impressora de Código de
-                                    Barras</a></li>
-                            <li><a href="/automacao-comercial/impressora-de-cupom-nao-fiscal">Impressora de Cupom
-                                    Não-fiscal</a></li>
-                            <li><a href="/automacao-comercial/impressora-fiscal">Impressora Fiscal</a></li>
-                            <li><a href="/automacao-comercial/impressora-matricial/">Impressora Matricial</a></li>
-                            <li><a href="/automacao-comercial/impressora-multifuncional---laser">Impressora
-                                    Multifuncional / Laser</a></li>
-                            <li><a href="/automacao-comercial/leitor-de-codigo-de-barras">Leitor de Código de Barras</a>
-                            </li>
-                            <li><a href="/automacao-comercial/monitor">Monitor</a></li>
-                            <li><a href="/automacao-comercial/nobreak">NoBreak</a></li>
-                            <li><a href="/automacao-comercial/maquina-de-cartao---pin-pad">Pin Pad</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li><a href="/automacao-comercial/relogio-de-ponto">Relógio de Ponto</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="menu-bar-restaurante"><a href="/restaurante">Bar e Restaurante</a>
-                <div class="sub-menu">
-                    <div class="col">
-                        <ul>
-                            <li><a href="/Balc%C3%A3o">Balcão</a></li>
-                            <li><a href="/refrigeracao-comercial/balcao-refrigerado">Balcão Refrigerado</a></li>
-                            <li><a href="/portateis-industriais/batedor-de-milk-shake">Batedor de Milk-Shake</a></li>
-                            <li><a href="/portateis-industriais/cafeteira-comercial">Cafeteira</a></li>
-                            <li><a href="/refrigeracao-comercial/cervejeira">Cervejeiras</a></li>
-                            <li><a href="/equipamentos-para-coccao/chapa-bifeteira-e-sanduicheira">Chapas</a></li>
-                            <li><a href="/equipamentos-para-coccao/char-broiler---grill">Char Broiler</a></li>
-                            <li><a href="/portateis-industriais/cortador-de-legumes-manual">Cortador de Legumes</a></li>
-                            <li><a href="/portateis-industriais/cutter">Cutter</a></li>
-                            <li><a href="/portateis-industriais/descascador">Descascador</a></li>
-                            <li><a href="/expositores-de-alimentos/estufa-para-salgados">Estufas</a></li>
-                            <li><a href="/refrigeracao-comercial/expositor-e-refrigerador-vertical">Expositor de
-                                    Bebidas</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li><a href="/portateis-industriais/extrator-de-suco-industrial">Extrator de Suco</a></li>
-                            <li><a href="/portateis-industriais/fatiador-de-frios">Fatiador de Frios</a></li>
-                            <li><a href="/equipamentos-para-coccao/fogao-industrial">Fogão Industrial</a></li>
-                            <li><a href="/equipamentos-para-coccao/forno-industrial">Forno Industrial</a></li>
-                            <li><a href="/equipamentos-para-coccao/frangueira---assador-de-frango">Frangueira</a></li>
-                            <li><a href="/refrigeracao-comercial/freezer-horizontal">Freezer</a></li>
-                            <li><a href="/equipamentos-para-coccao/fritadeira-industrial">Fritadeira</a></li>
-                            <li><a href="/refrigeracao-comercial/geladeira-comercial">Geladeira Comercial</a></li>
-                            <li><a href="/portateis-industriais/liquidificador-industrial">Liquidificador Industrial</a>
-                            </li>
-                            <li><a href="/portateis-industriais/maquina-de-crepe-e-panquequeira">Máquina de Crepe
-                                    Panquequeira</a></li>
-                            <li><a href="/refrigeracao-comercial/maquina-de-gelo">Máquina de Gelo</a></li>
-                            <li><a href="/equipamentos-para-coccao/marmiteiro">Marmiteiro</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li><a href="/expositores-de-alimentos/mesa-buffet">Mesa Buffet</a></li>
-                            <li><a href="/mobiliario-comercial/mesa-e-cadeira">Mesa e Cadeira</a></li>
-                            <li><a href="/portateis-industriais/moedor-de-carne-industrial">Moedor de Carne
-                                    Industrial</a></li>
-                            <li><a href="/portateis-industriais/processador-de-alimentos-industrial">Processador de
-                                    Alimentos Industrial</a></li>
-                            <li><a href="/maquinario-de-producao/ralador-industrial">Ralador Industrial</a></li>
-                            <li><a href="/utilidades/utensilios-de-cozinha/rechaud/rechaud">Rechaud</a></li>
-                            <li><a href="/refrigeracao-comercial/refresqueira">Refresqueira</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="menu-padaria-confeitaria"><a href="/maquinario-de-producao">Padaria e Confeitaria</a>
-                <div class="sub-menu">
-                    <div class="col">
-                        <ul>
-                            <li><a href="/maquinario-de-producao/masseira">Amassadeiras</a></li>
-                            <li><a href="/pesagem-e-medicao/balanca-comercial">Balança Comercial</a></li>
-                            <li><a href="/Balc%C3%A3o">Balcão</a></li>
-                            <li><a href="/expositores-de-alimentos/balcao-vitrine">Balcão Vitrine</a></li>
-                            <li><a href="/maquinario-de-producao/batedeira-industrial">Batedeira</a></li>
-                            <li><a href="/refrigeracao-comercial/camara-climatica-para-paes">Câmara Climática</a></li>
-                            <li><a href="/mobiliario-comercial/camara-de-crescimento">Câmara de Crescimento</a></li>
-                            <li><a href="/maquinario-de-producao/cilindro-de-massa">Cilindro</a></li>
-                            <li><a href="/maquinario-de-producao/divisora-de-massa">Divisora de Massa</a></li>
-                            <li><a href="/portateis-industriais/fatiador-de-frios">Fatiador de Frios</a></li>
-                            <li><a href="/equipamentos-para-coccao/forno-turbo">Forno Turbo</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li><a href="/mobiliario-comercial/mesa-panificadora">Mesa Panificadora</a></li>
-                            <li><a href="/maquinario-de-producao/misturadora">Misturadora de Massa</a></li>
-                            <li><a href="/maquinario-de-producao/modeladora-de-pao">Modeladora de Pão</a></li>
-                            <li><a href="/portateis-industriais/moinho-de-pao">Moinho de Pão</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="menu-supermercado"><a href="/Supermercado">Supermercado</a>
-                <div class="sub-menu">
-                    <div class="col">
-                        <ul>
-                            <li><a href="/Balc%C3%A3o">Balcão</a></li>
-                            <li><a href="/mobiliario-comercial/balcao-check-out">Balcão Checkout</a></li>
-                            <li><a href="/carrinhos/carrinhos-diversos">Carrinhos Diversos</a></li>
-                            <li><a href="/refrigeracao-comercial/expositor-e-refrigerador-vertical">Expositor
-                                    Vertical</a></li>
-                            <li><a href="/refrigeracao-comercial/freezer-horizontal">Freezer Horizontal</a></li>
-                            <li><a href="/refrigeracao-comercial/ilha-para-congelados">Ilha de Congelados</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="menu-carrinhos"><a href="/carrinhos">Carrinhos</a>
-                <div class="sub-menu">
-                    <div class="col">
-                        <ul>
-                            <li><a href="/carrinhos/carrinho-de-acai">Açaí</a></li>
-                            <li><a href="/carrinhos/carrinho-de-churrasco">Churrasco</a></li>
-                            <li><a href="/carrinhos/carrinho-de-churros">Churros</a></li>
-                            <li><a href="/Carrinho%20de%20Hot%20Dog">Hot Dog</a></li>
-                            <li><a href="/carrinhos/carrinho-de-picole">Picolé</a></li>
-                            <li><a href="/carrinhos/carrinho-de-pipoca">Pipoca</a></li>
-                            <li><a href="/carrinhos/carrinho-de-tapioca">Tapioca</a></li>
-                            <li><a href="/carrinhos/carrinho-de-coco">Coco</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="menu-eletrodomesticos"><a href="/eletrodomesticos">Eletrodomésticos</a>
-                <div class="sub-menu">
-                    <div class="col">
-                        <ul>
-                            <li><a href="/eletrodomesticos/adega">Adega</a></li>
-                            <li><a href="/eletrodomesticos/coifa-e-depurador">Coifa e Depurador</a></li>
-                            <li><a href="/eletrodomesticos/cooktop">Cooktop</a></li>
-                            <li><a href="/eletrodomesticos/fogao">Fogão</a></li>
-                            <li><a href="/eletrodomesticos/forno">Forno</a></li>
-                            <li><a href="/eletrodomesticos/freezer">Freezer</a></li>
-                            <li><a href="/eletrodomesticos/frigobar">Frigobar</a></li>
-                            <li><a href="/eletrodomesticos/geladeira---refrigerador">Geladeira / Refrigerador</a></li>
-                            <li><a href="/eletrodomesticos/lava-e-seca">Lava e Seca</a></li>
-                            <li><a href="/eletrodomesticos/lavadora-de-roupas">Lavadora de Roupas</a></li>
-                            <li><a href="/eletrodomesticos/lava-loucas">Lava-Louças</a></li>
-                            <li><a href="/eletrodomesticos/microondas">Microondas</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="menu-eletroportateis"><a href="/eletroportateis">Eletroportáteis</a>
-                <div class="sub-menu">
-                    <div class="col">
-                        <ul>
-                            <li><a href="/jardinagem-e-limpeza/aspirador-de-po">Aspirador de Pó</a></li>
-                            <li><a href="/eletroportateis/balanca">Balança</a></li>
-                            <li><a href="/eletroportateis/batedeira">Batedeira</a></li>
-                            <li><a href="/bebedouro">Bebedouro</a></li>
-                            <li><a href="/eletroportateis/cafeteira">Cafeteira</a></li>
-                            <li><a href="/eletroportateis/Chaleira">Chaleira Elétrica</a></li>
-                            <li><a href="/eletroportateis/churrasqueira">Churrasqueira</a></li>
-                            <li><a href="/portateis-industriais/derretedeiras">Derretedeiras</a></li>
-                            <li><a href="/portateis-industriais/extrator%20de%20suco">Extrator de Suco</a></li>
-                            <li><a href="/eletroportateis/fritadeira">Fritadeira</a></li>
-                            <li><a href="/grill%20e%20sanduicheira">Grill e Sanduicheira</a></li>
-                            <li><a href="/eletroportateis/liquidificador">Liquidificador</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li><a href="/eletroportateis/maquina%20de%20crepe">Máquina de Crepe</a></li>
-                            <li><a href="/eletroportateis/maquina%20de%20cupcake">Máquina de Cupcake</a></li>
-                            <li><a href="/eletroportateis/mixer">Mixer</a></li>
-                            <li><a href="/eletroportateis/moedor-de-cafe">Moedor de Café</a></li>
-                            <li><a href="/eletroportateis/moedor-de-carne">Moedor de Carne</a></li>
-                            <li><a href="/eletroportateis/omeleteira">Omeleteira</a></li>
-                            <li><a href="/eletroportateis/panela-eletrica">Panela Elétrica</a></li>
-                            <li><a href="/portateis-industriais/panquequeira">Panquequeira</a></li>
-                            <li><a href="/eletroportateis/pipoqueira">Pipoqueira</a></li>
-                            <li><a href="/eletroportateis/processador-de-alimentos">Processador de Alimentos</a></li>
-                            <li><a href="/eletroportateis/purificador-de-agua">Purificador de Água</a></li>
-                            <li><a href="/eletroportateis/grill-sanduicheira-e-torradeira">Torradeira</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li><a href="/eletroportateis/umidificador">Umidificador</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="menu-utilidades"><a href="/Utilidades">Utilidades</a>
-                <div class="sub-menu">
-                    <div class="col">
-                        <ul>
-                            <li><a href="/jardinagem-e-limpeza/aparador-de-grama">Aparador de Grama</a></li>
-                            <li><a href="/utilidades/caixas-termicas">Caixa Térmica</a></li>
-                            <li><a href="/churrasco">Churrasco</a></li>
-                            <li><a href="/utilidades/precificacao">Precificação</a></li>
-                            <li><a href="/utilidades/utensilios-de-cozinha/panelas">Conjunto de Panelas</a></li>
-                            <li><a href="/jardinagem-e-limpeza/cortador-de-grama">Cortador de Grama</a></li>
-                            <li><a href="/utilidades/dispensers">Dispenser</a></li>
-                            <li><a href="/jardinagem-e-limpeza/enceradeira">Enceradeira</a></li>
-                            <li><a href="/utilidades/utensilios-de-cozinha/faqueiro">Faqueiro</a></li>
-                            <li><a href="/garrafa%20térmica">Garrafa Térmica</a></li>
-                            <li><a href="/seguranca-e-geradores/gerador">Gerador</a></li>
-                            <li><a href="/jardinagem-e-limpeza/lavadora-de-alta-pressao">Lavadora de Alta Pressão</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li><a href="/utilidades/lixeiras">Lixeira</a></li>
-                            <li><a href="/portateis-industriais/maquina-de-algodao-doce/maquina%20de%20algodao%20doce">Máquina
-                                    de Algodão Doce</a></li>
-                            <li><a href="/maquinario-de-producao/moenda-de-cana/moenda%20de%20cana">Moenda de Cana</a>
-                            </li>
-                            <li><a href="/panela%20elétrica">Panela Elétrica</a></li>
-                            <li><a href="/panela%20de%20pressao">Panela de Pressão</a></li>
-                            <li><a href="/Pipoqueira">Pipoqueira</a></li>
-                            <li><a href="/jardinagem-e-limpeza/rocadeira">Roçadeira</a></li>
-                            <li><a href="/tabua%20de%20corte">Tábua de Corte</a></li>
-                            <li><a href="/pesagem-e-medicao/termometro">Termômetro</a></li>
-                            <li><a href="/travessa">Travessa</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="menu-categorias"><a href="javascript:void(0);"><i class="icon-35 i-menu"></i> Confira mais
+                </li>
+            <?php } ?>
+            <li class="menu-categorias"><a href="#"><i class="icon-35 i-menu"></i> Confira mais
                     <strong>categorias</strong></a>
                 <div class="sub-menu">
-                    <div class="col">
-                        <ul>
-                            <li><a href="/portateis-industriais"><h4>Portáteis Industriais</h4></a></li>
-                            <li><a href="/portateis-industriais/moinho-de-pao">Moinho de Pão</a></li>
-                            <li><a href="/portateis-industriais/batedor-de-milk-shake">Batedor de Milk-Shake</a></li>
-                            <li><a href="/portateis-industriais/cafeteira-comercial">Cafeteira Comercial</a></li>
-                            <li><a href="/portateis-industriais/cutter">Cutter</a></li>
-                            <li><a href="/portateis-industriais/descascador">Descascador</a></li>
-                            <li><a href="/portateis-industriais/despolpadeira">Despolpadeira</a></li>
-                            <li><a href="/portateis-industriais/extrator-de-suco-industrial">Extrator de Suco
-                                    Industrial</a></li>
-                            <li><a href="/portateis-industriais/fatiador-de-frios">Fatiador de Frios</a></li>
-                            <li><a href="/portateis-industriais/liquidificador-industrial">Liquidificador Industrial</a>
-                            </li>
-                            <li><a href="/portateis-industriais/maquina-de-algodao-doce">Máquina de Algodão Doce</a>
-                            </li>
-                            <li><a href="/portateis-industriais/moedor-de-carne-industrial">Moedor de Carne
-                                    Industrial</a></li>
-                            <li><a href="/portateis-industriais/maquina-de-crepe-e-panquequeira">Máquina de Crepe e
-                                    Panquequeira</a></li>
-                            <li><a href="/portateis-industriais/cortador-de-legumes-manual">Cortador de Legumes
-                                    Manual</a></li>
-                            <li><a href="/portateis-industriais/processador-de-alimentos-industrial">Processador de
-                                    Alimentos Industrial</a></li>
-                            <li><a href="/portateis-industriais/torre-de-chopp">Torre de Chopp</a></li>
-                            <li><a href="/portateis-industriais/abridor-de-massa-de-pizza">Abridor de Massa de Pizza</a>
-                            </li>
-                            <li><a href="/portateis-industriais/derretedeiras">Derretedeiras</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li><a href="/pesagem-e-medicao"><h4>Pesagem e Medição</h4></a></li>
-                            <li><a href="/pesagem-e-medicao/balanca-comercial">Balança Eletrônica</a></li>
-                            <li><a href="/pesagem-e-medicao/balanca-mecanica">Balança Mecânica</a></li>
-                            <li><a href="/pesagem-e-medicao/termometro">Termometro</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="/equipamentos-para-coccao"><h4>Equipamentos para Cocção</h4></a></li>
-                            <li><a href="/equipamentos-para-coccao/chapa-bifeteira-e-sanduicheira">Chapa Bifeteira e
-                                    Sanduicheira</a></li>
-                            <li><a href="/equipamentos-para-coccao/char-broiler---grill">Char Broiler</a></li>
-                            <li><a href="/equipamentos-para-coccao/forno-industrial">Forno Industrial</a></li>
-                            <li><a href="/equipamentos-para-coccao/forno-turbo">Forno Turbo</a></li>
-                            <li><a href="/equipamentos-para-coccao/fritadeira-industrial">Fritadeira Industrial</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="/mobiliario-comercial"><h4>Mobiliário Comercial</h4></a></li>
-                            <li><a href="/mobiliario-comercial/balcao-check-out">Balcão Check-Out</a></li>
-                            <li><a href="/mobiliario-comercial/camara-de-crescimento">Câmara de Crescimento</a></li>
-                            <li><a href="/mobiliario-comercial/estante-aberta-para-assadeiras">Estante Aberta para
-                                    Assadeiras</a></li>
-                            <li><a href="/mobiliario-comercial/mesa-panificadora">Mesa Panificadora</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li><a href="/refrigeracao-comercial"><h4>Refrigeração Comercial</h4></a></li>
-                            <li><a href="/refrigeracao-comercial/balcao-refrigerado">Balcão Refrigerado</a></li>
-                            <li><a href="/refrigeracao-comercial/bebedouro-de-pressao">Bebedouro de Pressão</a></li>
-                            <li><a href="/refrigeracao-comercial/bebedouro-industrial">Bebedouro Industrial</a></li>
-                            <li><a href="/refrigeracao-comercial/camara-climatica-para-paes">Câmara Climática para
-                                    Pães</a></li>
-                            <li><a href="/refrigeracao-comercial/camara-fria-para-carnes">Câmara Fria para Carnes</a>
-                            </li>
-                            <li><a href="/refrigeracao-comercial/cervejeira">Cervejeira</a></li>
-                            <li><a href="/refrigeracao-comercial/expositor-e-refrigerador-vertical">Expositor e
-                                    Refrigerador Vertical</a></li>
-                            <li><a href="/refrigeracao-comercial/geladeira-comercial">Geladeira Comercial</a></li>
-                            <li><a href="/refrigeracao-comercial/ilha-para-congelados">Ilha para Congelados</a></li>
-                            <li><a href="/refrigeracao-comercial/maquina-de-gelo">Máquina de Gelo</a></li>
-                            <li><a href="/refrigeracao-comercial/refresqueira">Refresqueira</a></li>
-                            <li><a href="/refrigeracao-comercial/freezer-horizontal">Freezer Horizontal</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li><a href="/maquinario-de-producao"><h4>Maquinário de Produção</h4></a></li>
-                            <li><a href="/maquinario-de-producao/amaciador-de-carne">Amaciador de Carne</a></li>
-                            <li><a href="/maquinario-de-producao/masseira">Masseira</a></li>
-                            <li><a href="/maquinario-de-producao/batedeira-industrial">Batedeira Industrial</a></li>
-                            <li><a href="/maquinario-de-producao/cilindro-de-massa">Cilindro de Massa</a></li>
-                            <li><a href="/maquinario-de-producao/divisora-de-massa">Divisora de Massa</a></li>
-                            <li><a href="/maquinario-de-producao/misturadora">Misturadora</a></li>
-                            <li><a href="/maquinario-de-producao/modeladora-de-pao">Modeladora de Pão</a></li>
-                            <li><a href="/maquinario-de-producao/moenda-de-cana">Moenda de Cana</a></li>
-                            <li><a href="/maquinario-de-producao/ralador-industrial">Ralador Industrial</a></li>
-                            <li><a href="/maquinario-de-producao/serra-fita-para-ossos">Serra-Fita para Ossos</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li><a href="/expositores-de-alimentos"><h4>Expositores de Alimentos</h4></a></li>
-                            <li><a href="/expositores-de-alimentos/balcao-caixa">Balcão Caixa</a></li>
-                            <li><a href="/expositores-de-alimentos/balcao-vitrine">Balcão Vitrine</a></li>
-                            <li><a href="/expositores-de-alimentos/estufa-para-salgados">Estufa para Salgados</a></li>
-                            <li><a href="/expositores-de-alimentos/mesa-buffet">Mesa Buffet</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="/equipamentos-para-embalagens"><h4>Equipamentos para Embalagens</h4></a></li>
-                            <li><a href="/equipamentos-para-embalagens/ensacadeira">Ensacadeira</a></li>
-                            <li><a href="/equipamentos-para-embalagens/seladora-e-embaladora">Seladora e Embaladora</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li><a href="/Churrasqueiras"><h4>Churrasqueiras</h4></a></li>
-                            <li><a href="/Churrasqueira%20El%C3%A9trica">Elétrica</a></li>
-                            <li><a href="/Churrasqueira%20%C3%A0%20Gas">Gás</a></li>
-                        </ul>
-                    </div>
+                    <?php
+                    for ($i = 1; $i < 6; $i++) {
+                        ?>
+                        <div class="col">
+                            <ul>
+                                <?php
+                                for ($p = 1; $p < 10; $p++) {
+                                    ?>
+                                    <li><a href="#">Sub
+                                            Categoria <?php echo $p; ?></a></li>
+                                <?php } ?>
+                            </ul>
+                        </div>
+                    <?php } ?>
+
                 </div>
             </li>
         </ul>
