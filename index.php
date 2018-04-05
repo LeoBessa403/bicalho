@@ -12,14 +12,14 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
     <meta name="description"
           content="Equipamentos para Lanchonetes, Padarias, Açougues, Ambulantes. Automação e Refrigeração Comercial, Ar Condicionados e Muito Mais!"/>
-    <meta name="Abstract" content="Catral"/>
-    <meta name="author" content="Catral"/>
-    <meta name="copyright" content="Catral"/>
+    <meta name="Abstract" content="Bicalho Refrigeração"/>
+    <meta name="author" content="Bicalho Refrigeração"/>
+    <meta name="copyright" content="Bicalho Refrigeração"/>
     <meta name="vtex-version" content="1.4.907.1593"/>
     <meta http-equiv="pragma" content="no-cache"/>
     <meta name="viewport" content="width=device-width"/><!-- /Meta tags --><!-- Template: Header Scripts -->
     <meta name="google-site-verification" content="OPrnom4RdwEh63dxJmDTat3ipeyM0LkQRtFUR9oQeyw"/>
-    <meta property="og:image" content="//catral.vteximg.com.br/arquivos/catral-post.png"/>
+    <meta property="og:image" content="http://bicalhorefrigeracao.com/images/logo.png"/>
     <link href="images/favicon.ico" rel="shortcut icon"/>
     <title>Catral</title>
     <!--    <script language="javascript" src="js/mdetect.js"-->
