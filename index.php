@@ -1951,7 +1951,7 @@
                     <li><a href="/institucional/politica-de-frete-e-entrega">Política de Frete e Entrega</a></li>
                 </ul>
             </div>
-            <div class="col"><h3>formas de pagamento</h3>
+            <div class="col pagamento"><h3>formas de pagamento</h3>
                 <ul>
                     <li class="card-visa">Visa</li>
                     <li class="card-mastercard">MasterCard</li>

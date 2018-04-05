@@ -1116,7 +1116,7 @@ ul {
 .margin {
     margin: 0 auto;
     position: relative;
-    width: 1280px
+    width: 100%
 }
 
 .txtC {
@@ -1156,25 +1156,7 @@ ul {
     text-transform: uppercase
 }
 
-.footer-checkout .line-1 h3 + p, .footer-checkout .line-1 ul {
-    margin-top: 10px
-}
-
-.footer-checkout .line-1 .col {
-    float: left;
-    min-height: 110px
-}
-
-.footer-checkout .line-1 .col + .col {
-    border-left: #d1d1d1 1px solid;
-    padding-left: 45px
-}
-
-.footer-checkout .line-1 .footer-payment {
-    width: 38%
-}
-
-.footer-checkout .line-1 .footer-payment ul li {
+.pagamento ul li {
     background: url(../img/v1-sprite-payment.png) no-repeat;
     background-size: auto 100%;
     display: inline-block;
@@ -1184,46 +1166,36 @@ ul {
     white-space: nowrap
 }
 
-.footer-checkout .line-1 .footer-payment ul li + li {
+.pagamento ul li + li {
     margin-left: 5px
 }
 
-.footer-checkout .line-1 .footer-payment ul li.card-american-express {
-    background-position: -62px 0;
-    width: 22px
-}
-
-.footer-checkout .line-1 .footer-payment ul li.card-bndes {
+.pagamento ul li.card-bndes {
     background-position: -173px 0;
     width: 25px
 }
 
-.footer-checkout .line-1 .footer-payment ul li.card-boleto {
+.pagamento ul li.card-boleto {
     background-position: -198px 0;
     width: 30px
 }
 
-.footer-checkout .line-1 .footer-payment ul li.card-diners-club {
-    background-position: -84px 0;
-    width: 27px
-}
-
-.footer-checkout .line-1 .footer-payment ul li.card-elo {
+.pagamento ul li.card-elo {
     background-position: -111px 0;
     width: 22px
 }
 
-.footer-checkout .line-1 .footer-payment ul li.card-hipercard {
+.pagamento ul li.card-hipercard {
     background-position: -133px 0;
     width: 40px
 }
 
-.footer-checkout .line-1 .footer-payment ul li.card-mastercard {
+.pagamento ul li.card-mastercard {
     background-position: -26px 0;
     width: 36px
 }
 
-.footer-checkout .line-1 .footer-payment ul li.card-visa {
+.pagamento ul li.card-visa {
     background-position: 0 0;
     width: 26px
 }
@@ -1312,46 +1284,6 @@ ul {
     margin-top: 30px
 }
 
-.header-checkout .header-logo h1 {
-    background: url(../img/v1-logo-catral.png) no-repeat;
-    background-size: 100% auto;
-    display: inline-block;
-    height: 48px;
-    margin: 0;
-    overflow: hidden;
-    text-indent: -9999px;
-    white-space: nowrap;
-    width: 174px
-}
-
-.header-checkout .header-secure {
-    background-color: #445998;
-    color: #fff;
-    height: 110px;
-    padding: 35px 30px;
-    text-align: center
-}
-
-.login #ajaxBusy {
-    display: none !important
-}
-
-body .vtexIdUI {
-    background-color: #fff;
-    border: none;
-    border-radius: 3px;
-    box-shadow: none;
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4em;
-    margin-left: -265px;
-    width: 530px
-}
-
-body .vtexIdUI a {
-    color: #2c4591;
-    font-size: 110%
-}
 
 body .vtexIdUI button.btn {
     background-image: none !important;
