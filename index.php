@@ -114,8 +114,8 @@
                                 class="icon-25 i-attendance"></i><span>Atendimento</span></a></li>
                 <li><a class="link-chat" href="javascript:void(0);"><i class="icon-30 i-chat"></i><span>Chat</span></a>
                 </li>
-                <li><a class="link-phone" href="tel:06240087000" target="_blank"><i
-                                class="icon-30 i-telesales"></i><span>Televendas <strong>62 4008 7000</strong></span></a>
+                <li><a class="link-phone" href="tel:06130461009" target="_blank"><i
+                                class="icon-30 i-telesales"></i><span>Televendas <strong>(61) 3046-1009</strong></span></a>
                 </li>
             </ul>
         </div>
@@ -128,8 +128,10 @@
             <div class="header-account unitExt">
                 <ul>
                     <li><a href="/institucional/nossas-lojas">Nossas Lojas</a></li>
-                    <li><a href="/account/orders">Meus Pedidos</a></li>
-                    <li><a href="/account">Meus Dados</a></li>
+                    <li><a href="/account/orders">Quem Somos</a></li>
+                    <li><a href="/account">Como comprar</a></li>
+                    <li><a href="/institucional/fale-conosco">Fale Conosco</a></li>
+                    <li><a href="/institucional/politica-de-frete-e-entrega">Política de Frete e Entrega</a></li>
                 </ul>
             </div>
         </div>
@@ -155,8 +157,8 @@
                         </a>
                     </li>
                     <li>
-                        <a class="link-phone" href="tel:06240087000" target="_blank"><i class="icon-30 i-telesales"></i>
-                            <span>Televendas <strong>62 4008 7000</strong></span>
+                        <a class="link-phone" href="tel:06130461009" target="_blank"><i class="icon-30 i-telesales"></i>
+                            <span>Televendas <strong>(61) 3046-1009</strong></span>
                         </a>
                     </li>
                 </ul>
@@ -1914,8 +1916,7 @@
 <footer>
     <div class="line-1">
         <div class="line margin">
-            <div class="footer-logo unit">Catral - Aqui você encontra.</div>
-            <div class="footer-news unit"><h3>Fique por dentro das melhores ofertas!</h3><i class="icon-35 i-news"></i>
+            <div class="footer-news unit"><h3>Fique por dentro das nossas ofertas!</h3><i class="icon-35 i-news"></i>
                 <form action="" class="line" method="post" id="footerNewsLead" name="footerNewsLead"><input
                             class="validate[required,custom[email]] unit" id="footerNewsLead-email"
                             name="footerNewsLead-email" placeholder="Digite aqui seu e-mail e aproveite!" type="text"/>
@@ -1927,59 +1928,49 @@
             </div>
             <div class="footer-social unitExt">
                 <ul>
-                    <li><a class="link-facebook" href="https://www.facebook.com/curtaCatral" target="_blank"
+                    <li><a class="link-facebook" href="https://www.facebook.com.br/bicalhobalancas.77" target="_blank"
                            title="Facebook">Facebook</a></li>
-                    <li><a class="link-youtube" href="https://www.youtube.com/catralgyn/" target="_blank"
-                           title="Youtube">Youtube</a></li>
-                    <li><a class="link-instagram" href="https://instagram.com/sigaCatral/" target="_blank"
-                           title="Instagram">Instagram</a></li>
-                    <li><a class="link-blog" href="http://blogcatral.com.br/" target="_blank" title="Blog">Blog</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <div class="line-2">
         <div class="line margin">
-            <div class="col"><h3>Sobre a Catral</h3>
+            <div class="col"><h3>Sobre a Nós</h3>
                 <ul>
                     <li><a href="/institucional/quem-somos">Quem Somos</a></li>
                     <li><a href="/institucional/nossas-lojas">Nossas Lojas</a></li>
-                    <li><a href="/institucional/seguranca">É Seguro Comprar?</a></li>
-                    <li><a href="/institucional/trabalhe-conosco">Trabalhe Conosco</a></li>
-                </ul>
-            </div>
-            <div class="col"><h3>Área do cliente</h3>
-                <ul>
-                    <li><a href="/account/orders">Meus Pedidos</a></li>
-                    <li><a href="/account">Minha Conta</a></li>
-                    <li><a href="/institucional/duvidas">Dúvidas</a></li>
                     <li><a href="/institucional/primeira-compra">Como Comprar</a></li>
+                    <li><a href="/institucional/fale-conosco">Fale Conosco</a></li>
+                    <li><a href="/institucional/politica-de-frete-e-entrega">Política de Frete e Entrega</a></li>
                 </ul>
             </div>
-            <div class="col"><h3>Atendimento</h3>
+            <div class="col"><h3>formas de pagamento</h3>
                 <ul>
-                    <li><a href="/institucional/trocas-e-devolucoes">Trocas e Devoluções</a></li>
-                    <li><a href="/institucional/televendas">Televendas</a></li>
-                    <li><a href="/institucional/politica-de-frete-e-entrega">Política de Frete e Entrega</a></li>
-                    <li><a href="/institucional/fale-conosco">Fale Conosco</a></li>
-                </ul>
-                <h3>Campanhas</h3>
-                <ul>
-                    <li><a href="/sao-joao">São João Arraiá de Ofertas</a></li>
-                    <li><a href="/folia-de-ofertas">Folia de Ofertas</a></li>
-                    <li><a href="/semana-do-consumidor">Semana do Consumidor</a></li>
-                    <li><a href="/acerte-na-compra">Acerte na Compra</a></li>
+                    <li class="card-visa">Visa</li>
+                    <li class="card-mastercard">MasterCard</li>
+                    <li class="card-american-express">American Express</li>
+                    <li class="card-diners-club">Diners Club</li>
+                    <li class="card-elo">Elo</li>
+                    <li class="card-hipercard">Hipercard</li>
+                    <li class="card-bndes">BNDES</li>
+                    <li class="card-boleto">Boleto</li>
                 </ul>
             </div>
             <div class="col footer-telesales"><h3>Televendas</h3>
-                <p>Segunda a Sexta: 8h00 às 18h00 <br/> Sábado: 8h00 às 12h00, exceto feriados.</p><a class="link-phone"
-                                                                                                      href="tel:06240087000"
-                                                                                                      target="_blank"><i
-                            class="icon-35 i-telesales"></i><strong>62 4008
-                        7000</strong><span>Compre pelo telefone</span></a><a class="link-chat"
-                                                                             href="javascript:void(0);"><i
-                            class="icon-25 i-chat"></i><strong>Chat
-                        Online</strong><span>Dúvidas? Fale conosco</span></a></div>
+                <p>Segunda a Sexta: 8h00 às 18h00 <br/> Sábado: 8h00 às 12h00, exceto feriados.</p>
+                <a class="link-phone" href="tel:06130461009" target="_blank">
+                    <i class="icon-35 i-telesales"></i><strong>(61) 3046-1009</strong>
+                    <span>Compre pelo telefone</span>
+                </a>
+                <a class="link-phone" href="tel:061993704240" target="_blank">
+                    <i class="icon-35 i-telesales"></i><strong>(61) 99370-4240</strong>
+                    <span>Whatsapp</span>
+                </a>
+                <a class="link-chat" href="javascript:void(0);"><i class="icon-25 i-chat"></i>
+                    <strong>Chat Online</strong><span>Dúvidas? Fale conosco</span>
+                </a>
+            </div>
             <div class="col footer-security"><h3>Segurança</h3>
                 <p>Segurança na hora da compra é nossa prioridade.</p>
                 <ul class="line">
@@ -1996,29 +1987,6 @@
                         </a></li>
                 </ul>
             </div>
-        </div>
-        <div class="footer-payment margin"><h3>formas de pagamento</h3>
-            <ul>
-                <li class="card-visa">Visa</li>
-                <li class="card-mastercard">MasterCard</li>
-                <li class="card-american-express">American Express</li>
-                <li class="card-diners-club">Diners Club</li>
-                <li class="card-elo">Elo</li>
-                <li class="card-hipercard">Hipercard</li>
-                <li class="card-bndes">BNDES</li>
-                <li class="card-boleto">Boleto</li>
-            </ul>
-        </div>
-    </div>
-    <div class="line-3">
-        <div class="line margin"><a class="link-version" href="https://www.catral.com.br/?uam=true">Versão Mobile</a>
-            <p>Preços e condições de pagamento válidos exclusivamente para compras efetuadas no site. As imagens dos
-                produtos são meramente ilustrativas. <br/> Todos os preços e condições comerciais estão sujeitos a
-                alteração sem aviso prévio. Catral Refrigeração e Eletrodomésticos Ltda. | <strong>CNPJ:
-                    02.375.921/0001-64</strong> | Inscrição Estadual: 10.025.007-6</p>
-            <address>Rua 246, n.450, Setor Coimbra - CEP: 74535-170 - Goiania-GO - Telefone: <a href="tel:06240087000"
-                                                                                                target="_blank">62
-                    4008-7000</a> / <a href="mailto:sac@catral.com.br" target="_blank">sac@catral.com.br</a></address>
         </div>
     </div>
 </footer><!-- /Template: Footer --><!-- Template: Footer Scripts -->
