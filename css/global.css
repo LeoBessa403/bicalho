@@ -1175,7 +1175,7 @@ ul {
 }
 
 .footer-checkout .line-1 .footer-payment ul li {
-    background: url(/img/v1-sprite-payment.png) no-repeat;
+    background: url(../img/v1-sprite-payment.png) no-repeat;
     background-size: auto 100%;
     display: inline-block;
     height: 25px;

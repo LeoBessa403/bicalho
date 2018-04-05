@@ -1949,12 +1949,10 @@
                 <ul>
                     <li class="card-visa">Visa</li>
                     <li class="card-mastercard">MasterCard</li>
-                    <li class="card-american-express">American Express</li>
-                    <li class="card-diners-club">Diners Club</li>
                     <li class="card-elo">Elo</li>
                     <li class="card-hipercard">Hipercard</li>
                     <li class="card-bndes">BNDES</li>
-                    <li class="card-boleto">Boleto</li>
+                    <li class="card-boleto">Transferência Bancaria</li>
                 </ul>
             </div>
             <div class="col footer-telesales"><h3>Televendas</h3>
