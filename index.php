@@ -15,7 +15,6 @@
     <meta name="Abstract" content="Bicalho Refrigeração"/>
     <meta name="author" content="Bicalho Refrigeração"/>
     <meta name="copyright" content="Bicalho Refrigeração"/>
-    <meta name="vtex-version" content="1.4.907.1593"/>
     <meta http-equiv="pragma" content="no-cache"/>
     <meta name="viewport" content="width=device-width"/><!-- /Meta tags --><!-- Template: Header Scripts -->
     <meta name="google-site-verification" content="OPrnom4RdwEh63dxJmDTat3ipeyM0LkQRtFUR9oQeyw"/>
