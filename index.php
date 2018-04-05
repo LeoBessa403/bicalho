@@ -17,7 +17,7 @@
     <meta name="copyright" content="Bicalho Refrigeração"/>
     <meta http-equiv="pragma" content="no-cache"/>
     <meta name="viewport" content="width=device-width"/><!-- /Meta tags --><!-- Template: Header Scripts -->
-    <meta name="google-site-verification" content="OPrnom4RdwEh63dxJmDTat3ipeyM0LkQRtFUR9oQeyw"/>
+<!--    <meta name="google-site-verification" content="OPrnom4RdwEh63dxJmDTat3ipeyM0LkQRtFUR9oQeyw"/>-->
     <meta property="og:image" content="http://bicalhorefrigeracao.com/images/logo.png"/>
     <link href="images/favicon.ico" rel="shortcut icon"/>
     <title>Catral</title>
@@ -90,7 +90,7 @@
     <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
 
     <script src="js/v1-header-plugins.js"></script><!-- /Template: Header Scripts -->
-    <link rel="canonical" href="https://www.catral.com.br/"/>
+    <link rel="canonical" href="https://www.bicalhorefrigeracao.com/"/>
 </head>
 <!-- /Head -->
 <body class="v1 home">
