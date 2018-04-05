@@ -124,7 +124,12 @@
 <header>
     <div class="line-1">
         <div class="line margin">
-            <div class="ajax-content-loader" rel="/no-cache/user/welcome"></div><!-- /CMC: Welcome Message -->
+            <div class="ajax-content-loader" rel="/no-cache/user/welcome">
+                <p class="welcome">
+                    Seja Bem Vindo à Bicalho Refrigeração
+                    <em><a id="login">Receber ofertas</a></em>
+                </p>
+            </div><!-- /CMC: Welcome Message -->
             <div class="header-account unitExt">
                 <ul>
                     <li><a href="/institucional/nossas-lojas">Nossas Lojas</a></li>
@@ -137,7 +142,8 @@
         </div>
     </div>
     <div class="line-2">
-        <div class="line margin"><a class="header-logo unit" href="/" title="Bicalho - Aqui você encontra."><h1>Bicalho -
+        <div class="line margin"><a class="header-logo unit" href="/" title="Bicalho - Aqui você encontra."><h1>Bicalho
+                    -
                     Aqui você encontra.</h1></a>
             <div class="header-search unit"><!-- CMC: Full Text Search Box -->
                 <fieldset class="busca">
