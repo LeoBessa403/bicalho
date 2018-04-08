@@ -1,10 +1,10 @@
-<!-- ========================================= TOP BRANDS ========================================= -->
+<!-- ========================================= Marcas destaques ========================================= -->
 <section id="top-brands" class="wow fadeInUp">
     <div class="container">
         <div class="carousel-holder" >
             
             <div class="title-nav">
-                <h1>Top Brands</h1>
+                <h1>Marcas destaques</h1>
                 <div class="nav-holder">
                     <a href="#prev" data-target="#owl-brands" class="slider-prev btn-prev fa fa-angle-left"></a>
                     <a href="#next" data-target="#owl-brands" class="slider-next btn-next fa fa-angle-right"></a>
@@ -66,4 +66,4 @@
         </div><!-- /.carousel-holder -->
     </div><!-- /.container -->
 </section><!-- /#top-brands -->
-<!-- ========================================= TOP BRANDS : END ========================================= -->
+<!-- ========================================= Marcas destaques : END ========================================= -->
