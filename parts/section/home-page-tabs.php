@@ -19,7 +19,7 @@
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-01.jpg" />
                                 </div>
                                 <div class="body">
-                                    <div class="label-discount green">-50% desconto</div>
+                                    <div class="label-discount green">50% desconto</div>
                                     <div class="title">
                                         <a href="index.php?page=single-product">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
                                     </div>
@@ -174,7 +174,7 @@
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-01.jpg" />
                                 </div>
                                 <div class="body">
-                                    <div class="label-discount green">-50% desconto</div>
+                                    <div class="label-discount green">50% desconto</div>
                                     <div class="title">
                                         <a href="index.php?page=single-product">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
                                     </div>
@@ -366,7 +366,7 @@
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-01.jpg" />
                                 </div>
                                 <div class="body">
-                                    <div class="label-discount green">-50% desconto</div>
+                                    <div class="label-discount green">50% desconto</div>
                                     <div class="title">
                                         <a href="index.php?page=single-product">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
                                     </div>

@@ -29,7 +29,7 @@
 
                         <div class="inline">
                             <label>categorias:</label>
-                            <span><a href="#">-50% desconto</a>,</span>
+                            <span><a href="#">50% desconto</a>,</span>
                             <span><a href="#">jogos</a>,</span>
                             <span><a href="#">desktop PC</a></span>
                         </div><!-- /.inline -->
@@ -79,7 +79,7 @@
 
                         <div class="inline">
                             <label>categorias:</label>
-                            <span><a href="#">-50% desconto</a>,</span>
+                            <span><a href="#">50% desconto</a>,</span>
                             <span><a href="#">jogos</a>,</span>
                             <span><a href="#">desktop PC</a></span>
                         </div><!-- /.inline -->
