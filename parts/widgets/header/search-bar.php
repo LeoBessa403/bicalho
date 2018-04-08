@@ -6,23 +6,23 @@
     </div>
     <div class="phone inline">
         <a class="link-phone" href="tel:061993704240" target="_blank">
-            <i class="fa fa-phone"></i> (61) 99370-4240
+            <i class="fa fa-whatsapp"></i> (61) 99370-4240
         </a>
     </div>
     <div class="contact inline">
-        <i class="fa fa-envelope"></i> contact@bicalhorefrigeracao.com</span>
+        <i class="fa fa-envelope"></i> contato@bicalhorefrigeracao.com</span>
     </div>
 </div><!-- /.contact-row -->
 <!-- ============================================================= SEARCH AREA ============================================================= -->
 <div class="search-area">
     <form>
         <div class="control-group">
-            <input class="search-field" placeholder="Search for item"/>
+            <input class="search-field" placeholder="Pesquisa por produto"/>
 
             <div class="custom-select categories-filter animate-dropdown">
                 <section>
                     <select class="styled">
-                        <option>All Categories</option>
+                        <option>Categorias</option>
                         <option>Laptops</option>
                         <option>TV & Audio</option>
                         <option>Gadgets</option>

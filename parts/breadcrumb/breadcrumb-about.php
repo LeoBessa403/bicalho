@@ -25,10 +25,10 @@
                 <li class="breadcrumb-nav-holder">
                     <ul>
                         <li class="breadcrumb-item">
-                            <a href="index.php?page=home">Home</a>
+                            <a href="#">Home</a>
                         </li>
                         <li class="breadcrumb-item current gray">
-                            <a href="index.php?page=about">About Us</a>
+                            <a href="#">Sobre nós</a>
                         </li>
                     </ul>
                 </li><!-- /.breadcrumb-nav-holder -->

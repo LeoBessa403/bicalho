@@ -4,7 +4,7 @@
 
 			<div class="inner-xs">
 				<div class="page-header">
-					<h2 class="page-title">My Wishlist</h2>
+					<h2 class="page-title">My Favoritos</h2>
 				</div>
 			</div><!-- /.section-page-title -->
 

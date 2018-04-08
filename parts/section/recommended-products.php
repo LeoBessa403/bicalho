@@ -29,7 +29,7 @@
                         <a href="index.php?page=single-product" class="le-button">add to cart</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to wishlist</a>
+                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                         <a href="index.php?page=single-product" class="le-button">add to cart</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to wishlist</a>
+                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                         <a href="index.php?page=single-product" class="le-button">add to cart</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to wishlist</a>
+                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                         <a href="index.php?page=single-product" class="le-button">add to cart</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to wishlist</a>
+                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                         <a href="index.php?page=single-product" class="le-button">add to cart</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to wishlist</a>
+                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>
@@ -163,7 +163,7 @@
                         <a href="index.php?page=single-product" class="le-button">add to cart</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to wishlist</a>
+                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>
@@ -189,7 +189,7 @@
                         <a href="index.php?page=single-product" class="le-button">add to cart</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to wishlist</a>
+                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>
@@ -218,7 +218,7 @@
                         <a href="index.php?page=single-product" class="le-button">add to cart</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to wishlist</a>
+                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>

@@ -13,7 +13,7 @@
         </div>
 
         <div class="buttons-holder">
-            <a class="btn-add-to-wishlist" href="#">add to wishlist</a>
+            <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
             <a class="btn-add-to-compare" href="#">add to compare list</a>
         </div>
 
