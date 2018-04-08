@@ -17,7 +17,7 @@
                     <img src="assets/images/icon-cart.png" alt=""/>
                 </div>
                 <div class="total-price-basket">
-                    <span class="lbl">your cart:</span>
+                    <span class="lbl">meu carrinho:</span>
                     <span class="total-price">
                         <span class="sign">$</span><span class="value">3219,00</span>
                     </span>

@@ -22,7 +22,7 @@
         <div class="container">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 no-padding">
                 <form role="form">
-                    <input placeholder="Subscribe to our newsletter">
+                    <input placeholder="Receba nossas promoções">
                     <button class="le-button">Se inscrever</button>
                 </form>
             </div>
