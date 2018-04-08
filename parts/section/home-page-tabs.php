@@ -14,7 +14,7 @@
                     <div class="product-grid-holder">
                         <div class="col-sm-4 col-md-3  no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon red"><span>venda</span></div>
+                                <div class="ribbon red"><span>destaque</span></div>
                                 <div class="image">
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-01.jpg" />
                                 </div>
@@ -169,7 +169,7 @@
                         
                         <div class="col-sm-4 col-md-3 no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon red"><span>venda</span></div>
+                                <div class="ribbon red"><span>destaque</span></div>
                                 <div class="image">
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-01.jpg" />
                                 </div>
@@ -199,7 +199,7 @@
                         
                         <div class="col-sm-4 col-md-3 no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon red"><span>venda</span></div>
+                                <div class="ribbon red"><span>destaque</span></div>
                                 <div class="ribbon green"><span>mais vendidos</span></div>
                                 <div class="image">
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-04.jpg" />
@@ -271,7 +271,7 @@
 
                         <div class="col-sm-4 col-md-3 no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon red"><span>venda</span></div>
+                                <div class="ribbon red"><span>destaque</span></div>
                                 <div class="ribbon green"><span>mais vendidos</span></div>
                                 <div class="image">
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-04.jpg" />
@@ -361,7 +361,7 @@
                         
                         <div class="col-sm-4 col-md-3 no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon red"><span>venda</span></div>
+                                <div class="ribbon red"><span>destaque</span></div>
                                 <div class="image">
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-01.jpg" />
                                 </div>

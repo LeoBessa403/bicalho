@@ -19,7 +19,7 @@
 			<div id="<?php echo $carouselID;?>" class="owl-carousel product-grid-holder">
 				<div class="no-margin carousel-item product-item-holder <?php echo $productItemSize;?> hover">
 					<div class="product-item">
-						<div class="ribbon red"><span>venda</span></div>
+						<div class="ribbon red"><span>destaque</span></div>
 						<div class="image">
 							<img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-11.jpg" />
 						</div>
