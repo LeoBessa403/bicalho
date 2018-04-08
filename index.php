@@ -10,7 +10,7 @@ function baseURL()
     );
 }
 
-define('BASE_URL', baseURL() . "bicalho/");
+define('BASE_URL', baseURL());
 define('MC_ROOT', dirname(__FILE__));
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 if ($page == 'home') {
