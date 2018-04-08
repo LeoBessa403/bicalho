@@ -1,5 +1,5 @@
 <div class="widget">
-	<h1 class="border">special offers</h1>
+	<h1 class="border">ofertas especiais</h1>
 	<ul class="product-list">
         <li>
             <div class="row">

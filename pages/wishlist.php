@@ -40,7 +40,7 @@
 						<div class="col-xs-12 col-sm-3 no-margin">
 							<div class="text-right">
 								<div class="add-cart-button">
-									<a class="le-button add_to_cart_button product_type_simple" href="index.php?page=cart">Add to cart</a>
+									<a class="le-button add_to_cart_button product_type_simple" href="index.php?page=cart">adicionar ao carrinho</a>
 								</div>							
 							</div>
 						</div>
@@ -77,7 +77,7 @@
 						<div class="col-xs-12 col-sm-3 no-margin">
 							<div class="text-right">
 								<div class="add-cart-button">
-									<a class="le-button disabled product_type_simple" href="index.php?page=cart">Add to cart</a>
+									<a class="le-button disabled product_type_simple" href="index.php?page=cart">adicionar ao carrinho</a>
 								</div>							
 							</div>
 						</div>

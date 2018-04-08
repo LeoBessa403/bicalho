@@ -4,7 +4,7 @@
         <div class="yamm navbar">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mc-horizontal-menu-collapse">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only">Alternar de navegação</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -50,7 +50,7 @@
                     
                     
                     <li class="dropdown yamm-fw">
-                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Gadgets</a>
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Aparelhos</a>
                         <ul class="dropdown-menu">
                             <li>
                                 <div class="yamm-content">

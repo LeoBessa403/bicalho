@@ -1,5 +1,5 @@
 <section id="comments" class="inner-bottom-xs">
-    <h3>2 Comments</h3>
+    <h3>2 Comentários</h3>
 
     <div class="comment-item">
         <div class="row no-margin">
@@ -19,7 +19,7 @@
                                 <span class="dislikes"><a href="#"><i class="icon fa fa-thumbs-down"></i></a></span>
                             </div>
                             <div class="pull-right">
-                                <a class="comment-reply" href="#">Reply</a>
+                                <a class="comment-reply" href="#">Resposta</a>
                             </div>
                         </header>
                     </div>
@@ -47,7 +47,7 @@
                                 <span class="dislikes"><a href="#"><i class="icon fa fa-thumbs-down"></i></a></span>
                             </div>
                             <div class="pull-right">
-                                <a class="comment-reply" href="#">Reply</a>
+                                <a class="comment-reply" href="#">Resposta</a>
                             </div>
                         </header>
                     </div>

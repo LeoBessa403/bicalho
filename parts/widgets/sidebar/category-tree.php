@@ -1,6 +1,6 @@
 <!-- ========================================= CATEGORY TREE ========================================= -->
 <div class="widget accordion-widget category-accordions">
-    <h1 class="border">Category Tree</h1>
+    <h1 class="border">Sub categorias</h1>
     <div id="accordion" class="accordion">
         <div class="accordion-group">
             <div class="accordion-heading">

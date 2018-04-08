@@ -6,7 +6,7 @@
             <ul class="inline">
                 <li class="dropdown le-dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="fa fa-list"></i> shop by department
+                        <i class="fa fa-list"></i> comprar por departamento
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Computer Cases & Accessories</a></li>
@@ -70,7 +70,7 @@
             <ul>
                 <li class="dropdown breadcrumb-item">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        shop by department
+                        comprar por departamento
                     </a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Computer Cases &amp; Accessories</a></li>

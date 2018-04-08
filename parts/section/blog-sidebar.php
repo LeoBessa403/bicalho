@@ -2,8 +2,6 @@
 	
 	<?php require MC_ROOT.'/parts/widgets/sidebar/sidebar-search.php';?>
 
-	<?php require MC_ROOT.'/parts/widgets/sidebar/about-blog.php';?>
-
 	<?php require MC_ROOT.'/parts/widgets/sidebar/blog-categories.php';?>
 
 	<?php require MC_ROOT.'/parts/widgets/sidebar/sidebar-banner.php';?>

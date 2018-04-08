@@ -16,12 +16,11 @@
 			</div>
 			<h2 class="post-title">A Beautiful Day &ndash; Standard Post with Image</h2>
 			<ul class="meta">
-				<li>Posted By : Admin</li>
-				<li><a href="#">OffTopic</a>, <a href="#">Announcements</a></li>
-				<li><a href="#">3 Comments</a></li>
+				<li>Postado por : Admin</li>
+				<li><a href="#">3 Comentários</a></li>
 			</ul><!-- /.meta -->
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque. Quisque id sodales libero. In nec enim nisi, in ultricies quam. Sed lacinia feugiat velit, cursus molestie lectus mollis et. Praesent a mi sem, sed vulputate metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget viverra nulla sem vitae neque.</p>
-			<a href="index.php?page=blog-post" class="le-button huge">Read More</a>
+			<a href="index.php?page=blog-post" class="le-button huge">Ler maise</a>
 		</div><!-- /.post-content -->
 	</div><!-- /.post -->
 
@@ -41,7 +40,7 @@
 			</div>
 			<h2 class="post-title">Listen to your Media &ndash; Standard Post with Audio</h2>
 			<ul class="meta">
-				<li>Posted By : Admin</li>
+				<li>Postado por : Admin</li>
 				<li><a href="#">OffTopic</a>, <a href="#">Announcements</a></li>
 				<li><a href="#">3 Comments</a></li>
 			</ul><!-- /.meta -->
@@ -66,7 +65,7 @@
 			</div>
 			<h2 class="post-title">Introduction to CSS3 &ndash; Standard Post with Video</h2>
 			<ul class="meta">
-				<li>Posted By : Admin</li>
+				<li>Postado por : Admin</li>
 				<li><a href="#">OffTopic</a>, <a href="#">Announcements</a></li>
 				<li><a href="#">3 Comments</a></li>
 			</ul><!-- /.meta -->
@@ -88,7 +87,7 @@
 		<div class="post-content">
 			<h2 class="post-title">Announcement &ndash; Standard Post without Image</h2>
 			<ul class="meta">
-				<li>Posted By : Admin</li>
+				<li>Postado por : Admin</li>
 				<li><a href="#">OffTopic</a>, <a href="#">Announcements</a></li>
 				<li><a href="#">3 Comments</a></li>
 			</ul><!-- /.meta -->

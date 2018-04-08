@@ -7,7 +7,7 @@
 			<div class="container-fluid">
 				<div class="caption vertical-center text-left">
 					<div class="big-text fadeInDown-1">
-						Save up to a<span class="big"><span class="sign">$</span>400</span>
+                        Economize até <span class="big"><span class="sign">$</span>400</span>
 					</div>
 
 					<div class="excerpt fadeInDown-2">
@@ -16,10 +16,10 @@
 						smartphones
 					</div>
 					<div class="small fadeInDown-2">
-						terms and conditions apply
+                        aplicam-se termos e condições
 					</div>
 					<div class="button-holder fadeInDown-3">
-						<a href="index.php?page=single-product" class="big le-button ">shop now</a>
+						<a href="index.php?page=single-product" class="big le-button ">Compre agora</a>
 					</div>
 				</div><!-- /.caption -->
 			</div><!-- /.container-fluid -->
@@ -29,17 +29,17 @@
 			<div class="container-fluid">
 				<div class="caption vertical-center text-left">
 					<div class="big-text fadeInDown-1">
-						Want a<span class="big"><span class="sign">$</span>200</span>Discount?
+                        Quero<span class="big"><span class="sign">$</span>200</span> de Desconto?
 					</div>
 
 					<div class="excerpt fadeInDown-2">
-						on selected <br>desktop pcs<br>
+                        em selecionados <br>desktop pcs<br>
 					</div>
 					<div class="small fadeInDown-2">
-						terms and conditions apply
+                        aplicam-se termos e condições
 					</div>
 					<div class="button-holder fadeInDown-3">
-						<a href="index.php?page=single-product" class="big le-button ">shop now</a>
+						<a href="index.php?page=single-product" class="big le-button ">Compre agora</a>
 					</div>
 				</div><!-- /.caption -->
 			</div><!-- /.container-fluid -->

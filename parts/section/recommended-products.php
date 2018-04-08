@@ -1,7 +1,7 @@
 <section id="recommended-products" class="carousel-holder hover small">
 
     <div class="title-nav">
-        <h2 class="inverse">Recommended Products</h2>
+        <h2 class="inverse">produtos recomendados</h2>
         <div class="nav-holder">
             <a href="#prev" data-target="#owl-recommended-products" class="slider-prev btn-prev fa fa-angle-left"></a>
             <a href="#next" data-target="#owl-recommended-products" class="slider-next btn-next fa fa-angle-right"></a>
@@ -26,10 +26,10 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>
@@ -54,10 +54,10 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>
@@ -80,10 +80,10 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>
@@ -107,10 +107,10 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>
@@ -134,10 +134,10 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>
@@ -160,10 +160,10 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>
@@ -186,10 +186,10 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>
@@ -215,10 +215,10 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                     </div>
                     <div class="wish-compare">
-                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                         <a class="btn-add-to-compare" href="#">compare</a>
                     </div>
                 </div>

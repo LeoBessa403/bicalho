@@ -1,5 +1,5 @@
 <div class="widget">
-	<h4>Categories</h4>
+	<h4>Categorias</h4>
 	<div class="body">
 		<ul class="le-links">
             <li><a href="#">Business</a></li>

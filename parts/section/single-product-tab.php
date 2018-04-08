@@ -8,9 +8,9 @@
         <div class="tab-holder">
             
             <ul class="nav nav-tabs simple" >
-                <li class="active"><a href="#description" data-toggle="tab">Description</a></li>
-                <li><a href="#additional-info" data-toggle="tab">Additional Information</a></li>
-                <li><a href="#reviews" data-toggle="tab">Reviews (3)</a></li>
+                <li class="active"><a href="#description" data-toggle="tab">Descrição</a></li>
+                <li><a href="#additional-info" data-toggle="tab">informação adicional</a></li>
+                <li><a href="#reviews" data-toggle="tab">Rever (3)</a></li>
             </ul><!-- /.nav-tabs -->
 
             <div class="tab-content">
@@ -21,16 +21,16 @@
 
                     <div class="meta-row">
                         <div class="inline">
-                            <label>SKU:</label>
+                            <label>Código:</label>
                             <span>54687621</span>
                         </div><!-- /.inline -->
 
                         <span class="seperator">/</span>
 
                         <div class="inline">
-                            <label>categories:</label>
-                            <span><a href="#">-50% sale</a>,</span>
-                            <span><a href="#">gaming</a>,</span>
+                            <label>categorias:</label>
+                            <span><a href="#">-50% desconto</a>,</span>
+                            <span><a href="#">jogos</a>,</span>
                             <span><a href="#">desktop PC</a></span>
                         </div><!-- /.inline -->
 
@@ -48,39 +48,39 @@
                 <div class="tab-pane" id="additional-info">
                     <ul class="tabled-data">
                         <li>
-                            <label>weight</label>
+                            <label>peso</label>
                             <div class="value">7.25 kg</div>
                         </li>
                         <li>
-                            <label>dimensions</label>
+                            <label>dimensões</label>
                             <div class="value">90x60x90 cm</div>
                         </li>
                         <li>
-                            <label>size</label>
-                            <div class="value">one size fits all</div>
+                            <label>Tamanho</label>
+                            <div class="value">um tamanho serve para todos</div>
                         </li>
                         <li>
-                            <label>color</label>
-                            <div class="value">white</div>
+                            <label>cor</label>
+                            <div class="value">brnaco</div>
                         </li>
                         <li>
-                            <label>guarantee</label>
-                            <div class="value">5 years</div>
+                            <label>garantia</label>
+                            <div class="value">5 anos</div>
                         </li>
                     </ul><!-- /.tabled-data -->
 
                     <div class="meta-row">
                         <div class="inline">
-                            <label>SKU:</label>
+                            <label>Código:</label>
                             <span>54687621</span>
                         </div><!-- /.inline -->
 
                         <span class="seperator">/</span>
 
                         <div class="inline">
-                            <label>categories:</label>
-                            <span><a href="#">-50% sale</a>,</span>
-                            <span><a href="#">gaming</a>,</span>
+                            <label>categorias:</label>
+                            <span><a href="#">-50% desconto</a>,</span>
+                            <span><a href="#">jogos</a>,</span>
                             <span><a href="#">desktop PC</a></span>
                         </div><!-- /.inline -->
 

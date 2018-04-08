@@ -1,7 +1,7 @@
 <div class="no-margin col-xs-12 col-sm-7 body-holder">
     <div class="body">
         <div class="star-holder inline"><div class="star" data-score="4"></div></div>
-        <div class="availability"><label>Availability:</label><span class="available">  in stock</span></div>
+        <div class="availability"><label>Disponibilidade:</label><span class="available">  em estoque</span></div>
 
         <div class="title"><a href="#">VAIO fit laptop - windows 8 SVF14322CXW</a></div>
         <div class="brand">sony</div>
@@ -13,7 +13,7 @@
         </div>
 
         <div class="buttons-holder">
-            <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+            <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
             <a class="btn-add-to-compare" href="#">add to compare list</a>
         </div>
 
@@ -34,7 +34,7 @@
                     <a class="plus" href="#add"></a>
                 </form>
             </div>
-            <a id="addto-cart" href="index.php?page=cart" class="le-button huge">add to cart</a>
+            <a id="addto-cart" href="index.php?page=cart" class="le-button huge">adicionar ao carrinho</a>
         </div><!-- /.qnt-holder -->
     </div><!-- /.body -->
 

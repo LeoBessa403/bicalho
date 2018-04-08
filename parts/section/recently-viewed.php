@@ -9,7 +9,7 @@
 		<div class="carousel-holder hover">
 			
 			<div class="title-nav">
-				<h2 class="h1">Recently Viewed</h2>
+				<h2 class="h1">visto recentemente</h2>
 				<div class="nav-holder">
 					<a href="#prev" data-target="#<?php echo $carouselID;?>" class="slider-prev btn-prev fa fa-angle-left"></a>
 					<a href="#next" data-target="#<?php echo $carouselID;?>" class="slider-next btn-next fa fa-angle-right"></a>
@@ -19,7 +19,7 @@
 			<div id="<?php echo $carouselID;?>" class="owl-carousel product-grid-holder">
 				<div class="no-margin carousel-item product-item-holder <?php echo $productItemSize;?> hover">
 					<div class="product-item">
-						<div class="ribbon red"><span>sale</span></div> 
+						<div class="ribbon red"><span>venda</span></div>
 						<div class="image">
 							<img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-11.jpg" />
 						</div>
@@ -34,10 +34,10 @@
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
-								<a href="index.php?page=single-product" class="le-button">Add to Cart</a>
+								<a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
 							</div>
 							<div class="wish-compare">
-								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
+								<a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
 								<a class="btn-add-to-compare" href="#">Compare</a>
 							</div>
 						</div>
@@ -46,7 +46,7 @@
 
 				<div class="no-margin carousel-item product-item-holder <?php echo $productItemSize;?> hover">
 					<div class="product-item">
-						<div class="ribbon blue"><span>new!</span></div> 
+						<div class="ribbon blue"><span>Novo!</span></div>
 						<div class="image">
 							<img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-12.jpg" />
 						</div>
@@ -61,10 +61,10 @@
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
-								<a href="index.php?page=single-product" class="le-button">Add to cart</a>
+								<a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
 							</div>
 							<div class="wish-compare">
-								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
+								<a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
 								<a class="btn-add-to-compare" href="#">Compare</a>
 							</div>
 						</div>
@@ -88,10 +88,10 @@
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
-								<a href="index.php?page=single-product" class="le-button">Add to cart</a>
+								<a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
 							</div>
 							<div class="wish-compare">
-								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
+								<a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
 								<a class="btn-add-to-compare" href="#">Compare</a>
 							</div>
 						</div>
@@ -100,7 +100,7 @@
 
 				<div class=" no-margin carousel-item product-item-holder <?php echo $productItemSize;?> hover">
 					<div class="product-item">
-						<div class="ribbon blue"><span>new!</span></div> 
+						<div class="ribbon blue"><span>Novo!</span></div>
 						<div class="image">
 							<img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-14.jpg" />
 						</div>
@@ -115,10 +115,10 @@
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
-								<a href="index.php?page=single-product" class="le-button">Add to cart</a>
+								<a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
 							</div>
 							<div class="wish-compare">
-								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
+								<a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
 								<a class="btn-add-to-compare" href="#">Compare</a>
 							</div>
 						</div>
@@ -127,7 +127,7 @@
 
 				<div class=" no-margin carousel-item product-item-holder <?php echo $productItemSize;?> hover">
 					<div class="product-item">
-						<div class="ribbon green"><span>bestseller</span></div> 
+						<div class="ribbon green"><span>mais vendidos</span></div>
 						<div class="image">
 							<img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-15.jpg" />
 						</div>
@@ -142,10 +142,10 @@
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
-								<a href="index.php?page=single-product" class="le-button">Add to cart</a>
+								<a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
 							</div>
 							<div class="wish-compare">
-								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
+								<a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
 								<a class="btn-add-to-compare" href="#">Compare</a>
 							</div>
 						</div>
@@ -169,10 +169,10 @@
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
-								<a href="index.php?page=single-product" class="le-button">Add to cart</a>
+								<a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
 							</div>
 							<div class="wish-compare">
-								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
+								<a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
 								<a class="btn-add-to-compare" href="#">Compare</a>
 							</div>
 						</div>
@@ -196,10 +196,10 @@
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
-								<a href="index.php?page=single-product" class="le-button">Add to cart</a>
+								<a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
 							</div>
 							<div class="wish-compare">
-								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
+								<a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
 								<a class="btn-add-to-compare" href="#">Compare</a>
 							</div>
 						</div>
@@ -208,7 +208,7 @@
 
 				<div class=" no-margin carousel-item product-item-holder <?php echo $productItemSize;?> hover">
 					<div class="product-item">
-						<div class="ribbon blue"><span>new!</span></div> 
+						<div class="ribbon blue"><span>novo!</span></div>
 						<div class="image">
 							<img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-14.jpg" />
 						</div>
@@ -223,10 +223,10 @@
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
-								<a href="index.php?page=single-product" class="le-button">Add to cart</a>
+								<a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
 							</div>
 							<div class="wish-compare">
-								<a class="btn-add-to-wishlist" href="#">Add to Wishlist</a>
+								<a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
 								<a class="btn-add-to-compare" href="#">Compare</a>
 							</div>
 						</div>

@@ -1,6 +1,6 @@
 <!-- ========================================= FEATURED PRODUCTS ========================================= -->
 <div class="widget">
-    <h1 class="border">Featured Products</h1>
+    <h1 class="border">Mais vendidos</h1>
     <ul class="product-list">
         
         <li class="sidebar-product-list-item">

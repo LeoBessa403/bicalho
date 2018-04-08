@@ -3,9 +3,9 @@
         <div class="tab-holder">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" >
-                <li class="active"><a href="#featured" data-toggle="tab">featured</a></li>
-                <li><a href="#new-arrivals" data-toggle="tab">new arrivals</a></li>
-                <li><a href="#top-sales" data-toggle="tab">top sales</a></li>
+                <li class="active"><a href="#featured" data-toggle="tab">destaque</a></li>
+                <li><a href="#new-arrivals" data-toggle="tab">novas chegadas</a></li>
+                <li><a href="#top-sales" data-toggle="tab">principais vendas</a></li>
             </ul>
 
             <!-- Tab panes -->
@@ -14,12 +14,12 @@
                     <div class="product-grid-holder">
                         <div class="col-sm-4 col-md-3  no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon red"><span>sale</span></div> 
+                                <div class="ribbon red"><span>venda</span></div>
                                 <div class="image">
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-01.jpg" />
                                 </div>
                                 <div class="body">
-                                    <div class="label-discount green">-50% sale</div>
+                                    <div class="label-discount green">-50% desconto</div>
                                     <div class="title">
                                         <a href="index.php?page=single-product">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
                                     </div>
@@ -32,10 +32,10 @@
 
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                                         <a class="btn-add-to-compare" href="#">compare</a>
                                     </div>
                                 </div>
@@ -43,7 +43,7 @@
                         </div>
                         <div class="col-sm-4 col-md-3 no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon blue"><span>new!</span></div> 
+                                <div class="ribbon blue"><span>novo!</span></div>
                                 <div class="image">
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-02.jpg" />
                                 </div>
@@ -60,10 +60,10 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                                         <a class="btn-add-to-compare" href="#">compare</a>
                                     </div>
                                 </div>
@@ -88,10 +88,10 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                                         <a class="btn-add-to-compare" href="#">compare</a>
                                     </div>
                                 </div>
@@ -118,10 +118,10 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                                         <a class="btn-add-to-compare" href="#">compare</a>
                                     </div>
                                 </div>
@@ -131,7 +131,7 @@
                     <div class="loadmore-holder text-center">
                         <a class="btn-loadmore" href="#">
                             <i class="fa fa-plus"></i>
-                            load more products</a>
+                            carregar mais produtos</a>
                     </div> 
 
                 </div>
@@ -140,7 +140,7 @@
                         
                         <div class="col-sm-4 col-md-3 no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon blue"><span>new!</span></div> 
+                                <div class="ribbon blue"><span>novo!</span></div>
                                 <div class="image">
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-02.jpg" />
                                 </div>
@@ -157,10 +157,10 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                                         <a class="btn-add-to-compare" href="#">compare</a>
                                     </div>
                                 </div>
@@ -169,12 +169,12 @@
                         
                         <div class="col-sm-4 col-md-3 no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon red"><span>sale</span></div> 
+                                <div class="ribbon red"><span>venda</span></div>
                                 <div class="image">
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-01.jpg" />
                                 </div>
                                 <div class="body">
-                                    <div class="label-discount green">-50% sale</div>
+                                    <div class="label-discount green">-50% desconto</div>
                                     <div class="title">
                                         <a href="index.php?page=single-product">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
                                     </div>
@@ -187,10 +187,10 @@
 
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                                         <a class="btn-add-to-compare" href="#">compare</a>
                                     </div>
                                 </div>
@@ -199,8 +199,8 @@
                         
                         <div class="col-sm-4 col-md-3 no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon red"><span>sale</span></div> 
-                                <div class="ribbon green"><span>bestseller</span></div> 
+                                <div class="ribbon red"><span>venda</span></div>
+                                <div class="ribbon green"><span>mais vendidos</span></div>
                                 <div class="image">
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-04.jpg" />
                                 </div>
@@ -218,10 +218,10 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                                         <a class="btn-add-to-compare" href="#">compare</a>
                                     </div>
                                 </div>
@@ -247,10 +247,10 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                                         <a class="btn-add-to-compare" href="#">compare</a>
                                     </div>
                                 </div>
@@ -261,7 +261,7 @@
                     <div class="loadmore-holder text-center">
                         <a class="btn-loadmore" href="#">
                             <i class="fa fa-plus"></i>
-                            load more products</a>
+                            carregar mais produtos</a>
                     </div> 
 
                 </div>
@@ -271,8 +271,8 @@
 
                         <div class="col-sm-4 col-md-3 no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon red"><span>sale</span></div> 
-                                <div class="ribbon green"><span>bestseller</span></div> 
+                                <div class="ribbon red"><span>venda</span></div>
+                                <div class="ribbon green"><span>mais vendidos</span></div>
                                 <div class="image">
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-04.jpg" />
                                 </div>
@@ -290,10 +290,10 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                                         <a class="btn-add-to-compare" href="#">compare</a>
                                     </div>
                                 </div>
@@ -320,10 +320,10 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                                         <a class="btn-add-to-compare" href="#">compare</a>
                                     </div>
                                 </div>
@@ -332,7 +332,7 @@
                         
                         <div class="col-sm-4 col-md-3 no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon blue"><span>new!</span></div> 
+                                <div class="ribbon blue"><span>novo!</span></div>
                                 <div class="image">
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-02.jpg" />
                                 </div>
@@ -349,10 +349,10 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                                         <a class="btn-add-to-compare" href="#">compare</a>
                                     </div>
                                 </div>
@@ -361,12 +361,12 @@
                         
                         <div class="col-sm-4 col-md-3 no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon red"><span>sale</span></div> 
+                                <div class="ribbon red"><span>venda</span></div>
                                 <div class="image">
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-01.jpg" />
                                 </div>
                                 <div class="body">
-                                    <div class="label-discount green">-50% sale</div>
+                                    <div class="label-discount green">-50% desconto</div>
                                     <div class="title">
                                         <a href="index.php?page=single-product">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
                                     </div>
@@ -379,10 +379,10 @@
 
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="index.php?page=single-product" class="le-button">add to cart</a>
+                                        <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add to Favoritos</a>
+                                        <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
                                         <a class="btn-add-to-compare" href="#">compare</a>
                                     </div>
                                 </div>
@@ -393,7 +393,7 @@
                     <div class="loadmore-holder text-center">
                         <a class="btn-loadmore" href="#">
                             <i class="fa fa-plus"></i>
-                            load more products</a>
+                            carregar mais produtos</a>
                     </div> 
                 </div>
             </div>

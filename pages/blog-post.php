@@ -14,7 +14,7 @@
 	            <div class="post-content">
 					<h2 class="post-title">Our Office &ndash; Post with gallery</h2>
 					<ul class="meta">
-						<li>Posted By : Admin</li>
+						<li>Postado por : Admin</li>
 						<li>July 16, 2014</li>
 						<li><a href="#">OffTopic</a>, <a href="#">Announcements</a></li>
 						<li><a href="#">3 Comments</a></li>

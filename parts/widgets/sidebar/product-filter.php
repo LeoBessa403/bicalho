@@ -1,10 +1,10 @@
 <!-- ========================================= PRODUCT FILTER ========================================= -->
 <div class="widget">
-    <h1>Product Filters</h1>
+    <h1>Pesquisa Produto</h1>
     <div class="body bordered">
         
         <div class="category-filter">
-            <h2>Brands</h2>
+            <h2>Marcas</h2>
             <hr>
             <ul>
                 <li><input checked="checked" class="le-checkbox" type="checkbox"  /> <label>Samsung</label> <span class="pull-right">(2)</span></li>
@@ -15,17 +15,15 @@
         </div><!-- /.category-filter -->
         
         <div class="price-filter">
-            <h2>Price</h2>
+            <h2>Preço</h2>
             <hr>
             <div class="price-range-holder">
-
                 <input type="text" class="price-slider" value="" >
-
                 <span class="min-max">
                     Price: $89 - $2899
                 </span>
                 <span class="filter-button">
-                    <a href="#">Filter</a>
+                    <a href="#">Pesquisar</a>
                 </span>
             </div>
         </div><!-- /.price-filter -->

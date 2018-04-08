@@ -4,7 +4,7 @@
     <nav class="yamm megamenu-horizontal" role="navigation">
         <ul class="nav">
             <li class="dropdown menu-item">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Páginas</a>
                 <ul class="dropdown-menu mega-menu">
                     <?php $pageChunkes = array_chunk($pages, 6, true); ?>
                     <li class="yamm-content">
@@ -36,7 +36,7 @@
                 </ul>
             </li><!-- /.menu-item -->
             <li class="dropdown menu-item">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Value of the Day</a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Valor do dia</a>
                 <ul class="dropdown-menu mega-menu">
                     <li class="yamm-content">
                         <?php require MC_ROOT.'/parts/navigation/megamenu-vertical.php';?>
