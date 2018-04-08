@@ -26,7 +26,7 @@
 
             <div id="grid-page-banner">
                 <a href="#">
-                    <img src="assets/images/banners/banner-gamer.jpg" alt="" />
+                    <img src="<?php echo BASE_URL; ?>assets/images/banners/banner-gamer.jpg" alt="" />
                 </a>
             </div>
 

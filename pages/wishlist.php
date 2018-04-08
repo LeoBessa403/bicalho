@@ -19,7 +19,7 @@
 
 	                	<div class="col-xs-12 col-sm-1 no-margin">
 	                    	<a href="index.php?page=single-product">
-								<img width="73" height="73" alt="Canon PowerShot Elph 115 IS" class="attachment-shop_thumbnail wp-post-image" src="assets/images/products/product-small-03.jpg">
+								<img width="73" height="73" alt="Canon PowerShot Elph 115 IS" class="attachment-shop_thumbnail wp-post-image" src="<?php echo BASE_URL; ?>assets/images/products/product-small-03.jpg">
 							</a>
 	                    </div>
 	                	<div class="col-xs-12 col-sm-4 no-margin">
@@ -56,7 +56,7 @@
 
 	                	<div class="col-xs-12 col-sm-1 no-margin">
 	                    	<a href="index.php?page=single-product">
-								<img width="73" height="73" alt="I - Book Mini Laptop" class="attachment-shop_thumbnail wp-post-image" src="assets/images/products/product-small-02.jpg">							
+								<img width="73" height="73" alt="I - Book Mini Laptop" class="attachment-shop_thumbnail wp-post-image" src="<?php echo BASE_URL; ?>assets/images/products/product-small-02.jpg">							
 							</a>
 	                    </div>
 	                	<div class="col-xs-12 col-sm-4 no-margin">

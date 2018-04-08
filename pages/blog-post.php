@@ -51,7 +51,7 @@
 
 			<div class="blog-post-author">
 				<div class="media">
-					<a href="#" class="pull-left"><img src="assets/images/blog-post/blog-author.jpg" alt=""></a>
+					<a href="#" class="pull-left"><img src="<?php echo BASE_URL; ?>assets/images/blog-post/blog-author.jpg" alt=""></a>
 					<div class="media-body">
 						<h4 class="media-heading"><a href="#">Jane Smith</a></h4>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
