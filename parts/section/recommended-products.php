@@ -11,7 +11,7 @@
     <div id="owl-recommended-products" class="owl-carousel product-grid-holder">
         <div class="no-margin carousel-item product-item-holder hover size-medium">
             <div class="product-item">
-                <div class="ribbon red"><span>sale</span></div> 
+                <div class="ribbon red"><span>destaque</span></div>
                 <div class="image">
                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-11.jpg" />
                 </div>

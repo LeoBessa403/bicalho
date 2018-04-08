@@ -99,7 +99,7 @@
                         </div>
                         <div class="col-sm-4 col-md-3 no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon red"><span>sale</span></div> 
+                                <div class="ribbon red"><span>destaque</span></div>
                                 <div class="ribbon green"><span>bestseller</span></div> 
                                 <div class="image">
                                     <img alt="" src="assets/images/blank.gif" data-echo="assets/images/products/product-04.jpg" />
