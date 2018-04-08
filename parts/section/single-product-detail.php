@@ -13,7 +13,7 @@
         </div>
 
         <div class="buttons-holder">
-            <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
+            <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
             <a class="btn-add-to-compare" href="#">add to compare list</a>
         </div>
 
@@ -34,7 +34,7 @@
                     <a class="plus" href="#add"></a>
                 </form>
             </div>
-            <a id="addto-cart" href="index.php?page=cart" class="le-button huge">adicionar ao carrinho</a>
+            <a id="addto-cart" href="index.php?page=cart" class="le-button huge">add ao carrinho</a>
         </div><!-- /.qnt-holder -->
     </div><!-- /.body -->
 

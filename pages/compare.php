@@ -47,22 +47,22 @@
                         <td>&nbsp;</td>
                         <td class="text-center">
                             <div class="add-cart-button">
-                                <a class="le-button add_to_cart_button  product_type_simple" href="index.php?page=cart">adicionar ao carrinho</a>
+                                <a class="le-button add_to_cart_button  product_type_simple" href="index.php?page=cart">add ao carrinho</a>
                             </div>                    
                         </td>
                         <td class="text-center">
                             <div class="add-cart-button">
-                                <a class="le-button add_to_cart_button  product_type_simple" href="index.php?page=cart">adicionar ao carrinho</a>
+                                <a class="le-button add_to_cart_button  product_type_simple" href="index.php?page=cart">add ao carrinho</a>
                             </div>
                         </td>
                         <td class="text-center">
                             <div class="add-cart-button">
-                                <a class="le-button add_to_cart_button  product_type_simple" href="index.php?page=cart">adicionar ao carrinho</a>
+                                <a class="le-button add_to_cart_button  product_type_simple" href="index.php?page=cart">add ao carrinho</a>
                             </div>
                         </td>
                         <td class="text-center">
                             <div class="add-cart-button">
-                                <a class="le-button add_to_cart_button  product_type_variable" href="index.php?page=cart">adicionar ao carrinho</a>
+                                <a class="le-button add_to_cart_button  product_type_variable" href="index.php?page=cart">add ao carrinho</a>
                             </div>                    
                         </td>
                     </tr>

@@ -25,10 +25,10 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
+                                    <a href="index.php?page=single-product" class="le-button">add ao carrinho</a>
                                 </div>
                                 <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
+                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
                                     <a class="btn-add-to-compare" href="#">Compare</a>
                                 </div>
                             </div>
@@ -52,10 +52,10 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
+                                    <a href="index.php?page=single-product" class="le-button">add ao carrinho</a>
                                 </div>
                                 <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
+                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
                                     <a class="btn-add-to-compare" href="#">Compare</a>
                                 </div>
                             </div>
@@ -79,10 +79,10 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
+                                    <a href="index.php?page=single-product" class="le-button">add ao carrinho</a>
                                 </div>
                                 <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
+                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
                                     <a class="btn-add-to-compare" href="#">Compare</a>
                                 </div>
                             </div>
@@ -109,10 +109,10 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
+                                    <a href="index.php?page=single-product" class="le-button">add ao carrinho</a>
                                 </div>
                                 <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
+                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
                                     <a class="btn-add-to-compare" href="#">Compare</a>
                                 </div>
                             </div>
@@ -136,10 +136,10 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
+                                    <a href="index.php?page=single-product" class="le-button">add ao carrinho</a>
                                 </div>
                                 <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
+                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
                                     <a class="btn-add-to-compare" href="#">Compare</a>
                                 </div>
                             </div>
@@ -163,10 +163,10 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="index.php?page=single-product" class="le-button">adicionar ao carrinho</a>
+                                    <a href="index.php?page=single-product" class="le-button">add ao carrinho</a>
                                 </div>
                                 <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">adicionar aos favoritos</a>
+                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
                                     <a class="btn-add-to-compare" href="#">Compare</a>
                                 </div>
                             </div>
@@ -215,7 +215,7 @@
                     </div>
                     <div class="prices text-right">
                         <div class="price-current inline">$1199.00</div>
-                        <a href="cart.html" class="le-button big inline">adicionar ao carrinho</a>
+                        <a href="cart.html" class="le-button big inline">add ao carrinho</a>
                     </div>
                 </div><!-- /.product-item-holder -->
             </div><!-- /.col -->
