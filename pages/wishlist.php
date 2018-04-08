@@ -33,7 +33,7 @@
 						
 		                <div class="col-xs-12 col-sm-3 no-margin">
 		                	<div class="price">
-			                	<span class="amount">$169.00</span>							
+			                	<span class="amount">R$169.00</span>
 			                </div>
 		                </div>
 						
@@ -70,7 +70,7 @@
 						
 		                <div class="col-xs-12 col-sm-3 no-margin">
 		                	<div class="price">
-			                	<span class="amount">$1,199.95</span>							
+			                	<span class="amount">R$1,199.95</span>
 			                </div>
 		                </div>
 						

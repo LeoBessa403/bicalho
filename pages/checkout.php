@@ -90,7 +90,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-2 no-margin">
-                            <div class="price">$2000.00</div>
+                            <div class="price">R$2000.00</div>
                         </div>
                     </div><!-- /.order-item -->
 
@@ -105,7 +105,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-2 no-margin">
-                            <div class="price">$2000.00</div>
+                            <div class="price">R$2000.00</div>
                         </div>
                     </div><!-- /.order-item -->
 
@@ -120,7 +120,7 @@
                         </div>
 
                         <div class="col-xs-12 col-sm-2 no-margin">
-                            <div class="price">$2000.00</div>
+                            <div class="price">R$2000.00</div>
                         </div>
                     </div><!-- /.order-item -->
                 </form>
@@ -132,14 +132,14 @@
                         <ul class="tabled-data inverse-bold no-border">
                             <li>
                                 <label>cart subtotal</label>
-                                <div class="value ">$8434.00</div>
+                                <div class="value ">R$8434.00</div>
                             </li>
                             <li>
                                 <label>shipping</label>
                                 <div class="value">
                                     <div class="radio-group">
                                         <input class="le-radio" type="radio" name="group1" value="free"> <div class="radio-label bold">free shipping</div><br>
-                                        <input class="le-radio" type="radio" name="group1" value="local" checked>  <div class="radio-label">local delivery<br><span class="bold">$15</span></div>
+                                        <input class="le-radio" type="radio" name="group1" value="local" checked>  <div class="radio-label">local delivery<br><span class="bold">R$15</span></div>
                                     </div>
                                 </div>
                             </li>
@@ -148,7 +148,7 @@
                         <ul id="total-field" class="tabled-data inverse-bold ">
                             <li>
                                 <label>order total</label>
-                                <div class="value">$8434.00</div>
+                                <div class="value">R$8434.00</div>
                             </li>
                         </ul><!-- /.tabled-data -->
 

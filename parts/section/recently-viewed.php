@@ -30,7 +30,7 @@
 							<div class="brand">Sharp</div>
 						</div>
 						<div class="prices">
-							<div class="price-current text-right">$1199.00</div>
+							<div class="price-current text-right">por R$1199.00</div>
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
@@ -57,7 +57,7 @@
 							<div class="brand">zeiss</div>
 						</div>
 						<div class="prices">
-							<div class="price-current text-right">$1199.00</div>
+							<div class="price-current text-right">por R$1199.00</div>
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
@@ -84,7 +84,7 @@
 							<div class="brand">dell</div>
 						</div>
 						<div class="prices">
-							<div class="price-current text-right">$1199.00</div>
+							<div class="price-current text-right">por R$1199.00</div>
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
@@ -111,7 +111,7 @@
 							<div class="brand">harman</div>
 						</div>
 						<div class="prices">
-							<div class="price-current text-right">$1199.00</div>
+							<div class="price-current text-right">por R$1199.00</div>
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
@@ -138,7 +138,7 @@
 							<div class="brand">acer</div>
 						</div>
 						<div class="prices">
-							<div class="price-current text-right">$1199.00</div>
+							<div class="price-current text-right">por R$1199.00</div>
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
@@ -165,7 +165,7 @@
 							<div class="brand">apple</div>
 						</div>
 						<div class="prices">
-							<div class="price-current text-right">$1199.00</div>
+							<div class="price-current text-right">por R$1199.00</div>
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
@@ -192,7 +192,7 @@
 							<div class="brand">dell</div>
 						</div>
 						<div class="prices">
-							<div class="price-current text-right">$1199.00</div>
+							<div class="price-current text-right">por R$1199.00</div>
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">
@@ -219,7 +219,7 @@
 							<div class="brand">harman</div>
 						</div>
 						<div class="prices">
-							<div class="price-current text-right">$1199.00</div>
+							<div class="price-current text-right">por R$1199.00</div>
 						</div>
 						<div class="hover-area">
 							<div class="add-cart-button">

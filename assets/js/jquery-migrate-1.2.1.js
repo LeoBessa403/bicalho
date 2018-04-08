@@ -398,7 +398,7 @@ var eventAdd = jQuery.event.add,
 		if ( rhoverHack.test( events ) ) {
 			migrateWarn("'hover' pseudo-event is deprecated, use 'mouseenter mouseleave'");
 		}
-		return events && events.replace( rhoverHack, "mouseenter$1 mouseleave$1" );
+		return events && events.replace( rhoverHack, "mouseente$1 mouseleave$1" );
 	};
 
 // Event props removed in 1.9, put them back if needed; no practical way to warn them

@@ -13,8 +13,8 @@
                 <div class="col-xs-8 col-sm-8 no-margin">
                     <a href="#">Netbook Acer </a>
                     <div class="price">
-                        <div class="price-prev">$2000</div>
-                        <div class="price-current">$1873</div>
+                        <div class="price-prev">de R$2000</div>
+                        <div class="price-current">R$1873</div>
                     </div>
                 </div>  
             </div>
@@ -30,8 +30,8 @@
                 <div class="col-xs-8 col-sm-8 no-margin">
                     <a href="#">PowerShot Elph 115 16MP Digital Camera</a>
                     <div class="price">
-                        <div class="price-prev">$2000</div>
-                        <div class="price-current">$1873</div>
+                        <div class="price-prev">de R$2000</div>
+                        <div class="price-current">R$1873</div>
                     </div>
                 </div>  
             </div>
@@ -47,8 +47,8 @@
                 <div class="col-xs-8 col-sm-8 no-margin">
                     <a href="#">PowerShot Elph 115 16MP Digital Camera</a>
                     <div class="price">
-                        <div class="price-prev">$2000</div>
-                        <div class="price-current">$1873</div>
+                        <div class="price-prev">de R$2000</div>
+                        <div class="price-current">R$1873</div>
                     </div>
                 </div>  
             </div>
@@ -64,8 +64,8 @@
                 <div class="col-xs-8 col-sm-8 no-margin">
                     <a href="#">Netbook Acer </a>
                     <div class="price">
-                        <div class="price-prev">$2000</div>
-                        <div class="price-current">$1873</div>
+                        <div class="price-prev">de R$2000</div>
+                        <div class="price-current">R$1873</div>
                     </div>
                 </div>  
             </div>
@@ -81,8 +81,8 @@
                 <div class="col-xs-8 col-sm-8 no-margin">
                     <a href="#">PowerShot Elph 115 16MP Digital Camera</a>
                     <div class="price">
-                        <div class="price-prev">$2000</div>
-                        <div class="price-current">$1873</div>
+                        <div class="price-prev">de R$2000</div>
+                        <div class="price-current">R$1873</div>
                     </div>
                 </div>
             </div>

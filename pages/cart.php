@@ -150,7 +150,7 @@
                     <ul class="tabled-data no-border inverse-bold">
                         <li>
                             <label>cart subtotal</label>
-                            <div class="value pull-right">$8434.00</div>
+                            <div class="value pull-right">R$8434.00</div>
                         </li>
                         <li>
                             <label>shipping</label>
@@ -160,7 +160,7 @@
                     <ul id="total-price" class="tabled-data inverse-bold no-border">
                         <li>
                             <label>order total</label>
-                            <div class="value pull-right">$8434.00</div>
+                            <div class="value pull-right">R$8434.00</div>
                         </li>
                     </ul>
                     <div class="buttons-holder">

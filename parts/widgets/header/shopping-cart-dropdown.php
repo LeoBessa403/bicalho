@@ -19,7 +19,7 @@
                 <div class="total-price-basket">
                     <span class="lbl">meu carrinho:</span>
                     <span class="total-price">
-                        <span class="sign">$</span><span class="value">3219,00</span>
+                        <span class="sign">R$</span><span class="value">3219,00</span>
                     </span>
                 </div>
             </a>
@@ -34,7 +34,7 @@
                             </div>
                             <div class="col-xs-8 col-sm-8 no-margin">
                                 <div class="title">Blueberry</div>
-                                <div class="price">$270.00</div>
+                                <div class="price">R$270.00</div>
                             </div>
                         </div>
                         <a class="close-btn" href="#"></a>
@@ -50,7 +50,7 @@
                             </div>
                             <div class="col-xs-8 col-sm-8 no-margin">
                                 <div class="title">Blueberry</div>
-                                <div class="price">$270.00</div>
+                                <div class="price">R$270.00</div>
                             </div>
                         </div>
                         <a class="close-btn" href="#"></a>
@@ -66,7 +66,7 @@
                             </div>
                             <div class="col-xs-8 col-sm-8 no-margin">
                                 <div class="title">Blueberry</div>
-                                <div class="price">$270.00</div>
+                                <div class="price">R$270.00</div>
                             </div>
                         </div>
                         <a class="close-btn" href="#"></a>

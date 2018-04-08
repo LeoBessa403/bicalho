@@ -47,8 +47,8 @@
                                     <div class="brand">sony</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -76,8 +76,8 @@
                                     <div class="brand">nokia</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -104,8 +104,8 @@
                                     <div class="brand">sony</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -134,8 +134,8 @@
                                     <div class="brand">acer</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -163,8 +163,8 @@
                                     <div class="brand">sony</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -192,8 +192,8 @@
                                     <div class="brand">nokia</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -220,8 +220,8 @@
                                     <div class="brand">sony</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -250,8 +250,8 @@
                                     <div class="brand">acer</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -278,8 +278,8 @@
                                     <div class="brand">sony</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -348,8 +348,8 @@
                             </div><!-- /.body-holder -->
                             <div class="no-margin col-xs-12 col-sm-3 price-area">
                                 <div class="right-clmn">
-                                    <div class="price-current">$1199.00</div>
-                                    <div class="price-prev">$1399.00</div>
+                                    <div class="price-current">R$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
                                     <div class="availability"><label>availability:</label><span class="available">  in stock</span></div>
                                     <a class="le-button" href="#">add ao carrinho</a>
                                     <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -387,8 +387,8 @@
                             </div><!-- /.body-holder -->
                             <div class="no-margin col-xs-12 col-sm-3 price-area">
                                 <div class="right-clmn">
-                                    <div class="price-current">$1199.00</div>
-                                    <div class="price-prev">$1399.00</div>
+                                    <div class="price-current">R$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
                                     <div class="availability"><label>availability:</label><span class="not-available">out of stock</span></div>
                                     <a class="le-button disabled" href="#">add ao carrinho</a>
                                     <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -426,8 +426,8 @@
                             </div><!-- /.body-holder -->
                             <div class="no-margin col-xs-12 col-sm-3 price-area">
                                 <div class="right-clmn">
-                                    <div class="price-current">$1199.00</div>
-                                    <div class="price-prev">$1399.00</div>
+                                    <div class="price-current">R$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
                                     <div class="availability"><label>availability:</label><span class="available">in stock</span></div>
                                     <a class="le-button" href="#">add ao carrinho</a>
                                     <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -460,8 +460,8 @@
                             </div><!-- /.body-holder -->
                             <div class="no-margin col-xs-12 col-sm-3 price-area">
                                 <div class="right-clmn">
-                                    <div class="price-current">$1199.00</div>
-                                    <div class="price-prev">$1399.00</div>
+                                    <div class="price-current">R$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
                                     <div class="availability"><label>availability:</label><span class="available">  in stock</span></div>
                                     <a class="le-button" href="#">add ao carrinho</a>
                                     <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -495,8 +495,8 @@
                             </div><!-- /.body-holder -->
                             <div class="no-margin col-xs-12 col-sm-3 price-area">
                                 <div class="right-clmn">
-                                    <div class="price-current">$1199.00</div>
-                                    <div class="price-prev">$1399.00</div>
+                                    <div class="price-current">R$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
                                     <div class="availability"><label>availability:</label><span class="available">  in stock</span></div>
                                     <a class="le-button" href="#">add ao carrinho</a>
                                     <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>

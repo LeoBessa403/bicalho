@@ -21,7 +21,7 @@
                             </div>
                             <div class="prices">
 
-                                <div class="price-current text-right">$1199.00</div>
+                                <div class="price-current text-right">por R$1199.00</div>
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
@@ -48,7 +48,7 @@
                                 <div class="brand">acer</div>
                             </div>
                             <div class="prices">
-                                <div class="price-current text-right">$1199.00</div>
+                                <div class="price-current text-right">por R$1199.00</div>
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
@@ -75,7 +75,7 @@
                                 <div class="brand">canon</div>
                             </div>
                             <div class="prices">
-                                <div class="price-current text-right">$1199.00</div>
+                                <div class="price-current text-right">por R$1199.00</div>
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
@@ -105,7 +105,7 @@
                                 <div class="brand">fitbit zip</div>
                             </div>
                             <div class="prices">
-                                <div class="price-current text-right">$1199.00</div>
+                                <div class="price-current text-right">por R$1199.00</div>
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
@@ -132,7 +132,7 @@
                                 <div class="brand">canon</div>
                             </div>
                             <div class="prices">
-                                <div class="price-current text-right">$1199.00</div>
+                                <div class="price-current text-right">por R$1199.00</div>
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
@@ -159,7 +159,7 @@
                                 <div class="brand">acer</div>
                             </div>
                             <div class="prices">
-                                <div class="price-current text-right">$1199.00</div>
+                                <div class="price-current text-right">por R$1199.00</div>
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
@@ -214,7 +214,7 @@
                         <div class="brand">sony</div>
                     </div>
                     <div class="prices text-right">
-                        <div class="price-current inline">$1199.00</div>
+                        <div class="price-current inline">R$1199.00</div>
                         <a href="cart.html" class="le-button big inline">add ao carrinho</a>
                     </div>
                 </div><!-- /.product-item-holder -->

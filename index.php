@@ -73,7 +73,7 @@ $pages = array(
     <meta name="robots" content="all">
     <meta name="language" content="pt-BR"/>
     <meta name="country" content="BRA"/>
-    <meta name="currency" content="R$"/>
+    <meta name="currency" content="$"/>
 
     <title>Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio</title>
 

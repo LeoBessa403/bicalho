@@ -22,8 +22,8 @@
         </div>
         
         <div class="prices">
-            <div class="price-current">$1740.00</div>
-            <div class="price-prev">$2199.00</div>
+            <div class="price-current">R$1740.00</div>
+            <div class="price-prev">de R$2199.00</div>
         </div>
 
         <div class="qnt-holder">

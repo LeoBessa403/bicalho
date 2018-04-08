@@ -26,8 +26,8 @@
                                     <div class="brand">sony</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
 
                                 <div class="hover-area">
@@ -55,8 +55,8 @@
                                     <div class="brand">nokia</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -83,8 +83,8 @@
                                     <div class="brand">sony</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -113,8 +113,8 @@
                                     <div class="brand">acer</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -152,8 +152,8 @@
                                     <div class="brand">nokia</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -181,8 +181,8 @@
                                     <div class="brand">sony</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
 
                                 <div class="hover-area">
@@ -213,8 +213,8 @@
                                     <div class="brand">acer</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -242,8 +242,8 @@
                                     <div class="brand">sony</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -285,8 +285,8 @@
                                     <div class="brand">acer</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -315,8 +315,8 @@
                                     <div class="brand">sony</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -344,8 +344,8 @@
                                     <div class="brand">nokia</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
@@ -373,8 +373,8 @@
                                     <div class="brand">sony</div>
                                 </div>
                                 <div class="prices">
-                                    <div class="price-prev">$1399.00</div>
-                                    <div class="price-current pull-right">$1199.00</div>
+                                    <div class="price-prev">de R$1399.00</div>
+                                    <div class="price-current pull-right">por R$1199.00</div>
                                 </div>
 
                                 <div class="hover-area">

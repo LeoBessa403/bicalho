@@ -72,18 +72,18 @@
                     <tr class="comparison-item price">
                         <th>Price</th>
                         <td class="comparison-item-cell odd product_39">
-                            <span class="amount">$629.99</span>                        
+                            <span class="amount">R$629.99</span>
                         </td>
                         <td class="comparison-item-cell even product_34">
-                            <del><span class="amount">$299.99</span></del> 
-                            <ins><span class="amount">$269.99</span></ins>                        
+                            <del><span class="amount">R$299.99</span></del>
+                            <ins><span class="amount">R$269.99</span></ins>
                         </td>
                         <td class="comparison-item-cell odd product_30">
-                            <span class="amount">$399.99</span>                        
+                            <span class="amount">R$399.99</span>
                         </td>
                         <td class="comparison-item-cell even product_20">
-                            <del><span class="amount">$329.99</span></del> 
-                            <ins><span class="amount">$249.99</span>&ndash;<span class="amount">$329.99</span></ins>                        
+                            <del><span class="amount">R$329.99</span></del>
+                            <ins><span class="amount">R$249.99</span>&ndash;<span class="amount">R$329.99</span></ins>
                         </td>
                     </tr>
                                                                                             
@@ -122,10 +122,10 @@
                                     
                     <tr class="price repeated">
                         <th>Price</th>
-                        <td class="odd product_39"><span class="amount">$629.99</span></td>
-                        <td class="even product_34"><del><span class="amount">$299.99</span></del> <ins><span class="amount">$269.99</span></ins></td>
-                        <td class="odd product_30"><span class="amount">$399.99</span></td>
-                        <td class="even product_20"><del><span class="amount">$329.99</span></del> <ins><span class="amount">$249.99</span>&ndash;<span class="amount">$329.99</span></ins></td>
+                        <td class="odd product_39"><span class="amount">R$629.99</span></td>
+                        <td class="even product_34"><del><span class="amount">R$299.99</span></del> <ins><span class="amount">R$269.99</span></ins></td>
+                        <td class="odd product_30"><span class="amount">R$399.99</span></td>
+                        <td class="even product_20"><del><span class="amount">R$329.99</span></del> <ins><span class="amount">R$249.99</span>&ndash;<span class="amount">R$329.99</span></ins></td>
                     </tr>
                     
                 </tbody>
