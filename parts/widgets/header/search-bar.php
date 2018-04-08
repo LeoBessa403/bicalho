@@ -1,19 +1,26 @@
 <div class="contact-row">
     <div class="phone inline">
-        <i class="fa fa-phone"></i> (+800) 123 456 7890
+        <a class="link-phone" href="tel:06130461009" target="_blank">
+            <i class="fa fa-phone"></i> 61) 3046-1009
+        </a>
+    </div>
+    <div class="phone inline">
+        <a class="link-phone" href="tel:061993704240" target="_blank">
+            <i class="fa fa-phone"></i> (61) 99370-4240
+        </a>
     </div>
     <div class="contact inline">
-        <i class="fa fa-envelope"></i> contact@<span class="le-color">oursupport.com</span>
+        <i class="fa fa-envelope"></i> contact@bicalhorefrigeracao.com</span>
     </div>
 </div><!-- /.contact-row -->
 <!-- ============================================================= SEARCH AREA ============================================================= -->
 <div class="search-area">
     <form>
         <div class="control-group">
-            <input class="search-field" placeholder="Search for item" />
+            <input class="search-field" placeholder="Search for item"/>
 
             <div class="custom-select categories-filter animate-dropdown">
-                <section>     
+                <section>
                     <select class="styled">
                         <option>All Categories</option>
                         <option>Laptops</option>
@@ -24,7 +31,7 @@
                 </section>
             </div>
 
-            <a class="search-button" href="#" ></a>    
+            <a class="search-button" href="#"></a>
 
         </div>
     </form>
