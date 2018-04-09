@@ -9,7 +9,6 @@ if ($servidor == "web") {
     $config = array('HOME' => 'http://localhost/bicalho/');
 }
 
-
 define('BASE_URL', $config['HOME']);
 define('MC_ROOT', dirname(__FILE__));
 $page = isset($_GET['page']) ? $_GET['page'] : 'home-2';
@@ -22,26 +21,19 @@ $pages = array(
     'category-grid-2' => 'Category 2 - Grid/List',
     'single-product' => 'Single Product',
     'single-product-sidebar' => 'Single Product with Sidebar',
-    'cart' => 'Shopping Cart',
-    'checkout' => 'Checkout',
-    'about' => 'About Us',
-    'contact' => 'Contact Us',
-    'faq' => 'FAQ',
-    'terms' => 'Terms & Conditions',
-    'authentication' => 'Login/Register',
-    '404' => '404',
+    'about' => 'Sobre nós',
+    'contact' => 'Contatos',
+    'faq' => 'Dúvidas',
     'wishlist' => 'Favoritos',
-    'compare' => 'Product Comparison',
-    'track-your-order' => 'Track your Order'
+    'compare' => 'Comparação de produtos',
 );
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">-->
     <meta name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height,target-densitydpi=medium-dpi, user-scalable=0"/>
     <meta name="description"
