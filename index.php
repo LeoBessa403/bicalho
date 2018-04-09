@@ -1,14 +1,4 @@
 <?php
-// Define the root folder and base URL for the application
-//function baseURL()
-//{
-//    return sprintf(
-//        "%s://%s%s",
-//        isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
-//        $_SERVER['SERVER_NAME'],
-//        dirname($_SERVER['REQUEST_URI'])
-//    );
-//}
 
 //$servidor = "local";
 $servidor = "web";
@@ -20,7 +10,7 @@ if ($servidor == "web") {
 }
 
 
-define('BASE_URL',  $config['HOME']);
+define('BASE_URL', $config['HOME']);
 define('MC_ROOT', dirname(__FILE__));
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
 if ($page == 'home') {
@@ -83,7 +73,7 @@ $pages = array(
     <meta name="robots" content="all">
     <meta name="language" content="pt-BR"/>
     <meta name="country" content="BRA"/>
-    <meta name="currency" content="$"/>
+    <meta name="currency" content="R$"/>
 
     <title>Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio</title>
 
@@ -102,7 +92,6 @@ $pages = array(
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Icons/Glyphs -->
-    <!--		<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/font-awesome.min.css">
 
     <!-- Favicon -->
