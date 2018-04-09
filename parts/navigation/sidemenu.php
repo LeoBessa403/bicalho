@@ -109,7 +109,6 @@
                     </li>
                 </ul>
             </li><!-- /.menu-item -->
-            <li><a href="http://themeforest.net/item/media-center-electronic-ecommerce-html-template/8178892?ref=shaikrilwan">Buy this Theme</a></li>
         </ul><!-- /.nav -->
     </nav><!-- /.megamenu-horizontal -->
 </div><!-- /.side-menu -->
