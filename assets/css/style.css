@@ -5111,7 +5111,7 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     border: 1px solid #e0e0e0;
     padding: 18px;
     color: #3D3D3D;
-    width: 82%;
+    width: 80%;
     border-radius: 5px 0 0 5px;
 }
 
@@ -5195,7 +5195,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     -o-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
 }
 
 #footer .payment-methods li img {
@@ -5204,7 +5203,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -o-filter: grayscale(100%);
-    -ms-filter: grayscale(100%);
 }
 
 /*===================================================================================*/

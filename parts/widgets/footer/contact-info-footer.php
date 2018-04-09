@@ -2,7 +2,7 @@
 <div class="contact-info">
     <div class="footer-logo">
         <a href="<?php echo BASE_URL; ?>">
-            <img alt="logo" src="<?php echo BASE_URL; ?><?php echo BASE_URL; ?>assets/images/logo.png" width="233" height="54"/>
+            <img alt="logo" src="<?php echo BASE_URL; ?>assets/images/logo.png" width="233" height="54"/>
         </a>
     </div><!-- /.footer-logo -->
 
