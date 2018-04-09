@@ -12,7 +12,7 @@ if ($servidor == "web") {
 
 define('BASE_URL', $config['HOME']);
 define('MC_ROOT', dirname(__FILE__));
-$page = isset($_GET['page']) ? $_GET['page'] : 'home';
+$page = isset($_GET['page']) ? $_GET['page'] : 'home-2';
 //if ($page == 'home') {
     $_GET['style'] = 'alt2';
 //} elseif ($page == 'home-2') {
