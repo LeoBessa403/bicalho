@@ -888,6 +888,7 @@ img[src="assets/images/blank.gif"] {
 header {
     padding: 40px 0 31px 0;
     border-bottom: 1px solid #e0e0e0;
+    background-color: #2C4591;
 }
 
 header.ver2 {
@@ -923,6 +924,7 @@ header .top-search-holder .search-area {
     border: 3px solid #c6c6c6;
     border-radius: 7px;
     margin: 8px 0 0 0;
+    background-color: #ffffff;
 }
 
 header .top-search-holder .search-area .search-field, header .top-search-holder .search-area .search-button, header .top-search-holder .search-area .categories-filter {
@@ -940,7 +942,7 @@ header .top-search-holder .search-area .search-button {
     float: right;
     display: inline-block;
     text-align: center;
-    padding: 15px 15px 13px 15px;
+    padding: 15px;
     margin: -3px -3px 0 0;
     border-radius: 0 5px 5px 0;
 }
@@ -953,7 +955,6 @@ header .top-search-holder .search-area .search-button:after {
     content: '\f002';
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -974,12 +975,12 @@ header .top-cart-row .wishlist-compare-holder {
 }
 
 header .top-cart-row .wishlist-compare-holder a {
-    color: #3D3D3D;
+    color: #ffffff;
 }
 
 header .top-cart-row .wishlist-compare-holder i {
     transition: 0.3s ease;
-    color: #c6c6c6;
+    color: #ffffff;
     margin: 0 10px 0 0px;
     font-size: 14px;
 }
@@ -1062,7 +1063,7 @@ header .top-cart-row .top-cart-holder .dropdown-toggle {
 header .top-cart-row .top-cart-holder .dropdown-toggle .lbl {
     font-size: 14px;
     line-height: 21px;
-    color: #3D3D3D;
+    color: #ffffff;
     display: block;
 }
 
@@ -1087,7 +1088,7 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     text-align: center;
     display: inline-block;
     line-height: 44px;
-    padding-left: 7px;
+    padding: 5px;
     border-left: 1px solid #e0e0e0;
 }
 
@@ -1657,7 +1658,7 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 }
 
 #recently-reviewd {
-    padding: 69px 0 10px 0;
+    padding: 10px 0 10px 0;
 }
 
 #top-brands {
@@ -2595,7 +2596,7 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 
 #owl-recently-viewed .owl-wrapper-outer, #owl-recently-viewed .owl-stage-outer, #owl-recently-viewed-2 .owl-wrapper-outer, #owl-recently-viewed-2 .owl-stage-outer {
     width: 100.1%;
-    padding-bottom: 70px;
+    padding-bottom: 88px;
 }
 
 #owl-recently-viewed .owl-wrapper-outer .owl-item .product-item-holder, #owl-recently-viewed .owl-stage-outer .owl-item .product-item-holder, #owl-recently-viewed-2 .owl-wrapper-outer .owl-item .product-item-holder, #owl-recently-viewed-2 .owl-stage-outer .owl-item .product-item-holder {

@@ -1,7 +1,7 @@
 <?php
 
-//$servidor = "local";
-$servidor = "web";
+$servidor = "local";
+//$servidor = "web";
 
 if ($servidor == "web") {
     $config = array('HOME' => 'http://bicalhorefrigeracao.com/');
@@ -13,21 +13,21 @@ if ($servidor == "web") {
 define('BASE_URL', $config['HOME']);
 define('MC_ROOT', dirname(__FILE__));
 $page = isset($_GET['page']) ? $_GET['page'] : 'home';
-if ($page == 'home') {
+//if ($page == 'home') {
     $_GET['style'] = 'alt2';
-} elseif ($page == 'home-2') {
-    $_GET['style'] = 'alt';
-}
+//} elseif ($page == 'home-2') {
+//    $_GET['style'] = 'alt';
+//}
 
-if (!isset ($_GET['style'])) {
-    $_GET['style'] = 'alt';
-}
+//if (!isset ($_GET['style'])) {
+//    $_GET['style'] = 'alt';
+//}
 
-if ($_GET['style'] == 'alt') {
+//if ($_GET['style'] == 'alt') {
     $headerStyle = 2;
-} else {
-    $headerStyle = 1;
-}
+//} else {
+//    $headerStyle = 1;
+//}
 
 //echo $headerStyle; exit;
 
