@@ -10,8 +10,8 @@
 //    );
 //}
 
-$servidor = "local";
-//$servidor = "web";
+//$servidor = "local";
+$servidor = "web";
 
 if ($servidor == "web") {
     $config = array('HOME' => 'http://bicalhorefrigeracao.com/');
@@ -102,7 +102,6 @@ $pages = array(
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Icons/Glyphs -->
-    <!--		<link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/font-awesome.min.css">-->
     <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/font-awesome.min.css">
 
     <!-- Favicon -->
