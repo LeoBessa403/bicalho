@@ -10,7 +10,10 @@
         </a>
     </div>
     <div class="contact inline">
-        <i class="fa fa-envelope"></i> contato@bicalhorefrigeracao.com</span>
+        <a href="mailto:contato@bicalhorefrigeracao.com">
+            <i class="fa fa-envelope"></i> contato@bicalhorefrigeracao.com</span>
+        </a>
+
     </div>
 </div><!-- /.contact-row -->
 <!-- ============================================================= SEARCH AREA ============================================================= -->
