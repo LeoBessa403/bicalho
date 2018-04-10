@@ -3,8 +3,8 @@
 function servidor_inicial()
 {
 
-//    $servidor = "local";
-    $servidor = "web";
+    $servidor = "local";
+//    $servidor = "web";
 
     if ($servidor == "web") {
         $config = array('HOME' => 'http://bicalhorefrigeracao.com/', 'HOST' => 'localhost', 'USER' => 'gejdo247_gej', 'PASS' => 'Admin101*', 'DBSA' => 'gejdo247_gej');
