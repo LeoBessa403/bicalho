@@ -17,7 +17,7 @@
                 </div>
                 <div class="body">
                     <div class="title">
-                        <a href="index.php?page=single-product">LC-70UD1U 70" class aquos 4K ultra HD</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">LC-70UD1U 70" class aquos 4K ultra HD</a>
                     </div>
                     <div class="brand">sharp</div>
                 </div>
@@ -26,7 +26,7 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add ao carrinho</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
                     </div>
                     <div class="wish-compare">
                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="body">
                     <div class="title">
-                        <a href="index.php?page=single-product">cinemizer OLED 3D virtual reality TV Video</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">cinemizer OLED 3D virtual reality TV Video</a>
                     </div>
                     <div class="brand">zeiss</div>
                 </div>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add ao carrinho</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
                     </div>
                     <div class="wish-compare">
                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="body">
                     <div class="title">
-                        <a href="index.php?page=single-product">s2340T23" full HD multi-Touch Monitor</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">s2340T23" full HD multi-Touch Monitor</a>
                     </div>
                     <div class="brand">dell</div>
                 </div>
@@ -80,7 +80,7 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add ao carrinho</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
                     </div>
                     <div class="wish-compare">
                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -98,7 +98,7 @@
                 </div>
                 <div class="body">
                     <div class="title">
-                        <a href="index.php?page=single-product">kardon BDS 7772/120 integrated 3D</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">kardon BDS 7772/120 integrated 3D</a>
                     </div>
                     <div class="brand">harman</div>
                 </div>
@@ -107,7 +107,7 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add ao carrinho</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
                     </div>
                     <div class="wish-compare">
                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -125,7 +125,7 @@
                 </div>
                 <div class="body">
                     <div class="title">
-                        <a href="index.php?page=single-product">netbook acer travel B113-E-10072</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">netbook acer travel B113-E-10072</a>
                     </div>
                     <div class="brand">acer</div>
                 </div>
@@ -134,7 +134,7 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add ao carrinho</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
                     </div>
                     <div class="wish-compare">
                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -151,7 +151,7 @@
                 </div>
                 <div class="body">
                     <div class="title">
-                        <a href="index.php?page=single-product">iPod touch 5th generation,64GB, blue</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">iPod touch 5th generation,64GB, blue</a>
                     </div>
                     <div class="brand">apple</div>
                 </div>
@@ -160,7 +160,7 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add ao carrinho</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
                     </div>
                     <div class="wish-compare">
                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -177,7 +177,7 @@
                 </div>
                 <div class="body">
                     <div class="title">
-                        <a href="index.php?page=single-product">s2340T23" full HD multi-Touch Monitor</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">s2340T23" full HD multi-Touch Monitor</a>
                     </div>
                     <div class="brand">dell</div>
                 </div>
@@ -186,7 +186,7 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add ao carrinho</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
                     </div>
                     <div class="wish-compare">
                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -205,7 +205,7 @@
                 <div class="body">
 
                     <div class="title">
-                        <a href="index.php?page=single-product">kardon BDS 7772/120 integrated 3D</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">kardon BDS 7772/120 integrated 3D</a>
                     </div>
                     <div class="brand">harman</div>
                 </div>
@@ -215,7 +215,7 @@
                 </div>
                 <div class="hover-area">
                     <div class="add-cart-button">
-                        <a href="index.php?page=single-product" class="le-button">add ao carrinho</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
                     </div>
                     <div class="wish-compare">
                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>

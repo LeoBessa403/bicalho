@@ -6,7 +6,7 @@
             <li>
                 <div class="row">
                     <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="index.php?page=single-product">Galaxy Tab GT-P5210, 10" 16GB Wi-Fi</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">Galaxy Tab GT-P5210, 10" 16GB Wi-Fi</a>
                         <div class="price">
                             <div class="price-prev">de R$2000</div>
                             <div class="price-current">R$1873</div>
@@ -14,7 +14,7 @@
                     </div>  
 
                     <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="thumb-holder">
                             <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-small-07.jpg" />
                         </a>
                     </div>
@@ -24,7 +24,7 @@
             <li>
                 <div class="row">
                     <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="index.php?page=single-product">PowerShot Elph 115 16MP Digital Camera</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">PowerShot Elph 115 16MP Digital Camera</a>
                         <div class="price">
                             <div class="price-prev">de R$2000</div>
                             <div class="price-current">R$1873</div>
@@ -32,7 +32,7 @@
                     </div>  
 
                     <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="thumb-holder">
                             <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-small-08.jpg" />
                         </a>
                     </div>
@@ -42,7 +42,7 @@
             <li>
                 <div class="row">
                     <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="index.php?page=single-product">Surface RT 64GB, Wi-Fi, 10.6in - Dark Titanium</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">Surface RT 64GB, Wi-Fi, 10.6in - Dark Titanium</a>
                         <div class="price">
                             <div class="price-prev">de R$2000</div>
                             <div class="price-current">R$1873</div>
@@ -50,7 +50,7 @@
                     </div>  
 
                     <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="thumb-holder">
                             <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-small-09.jpg" />
                         </a>
                     </div>

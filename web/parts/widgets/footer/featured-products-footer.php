@@ -6,16 +6,17 @@
             <li>
                 <div class="row">
                     <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="#">Netbook Acer Travel B113-E-10072</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">Netbook Acer Travel B113-E-10072</a>
                         <div class="price">
                             <div class="price-prev">de R$2000</div>
                             <div class="price-current">R$1873</div>
                         </div>
-                    </div>  
+                    </div>
 
                     <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
-                            <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-small-01.jpg" />
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="thumb-holder">
+                            <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                 data-echo="<?php echo PASTASITE; ?>images/products/product-small-01.jpg"/>
                         </a>
                     </div>
                 </div>
@@ -24,33 +25,37 @@
             <li>
                 <div class="row">
                     <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="index.php?page=single-product">PowerShot Elph 115 16MP Digital Camera</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">PowerShot Elph 115 16MP Digital
+                            Camera</a>
                         <div class="price">
                             <div class="price-prev">de R$2000</div>
                             <div class="price-current">R$1873</div>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
-                            <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-small-02.jpg" />
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="thumb-holder">
+                            <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                 data-echo="<?php echo PASTASITE; ?>images/products/product-small-02.jpg"/>
                         </a>
                     </div>
                 </div>
             </li>
-            
+
             <li>
-                <div class="row">                        
+                <div class="row">
                     <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="index.php?page=single-product">PowerShot Elph 115 16MP Digital Camera</a>
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">PowerShot Elph 115 16MP Digital
+                            Camera</a>
                         <div class="price">
                             <div class="price-prev">de R$2000</div>
                             <div class="price-current">R$1873</div>
                         </div>
-                    </div>  
+                    </div>
 
                     <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="#" class="thumb-holder">
-                            <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-small-03.jpg" />
+                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="thumb-holder">
+                            <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                 data-echo="<?php echo PASTASITE; ?>images/products/product-small-03.jpg"/>
                         </a>
                     </div>
                 </div>

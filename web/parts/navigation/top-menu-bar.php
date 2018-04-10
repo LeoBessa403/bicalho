@@ -4,22 +4,17 @@
         <div class="col-xs-12 col-sm-6 no-margin">
             <ul>
                 <li><a href="<?php echo PASTASITE;?>">Home</a></li>
-                <li><a href="index.php?page=faq">Dúvidas</a></li>
-                <li><a href="index.php?page=contact">Contatos</a></li>
+                <li><a href="#">Dúvidas</a></li>
+                <li><a href="#">Contatos</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#pages">Páginas</a>
                     <ul class="dropdown-menu" role="menu">
                         <?php foreach ( $pages as $key => $packagePage ) : ?>
-                        <li><a href="index.php?page=<?php echo $key;?>&amp;style=<?php echo $_GET['style'];?>"><?php echo $packagePage;?></a></li>
+                        <li><a href="#"><?php echo $packagePage;?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </li>
-            </ul>
-        </div><!-- /.col -->
-
-        <div class="col-xs-12 col-sm-6 no-margin">
-            <ul class="right">
-                <li><a href="index.php?page=authentication">se inscrever</a></li>
+                <li><a href="#">se inscrever</a></li>
             </ul>
         </div><!-- /.col -->
     </div><!-- /.container -->

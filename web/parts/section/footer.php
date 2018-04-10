@@ -45,7 +45,7 @@
         <div class="container">
             <div class="col-xs-12 col-sm-6 no-margin">
                 <div class="copyright">
-                    &copy; <a href="#">Leo Bessa</a> - Todos os direitos reservados
+                    &copy; DESENVOLVIMENTO LEO BESSA <?php echo date("Y"); ?>
                 </div><!-- /.copyright -->
             </div>
             <div class="col-xs-12 col-sm-6 no-margin">
