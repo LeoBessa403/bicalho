@@ -1,8 +1,8 @@
 <!-- ============================================================= CONTACT INFO ============================================================= -->
 <div class="contact-info">
     <div class="footer-logo">
-        <a href="<?php echo BASE_URL; ?>">
-            <img alt="logo" src="<?php echo BASE_URL; ?>assets/images/logo.png" width="233" height="54"/>
+        <a href="<?php echo PASTASITE; ?>">
+            <img alt="logo" src="<?php echo PASTASITE; ?>assets/images/logo.png" width="233" height="54"/>
         </a>
     </div><!-- /.footer-logo -->
 

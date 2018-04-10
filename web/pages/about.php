@@ -24,7 +24,7 @@
 					<ul class="team-members list-unstyled">
 						
 						<li class="team-member">
-							<img src="<?php echo BASE_URL; ?>assets/images/team/1.jpg" alt="" class="profile-pic img-responsive">
+							<img src="<?php echo PASTASITE; ?>assets/images/team/1.jpg" alt="" class="profile-pic img-responsive">
 							<div class="profile">
 								<h3>John Snow <small class="designation">CEO/Founder</small></h3>
 								<ul class="social list-unstyled">
@@ -57,7 +57,7 @@
 						</li><!-- /.team-member -->
 
 						<li class="team-member">
-							<img src="<?php echo BASE_URL; ?>assets/images/team/2.jpg" alt="" class="profile-pic img-responsive">
+							<img src="<?php echo PASTASITE; ?>assets/images/team/2.jpg" alt="" class="profile-pic img-responsive">
 							<div class="profile">
 								<h3>Smith John <small class="designation">Support Staff</small></h3>
 								<ul class="social list-unstyled">
@@ -140,12 +140,12 @@
 		<div class="container">
 			<h2 class="sr-only">Our Clients</h2>
 			<ul class="list-unstyled row list-clients">
-				<li class="col-md-2"><a href="#"><img alt="" src="<?php echo BASE_URL; ?>assets/images/brands/brand-01.jpg" /></a></li>
-				<li class="col-md-2"><a href="#"><img alt="" src="<?php echo BASE_URL; ?>assets/images/brands/brand-02.jpg" /></a></li>
-				<li class="col-md-2"><a href="#"><img alt="" src="<?php echo BASE_URL; ?>assets/images/brands/brand-03.jpg" /></a></li>
-				<li class="col-md-2"><a href="#"><img alt="" src="<?php echo BASE_URL; ?>assets/images/brands/brand-04.jpg" /></a></li>
-				<li class="col-md-2"><a href="#"><img alt="" src="<?php echo BASE_URL; ?>assets/images/brands/brand-01.jpg" /></a></li>
-				<li class="col-md-2"><a href="#"><img alt="" src="<?php echo BASE_URL; ?>assets/images/brands/brand-02.jpg" /></a></li>
+				<li class="col-md-2"><a href="#"><img alt="" src="<?php echo PASTASITE; ?>assets/images/brands/brand-01.jpg" /></a></li>
+				<li class="col-md-2"><a href="#"><img alt="" src="<?php echo PASTASITE; ?>assets/images/brands/brand-02.jpg" /></a></li>
+				<li class="col-md-2"><a href="#"><img alt="" src="<?php echo PASTASITE; ?>assets/images/brands/brand-03.jpg" /></a></li>
+				<li class="col-md-2"><a href="#"><img alt="" src="<?php echo PASTASITE; ?>assets/images/brands/brand-04.jpg" /></a></li>
+				<li class="col-md-2"><a href="#"><img alt="" src="<?php echo PASTASITE; ?>assets/images/brands/brand-01.jpg" /></a></li>
+				<li class="col-md-2"><a href="#"><img alt="" src="<?php echo PASTASITE; ?>assets/images/brands/brand-02.jpg" /></a></li>
 			</ul>
 		</div>
 	</section><!-- /#our-clients .row -->

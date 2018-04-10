@@ -6,7 +6,7 @@
             <div class="row no-margin cart-item">
                 <div class="col-xs-12 col-sm-2 no-margin">
                     <a href="#" class="thumb-holder">
-                        <img class="lazy" alt="" src="<?php echo BASE_URL; ?>assets/images/products/product-small-01.jpg" />
+                        <img class="lazy" alt="" src="<?php echo PASTASITE; ?>assets/images/products/product-small-01.jpg" />
                     </a>
                 </div>
 
@@ -40,7 +40,7 @@
             <div class="row no-margin cart-item">
                 <div class="col-xs-12 col-sm-2 no-margin">
                     <a href="#" class="thumb-holder">
-                        <img class="lazy" alt="" src="<?php echo BASE_URL; ?>assets/images/products/product-small-01.jpg" />
+                        <img class="lazy" alt="" src="<?php echo PASTASITE; ?>assets/images/products/product-small-01.jpg" />
                     </a>
                 </div>
 
@@ -74,7 +74,7 @@
             <div class="row no-margin cart-item">
                 <div class="col-xs-12 col-sm-2 no-margin">
                     <a href="#" class="thumb-holder">
-                        <img class="lazy" alt="" src="<?php echo BASE_URL; ?>assets/images/products/product-small-01.jpg" />
+                        <img class="lazy" alt="" src="<?php echo PASTASITE; ?>assets/images/products/product-small-01.jpg" />
                     </a>
                 </div>
 
@@ -108,7 +108,7 @@
             <div class="row no-margin cart-item">
                 <div class="col-xs-12 col-sm-2 no-margin">
                     <a href="#" class="thumb-holder">
-                        <img class="lazy" alt="" src="<?php echo BASE_URL; ?>assets/images/products/product-small-01.jpg" />
+                        <img class="lazy" alt="" src="<?php echo PASTASITE; ?>assets/images/products/product-small-01.jpg" />
                     </a>
                 </div>
 
@@ -164,8 +164,8 @@
                         </li>
                     </ul>
                     <div class="buttons-holder">
-                        <a class="le-button big" href="<?php echo BASE_URL;?>/index.php?page=checkout" >checkout</a>
-                        <a class="simple-link block" href="<?php echo BASE_URL;?>/index.php?page=home" >continue shopping</a>
+                        <a class="le-button big" href="<?php echo PASTASITE;?>/index.php?page=checkout" >checkout</a>
+                        <a class="simple-link block" href="<?php echo PASTASITE;?>/index.php?page=home" >continue shopping</a>
                     </div>
                 </div>
             </div><!-- /.widget -->

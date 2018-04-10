@@ -17,28 +17,28 @@
                         <td class="text-center">
                             <div class="image-wrap">
                                 <a data-product_id="39" href="#" class="remove-link"><i class="fa fa-times-circle"></i></a>
-                                <img width="220" height="154" alt="Iconia W700" class="attachment-yith-woocompare-image" src="<?php echo BASE_URL; ?>assets/images/products/product-01.jpg">                        
+                                <img width="220" height="154" alt="Iconia W700" class="attachment-yith-woocompare-image" src="<?php echo PASTASITE; ?>assets/images/products/product-01.jpg">                        
                             </div>
                             <p><strong>Iconia W700</strong></p>
                         </td>
                         <td class="text-center">
                             <div class="image-wrap">
                                 <a data-product_id="34" href="#" class="remove-link"><i class="fa fa-times-circle"></i></a>
-                                <img width="220" height="154" alt="POV Action Cam" class="attachment-yith-woocompare-image" src="<?php echo BASE_URL; ?>assets/images/products/product-02.jpg">                        
+                                <img width="220" height="154" alt="POV Action Cam" class="attachment-yith-woocompare-image" src="<?php echo PASTASITE; ?>assets/images/products/product-02.jpg">                        
                             </div>
                             <p><strong>AS100V Action Cam</strong></p>
                         </td>
                         <td class="text-center">
                             <div class="image-wrap">
                                 <a data-product_id="30" href="#" class="remove-link"><i class="fa fa-times-circle"></i></a>
-                                <img width="220" height="154" alt="PlayStation 4" class="attachment-yith-woocompare-image" src="<?php echo BASE_URL; ?>assets/images/products/product-03.jpg">                        
+                                <img width="220" height="154" alt="PlayStation 4" class="attachment-yith-woocompare-image" src="<?php echo PASTASITE; ?>assets/images/products/product-03.jpg">                        
                             </div>
                             <p><strong>PlayStation 4</strong></p>
                         </td>
                         <td class="text-center">
                             <div class="image-wrap">
                                 <a data-product_id="20" href="#" class="remove-link"><i class="fa fa-times-circle"></i></a>
-                                <img width="220" height="154" alt="Cyber-shot Digital Camera WX300" class="attachment-yith-woocompare-image" src="<?php echo BASE_URL; ?>assets/images/products/product-04.jpg">                       
+                                <img width="220" height="154" alt="Cyber-shot Digital Camera WX300" class="attachment-yith-woocompare-image" src="<?php echo PASTASITE; ?>assets/images/products/product-04.jpg">                       
                             </div>
                             <p><strong>Cyber-shot Digital Camera WX300</strong></p>
                         </td>

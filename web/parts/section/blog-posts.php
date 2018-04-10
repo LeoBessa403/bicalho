@@ -12,7 +12,7 @@
 		</div><!-- /.format-wrapper -->
 		<div class="post-content">
 			<div class="post-media">
-				<img src="<?php echo BASE_URL; ?>assets/images/blog-post/blog-post-image.jpg" alt="">
+				<img src="<?php echo PASTASITE; ?>assets/images/blog-post/blog-post-image.jpg" alt="">
 			</div>
 			<h2 class="post-title">A Beautiful Day &ndash; Standard Post with Image</h2>
 			<ul class="meta">

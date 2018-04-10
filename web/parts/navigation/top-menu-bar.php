@@ -3,7 +3,7 @@
     <div class="container">
         <div class="col-xs-12 col-sm-6 no-margin">
             <ul>
-                <li><a href="<?php echo BASE_URL;?>/index.php?page=home">Home</a></li>
+                <li><a href="<?php echo PASTASITE;?>">Home</a></li>
                 <li><a href="index.php?page=faq">Dúvidas</a></li>
                 <li><a href="index.php?page=contact">Contatos</a></li>
                 <li class="dropdown">

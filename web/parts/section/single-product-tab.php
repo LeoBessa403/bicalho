@@ -102,7 +102,7 @@
                             <div class="row no-margin">
                                 <div class="col-lg-1 col-xs-12 col-sm-2 no-margin">
                                     <div class="avatar">
-                                        <img alt="avatar" src="<?php echo BASE_URL; ?>assets/images/default-avatar.jpg">
+                                        <img alt="avatar" src="<?php echo PASTASITE; ?>assets/images/default-avatar.jpg">
                                     </div><!-- /.avatar -->
                                 </div><!-- /.col -->
 
@@ -133,7 +133,7 @@
                             <div class="row no-margin">
                                 <div class="col-lg-1 col-xs-12 col-sm-2 no-margin">
                                     <div class="avatar">
-                                        <img alt="avatar" src="<?php echo BASE_URL; ?>assets/images/default-avatar.jpg">
+                                        <img alt="avatar" src="<?php echo PASTASITE; ?>assets/images/default-avatar.jpg">
                                     </div><!-- /.avatar -->
                                 </div><!-- /.col -->
 
@@ -164,7 +164,7 @@
                             <div class="row no-margin">
                                 <div class="col-lg-1 col-xs-12 col-sm-2 no-margin">
                                     <div class="avatar">
-                                        <img alt="avatar" src="<?php echo BASE_URL; ?>assets/images/default-avatar.jpg">
+                                        <img alt="avatar" src="<?php echo PASTASITE; ?>assets/images/default-avatar.jpg">
                                     </div><!-- /.avatar -->
                                 </div><!-- /.col -->
 

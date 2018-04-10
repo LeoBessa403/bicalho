@@ -3,7 +3,7 @@
 <div id="hero">
 	<div id="owl-main" class="owl-carousel height-lg owl-inner-nav owl-ui-lg">
 		
-		<div class="item" style="background-image: url(<?php echo BASE_URL; ?>assets/images/sliders/slider02.jpg);">
+		<div class="item" style="background-image: url(<?php echo PASTASITE; ?>assets/images/sliders/slider02.jpg);">
 			<div class="container-fluid">
 				<div class="caption vertical-center text-left right" style="padding-right:0;">
 					<div class="big-text fadeInDown-1">
@@ -25,7 +25,7 @@
 			</div><!-- /.container-fluid -->
 		</div><!-- /.item -->
 
-		<div class="item" style="background-image: url(<?php echo BASE_URL; ?>assets/images/sliders/slider04.jpg);">
+		<div class="item" style="background-image: url(<?php echo PASTASITE; ?>assets/images/sliders/slider04.jpg);">
 			<div class="container-fluid">
 				<div class="caption vertical-center text-left left" style="padding-left:7%;">
 					<div class="big-text fadeInDown-1">

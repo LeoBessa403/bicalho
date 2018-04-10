@@ -4,15 +4,15 @@
 	<div id="owl-main" class="owl-carousel owl-carousel-blog owl-inner-nav owl-ui-sm">
 		
 		<div class="item">
-			<img src="<?php echo BASE_URL; ?>assets/images/blog-post/slider-1.jpg" alt="">
+			<img src="<?php echo PASTASITE; ?>assets/images/blog-post/slider-1.jpg" alt="">
 		</div><!-- /.item -->
 
 		<div class="item">
-			<img src="<?php echo BASE_URL; ?>assets/images/blog-post/slider-2.jpg" alt="">
+			<img src="<?php echo PASTASITE; ?>assets/images/blog-post/slider-2.jpg" alt="">
 		</div><!-- /.item -->
 
 		<div class="item">
-			<img src="<?php echo BASE_URL; ?>assets/images/blog-post/slider-1.jpg" alt="">
+			<img src="<?php echo PASTASITE; ?>assets/images/blog-post/slider-1.jpg" alt="">
 		</div><!-- /.item -->
 
 	</div><!-- /.owl-carousel -->

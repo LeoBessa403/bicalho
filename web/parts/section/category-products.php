@@ -37,7 +37,7 @@
                             <div class="product-item">
                                 <div class="ribbon red"><span>destaque</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo BASE_URL; ?>assets/images/blank.gif" data-echo="<?php echo BASE_URL; ?>assets/images/products/product-01.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-01.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount green">-50% sale</div>
@@ -66,7 +66,7 @@
                             <div class="product-item">
                                 <div class="ribbon blue"><span>new!</span></div> 
                                 <div class="image">
-                                    <img alt="" src="<?php echo BASE_URL; ?>assets/images/blank.gif" data-echo="<?php echo BASE_URL; ?>assets/images/products/product-02.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-02.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -94,7 +94,7 @@
                         <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
                             <div class="product-item">
                                 <div class="image">
-                                    <img alt="" src="<?php echo BASE_URL; ?>assets/images/blank.gif" data-echo="<?php echo BASE_URL; ?>assets/images/products/product-03.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-03.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -124,7 +124,7 @@
                                 <div class="ribbon red"><span>destaque</span></div>
                                 <div class="ribbon green"><span>mais vendido</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo BASE_URL; ?>assets/images/blank.gif" data-echo="<?php echo BASE_URL; ?>assets/images/products/product-04.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-04.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -153,7 +153,7 @@
                             <div class="product-item">
                                 <div class="ribbon red"><span>destaque</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo BASE_URL; ?>assets/images/blank.gif" data-echo="<?php echo BASE_URL; ?>assets/images/products/product-01.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-01.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount green">-50% sale</div>
@@ -182,7 +182,7 @@
                             <div class="product-item">
                                 <div class="ribbon blue"><span>new!</span></div> 
                                 <div class="image">
-                                    <img alt="" src="<?php echo BASE_URL; ?>assets/images/blank.gif" data-echo="<?php echo BASE_URL; ?>assets/images/products/product-02.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-02.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -210,7 +210,7 @@
                         <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
                             <div class="product-item">
                                 <div class="image">
-                                    <img alt="" src="<?php echo BASE_URL; ?>assets/images/blank.gif" data-echo="<?php echo BASE_URL; ?>assets/images/products/product-03.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-03.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -240,7 +240,7 @@
                                 <div class="ribbon red"><span>destaque</span></div>
                                 <div class="ribbon green"><span>mais vendido</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo BASE_URL; ?>assets/images/blank.gif" data-echo="<?php echo BASE_URL; ?>assets/images/products/product-04.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-04.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -268,7 +268,7 @@
                         <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
                             <div class="product-item">
                                 <div class="image">
-                                    <img alt="" src="<?php echo BASE_URL; ?>assets/images/blank.gif" data-echo="<?php echo BASE_URL; ?>assets/images/products/product-03.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-03.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -328,7 +328,7 @@
                         <div class="row">
                             <div class="no-margin col-xs-12 col-sm-4 image-holder">
                                 <div class="image">
-                                    <img alt="" src="<?php echo BASE_URL; ?>assets/images/blank.gif" data-echo="<?php echo BASE_URL; ?>assets/images/products/product-01.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-01.jpg" />
                                 </div>
                             </div><!-- /.image-holder -->
                             <div class="no-margin col-xs-12 col-sm-5 body-holder">
@@ -364,7 +364,7 @@
                         <div class="row">
                             <div class="no-margin col-xs-12 col-sm-4 image-holder">
                                 <div class="image">
-                                    <img alt="" src="<?php echo BASE_URL; ?>assets/images/blank.gif" data-echo="<?php echo BASE_URL; ?>assets/images/products/product-02.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-02.jpg" />
                                 </div>
                             </div><!-- /.image-holder -->
                             <div class="no-margin col-xs-12 col-sm-5 body-holder">
@@ -403,7 +403,7 @@
                         <div class="row">
                             <div class="no-margin col-xs-12 col-sm-4 image-holder">
                                 <div class="image">
-                                    <img alt="" src="<?php echo BASE_URL; ?>assets/images/blank.gif" data-echo="<?php echo BASE_URL; ?>assets/images/products/product-03.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-03.jpg" />
                                 </div>
                             </div><!-- /.image-holder -->
                             <div class="no-margin col-xs-12 col-sm-5 body-holder">
@@ -440,7 +440,7 @@
                         <div class="row">
                             <div class="no-margin col-xs-12 col-sm-4 image-holder">
                                 <div class="image">
-                                    <img alt="" src="<?php echo BASE_URL; ?>assets/images/blank.gif" data-echo="<?php echo BASE_URL; ?>assets/images/products/product-04.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-04.jpg" />
                                 </div>
                             </div><!-- /.image-holder -->
                             <div class="no-margin col-xs-12 col-sm-5 body-holder">
@@ -475,7 +475,7 @@
                         <div class="row">
                             <div class="no-margin col-xs-12 col-sm-4 image-holder">
                                 <div class="image">
-                                    <img alt="" src="<?php echo BASE_URL; ?>assets/images/blank.gif" data-echo="<?php echo BASE_URL; ?>assets/images/products/product-05.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-05.jpg" />
                                 </div>
                             </div><!-- /.image-holder -->
                             <div class="no-margin col-xs-12 col-sm-5 body-holder">
