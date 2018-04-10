@@ -15,49 +15,49 @@
                 
                 <div class="carousel-item">
                     <a href="#">
-                        <img alt="" src="<?php echo PASTASITE; ?>assets/images/brands/brand-01.jpg" />
+                        <img alt="" src="<?php echo PASTASITE; ?>images/brands/brand-01.jpg" />
                     </a>
                 </div><!-- /.carousel-item -->
                 
                 <div class="carousel-item">
                     <a href="#">
-                        <img alt="" src="<?php echo PASTASITE; ?>assets/images/brands/brand-02.jpg" />
+                        <img alt="" src="<?php echo PASTASITE; ?>images/brands/brand-02.jpg" />
                     </a>
                 </div><!-- /.carousel-item -->
                 
                 <div class="carousel-item">
                     <a href="#">
-                        <img alt="" src="<?php echo PASTASITE; ?>assets/images/brands/brand-03.jpg" />
+                        <img alt="" src="<?php echo PASTASITE; ?>images/brands/brand-03.jpg" />
                     </a>
                 </div><!-- /.carousel-item -->
                 
                 <div class="carousel-item">
                     <a href="#">
-                        <img alt="" src="<?php echo PASTASITE; ?>assets/images/brands/brand-04.jpg" />
+                        <img alt="" src="<?php echo PASTASITE; ?>images/brands/brand-04.jpg" />
                     </a>
                 </div><!-- /.carousel-item -->
 
                 <div class="carousel-item">
                     <a href="#">
-                        <img alt="" src="<?php echo PASTASITE; ?>assets/images/brands/brand-01.jpg" />
+                        <img alt="" src="<?php echo PASTASITE; ?>images/brands/brand-01.jpg" />
                     </a>
                 </div><!-- /.carousel-item -->
 
                 <div class="carousel-item">
                     <a href="#">
-                        <img alt="" src="<?php echo PASTASITE; ?>assets/images/brands/brand-02.jpg" />
+                        <img alt="" src="<?php echo PASTASITE; ?>images/brands/brand-02.jpg" />
                     </a>
                 </div><!-- /.carousel-item -->
 
                 <div class="carousel-item">
                     <a href="#">
-                        <img alt="" src="<?php echo PASTASITE; ?>assets/images/brands/brand-03.jpg" />
+                        <img alt="" src="<?php echo PASTASITE; ?>images/brands/brand-03.jpg" />
                     </a>
                 </div><!-- /.carousel-item -->
 
                 <div class="carousel-item">
                     <a href="#">
-                        <img alt="" src="<?php echo PASTASITE; ?>assets/images/brands/brand-04.jpg" />
+                        <img alt="" src="<?php echo PASTASITE; ?>images/brands/brand-04.jpg" />
                     </a>
                 </div><!-- /.carousel-item -->
 

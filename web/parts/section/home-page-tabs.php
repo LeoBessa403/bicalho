@@ -16,7 +16,7 @@
                             <div class="product-item">
                                 <div class="ribbon red"><span>destaque</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-01.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-01.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount green">50% desconto</div>
@@ -45,7 +45,7 @@
                             <div class="product-item">
                                 <div class="ribbon blue"><span>novo!</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-02.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-02.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -73,7 +73,7 @@
                             <div class="product-item">
 
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-03.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -102,7 +102,7 @@
                                 <div class="ribbon red"><span>destaque</span></div>
                                 <div class="ribbon green"><span>mais vendido</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-04.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-04.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -142,7 +142,7 @@
                             <div class="product-item">
                                 <div class="ribbon blue"><span>novo!</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-02.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-02.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -171,7 +171,7 @@
                             <div class="product-item">
                                 <div class="ribbon red"><span>destaque</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-01.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-01.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount green">50% desconto</div>
@@ -202,7 +202,7 @@
                                 <div class="ribbon red"><span>destaque</span></div>
                                 <div class="ribbon green"><span>mais vendidos</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-04.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-04.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -232,7 +232,7 @@
                             <div class="product-item">
 
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-03.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -274,7 +274,7 @@
                                 <div class="ribbon red"><span>destaque</span></div>
                                 <div class="ribbon green"><span>mais vendidos</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-04.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-04.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -305,7 +305,7 @@
                             <div class="product-item">
 
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-03.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -334,7 +334,7 @@
                             <div class="product-item">
                                 <div class="ribbon blue"><span>novo!</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-02.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-02.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -363,7 +363,7 @@
                             <div class="product-item">
                                 <div class="ribbon red"><span>destaque</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-01.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-01.jpg" />
                                 </div>
                                 <div class="body">
                                     <div class="label-discount green">50% desconto</div>

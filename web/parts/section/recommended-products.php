@@ -13,7 +13,7 @@
             <div class="product-item">
                 <div class="ribbon red"><span>destaque</span></div>
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-11.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-11.jpg" />
                 </div>
                 <div class="body">
                     <div class="title">
@@ -40,7 +40,7 @@
             <div class="product-item">
                 <div class="ribbon blue"><span>new!</span></div> 
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-12.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-12.jpg" />
                 </div>
                 <div class="body">
                     <div class="title">
@@ -67,7 +67,7 @@
         <div class="no-margin carousel-item product-item-holder hover size-medium">
             <div class="product-item">
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-13.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-13.jpg" />
                 </div>
                 <div class="body">
                     <div class="title">
@@ -94,7 +94,7 @@
             <div class="product-item">
                 <div class="ribbon blue"><span>new!</span></div> 
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-14.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-14.jpg" />
                 </div>
                 <div class="body">
                     <div class="title">
@@ -121,7 +121,7 @@
             <div class="product-item">
                 <div class="ribbon green"><span>mais vendido</span></div>
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-15.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-15.jpg" />
                 </div>
                 <div class="body">
                     <div class="title">
@@ -147,7 +147,7 @@
         <div class="no-margin carousel-item product-item-holder hover size-medium">
             <div class="product-item">
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-16.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-16.jpg" />
                 </div>
                 <div class="body">
                     <div class="title">
@@ -173,7 +173,7 @@
         <div class="no-margin carousel-item product-item-holder hover size-medium">
             <div class="product-item">
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-13.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-13.jpg" />
                 </div>
                 <div class="body">
                     <div class="title">
@@ -200,7 +200,7 @@
             <div class="product-item">
                 <div class="ribbon blue"><span>new!</span></div> 
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-14.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-14.jpg" />
                 </div>
                 <div class="body">
 

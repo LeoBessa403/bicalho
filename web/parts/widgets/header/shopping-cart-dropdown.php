@@ -14,7 +14,7 @@
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <div class="basket-item-count">
                     <span class="count">3</span>
-                    <img src="<?php echo PASTASITE; ?>assets/images/icon-cart.png" alt=""/>
+                    <img src="<?php echo PASTASITE; ?>images/icon-cart.png" alt=""/>
                 </div>
                 <div class="total-price-basket">
                     <span class="lbl">meu carrinho:</span>
@@ -29,7 +29,7 @@
                         <div class="row">
                             <div class="col-xs-4 col-sm-4 no-margin text-center">
                                 <div class="thumb">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/products/product-small-01.jpg"/>
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/products/product-small-01.jpg"/>
                                 </div>
                             </div>
                             <div class="col-xs-8 col-sm-8 no-margin">
@@ -45,7 +45,7 @@
                         <div class="row">
                             <div class="col-xs-4 col-sm-4 no-margin text-center">
                                 <div class="thumb">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/products/product-small-01.jpg"/>
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/products/product-small-01.jpg"/>
                                 </div>
                             </div>
                             <div class="col-xs-8 col-sm-8 no-margin">
@@ -61,7 +61,7 @@
                         <div class="row">
                             <div class="col-xs-4 col-sm-4 no-margin text-center">
                                 <div class="thumb">
-                                    <img alt="" src="<?php echo PASTASITE; ?>assets/images/products/product-small-01.jpg"/>
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/products/product-small-01.jpg"/>
                                 </div>
                             </div>
                             <div class="col-xs-8 col-sm-8 no-margin">

@@ -1,7 +1,7 @@
 <!-- ============================================================= LOGO ============================================================= -->
 <div class="logo">
     <a href="<?php echo PASTASITE; ?>">
-        <img alt="logo" src="<?php echo PASTASITE; ?>assets/images/logo.png" width="233" height="54"/>
+        <img alt="logo" src="<?php echo PASTASITE; ?>images/logo.png" width="233" height="54"/>
     </a>
 </div><!-- /.logo -->
 <!-- ============================================================= LOGO : END ============================================================= -->

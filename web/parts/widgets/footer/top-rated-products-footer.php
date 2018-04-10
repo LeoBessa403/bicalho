@@ -15,7 +15,7 @@
 
                     <div class="col-xs-12 col-sm-3 no-margin">
                         <a href="#" class="thumb-holder">
-                            <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-small-07.jpg" />
+                            <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-small-07.jpg" />
                         </a>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
 
                     <div class="col-xs-12 col-sm-3 no-margin">
                         <a href="#" class="thumb-holder">
-                            <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-small-08.jpg" />
+                            <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-small-08.jpg" />
                         </a>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
 
                     <div class="col-xs-12 col-sm-3 no-margin">
                         <a href="#" class="thumb-holder">
-                            <img alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-small-09.jpg" />
+                            <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-small-09.jpg" />
                         </a>
                     </div>
 

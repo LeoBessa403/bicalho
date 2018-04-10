@@ -26,7 +26,7 @@
     </div>
 
     <div class="dropdown-banner-holder">
-        <a href="#"><img alt="" src="<?php echo PASTASITE; ?>assets/images/banners/banner-side.png" /></a>
+        <a href="#"><img alt="" src="<?php echo PASTASITE; ?>images/banners/banner-side.png" /></a>
     </div>
 </div>
 <!-- ================================== MEGAMENU VERTICAL ================================== -->

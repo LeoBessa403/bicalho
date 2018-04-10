@@ -8,7 +8,7 @@
                         <h1>Vida nova</h1>
                         <span class="tagline">Apresentando Nova Categoria</span>
                     </div>
-                    <img class="banner-image img-responsive" alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/banners/banner-narrow-01.jpg" />
+                    <img class="banner-image img-responsive" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/banners/banner-narrow-01.jpg" />
                 </a>
             </div>
             <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 text-right banner">
@@ -17,7 +17,7 @@
                         <h1>Time &amp; Style</h1>
                         <span class="tagline">Chegada de novos produtos</span>
                     </div>
-                    <img class="banner-image img-responsive" alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/banners/banner-narrow-02.jpg" />
+                    <img class="banner-image img-responsive" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/banners/banner-narrow-02.jpg" />
                 </a>
             </div>
         </div>

@@ -5,7 +5,7 @@
         <div class="row no-margin">
             <div class="col-lg-1 col-xs-12 col-sm-2 no-margin">
                 <div class="avatar">
-                    <img src="<?php echo PASTASITE; ?>assets/images/default-avatar.jpg" alt="avatar">
+                    <img src="<?php echo PASTASITE; ?>images/default-avatar.jpg" alt="avatar">
                 </div>
             </div>
             <div class="col-xs-12 col-lg-11 col-sm-10 no-margin-right">
@@ -33,7 +33,7 @@
         <div class="row no-margin">
             <div class="col-lg-1 col-xs-12 col-sm-2 no-margin">
                 <div class="avatar">
-                    <img src="<?php echo PASTASITE; ?>assets/images/default-avatar.jpg" alt="avatar">
+                    <img src="<?php echo PASTASITE; ?>images/default-avatar.jpg" alt="avatar">
                 </div>
             </div>
             <div class="col-xs-12 col-lg-11 col-sm-10 no-margin-right">

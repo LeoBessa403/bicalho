@@ -3,7 +3,7 @@ require_once 'library/Config.inc.php';
 
 define('MC_ROOT', dirname(__FILE__));
 $page = isset($_GET['page']) ? $_GET['page'] : 'home-2';
-    $headerStyle = 2;
+$headerStyle = 2;
 
 $pages = array(
     'home-2' => 'Home',
@@ -41,29 +41,29 @@ $pages = array(
     <title>Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio</title>
 
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="<?php echo PASTASITE; ?>assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/bootstrap.min.css">
 
     <!-- Customizable CSS -->
-    <link rel="stylesheet" href="<?php echo PASTASITE; ?>assets/css/style.css">
-    <link rel="stylesheet" href="<?php echo PASTASITE; ?>assets/css/colors/azul.css">
-    <link rel="stylesheet" href="<?php echo PASTASITE; ?>assets/css/owl.carousel.css">
-    <link rel="stylesheet" href="<?php echo PASTASITE; ?>assets/css/owl.transitions.css">
-    <link rel="stylesheet" href="<?php echo PASTASITE; ?>assets/css/animate.min.css">
+    <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/style.css">
+    <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/colors/azul.css">
+    <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/owl.carousel.css">
+    <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/owl.transitions.css">
+    <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/animate.min.css">
     <link rel="canonical" href="https://www.bicalhorefrigeracao.com/"/>
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
 
     <!-- Icons/Glyphs -->
-    <link rel="stylesheet" href="<?php echo PASTASITE; ?>assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/font-awesome.min.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="<?php echo PASTASITE; ?>assets/images/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo PASTASITE; ?>images/favicon.ico">
 
     <!-- HTML5 elements and media queries Support for IE8 : HTML5 shim and Respond.js -->
     <!--[if lt IE 9]>
-    <script src="<?php echo PASTASITE; ?>assets/js/html5shiv.js"></script>
-    <script src="<?php echo PASTASITE; ?>assets/js/respond.min.js"></script>
+    <script src="<?php echo PASTASITE; ?>js/html5shiv.js"></script>
+    <script src="<?php echo PASTASITE; ?>js/respond.min.js"></script>
     <![endif]-->
 
     <script>
@@ -86,31 +86,32 @@ $pages = array(
 <body>
 
 <div class="wrapper">
-    <?php require MC_ROOT . '/parts/navigation/top-menu-bar.php'; ?>
     <?php
-        require MC_ROOT . '/parts/section/header-2.php';
+    require MC_ROOT . '/parts/navigation/top-menu-bar.php';
+    require MC_ROOT . '/parts/section/header-2.php';
     ?>
     <?php require_once MC_ROOT . '/pages/' . $page . '.php'; ?>
+
     <?php require MC_ROOT . '/parts/section/footer.php'; ?>
 </div><!-- /.wrapper -->
 
 <!-- JavaScripts placed at the end of the document so the pages load faster -->
-<script src="<?php echo PASTASITE; ?>assets/js/jquery-1.10.2.js"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/jquery-migrate-1.2.1.js"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/bootstrap.min.js"></script>
+<script src="<?php echo PASTASITE; ?>js/jquery-1.10.2.js"></script>
+<script src="<?php echo PASTASITE; ?>js/jquery-migrate-1.2.1.js"></script>
+<script src="<?php echo PASTASITE; ?>js/bootstrap.min.js"></script>
 <script src="//maps.google.com/maps/api/js?key=AIzaSyDDZJO4F0d17RnFoi1F2qtw4wn6Wcaqxao&sensor=false&amp;language=PT-br"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/gmap3.min.js"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/bootstrap-hover-dropdown.min.js"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/owl.carousel.min.js"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/css_browser_selector.min.js"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/echo.min.js"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/jquery.easing-1.3.min.js"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/bootstrap-slider.min.js"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/jquery.raty.min.js"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/jquery.prettyPhoto.min.js"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/jquery.customSelect.min.js"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/wow.min.js"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/buttons.js"></script>
-<script src="<?php echo PASTASITE; ?>assets/js/scripts.js"></script>
+<script src="<?php echo PASTASITE; ?>js/gmap3.min.js"></script>
+<script src="<?php echo PASTASITE; ?>js/bootstrap-hover-dropdown.min.js"></script>
+<script src="<?php echo PASTASITE; ?>js/owl.carousel.min.js"></script>
+<script src="<?php echo PASTASITE; ?>js/css_browser_selector.min.js"></script>
+<script src="<?php echo PASTASITE; ?>js/echo.min.js"></script>
+<script src="<?php echo PASTASITE; ?>js/jquery.easing-1.3.min.js"></script>
+<script src="<?php echo PASTASITE; ?>js/bootstrap-slider.min.js"></script>
+<script src="<?php echo PASTASITE; ?>js/jquery.raty.min.js"></script>
+<script src="<?php echo PASTASITE; ?>js/jquery.prettyPhoto.min.js"></script>
+<script src="<?php echo PASTASITE; ?>js/jquery.customSelect.min.js"></script>
+<script src="<?php echo PASTASITE; ?>js/wow.min.js"></script>
+<script src="<?php echo PASTASITE; ?>js/buttons.js"></script>
+<script src="<?php echo PASTASITE; ?>js/scripts.js"></script>
 </body>
 </html>

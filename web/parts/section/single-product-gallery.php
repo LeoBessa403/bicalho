@@ -3,20 +3,20 @@
 
         <div id="owl-single-product" class="owl-carousel">
             <div class="single-product-gallery-item" id="slide1">
-                <a data-rel="prettyphoto" href="<?php echo PASTASITE; ?>assets/images/products/product-gallery-01.jpg">
-                    <img class="img-responsive" alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-gallery-01.jpg" />
+                <a data-rel="prettyphoto" href="<?php echo PASTASITE; ?>images/products/product-gallery-01.jpg">
+                    <img class="img-responsive" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-gallery-01.jpg" />
                 </a>
             </div><!-- /.single-product-gallery-item -->
 
             <div class="single-product-gallery-item" id="slide2">
-                <a data-rel="prettyphoto" href="<?php echo PASTASITE; ?>assets/images/products/product-gallery-01.jpg">
-                    <img class="img-responsive" alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-gallery-01.jpg" />
+                <a data-rel="prettyphoto" href="<?php echo PASTASITE; ?>images/products/product-gallery-01.jpg">
+                    <img class="img-responsive" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-gallery-01.jpg" />
                 </a>
             </div><!-- /.single-product-gallery-item -->
 
             <div class="single-product-gallery-item" id="slide3">
-                <a data-rel="prettyphoto" href="<?php echo PASTASITE; ?>assets/images/products/product-gallery-01.jpg">
-                    <img class="img-responsive" alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/product-gallery-01.jpg" />
+                <a data-rel="prettyphoto" href="<?php echo PASTASITE; ?>images/products/product-gallery-01.jpg">
+                    <img class="img-responsive" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-gallery-01.jpg" />
                 </a>
             </div><!-- /.single-product-gallery-item -->
         </div><!-- /.single-product-slider -->
@@ -26,39 +26,39 @@
 
             <div id="owl-single-product-thumbnails" class="owl-carousel">
                 <a class="horizontal-thumb active" data-target="#owl-single-product" data-slide="0" href="#slide1">
-                    <img width="67" alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/gallery-thumb-01.jpg" />
+                    <img width="67" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg" />
                 </a>
 
                 <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="1" href="#slide2">
-                    <img width="67" alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/gallery-thumb-01.jpg" />
+                    <img width="67" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg" />
                 </a>
 
                 <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="2" href="#slide3">
-                    <img width="67" alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/gallery-thumb-01.jpg" />
+                    <img width="67" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg" />
                 </a>
 
                 <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="0" href="#slide1">
-                    <img width="67" alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/gallery-thumb-01.jpg" />
+                    <img width="67" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg" />
                 </a>
 
                 <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="1" href="#slide2">
-                    <img width="67" alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/gallery-thumb-01.jpg" />
+                    <img width="67" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg" />
                 </a>
 
                 <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="2" href="#slide3">
-                    <img width="67" alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/gallery-thumb-01.jpg" />
+                    <img width="67" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg" />
                 </a>
 
                 <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="0" href="#slide1">
-                    <img width="67" alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/gallery-thumb-01.jpg" />
+                    <img width="67" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg" />
                 </a>
 
                 <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="1" href="#slide2">
-                    <img width="67" alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/gallery-thumb-01.jpg" />
+                    <img width="67" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg" />
                 </a>
 
                 <a class="horizontal-thumb" data-target="#owl-single-product" data-slide="2" href="#slide3">
-                    <img width="67" alt="" src="<?php echo PASTASITE; ?>assets/images/blank.gif" data-echo="<?php echo PASTASITE; ?>assets/images/products/gallery-thumb-01.jpg" />
+                    <img width="67" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg" />
                 </a>
             </div><!-- /#owl-single-product-thumbnails -->
 
