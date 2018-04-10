@@ -72,11 +72,10 @@ $pages = array(
     <?php
     require MC_ROOT . '/parts/navigation/top-menu-bar.php';
     require MC_ROOT . '/parts/section/header-2.php';
-    ?>
-    <?php
+
+
     $url = new UrlAmigavel();
     $url->pegaControllerAction();
-//    require_once MC_ROOT . '/pages/' . $page . '.php';
     ?>
 
     <?php require MC_ROOT . '/parts/section/footer.php'; ?>
