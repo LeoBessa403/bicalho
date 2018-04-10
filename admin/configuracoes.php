@@ -3,8 +3,8 @@
 function servidor_inicial()
 {
 
-    $servidor = "local";
-//    $servidor = "web";
+//    $servidor = "local";
+    $servidor = "web";
 
     if ($servidor == "web") {
         $config = array('HOME' => 'http://bicalhorefrigeracao.com/', 'HOST' => 'localhost', 'USER' => 'gejdo247_gej', 'PASS' => 'Admin101*', 'DBSA' => 'gejdo247_gej');
@@ -54,9 +54,9 @@ function servidor_inicial()
     // ******* CONFIGURAÇÕES DE EMAIL ********** //
     //////////////////////////////////////////////
 
-    define('HOST_EMAIL', 'mail.gejdombosco.com.br');
+    define('HOST_EMAIL', 'mail.bicalho.com');
     define('PORTA_EMAIL', 587);
-    define('USER_EMAIL', 'contato@gejdombosco.com.br');
+    define('USER_EMAIL', 'sistema@bicalho.com');
     define('PASS_EMAIL', 'Admin101**');
 
     //////////////////////////////////////////////
