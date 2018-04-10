@@ -1,6 +1,6 @@
 <?php
 
-class ProdutoWeb extends AbstractController
+class Produtos extends AbstractController
 {
 
     function DetalharProduto()

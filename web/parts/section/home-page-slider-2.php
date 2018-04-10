@@ -18,7 +18,7 @@
                         aplicam-se termos e condições
                     </div>
                     <div class="button-holder fadeInDown-3">
-                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="big le-button ">Compre
+                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="big le-button ">Compre
                             agora</a>
                     </div>
                 </div><!-- /.caption -->
@@ -40,7 +40,7 @@
                         aplicam-se termos e condições
                     </div>
                     <div class="button-holder fadeInDown-3">
-                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="big le-button ">Compre
+                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="big le-button ">Compre
                             agora</a>
                     </div>
                 </div><!-- /.caption -->

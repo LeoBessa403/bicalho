@@ -18,13 +18,13 @@
 						</div>
 
 	                	<div class="col-xs-12 col-sm-1 no-margin">
-	                    	<a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">
+	                    	<a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
 								<img width="73" height="73" alt="Canon PowerShot Elph 115 IS" class="attachment-shop_thumbnail wp-post-image" src="<?php echo PASTASITE; ?>images/products/product-small-03.jpg">
 							</a>
 	                    </div>
 	                	<div class="col-xs-12 col-sm-4 no-margin">
 	                    	<div class="title">
-	                        	<a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">Canon PowerShot Elph 115 IS</a>
+	                        	<a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">Canon PowerShot Elph 115 IS</a>
 	                    	</div><!-- /.title --> 
 	                    	<div>
 	                    		<span class="label label-success wishlist-in-stock">In Stock</span>
@@ -55,13 +55,13 @@
 						</div>
 
 	                	<div class="col-xs-12 col-sm-1 no-margin">
-	                    	<a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">
+	                    	<a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
 								<img width="73" height="73" alt="I - Book Mini Laptop" class="attachment-shop_thumbnail wp-post-image" src="<?php echo PASTASITE; ?>images/products/product-small-02.jpg">
 							</a>
 	                    </div>
 	                	<div class="col-xs-12 col-sm-4 no-margin">
 	                    	<div class="title">
-	                        	<a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">I - Book Mini Laptop</a>
+	                        	<a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">I - Book Mini Laptop</a>
 	                    	</div><!-- /.title --> 
 	                    	<div>
 	                    		<span class="label label-danger wishlist-out-of-stock">Out of Stock</span>

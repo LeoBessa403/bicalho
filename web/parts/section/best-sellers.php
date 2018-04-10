@@ -10,7 +10,7 @@
                     <div class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
                         <div class="product-item">
                             <div class="image">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
                                     <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
                                          data-echo="<?php echo PASTASITE; ?>images/products/product-05.jpg"/>
                                 </a>
@@ -18,7 +18,7 @@
                             <div class="body">
                                 <div class="label-discount clear"></div>
                                 <div class="title">
-                                    <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">beats studio headphones
+                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">beats studio headphones
                                         official one</a>
                                 </div>
                                 <div class="brand">beats</div>
@@ -29,7 +29,7 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add
+                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
                                         ao carrinho</a>
                                 </div>
                                 <div class="wish-compare">
@@ -49,7 +49,7 @@
                             <div class="body">
                                 <div class="label-discount clear"></div>
                                 <div class="title">
-                                    <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">playstasion 4 with four
+                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">playstasion 4 with four
                                         games and pad</a>
                                 </div>
                                 <div class="brand">acer</div>
@@ -59,7 +59,7 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add
+                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
                                         ao carrinho</a>
                                 </div>
                                 <div class="wish-compare">
@@ -79,7 +79,7 @@
                             <div class="body">
                                 <div class="label-discount clear"></div>
                                 <div class="title">
-                                    <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">EOS rebel t5i DSLR
+                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">EOS rebel t5i DSLR
                                         Camera with 18-55mm IS STM lens</a>
                                 </div>
                                 <div class="brand">canon</div>
@@ -89,7 +89,7 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add
+                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
                                         ao carrinho</a>
                                 </div>
                                 <div class="wish-compare">
@@ -112,7 +112,7 @@
                             <div class="body">
                                 <div class="label-discount clear"></div>
                                 <div class="title">
-                                    <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">fitbit zip wireless
+                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">fitbit zip wireless
                                         activity tracker - lime</a>
                                 </div>
                                 <div class="brand">fitbit zip</div>
@@ -122,7 +122,7 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add
+                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
                                         ao carrinho</a>
                                 </div>
                                 <div class="wish-compare">
@@ -142,7 +142,7 @@
                             <div class="body">
                                 <div class="label-discount clear"></div>
                                 <div class="title">
-                                    <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">PowerShot elph 115 16MP
+                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">PowerShot elph 115 16MP
                                         digital camera</a>
                                 </div>
                                 <div class="brand">canon</div>
@@ -152,7 +152,7 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add
+                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
                                         ao carrinho</a>
                                 </div>
                                 <div class="wish-compare">
@@ -172,7 +172,7 @@
                             <div class="body">
                                 <div class="label-discount clear"></div>
                                 <div class="title">
-                                    <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">netbook acer travelMate
+                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">netbook acer travelMate
                                         b113-E-10072</a>
                                 </div>
                                 <div class="brand">acer</div>
@@ -182,7 +182,7 @@
                             </div>
                             <div class="hover-area">
                                 <div class="add-cart-button">
-                                    <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add
+                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
                                         ao carrinho</a>
                                 </div>
                                 <div class="wish-compare">
@@ -200,21 +200,21 @@
 
                     <div id="best-seller-single-product-slider" class="single-product-slider owl-carousel">
                         <div class="single-product-gallery-item" id="slide1">
-                            <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">
+                            <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
                                 <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
                                      data-echo="<?php echo PASTASITE; ?>images/products/product-gallery-01.jpg"/>
                             </a>
                         </div><!-- /.single-product-gallery-item -->
 
                         <div class="single-product-gallery-item" id="slide2">
-                            <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">
+                            <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
                                 <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
                                      data-echo="<?php echo PASTASITE; ?>images/products/product-gallery-01.jpg"/>
                             </a>
                         </div><!-- /.single-product-gallery-item -->
 
                         <div class="single-product-gallery-item" id="slide3">
-                            <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">
+                            <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
                                 <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
                                      data-echo="<?php echo PASTASITE; ?>images/products/product-gallery-01.jpg"/>
                             </a>
@@ -244,7 +244,7 @@
                     <div class="body">
                         <div class="label-discount clear"></div>
                         <div class="title">
-                            <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">CPU intel core i5-4670k 3.4GHz
+                            <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">CPU intel core i5-4670k 3.4GHz
                                 BOX B82-12-122-41</a>
                         </div>
                         <div class="brand">sony</div>

@@ -6,7 +6,7 @@
             <li>
                 <div class="row">
                     <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">Netbook Acer Travel B113-E-10072</a>
+                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">Netbook Acer Travel B113-E-10072</a>
                         <div class="price">
                             <div class="price-prev">de R$2000</div>
                             <div class="price-current">R$1873</div>
@@ -14,7 +14,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="thumb-holder">
+                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="thumb-holder">
                             <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
                                  data-echo="<?php echo PASTASITE; ?>images/products/product-small-01.jpg"/>
                         </a>
@@ -25,7 +25,7 @@
             <li>
                 <div class="row">
                     <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">PowerShot Elph 115 16MP Digital
+                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">PowerShot Elph 115 16MP Digital
                             Camera</a>
                         <div class="price">
                             <div class="price-prev">de R$2000</div>
@@ -33,7 +33,7 @@
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="thumb-holder">
+                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="thumb-holder">
                             <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
                                  data-echo="<?php echo PASTASITE; ?>images/products/product-small-02.jpg"/>
                         </a>
@@ -44,7 +44,7 @@
             <li>
                 <div class="row">
                     <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">PowerShot Elph 115 16MP Digital
+                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">PowerShot Elph 115 16MP Digital
                             Camera</a>
                         <div class="price">
                             <div class="price-prev">de R$2000</div>
@@ -53,7 +53,7 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="thumb-holder">
+                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="thumb-holder">
                             <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
                                  data-echo="<?php echo PASTASITE; ?>images/products/product-small-03.jpg"/>
                         </a>

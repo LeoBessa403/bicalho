@@ -23,14 +23,14 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                     <div class="product-item">
                         <div class="ribbon red"><span>destaque</span></div>
                         <div class="image">
-                            <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">
+                            <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
                                 <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
                                      data-echo="<?php echo PASTASITE; ?>images/products/product-11.jpg"/>
                             </a>
                         </div>
                         <div class="body">
                             <div class="title">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">LC-70UD1U 70" class aquos
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">LC-70UD1U 70" class aquos
                                     4K ultra HD</a>
                             </div>
                             <div class="brand">Sharp</div>
@@ -40,7 +40,7 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                         </div>
                         <div class="hover-area">
                             <div class="add-cart-button">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao
                                     carrinho</a>
                             </div>
                             <div class="wish-compare">
@@ -55,14 +55,14 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                     <div class="product-item">
                         <div class="ribbon blue"><span>Novo!</span></div>
                         <div class="image">
-                            <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">
+                            <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
                                 <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
                                      data-echo="<?php echo PASTASITE; ?>images/products/product-12.jpg"/>
                             </a>
                         </div>
                         <div class="body">
                             <div class="title">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">cinemizer OLED 3D virtual
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">cinemizer OLED 3D virtual
                                     reality TV Video</a>
                             </div>
                             <div class="brand">zeiss</div>
@@ -72,7 +72,7 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                         </div>
                         <div class="hover-area">
                             <div class="add-cart-button">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao
                                     carrinho</a>
                             </div>
                             <div class="wish-compare">
@@ -92,7 +92,7 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                         </div>
                         <div class="body">
                             <div class="title">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">s2340T23" full HD
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">s2340T23" full HD
                                     multi-Touch Monitor</a>
                             </div>
                             <div class="brand">dell</div>
@@ -102,7 +102,7 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                         </div>
                         <div class="hover-area">
                             <div class="add-cart-button">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao
                                     carrinho</a>
                             </div>
                             <div class="wish-compare">
@@ -122,7 +122,7 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                         </div>
                         <div class="body">
                             <div class="title">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">kardon BDS 7772/120
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">kardon BDS 7772/120
                                     integrated 3D</a>
                             </div>
                             <div class="brand">harman</div>
@@ -132,7 +132,7 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                         </div>
                         <div class="hover-area">
                             <div class="add-cart-button">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao
                                     carrinho</a>
                             </div>
                             <div class="wish-compare">
@@ -152,7 +152,7 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                         </div>
                         <div class="body">
                             <div class="title">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">netbook acer travel
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">netbook acer travel
                                     B113-E-10072</a>
                             </div>
                             <div class="brand">acer</div>
@@ -162,7 +162,7 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                         </div>
                         <div class="hover-area">
                             <div class="add-cart-button">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao
                                     carrinho</a>
                             </div>
                             <div class="wish-compare">
@@ -182,7 +182,7 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                         </div>
                         <div class="body">
                             <div class="title">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">iPod touch 5th
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">iPod touch 5th
                                     generation,64GB, blue</a>
                             </div>
                             <div class="brand">apple</div>
@@ -192,7 +192,7 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                         </div>
                         <div class="hover-area">
                             <div class="add-cart-button">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao
                                     carrinho</a>
                             </div>
                             <div class="wish-compare">
@@ -212,7 +212,7 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                         </div>
                         <div class="body">
                             <div class="title">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">s2340T23" full HD
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">s2340T23" full HD
                                     multi-Touch Monitor</a>
                             </div>
                             <div class="brand">dell</div>
@@ -222,7 +222,7 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                         </div>
                         <div class="hover-area">
                             <div class="add-cart-button">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao
                                     carrinho</a>
                             </div>
                             <div class="wish-compare">
@@ -242,7 +242,7 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                         </div>
                         <div class="body">
                             <div class="title">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">kardon BDS 7772/120
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">kardon BDS 7772/120
                                     integrated 3D</a>
                             </div>
                             <div class="brand">harman</div>
@@ -252,7 +252,7 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                         </div>
                         <div class="hover-area">
                             <div class="add-cart-button">
-                                <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao
                                     carrinho</a>
                             </div>
                             <div class="wish-compare">

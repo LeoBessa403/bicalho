@@ -42,7 +42,7 @@
                                 <div class="body">
                                     <div class="label-discount green">-50% sale</div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
                                     </div>
                                     <div class="brand">sony</div>
                                 </div>
@@ -52,7 +52,7 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -71,7 +71,7 @@
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">White lumia 9001</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">White lumia 9001</a>
                                     </div>
                                     <div class="brand">nokia</div>
                                 </div>
@@ -81,7 +81,7 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -99,7 +99,7 @@
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">POV Action Cam</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">POV Action Cam</a>
                                     </div>
                                     <div class="brand">sony</div>
                                 </div>
@@ -109,7 +109,7 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -129,7 +129,7 @@
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">Netbook Acer TravelMate B113-E-10072</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">Netbook Acer TravelMate B113-E-10072</a>
                                     </div>
                                     <div class="brand">acer</div>
                                 </div>
@@ -139,7 +139,7 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -158,7 +158,7 @@
                                 <div class="body">
                                     <div class="label-discount green">-50% sale</div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
                                     </div>
                                     <div class="brand">sony</div>
                                 </div>
@@ -168,7 +168,7 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -187,7 +187,7 @@
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">White lumia 9001</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">White lumia 9001</a>
                                     </div>
                                     <div class="brand">nokia</div>
                                 </div>
@@ -197,7 +197,7 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -215,7 +215,7 @@
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">POV Action Cam</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">POV Action Cam</a>
                                     </div>
                                     <div class="brand">sony</div>
                                 </div>
@@ -225,7 +225,7 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -245,7 +245,7 @@
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">Netbook Acer TravelMate B113-E-10072</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">Netbook Acer TravelMate B113-E-10072</a>
                                     </div>
                                     <div class="brand">acer</div>
                                 </div>
@@ -255,7 +255,7 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -273,7 +273,7 @@
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">POV Action Cam</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">POV Action Cam</a>
                                     </div>
                                     <div class="brand">sony</div>
                                 </div>
@@ -283,7 +283,7 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -335,7 +335,7 @@
                                 <div class="body">
                                     <div class="label-discount green">-50% sale</div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
                                     </div>
                                     <div class="brand">sony</div>
                                     <div class="excerpt">
@@ -371,7 +371,7 @@
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
                                     </div>
                                     <div class="brand">sony</div>
                                     <div class="excerpt">
@@ -410,7 +410,7 @@
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
                                     </div>
                                     <div class="brand">sony</div>
                                     <div class="excerpt">
@@ -447,7 +447,7 @@
                                 <div class="body">
                                     <div class="label-discount green">-50% sale</div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
                                     </div>
                                     <div class="brand">sony</div>
                                     <div class="excerpt">
@@ -482,7 +482,7 @@
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>ProdutoWeb/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
                                     </div>
                                     <div class="brand">sony</div>
                                     <div class="excerpt">
