@@ -1,48 +1,25 @@
-<div class="main-content" style="margin-bottom: 30px;">
-        <div class="container">
-                    <div class="row">
-                                  <div class="col-sm-12">
-							<!-- start: PAGE TITLE & BREADCRUMB -->
-                                                        <div class="page-header" style="text-transform: lowercase;">
-								<h1><small>página não encontrada</small></h1>
-							</div>
-							<!-- end: PAGE TITLE & BREADCRUMB -->
-						</div>
-					</div>
-        
-        
-                            <div class="row">
-					<div class="col-sm-12 page-error">
-							<div class="error-number teal">
-								Ops! Erro
-							</div>
-                                            <div class="error-details col-sm-6 col-sm-offset-3" style="margin-top: 50px;">
-								<p>
-									Infelizmente, a página que você estava procurando não pode ser encontrado.
-                                                                        <br>
-                                                                        Ele pode estar temporariamente indisponível, movido ou não existem mais.
-                                                                        <br>
-                                                                        Verifique a URL digitada por quaisquer erros e tente novamente.
-									<br>
-									<a href="<?php echo PASTASITE; ?>" class="btn btn-teal btn-return">
-										Retornar ao começo
-									</a>
-								</p>
-								<form action="#">
-									<div class="input-group">
-										<input type="text" placeholder="Palavra Chave..." size="16" class="form-control">
-										<span class="input-group-btn">
-											<button class="btn btn-teal">
-												Buscar
-											</button> </span>
-									</div>
-								</form>
-							</div>
-						</div>
-						<!-- end: 404 -->
-                                        </div>
-                                        <!-- end: PAGE CONTENT-->
-				</div>
-			</div>
-			<!-- end: PAGE -->
-
+<main id="faq" class="inner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 center-block">
+                <div class="info-404 text-center">
+                    <h3 class="primary-color inner-bottom-xs">Ops! Erro <br>Página não Encontrada</h3>
+                    <p class="lead">Infelizmente, a página que você estava procurando não pode ser encontrado.
+                        <br>
+                        Ela pode estar temporariamente indisponível, movida ou não existe mais.
+                        <br>
+                        Verifique a URL digitada por quaisquer erros e tente novamente.</p>
+                    <div class="sub-form-row inner-top-xs inner-bottom-xs">
+                        <form role="form">
+                            <input placeholder="Pesquisa nossos produtos" autocomplete="off">
+                            <button class="le-button">Buscar</button>
+                        </form>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="btn-lg huge"><i class="fa fa-home"></i> Retornar ao começo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
