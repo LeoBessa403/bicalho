@@ -65,23 +65,6 @@ $pages = array(
     <script src="<?php echo PASTASITE; ?>js/html5shiv.js"></script>
     <script src="<?php echo PASTASITE; ?>js/respond.min.js"></script>
     <![endif]-->
-
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-52598430-1', 'auto');
-        ga('send', 'pageview');
-    </script>
 </head>
 <body>
 
@@ -90,7 +73,11 @@ $pages = array(
     require MC_ROOT . '/parts/navigation/top-menu-bar.php';
     require MC_ROOT . '/parts/section/header-2.php';
     ?>
-    <?php require_once MC_ROOT . '/pages/' . $page . '.php'; ?>
+    <?php
+    $url = new UrlAmigavel();
+    $url->pegaControllerAction();
+//    require_once MC_ROOT . '/pages/' . $page . '.php';
+    ?>
 
     <?php require MC_ROOT . '/parts/section/footer.php'; ?>
 </div><!-- /.wrapper -->
@@ -113,5 +100,24 @@ $pages = array(
 <script src="<?php echo PASTASITE; ?>js/wow.min.js"></script>
 <script src="<?php echo PASTASITE; ?>js/buttons.js"></script>
 <script src="<?php echo PASTASITE; ?>js/scripts.js"></script>
+<?= '<script type="text/javascript">
+                        function constantes(){    
+                                var dados = {
+                                    "HOME" : "' . HOME . '",
+                                    "INATIVO" : "' . INATIVO . '",
+                                    "PASTAUPLOADS" : "' . PASTAUPLOADS . '" ,                                       
+                                    "AMBIENTE" : "WEB"                                      
+                                    };
+                                return dados;
+                        }
+                </script>'; ?>
+<script type="text/javascript" src="<?php echo INCLUDES; ?>validacoes.js"></script>
+<script type="text/javascript" src="<?php echo PASTAADMIN; ?>js/Funcoes.js"></script>
+<?php carregaJs($url); ?>
+<script>
+    jQuery(document).ready(function () {
+        Funcoes.init();
+    });
+</script>
 </body>
 </html>
