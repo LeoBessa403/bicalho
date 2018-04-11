@@ -4,7 +4,9 @@
         <div class="availability"><label>Disponibilidade:</label><span class="available">  em estoque</span></div>
 
         <div class="title"><a href="#">VAIO fit laptop - windows 8 SVF14322CXW</a></div>
-        <div class="brand">sony</div>
+        <div class="brand">
+            <a href="<?php echo PASTASITE; ?>Marcas/Index">sony</a>
+        </div>
 
         <div class="social-row">
             <span class="st_facebook_hcount"></span>

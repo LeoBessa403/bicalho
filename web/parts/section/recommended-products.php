@@ -13,13 +13,17 @@
             <div class="product-item">
                 <div class="ribbon red"><span>destaque</span></div>
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-11.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                         data-echo="<?php echo PASTASITE; ?>images/products/product-11.jpg"/>
                 </div>
                 <div class="body">
                     <div class="title">
-                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">LC-70UD1U 70" class aquos 4K ultra HD</a>
+                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">LC-70UD1U 70" class aquos 4K ultra
+                            HD</a>
                     </div>
-                    <div class="brand">sharp</div>
+                    <div class="brand">
+                        <a href="<?php echo PASTASITE; ?>Marcas/Index">sharp</a>
+                    </div>
                 </div>
                 <div class="prices">
                     <div class="price-current text-right">por R$1199.00</div>
@@ -40,16 +44,19 @@
             <div class="product-item">
                 <div class="ribbon blue"><span>novo</span></div>
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-12.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                         data-echo="<?php echo PASTASITE; ?>images/products/product-12.jpg"/>
                 </div>
                 <div class="body">
                     <div class="title">
-                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">cinemizer OLED 3D virtual reality TV Video</a>
+                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">cinemizer OLED 3D virtual reality TV
+                            Video</a>
                     </div>
-                    <div class="brand">zeiss</div>
+                    <div class="brand">
+                        <a href="<?php echo PASTASITE; ?>Marcas/Index">zeiss</a>
+                    </div>
                 </div>
                 <div class="prices">
-
                     <div class="price-current text-right">por R$1199.00</div>
                 </div>
                 <div class="hover-area">
@@ -67,13 +74,17 @@
         <div class="no-margin carousel-item product-item-holder hover size-medium">
             <div class="product-item">
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-13.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                         data-echo="<?php echo PASTASITE; ?>images/products/product-13.jpg"/>
                 </div>
                 <div class="body">
                     <div class="title">
-                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">s2340T23" full HD multi-Touch Monitor</a>
+                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">s2340T23" full HD multi-Touch
+                            Monitor</a>
                     </div>
-                    <div class="brand">dell</div>
+                    <div class="brand">
+                        <a href="<?php echo PASTASITE; ?>Marcas/Index">dell</a>
+                    </div>
                 </div>
                 <div class="prices">
                     <div class="price-current text-right">por R$1199.00</div>
@@ -94,13 +105,16 @@
             <div class="product-item">
                 <div class="ribbon blue"><span>novo</span></div>
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-14.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                         data-echo="<?php echo PASTASITE; ?>images/products/product-14.jpg"/>
                 </div>
                 <div class="body">
                     <div class="title">
                         <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">kardon BDS 7772/120 integrated 3D</a>
                     </div>
-                    <div class="brand">harman</div>
+                    <div class="brand">
+                        <a href="<?php echo PASTASITE; ?>Marcas/Index">harman</a>
+                    </div>
                 </div>
                 <div class="prices">
                     <div class="price-current text-right">por R$1199.00</div>
@@ -121,13 +135,16 @@
             <div class="product-item">
                 <div class="ribbon green"><span>mais vendido</span></div>
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-15.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                         data-echo="<?php echo PASTASITE; ?>images/products/product-15.jpg"/>
                 </div>
                 <div class="body">
                     <div class="title">
                         <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">netbook acer travel B113-E-10072</a>
                     </div>
-                    <div class="brand">acer</div>
+                    <div class="brand">
+                        <a href="<?php echo PASTASITE; ?>Marcas/Index">acer</a>
+                    </div>
                 </div>
                 <div class="prices">
                     <div class="price-current text-right">por R$1199.00</div>
@@ -147,13 +164,17 @@
         <div class="no-margin carousel-item product-item-holder hover size-medium">
             <div class="product-item">
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-16.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                         data-echo="<?php echo PASTASITE; ?>images/products/product-16.jpg"/>
                 </div>
                 <div class="body">
                     <div class="title">
-                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">iPod touch 5th generation,64GB, blue</a>
+                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">iPod touch 5th generation,64GB,
+                            blue</a>
                     </div>
-                    <div class="brand">apple</div>
+                    <div class="brand">
+                        <a href="<?php echo PASTASITE; ?>Marcas/Index">apple</a>
+                    </div>
                 </div>
                 <div class="prices">
                     <div class="price-current text-right">por R$1199.00</div>
@@ -173,13 +194,17 @@
         <div class="no-margin carousel-item product-item-holder hover size-medium">
             <div class="product-item">
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-13.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                         data-echo="<?php echo PASTASITE; ?>images/products/product-13.jpg"/>
                 </div>
                 <div class="body">
                     <div class="title">
-                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">s2340T23" full HD multi-Touch Monitor</a>
+                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">s2340T23" full HD multi-Touch
+                            Monitor</a>
                     </div>
-                    <div class="brand">dell</div>
+                    <div class="brand">
+                        <a href="<?php echo PASTASITE; ?>Marcas/Index">dell</a>
+                    </div>
                 </div>
                 <div class="prices">
                     <div class="price-current text-right">por R$1199.00</div>
@@ -200,14 +225,17 @@
             <div class="product-item">
                 <div class="ribbon blue"><span>novo</span></div>
                 <div class="image">
-                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-14.jpg" />
+                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                         data-echo="<?php echo PASTASITE; ?>images/products/product-14.jpg"/>
                 </div>
                 <div class="body">
 
                     <div class="title">
                         <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">kardon BDS 7772/120 integrated 3D</a>
                     </div>
-                    <div class="brand">harman</div>
+                    <div class="brand">
+                        <a href="<?php echo PASTASITE; ?>Marcas/Index">harman</a>
+                    </div>
                 </div>
                 <div class="prices">
 

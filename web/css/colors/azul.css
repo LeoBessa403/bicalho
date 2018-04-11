@@ -180,3 +180,12 @@ h2, a, a:hover, a:focus, a:active, .primary-color, .le-color, .breadcrumb-nav-ho
     color: #fefefe !important;
     background-color: #2c4591 !important;
 }
+
+.brand a{
+    color: #5B5B5B !important;
+}
+
+.brand a:hover{
+    color: #2c4591 !important;
+    font-weight: bold;
+}
