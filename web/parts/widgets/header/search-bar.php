@@ -13,7 +13,6 @@
         <a href="mailto:contato@bicalhorefrigeracao.com">
             <i class="fa fa-envelope"></i>contato@bicalhorefrigeracao.com</span>
         </a>
-
     </div>
 </div><!-- /.contact-row -->
 <!-- ============================================================= SEARCH AREA ============================================================= -->
@@ -21,21 +20,18 @@
     <form>
         <div class="control-group">
             <input class="search-field" placeholder="Pesquisa por produto"/>
-
-            <div class="custom-select categories-filter animate-dropdown">
-                <section>
-                    <select class="styled">
-                        <option>Categorias</option>
-                        <option>Laptops</option>
-                        <option>TV & Audio</option>
-                        <option>Gadgets</option>
-                        <option>Cameras</option>
-                    </select>
-                </section>
-            </div>
-
+            <ul class="categories-filter animate-dropdown">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="category-grid.html">Categorias</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">laptops</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">tv &amp; audio</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">gadgets</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">cameras</a></li>
+                    </ul>
+                </li>
+            </ul>
             <a class="search-button" href="#"></a>
-
         </div>
     </form>
 </div><!-- /.search-area -->
