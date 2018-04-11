@@ -38,7 +38,7 @@
 
         <div class="no-margin carousel-item product-item-holder hover size-medium">
             <div class="product-item">
-                <div class="ribbon blue"><span>new!</span></div> 
+                <div class="ribbon blue"><span>novo</span></div>
                 <div class="image">
                     <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-12.jpg" />
                 </div>
@@ -92,7 +92,7 @@
 
         <div class="no-margin carousel-item product-item-holder hover size-medium">
             <div class="product-item">
-                <div class="ribbon blue"><span>new!</span></div> 
+                <div class="ribbon blue"><span>novo</span></div>
                 <div class="image">
                     <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-14.jpg" />
                 </div>
@@ -198,7 +198,7 @@
 
         <div class="no-margin carousel-item product-item-holder hover size-medium">
             <div class="product-item">
-                <div class="ribbon blue"><span>new!</span></div> 
+                <div class="ribbon blue"><span>novo</span></div>
                 <div class="image">
                     <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-14.jpg" />
                 </div>

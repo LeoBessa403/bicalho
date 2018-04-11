@@ -27,7 +27,7 @@
 	                        	<a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">Canon PowerShot Elph 115 IS</a>
 	                    	</div><!-- /.title --> 
 	                    	<div>
-	                    		<span class="label label-success wishlist-in-stock">In Stock</span>
+	                    		<span class="label label-success wishlist-in-stock">Com estoque</span>
 	                    	</div>	                	
 	                    </div>
 						
@@ -64,7 +64,7 @@
 	                        	<a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">I - Book Mini Laptop</a>
 	                    	</div><!-- /.title --> 
 	                    	<div>
-	                    		<span class="label label-danger wishlist-out-of-stock">Out of Stock</span>
+	                    		<span class="label label-danger wishlist-out-of-stock">Sem estoque</span>
 	                    	</div>	                	
 	                    </div>
 						

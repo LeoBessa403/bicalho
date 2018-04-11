@@ -1,48 +1,54 @@
 <section id="gaming">
     <div class="grid-list-products">
-        <h2 class="section-title">Gaming</h2>
-        
+        <h2 class="section-title">Categoria</h2>
+
         <div class="control-bar">
-            <div id="popularity-sort" class="le-select" >
+            <div id="popularity-sort" class="le-select">
                 <select data-placeholder="sort by popularity">
-                    <option value="1">1-100 players</option>
-                    <option value="2">101-200 players</option>
-                    <option value="3">200+ players</option>
+                    <option value="1">Por preço</option>
+                    <option value="2">Por vendas</option>
+                    <option value="3">Por Visitas</option>
                 </select>
             </div>
-            
+
             <div id="item-count" class="le-select">
                 <select>
-                    <option value="1">24 per page</option>
-                    <option value="2">48 per page</option>
-                    <option value="3">32 per page</option>
+                    <option value="1">24 por página</option>
+                    <option value="2">48 por página</option>
+                    <option value="3">32 por página</option>
                 </select>
             </div>
 
             <div class="grid-list-buttons">
                 <ul>
-                    <li class="grid-list-button-item <?php if(!$isListView) echo 'active';?>"><a data-toggle="tab" href="#grid-view"><i class="fa fa-th-large"></i> Grid</a></li>
-                    <li class="grid-list-button-item <?php if($isListView) echo 'active';?>"><a data-toggle="tab" href="#list-view"><i class="fa fa-th-list"></i> List</a></li>
+                    <li class="grid-list-button-item <?php if (!$isListView) echo 'active'; ?>"><a data-toggle="tab"
+                                                                                                   href="#grid-view"><i
+                                    class="fa fa-th-large"></i> Grid</a></li>
+                    <li class="grid-list-button-item <?php if ($isListView) echo 'active'; ?>"><a data-toggle="tab"
+                                                                                                  href="#list-view"><i
+                                    class="fa fa-th-list"></i> List</a></li>
                 </ul>
             </div>
         </div><!-- /.control-bar -->
-                                
+
         <div class="tab-content">
-            <div id="grid-view" class="products-grid fade tab-pane <?php if(!$isListView) echo 'in active';?>">
-                
+            <div id="grid-view" class="products-grid fade tab-pane <?php if (!$isListView) echo 'in active'; ?>">
+
                 <div class="product-grid-holder">
                     <div class="row no-margin">
-                        
+
                         <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
                             <div class="product-item">
                                 <div class="ribbon red"><span>destaque</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-01.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                         data-echo="<?php echo PASTASITE; ?>images/products/product-01.jpg"/>
                                 </div>
                                 <div class="body">
-                                    <div class="label-discount green">-50% sale</div>
+                                    <div class="label-discount green">50% desconto</div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop -
+                                            Windows 8 SVF14322CXW</a>
                                     </div>
                                     <div class="brand">sony</div>
                                 </div>
@@ -52,7 +58,8 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
+                                            ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -64,9 +71,10 @@
 
                         <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon blue"><span>new!</span></div> 
+                                <div class="ribbon blue"><span>novo</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-02.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                         data-echo="<?php echo PASTASITE; ?>images/products/product-02.jpg"/>
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -81,7 +89,8 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
+                                            ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -94,7 +103,8 @@
                         <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
                             <div class="product-item">
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                         data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg"/>
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -109,7 +119,8 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
+                                            ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -118,18 +129,20 @@
                                 </div>
                             </div><!-- /.product-item -->
                         </div><!-- /.product-item-holder -->
-                            
+
                         <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
                             <div class="product-item">
                                 <div class="ribbon red"><span>destaque</span></div>
                                 <div class="ribbon green"><span>mais vendido</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-04.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                         data-echo="<?php echo PASTASITE; ?>images/products/product-04.jpg"/>
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">Netbook Acer TravelMate B113-E-10072</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">Netbook Acer
+                                            TravelMate B113-E-10072</a>
                                     </div>
                                     <div class="brand">acer</div>
                                 </div>
@@ -139,7 +152,8 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
+                                            ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -153,12 +167,14 @@
                             <div class="product-item">
                                 <div class="ribbon red"><span>destaque</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-01.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                         data-echo="<?php echo PASTASITE; ?>images/products/product-01.jpg"/>
                                 </div>
                                 <div class="body">
-                                    <div class="label-discount green">-50% sale</div>
+                                    <div class="label-discount green">50% desconto</div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop -
+                                            Windows 8 SVF14322CXW</a>
                                     </div>
                                     <div class="brand">sony</div>
                                 </div>
@@ -168,7 +184,8 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
+                                            ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -180,9 +197,10 @@
 
                         <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
                             <div class="product-item">
-                                <div class="ribbon blue"><span>new!</span></div> 
+                                <div class="ribbon blue"><span>novo</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-02.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                         data-echo="<?php echo PASTASITE; ?>images/products/product-02.jpg"/>
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -197,7 +215,8 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
+                                            ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -210,7 +229,8 @@
                         <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
                             <div class="product-item">
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                         data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg"/>
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -225,7 +245,8 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
+                                            ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -240,12 +261,14 @@
                                 <div class="ribbon red"><span>destaque</span></div>
                                 <div class="ribbon green"><span>mais vendido</span></div>
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-04.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                         data-echo="<?php echo PASTASITE; ?>images/products/product-04.jpg"/>
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">Netbook Acer TravelMate B113-E-10072</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">Netbook Acer
+                                            TravelMate B113-E-10072</a>
                                     </div>
                                     <div class="brand">acer</div>
                                 </div>
@@ -255,7 +278,8 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
+                                            ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -268,7 +292,8 @@
                         <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
                             <div class="product-item">
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                         data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg"/>
                                 </div>
                                 <div class="body">
                                     <div class="label-discount clear"></div>
@@ -283,7 +308,8 @@
                                 </div>
                                 <div class="hover-area">
                                     <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add ao carrinho</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
+                                            ao carrinho</a>
                                     </div>
                                     <div class="wish-compare">
                                         <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -295,54 +321,58 @@
 
                     </div><!-- /.row -->
                 </div><!-- /.product-grid-holder -->
-                
+
                 <div class="pagination-holder">
                     <div class="row">
-                        
                         <div class="col-xs-12 col-sm-6 text-left">
-                            <ul class="pagination ">
-                                <li class="current"><a  href="#">1</a></li>
+                            <ul class="pagination">
+                                <li><a href="#"><<</a></li>
+                                <li class="current"><a href="#">1</a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a href="#">3</a></li>
                                 <li><a href="#">4</a></li>
-                                <li><a href="#">next</a></li>
+                                <li><a href="#">>></a></li>
                             </ul>
                         </div>
-
                         <div class="col-xs-12 col-sm-6">
                             <div class="result-counter">
-                                Showing <span>1-9</span> of <span>11</span> results
+                                de<span> 1 a 9</span> de <span>11</span> Encontrados
                             </div>
                         </div>
-
                     </div><!-- /.row -->
                 </div><!-- /.pagination-holder -->
             </div><!-- /.products-grid #grid-view -->
 
-            <div id="list-view" class="products-grid fade tab-pane <?php if($isListView) echo 'active in';?>">
+            <div id="list-view" class="products-grid fade tab-pane <?php if ($isListView) echo 'active in'; ?>">
                 <div class="products-list">
-                    
+
                     <div class="product-item product-item-holder">
                         <div class="ribbon red"><span>destaque</span></div>
-                        <div class="ribbon blue"><span>new!</span></div>
+                        <div class="ribbon blue"><span>novo</span></div>
                         <div class="row">
                             <div class="no-margin col-xs-12 col-sm-4 image-holder">
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-01.jpg" />
+                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
+                                        <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                             data-echo="<?php echo PASTASITE; ?>images/products/product-01.jpg"/>
+                                    </a>
                                 </div>
                             </div><!-- /.image-holder -->
                             <div class="no-margin col-xs-12 col-sm-5 body-holder">
                                 <div class="body">
-                                    <div class="label-discount green">-50% sale</div>
+                                    <div class="label-discount green">50% desconto</div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop -
+                                            Windows 8 SVF14322CXW</a>
                                     </div>
                                     <div class="brand">sony</div>
                                     <div class="excerpt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan consectetur odio ut tincidunt.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod
+                                            erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan
+                                            consectetur odio ut tincidunt.</p>
                                     </div>
                                     <div class="addto-compare">
-                                        <a class="btn-add-to-compare" href="#">add to compare list</a>
+                                        <a class="btn-add-to-compare" href="#">comparar</a>
                                     </div>
                                 </div>
                             </div><!-- /.body-holder -->
@@ -350,7 +380,8 @@
                                 <div class="right-clmn">
                                     <div class="price-current">R$1199.00</div>
                                     <div class="price-prev">de R$1399.00</div>
-                                    <div class="availability"><label>availability:</label><span class="available">  in stock</span></div>
+                                    <div class="availability"><label>avaliação:</label><span class="available">  com estoque</span>
+                                    </div>
                                     <a class="le-button" href="#">add ao carrinho</a>
                                     <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
                                 </div>
@@ -360,28 +391,34 @@
 
 
                     <div class="product-item product-item-holder">
-                        <div class="ribbon green"><span>bestseller</span></div>
+                        <div class="ribbon green"><span>mais vendidos</span></div>
                         <div class="row">
                             <div class="no-margin col-xs-12 col-sm-4 image-holder">
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-02.jpg" />
+                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
+                                        <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                             data-echo="<?php echo PASTASITE; ?>images/products/product-02.jpg"/>
+                                    </a>
                                 </div>
                             </div><!-- /.image-holder -->
                             <div class="no-margin col-xs-12 col-sm-5 body-holder">
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop -
+                                            Windows 8 SVF14322CXW</a>
                                     </div>
                                     <div class="brand">sony</div>
                                     <div class="excerpt">
                                         <div class="star-holder">
                                             <div class="star" data-score="4"></div>
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan consectetur odio ut tincidunt.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod
+                                            erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan
+                                            consectetur odio ut tincidunt.</p>
                                     </div>
                                     <div class="addto-compare">
-                                        <a class="btn-add-to-compare" href="#">add to compare list</a>
+                                        <a class="btn-add-to-compare" href="#">comparar</a>
                                     </div>
                                 </div>
                             </div><!-- /.body-holder -->
@@ -389,7 +426,8 @@
                                 <div class="right-clmn">
                                     <div class="price-current">R$1199.00</div>
                                     <div class="price-prev">de R$1399.00</div>
-                                    <div class="availability"><label>availability:</label><span class="not-available">out of stock</span></div>
+                                    <div class="availability"><label>avaliação:</label><span class="not-available">sem estoque</span>
+                                    </div>
                                     <a class="le-button disabled" href="#">add ao carrinho</a>
                                     <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
                                 </div>
@@ -399,28 +437,32 @@
 
 
                     <div class="product-item product-item-holder">
-                        <div class="ribbon red"><span>sell</span></div> 
+                        <div class="ribbon red"><span>vender</span></div>
                         <div class="row">
                             <div class="no-margin col-xs-12 col-sm-4 image-holder">
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                         data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg"/>
                                 </div>
                             </div><!-- /.image-holder -->
                             <div class="no-margin col-xs-12 col-sm-5 body-holder">
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop -
+                                            Windows 8 SVF14322CXW</a>
                                     </div>
                                     <div class="brand">sony</div>
                                     <div class="excerpt">
                                         <div class="star-holder">
                                             <div class="star" data-score="2"></div>
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan consectetur odio ut tincidunt. </p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod
+                                            erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan
+                                            consectetur odio ut tincidunt. </p>
                                     </div>
                                     <div class="addto-compare">
-                                        <a class="btn-add-to-compare" href="#">add to compare list</a>
+                                        <a class="btn-add-to-compare" href="#">comparar</a>
                                     </div>
                                 </div>
                             </div><!-- /.body-holder -->
@@ -428,7 +470,8 @@
                                 <div class="right-clmn">
                                     <div class="price-current">R$1199.00</div>
                                     <div class="price-prev">de R$1399.00</div>
-                                    <div class="availability"><label>availability:</label><span class="available">in stock</span></div>
+                                    <div class="availability"><label>avaliação:</label><span class="available">com estoque</span>
+                                    </div>
                                     <a class="le-button" href="#">add ao carrinho</a>
                                     <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
                                 </div>
@@ -440,21 +483,25 @@
                         <div class="row">
                             <div class="no-margin col-xs-12 col-sm-4 image-holder">
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-04.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                         data-echo="<?php echo PASTASITE; ?>images/products/product-04.jpg"/>
                                 </div>
                             </div><!-- /.image-holder -->
                             <div class="no-margin col-xs-12 col-sm-5 body-holder">
                                 <div class="body">
-                                    <div class="label-discount green">-50% sale</div>
+                                    <div class="label-discount green">50% desconto</div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop -
+                                            Windows 8 SVF14322CXW</a>
                                     </div>
                                     <div class="brand">sony</div>
                                     <div class="excerpt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan consectetur odio ut tincidunt. </p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod
+                                            erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan
+                                            consectetur odio ut tincidunt. </p>
                                     </div>
                                     <div class="addto-compare">
-                                        <a class="btn-add-to-compare" href="#">add to compare list</a>
+                                        <a class="btn-add-to-compare" href="#">comparar</a>
                                     </div>
                                 </div>
                             </div><!-- /.body-holder -->
@@ -462,7 +509,8 @@
                                 <div class="right-clmn">
                                     <div class="price-current">R$1199.00</div>
                                     <div class="price-prev">de R$1399.00</div>
-                                    <div class="availability"><label>availability:</label><span class="available">  in stock</span></div>
+                                    <div class="availability"><label>avaliação:</label><span class="available"> com estoque</span>
+                                    </div>
                                     <a class="le-button" href="#">add ao carrinho</a>
                                     <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
                                 </div>
@@ -475,21 +523,25 @@
                         <div class="row">
                             <div class="no-margin col-xs-12 col-sm-4 image-holder">
                                 <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-05.jpg" />
+                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
+                                         data-echo="<?php echo PASTASITE; ?>images/products/product-05.jpg"/>
                                 </div>
                             </div><!-- /.image-holder -->
                             <div class="no-margin col-xs-12 col-sm-5 body-holder">
                                 <div class="body">
                                     <div class="label-discount clear"></div>
                                     <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop - Windows 8 SVF14322CXW</a>
+                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop -
+                                            Windows 8 SVF14322CXW</a>
                                     </div>
                                     <div class="brand">sony</div>
                                     <div class="excerpt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan consectetur odio ut tincidunt.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod
+                                            erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan
+                                            consectetur odio ut tincidunt.</p>
                                     </div>
                                     <div class="addto-compare">
-                                        <a class="btn-add-to-compare" href="#">add to compare list</a>
+                                        <a class="btn-add-to-compare" href="#">comparar</a>
                                     </div>
                                 </div>
                             </div><!-- /.body-holder -->
@@ -497,7 +549,8 @@
                                 <div class="right-clmn">
                                     <div class="price-current">R$1199.00</div>
                                     <div class="price-prev">de R$1399.00</div>
-                                    <div class="availability"><label>availability:</label><span class="available">  in stock</span></div>
+                                    <div class="availability"><label>avaliação:</label><span class="available"> com estoque</span>
+                                    </div>
                                     <a class="le-button" href="#">add ao carrinho</a>
                                     <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
                                 </div>
@@ -511,7 +564,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-6 text-left">
                             <ul class="pagination">
-                                <li class="current"><a  href="#">1</a></li>
+                                <li class="current"><a href="#">1</a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a href="#">3</a></li>
                                 <li><a href="#">4</a></li>
@@ -520,7 +573,7 @@
                         </div>
                         <div class="col-xs-12 col-sm-6">
                             <div class="result-counter">
-                                Showing <span>1-9</span> of <span>11</span> results
+                                de<span> 1 a 9</span> de <span>11</span> Encontrados
                             </div><!-- /.result-counter -->
                         </div>
                     </div><!-- /.row -->

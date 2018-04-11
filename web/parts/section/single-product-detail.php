@@ -14,7 +14,7 @@
 
         <div class="buttons-holder">
             <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-            <a class="btn-add-to-compare" href="#">add to compare list</a>
+            <a class="btn-add-to-compare" href="#">comparar</a>
         </div>
 
         <div class="excerpt">

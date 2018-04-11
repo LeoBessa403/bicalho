@@ -20,7 +20,7 @@
             <div class="price-range-holder">
                 <input type="text" class="price-slider" value="" >
                 <span class="min-max">
-                    Price: $89 - $2899
+                    Preço: R$89 - R$2899
                 </span>
                 <span class="filter-button">
                     <a href="#">Pesquisar</a>

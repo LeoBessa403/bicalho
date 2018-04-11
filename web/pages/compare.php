@@ -70,7 +70,7 @@
                 <tbody>
                                                                                                      
                     <tr class="comparison-item price">
-                        <th>Price</th>
+                        <th>preço</th>
                         <td class="comparison-item-cell odd product_39">
                             <span class="amount">R$629.99</span>
                         </td>
@@ -104,24 +104,24 @@
                     </tr>
                                                         
                     <tr class="comparison-item stock">
-                        <th>Availability</th>
+                        <th>Avaliação</th>
 
                         <td class="comparison-item-cell odd product_39">
-                            <span class="label label-success"><span class="">In stock</span></span>                        
+                            <span class="label label-success"><span class="">Com estoque</span></span>
                         </td>
                         <td class="comparison-item-cell even product_34">
-                            <span class="label label-success"><span class="">In stock</span></span>                        
+                            <span class="label label-success"><span class="">Com estoque</span></span>
                         </td>
                         <td class="comparison-item-cell odd product_30">
-                            <span class="label label-success"><span class="">In stock</span></span>                        
+                            <span class="label label-success"><span class="">Com estoque</span></span>
                         </td>
                         <td class="comparison-item-cell even product_20">
-                            <span class="label label-success"><span class="">In stock</span></span>                        
+                            <span class="label label-success"><span class="">Com estoque</span></span>
                         </td>
                     </tr>
                                     
                     <tr class="price repeated">
-                        <th>Price</th>
+                        <th>preço</th>
                         <td class="odd product_39"><span class="amount">R$629.99</span></td>
                         <td class="even product_34"><del><span class="amount">R$299.99</span></del> <ins><span class="amount">R$269.99</span></ins></td>
                         <td class="odd product_30"><span class="amount">R$399.99</span></td>
