@@ -3,13 +3,13 @@
 function servidor_inicial()
 {
 
-    $servidor = "local";
-//    $servidor = "web";
+//    $servidor = "local";
+    $servidor = "web";
 
     if ($servidor == "web") {
-        $config = array('HOME' => 'http://bicalhorefrigeracao.com/', 'HOST' => 'localhost', 'USER' => 'gejdo247_gej', 'PASS' => 'Admin101*', 'DBSA' => 'gejdo247_gej');
+        $config = array('HOME' => 'http://bicalhorefrigeracao.com/', 'HOST' => 'localhost', 'USER' => 'bicalhor_bd', 'PASS' => 'Admin101*', 'DBSA' => 'bicalhor_bd');
     } else {
-        $config = array('HOME' => 'http://localhost/bicalho/', 'HOST' => 'localhost', 'USER' => 'root', 'PASS' => '', 'DBSA' => 'gej_bd');
+        $config = array('HOME' => 'http://localhost/bicalho/', 'HOST' => 'localhost', 'USER' => 'root', 'PASS' => '', 'DBSA' => 'bicalhor_bd');
     }
 
     define('HOME', $config['HOME']);
@@ -25,7 +25,7 @@ function servidor_inicial()
     //////////////////////////////////////////////
 
     // Título do Site
-    define('DESC', 'WEB GEJ');
+    define('DESC', 'Sistema Bicalho');
     // Tabela de pesquisa de usuário para validação
     define('TABLE_USER', 'tb_usuario');
     // Campo de login na Tabela de pesquisa de usuário para validação
