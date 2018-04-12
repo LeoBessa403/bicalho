@@ -48,16 +48,6 @@
                     &copy; DESENVOLVIMENTO LEO BESSA <?php echo date("Y"); ?>
                 </div><!-- /.copyright -->
             </div>
-            <div class="col-xs-12 col-sm-6 no-margin">
-                <div class="payment-methods ">
-                    <ul>
-                        <li><img alt="" src="<?php echo PASTASITE; ?>images/payments/payment-visa.png"></li>
-                        <li><img alt="" src="<?php echo PASTASITE; ?>images/payments/payment-master.png"></li>
-                        <li><img alt="" src="<?php echo PASTASITE; ?>images/payments/payment-paypal.png"></li>
-                        <li><img alt="" src="<?php echo PASTASITE; ?>images/payments/payment-skrill.png"></li>
-                    </ul>
-                </div><!-- /.payment-methods -->
-            </div>
         </div><!-- /.container -->
     </div><!-- /.copyright-bar -->
 

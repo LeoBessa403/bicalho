@@ -480,12 +480,12 @@ h1, h2, h3, h4, h5 {
 
 .social-icons li {
     display: inline-block;
-    font-size: 16px;
+    font-size: 18px;
     margin-right: 10px;
 }
 
 .social-icons li a {
-    color: #fff;
+    color: #fff !important;
     display: inline-block;
     padding: 6px;
     background-color: #3D3D3D;
@@ -493,8 +493,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .social-icons li a:before {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     display: inline-block;
     text-align: center;
 }
@@ -5180,7 +5180,7 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 
 #footer .payment-methods li {
     display: inline-block;
-    width: 50px;
+    width: 32%;
     background-color: #fff;
     border-radius: 2px;
     text-align: center;
