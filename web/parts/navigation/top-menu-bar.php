@@ -3,14 +3,15 @@
     <div class="container">
         <div class="col-xs-12 col-sm-6 no-margin">
             <ul>
-                <li><a href="<?php echo PASTASITE;?>">Home</a></li>
+                <li><a href="<?php echo PASTASITE; ?>">Home</a></li>
                 <li><a href="#">Dúvidas</a></li>
                 <li><a href="#">Contatos</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#pages">Páginas</a>
                     <ul class="dropdown-menu" role="menu">
-                        <?php foreach ( $pages as $key => $packagePage ) : ?>
-                        <li><a href="#"><?php echo $packagePage;?></a></li>
+                        <?php foreach ($pages as $key => $packagePage) : ?>
+                            <li><a href="<?php echo PASTASITE; ?>Institucional/<?php echo $key; ?>">
+                                    <?php echo $packagePage; ?></a></li>
                         <?php endforeach; ?>
                     </ul>
                 </li>
