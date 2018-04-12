@@ -4887,7 +4887,7 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 
 .sidebar.narrow {
     width: 23%;
-    padding: 0 0 0 20px;
+    padding: 0 20px 0 0;
 }
 
 .sidebar.wide {
