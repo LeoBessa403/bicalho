@@ -38,6 +38,23 @@ $pages = array(
     <meta name="country" content="BRA"/>
     <meta name="currency" content="R$"/>
 
+
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio" />
+    <meta property="og:description" content="Equipamentos para Lanchonetes, Padarias, Açougues, Ambulantes. Automação e Refrigeração Comercial, Ar Condicionados e Muito Mais!" />
+    <meta property="og:url" content="https://www.bicalhorefrigeracao.com/" />
+    <meta property="og:site_name" content="Bicalho Refrigeração" />
+    <meta property="og:image" content="https://www.hostgator.com.br/wp-content/uploads/2016/03/img-destaque-redes-V02.png" />
+    <meta property="og:image:secure_url" content="https://www.hostgator.com.br/wp-content/uploads/2016/03/img-destaque-redes-V02.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="660" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" content="Equipamentos para Lanchonetes, Padarias, Açougues, Ambulantes. Automação e Refrigeração Comercial, Ar Condicionados e Muito Mais!" />
+    <meta name="twitter:title" content="Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio" />
+    <meta name="twitter:image" content="https://www.hostgator.com.br/wp-content/uploads/2016/03/img-destaque-redes-V02.png" />
+    <link rel="canonical" href="https://www.bicalhorefrigeracao.com/"/>
+
     <title>Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio</title>
 
     <!-- Bootstrap Core CSS -->
@@ -49,7 +66,6 @@ $pages = array(
     <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/owl.carousel.css">
     <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/owl.transitions.css">
     <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/animate.min.css">
-    <link rel="canonical" href="https://www.bicalhorefrigeracao.com/"/>
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
@@ -72,7 +88,6 @@ $pages = array(
     <?php
     require MC_ROOT . '/parts/navigation/top-menu-bar.php';
     require MC_ROOT . '/parts/section/header-2.php';
-
 
     $url = new UrlAmigavel();
     $url->pegaControllerAction();
