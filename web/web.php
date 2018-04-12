@@ -39,20 +39,24 @@ $pages = array(
     <meta name="currency" content="R$"/>
 
 
-    <meta property="og:locale" content="pt_BR" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio" />
-    <meta property="og:description" content="Equipamentos para Lanchonetes, Padarias, Açougues, Ambulantes. Automação e Refrigeração Comercial, Ar Condicionados e Muito Mais!" />
-    <meta property="og:url" content="https://www.bicalhorefrigeracao.com/" />
-    <meta property="og:site_name" content="Bicalho Refrigeração" />
-    <meta property="og:image" content="https://www.hostgator.com.br/wp-content/uploads/2016/03/img-destaque-redes-V02.png" />
-    <meta property="og:image:secure_url" content="https://www.hostgator.com.br/wp-content/uploads/2016/03/img-destaque-redes-V02.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="660" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description" content="Equipamentos para Lanchonetes, Padarias, Açougues, Ambulantes. Automação e Refrigeração Comercial, Ar Condicionados e Muito Mais!" />
-    <meta name="twitter:title" content="Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio" />
-    <meta name="twitter:image" content="https://www.hostgator.com.br/wp-content/uploads/2016/03/img-destaque-redes-V02.png" />
+    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title"
+          content="Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio"/>
+    <meta property="og:description"
+          content="Equipamentos para Lanchonetes, Padarias, Açougues, Ambulantes. Automação e Refrigeração Comercial, Ar Condicionados e Muito Mais!"/>
+    <meta property="og:url" content="https://www.bicalhorefrigeracao.com/"/>
+    <meta property="og:site_name" content="Bicalho Refrigeração"/>
+    <meta property="og:image" content="<?php echo PASTASITE; ?>images/image_apresentacao.png"/>
+    <meta property="og:image:secure_url" content="<?php echo PASTASITE; ?>images/image_apresentacao.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="660"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:description"
+          content="Equipamentos para Lanchonetes, Padarias, Açougues, Ambulantes. Automação e Refrigeração Comercial, Ar Condicionados e Muito Mais!"/>
+    <meta name="twitter:title"
+          content="Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio"/>
+    <meta name="twitter:image" content="<?php echo PASTASITE; ?>images/image_apresentacao.png"/>
     <link rel="canonical" href="https://www.bicalhorefrigeracao.com/"/>
 
     <title>Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio</title>
