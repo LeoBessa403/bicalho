@@ -5,7 +5,7 @@
         </a>
     </div>
     <div class="phone inline">
-        <a class="link-phone" href="tel:061993704240" target="_blank">
+        <a class="link-phone" href="https://api.whatsapp.com/send?phone=5561993274991&text=sua%20mensagem" target="_blank">
             <i class="fa fa-whatsapp"></i>(61) 99370-4240
         </a>
     </div>
