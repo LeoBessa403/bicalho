@@ -5,7 +5,7 @@
             <ul>
                 <li><a href="<?php echo PASTASITE; ?>">Home</a></li>
                 <li><a href="<?php echo PASTASITE; ?>Institucional/Duvidas">Dúvidas</a></li>
-                <li><a href="#">Contatos</a></li>
+                <li><a href="<?php echo PASTASITE; ?>Institucional/Contatos">Contatos</a></li>
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#pages">Páginas</a>
                     <ul class="dropdown-menu" role="menu">
