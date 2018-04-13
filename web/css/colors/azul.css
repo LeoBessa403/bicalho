@@ -189,3 +189,11 @@ h2, a, a:hover, a:focus, a:active, .primary-color, .le-color, .breadcrumb-nav-ho
     color: #2c4591 !important;
     font-weight: bold;
 }
+
+.our-store .phone{
+    color: #2c4591 !important;
+}
+
+.our-store .phone:hover{
+    color: #2c4591 !important;
+}

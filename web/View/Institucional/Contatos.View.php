@@ -63,6 +63,16 @@
                     <p>Se você está interessado em oportunidades de emprego na nossa empresa, por favor envie-nos um
                         email
                         <a href="mailto:contato@bicalhorefrigeracao.com">contato@bicalhorefrigeracao.com</a></p>
+                    <div class="phone">
+                        <a class="link-phone" href="tel:06130461009" target="_blank">
+                            <i class="fa fa-phone"></i> (61) 3046-1009
+                        </a>
+                    </div>
+                    <div class="phone" style="margin-top: 10px;">
+                        <a class="link-phone" href="tel:061993704240" target="_blank">
+                            <i class="fa fa-whatsapp"></i> (61) 99370-4240
+                        </a>
+                    </div>
                 </section><!-- /.our-store -->
             </div><!-- /.col -->
 
