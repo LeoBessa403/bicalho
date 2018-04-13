@@ -3,8 +3,8 @@
 function servidor_inicial()
 {
 
-    $servidor = "local";
-//    $servidor = "web";
+//    $servidor = "local";
+    $servidor = "web";
 
     if ($servidor == "web") {
         $config = array('HOME' => 'http://bicalhorefrigeracao.com/', 'HOST' => 'localhost', 'USER' => 'bicalhor_bd', 'PASS' => 'Admin101*', 'DBSA' => 'bicalhor_bd');
@@ -49,6 +49,8 @@ function servidor_inicial()
     define('PASTAUPLOADS', 'uploads/');
     // TABELA PARA ARMAZENAR OS DADOS PARA AUDITORIA
     define('TABELA_AUDITORIA', AuditoriaEntidade::TABELA);
+    // NÚMERO PADRÃO DE ENVIO DO WHATSAPP
+    define('WHATSAPP', '5561993704240');
 
     //////////////////////////////////////////////
     // ******* CONFIGURAÇÕES DE EMAIL ********** //

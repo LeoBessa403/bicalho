@@ -17,7 +17,7 @@
             <span title="Compartilhe no Facebook" class="st_facebook_hcount"></span>
             <span title="Compartilhe no Twitter" class="st_twitter_hcount"></span>
             <a class="whatsapp" title="Nos chame no WhatSapp"
-               href="https://api.whatsapp.com/send?phone=5561993704240&text=Vi%20no%20site%20o%20item:%20<?php
+               href="https://api.whatsapp.com/send?phone=<?php echo WHATSAPP; ?>&text=Vi%20no%20site%20o%20item:%20<?php
                echo $produto;
                ?>%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20mesmo!&l=pt_BR"
                target="_blank">
