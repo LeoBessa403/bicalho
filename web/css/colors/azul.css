@@ -195,5 +195,18 @@ h2, a, a:hover, a:focus, a:active, .primary-color, .le-color, .breadcrumb-nav-ho
 }
 
 .our-store .phone:hover{
-    color: #2c4591 !important;
+    color: #d6610d !important;
+}
+
+.whatsapp {
+    font-size: 11px;
+    background-color: green;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.whatsapp:hover, .whatsapp:active, .whatsapp:after, .whatsapp:before {
+    background-color: #339153 !important;
+    color: white !important;
 }

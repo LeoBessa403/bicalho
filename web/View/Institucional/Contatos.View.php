@@ -69,7 +69,9 @@
                         </a>
                     </div>
                     <div class="phone" style="margin-top: 10px;">
-                        <a class="link-phone" href="tel:061993704240" target="_blank">
+                        <a class="link-phone" title="Nos chame no WhatSapp"
+                           href="https://api.whatsapp.com/send?phone=5561993704240&text=Vi%20no%20site%20e%20gostaria%20de%20fazer%20um%20orçamento!&l=pt_BR"
+                           target="_blank">
                             <i class="fa fa-whatsapp"></i> (61) 99370-4240
                         </a>
                     </div>
