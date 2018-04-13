@@ -12,8 +12,8 @@
         ?>
 
         <div class="social-row">
-            <span class="st_facebook_hcount"></span>
-            <span class="st_twitter_hcount"></span>
+            <span title="Compartilhe no Facebook" class="st_facebook_hcount"></span>
+            <span title="Compartilhe no Twitter" class="st_twitter_hcount"></span>
             <a class="whatsapp" title="Nos chame no WhatSapp"
                href="https://api.whatsapp.com/send?phone=5561993704240&text=Vi%20no%20site%20o%20item:%20<?php
                     echo $produto;
