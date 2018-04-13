@@ -9,6 +9,10 @@ class Institucional extends AbstractController
     public function SobreNos()
     {
     }
+
+    public function Duvidas()
+    {
+    }
 }
 ?>
    

@@ -7,13 +7,11 @@ $headerStyle = 2;
 
 $pages = array(
     'home-2' => 'Home',
-    'category-grid' => 'Category - Grid/List',
-    'category-grid-2' => 'Category 2 - Grid/List',
-    'single-product' => 'Single Product',
-    'single-product-sidebar' => 'Single Product with Sidebar',
+    'Cartegorias/Index' => 'Cartegorias',
+    'Marcas/Index' => 'Marcas',
     'Institucional/SobreNos' => 'Sobre nós',
     'Institucional/Contatos' => 'Contatos',
-    'faq' => 'Dúvidas',
+    'Institucional/Duvidas' => 'Dúvidas',
     'Produtos/DetalharFavoritos' => 'Favoritos',
     'Produtos/ComparaProdutos' => 'Comparação de produtos',
 );
