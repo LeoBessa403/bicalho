@@ -49,7 +49,8 @@
     <div class="widget">
         <h3>Informações</h3>
         <ul>
-            <li><a href="<?php echo PASTASITE; ?>Categorias/Index">Favoritos</a></li>
+            <li><a href="<?php echo PASTASITE; ?>Produtos/DetalharFavoritos">Favoritos</a></li>
+            <li><a href="<?php echo PASTASITE; ?>Produtos/ComparaProdutos">Comparação de Produtos</a></li>
             <li><a href="<?php echo PASTASITE; ?>Categorias/Index">Serviço ao cliente</a></li>
             <li><a href="<?php echo PASTASITE; ?>Categorias/Index">Dúvidas</a></li>
             <li><a href="<?php echo PASTASITE; ?>Categorias/Index">Suporte ao Produto</a></li>

@@ -10,7 +10,7 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#pages">Páginas</a>
                     <ul class="dropdown-menu" role="menu">
                         <?php foreach ($pages as $key => $packagePage) : ?>
-                            <li><a href="<?php echo PASTASITE; ?>Institucional/<?php echo $key; ?>">
+                            <li><a href="<?php echo PASTASITE.$key; ?>">
                                     <?php echo $packagePage; ?></a></li>
                         <?php endforeach; ?>
                     </ul>

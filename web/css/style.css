@@ -5233,6 +5233,14 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     display: none;
 }
 
+.remove-item {
+    color: darkred !important;
+}
+
+.remove-item:hover {
+    color: red !important;
+}
+
 /*===================================================================================*/
 /*  Responsive Layout
 /*===================================================================================*/

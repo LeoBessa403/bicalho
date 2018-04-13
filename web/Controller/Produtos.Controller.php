@@ -7,4 +7,12 @@ class Produtos extends AbstractController
     {
     }
 
+    function ComparaProdutos()
+    {
+    }
+
+    function DetalharFavoritos()
+    {
+    }
+
 }

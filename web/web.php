@@ -11,11 +11,11 @@ $pages = array(
     'category-grid-2' => 'Category 2 - Grid/List',
     'single-product' => 'Single Product',
     'single-product-sidebar' => 'Single Product with Sidebar',
-    'SobreNos' => 'Sobre nós',
-    'Contatos' => 'Contatos',
+    'Institucional/SobreNos' => 'Sobre nós',
+    'Institucional/Contatos' => 'Contatos',
     'faq' => 'Dúvidas',
-    'wishlist' => 'Favoritos',
-    'compare' => 'Comparação de produtos',
+    'Produtos/DetalharFavoritos' => 'Favoritos',
+    'Produtos/ComparaProdutos' => 'Comparação de produtos',
 );
 ?>
 <!DOCTYPE html>
