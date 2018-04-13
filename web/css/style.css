@@ -5091,20 +5091,9 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 }
 
 #footer .sub-form-row {
-    margin: 51px 0;
+    margin: 51px 0 0;
     position: relative;
     z-index: 200;
-}
-
-#footer .sub-form-row:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: #e0e0e0;
-    z-index: -1;
 }
 
 #footer .sub-form-row input {

@@ -210,3 +210,18 @@ h2, a, a:hover, a:focus, a:active, .primary-color, .le-color, .breadcrumb-nav-ho
     background-color: #339153 !important;
     color: white !important;
 }
+
+#footer .sub-form-row-2 {
+    background-color: #356145;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#footer .sub-form-row-2 h2 {
+    color: white !important;
+}
+
+#footer .sub-form-row-2 a {
+    font-size: 30px;
+    margin-left: 15px;
+}

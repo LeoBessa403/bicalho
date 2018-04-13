@@ -1,18 +1,18 @@
 <!-- ============================================================= FOOTER ============================================================= -->
 <footer id="footer" class="color-bg">
-    
+
     <div class="container">
         <div class="row no-margin widgets-row">
             <div class="col-xs-12  col-sm-4 no-margin-left">
-                <?php require MC_ROOT.'/parts/widgets/footer/featured-products-footer.php';?>
+                <?php require MC_ROOT . '/parts/widgets/footer/featured-products-footer.php'; ?>
             </div><!-- /.col -->
 
             <div class="col-xs-12 col-sm-4 ">
-                <?php require MC_ROOT.'/parts/widgets/footer/on-sale-products-footer.php';?>
+                <?php require MC_ROOT . '/parts/widgets/footer/on-sale-products-footer.php'; ?>
             </div><!-- /.col -->
 
             <div class="col-xs-12 col-sm-4 ">
-                <?php require MC_ROOT.'/parts/widgets/footer/top-rated-products-footer.php';?>
+                <?php require MC_ROOT . '/parts/widgets/footer/top-rated-products-footer.php'; ?>
             </div><!-- /.col -->
 
         </div><!-- /.widgets-row-->
@@ -29,14 +29,28 @@
         </div><!-- /.container -->
     </div><!-- /.sub-form-row -->
 
+    <div class="sub-form-row-2">
+        <div class="container">
+            <div class="col-xs-12 no-padding">
+                <h2>Alguma Dúvida? clique e nos chame pelo
+                    <a class="whatsapp" title="Nos chame no WhatSapp"
+                       href="https://api.whatsapp.com/send?phone=5561993704240&text=Vi%20no%20site%20o%20item:%20%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20mesmo!&l=pt_BR"
+                       target="_blank">
+                        <i class="fa fa-whatsapp"></i> WhatSapp
+                    </a>
+                </h2>
+            </div>
+        </div><!-- /.container -->
+    </div><!-- /.sub-form-row -->
+
     <div class="link-list-row">
         <div class="container no-padding">
             <div class="col-xs-12 col-md-4 ">
-                <?php require MC_ROOT.'/parts/widgets/footer/contact-info-footer.php';?>
+                <?php require MC_ROOT . '/parts/widgets/footer/contact-info-footer.php'; ?>
             </div>
 
             <div class="col-xs-12 col-md-8 no-margin">
-                <?php require MC_ROOT.'/parts/widgets/footer/links-footer.php';?>
+                <?php require MC_ROOT . '/parts/widgets/footer/links-footer.php'; ?>
             </div>
         </div><!-- /.container -->
     </div><!-- /.link-list-row -->
