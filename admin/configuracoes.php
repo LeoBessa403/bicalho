@@ -3,8 +3,7 @@
 function servidor_inicial()
 {
     $local = false;
-    $compara = strstr($_SERVER['SERVER_NAME'], 'localhost');
-    if ($compara != null){
+    if (strstr($_SERVER['SERVER_NAME'], 'localhost')){
         $local = true;
     }
 
