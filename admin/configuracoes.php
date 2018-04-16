@@ -51,7 +51,7 @@ function servidor_inicial()
     // (Ex.: cadastrante, administrador, pesquisador) Sepmre separados por (, )
     define('CAMPO_PERFIL', 'ds_perfil');
     // Atribui o nome da Sessão do usuario Logado no sitema
-    define('SESSION_USER', 'user_gej');
+    define('SESSION_USER', 'user_bicalho');
     // Tempo de Inativadade Máximo em Minutos, aceito para deslogar do Sistema.
     define('INATIVO', 20);
     // A frequencia em dias para realizar o BACKUP NO BANCO DE DADOS
