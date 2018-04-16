@@ -1,6 +1,6 @@
 <?php
-	if(file_exists(PASTASITE.'/parts/breadcrumb/breadcrumb-'.UrlAmigavel::$action.'.php')){
+	if(file_exists(PASTA_RAIZ.SITE. '/parts/breadcrumb/breadcrumb-'.UrlAmigavel::$action.'.php')){
 		echo '<div class="animate-dropdown">';
-		require PASTASITE.'/parts/breadcrumb/breadcrumb-'.UrlAmigavel::$action.'.php';
+		require PASTA_RAIZ.SITE. '/parts/breadcrumb/breadcrumb-'.UrlAmigavel::$action.'.php';
 		echo '</div>';
 	}

@@ -4,15 +4,15 @@
     <div class="container">
         <div class="row no-margin widgets-row">
             <div class="col-xs-12  col-sm-4 no-margin-left">
-                <?php require PASTASITE . '/parts/widgets/footer/featured-products-footer.php'; ?>
+                <?php require PASTA_RAIZ.SITE. '/parts/widgets/footer/featured-products-footer.php'; ?>
             </div><!-- /.col -->
 
             <div class="col-xs-12 col-sm-4 ">
-                <?php require PASTASITE . '/parts/widgets/footer/on-sale-products-footer.php'; ?>
+                <?php require PASTA_RAIZ.SITE. '/parts/widgets/footer/on-sale-products-footer.php'; ?>
             </div><!-- /.col -->
 
             <div class="col-xs-12 col-sm-4 ">
-                <?php require PASTASITE . '/parts/widgets/footer/top-rated-products-footer.php'; ?>
+                <?php require PASTA_RAIZ.SITE. '/parts/widgets/footer/top-rated-products-footer.php'; ?>
             </div><!-- /.col -->
 
         </div><!-- /.widgets-row-->
@@ -46,11 +46,11 @@
     <div class="link-list-row">
         <div class="container no-padding">
             <div class="col-xs-12 col-md-4 ">
-                <?php require PASTASITE . '/parts/widgets/footer/contact-info-footer.php'; ?>
+                <?php require PASTA_RAIZ.SITE. '/parts/widgets/footer/contact-info-footer.php'; ?>
             </div>
 
             <div class="col-xs-12 col-md-8 no-margin">
-                <?php require PASTASITE . '/parts/widgets/footer/links-footer.php'; ?>
+                <?php require PASTA_RAIZ.SITE. '/parts/widgets/footer/links-footer.php'; ?>
             </div>
         </div><!-- /.container -->
     </div><!-- /.link-list-row -->

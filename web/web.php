@@ -1,6 +1,6 @@
 <?php
 $pages = array(
-    'home-2' => 'Home',
+    'IndexWeb/Index' => 'Home',
     'Cartegorias/Index' => 'Cartegorias',
     'Marcas/Index' => 'Marcas',
     'Institucional/SobreNos' => 'Sobre nós',
@@ -82,14 +82,14 @@ $pages = array(
 
 <div class="wrapper">
     <?php
-    require PASTASITE . '/parts/navigation/top-menu-bar.php';
-    require PASTASITE . '/parts/section/header-2.php';
+    require PASTA_RAIZ.SITE. '/parts/navigation/top-menu-bar.php';
+    require PASTA_RAIZ.SITE. '/parts/section/header-2.php';
 
     $url = new UrlAmigavel();
     $url->pegaControllerAction();
     ?>
 
-    <?php require PASTASITE . '/parts/section/footer.php'; ?>
+    <?php require PASTA_RAIZ.SITE. '/parts/section/footer.php'; ?>
 </div><!-- /.wrapper -->
 
 <!-- JavaScripts placed at the end of the document so the pages load faster -->
