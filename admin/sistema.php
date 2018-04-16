@@ -1,6 +1,5 @@
 <?php
 ob_start();
-require_once 'library/Config.inc.php';
 $url = new UrlAmigavel();
 $back = new Backup();
 //$entidade = new GerarEntidades();

@@ -1,11 +1,12 @@
 <?php
-    $url = (isset($_GET['url']) && $_GET['url'] != "" ? $_GET['url'] : "web");
-
+    require_once 'library/Config.inc.php';
+    $link = UrlAmigavel::getLink();
+    $url = (isset($link) && $link != "" ? $link : SITE);
     $url = explode("/", $url);
 
-    if($url[0] == "admin"):
-        include './admin/sistema.php';
+    if($url[0] == ADMIN):
+        include './'.ADMIN.'/sistema.php';
     else:
-        include './web/web.php';
+        include './'.SITE.'/web.php';
     endif;
 ?>

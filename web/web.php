@@ -1,10 +1,4 @@
 <?php
-require_once 'library/Config.inc.php';
-
-define('MC_ROOT', dirname(__FILE__));
-$page = isset($_GET['page']) ? $_GET['page'] : 'home-2';
-$headerStyle = 2;
-
 $pages = array(
     'home-2' => 'Home',
     'Cartegorias/Index' => 'Cartegorias',
@@ -88,14 +82,14 @@ $pages = array(
 
 <div class="wrapper">
     <?php
-    require MC_ROOT . '/parts/navigation/top-menu-bar.php';
-    require MC_ROOT . '/parts/section/header-2.php';
+    require PASTASITE . '/parts/navigation/top-menu-bar.php';
+    require PASTASITE . '/parts/section/header-2.php';
 
     $url = new UrlAmigavel();
     $url->pegaControllerAction();
     ?>
 
-    <?php require MC_ROOT . '/parts/section/footer.php'; ?>
+    <?php require PASTASITE . '/parts/section/footer.php'; ?>
 </div><!-- /.wrapper -->
 
 <!-- JavaScripts placed at the end of the document so the pages load faster -->

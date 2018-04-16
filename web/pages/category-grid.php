@@ -7,13 +7,13 @@
         <!-- ========================================= SIDEBAR ========================================= -->
         <div class="col-xs-12 col-sm-3 no-margin sidebar narrow">
 
-            <?php require MC_ROOT.'/parts/widgets/sidebar/product-filter.php';?>
+            <?php require PASTASITE.'/parts/widgets/sidebar/product-filter.php';?>
 
-            <?php require MC_ROOT.'/parts/widgets/sidebar/special-offers.php';?>
+            <?php require PASTASITE.'/parts/widgets/sidebar/special-offers.php';?>
 
-            <?php require MC_ROOT.'/parts/widgets/sidebar/sidebar-banner.php';?>
+            <?php require PASTASITE.'/parts/widgets/sidebar/sidebar-banner.php';?>
 
-            <?php require MC_ROOT.'/parts/widgets/sidebar/featured-products.php';?>
+            <?php require PASTASITE.'/parts/widgets/sidebar/featured-products.php';?>
 
         </div>
         <!-- ========================================= SIDEBAR : END ========================================= -->
@@ -22,9 +22,9 @@
 
         <div class="col-xs-12 col-sm-9 no-margin wide sidebar">
 
-            <?php require MC_ROOT.'/parts/section/recommended-products.php';?>
+            <?php require PASTASITE.'/parts/section/recommended-products.php';?>
             
-            <?php require MC_ROOT.'/parts/section/category-products.php';?>
+            <?php require PASTASITE.'/parts/section/category-products.php';?>
             
         </div><!-- /.col -->
         <!-- ========================================= CONTENT : END ========================================= -->    
