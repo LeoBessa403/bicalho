@@ -2,11 +2,13 @@
 
 function servidor_inicial()
 {
+    $local = false;
+    $compara = strstr($_SERVER['SERVER_NAME'], 'localhost');
+    if ($compara != null){
+        $local = true;
+    }
 
-    $servidor = "local";
-//    $servidor = "web";
-
-    if ($servidor == "web") {
+    if (!$local) {
         $config = array('HOME' => 'https://bicalhorefrigeracao.com/', 'HOST' => 'localhost', 'USER' => 'bicalhor_bd', 'PASS' => 'Admin101*', 'DBSA' => 'bicalhor_bd');
     } else {
         $config = array('HOME' => 'http://localhost/bicalho/', 'HOST' => 'localhost', 'USER' => 'root', 'PASS' => '', 'DBSA' => 'bicalhor_bd');
@@ -17,7 +19,7 @@ function servidor_inicial()
     define('USER', $config['USER']);
     define('PASS', $config['PASS']);
     define('DBSA', $config['DBSA']);
-    define('DESENVOLVEDOR', ($servidor == "web") ? false : true);
+    define('DESENVOLVEDOR', (!$local) ? false : true);
 
 
     //////////////////////////////////////////////
