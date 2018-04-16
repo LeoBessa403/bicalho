@@ -228,7 +228,6 @@ endif;
     <script type="text/javascript" src="<?= INCLUDES; ?>validacoes.js"></script>
 
     <script src="<?= PASTAADMIN; ?>plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="<?= PASTAADMIN; ?>plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js"></script>
     <script src="<?= PASTAADMIN; ?>plugins/blockUI/jquery.blockUI.js"></script>
     <script src="<?= PASTAADMIN; ?>plugins/iCheck/jquery.icheck.min.js"></script>
     <script src="<?= PASTAADMIN; ?>plugins/perfect-scrollbar/src/jquery.mousewheel.js"></script>
