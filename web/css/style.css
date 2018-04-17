@@ -4009,6 +4009,10 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     text-align: center;
     padding: 55px 30px 30px 30px;
     position: relative;
+    height: 220px;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
 }
 
 .services .service .service-icon {
@@ -4019,7 +4023,7 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     position: absolute;
     margin-bottom: 20px;
     top: -35px;
-    left: 35%;
+    left: 40%;
 }
 
 .services .service .service-icon i {

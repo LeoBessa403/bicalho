@@ -39,14 +39,21 @@
                             <div class="service">
                                 <div class="service-icon primary-bg"><i class="fa fa-truck"></i></div>
                                 <h3>Nossa Entrega</h3>
-                                <p>Entregamos em toda brasília e entorno.</p>
+                                <p>Frete <b>GRÁTIS</b> em toda brasília e entorno, para compras acima de R$ 200,00, e demias localidades consultar.</p>
                             </div>
                         </li>
                         <li class="col-md-4">
                             <div class="service">
                                 <div class="service-icon primary-bg"><i class="fa fa-life-saver"></i></div>
                                 <h3>Suporte</h3>
-                                <p>Mande mensagem em nosso chat e nosso zap</p>
+                                <p>Mande mensagem em nosso
+                                    <a class="whatsapp" title="Nos chame no WhatSapp"
+                                       href="https://api.whatsapp.com/send?phone=<?php echo WHATSAPP; ?>&text=Vi%20no%20site%20o%20item:%20%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20mesmo!&l=pt_BR"
+                                       target="_blank">
+                                        <i class="fa fa-whatsapp"></i> WhatSapp
+                                    </a><br>
+                                     ou ligue em nossos número (61) 3046-1009
+                                </p>
                             </div>
                         </li>
                         <li class="col-md-4">
