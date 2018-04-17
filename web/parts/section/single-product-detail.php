@@ -10,16 +10,14 @@
             <a href="<?php echo PASTASITE; ?>Marcas/Index">sony</a>
         </div>
         <?php
-        $produto = 'VAIO%20fit%20laptop%20-%20windows%208%20SVF14322CXW%20-%20Marca%20-%20SONY'
+        $produto = 'VAIO fit laptop - windows 8 SVF14322CXW - Marca - SONY'
         ?>
 
         <div class="social-row">
             <span title="Compartilhe no Facebook" class="st_facebook_hcount"></span>
             <span title="Compartilhe no Twitter" class="st_twitter_hcount"></span>
             <a class="whatsapp" title="Nos chame no WhatSapp"
-               href="https://api.whatsapp.com/send?phone=<?php echo WHATSAPP; ?>&text=Vi%20no%20site%20o%20item:%20<?php
-               echo $produto;
-               ?>%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20mesmo!&l=pt_BR"
+               href="<?php Valida::geraLinkWhatSapp(Mensagens::ZAP05, $produto) ?>"
                target="_blank">
                 <i class="fa fa-whatsapp"></i> WhatSapp
             </a>

@@ -25,6 +25,10 @@ class Mensagens
 
     // MENSAGENS DO WHATSAPP
     const ZAP01 = "Olhando no site e gostaria de saber mais!";
+    const ZAP02 = "Vi no site e gostaria de fazer um orçamento!";
+    const ZAP03 = "Vi no site o item:  e gostaria de saber mais sobre o mesmo!";
+    const ZAP04 = "Vi no site e gostaria de fazer um orçamento!";
+    const ZAP05 = "Vi no site o item: %s e gostaria de saber mais sobre o mesmo!";
 
 
 
