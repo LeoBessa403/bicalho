@@ -23,6 +23,14 @@ class Mensagens
     const MSG_ERROS_CAMPOS = "O(s) Campo(s) <b>%s</b> , favor preencher corretamente.";
     const MSG_SEM_ITEM_SELECIONADO = "Nenhum item selecionado";
 
+    // MENSAGENS DO WHATSAPP
+    const ZAP01 = "Olhando no site e gostaria de saber mais!";
+
+
+
+
     public $MSG01 = "Esse Perfil esta vinculado a um Usuário ou Funcionalidade.";
+
+
 
 }

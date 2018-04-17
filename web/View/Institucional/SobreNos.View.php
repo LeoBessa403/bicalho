@@ -48,7 +48,7 @@
                                 <h3>Suporte</h3>
                                 <p>Mande mensagem em nosso
                                     <a class="whatsapp" title="Nos chame no WhatSapp"
-                                       href="https://api.whatsapp.com/send?phone=<?php echo WHATSAPP; ?>&text=Olhando%20no%20site%20e%20gostaria%20de%20saber%20mais!&l=pt_BR"
+                                       href="<?php Valida::geraLinkWhatSapp(Mensagens::ZAP01) ?>"
                                        target="_blank">
                                         <i class="fa fa-whatsapp"></i> WhatSapp
                                     </a><br>
