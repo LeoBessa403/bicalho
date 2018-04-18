@@ -17,7 +17,7 @@
             <span title="Compartilhe no Facebook" class="st_facebook_hcount"></span>
             <span title="Compartilhe no Twitter" class="st_twitter_hcount"></span>
             <a class="whatsapp" title="Nos chame no WhatSapp"
-               href="<?php Valida::geraLinkWhatSapp(Mensagens::ZAP05, $produto) ?>"
+               href="<?php Valida::geraLinkWhatSapp(Mensagens::ZAP05, [$produto]) ?>"
                target="_blank">
                 <i class="fa fa-whatsapp"></i> WhatSapp
             </a>
