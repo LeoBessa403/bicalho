@@ -27,7 +27,7 @@ class Segmento extends AbstractController
 
         $coSegmento = UrlAmigavel::PegaParametro(CO_SEGMENTO);
         $res = $segmentoService->PesquisaUmRegistro($coSegmento);
-        $this->form = PerfilForm::Cadastrar($res);
+        $this->form = SegmentoForm::Cadastrar($res);
 
     }
 
