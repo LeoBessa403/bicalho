@@ -15,13 +15,6 @@ class PermissaoAcessoEnum extends AbstractEnum
     const CADASTRO_PERFIL = 8;
     const LISTAR_FUNCIONALIDADE = 9;
     const CADASTRO_FUNCIONALIDADE = 10;
-    const LISTAR_INSCRICAO = 12;
-    const INSCRICAO_EDITAR = 13;
-    const DETALHAR_PAGAMENTO_INSCRICAO = 14;
-    const EDITAR_PARCELA_INSCRICAO = 15;
-    const SOBRE_VC_INSCRICAO = 16;
-    const DETALHES_INSCRICAO = 17;
-    const CALENDARIO = 18;
 
     public static $descricao = [
         PermissaoAcessoEnum::PERFIL_MASTER => 'Perfil Master',
@@ -34,13 +27,6 @@ class PermissaoAcessoEnum extends AbstractEnum
         PermissaoAcessoEnum::CADASTRO_PERFIL => 'Perfil Cadastrar',
         PermissaoAcessoEnum::LISTAR_FUNCIONALIDADE => 'Funcionalidade Listar',
         PermissaoAcessoEnum::CADASTRO_FUNCIONALIDADE => 'Funcionalidade Cadastrar',
-        PermissaoAcessoEnum::LISTAR_INSCRICAO => 'Inscricao Listar',
-        PermissaoAcessoEnum::INSCRICAO_EDITAR => 'Inscricao Editar',
-        PermissaoAcessoEnum::DETALHAR_PAGAMENTO_INSCRICAO => 'Inscricao Detalhar Pagamento',
-        PermissaoAcessoEnum::EDITAR_PARCELA_INSCRICAO => 'Inscricao Editar Parcela',
-        PermissaoAcessoEnum::SOBRE_VC_INSCRICAO => 'Inscricao Sobre Vc',
-        PermissaoAcessoEnum::DETALHES_INSCRICAO => 'Inscricao Detalhes',
-        PermissaoAcessoEnum::CALENDARIO => 'Calendário',
     ];
 
     public static $actions = [
@@ -54,12 +40,5 @@ class PermissaoAcessoEnum extends AbstractEnum
         PermissaoAcessoEnum::CADASTRO_PERFIL => 'CadastroPerfil',
         PermissaoAcessoEnum::LISTAR_FUNCIONALIDADE => 'ListarFuncionalidade',
         PermissaoAcessoEnum::CADASTRO_FUNCIONALIDADE => 'CadastroFuncionalidade',
-        PermissaoAcessoEnum::LISTAR_INSCRICAO => 'ListarInscricao',
-        PermissaoAcessoEnum::INSCRICAO_EDITAR => 'DetalharInscricao',
-        PermissaoAcessoEnum::DETALHAR_PAGAMENTO_INSCRICAO => 'DetalharPagamento',
-        PermissaoAcessoEnum::EDITAR_PARCELA_INSCRICAO => 'EditarParcela',
-        PermissaoAcessoEnum::SOBRE_VC_INSCRICAO => 'SobreVcInscricao',
-        PermissaoAcessoEnum::DETALHES_INSCRICAO => 'DetalhesInscricao',
-        PermissaoAcessoEnum::CALENDARIO => 'Calendario',
     ];
 }
