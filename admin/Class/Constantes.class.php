@@ -32,7 +32,7 @@
 	define('CO_CATEGORIA', 'co_categoria');
 	define('NO_CATEGORIA', 'no_categoria');
 	define('ST_STATUS', 'st_status');
-	define('CO_SESSAO', 'co_sessao');
+	define('CO_SEGMENTO', 'co_segmento');
 	define('CO_CLIENTE', 'co_cliente');
 	define('DS_OBSERVACAO', 'ds_observacao');
 	define('TP_CREDOR', 'tp_credor');
@@ -120,7 +120,7 @@
 	define('NU_PRECO_ATACADO', 'nu_preco_atacado');
 	define('NU_QUANTIDADE_ATACADO', 'nu_quantidade_atacado');
 	define('CO_PRODUTO_IMAGEM', 'co_produto_imagem');
-	define('DS_SESSAO', 'ds_sessao');
+	define('DS_SEGMENTO', 'ds_segmento');
 	define('NO_SIT_ENTREG_PED', 'no_sit_entreg_ped');
 	define('SG_SIT_ENTREG_PED', 'sg_sit_entreg_ped');
 	define('CO_SUGESTAO', 'co_sugestao');
@@ -167,7 +167,7 @@
 	define('PRODUTO_DETALHE_SERVICE', 'ProdutoDetalheService');
 	define('PRODUTO_IMAGEM_SERVICE', 'ProdutoImagemService');
 	define('REPRESENTANTE_SERVICE', 'RepresentanteService');
-	define('SESSAO_SERVICE', 'SessaoService');
+	define('SEGMENTO_SERVICE', 'SegmentoService');
 	define('SIT_ENTREG_PED_SERVICE', 'SitEntregPedService');
 	define('SUGESTAO_SERVICE', 'SugestaoService');
 	define('TIPO_NEGOCIACAO_SERVICE', 'TipoNegociacaoService');

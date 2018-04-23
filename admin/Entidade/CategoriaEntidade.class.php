@@ -14,7 +14,7 @@ class CategoriaEntidade extends AbstractEntidade
 	private $co_categoria;
 	private $no_categoria;
 	private $st_status;
-	private $co_sessao;
+	private $co_segmento;
 	private $co_produto;
 
 
@@ -27,7 +27,7 @@ class CategoriaEntidade extends AbstractEntidade
 			CO_CATEGORIA,
 			NO_CATEGORIA,
 			ST_STATUS,
-			CO_SESSAO,
+			CO_SEGMENTO,
 		];
     }
 
@@ -93,20 +93,20 @@ class CategoriaEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return SessaoEntidade $co_sessao
+	* @return SegmentoEntidade $co_segmento
      */
-	public function getCoSessao()
+	public function getCoSegmento()
     {
-        return $this->co_sessao;
+        return $this->co_segmento;
     }
 
 	/**
-	* @param $co_sessao
+	* @param $co_segmento
      * @return mixed
      */
-	public function setCoSessao($co_sessao)
+	public function setCoSegmento($co_segmento)
     {
-        return $this->co_sessao = $co_sessao;
+        return $this->co_segmento = $co_segmento;
     }
 
 	/**

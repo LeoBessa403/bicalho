@@ -110,9 +110,9 @@ class Relacionamentos
 				),
 			),
 			(CategoriaEntidade::TABELA) => Array(
-				(CO_SESSAO) => Array(
-					('Campo') => CO_SESSAO,
-					('Entidade') => 'SessaoEntidade',
+				(CO_SEGMENTO) => Array(
+					('Campo') => CO_SEGMENTO,
+					('Entidade') => 'SegmentoEntidade',
 					('Tipo') => '1',
 				),
 				(CO_PRODUTO) => Array(
@@ -121,9 +121,9 @@ class Relacionamentos
 					('Tipo') => '2',
 				),
 			),
-			(SessaoEntidade::TABELA) => Array(
+			(SegmentoEntidade::TABELA) => Array(
 				(CO_CATEGORIA) => Array(
-					('Campo') => CO_SESSAO,
+					('Campo') => CO_SEGMENTO,
 					('Entidade') => 'CategoriaEntidade',
 					('Tipo') => '2',
 				),

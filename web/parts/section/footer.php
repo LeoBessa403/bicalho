@@ -59,7 +59,7 @@
         <div class="container">
             <div class="col-xs-12 col-sm-6 no-margin">
                 <div class="copyright">
-                    &copy; DESENVOLVIMENTO LEO BESSA <?php echo date("Y"); ?>
+                    &copy; Desenvolvimento Leo Bessa <?php echo date("Y"); ?>
                 </div><!-- /.copyright -->
             </div>
         </div><!-- /.container -->
