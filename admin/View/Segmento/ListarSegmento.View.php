@@ -40,9 +40,8 @@
                         $grid->criaGrid();
                         /** @var SegmentoEntidade $res */
                         foreach ($result as $res):
-                            if ($res->getCoPerfil() > 1):
-                                $acao = '<a href="' . PASTAADMIN . 'Segmento/CadastroSegmento/' .
-                                    Valida::GeraParametro("per/" . $res->getCoSegmento()) . '" class="btn btn-primary tooltips" 
+                            $acao = '<a href="' . PASTAADMIN . 'Segmento/CadastroSegmento/' .
+                                Valida::GeraParametro(CO_SEGMENTO . "/" . $res->getCoSegmento()) . '" class="btn btn-primary tooltips" 
                                     data-original-title="Editar Registro" data-placement="top">
                                      <i class="fa fa-clipboard"></i>
                                  </a>
@@ -51,10 +50,9 @@
                                            href="#Segmento" data-original-title="Excluir Registro" data-placement="top">
                                             <i class="fa fa-trash-o"></i>
                                         </a>';
-                                $grid->setColunas($res->getDsSegmento());
-                                $grid->setColunas($acao, 2);
-                                $grid->criaLinha($res->getCoSegmento());
-                            endif;
+                            $grid->setColunas($res->getDsSegmento());
+                            $grid->setColunas($acao, 2);
+                            $grid->criaLinha($res->getCoSegmento());
                         endforeach;
                         $grid->finalizaGrid();
                         ?>

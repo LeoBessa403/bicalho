@@ -26,7 +26,13 @@ class Segmento extends AbstractController
         endif;
 
         $coSegmento = UrlAmigavel::PegaParametro(CO_SEGMENTO);
-        $res = $segmentoService->PesquisaUmRegistro($coSegmento);
+        $res = [];
+        if($coSegmento){
+            /** @var SegmentoEntidade $segmento */
+            $segmento = $segmentoService->PesquisaUmRegistro($coSegmento);
+            $res[CO_SEGMENTO] = $segmento->getCoSegmento();
+            $res[DS_SEGMENTO] = $segmento->getDsSegmento();
+        }
         $this->form = SegmentoForm::Cadastrar($res);
 
     }
