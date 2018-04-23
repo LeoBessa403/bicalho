@@ -19,7 +19,7 @@ class Segmento extends AbstractController
         $id = "cadastroSegmento";
 
         if (!empty($_POST[$id])):
-            $retorno = $segmentoService->salvaPerfil($_POST);
+            $retorno = $segmentoService->salvaSegmento($_POST);
             if($retorno[SUCESSO]){
                 Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarSegmento/');
             }

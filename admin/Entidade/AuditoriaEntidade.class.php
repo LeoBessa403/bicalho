@@ -12,7 +12,7 @@ class AuditoriaEntidade extends AbstractEntidade
 	const CHAVE = CO_AUDITORIA;
 
 	private $co_auditoria;
-	private $dt_atualizado;
+	private $dt_realizado;
 	private $ds_perfil_usuario;
 	private $co_usuario;
 	private $co_auditoria_tabela;
@@ -25,7 +25,7 @@ class AuditoriaEntidade extends AbstractEntidade
         {
     	return [
 			CO_AUDITORIA,
-			DT_ATUALIZADO,
+			DT_REALIZADO,
 			DS_PERFIL_USUARIO,
 			CO_USUARIO,
 		];
@@ -59,20 +59,20 @@ class AuditoriaEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return mixed $dt_atualizado
+	* @return mixed $dt_realizado
      */
-	public function getDtAtualizado()
+	public function getDtRealizado()
     {
-        return $this->dt_atualizado;
+        return $this->dt_realizado;
     }
 
 	/**
-	* @param $dt_atualizado
+	* @param $dt_realizado
      * @return mixed
      */
-	public function setDtAtualizado($dt_atualizado)
+	public function setDtRealizado($dt_realizado)
     {
-        return $this->dt_atualizado = $dt_atualizado;
+        return $this->dt_realizado = $dt_realizado;
     }
 
 	/**

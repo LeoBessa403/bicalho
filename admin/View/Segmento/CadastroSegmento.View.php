@@ -17,7 +17,7 @@
 
                             </ol>
                             <div class="page-header">
-                                    <h1>Perfil <small>Cadastro / Edição</small></h1>
+                                    <h1>Segmento <small>Cadastro / Edição</small></h1>
                             </div>
                             <!-- end: PAGE TITLE & BREADCRUMB -->
                     </div>

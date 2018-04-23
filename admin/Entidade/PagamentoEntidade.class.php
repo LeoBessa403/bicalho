@@ -16,7 +16,7 @@ class PagamentoEntidade extends AbstractEntidade
 	private $nu_valor_pago;
 	private $nu_parcelas;
 	private $tp_situacao;
-	private $dt_atualizado;
+	private $dt_realizado;
 	private $ds_observacao;
 	private $co_tipo_pagamento;
 	private $co_negociacao;
@@ -34,7 +34,7 @@ class PagamentoEntidade extends AbstractEntidade
 			NU_VALOR_PAGO,
 			NU_PARCELAS,
 			TP_SITUACAO,
-			DT_ATUALIZADO,
+			DT_REALIZADO,
 			DS_OBSERVACAO,
 			CO_TIPO_PAGAMENTO,
 			CO_NEGOCIACAO,
@@ -137,20 +137,20 @@ class PagamentoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return mixed $dt_atualizado
+	* @return mixed $dt_realizado
      */
-	public function getDtAtualizado()
+	public function getDtRealizado()
     {
-        return $this->dt_atualizado;
+        return $this->dt_realizado;
     }
 
 	/**
-	* @param $dt_atualizado
+	* @param $dt_realizado
      * @return mixed
      */
-	public function setDtAtualizado($dt_atualizado)
+	public function setDtReualizado($dt_realizado)
     {
-        return $this->dt_atualizado = $dt_atualizado;
+        return $this->dt_realizado = $dt_realizado;
     }
 
 	/**

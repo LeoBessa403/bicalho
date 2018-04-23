@@ -19,7 +19,6 @@
 	define('DS_AJUDA', 'ds_ajuda');
 	define('CO_FUNCIONALIDADE', 'co_funcionalidade');
 	define('CO_AUDITORIA', 'co_auditoria');
-	define('DT_ATUALIZADO', 'dt_atualizado');
 	define('DS_PERFIL_USUARIO', 'ds_perfil_usuario');
 	define('CO_AUDITORIA_ITENS', 'co_auditoria_itens');
 	define('DS_ITEM_ANTERIOR', 'ds_item_anterior');
