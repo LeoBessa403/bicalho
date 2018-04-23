@@ -60,7 +60,7 @@ class AuditoriaItensEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $ds_item_anterior
+	* @return mixed $ds_item_anterior
      */
 	public function getDsItemAnterior()
     {
@@ -77,7 +77,7 @@ class AuditoriaItensEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $ds_item_atual
+	* @return mixed $ds_item_atual
      */
 	public function getDsItemAtual()
     {
@@ -94,7 +94,7 @@ class AuditoriaItensEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $ds_campo
+	* @return mixed $ds_campo
      */
 	public function getDsCampo()
     {

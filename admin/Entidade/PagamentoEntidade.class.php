@@ -2,7 +2,7 @@
 
 /**
  * Pagamento.Entidade [ ENTIDADE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 
 class PagamentoEntidade extends AbstractEntidade
@@ -16,36 +16,43 @@ class PagamentoEntidade extends AbstractEntidade
 	private $nu_valor_pago;
 	private $nu_parcelas;
 	private $tp_situacao;
+	private $dt_atualizado;
 	private $ds_observacao;
-	private $co_inscricao;
+	private $co_tipo_pagamento;
+	private $co_negociacao;
 	private $co_parcelamento;
+
 
 	/**
      * @return array
      */
-	public static function getCampos() {
+	public static function getCampos() 
+        {
     	return [
 			CO_PAGAMENTO,
 			NU_TOTAL,
 			NU_VALOR_PAGO,
 			NU_PARCELAS,
 			TP_SITUACAO,
+			DT_ATUALIZADO,
 			DS_OBSERVACAO,
-			CO_INSCRICAO,
+			CO_TIPO_PAGAMENTO,
+			CO_NEGOCIACAO,
 		];
     }
 
 	/**
-	* @return $relacionamentos
+	* @return array $relacionamentos
      */
-	public static function getRelacionamentos() {
+	public static function getRelacionamentos() 
+        {
     	$relacionamentos = Relacionamentos::getRelacionamentos();
 		return $relacionamentos[static::TABELA];
 	}
 
 
 	/**
-	* @return $co_pagamento
+	* @return int $co_pagamento
      */
 	public function getCoPagamento()
     {
@@ -62,7 +69,7 @@ class PagamentoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $nu_total
+	* @return mixed $nu_total
      */
 	public function getNuTotal()
     {
@@ -79,7 +86,7 @@ class PagamentoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $nu_valor_pago
+	* @return mixed $nu_valor_pago
      */
 	public function getNuValorPago()
     {
@@ -96,7 +103,7 @@ class PagamentoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $nu_parcelas
+	* @return mixed $nu_parcelas
      */
 	public function getNuParcelas()
     {
@@ -113,7 +120,7 @@ class PagamentoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $tp_situacao
+	* @return mixed $tp_situacao
      */
 	public function getTpSituacao()
     {
@@ -130,7 +137,24 @@ class PagamentoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $ds_observacao
+	* @return mixed $dt_atualizado
+     */
+	public function getDtAtualizado()
+    {
+        return $this->dt_atualizado;
+    }
+
+	/**
+	* @param $dt_atualizado
+     * @return mixed
+     */
+	public function setDtAtualizado($dt_atualizado)
+    {
+        return $this->dt_atualizado = $dt_atualizado;
+    }
+
+	/**
+	* @return mixed $ds_observacao
      */
 	public function getDsObservacao()
     {
@@ -147,20 +171,37 @@ class PagamentoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return InscricaoEntidade $co_inscricao
+	* @return TipoPagamentoEntidade $co_tipo_pagamento
      */
-	public function getCoInscricao()
+	public function getCoTipoPagamento()
     {
-        return $this->co_inscricao;
+        return $this->co_tipo_pagamento;
     }
 
 	/**
-	* @param $co_inscricao
+	* @param $co_tipo_pagamento
      * @return mixed
      */
-	public function setCoInscricao($co_inscricao)
+	public function setCoTipoPagamento($co_tipo_pagamento)
     {
-        return $this->co_inscricao = $co_inscricao;
+        return $this->co_tipo_pagamento = $co_tipo_pagamento;
+    }
+
+	/**
+	* @return NegociacaoEntidade $co_negociacao
+     */
+	public function getCoNegociacao()
+    {
+        return $this->co_negociacao;
+    }
+
+	/**
+	* @param $co_negociacao
+     * @return mixed
+     */
+	public function setCoNegociacao($co_negociacao)
+    {
+        return $this->co_negociacao = $co_negociacao;
     }
 
 	/**

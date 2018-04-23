@@ -2,14 +2,18 @@
 
 /**
  * TipoPagamentoService.class [ SEVICE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 class  TipoPagamentoService extends AbstractService
 {
 
+    private $ObjetoModel;
+
+
     public function __construct()
     {
         parent::__construct(TipoPagamentoEntidade::ENTIDADE);
+        $this->ObjetoModel = New TipoPagamentoModel();
     }
 
     public static function montaComboTodosTipoPagamento()
@@ -25,5 +29,4 @@ class  TipoPagamentoService extends AbstractService
         endforeach;
         return $todosTp;
     }
-
 }

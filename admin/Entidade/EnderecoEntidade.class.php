@@ -2,7 +2,7 @@
 
 /**
  * Endereco.Entidade [ ENTIDADE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 
 class EnderecoEntidade extends AbstractEntidade
@@ -18,13 +18,15 @@ class EnderecoEntidade extends AbstractEntidade
 	private $nu_cep;
 	private $no_cidade;
 	private $sg_uf;
+	private $co_empresa;
 	private $co_pessoa;
-	private $co_agenda;
+
 
 	/**
      * @return array
      */
-	public static function getCampos() {
+	public static function getCampos() 
+        {
     	return [
 			CO_ENDERECO,
 			DS_ENDERECO,
@@ -37,16 +39,17 @@ class EnderecoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $relacionamentos
+	* @return array $relacionamentos
      */
-	public static function getRelacionamentos() {
+	public static function getRelacionamentos() 
+        {
     	$relacionamentos = Relacionamentos::getRelacionamentos();
 		return $relacionamentos[static::TABELA];
 	}
 
 
 	/**
-	* @return $co_endereco
+	* @return int $co_endereco
      */
 	public function getCoEndereco()
     {
@@ -63,7 +66,7 @@ class EnderecoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $ds_endereco
+	* @return mixed $ds_endereco
      */
 	public function getDsEndereco()
     {
@@ -80,7 +83,7 @@ class EnderecoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $ds_complemento
+	* @return mixed $ds_complemento
      */
 	public function getDsComplemento()
     {
@@ -97,7 +100,7 @@ class EnderecoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $ds_bairro
+	* @return mixed $ds_bairro
      */
 	public function getDsBairro()
     {
@@ -114,7 +117,7 @@ class EnderecoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $nu_cep
+	* @return mixed $nu_cep
      */
 	public function getNuCep()
     {
@@ -131,7 +134,7 @@ class EnderecoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $no_cidade
+	* @return mixed $no_cidade
      */
 	public function getNoCidade()
     {
@@ -148,7 +151,7 @@ class EnderecoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $sg_uf
+	* @return mixed $sg_uf
      */
 	public function getSgUf()
     {
@@ -162,6 +165,23 @@ class EnderecoEntidade extends AbstractEntidade
 	public function setSgUf($sg_uf)
     {
         return $this->sg_uf = $sg_uf;
+    }
+
+	/**
+	* @return EmpresaEntidade $co_empresa
+     */
+	public function getCoEmpresa()
+    {
+        return $this->co_empresa;
+    }
+
+	/**
+     * @param $co_empresa
+     * @return mixed
+     */
+	public function setCoEmpresa($co_empresa)
+    {
+        return $this->co_empresa = $co_empresa;
     }
 
 	/**
@@ -179,22 +199,6 @@ class EnderecoEntidade extends AbstractEntidade
 	public function setCoPessoa($co_pessoa)
     {
         return $this->co_pessoa = $co_pessoa;
-    }
-
-    /**
-     * @return AgendaEntidade mixed
-     */
-    public function getCoAgenda()
-    {
-        return $this->co_agenda;
-    }
-
-    /**
-     * @param mixed $co_agenda
-     */
-    public function setCoAgenda($co_agenda)
-    {
-        $this->co_agenda = $co_agenda;
     }
 
 }

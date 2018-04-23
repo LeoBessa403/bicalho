@@ -2,14 +2,18 @@
 
 /**
  * EnderecoService.class [ SEVICE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 class  EnderecoService extends AbstractService
 {
 
+    private $ObjetoModel;
+
+
     public function __construct()
     {
         parent::__construct(EnderecoEntidade::ENTIDADE);
+        $this->ObjetoModel = New EnderecoModel();
     }
 
     public static function montaComboEstadosDescricao()
@@ -54,6 +58,7 @@ class  EnderecoService extends AbstractService
      */
     public function getArrayDadosEndereco(EnderecoEntidade $endereco, array $dados)
     {
+        $dados[CO_ENDERECO] = $endereco->getCoEndereco();
         $dados[DS_ENDERECO] = $endereco->getDsEndereco();
         $dados[DS_COMPLEMENTO] = $endereco->getDsComplemento();
         $dados[DS_BAIRRO] = $endereco->getDsBairro();

@@ -2,7 +2,7 @@
 
 /**
  * Pessoa.Entidade [ ENTIDADE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 
 class PessoaEntidade extends AbstractEntidade
@@ -18,16 +18,22 @@ class PessoaEntidade extends AbstractEntidade
 	private $dt_cadastro;
 	private $dt_nascimento;
 	private $st_sexo;
-	private $co_contato;
 	private $co_endereco;
-	private $co_inscricao;
-	private $co_membro;
+	private $co_contato;
+	private $co_imagem;
+	private $co_cliente;
+	private $co_empresa;
+	private $co_fornecedor;
+	private $co_funcionario;
+	private $co_representante;
 	private $co_usuario;
+
 
 	/**
      * @return array
      */
-	public static function getCampos() {
+	public static function getCampos() 
+        {
     	return [
 			CO_PESSOA,
 			NU_CPF,
@@ -36,22 +42,24 @@ class PessoaEntidade extends AbstractEntidade
 			DT_CADASTRO,
 			DT_NASCIMENTO,
 			ST_SEXO,
-			CO_CONTATO,
 			CO_ENDERECO,
+			CO_CONTATO,
+			CO_IMAGEM,
 		];
     }
 
 	/**
-	* @return $relacionamentos
+	* @return array $relacionamentos
      */
-	public static function getRelacionamentos() {
+	public static function getRelacionamentos() 
+        {
     	$relacionamentos = Relacionamentos::getRelacionamentos();
 		return $relacionamentos[static::TABELA];
 	}
 
 
 	/**
-	* @return $co_pessoa
+	* @return int $co_pessoa
      */
 	public function getCoPessoa()
     {
@@ -68,7 +76,7 @@ class PessoaEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $nu_cpf
+	* @return mixed $nu_cpf
      */
 	public function getNuCpf()
     {
@@ -85,7 +93,7 @@ class PessoaEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $no_pessoa
+	* @return mixed $no_pessoa
      */
 	public function getNoPessoa()
     {
@@ -102,7 +110,7 @@ class PessoaEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $nu_rg
+	* @return mixed $nu_rg
      */
 	public function getNuRg()
     {
@@ -119,7 +127,7 @@ class PessoaEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $dt_cadastro
+	* @return mixed $dt_cadastro
      */
 	public function getDtCadastro()
     {
@@ -136,7 +144,7 @@ class PessoaEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $dt_nascimento
+	* @return mixed $dt_nascimento
      */
 	public function getDtNascimento()
     {
@@ -153,7 +161,7 @@ class PessoaEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $st_sexo
+	* @return mixed $st_sexo
      */
 	public function getStSexo()
     {
@@ -167,23 +175,6 @@ class PessoaEntidade extends AbstractEntidade
 	public function setStSexo($st_sexo)
     {
         return $this->st_sexo = $st_sexo;
-    }
-
-	/**
-	* @return ContatoEntidade $co_contato
-     */
-	public function getCoContato()
-    {
-        return $this->co_contato;
-    }
-
-	/**
-	* @param $co_contato
-     * @return mixed
-     */
-	public function setCoContato($co_contato)
-    {
-        return $this->co_contato = $co_contato;
     }
 
 	/**
@@ -204,37 +195,122 @@ class PessoaEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return InscricaoEntidade $co_inscricao
+	* @return ContatoEntidade $co_contato
      */
-	public function getCoInscricao()
+	public function getCoContato()
     {
-        return $this->co_inscricao;
+        return $this->co_contato;
     }
 
 	/**
-     * @param $co_inscricao
+	* @param $co_contato
      * @return mixed
      */
-	public function setCoInscricao($co_inscricao)
+	public function setCoContato($co_contato)
     {
-        return $this->co_inscricao = $co_inscricao;
+        return $this->co_contato = $co_contato;
     }
 
 	/**
-	* @return MembroEntidade $co_membro
+	* @return ImagemEntidade $co_imagem
      */
-	public function getCoMembro()
+	public function getCoImagem()
     {
-        return $this->co_membro;
+        return $this->co_imagem;
     }
 
 	/**
-     * @param $co_membro
+	* @param $co_imagem
      * @return mixed
      */
-	public function setCoMembro($co_membro)
+	public function setCoImagem($co_imagem)
     {
-        return $this->co_membro = $co_membro;
+        return $this->co_imagem = $co_imagem;
+    }
+
+	/**
+	* @return ClienteEntidade $co_cliente
+     */
+	public function getCoCliente()
+    {
+        return $this->co_cliente;
+    }
+
+	/**
+     * @param $co_cliente
+     * @return mixed
+     */
+	public function setCoCliente($co_cliente)
+    {
+        return $this->co_cliente = $co_cliente;
+    }
+
+	/**
+	* @return EmpresaEntidade $co_empresa
+     */
+	public function getCoEmpresa()
+    {
+        return $this->co_empresa;
+    }
+
+	/**
+     * @param $co_empresa
+     * @return mixed
+     */
+	public function setCoEmpresa($co_empresa)
+    {
+        return $this->co_empresa = $co_empresa;
+    }
+
+	/**
+	* @return FornecedorEntidade $co_fornecedor
+     */
+	public function getCoFornecedor()
+    {
+        return $this->co_fornecedor;
+    }
+
+	/**
+     * @param $co_fornecedor
+     * @return mixed
+     */
+	public function setCoFornecedor($co_fornecedor)
+    {
+        return $this->co_fornecedor = $co_fornecedor;
+    }
+
+	/**
+	* @return FuncionarioEntidade $co_funcionario
+     */
+	public function getCoFuncionario()
+    {
+        return $this->co_funcionario;
+    }
+
+	/**
+     * @param $co_funcionario
+     * @return mixed
+     */
+	public function setCoFuncionario($co_funcionario)
+    {
+        return $this->co_funcionario = $co_funcionario;
+    }
+
+	/**
+	* @return RepresentanteEntidade $co_representante
+     */
+	public function getCoRepresentante()
+    {
+        return $this->co_representante;
+    }
+
+	/**
+     * @param $co_representante
+     * @return mixed
+     */
+	public function setCoRepresentante($co_representante)
+    {
+        return $this->co_representante = $co_representante;
     }
 
 	/**

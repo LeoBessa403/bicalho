@@ -2,7 +2,7 @@
 
 /**
  * Acesso.Entidade [ ENTIDADE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 
 class AcessoEntidade extends AbstractEntidade
@@ -15,40 +15,43 @@ class AcessoEntidade extends AbstractEntidade
 	private $ds_session_id;
 	private $dt_inicio_acesso;
 	private $dt_fim_acesso;
+	private $tp_situacao;
 	private $ds_navegador;
 	private $ds_sistema_operacional;
 	private $ds_dispositivo;
-	private $tp_situacao;
 	private $co_usuario;
+
 
 	/**
      * @return array
      */
-	public static function getCampos() {
+	public static function getCampos() 
+        {
     	return [
 			CO_ACESSO,
 			DS_SESSION_ID,
 			DT_INICIO_ACESSO,
 			DT_FIM_ACESSO,
+			TP_SITUACAO,
 			DS_NAVEGADOR,
-            DS_SISTEMA_OPERACIONAL,
-            DS_DISPOSITIVO,
-            TP_SITUACAO,
+			DS_SISTEMA_OPERACIONAL,
+			DS_DISPOSITIVO,
 			CO_USUARIO,
 		];
     }
 
 	/**
-	* @return $relacionamentos
+	* @return array $relacionamentos
      */
-	public static function getRelacionamentos() {
+	public static function getRelacionamentos() 
+        {
     	$relacionamentos = Relacionamentos::getRelacionamentos();
 		return $relacionamentos[static::TABELA];
 	}
 
 
 	/**
-	* @return $co_acesso
+	* @return int $co_acesso
      */
 	public function getCoAcesso()
     {
@@ -65,7 +68,7 @@ class AcessoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $ds_session_id
+	* @return mixed $ds_session_id
      */
 	public function getDsSessionId()
     {
@@ -82,7 +85,7 @@ class AcessoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $dt_inicio_acesso
+	* @return mixed $dt_inicio_acesso
      */
 	public function getDtInicioAcesso()
     {
@@ -99,7 +102,7 @@ class AcessoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $dt_fim_acesso
+	* @return mixed $dt_fim_acesso
      */
 	public function getDtFimAcesso()
     {
@@ -113,6 +116,74 @@ class AcessoEntidade extends AbstractEntidade
 	public function setDtFimAcesso($dt_fim_acesso)
     {
         return $this->dt_fim_acesso = $dt_fim_acesso;
+    }
+
+	/**
+	* @return mixed $tp_situacao
+     */
+	public function getTpSituacao()
+    {
+        return $this->tp_situacao;
+    }
+
+	/**
+	* @param $tp_situacao
+     * @return mixed
+     */
+	public function setTpSituacao($tp_situacao)
+    {
+        return $this->tp_situacao = $tp_situacao;
+    }
+
+	/**
+	* @return mixed $ds_navegador
+     */
+	public function getDsNavegador()
+    {
+        return $this->ds_navegador;
+    }
+
+	/**
+	* @param $ds_navegador
+     * @return mixed
+     */
+	public function setDsNavegador($ds_navegador)
+    {
+        return $this->ds_navegador = $ds_navegador;
+    }
+
+	/**
+	* @return mixed $ds_sistema_operacional
+     */
+	public function getDsSistemaOperacional()
+    {
+        return $this->ds_sistema_operacional;
+    }
+
+	/**
+	* @param $ds_sistema_operacional
+     * @return mixed
+     */
+	public function setDsSistemaOperacional($ds_sistema_operacional)
+    {
+        return $this->ds_sistema_operacional = $ds_sistema_operacional;
+    }
+
+	/**
+	* @return mixed $ds_dispositivo
+     */
+	public function getDsDispositivo()
+    {
+        return $this->ds_dispositivo;
+    }
+
+	/**
+	* @param $ds_dispositivo
+     * @return mixed
+     */
+	public function setDsDispositivo($ds_dispositivo)
+    {
+        return $this->ds_dispositivo = $ds_dispositivo;
     }
 
 	/**
@@ -130,70 +201,6 @@ class AcessoEntidade extends AbstractEntidade
 	public function setCoUsuario($co_usuario)
     {
         return $this->co_usuario = $co_usuario;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getTpSituacao()
-    {
-        return $this->tp_situacao;
-    }
-
-    /**
-     * @param mixed $tp_situacao
-     */
-    public function setTpSituacao($tp_situacao)
-    {
-        $this->tp_situacao = $tp_situacao;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDsNavegador()
-    {
-        return $this->ds_navegador;
-    }
-
-    /**
-     * @param mixed $ds_navegador
-     */
-    public function setDsNavegador($ds_navegador)
-    {
-        $this->ds_navegador = $ds_navegador;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDsSistemaOperacional()
-    {
-        return $this->ds_sistema_operacional;
-    }
-
-    /**
-     * @param mixed $ds_sistema_operacional
-     */
-    public function setDsSistemaOperacional($ds_sistema_operacional)
-    {
-        $this->ds_sistema_operacional = $ds_sistema_operacional;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDsDispositivo()
-    {
-        return $this->ds_dispositivo;
-    }
-
-    /**
-     * @param mixed $ds_dispositivo
-     */
-    public function setDsDispositivo($ds_dispositivo)
-    {
-        $this->ds_dispositivo = $ds_dispositivo;
     }
 
 }

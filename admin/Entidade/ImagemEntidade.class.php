@@ -2,7 +2,7 @@
 
 /**
  * Imagem.Entidade [ ENTIDADE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 
 class ImagemEntidade extends AbstractEntidade
@@ -13,14 +13,20 @@ class ImagemEntidade extends AbstractEntidade
 
 	private $co_imagem;
 	private $ds_caminho;
-	private $co_inscricao;
+	private $co_empresa;
+	private $co_funcionario;
+	private $co_pessoa;
+	private $co_produto_destaque;
+	private $co_produto_imagem;
+	private $co_sugestao;
 	private $co_usuario;
-	private $co_imagem_evento;
+
 
 	/**
      * @return array
      */
-	public static function getCampos() {
+	public static function getCampos() 
+        {
     	return [
 			CO_IMAGEM,
 			DS_CAMINHO,
@@ -28,16 +34,17 @@ class ImagemEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $relacionamentos
+	* @return array $relacionamentos
      */
-	public static function getRelacionamentos() {
+	public static function getRelacionamentos() 
+        {
     	$relacionamentos = Relacionamentos::getRelacionamentos();
 		return $relacionamentos[static::TABELA];
 	}
 
 
 	/**
-	* @return $co_imagem
+	* @return int $co_imagem
      */
 	public function getCoImagem()
     {
@@ -54,7 +61,7 @@ class ImagemEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $ds_caminho
+	* @return mixed $ds_caminho
      */
 	public function getDsCaminho()
     {
@@ -71,20 +78,105 @@ class ImagemEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return InscricaoEntidade $co_inscricao
+	* @return EmpresaEntidade $co_empresa
      */
-	public function getCoInscricao()
+	public function getCoEmpresa()
     {
-        return $this->co_inscricao;
+        return $this->co_empresa;
     }
 
 	/**
-     * @param $co_inscricao
+     * @param $co_empresa
      * @return mixed
      */
-	public function setCoInscricao($co_inscricao)
+	public function setCoEmpresa($co_empresa)
     {
-        return $this->co_inscricao = $co_inscricao;
+        return $this->co_empresa = $co_empresa;
+    }
+
+	/**
+	* @return FuncionarioEntidade $co_funcionario
+     */
+	public function getCoFuncionario()
+    {
+        return $this->co_funcionario;
+    }
+
+	/**
+     * @param $co_funcionario
+     * @return mixed
+     */
+	public function setCoFuncionario($co_funcionario)
+    {
+        return $this->co_funcionario = $co_funcionario;
+    }
+
+	/**
+	* @return PessoaEntidade $co_pessoa
+     */
+	public function getCoPessoa()
+    {
+        return $this->co_pessoa;
+    }
+
+	/**
+     * @param $co_pessoa
+     * @return mixed
+     */
+	public function setCoPessoa($co_pessoa)
+    {
+        return $this->co_pessoa = $co_pessoa;
+    }
+
+	/**
+	* @return ProdutoDestaqueEntidade $co_produto_destaque
+     */
+	public function getCoProdutoDestaque()
+    {
+        return $this->co_produto_destaque;
+    }
+
+	/**
+     * @param $co_produto_destaque
+     * @return mixed
+     */
+	public function setCoProdutoDestaque($co_produto_destaque)
+    {
+        return $this->co_produto_destaque = $co_produto_destaque;
+    }
+
+	/**
+	* @return ProdutoImagemEntidade $co_produto_imagem
+     */
+	public function getCoProdutoImagem()
+    {
+        return $this->co_produto_imagem;
+    }
+
+	/**
+     * @param $co_produto_imagem
+     * @return mixed
+     */
+	public function setCoProdutoImagem($co_produto_imagem)
+    {
+        return $this->co_produto_imagem = $co_produto_imagem;
+    }
+
+	/**
+	* @return SugestaoEntidade $co_sugestao
+     */
+	public function getCoSugestao()
+    {
+        return $this->co_sugestao;
+    }
+
+	/**
+     * @param $co_sugestao
+     * @return mixed
+     */
+	public function setCoSugestao($co_sugestao)
+    {
+        return $this->co_sugestao = $co_sugestao;
     }
 
 	/**
@@ -102,22 +194,6 @@ class ImagemEntidade extends AbstractEntidade
 	public function setCoUsuario($co_usuario)
     {
         return $this->co_usuario = $co_usuario;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCoImagemEvento()
-    {
-        return $this->co_imagem_evento;
-    }
-
-    /**
-     * @param mixed $co_imagem_evento
-     */
-    public function setCoImagemEvento($co_imagem_evento)
-    {
-        $this->co_imagem_evento = $co_imagem_evento;
     }
 
 }

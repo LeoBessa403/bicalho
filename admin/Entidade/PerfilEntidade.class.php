@@ -2,7 +2,7 @@
 
 /**
  * Perfil.Entidade [ ENTIDADE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 
 class PerfilEntidade extends AbstractEntidade
@@ -15,13 +15,14 @@ class PerfilEntidade extends AbstractEntidade
 	private $no_perfil;
 	private $st_status;
 	private $co_perfil_funcionalidade;
-	private $co_perfil_agenda;
 	private $co_usuario_perfil;
+
 
 	/**
      * @return array
      */
-	public static function getCampos() {
+	public static function getCampos() 
+        {
     	return [
 			CO_PERFIL,
 			NO_PERFIL,
@@ -30,16 +31,17 @@ class PerfilEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $relacionamentos
+	* @return array $relacionamentos
      */
-	public static function getRelacionamentos() {
+	public static function getRelacionamentos() 
+        {
     	$relacionamentos = Relacionamentos::getRelacionamentos();
 		return $relacionamentos[static::TABELA];
 	}
 
 
 	/**
-	* @return $co_perfil
+	* @return int $co_perfil
      */
 	public function getCoPerfil()
     {
@@ -56,7 +58,7 @@ class PerfilEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $no_perfil
+	* @return mixed $no_perfil
      */
 	public function getNoPerfil()
     {
@@ -73,7 +75,7 @@ class PerfilEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $st_status
+	* @return mixed $st_status
      */
 	public function getStStatus()
     {
@@ -121,22 +123,6 @@ class PerfilEntidade extends AbstractEntidade
 	public function setCoUsuarioPerfil($co_usuario_perfil)
     {
         return $this->co_usuario_perfil = $co_usuario_perfil;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCoPerfilAgenda()
-    {
-        return $this->co_perfil_agenda;
-    }
-
-    /**
-     * @param mixed $co_perfil_agenda
-     */
-    public function setCoPerfilAgenda($co_perfil_agenda)
-    {
-        $this->co_perfil_agenda = $co_perfil_agenda;
     }
 
 }

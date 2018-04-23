@@ -2,7 +2,7 @@
 
 /**
  * UsuarioPerfil.Entidade [ ENTIDADE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 
 class UsuarioPerfilEntidade extends AbstractEntidade
@@ -15,10 +15,12 @@ class UsuarioPerfilEntidade extends AbstractEntidade
 	private $co_usuario;
 	private $co_perfil;
 
+
 	/**
      * @return array
      */
-	public static function getCampos() {
+	public static function getCampos() 
+        {
     	return [
 			CO_USUARIO_PERFIL,
 			CO_USUARIO,
@@ -27,16 +29,17 @@ class UsuarioPerfilEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $relacionamentos
+	* @return array $relacionamentos
      */
-	public static function getRelacionamentos() {
+	public static function getRelacionamentos() 
+        {
     	$relacionamentos = Relacionamentos::getRelacionamentos();
 		return $relacionamentos[static::TABELA];
 	}
 
 
 	/**
-	* @return $co_usuario_perfil
+	* @return int $co_usuario_perfil
      */
 	public function getCoUsuarioPerfil()
     {

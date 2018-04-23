@@ -2,7 +2,7 @@
 
 /**
  * EnderecoModel.class [ MODEL ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 class  EnderecoModel extends AbstractModel
 {

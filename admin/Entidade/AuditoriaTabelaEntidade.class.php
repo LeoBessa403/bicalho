@@ -61,7 +61,7 @@ class AuditoriaTabelaEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $no_tabela
+	* @return mixed $no_tabela
      */
 	public function getNoTabela()
     {
@@ -78,7 +78,7 @@ class AuditoriaTabelaEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $tp_operacao
+	* @return mixed $tp_operacao
      */
 	public function getTpOperacao()
     {

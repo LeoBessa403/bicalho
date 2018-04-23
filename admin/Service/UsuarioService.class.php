@@ -2,11 +2,13 @@
 
 /**
  * UsuarioService.class [ SEVICE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 class  UsuarioService extends AbstractService
 {
+
     private $ObjetoModel;
+
 
     public function __construct()
     {
@@ -39,7 +41,7 @@ class  UsuarioService extends AbstractService
     {
         $usuarioValidador = new UsuarioValidador();
         /** @var InscricaoValidador $validador */
-        $validador = $usuarioValidador->validarUsuario($dados, $foto);
+        $validador = $usuarioValidador->validarUsuario($dados);
         if ($validador[SUCESSO]) {
             /** @var EnderecoService $enderecoService */
             $enderecoService = $this->getService(ENDERECO_SERVICE);
@@ -228,7 +230,6 @@ class  UsuarioService extends AbstractService
                     $retorno[MSG] = 'Não foi possível Salvar o Usuário';
                     $PDO->rollBack();
                 }
-
                 if (!$resgistrar) {
                     if (in_array(1, $meusPerfis) || in_array(2, $meusPerfis)) {
                         Redireciona(UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller . '/ListarUsuario/');
@@ -247,5 +248,4 @@ class  UsuarioService extends AbstractService
 
         return $retorno;
     }
-
 }

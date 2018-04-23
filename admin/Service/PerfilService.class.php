@@ -6,7 +6,9 @@
  */
 class  PerfilService extends AbstractService
 {
+
     private $ObjetoModel;
+
 
     public function __construct()
     {
@@ -23,7 +25,7 @@ class  PerfilService extends AbstractService
         /** @var PerfilEntidade $perfil */
         foreach ($Perfis as $perfil) :
             if($perfil->getCoPerfil() > 1)
-            $todosPerfis[$perfil->getCoPerfil()] = $perfil->getNoPerfil();
+                $todosPerfis[$perfil->getCoPerfil()] = $perfil->getNoPerfil();
         endforeach;
         return $todosPerfis;
     }

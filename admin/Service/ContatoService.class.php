@@ -2,16 +2,19 @@
 
 /**
  * ContatoService.class [ SEVICE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 class  ContatoService extends AbstractService
 {
 
+    private $ObjetoModel;
+
+
     public function __construct()
     {
         parent::__construct(ContatoEntidade::ENTIDADE);
+        $this->ObjetoModel = New ContatoModel();
     }
-
 
     public function getArrayDadosContato(ContatoEntidade $contato, array $dados)
     {

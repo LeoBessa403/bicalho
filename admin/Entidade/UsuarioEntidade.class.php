@@ -2,7 +2,7 @@
 
 /**
  * Usuario.Entidade [ ENTIDADE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 
 class UsuarioEntidade extends AbstractEntidade
@@ -12,6 +12,7 @@ class UsuarioEntidade extends AbstractEntidade
 	const CHAVE = CO_USUARIO;
 
 	private $co_usuario;
+	private $ds_login;
 	private $ds_senha;
 	private $ds_code;
 	private $st_status;
@@ -20,16 +21,20 @@ class UsuarioEntidade extends AbstractEntidade
 	private $co_pessoa;
 	private $co_acesso;
 	private $co_auditoria;
+	private $co_negociacao;
+	private $co_produto_detalhe;
+	private $co_sugestao;
 	private $co_usuario_perfil;
-	private $co_comissao_evento;
-	private $co_agenda;
+
 
 	/**
      * @return array
      */
-	public static function getCampos() {
+	public static function getCampos() 
+        {
     	return [
 			CO_USUARIO,
+			DS_LOGIN,
 			DS_SENHA,
 			DS_CODE,
 			ST_STATUS,
@@ -40,16 +45,17 @@ class UsuarioEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $relacionamentos
+	* @return array $relacionamentos
      */
-	public static function getRelacionamentos() {
+	public static function getRelacionamentos() 
+        {
     	$relacionamentos = Relacionamentos::getRelacionamentos();
 		return $relacionamentos[static::TABELA];
 	}
 
 
 	/**
-	* @return $co_usuario
+	* @return int $co_usuario
      */
 	public function getCoUsuario()
     {
@@ -66,7 +72,24 @@ class UsuarioEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $ds_senha
+	* @return mixed $ds_login
+     */
+	public function getDsLogin()
+    {
+        return $this->ds_login;
+    }
+
+	/**
+	* @param $ds_login
+     * @return mixed
+     */
+	public function setDsLogin($ds_login)
+    {
+        return $this->ds_login = $ds_login;
+    }
+
+	/**
+	* @return mixed $ds_senha
      */
 	public function getDsSenha()
     {
@@ -83,7 +106,7 @@ class UsuarioEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $ds_code
+	* @return mixed $ds_code
      */
 	public function getDsCode()
     {
@@ -100,7 +123,7 @@ class UsuarioEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $st_status
+	* @return mixed $st_status
      */
 	public function getStStatus()
     {
@@ -117,7 +140,7 @@ class UsuarioEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $dt_cadastro
+	* @return mixed $dt_cadastro
      */
 	public function getDtCadastro()
     {
@@ -202,6 +225,57 @@ class UsuarioEntidade extends AbstractEntidade
     }
 
 	/**
+	* @return NegociacaoEntidade $co_negociacao
+     */
+	public function getCoNegociacao()
+    {
+        return $this->co_negociacao;
+    }
+
+	/**
+     * @param $co_negociacao
+     * @return mixed
+     */
+	public function setCoNegociacao($co_negociacao)
+    {
+        return $this->co_negociacao = $co_negociacao;
+    }
+
+	/**
+	* @return ProdutoDetalheEntidade $co_produto_detalhe
+     */
+	public function getCoProdutoDetalhe()
+    {
+        return $this->co_produto_detalhe;
+    }
+
+	/**
+     * @param $co_produto_detalhe
+     * @return mixed
+     */
+	public function setCoProdutoDetalhe($co_produto_detalhe)
+    {
+        return $this->co_produto_detalhe = $co_produto_detalhe;
+    }
+
+	/**
+	* @return SugestaoEntidade $co_sugestao
+     */
+	public function getCoSugestao()
+    {
+        return $this->co_sugestao;
+    }
+
+	/**
+     * @param $co_sugestao
+     * @return mixed
+     */
+	public function setCoSugestao($co_sugestao)
+    {
+        return $this->co_sugestao = $co_sugestao;
+    }
+
+	/**
 	* @return UsuarioPerfilEntidade $co_usuario_perfil
      */
 	public function getCoUsuarioPerfil()
@@ -217,38 +291,5 @@ class UsuarioEntidade extends AbstractEntidade
     {
         return $this->co_usuario_perfil = $co_usuario_perfil;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getCoComissaoEvento()
-    {
-        return $this->co_comissao_evento;
-    }
-
-    /**
-     * @param mixed $co_comissao_evento
-     */
-    public function setCoComissaoEvento($co_comissao_evento)
-    {
-        $this->co_comissao_evento = $co_comissao_evento;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getCoAgenda()
-    {
-        return $this->co_agenda;
-    }
-
-    /**
-     * @param mixed $co_agenda
-     */
-    public function setCoAgenda($co_agenda)
-    {
-        $this->co_agenda = $co_agenda;
-    }
-
 
 }

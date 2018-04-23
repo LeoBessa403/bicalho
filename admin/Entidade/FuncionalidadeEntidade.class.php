@@ -2,7 +2,7 @@
 
 /**
  * Funcionalidade.Entidade [ ENTIDADE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 
 class FuncionalidadeEntidade extends AbstractEntidade
@@ -14,12 +14,15 @@ class FuncionalidadeEntidade extends AbstractEntidade
 	private $co_funcionalidade;
 	private $no_funcionalidade;
 	private $st_status;
+	private $co_ajuda;
 	private $co_perfil_funcionalidade;
+
 
 	/**
      * @return array
      */
-	public static function getCampos() {
+	public static function getCampos() 
+        {
     	return [
 			CO_FUNCIONALIDADE,
 			NO_FUNCIONALIDADE,
@@ -28,16 +31,17 @@ class FuncionalidadeEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $relacionamentos
+	* @return array $relacionamentos
      */
-	public static function getRelacionamentos() {
+	public static function getRelacionamentos() 
+        {
     	$relacionamentos = Relacionamentos::getRelacionamentos();
 		return $relacionamentos[static::TABELA];
 	}
 
 
 	/**
-	* @return $co_funcionalidade
+	* @return int $co_funcionalidade
      */
 	public function getCoFuncionalidade()
     {
@@ -54,7 +58,7 @@ class FuncionalidadeEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $no_funcionalidade
+	* @return mixed $no_funcionalidade
      */
 	public function getNoFuncionalidade()
     {
@@ -71,7 +75,7 @@ class FuncionalidadeEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $st_status
+	* @return mixed $st_status
      */
 	public function getStStatus()
     {
@@ -85,6 +89,23 @@ class FuncionalidadeEntidade extends AbstractEntidade
 	public function setStStatus($st_status)
     {
         return $this->st_status = $st_status;
+    }
+
+	/**
+	* @return AjudaEntidade $co_ajuda
+     */
+	public function getCoAjuda()
+    {
+        return $this->co_ajuda;
+    }
+
+	/**
+     * @param $co_ajuda
+     * @return mixed
+     */
+	public function setCoAjuda($co_ajuda)
+    {
+        return $this->co_ajuda = $co_ajuda;
     }
 
 	/**

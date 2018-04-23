@@ -2,7 +2,7 @@
 
 /**
  * TipoPagamento.Entidade [ ENTIDADE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 
 class TipoPagamentoEntidade extends AbstractEntidade
@@ -14,12 +14,14 @@ class TipoPagamentoEntidade extends AbstractEntidade
 	private $co_tipo_pagamento;
 	private $ds_tipo_pagamento;
 	private $sg_tipo_pagamento;
-	private $co_parcelamento;
+	private $co_pagamento;
+
 
 	/**
      * @return array
      */
-	public static function getCampos() {
+	public static function getCampos() 
+        {
     	return [
 			CO_TIPO_PAGAMENTO,
 			DS_TIPO_PAGAMENTO,
@@ -28,16 +30,17 @@ class TipoPagamentoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $relacionamentos
+	* @return array $relacionamentos
      */
-	public static function getRelacionamentos() {
+	public static function getRelacionamentos() 
+        {
     	$relacionamentos = Relacionamentos::getRelacionamentos();
 		return $relacionamentos[static::TABELA];
 	}
 
 
 	/**
-	* @return $co_tipo_pagamento
+	* @return int $co_tipo_pagamento
      */
 	public function getCoTipoPagamento()
     {
@@ -54,7 +57,7 @@ class TipoPagamentoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $ds_tipo_pagamento
+	* @return mixed $ds_tipo_pagamento
      */
 	public function getDsTipoPagamento()
     {
@@ -71,7 +74,7 @@ class TipoPagamentoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $sg_tipo_pagamento
+	* @return mixed $sg_tipo_pagamento
      */
 	public function getSgTipoPagamento()
     {
@@ -88,20 +91,20 @@ class TipoPagamentoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return ParcelamentoEntidade $co_parcelamento
+	* @return PagamentoEntidade $co_pagamento
      */
-	public function getCoParcelamento()
+	public function getCoPagamento()
     {
-        return $this->co_parcelamento;
+        return $this->co_pagamento;
     }
 
 	/**
-     * @param $co_parcelamento
+     * @param $co_pagamento
      * @return mixed
      */
-	public function setCoParcelamento($co_parcelamento)
+	public function setCoPagamento($co_pagamento)
     {
-        return $this->co_parcelamento = $co_parcelamento;
+        return $this->co_pagamento = $co_pagamento;
     }
 
 }

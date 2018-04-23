@@ -2,7 +2,7 @@
 
 /**
  * Contato.Entidade [ ENTIDADE ]
- * @copyright (c) 2017, Leo Bessa
+ * @copyright (c) 2018, Leo Bessa
  */
 
 class ContatoEntidade extends AbstractEntidade
@@ -15,33 +15,41 @@ class ContatoEntidade extends AbstractEntidade
 	private $nu_tel1;
 	private $nu_tel2;
 	private $nu_tel3;
+	private $nu_tel4;
 	private $ds_email;
+	private $ds_site;
+	private $co_empresa;
 	private $co_pessoa;
+
 
 	/**
      * @return array
      */
-	public static function getCampos() {
+	public static function getCampos() 
+        {
     	return [
 			CO_CONTATO,
 			NU_TEL1,
 			NU_TEL2,
 			NU_TEL3,
+			NU_TEL4,
 			DS_EMAIL,
+			DS_SITE,
 		];
     }
 
 	/**
-	* @return $relacionamentos
+	* @return array $relacionamentos
      */
-	public static function getRelacionamentos() {
+	public static function getRelacionamentos() 
+        {
     	$relacionamentos = Relacionamentos::getRelacionamentos();
 		return $relacionamentos[static::TABELA];
 	}
 
 
 	/**
-	* @return $co_contato
+	* @return int $co_contato
      */
 	public function getCoContato()
     {
@@ -58,7 +66,7 @@ class ContatoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $nu_tel1
+	* @return mixed $nu_tel1
      */
 	public function getNuTel1()
     {
@@ -75,7 +83,7 @@ class ContatoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $nu_tel2
+	* @return mixed $nu_tel2
      */
 	public function getNuTel2()
     {
@@ -92,7 +100,7 @@ class ContatoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $nu_tel3
+	* @return mixed $nu_tel3
      */
 	public function getNuTel3()
     {
@@ -109,7 +117,24 @@ class ContatoEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return $ds_email
+	* @return mixed $nu_tel4
+     */
+	public function getNuTel4()
+    {
+        return $this->nu_tel4;
+    }
+
+	/**
+	* @param $nu_tel4
+     * @return mixed
+     */
+	public function setNuTel4($nu_tel4)
+    {
+        return $this->nu_tel4 = $nu_tel4;
+    }
+
+	/**
+	* @return mixed $ds_email
      */
 	public function getDsEmail()
     {
@@ -123,6 +148,40 @@ class ContatoEntidade extends AbstractEntidade
 	public function setDsEmail($ds_email)
     {
         return $this->ds_email = $ds_email;
+    }
+
+	/**
+	* @return mixed $ds_site
+     */
+	public function getDsSite()
+    {
+        return $this->ds_site;
+    }
+
+	/**
+	* @param $ds_site
+     * @return mixed
+     */
+	public function setDsSite($ds_site)
+    {
+        return $this->ds_site = $ds_site;
+    }
+
+	/**
+	* @return EmpresaEntidade $co_empresa
+     */
+	public function getCoEmpresa()
+    {
+        return $this->co_empresa;
+    }
+
+	/**
+     * @param $co_empresa
+     * @return mixed
+     */
+	public function setCoEmpresa($co_empresa)
+    {
+        return $this->co_empresa = $co_empresa;
     }
 
 	/**
