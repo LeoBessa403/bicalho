@@ -165,6 +165,7 @@ endif;
                 <!-- start: MAIN NAVIGATION MENU -->
                 <?php
                 $menu = array("Usuario" => array("fa fa-group", "MeuPerfilUsuario", "CadastroUsuario", "ListarUsuario"),
+                    "Segmento" => array("clip-tree", "CadastroSegmento", "ListarSegmento"),
                     "Perfil" => array("clip-stack-empty", "CadastroPerfil", "ListarPerfil"),
                     "Funcionalidade" => array("fa fa-outdent", "CadastroFuncionalidade", "ListarFuncionalidade"),
                     "Acesso" => array("clip-connection-2", "ListarAcesso"),

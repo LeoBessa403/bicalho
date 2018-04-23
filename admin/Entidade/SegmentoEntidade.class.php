@@ -8,7 +8,7 @@
 class SegmentoEntidade extends AbstractEntidade
 {
 	const TABELA = 'TB_SEGMENTO';
-	const ENTIDADE = 'SegmentooEntidade';
+	const ENTIDADE = 'SegmentoEntidade';
 	const CHAVE = CO_SEGMENTO;
 
 	private $co_segmento;
