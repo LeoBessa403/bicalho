@@ -13,33 +13,20 @@ class Segmento extends AbstractController
 
     function CadastroSegmento()
     {
-        /** @var PerfilService $perfilService */
-        $perfilService = $this->getService(PERFIL_SERVICE);
+        /** @var SegmentoService $segmentoService */
+        $segmentoService = $this->getService(SEGMENTO_SERVICE);
 
-        $id = "cadastroPerfil";
+        $id = "cadastroSegmento";
 
         if (!empty($_POST[$id])):
-            $retorno = $perfilService->salvaPerfil($_POST);
+            $retorno = $segmentoService->salvaPerfil($_POST);
             if($retorno[SUCESSO]){
-                Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarPerfil/');
+                Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarSegmento/');
             }
         endif;
 
-        $coPerfil = UrlAmigavel::PegaParametro("per");
-        $res = array();
-        if ($coPerfil):
-            /** @var PerfilEntidade $perfil */
-            $perfil = $perfilService->PesquisaUmRegistro($coPerfil);
-            $res[NO_PERFIL] = $perfil->getNoPerfil();
-            $res[CO_PERFIL] = $perfil->getCoPerfil();
-            $perfisFunc = [];
-            /** @var PerfilFuncionalidadeEntidade $perfilFunc */
-            foreach ($perfil->getCoPerfilFuncionalidade() as $perfilFunc){
-                $perfisFunc[] = $perfilFunc->getCoFuncionalidade()->getCoFuncionalidade();
-            }
-            $res[CO_FUNCIONALIDADE] = $perfisFunc;
-        endif;
-
+        $coSegmento = UrlAmigavel::PegaParametro(CO_SEGMENTO);
+        $res = $segmentoService->PesquisaUmRegistro($coSegmento);
         $this->form = PerfilForm::Cadastrar($res);
 
     }
