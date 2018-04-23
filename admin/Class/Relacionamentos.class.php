@@ -21,27 +21,27 @@ class Relacionamentos
 				(CO_ACESSO) => Array(
 					('Campo') => CO_USUARIO,
 					('Entidade') => 'AcessoEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 				(CO_AUDITORIA) => Array(
 					('Campo') => CO_USUARIO,
 					('Entidade') => 'AuditoriaEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 				(CO_NEGOCIACAO) => Array(
 					('Campo') => CO_USUARIO,
 					('Entidade') => 'NegociacaoEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 				(CO_PRODUTO_DETALHE) => Array(
 					('Campo') => CO_USUARIO,
 					('Entidade') => 'ProdutoDetalheEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 				(CO_SUGESTAO) => Array(
 					('Campo') => CO_USUARIO,
 					('Entidade') => 'SugestaoEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 				(CO_IMAGEM) => Array(
 					('Campo') => CO_IMAGEM,
@@ -56,7 +56,7 @@ class Relacionamentos
 				(CO_USUARIO_PERFIL) => Array(
 					('Campo') => CO_USUARIO,
 					('Entidade') => 'UsuarioPerfilEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(AjudaEntidade::TABELA) => Array(
@@ -75,7 +75,7 @@ class Relacionamentos
 				(CO_PERFIL_FUNCIONALIDADE) => Array(
 					('Campo') => CO_FUNCIONALIDADE,
 					('Entidade') => 'PerfilFuncionalidadeEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(AuditoriaEntidade::TABELA) => Array(
@@ -87,7 +87,7 @@ class Relacionamentos
 				(CO_AUDITORIA_TABELA) => Array(
 					('Campo') => CO_AUDITORIA,
 					('Entidade') => 'AuditoriaTabelaEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(AuditoriaItensEntidade::TABELA) => Array(
@@ -101,7 +101,7 @@ class Relacionamentos
 				(CO_AUDITORIA_ITENS) => Array(
 					('Campo') => CO_AUDITORIA_TABELA,
 					('Entidade') => 'AuditoriaItensEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 				(CO_AUDITORIA) => Array(
 					('Campo') => CO_AUDITORIA,
@@ -118,14 +118,14 @@ class Relacionamentos
 				(CO_PRODUTO) => Array(
 					('Campo') => CO_CATEGORIA,
 					('Entidade') => 'ProdutoEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(SessaoEntidade::TABELA) => Array(
 				(CO_CATEGORIA) => Array(
 					('Campo') => CO_SESSAO,
 					('Entidade') => 'CategoriaEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(ClienteEntidade::TABELA) => Array(
@@ -142,7 +142,7 @@ class Relacionamentos
 				(CO_NEGOCIACAO) => Array(
 					('Campo') => CO_CLIENTE,
 					('Entidade') => 'NegociacaoEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(PessoaEntidade::TABELA) => Array(
@@ -311,7 +311,7 @@ class Relacionamentos
 				(CO_ENTREGA_PEDIDO) => Array(
 					('Campo') => CO_SIT_ENTREG_PED,
 					('Entidade') => 'EntregaPedidoEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(NegociacaoEntidade::TABELA) => Array(
@@ -343,7 +343,7 @@ class Relacionamentos
 				(CO_NEGOCIACAO_PRODUTO) => Array(
 					('Campo') => CO_NEGOCIACAO,
 					('Entidade') => 'NegociacaoProdutoEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 				(CO_PAGAMENTO) => Array(
 					('Campo') => CO_NEGOCIACAO,
@@ -372,7 +372,7 @@ class Relacionamentos
 				(CO_PRODUTO) => Array(
 					('Campo') => CO_FABRICANTE,
 					('Entidade') => 'ProdutoEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(FornecedorEntidade::TABELA) => Array(
@@ -399,7 +399,7 @@ class Relacionamentos
 				(CO_NEGOCIACAO) => Array(
 					('Campo') => CO_FORNECEDOR,
 					('Entidade') => 'NegociacaoEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(RepresentanteEntidade::TABELA) => Array(
@@ -430,7 +430,7 @@ class Relacionamentos
 				(CO_NEGOCIACAO) => Array(
 					('Campo') => CO_TIPO_NEGOCIACAO,
 					('Entidade') => 'NegociacaoEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(NegociacaoProdutoEntidade::TABELA) => Array(
@@ -449,7 +449,7 @@ class Relacionamentos
 				(CO_NEGOCIACAO_PRODUTO) => Array(
 					('Campo') => CO_PRODUTO,
 					('Entidade') => 'NegociacaoProdutoEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 				(CO_UNIDADE_VENDA) => Array(
 					('Campo') => CO_UNIDADE_VENDA,
@@ -469,12 +469,12 @@ class Relacionamentos
 				(CO_PRODUTO_DETALHE) => Array(
 					('Campo') => CO_PRODUTO,
 					('Entidade') => 'ProdutoDetalheEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 				(CO_PRODUTO_IMAGEM) => Array(
 					('Campo') => CO_PRODUTO,
 					('Entidade') => 'ProdutoImagemEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(PagamentoEntidade::TABELA) => Array(
@@ -491,14 +491,14 @@ class Relacionamentos
 				(CO_PARCELAMENTO) => Array(
 					('Campo') => CO_PAGAMENTO,
 					('Entidade') => 'ParcelamentoEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(TipoPagamentoEntidade::TABELA) => Array(
 				(CO_PAGAMENTO) => Array(
 					('Campo') => CO_TIPO_PAGAMENTO,
 					('Entidade') => 'PagamentoEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(ParcelamentoEntidade::TABELA) => Array(
@@ -524,19 +524,19 @@ class Relacionamentos
 				(CO_PERFIL_FUNCIONALIDADE) => Array(
 					('Campo') => CO_PERFIL,
 					('Entidade') => 'PerfilFuncionalidadeEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 				(CO_USUARIO_PERFIL) => Array(
 					('Campo') => CO_PERFIL,
 					('Entidade') => 'UsuarioPerfilEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(UnidadeVendaEntidade::TABELA) => Array(
 				(CO_PRODUTO) => Array(
 					('Campo') => CO_UNIDADE_VENDA,
 					('Entidade') => 'ProdutoEntidade',
-					('Tipo') => '1',
+					('Tipo') => '2',
 				),
 			),
 			(ProdutoDestaqueEntidade::TABELA) => Array(
