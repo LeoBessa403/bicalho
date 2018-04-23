@@ -104,7 +104,7 @@
                             <button class="btn btn-icon btn-block">
                                 <i class="fa-eur fa"></i>
                                 Mais procurados
-                                <span class="dados negrito dados-purple">
+                                <span class="dados negrito dados-gray">
                                     <?= $dados['TotalNaoPago']; ?>
                                 </span>
                             </button>
