@@ -154,14 +154,19 @@ class  UsuarioService extends AbstractService
                     $usuarioPerfil[CO_USUARIO] = $idCoUsuario;
                     $ok = $usuarioPerfilService->DeletaQuando($usuarioPerfil);
                     if ($ok):
+                        $membro = false;
                         if (!empty($dados['ds_perfil'])) {
                             foreach ($dados['ds_perfil'] as $perfil) {
+                                if ($perfil == 3)
+                                    $membro = true;
                                 $usuarioPerfil[CO_PERFIL] = $perfil;
                                 $usuarioPerfilService->Salva($usuarioPerfil);
                             }
                         }
-                        $usuarioPerfil[CO_PERFIL] = 3;
-                        $retorno = $usuarioPerfilService->Salva($usuarioPerfil);
+                        if (!$membro) {
+                            $usuarioPerfil[CO_PERFIL] = 3;
+                            $retorno = $usuarioPerfilService->Salva($usuarioPerfil);
+                        }
                     endif;
 
                     $session->setSession(ATUALIZADO, "OK");
