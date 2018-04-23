@@ -5650,17 +5650,37 @@ td.column-right {
 }
 
 .dados-danger {
-    background-color: rgba(188, 13, 10, 1);
+    background-color: darkred;
 }
 
 .dados-info {
-    background-color: rgba(21, 17, 188, 1);
+    background-color: darkblue;
 }
 
 .dados-success {
-    background-color: rgba(19, 140, 9, 1);
+    background-color: darkgreen;
 }
 
 .dados-warning {
-    background-color: rgba(206, 174, 13, 1);
+    background-color: darkgoldenrod;
+}
+
+.dados-orange {
+    background-color: darkorange;
+}
+
+.dados-black {
+    background-color: darkslategray;
+}
+
+.dados-purple {
+    background-color: darkviolet;
+}
+
+.dados-beige {
+    background-color: darkkhaki;
+}
+
+.dados-olivia {
+    background-color: darkolivegreen;
 }

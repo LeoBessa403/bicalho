@@ -25,40 +25,40 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <i class="fa fa-calendar"></i>
-                        Resumo das Inscrições
+                        Resumo do Sistema
                     </div>
                     <div class="panel-body">
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <button class="btn btn-icon btn-block">
                                 <i class="clip-users-3"></i>
-                                Vagas Garantidas
+                                Produtos Cadastrados
                                 <span class="negrito dados dados-success">
                                     <?= $dados['TotalInscricoesRestantes']; ?>
                                 </span>
                             </button>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <button class="btn btn-icon btn-block">
                                 <i class="clip-users-3"></i>
-                                Retirantes Inscritos
+                                Produtos Destaque
                                 <span class="negrito dados dados-warning">
                                     <?= $dados['TotalRetirantes']; ?>
                                 </span>
                             </button>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <button class="btn btn-icon btn-block">
                                 <i class="clip-users-3"></i>
-                                Total Inscritos
+                                Categorias cadastradas
                                 <span class="negrito dados dados-danger">
                                     <?= $dados['TotalInscricoes']; ?>
                                 </span>
                             </button>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <button class="btn btn-icon btn-block">
                                 <i class="fa fa-money"></i>
-                                Total Arrecadado
+                                Mais Visitados
                                 <span class="dados negrito dados-info">
                                     <?= $dados['TotalArrecadado']; ?>
                                 </span>
@@ -67,8 +67,8 @@
                         <div class="col-sm-4">
                             <button class="btn btn-icon btn-block">
                                 <i class="clip-user-cancel"></i>
-                                Não Membros
-                                <span class="dados negrito dados-warning">
+                                Mais Vendidos
+                                <span class="dados negrito dados-beige">
                                     <?= $dados['TotalNaoMembros']; ?>
                                 </span>
                             </button>
@@ -76,8 +76,8 @@
                         <div class="col-sm-4">
                             <button class="btn btn-icon btn-block">
                                 <i class="clip-user-3"></i>
-                                Membros
-                                <span class="dados negrito dados-info">
+                                Produtos com estoque
+                                <span class="dados negrito dados-olivia">
                                     <?= $dados['TotalMembros']; ?>
                                 </span>
                             </button>
@@ -85,45 +85,27 @@
                         <div class="col-sm-4">
                             <button class="btn btn-icon btn-block">
                                 <i class="clip-users-2"></i>
-                                Servos
-                                <span class="dados negrito dados-success">
+                                Mais vendidos
+                                <span class="dados negrito dados-black">
                                     <?= $dados['TotalServos']; ?>
                                 </span>
                             </button>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <button class="btn btn-icon btn-block">
                                 <i class="fa-dollar fa"></i>
-                                Total a Arrecadar
-                                <span class="dados negrito dados-success">
+                                Novos Produtos
+                                <span class="dados negrito dados-orange">
                                     <?= $dados['TotalAArrecadar']; ?>
                                 </span>
                             </button>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-4">
                             <button class="btn btn-icon btn-block">
                                 <i class="fa-eur fa"></i>
-                                Não Pagos
-                                <span class="dados negrito dados-danger">
+                                Mais procurados
+                                <span class="dados negrito dados-purple">
                                     <?= $dados['TotalNaoPago']; ?>
-                                </span>
-                            </button>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="btn btn-icon btn-block">
-                                <i class="fa-gbp fa"></i>
-                                Pag. Parcial
-                                <span class="dados negrito dados-info">
-                                    <?= $dados['TotalParcial']; ?>
-                                </span>
-                            </button>
-                        </div>
-                        <div class="col-sm-3">
-                            <button class="btn btn-icon btn-block">
-                                <i class="fa-usd fa"></i>
-                                Pag. Concluídos
-                                <span class="dados negrito dados-success">
-                                    <?= $dados['TotalConcluido']; ?>
                                 </span>
                             </button>
                         </div>
