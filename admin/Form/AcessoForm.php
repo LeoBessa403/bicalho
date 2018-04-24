@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * AcessoForm [ FORM ]
+ * @copyright (c) 2017, Leo Bessa
+ */
 class AcessoForm
 {
 

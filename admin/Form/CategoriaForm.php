@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * CategoriaForm [ FORM ]
+ * @copyright (c) 2017, Leo Bessa
+ */
 class CategoriaForm
 {
     public static function Cadastrar($res = false)

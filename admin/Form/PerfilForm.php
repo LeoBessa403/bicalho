@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * PerfilForm [ FORM ]
+ * @copyright (c) 2017, Leo Bessa
+ */
 class PerfilForm
 {
     public static function Cadastrar($res = false)

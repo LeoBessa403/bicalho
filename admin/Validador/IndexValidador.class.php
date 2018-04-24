@@ -1,7 +1,7 @@
 <?php
 
 /**
-     * AgendaValidador [ VALIDATOR ]
+ * IndexValidador [ VALIDATOR ]
  * @copyright (c) 2017, Leo Bessa
  */
 class  IndexValidador extends AbstractValidador

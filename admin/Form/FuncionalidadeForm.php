@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * FuncionalidadeForm [ FORM ]
+ * @copyright (c) 2017, Leo Bessa
+ */
 class FuncionalidadeForm
 {
     public static function Cadastrar($res = false)

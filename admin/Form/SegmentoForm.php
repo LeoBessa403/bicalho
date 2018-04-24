@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * SegmentoForm [ FORM ]
+ * @copyright (c) 2018, Leo Bessa
+ */
 class SegmentoForm
 {
     public static function Cadastrar($res = false)

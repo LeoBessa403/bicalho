@@ -1,7 +1,7 @@
 <?php
 
 /**
- * AcessoService.class [ SEVICE ]
+ * UsuarioValidador [ VALIDATOR ]
  * @copyright (c) 2017, Leo Bessa
  */
 class  UsuarioValidador extends AbstractValidador

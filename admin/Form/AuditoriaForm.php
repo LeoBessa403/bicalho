@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * AuditoriaForm [ FORM ]
+ * @copyright (c) 2017, Leo Bessa
+ */
 class AuditoriaForm
 {
 
