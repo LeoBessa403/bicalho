@@ -34,7 +34,7 @@
                         Modal::load();
                         Modal::deletaRegistro("Segmento");
                         Modal::confirmacao("confirma_Segmento");
-                        $arrColunas = array('Nome Segmento', 'Ações');
+                        $arrColunas = array('Nome Segmento', 'Qtd. Categorias', 'Ações');
                         $grid = new Grid();
                         $grid->setColunasIndeces($arrColunas);
                         $grid->criaGrid();
@@ -51,6 +51,7 @@
                                             <i class="fa fa-trash-o"></i>
                                         </a>';
                             $grid->setColunas($res->getDsSegmento());
+                            $grid->setColunas($categorias[$res->getCoSegmento()],3);
                             $grid->setColunas($acao, 2);
                             $grid->criaLinha($res->getCoSegmento());
                         endforeach;

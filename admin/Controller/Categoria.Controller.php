@@ -32,6 +32,7 @@ class Categoria extends AbstractController
             $categoria = $categoriaService->PesquisaUmRegistro($coCategoria);
             $res[CO_CATEGORIA] = $categoria->getCoCategoria();
             $res[NO_CATEGORIA] = $categoria->getNoCategoria();
+            $res[CO_SEGMENTO] = $categoria->getCoSegmento()->getCoSegmento();
         }
         $this->form = CategoriaForm::Cadastrar($res);
 

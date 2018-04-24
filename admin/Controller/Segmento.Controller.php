@@ -3,12 +3,17 @@
 class Segmento extends AbstractController
 {
     public $result;
+    public $categorias;
 
     function ListarSegmento()
     {
         /** @var SegmentoService $segmentoService */
         $segmentoService = $this->getService(SEGMENTO_SERVICE);
         $this->result = $segmentoService->PesquisaTodos();
+        /** @var SegmentoEntidade $segmento */
+        foreach ($this->result as $segmento){
+            $this->categorias[$segmento->getCoSegmento()] = count($segmento->getCoCategoria());
+        }
     }
 
     function CadastroSegmento()

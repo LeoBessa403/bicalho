@@ -16,19 +16,6 @@ class  SegmentoService extends AbstractService
         $this->ObjetoModel = New SegmentoModel();
     }
 
-//    public static function montaComboSegmento()
-//    {
-//        /** @var SegmentoService $segmentoService */
-//        $segmentoService = $this->getService(PERFIL_FUNCIONALIDADE_SERVICE);
-//
-//        $segmentos = array();
-//        /** @var UsuarioPerfilEntidade $perfil */
-//        foreach ($usuario->getCoUsuarioPerfil() as $perfil) :
-//            $segmentos[] = $perfil->getCoPerfil()->getCoPerfil();
-//        endforeach;
-//        return $meusPerfis;
-//    }
-
     public function salvaSegmento($dados)
     {
         $retorno = [
@@ -36,6 +23,7 @@ class  SegmentoService extends AbstractService
             MSG => null
         ];
         $segmento[DS_SEGMENTO] = trim($dados[DS_SEGMENTO]);
+        $segmento[CO_CATEGORIA] = $dados[CO_CATEGORIA][0];
 
         if (!empty($_POST[CO_SEGMENTO])):
             $coSegmento = $dados[CO_SEGMENTO];
