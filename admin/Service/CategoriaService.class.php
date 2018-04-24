@@ -22,15 +22,24 @@ class  CategoriaService extends AbstractService
             SUCESSO => false,
             MSG => null
         ];
-        $categoria[NO_CATEGORIA] = trim($dados[NO_CATEGORIA]);
-        $categoria[CO_SEGMENTO] = $dados[CO_SEGMENTO][0];
+        $categoriaValidador = new CategoriaValidador();
+        /** @var CategoriaValidador $validador */
+        $validador = $categoriaValidador->validarCategoria($dados);
+        if ($validador[SUCESSO]) {
+            $categoria[NO_CATEGORIA] = trim($dados[NO_CATEGORIA]);
+            $categoria[CO_SEGMENTO] = $dados[CO_SEGMENTO][0];
 
-        if (!empty($_POST[CO_CATEGORIA])):
-            $coCategoria = $dados[CO_CATEGORIA];
-            $retorno[SUCESSO] = $this->Salva($categoria, $coCategoria);
-        else:
-            $retorno[SUCESSO] = $this->Salva($categoria);
-        endif;
+            if (!empty($_POST[CO_CATEGORIA])):
+                $coCategoria = $dados[CO_CATEGORIA];
+                $retorno[SUCESSO] = $this->Salva($categoria, $coCategoria);
+            else:
+                $retorno[SUCESSO] = $this->Salva($categoria);
+            endif;
+        } else {
+            $session = new Session();
+            $session->setSession(MENSAGEM, $validador[MSG]);
+            $retorno = $validador;
+        }
         return $retorno;
     }
 }
