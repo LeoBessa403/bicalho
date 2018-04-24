@@ -2,9 +2,9 @@
 <main id="contact-us" class="inner-bottom-md">
     <section class="google-map map-holder">
         <div id="map" class="center">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15355.639734681998!2d-48.0673362166288!
-            3d-15.808702407433664!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x73975fe01b8ee9f6!2sBicalho+Balan%C3%A7as+e+
-            Refrigera%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1523558920964"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1141.3034549165923!2d-48.0650129352055!
+            3d-15.810705276267305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4019fd0d953ec96b!
+            2sBicalho+Balan%C3%A7as+e+Refrigera%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1524579301806"
                     width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </section>
