@@ -167,10 +167,11 @@ endif;
                 $menu = array("Usuario" => array("fa fa-group", "MeuPerfilUsuario", "CadastroUsuario", "ListarUsuario"),
                     "Segmento" => array("clip-tree", "CadastroSegmento", "ListarSegmento"),
                     "Categoria" => array("clip-list-6", "CadastroCategoria", "ListarCategoria"),
+                    "Fabricante" => array("fa fa-cogs", "CadastroFabricante", "ListarFabricante"),
                     "Perfil" => array("clip-stack-empty", "CadastroPerfil", "ListarPerfil"),
                     "Funcionalidade" => array("fa fa-outdent", "CadastroFuncionalidade", "ListarFuncionalidade"),
                     "Acesso" => array("clip-connection-2", "ListarAcesso"),
-                    "Auditoria" => array("fa fa-cogs", "ListarAuditoria"),
+                    "Auditoria" => array("fa fa-crosshairs", "ListarAuditoria"),
                 );
                 $url->GeraMenu($menu);
                 ?>
