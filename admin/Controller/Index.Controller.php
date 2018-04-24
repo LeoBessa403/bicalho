@@ -75,6 +75,15 @@ class Index extends AbstractController
         }
     }
 
+    public function PrimeiroAcesso()
+    {
+        /** @var Session $session */
+        $session = new Session();
+        if ($session->CheckSession(SESSION_USER)) {
+            Redireciona(ADMIN . LOGADO);
+        }
+    }
+
     function RecuperarSenha()
     {
         $visivel = false;
