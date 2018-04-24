@@ -129,7 +129,7 @@ class FabricanteEntidade extends AbstractEntidade
     }
 
     /**
-     * @return mixed
+     * @return mixed $nu_codigo_fabricante
      */
     public function getNuCodigoFabricante()
     {
