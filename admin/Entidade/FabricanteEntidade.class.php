@@ -16,6 +16,7 @@ class FabricanteEntidade extends AbstractEntidade
 	private $no_fabricante;
 	private $co_fornecedor;
 	private $co_produto;
+	private $nu_codigo_fabricante;
 
 
 	/**
@@ -28,6 +29,7 @@ class FabricanteEntidade extends AbstractEntidade
 			DT_CADASTRO,
 			NO_FABRICANTE,
 			CO_FORNECEDOR,
+			NU_CODIGO_FABRICANTE,
 		];
     }
 
@@ -124,6 +126,22 @@ class FabricanteEntidade extends AbstractEntidade
 	public function setCoProduto($co_produto)
     {
         return $this->co_produto = $co_produto;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNuCodigoFabricante()
+    {
+        return $this->nu_codigo_fabricante;
+    }
+
+    /**
+     * @param mixed $nu_codigo_fabricante
+     */
+    public function setNuCodigoFabricante($nu_codigo_fabricante)
+    {
+        $this->nu_codigo_fabricante = $nu_codigo_fabricante;
     }
 
 }

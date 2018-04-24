@@ -105,6 +105,7 @@
 	define('NU_ESTOQUE', 'nu_estoque');
 	define('NU_CODIGO', 'nu_codigo');
 	define('NU_CODIGO_INTERNO', 'nu_codigo_interno');
+	define('NU_CODIGO_FABRICANTE', 'nu_codigo_fabricante');
 	define('CO_UNIDADE_VENDA', 'co_unidade_venda');
 	define('CO_PRODUTO_DESTAQUE', 'co_produto_destaque');
 	define('DT_INICIO', 'dt_inicio');
