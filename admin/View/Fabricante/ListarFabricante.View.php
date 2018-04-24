@@ -34,7 +34,7 @@
                         Modal::load();
                         Modal::deletaRegistro("Fabricante");
                         Modal::confirmacao("confirma_Fabricante");
-                        $arrColunas = array('Nome do Fabricante', 'Código', 'Ações');
+                        $arrColunas = array('Código', 'Nome do Fabricante', 'Ações');
                         $grid = new Grid();
                         $grid->setColunasIndeces($arrColunas);
                         $grid->criaGrid();
@@ -50,8 +50,8 @@
                                            href="#Fabricante" data-original-title="Excluir Registro" data-placement="top">
                                             <i class="fa fa-trash-o"></i>
                                         </a>';
+                            $grid->setColunas($res->getNuCodigoFabricante(),2);
                             $grid->setColunas($res->getNoFabricante());
-                            $grid->setColunas($res->getNuCodigoFabricante());
                             $grid->setColunas($acao, 2);
                             $grid->criaLinha($res->getCoFabricante());
                         endforeach;

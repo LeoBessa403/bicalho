@@ -133,6 +133,12 @@ class FabricanteEntidade extends AbstractEntidade
      */
     public function getNuCodigoFabricante()
     {
+        $tamanho = 3; //Tamanho padrão do código
+        $qt = strlen($this->nu_codigo_fabricante);
+        $restante = $tamanho - $qt;
+        for($i=0;$i<$restante;$i++){
+            $this->nu_codigo_fabricante = (string) '0'.$this->nu_codigo_fabricante;
+        }
         return $this->nu_codigo_fabricante;
     }
 
