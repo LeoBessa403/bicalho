@@ -17,6 +17,7 @@
                 <div class="page-header">
                     <h1>Perfis
                         <small>Listar Perfis</small>
+                        <?php Valida::geraBtnNovo(); ?>
                     </h1>
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->

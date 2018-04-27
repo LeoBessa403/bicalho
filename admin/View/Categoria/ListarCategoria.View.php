@@ -17,6 +17,7 @@
                 <div class="page-header">
                     <h1>Categoria
                         <small>Listar Categoria</small>
+                        <?php Valida::geraBtnNovo(); ?>
                     </h1>
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->
