@@ -17,7 +17,6 @@
                 <div class="page-header">
                     <h1>Usuários
                         <small>Listar usuários</small>
-                        <?php Valida::geraBtnNovo(); ?>
                     </h1>
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->
