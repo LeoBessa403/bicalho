@@ -14,7 +14,7 @@
                     </li>
                 </ol>
                 <div class="page-header">
-                    <h1>Resumo Inscrições</h1>
+                    <h1>Resumo dos Produtos</h1>
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->
             </div>
