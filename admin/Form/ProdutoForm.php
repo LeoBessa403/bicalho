@@ -103,7 +103,7 @@ class ProdutoForm
             ->setId(DS_DESCRICAO)
             ->setType("textarea")
             ->setLabel("Descrição do Produto")
-            ->setClasses("ob ckeditor")
+            ->setClasses("ckeditor")
             ->CriaInpunt();
 
         $formulario

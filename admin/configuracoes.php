@@ -57,7 +57,7 @@ function servidor_inicial()
     // A frequencia em dias para realizar o BACKUP NO BANCO DE DADOS
     define('BACKUP', 15);
     // TAMANHO PADRÃO DO WIDTH DAS IAMGENS A SEREM CARREGADAS
-    define('TAMANHO', 600);
+    define('TAMANHO', 800);
     // PASTA DE ARMAZENAMENTO DE UPLOADS
     define('PASTAUPLOADS', 'uploads/');
     // TABELA PARA ARMAZENAR OS DADOS PARA AUDITORIA

@@ -19,10 +19,10 @@ class Produto extends AbstractController
         $id = "cadastroProduto";
 
         if (!empty($_POST[$id])):
-//            $retorno = $produtoService->salvaProduto($_POST);
-//            if($retorno[SUCESSO]){
-//                Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarProduto/');
-//            }
+            $retorno = $produtoService->salvaProduto($_POST, $_FILES);
+            if($retorno[SUCESSO]){
+                Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarProduto/');
+            }
         endif;
 
         $coProduto = UrlAmigavel::PegaParametro(CO_PRODUTO);
