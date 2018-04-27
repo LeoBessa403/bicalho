@@ -19,6 +19,8 @@ class ProdutoEntidade extends AbstractEntidade
     private $nu_codigo_interno;
     private $dt_cadastro;
     private $st_status;
+    private $ds_caminho_manual;
+    private $ds_caminho_video;
     private $co_unidade_venda;
     private $co_categoria;
     private $co_fabricante;
@@ -41,6 +43,8 @@ class ProdutoEntidade extends AbstractEntidade
             NU_CODIGO_INTERNO,
             DT_CADASTRO,
             ST_STATUS,
+            DS_CAMINHO_MANUAL,
+            DS_CAMINHO_VIDEO,
             CO_UNIDADE_VENDA,
             CO_CATEGORIA,
             CO_FABRICANTE,
@@ -190,6 +194,38 @@ class ProdutoEntidade extends AbstractEntidade
     public function setStStatus($st_status)
     {
         return $this->st_status = $st_status;
+    }
+
+    /**
+     * @return mixed $ds_caminho_manual
+     */
+    public function getDsCaminhoManual()
+    {
+        return $this->ds_caminho_manual;
+    }
+
+    /**
+     * @param mixed $ds_caminho_manual
+     */
+    public function setDsCaminhoManual($ds_caminho_manual)
+    {
+        $this->ds_caminho_manual = $ds_caminho_manual;
+    }
+
+    /**
+     * @return mixed $ds_caminho_video
+     */
+    public function getDsCaminhoVideo()
+    {
+        return $this->ds_caminho_video;
+    }
+
+    /**
+     * @param mixed $ds_caminho_video
+     */
+    public function setDsCaminhoVideo($ds_caminho_video)
+    {
+        $this->ds_caminho_video = $ds_caminho_video;
     }
 
     /**

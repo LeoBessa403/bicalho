@@ -137,6 +137,8 @@
 	define('DS_LOGIN', 'ds_login');
 	define('DS_SENHA', 'ds_senha');
 	define('DS_CODE', 'ds_code');
+	define('DS_CAMINHO_VIDEO', 'ds_caminho_video');
+	define('DS_CAMINHO_MANUAL', 'ds_caminho_manual');
 	define('CO_USUARIO_PERFIL', 'co_usuario_perfil');
 
 	// SERVICES
