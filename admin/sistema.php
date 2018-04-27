@@ -165,9 +165,10 @@ endif;
                 <!-- start: MAIN NAVIGATION MENU -->
                 <?php
                 $menu = array(
-                    "Segmento" => array("clip-tree", "CadastroSegmento", "ListarSegmento"),
-                    "Categoria" => array("clip-list-6", "CadastroCategoria", "ListarCategoria"),
+                    "Produto" => array("fa fa-group", "CadastroProduto", "ListarProduto"),
                     "Fabricante" => array("fa fa-cogs", "CadastroFabricante", "ListarFabricante"),
+                    "Categoria" => array("clip-list-6", "CadastroCategoria", "ListarCategoria"),
+                    "Segmento" => array("clip-tree", "CadastroSegmento", "ListarSegmento"),
                     "Usuario" => array("fa fa-group", "MeuPerfilUsuario", "CadastroUsuario", "ListarUsuario"),
                     "Perfil" => array("clip-stack-empty", "CadastroPerfil", "ListarPerfil"),
                     "Funcionalidade" => array("fa fa-outdent", "CadastroFuncionalidade", "ListarFuncionalidade"),
