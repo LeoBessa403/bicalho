@@ -88,6 +88,18 @@ class ProdutoForm
             ->CriaInpunt();
 
         $formulario
+            ->setId(DS_CAMINHO_VIDEO)
+            ->setLabel("Link do Vídeo")
+            ->setInfo("Url de incorporação do Vídeo 'YouTube'")
+            ->CriaInpunt();
+
+        $formulario
+            ->setId(DS_CAMINHO_MANUAL)
+            ->setLabel("Manual do Produto")
+            ->setInfo("Link para o Manual")
+            ->CriaInpunt();
+
+        $formulario
             ->setId(DS_DESCRICAO)
             ->setType("textarea")
             ->setLabel("Descrição do Produto")
