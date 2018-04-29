@@ -48,7 +48,7 @@
                                  </a>
                                  <a data-toggle="modal" role="button" class="btn btn-bricky 
                                         tooltips deleta" id="' . $res->getCoProduto() . '" data-msg-restricao="MSG01"
-                                           href="#Produto" data-original-title="Excluir Registro" data-placement="top">
+                                           href="#Produto" data-original-title="Desativar Produto" data-placement="top">
                                             <i class="fa fa-trash-o"></i>
                                         </a>';
                             $grid->setColunas($res->getNuCodigoInterno(), 2);

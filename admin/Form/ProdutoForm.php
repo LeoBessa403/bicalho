@@ -12,8 +12,15 @@ class ProdutoForm
 
         $formulario = new Form($id, ADMIN . "/" . UrlAmigavel::$controller . "/" . UrlAmigavel::$action,
             "Cadastrar", 6);
+
+        $checked = "";
         if (!$res):
             $res[CO_UNIDADE_VENDA] = 1;
+            $checked = "checked";
+        else:
+            if ($res[NU_ESTOQUE] == 1):
+                $checked = "checked";
+            endif;
         endif;
         $formulario->setValor($res);
 
@@ -23,13 +30,6 @@ class ProdutoForm
             ->setInfo("Título do momento")
             ->setClasses("ob")
             ->CriaInpunt();
-
-        $checked = "";
-        if ($res):
-            if ($res[NU_ESTOQUE] == 1):
-                $checked = "checked";
-            endif;
-        endif;
 
         $label_options2 = array("Sim", "Não", "verde", "vermelho");
         $formulario
@@ -92,8 +92,7 @@ class ProdutoForm
             ->setId(NU_PRECO_VENDA)
             ->setLabel("Valor de Venda")
             ->setTamanhoInput(6)
-            ->setClasses("ob")
-            ->setClasses("moeda")
+            ->setClasses("ob moeda")
             ->CriaInpunt();
 
         $formulario
@@ -112,17 +111,7 @@ class ProdutoForm
             ->setId(DS_DESCRICAO)
             ->setType("textarea")
             ->setLabel("Descrição do Produto")
-            ->setClasses("ckeditor")
-            ->CriaInpunt();
-
-        $formulario
-            ->setId(CO_PRODUTO_IMAGEM)
-            ->setLabel("Fotos do Produto")
-            ->setType("file")
-            ->setClasses("ob")
-            ->setLimite(10)
-            ->setClasses("multipla")
-            ->setInfo("No máximo de 10 Fotos")
+            ->setClasses("ckeditor ob")
             ->CriaInpunt();
 
         if (!empty($res[CO_PRODUTO])):
@@ -130,6 +119,16 @@ class ProdutoForm
                 ->setType("hidden")
                 ->setId(CO_PRODUTO)
                 ->setValues($res[CO_PRODUTO])
+                ->CriaInpunt();
+        else:
+            $formulario
+                ->setId(CO_PRODUTO_IMAGEM)
+                ->setLabel("Fotos do Produto")
+                ->setType("file")
+                ->setClasses("ob")
+                ->setLimite(10)
+                ->setClasses("multipla")
+                ->setInfo("No máximo de 10 Fotos")
                 ->CriaInpunt();
         endif;
 
