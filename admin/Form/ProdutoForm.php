@@ -24,12 +24,12 @@ class ProdutoForm
             ->setClasses("ob")
             ->CriaInpunt();
 
-//        $checked = "";
-//        if ($res):
-//            if ($res[ST_STATUS] == "A"):
+        $checked = "";
+        if ($res):
+            if ($res[NU_ESTOQUE] == 1):
                 $checked = "checked";
-//            endif;
-//        endif;
+            endif;
+        endif;
 
         $label_options2 = array("Sim", "Não", "verde", "vermelho");
         $formulario

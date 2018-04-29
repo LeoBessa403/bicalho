@@ -15,7 +15,6 @@ class Produto extends AbstractController
     {
         /** @var ProdutoService $produtoService */
         $produtoService = $this->getService(PRODUTO_SERVICE);
-
         $id = "cadastroProduto";
 
         if (!empty($_POST[$id])):
@@ -28,11 +27,9 @@ class Produto extends AbstractController
         $coProduto = UrlAmigavel::PegaParametro(CO_PRODUTO);
         $res = [];
         if($coProduto){
-//            /** @var ProdutoEntidade $produto */
-//            $produto = $produtoService->PesquisaUmRegistro($coProduto);
-//            $res[CO_PRODUTO] = $produto->getCoProduto();
-//            $res[NO_PRODUTO] = $produto->getNoProduto();
-//            $res[NU_CODIGO_PRODUTO] = $produto->getNuCodigoProduto();
+            /** @var ProdutoEntidade $produto */
+            $produto = $produtoService->PesquisaUmRegistro($coProduto);
+            $res = $produtoService->getArrayDadosProduto($produto, $res);
         }
         $this->form = ProdutoForm::Cadastrar($res);
     }

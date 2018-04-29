@@ -93,4 +93,25 @@ class  ProdutoService extends AbstractService
         return $retorno;
     }
 
+    /**
+     * @param ProdutoEntidade $produto
+     * @param array $dados
+     * @return array
+     */
+    public function getArrayDadosProduto(ProdutoEntidade $produto, array $dados)
+    {
+        $dados[CO_PRODUTO] = $produto->getCoProduto();
+        $dados[NO_PRODUTO] = $produto->getNoProduto();
+        $dados[NU_ESTOQUE] = $produto->getNuEstoque();
+        $dados[NU_CODIGO_INTERNO] = $produto->getNuCodigoInterno();
+        $dados[CO_FABRICANTE] = $produto->getCoFabricante()->getCoFabricante();
+        $dados[CO_CATEGORIA] = $produto->getCoCategoria()->getCoCategoria();
+        $dados[CO_UNIDADE_VENDA] = $produto->getCoUnidadeVenda()->getCoUnidadeVenda();
+        $dados[NU_PRECO_VENDA] = $produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda();
+        $dados[DS_CAMINHO_MANUAL] = $produto->getDsCaminhoManual();
+        $dados[DS_CAMINHO_VIDEO] = $produto->getDsCaminhoVideo();
+        $dados[DS_DESCRICAO] = $produto->getDsDescricao();
+
+        return $dados;
+    }
 }
