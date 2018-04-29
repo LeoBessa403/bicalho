@@ -42,7 +42,11 @@ class  ProdutoService extends AbstractService
             $produto[CO_UNIDADE_VENDA] = $result[CO_UNIDADE_VENDA][0];
             $produto[NO_PRODUTO] =  trim($result[NO_PRODUTO]);
             $produto[DS_DESCRICAO] =  trim($result[DS_DESCRICAO]);
-            $produto[NU_ESTOQUE] =  $result[NU_ESTOQUE];
+            if (!empty($result[NU_ESTOQUE])){
+                $produto[NU_ESTOQUE] = 1;
+            }else{
+                $produto[NU_ESTOQUE] = 0;
+            }
             $produto[NU_CODIGO_INTERNO] =  $result[NU_CODIGO_INTERNO];
             $produto[DS_CAMINHO_MANUAL] =  $result[DS_CAMINHO_MANUAL];
             $produto[DS_CAMINHO_VIDEO] =  $result[DS_CAMINHO_VIDEO];

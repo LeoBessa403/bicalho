@@ -330,4 +330,11 @@ class ProdutoEntidade extends AbstractEntidade
         return $this->co_produto_imagem = $co_produto_imagem;
     }
 
+    /**
+     * @return ProdutoDetalheEntidade $co_produto_detalhe
+     */
+    public function getUltimoCoProdutoDetalhe()
+    {
+        return $this->ultimo($this->getCoProdutoDetalhe());
+    }
 }

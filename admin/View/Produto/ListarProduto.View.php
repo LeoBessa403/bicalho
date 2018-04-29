@@ -7,7 +7,7 @@
                     <li>
                         <i class="clip-grid-6"></i>
                         <a href="#">
-                            Fabricante
+                            Produto
                         </a>
                     </li>
                     <li class="active">
@@ -15,8 +15,8 @@
                     </li>
                 </ol>
                 <div class="page-header">
-                    <h1>Fabricante
-                        <small>Listar Fabricante</small>
+                    <h1>Produto
+                        <small>Listar Produto</small>
                         <?php Valida::geraBtnNovo(); ?>
                     </h1>
                 </div>
@@ -28,33 +28,39 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <i class="fa fa-external-link-square"></i>
-                        Fabricante dos Produtos
+                        Produtos
                     </div>
                     <div class="panel-body">
                         <?php
                         Modal::load();
-                        Modal::deletaRegistro("Fabricante");
-                        Modal::confirmacao("confirma_Fabricante");
-                        $arrColunas = array('Código', 'Nome do Fabricante', 'Ações');
+                        Modal::deletaRegistro("Produto");
+                        Modal::confirmacao("confirma_Produto");
+                        $arrColunas = array('Código', 'Nome do Produto', 'Estoque', 'Fabricante', 'Categoria', 'Valor R$', 'Ações');
                         $grid = new Grid();
                         $grid->setColunasIndeces($arrColunas);
                         $grid->criaGrid();
-                        /** @var FabricanteEntidade $res */
+                        /** @var ProdutoEntidade $res */
                         foreach ($result as $res):
-                            $acao = '<a href="' . PASTAADMIN . 'Fabricante/CadastroFabricante/' .
-                                Valida::GeraParametro(CO_FABRICANTE . "/" . $res->getCoFabricante()) . '" class="btn btn-primary tooltips" 
+                            $acao = '<a href="' . PASTAADMIN . 'Produto/CadastroProduto/' .
+                                Valida::GeraParametro(CO_PRODUTO . "/" . $res->getCoProduto()) . '" class="btn btn-primary tooltips" 
                                     data-original-title="Editar Registro" data-placement="top">
                                      <i class="fa fa-clipboard"></i>
                                  </a>
                                  <a data-toggle="modal" role="button" class="btn btn-bricky 
-                                        tooltips deleta" id="' . $res->getCoFabricante() . '" data-msg-restricao="MSG01"
-                                           href="#Fabricante" data-original-title="Excluir Registro" data-placement="top">
+                                        tooltips deleta" id="' . $res->getCoProduto() . '" data-msg-restricao="MSG01"
+                                           href="#Produto" data-original-title="Excluir Registro" data-placement="top">
                                             <i class="fa fa-trash-o"></i>
                                         </a>';
-                            $grid->setColunas($res->getNuCodigoFabricante(),2);
-                            $grid->setColunas($res->getNoFabricante());
+                            $grid->setColunas($res->getNuCodigoInterno(), 2);
+                            $grid->setColunas($res->getNoProduto());
+                            $grid->setColunas(FuncoesSistema::ProdutoEstoque($res->getNuEstoque()), 2);
+                            $grid->setColunas($res->getCoFabricante()->getNoFabricante(), 2);
+                            $grid->setColunas($res->getCoCategoria()->getNoCategoria(), 2);
+                            $grid->setColunas('<b>'.Valida::FormataMoeda(
+                                $res->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
+                            ).'</b>');
                             $grid->setColunas($acao, 2);
-                            $grid->criaLinha($res->getCoFabricante());
+                            $grid->criaLinha($res->getCoProduto());
                         endforeach;
                         $grid->finalizaGrid();
                         ?>

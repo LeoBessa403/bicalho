@@ -214,6 +214,20 @@ class FuncoesSistema
         return $op;
     }
 
+    public static function ProdutoEstoque($estoque)
+    {
+        switch ($estoque) {
+            case 1:
+                $op = '<span class="label label-success">SIM</span>';
+                break;
+            default:
+                $op = '<span class="label label-danger">NÃO</span>';
+                break;
+        }
+
+        return $op;
+    }
+
     public static function Pagamento($st)
     {
         switch ($st) {

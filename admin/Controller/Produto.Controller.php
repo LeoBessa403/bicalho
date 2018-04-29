@@ -7,7 +7,7 @@ class Produto extends AbstractController
     function ListarProduto()
     {
         /** @var ProdutoService $produtoService */
-        $produtoService = $this->getService(FABRICANTE_SERVICE);
+        $produtoService = $this->getService(PRODUTO_SERVICE);
         $this->result = $produtoService->PesquisaTodos();
     }
 

@@ -177,7 +177,7 @@ class ProdutoDetalheEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return NuPreatacadoEntidade $nu_preco_atacado
+	* @return mixed $nu_preco_atacado
      */
 	public function getNuPrecoAtacado()
     {

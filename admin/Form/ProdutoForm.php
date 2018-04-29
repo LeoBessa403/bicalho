@@ -24,12 +24,21 @@ class ProdutoForm
             ->setClasses("ob")
             ->CriaInpunt();
 
+//        $checked = "";
+//        if ($res):
+//            if ($res[ST_STATUS] == "A"):
+                $checked = "checked";
+//            endif;
+//        endif;
+
+        $label_options2 = array("Sim", "Não", "verde", "vermelho");
         $formulario
+            ->setLabel("Produto com Estoque?")
+            ->setClasses($checked)
             ->setId(NU_ESTOQUE)
-            ->setLabel("Estoque do Produto")
+            ->setType("checkbox")
             ->setTamanhoInput(6)
-            ->setInfo("Estoque no momento")
-            ->setClasses("ob numero")
+            ->setOptions($label_options2)
             ->CriaInpunt();
 
         $formulario
