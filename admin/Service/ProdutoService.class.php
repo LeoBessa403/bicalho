@@ -94,6 +94,15 @@ class  ProdutoService extends AbstractService
     }
 
     /**
+     * @param $Condicoes
+     * @return mixed
+     */
+    public function PesquisaAvancada($Condicoes)
+    {
+        return $this->ObjetoModel->PesquisaAvancada($Condicoes);
+    }
+
+    /**
      * @param ProdutoEntidade $produto
      * @param array $dados
      * @return array

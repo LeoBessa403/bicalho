@@ -37,6 +37,7 @@
                         Modal::confirmacao("confirma_Produto");
                         $arrColunas = array('Código', 'Nome do Produto', 'Estoque', 'Fabricante', 'Categoria', 'Valor R$', 'Ações');
                         $grid = new Grid();
+                        echo $grid->PesquisaAvancada('Pesquisar Produtos');
                         $grid->setColunasIndeces($arrColunas);
                         $grid->criaGrid();
                         /** @var ProdutoEntidade $res */

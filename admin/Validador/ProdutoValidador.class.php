@@ -12,7 +12,7 @@ class  ProdutoValidador extends AbstractValidador
         DADOS => []
     ];
 
-    public function validarProduto($dados, $arquivo)
+    public function validarProduto($dados, $files)
     {
         $this->retorno[DADOS][] = $this->ValidaCampoObrigatorioDescricao(
             $dados[NO_PRODUTO], 6, 'Produto'
@@ -30,14 +30,16 @@ class  ProdutoValidador extends AbstractValidador
             $dados[CO_UNIDADE_VENDA], 'Unidade de Venda'
         );
         $this->retorno[DADOS][] = $this->ValidaCampoObrigatorioValido(
-            $dados[DT_NASCIMENTO], AbstractValidador::VALIDACAO_DATA, 'Nascimento'
-        );
-        $this->retorno[DADOS][] = $this->ValidaCampoObrigatorioValido(
             $dados[NU_PRECO_VENDA], AbstractValidador::VALIDACAO_MOEDA, 'Valor de Venda'
         );
         $this->retorno[DADOS][] = $this->ValidaCampoObrigatorioDescricao(
             $dados[DS_DESCRICAO], 5, 'Descrição do Produto'
         );
+        if (!empty($dados[CO_PRODUTO])):
+//            $this->retorno[DADOS][] = $this->ValidaCampoArquivo(
+//                $files[CO_PRODUTO_IMAGEM], 'Fotos do Produto'
+//            );
+        endif;
 
         return $this->MontaRetorno($this->retorno);
     }

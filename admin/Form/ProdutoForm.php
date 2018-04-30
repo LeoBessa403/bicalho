@@ -134,6 +134,58 @@ class ProdutoForm
 
         return $formulario->finalizaForm();
     }
+
+    public static function Pesquisar()
+    {
+        $id = "pesquisaProduto";
+
+        $formulario = new Form($id, ADMIN . "/" . UrlAmigavel::$controller . "/" . UrlAmigavel::$action,
+            "Pesquisa", 12);
+
+        $formulario
+            ->setId("no_pessoa")
+            ->setIcon("clip-user-6")
+            ->setLabel("Nome do Usuario")
+            ->setInfo("Pode ser Parte do nome")
+            ->CriaInpunt();
+
+        $formulario
+            ->setId(NU_CPF)
+            ->setClasses("cpf")
+            ->setTamanhoInput(6)
+            ->setLabel("CPF")
+            ->CriaInpunt();
+//
+//        $label_options = Inscricao::SituacaoPagamento();
+//        $formulario
+//            ->setLabel("Situação do Pagamento")
+//            ->setId(TP_SITUACAO)
+//            ->setType("select")
+//            ->setClasses("multipla")
+//            ->setTamanhoInput(12)
+//            ->setOptions($label_options)
+//            ->CriaInpunt();
+
+        $label_options = array("" => "Selecione um", "S" => "Sim", "N" => "Não");
+        $formulario
+            ->setLabel("Membro GEJ")
+            ->setId("DS_MEMBRO_ATIVO")
+            ->setType("select")
+            ->setTamanhoInput(12)
+            ->setOptions($label_options)
+            ->CriaInpunt();
+
+//        $label_options = array("" => "Selecione um", "S" => "Sim","N" => "Não");
+//        $formulario
+//            ->setLabel("Servo")
+//            ->setId(ST_EQUIPE_TRABALHO)
+//            ->setType("select")
+//            ->setTamanhoInput(12)
+//            ->setOptions($label_options)
+//            ->CriaInpunt();
+
+        return $formulario->finalizaFormPesquisaAvancada();
+    }
 }
 
 ?>
