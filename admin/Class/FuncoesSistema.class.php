@@ -217,7 +217,7 @@ class FuncoesSistema
     public static function ProdutoEstoque($estoque)
     {
         switch ($estoque) {
-            case 1:
+            case 2:
                 $op = '<span class="label label-success">SIM</span>';
                 break;
             default:
