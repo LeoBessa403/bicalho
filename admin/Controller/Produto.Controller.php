@@ -17,11 +17,14 @@ class Produto extends AbstractController
             $Condicoes = array(
                 "like#prod." . NO_PRODUTO => trim($_POST[NO_PRODUTO]),
                 "prod." . NU_CODIGO_INTERNO => trim($_POST[NU_CODIGO_INTERNO]),
-                "prod." . NU_ESTOQUE => (!empty($_POST[NU_ESTOQUE])
-                    ? 2 : 1),
                 "prod." . CO_FABRICANTE => $_POST[CO_FABRICANTE][0],
                 "prod." . CO_CATEGORIA => $_POST[CO_CATEGORIA][0],
             );
+            if(!empty($_POST[NU_ESTOQUE])){
+                $Condicoes[">=#prod." . NU_ESTOQUE] = 1;
+            }else{
+                $Condicoes["<#prod." . NU_ESTOQUE] = 1;
+            }
             $this->result = $produtoService->PesquisaAvancada($Condicoes);
             $session->setSession(PESQUISA_AVANCADA, $Condicoes);
         } else {

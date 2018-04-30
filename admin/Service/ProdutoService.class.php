@@ -43,9 +43,9 @@ class  ProdutoService extends AbstractService
             $produto[NO_PRODUTO] =  trim($result[NO_PRODUTO]);
             $produto[DS_DESCRICAO] =  trim($result[DS_DESCRICAO]);
             if (!empty($result[NU_ESTOQUE])){
-                $produto[NU_ESTOQUE] = 2;
+                $produto[NU_ESTOQUE] = 1; // Com Estoque
             }else{
-                $produto[NU_ESTOQUE] = 1;
+                $produto[NU_ESTOQUE] = 0; // Sem Estoque
             }
             $produto[NU_CODIGO_INTERNO] =  $result[NU_CODIGO_INTERNO];
             $produto[DS_CAMINHO_MANUAL] =  $result[DS_CAMINHO_MANUAL];
