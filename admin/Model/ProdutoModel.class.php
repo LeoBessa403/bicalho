@@ -38,6 +38,7 @@ class  ProdutoModel extends AbstractModel
 
         $campos = "DISTINCT prod.*";
         $pesquisa = new Pesquisa();
+//        debug($Condicoes);
         $where = $pesquisa->getClausula($Condicoes);
         $where = $where . " ORDER BY prod.".ProdutoEntidade::CHAVE." DESC";
         $pesquisa->Pesquisar($tabela, $where, null, $campos);

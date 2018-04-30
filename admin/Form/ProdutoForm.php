@@ -27,7 +27,7 @@ class ProdutoForm
         $formulario
             ->setId(NO_PRODUTO)
             ->setLabel("Produto")
-            ->setInfo("Título do momento")
+            ->setInfo("Título do Produto")
             ->setClasses("ob")
             ->CriaInpunt();
 
@@ -143,46 +143,66 @@ class ProdutoForm
             "Pesquisa", 12);
 
         $formulario
-            ->setId("no_pessoa")
-            ->setIcon("clip-user-6")
-            ->setLabel("Nome do Usuario")
-            ->setInfo("Pode ser Parte do nome")
+            ->setId(NO_PRODUTO)
+            ->setLabel("Produto")
+            ->setInfo("Título do Produto")
             ->CriaInpunt();
 
+        $checked = "checked";
+        $label_options2 = array("Sim", "Não", "verde", "vermelho");
         $formulario
-            ->setId(NU_CPF)
-            ->setClasses("cpf")
+            ->setLabel("Produto com Estoque?")
+            ->setClasses($checked)
+            ->setId(NU_ESTOQUE)
+            ->setType("checkbox")
             ->setTamanhoInput(6)
-            ->setLabel("CPF")
+            ->setOptions($label_options2)
             ->CriaInpunt();
-//
-//        $label_options = Inscricao::SituacaoPagamento();
-//        $formulario
-//            ->setLabel("Situação do Pagamento")
-//            ->setId(TP_SITUACAO)
-//            ->setType("select")
-//            ->setClasses("multipla")
-//            ->setTamanhoInput(12)
-//            ->setOptions($label_options)
-//            ->CriaInpunt();
 
-        $label_options = array("" => "Selecione um", "S" => "Sim", "N" => "Não");
         $formulario
-            ->setLabel("Membro GEJ")
-            ->setId("DS_MEMBRO_ATIVO")
-            ->setType("select")
-            ->setTamanhoInput(12)
-            ->setOptions($label_options)
+            ->setId(NU_CODIGO_INTERNO)
+            ->setLabel("Código do Produto")
+            ->setTamanhoInput(6)
+            ->setClasses("numero")
             ->CriaInpunt();
 
-//        $label_options = array("" => "Selecione um", "S" => "Sim","N" => "Não");
-//        $formulario
-//            ->setLabel("Servo")
-//            ->setId(ST_EQUIPE_TRABALHO)
-//            ->setType("select")
-//            ->setTamanhoInput(12)
-//            ->setOptions($label_options)
-//            ->CriaInpunt();
+        $formulario
+            ->setId(CO_FABRICANTE)
+            ->setAutocomplete(
+                FabricanteEntidade::TABELA,
+                NO_FABRICANTE,
+                FabricanteEntidade::CHAVE
+            )
+            ->setType("select")
+            ->setLabel("Fabricante do Produto")
+            ->setTamanhoInput(6)
+            ->CriaInpunt();
+
+        $formulario
+            ->setId(CO_CATEGORIA)
+            ->setAutocomplete(
+                CategoriaEntidade::TABELA,
+                NO_CATEGORIA,
+                CategoriaEntidade::CHAVE
+            )
+            ->setType("select")
+            ->setLabel("Categoria do Produto")
+            ->setTamanhoInput(6)
+            ->CriaInpunt();
+
+        $formulario
+            ->setId(NU_PRECO_VENDA)
+            ->setLabel("Valor de Venda")
+            ->setTamanhoInput(6)
+            ->setClasses("moeda")
+            ->CriaInpunt();
+
+        $formulario
+            ->setId(NU_PRECO_VENDA.'2')
+            ->setLabel("Valor de Venda")
+            ->setTamanhoInput(6)
+            ->setClasses("moeda")
+            ->CriaInpunt();
 
         return $formulario->finalizaFormPesquisaAvancada();
     }

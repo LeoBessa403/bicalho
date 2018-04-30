@@ -15,10 +15,12 @@ class Produto extends AbstractController
         }
         if (!empty($_POST)) {
             $Condicoes = array(
-                "pes." . NO_PESSOA => trim($_POST[NO_PESSOA]),
-                "pes." . NU_CPF => Valida::RetiraMascara($_POST[NU_CPF]),
-                "in#pag." . TP_SITUACAO => (!empty($_POST[TP_SITUACAO]))
-                    ? implode("', '", $_POST[TP_SITUACAO]) : null,
+                "like#prod." . NO_PRODUTO => trim($_POST[NO_PRODUTO]),
+                "prod." . NU_CODIGO_INTERNO => trim($_POST[NU_CODIGO_INTERNO]),
+                "prod." . NU_ESTOQUE => (!empty($_POST[NU_ESTOQUE])
+                    ? 2 : 1),
+                "prod." . CO_FABRICANTE => $_POST[CO_FABRICANTE][0],
+                "prod." . CO_CATEGORIA => $_POST[CO_CATEGORIA][0],
             );
             $this->result = $produtoService->PesquisaAvancada($Condicoes);
             $session->setSession(PESQUISA_AVANCADA, $Condicoes);
