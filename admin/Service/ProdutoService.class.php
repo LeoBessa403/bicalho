@@ -113,7 +113,7 @@ class  ProdutoService extends AbstractService
         $dados[CO_FABRICANTE] = $produto->getCoFabricante()->getCoFabricante();
         $dados[CO_CATEGORIA] = $produto->getCoCategoria()->getCoCategoria();
         $dados[CO_UNIDADE_VENDA] = $produto->getCoUnidadeVenda()->getCoUnidadeVenda();
-        $dados[NU_PRECO_VENDA] = $produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda();
+        $dados[NU_PRECO_VENDA] = Valida::FormataMoeda($produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda());
         $dados[DS_CAMINHO_MANUAL] = $produto->getDsCaminhoManual();
         $dados[DS_CAMINHO_VIDEO] = $produto->getDsCaminhoVideo();
         $dados[DS_DESCRICAO] = $produto->getDsDescricao();
