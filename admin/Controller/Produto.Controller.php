@@ -56,6 +56,38 @@ class Produto extends AbstractController
         $this->form = ProdutoForm::Cadastrar($res);
     }
 
+    public function ExportarListarProduto()
+    {
+        /** @var ProdutoService $produtoService */
+        $produtoService = $this->getService(PRODUTO_SERVICE);
+
+        $session = new Session();
+        if ($session->CheckSession(PESQUISA_AVANCADA)) {
+            $Condicoes = $session->getSession(PESQUISA_AVANCADA);
+            $result =  $produtoService->PesquisaAvancada($Condicoes);
+        } else {
+            $result = $produtoService->PesquisaTodos();
+        }
+        $formato = UrlAmigavel::PegaParametro("formato");
+        $i = 0;
+        /** @var ProdutoEntidade $produto */
+        foreach ($result as $produto) {
+            $res[$i][NO_PRODUTO] = $produto->getNoProduto();
+            $res[$i][NU_ESTOQUE] = FuncoesSistema::ProdutoEstoque($produto->getNuEstoque());
+            $res[$i][NU_CODIGO_INTERNO] = $produto->getNuCodigoInterno();
+            $res[$i][NO_FABRICANTE] = $produto->getCoFabricante()->getNoFabricante();
+            $res[$i][NO_CATEGORIA] = $produto->getCoCategoria()->getNoCategoria();
+            $res[$i][NU_PRECO_VENDA] = Valida::FormataMoeda($produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda());
+            $i++;
+        }
+        $Colunas = array('Produto','Estoque', 'Código do Produto', 'Fabricante', 'Categoria', 'Preço');
+        $exporta = new Exportacao($formato);
+        $exporta->setPapelOrientacao("paisagem");
+        $exporta->setColunas($Colunas);
+        $exporta->setConteudo($res);
+        $exporta->GeraArquivo();
+    }
+
     public function ListarProdutoPesquisaAvancada()
     {
         echo ProdutoForm::Pesquisar();
