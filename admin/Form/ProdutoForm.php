@@ -190,19 +190,19 @@ class ProdutoForm
             ->setTamanhoInput(6)
             ->CriaInpunt();
 
-        $formulario
-            ->setId(NU_PRECO_VENDA)
-            ->setLabel("Valor de Venda")
-            ->setTamanhoInput(6)
-            ->setClasses("moeda")
-            ->CriaInpunt();
-
-        $formulario
-            ->setId(NU_PRECO_VENDA.'2')
-            ->setLabel("Valor de Venda")
-            ->setTamanhoInput(6)
-            ->setClasses("moeda")
-            ->CriaInpunt();
+//        $formulario
+//            ->setId(NU_PRECO_VENDA)
+//            ->setLabel("Valor de Venda")
+//            ->setTamanhoInput(6)
+//            ->setClasses("moeda")
+//            ->CriaInpunt();
+//
+//        $formulario
+//            ->setId(NU_PRECO_VENDA.'2')
+//            ->setLabel("Valor de Venda")
+//            ->setTamanhoInput(6)
+//            ->setClasses("moeda")
+//            ->CriaInpunt();
 
         return $formulario->finalizaFormPesquisaAvancada();
     }
