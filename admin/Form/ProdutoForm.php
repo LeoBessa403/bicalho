@@ -125,9 +125,8 @@ class ProdutoForm
                 ->setId(CO_PRODUTO_IMAGEM)
                 ->setLabel("Fotos do Produto")
                 ->setType("file")
-                ->setClasses("ob")
+                ->setClasses("ob multipla")
                 ->setLimite(10)
-                ->setClasses("multipla")
                 ->setInfo("No máximo de 10 Fotos")
                 ->CriaInpunt();
         endif;
