@@ -111,7 +111,7 @@ class ProdutoForm
             ->setId(DS_DESCRICAO)
             ->setType("textarea")
             ->setLabel("Descrição do Produto")
-            ->setClasses("ckeditor ob")
+            ->setClasses("ckeditor")
             ->CriaInpunt();
 
         if (!empty($res[CO_PRODUTO])):
