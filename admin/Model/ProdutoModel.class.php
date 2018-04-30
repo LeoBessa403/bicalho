@@ -40,7 +40,7 @@ class  ProdutoModel extends AbstractModel
         $pesquisa = new Pesquisa();
 //        debug($Condicoes);
         $where = $pesquisa->getClausula($Condicoes);
-        $where = $where . " ORDER BY prod.".ProdutoEntidade::CHAVE." DESC";
+        $where = $where . " ORDER BY prod.".ST_STATUS." ASC, prod.".ProdutoEntidade::CHAVE." DESC";
         $pesquisa->Pesquisar($tabela, $where, null, $campos);
         $produtos = [];
         /** @var ProdutoEntidade $produto */
