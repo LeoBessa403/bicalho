@@ -93,5 +93,29 @@ class Produto extends AbstractController
         echo ProdutoForm::Pesquisar();
     }
 
+    public function DesativarProduto()
+    {
+        /** @var ProdutoService $produtoService */
+        $produtoService = $this->getService(PRODUTO_SERVICE);
+
+        $coProduto = UrlAmigavel::PegaParametro(CO_PRODUTO);
+        $retorno = $produtoService->desativarProduto($coProduto);
+        if($retorno[SUCESSO]){
+            Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarProduto/');
+        }
+    }
+
+    public function AtivarProduto()
+    {
+        /** @var ProdutoService $produtoService */
+        $produtoService = $this->getService(PRODUTO_SERVICE);
+
+        $coProduto = UrlAmigavel::PegaParametro(CO_PRODUTO);
+        $retorno = $produtoService->ativarProduto($coProduto);
+        if($retorno[SUCESSO]){
+            Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarProduto/');
+        }
+    }
+
 }
    

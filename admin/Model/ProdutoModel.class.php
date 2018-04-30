@@ -13,18 +13,6 @@ class  ProdutoModel extends AbstractModel
     }
 
     /**
-     * @param $coProduto
-     * @return bool|INT
-     */
-    public function Deleta($coProduto)
-    {
-        $dados = [
-            ST_STATUS => StatusUsuarioEnum::INATIVO
-        ];
-        return $this->Salva($dados, $coProduto);
-    }
-
-    /**
      * @param $Condicoes
      * @return array
      */

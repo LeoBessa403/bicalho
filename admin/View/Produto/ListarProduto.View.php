@@ -33,7 +33,8 @@
                     <div class="panel-body">
                         <?php
                         Modal::load();
-                        Modal::deletaRegistro("Produto");
+                        Modal::desativaProduto("ProdutoDesativar");
+                        Modal::ativaProduto("ProdutoAtivar");
                         Modal::confirmacao("confirma_Produto");
                         $arrColunas = array('Código', 'Nome do Produto', 'Estoque', 'Fabricante', 'Categoria', 'Valor R$', 'Ações');
                         $grid = new Grid();
@@ -46,20 +47,32 @@
                                 Valida::GeraParametro(CO_PRODUTO . "/" . $res->getCoProduto()) . '" class="btn btn-primary tooltips" 
                                     data-original-title="Editar Registro" data-placement="top">
                                      <i class="fa fa-clipboard"></i>
-                                 </a>
-                                 <a data-toggle="modal" role="button" class="btn btn-bricky 
-                                        tooltips deleta" id="' . $res->getCoProduto() . '" data-msg-restricao="MSG01"
-                                           href="#Produto" data-original-title="Desativar Produto" data-placement="top">
-                                            <i class="fa fa-trash-o"></i>
+                                 </a>';
+                            if ($res->getStStatus() == StatusUsuarioEnum::ATIVO) {
+                                $acao .= ' <a data-toggle="modal" role="button" class="btn btn-bricky 
+                                        tooltips produto_acao" id="' . $res->getCoProduto() . '" data-msg-restricao="MSG02"
+                                           href="#ProdutoDesativar" data-original-title="Desativar Produto" data-placement="top"
+                                            data-url-action="' . PASTAADMIN . 'Produto/DesativarProduto/' .
+                                    Valida::GeraParametro(CO_PRODUTO . "/" . $res->getCoProduto()) . '">
+                                            <i class="fa fa-lock"></i>
                                         </a>';
+                            } else {
+                                $acao .= ' <a data-toggle="modal" role="button" class="btn btn-success 
+                                        tooltips produto_acao" id="' . $res->getCoProduto() . '" data-msg-restricao="MSG03"
+                                           href="#ProdutoAtivar" data-original-title="Ativar Produto" data-placement="top"
+                                           data-url-action="' . PASTAADMIN . 'Produto/AtivarProduto/' .
+                                    Valida::GeraParametro(CO_PRODUTO . "/" . $res->getCoProduto()) . '">
+                                            <i class="fa fa-unlock-alt"></i>
+                                        </a>';
+                            }
                             $grid->setColunas($res->getNuCodigoInterno(), 2);
                             $grid->setColunas($res->getNoProduto());
                             $grid->setColunas(FuncoesSistema::ProdutoEstoque($res->getNuEstoque()), 2);
                             $grid->setColunas($res->getCoFabricante()->getNoFabricante(), 2);
                             $grid->setColunas($res->getCoCategoria()->getNoCategoria(), 2);
-                            $grid->setColunas('<b>'.Valida::FormataMoeda(
-                                $res->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
-                            ).'</b>');
+                            $grid->setColunas('<b>' . Valida::FormataMoeda(
+                                    $res->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
+                                ) . '</b>');
                             $grid->setColunas($acao, 2);
                             $grid->criaLinha($res->getCoProduto());
                         endforeach;

@@ -100,6 +100,58 @@ class  ProdutoService extends AbstractService
     }
 
     /**
+     * @param $coProduto
+     * @return array
+     */
+    public function desativarProduto($coProduto)
+    {
+        $session = new Session();
+        $retorno = [
+            SUCESSO => false,
+            MSG => null
+        ];
+        $dados = [
+            ST_STATUS => StatusUsuarioEnum::INATIVO
+        ];
+        $coProdutoDetalhe = $this->Salva($dados, $coProduto);
+
+        if ($coProdutoDetalhe) {
+            $session->setSession(MENSAGEM, Mensagens::OK_ATUALIZADO);
+            $retorno[SUCESSO] = true;
+        } else {
+            $session->setSession(MENSAGEM, 'Não foi possível cadastrar o Produto');
+            $retorno[SUCESSO] = false;
+        }
+        return $retorno;
+    }
+
+    /**
+     * @param $coProduto
+     * @return array
+     */
+    public function ativarProduto($coProduto)
+    {
+        $session = new Session();
+        $retorno = [
+            SUCESSO => false,
+            MSG => null
+        ];
+        $dados = [
+            ST_STATUS => StatusUsuarioEnum::ATIVO
+        ];
+        $coProdutoDetalhe = $this->Salva($dados, $coProduto);
+
+        if ($coProdutoDetalhe) {
+            $session->setSession(MENSAGEM, Mensagens::OK_ATUALIZADO);
+            $retorno[SUCESSO] = true;
+        } else {
+            $session->setSession(MENSAGEM, 'Não foi possível cadastrar o Produto');
+            $retorno[SUCESSO] = false;
+        }
+        return $retorno;
+    }
+
+    /**
      * @param ProdutoEntidade $produto
      * @param array $dados
      * @return array
