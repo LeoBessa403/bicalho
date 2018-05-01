@@ -56,7 +56,7 @@
                                         </a>';
                                 endif;
                                 $funcs = [];
-                                if (!empty($res->getCoPerfilFuncionalidade())) {
+                                if (count($res->getCoPerfilFuncionalidade())) {
                                     /** @var PerfilFuncionalidadeEntidade $funcPerfil */
                                     foreach ($res->getCoPerfilFuncionalidade() as $funcPerfil) {
                                         $funcs[] = $funcPerfil->getCoFuncionalidade()->getNoFuncionalidade();
