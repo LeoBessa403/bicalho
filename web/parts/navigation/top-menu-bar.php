@@ -15,7 +15,7 @@
                         <?php endforeach; ?>
                     </ul>
                 </li>
-                <li><a href="#">se inscrever</a></li>
+                <li><a href="<?php echo PASTAADMIN; ?>Index/PrimeiroAcesso" target="_blank">Administrativo</a></li>
             </ul>
         </div><!-- /.col -->
     </div><!-- /.container -->
