@@ -105,24 +105,7 @@ class  ProdutoService extends AbstractService
      */
     public function desativarProduto($coProduto)
     {
-        $session = new Session();
-        $retorno = [
-            SUCESSO => false,
-            MSG => null
-        ];
-        $dados = [
-            ST_STATUS => StatusUsuarioEnum::INATIVO
-        ];
-        $coProdutoDetalhe = $this->Salva($dados, $coProduto);
-
-        if ($coProdutoDetalhe) {
-            $session->setSession(MENSAGEM, Mensagens::OK_ATUALIZADO);
-            $retorno[SUCESSO] = true;
-        } else {
-            $session->setSession(MENSAGEM, 'Não foi possível cadastrar o Produto');
-            $retorno[SUCESSO] = false;
-        }
-        return $retorno;
+        return $this->mudarStatusProduto($coProduto, StatusUsuarioEnum::INATIVO);
     }
 
     /**
@@ -131,13 +114,23 @@ class  ProdutoService extends AbstractService
      */
     public function ativarProduto($coProduto)
     {
+        return $this->mudarStatusProduto($coProduto, StatusUsuarioEnum::ATIVO);
+    }
+
+    /**
+     * @param $coProduto
+     * @param $stStatus
+     * @return array
+     */
+    private function mudarStatusProduto($coProduto, $stStatus)
+    {
         $session = new Session();
         $retorno = [
             SUCESSO => false,
             MSG => null
         ];
         $dados = [
-            ST_STATUS => StatusUsuarioEnum::ATIVO
+            ST_STATUS => $stStatus
         ];
         $coProdutoDetalhe = $this->Salva($dados, $coProduto);
 
@@ -145,7 +138,7 @@ class  ProdutoService extends AbstractService
             $session->setSession(MENSAGEM, Mensagens::OK_ATUALIZADO);
             $retorno[SUCESSO] = true;
         } else {
-            $session->setSession(MENSAGEM, 'Não foi possível cadastrar o Produto');
+            $session->setSession(MENSAGEM, 'Não foi possível alterar o Produto');
             $retorno[SUCESSO] = false;
         }
         return $retorno;
