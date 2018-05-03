@@ -4,21 +4,21 @@ function servidor_inicial()
 {
     if ($_SERVER['HTTP_HOST'] == 'localhost') {
         $config = array(
-            'HOME' => 'https://bicalhorefrigeracao.com/',
-            'HOST' => 'localhost',
-            'USER' => 'bicalhor_bd',
-            'PASS' => 'Admin101*',
-            'DBSA' => 'bicalhor_bd',
-            'DEBUG' => false
-        );
-    } else {
-        $config = array(
             'HOME' => 'http://localhost/bicalho/',
             'HOST' => 'localhost',
             'USER' => 'root',
             'PASS' => '',
             'DBSA' => 'bicalhor_bd',
             'DEBUG' => true
+        );
+    } else {
+        $config = array(
+            'HOME' => 'https://bicalhorefrigeracao.com/',
+            'HOST' => 'localhost',
+            'USER' => 'bicalhor_bd',
+            'PASS' => 'Admin101*',
+            'DBSA' => 'bicalhor_bd',
+            'DEBUG' => false
         );
     }
 
