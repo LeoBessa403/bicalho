@@ -177,6 +177,7 @@ class  ProdutoService extends AbstractService
         $dados[NU_PRECO_VENDA] = Valida::FormataMoeda($produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda());
         $dados[DS_CAMINHO_MANUAL] = $produto->getDsCaminhoManual();
         $dados[DS_CAMINHO_VIDEO] = $produto->getDsCaminhoVideo();
+        $dados[DS_CAMINHO] = "ProdutosCapa/".$produto->getCoImagem()->getDsCaminho();
         $dados[DS_DESCRICAO] = $produto->getDsDescricao();
 
         return $dados;
