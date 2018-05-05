@@ -346,7 +346,7 @@ class ProdutoEntidade extends AbstractEntidade
      */
     public function setCoImagem($co_imagem)
     {
-        return $this->co_produto_imagem = $co_imagem;
+        return $this->co_imagem = $co_imagem;
     }
 
     /**

@@ -65,8 +65,12 @@
                                             <i class="fa fa-unlock-alt"></i>
                                         </a>';
                             }
-//                            debug($res);
-                            $grid->setColunas($res->getCoImagem()->getDsCaminho(), 2);
+                            $imagem = Valida::GetMiniatura(
+                                    'ProdutosCapa/'.$res->getCoImagem()->getDsCaminho(),
+                                Valida::ValNome($res->getNoProduto()),
+                                90, 90, "circle-img"
+                            );
+                            $grid->setColunas($imagem, 2);
                             $grid->setColunas($res->getNuCodigoInterno(), 2);
                             $grid->setColunas($res->getNoProduto());
                             $grid->setColunas(FuncoesSistema::ProdutoEstoque($res->getNuEstoque()), 2);

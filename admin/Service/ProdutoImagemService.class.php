@@ -28,8 +28,8 @@ class  ProdutoImagemService extends AbstractService
 
         $produtoImagem[CO_PRODUTO] = $coProduto;
         if ($fotos['name'][0]) {
-            $pasta = "Produtos/produto-" . $nome;
-            $arquivos = $upload->UploadImagens($fotos, $coProduto, $pasta);
+            $pasta = "Produtos/produto-" . $coProduto;
+            $arquivos = $upload->UploadImagens($fotos, $nome, $pasta);
             foreach ($arquivos as $value) {
                 $imagem[DS_CAMINHO] = $value;
                 $produtoImagem[CO_IMAGEM] = $imagemService->Salva($imagem);

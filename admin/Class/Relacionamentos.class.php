@@ -466,11 +466,6 @@ class Relacionamentos
 					('Entidade') => 'CategoriaEntidade',
 					('Tipo') => '1',
 				),
-				(CO_IMAGEM) => Array(
-					('Campo') => CO_IMAGEM,
-					('Entidade') => 'ImagemEntidade',
-					('Tipo') => '1',
-				),
 				(CO_FABRICANTE) => Array(
 					('Campo') => CO_FABRICANTE,
 					('Entidade') => 'FabricanteEntidade',
@@ -486,6 +481,11 @@ class Relacionamentos
 					('Entidade') => 'ProdutoImagemEntidade',
 					('Tipo') => '2',
 				),
+                (CO_IMAGEM) => Array(
+                    ('Campo') => CO_IMAGEM,
+                    ('Entidade') => 'ImagemEntidade',
+                    ('Tipo') => '1',
+                ),
 			),
 			(PagamentoEntidade::TABELA) => Array(
 				(CO_TIPO_PAGAMENTO) => Array(
@@ -562,15 +562,10 @@ class Relacionamentos
 				),
 			),
 			(ProdutoDetalheEntidade::TABELA) => Array(
-				(CO_PRODUTO_DESTAQUE) => Array(
-					('Campo') => CO_PRODUTO_DETALHE,
-					('Entidade') => 'ProdutoDestaqueEntidade',
-					('Tipo') => '1',
-				),
 				(CO_USUARIO) => Array(
 					('Campo') => CO_USUARIO,
 					('Entidade') => 'UsuarioEntidade',
-					('Tipo') => '1',
+                    ('Tipo') => '1',
 				),
 				(CO_PRODUTO) => Array(
 					('Campo') => CO_PRODUTO,
