@@ -269,6 +269,11 @@ class Relacionamentos
 					('Entidade') => 'PessoaEntidade',
 					('Tipo') => '1',
 				),
+				(CO_PRODUTO) => Array(
+					('Campo') => CO_IMAGEM,
+					('Entidade') => 'ProdutoEntidade',
+					('Tipo') => '1',
+				),
 				(CO_PRODUTO_DESTAQUE) => Array(
 					('Campo') => CO_IMAGEM,
 					('Entidade') => 'ProdutoDestaqueEntidade',
@@ -459,6 +464,11 @@ class Relacionamentos
 				(CO_CATEGORIA) => Array(
 					('Campo') => CO_CATEGORIA,
 					('Entidade') => 'CategoriaEntidade',
+					('Tipo') => '1',
+				),
+				(CO_IMAGEM) => Array(
+					('Campo') => CO_IMAGEM,
+					('Entidade') => 'ImagemEntidade',
 					('Tipo') => '1',
 				),
 				(CO_FABRICANTE) => Array(

@@ -27,6 +27,7 @@ class ProdutoEntidade extends AbstractEntidade
     private $co_negociacao_produto;
     private $co_produto_detalhe;
     private $co_produto_imagem;
+    private $co_imagem;
 
 
     /**
@@ -48,6 +49,7 @@ class ProdutoEntidade extends AbstractEntidade
             CO_UNIDADE_VENDA,
             CO_CATEGORIA,
             CO_FABRICANTE,
+            CO_IMAGEM,
         ];
     }
 
@@ -331,10 +333,28 @@ class ProdutoEntidade extends AbstractEntidade
     }
 
     /**
+     * @return ImagemEntidade $co_imagem
+     */
+    public function getCoImagem()
+    {
+        return $this->co_imagem;
+    }
+
+    /**
+     * @param $co_imagem
+     * @return mixed
+     */
+    public function setCoImagem($co_imagem)
+    {
+        return $this->co_produto_imagem = $co_imagem;
+    }
+
+    /**
      * @return ProdutoDetalheEntidade $co_produto_detalhe
      */
     public function getUltimoCoProdutoDetalhe()
     {
         return $this->ultimo($this->getCoProdutoDetalhe());
     }
+
 }

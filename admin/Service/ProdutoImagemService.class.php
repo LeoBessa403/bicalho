@@ -16,7 +16,7 @@ class  ProdutoImagemService extends AbstractService
         $this->ObjetoModel = New ProdutoImagemModel();
     }
 
-    public function SalvaProdutoImagens($fotos, $coProduto)
+    public function SalvaProdutoImagens($fotos, $coProduto, $nome)
     {
         /** @var ImagemService $imagemService */
         $imagemService = $this->getService(IMAGEM_SERVICE);
@@ -28,7 +28,7 @@ class  ProdutoImagemService extends AbstractService
 
         $produtoImagem[CO_PRODUTO] = $coProduto;
         if ($fotos['name'][0]) {
-            $pasta = "Produtos/produto-" . $coProduto;
+            $pasta = "Produtos/produto-" . $nome;
             $arquivos = $upload->UploadImagens($fotos, $coProduto, $pasta);
             foreach ($arquivos as $value) {
                 $imagem[DS_CAMINHO] = $value;

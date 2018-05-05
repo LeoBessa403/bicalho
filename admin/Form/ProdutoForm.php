@@ -108,6 +108,15 @@ class ProdutoForm
             ->CriaInpunt();
 
         $formulario
+            ->setId(DS_CAMINHO)
+            ->setType("singlefile")
+            ->setInfo("Principal imagem do produto")
+            ->setTamanhoInput(12)
+            ->setClasses("ob")
+            ->setLabel("Foto principal")
+            ->CriaInpunt();
+
+        $formulario
             ->setId(DS_DESCRICAO)
             ->setType("textarea")
             ->setLabel("Descrição do Produto")

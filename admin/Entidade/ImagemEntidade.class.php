@@ -7,193 +7,211 @@
 
 class ImagemEntidade extends AbstractEntidade
 {
-	const TABELA = 'TB_IMAGEM';
-	const ENTIDADE = 'ImagemEntidade';
-	const CHAVE = CO_IMAGEM;
+    const TABELA = 'TB_IMAGEM';
+    const ENTIDADE = 'ImagemEntidade';
+    const CHAVE = CO_IMAGEM;
 
-	private $co_imagem;
-	private $ds_caminho;
-	private $co_empresa;
-	private $co_funcionario;
-	private $co_pessoa;
-	private $co_produto_destaque;
-	private $co_produto_imagem;
-	private $co_sugestao;
-	private $co_usuario;
+    private $co_imagem;
+    private $ds_caminho;
+    private $co_empresa;
+    private $co_funcionario;
+    private $co_pessoa;
+    private $co_produto_destaque;
+    private $co_produto_imagem;
+    private $co_sugestao;
+    private $co_usuario;
+    private $co_produto;
 
 
-	/**
+    /**
      * @return array
      */
-	public static function getCampos() 
-        {
-    	return [
-			CO_IMAGEM,
-			DS_CAMINHO,
-		];
+    public static function getCampos()
+    {
+        return [
+            CO_IMAGEM,
+            DS_CAMINHO,
+        ];
     }
 
-	/**
-	* @return array $relacionamentos
+    /**
+     * @return array $relacionamentos
      */
-	public static function getRelacionamentos() 
-        {
-    	$relacionamentos = Relacionamentos::getRelacionamentos();
-		return $relacionamentos[static::TABELA];
-	}
+    public static function getRelacionamentos()
+    {
+        $relacionamentos = Relacionamentos::getRelacionamentos();
+        return $relacionamentos[static::TABELA];
+    }
 
 
-	/**
-	* @return int $co_imagem
+    /**
+     * @return int $co_imagem
      */
-	public function getCoImagem()
+    public function getCoImagem()
     {
         return $this->co_imagem;
     }
 
-	/**
-	* @param $co_imagem
+    /**
+     * @param $co_imagem
      * @return mixed
      */
-	public function setCoImagem($co_imagem)
+    public function setCoImagem($co_imagem)
     {
         return $this->co_imagem = $co_imagem;
     }
 
-	/**
-	* @return mixed $ds_caminho
+    /**
+     * @return mixed $ds_caminho
      */
-	public function getDsCaminho()
+    public function getDsCaminho()
     {
         return $this->ds_caminho;
     }
 
-	/**
-	* @param $ds_caminho
+    /**
+     * @param $ds_caminho
      * @return mixed
      */
-	public function setDsCaminho($ds_caminho)
+    public function setDsCaminho($ds_caminho)
     {
         return $this->ds_caminho = $ds_caminho;
     }
 
-	/**
-	* @return EmpresaEntidade $co_empresa
+    /**
+     * @return EmpresaEntidade $co_empresa
      */
-	public function getCoEmpresa()
+    public function getCoEmpresa()
     {
         return $this->co_empresa;
     }
 
-	/**
+    /**
      * @param $co_empresa
      * @return mixed
      */
-	public function setCoEmpresa($co_empresa)
+    public function setCoEmpresa($co_empresa)
     {
         return $this->co_empresa = $co_empresa;
     }
 
-	/**
-	* @return FuncionarioEntidade $co_funcionario
+    /**
+     * @return FuncionarioEntidade $co_funcionario
      */
-	public function getCoFuncionario()
+    public function getCoFuncionario()
     {
         return $this->co_funcionario;
     }
 
-	/**
+    /**
      * @param $co_funcionario
      * @return mixed
      */
-	public function setCoFuncionario($co_funcionario)
+    public function setCoFuncionario($co_funcionario)
     {
         return $this->co_funcionario = $co_funcionario;
     }
 
-	/**
-	* @return PessoaEntidade $co_pessoa
+    /**
+     * @return PessoaEntidade $co_pessoa
      */
-	public function getCoPessoa()
+    public function getCoPessoa()
     {
         return $this->co_pessoa;
     }
 
-	/**
+    /**
      * @param $co_pessoa
      * @return mixed
      */
-	public function setCoPessoa($co_pessoa)
+    public function setCoPessoa($co_pessoa)
     {
         return $this->co_pessoa = $co_pessoa;
     }
 
-	/**
-	* @return ProdutoDestaqueEntidade $co_produto_destaque
+    /**
+     * @return ProdutoDestaqueEntidade $co_produto_destaque
      */
-	public function getCoProdutoDestaque()
+    public function getCoProdutoDestaque()
     {
         return $this->co_produto_destaque;
     }
 
-	/**
+    /**
      * @param $co_produto_destaque
      * @return mixed
      */
-	public function setCoProdutoDestaque($co_produto_destaque)
+    public function setCoProdutoDestaque($co_produto_destaque)
     {
         return $this->co_produto_destaque = $co_produto_destaque;
     }
 
-	/**
-	* @return ProdutoImagemEntidade $co_produto_imagem
+    /**
+     * @return ProdutoImagemEntidade $co_produto_imagem
      */
-	public function getCoProdutoImagem()
+    public function getCoProdutoImagem()
     {
         return $this->co_produto_imagem;
     }
 
-	/**
+    /**
      * @param $co_produto_imagem
      * @return mixed
      */
-	public function setCoProdutoImagem($co_produto_imagem)
+    public function setCoProdutoImagem($co_produto_imagem)
     {
         return $this->co_produto_imagem = $co_produto_imagem;
     }
 
-	/**
-	* @return SugestaoEntidade $co_sugestao
+    /**
+     * @return SugestaoEntidade $co_sugestao
      */
-	public function getCoSugestao()
+    public function getCoSugestao()
     {
         return $this->co_sugestao;
     }
 
-	/**
+    /**
      * @param $co_sugestao
      * @return mixed
      */
-	public function setCoSugestao($co_sugestao)
+    public function setCoSugestao($co_sugestao)
     {
         return $this->co_sugestao = $co_sugestao;
     }
 
-	/**
-	* @return UsuarioEntidade $co_usuario
+    /**
+     * @return UsuarioEntidade $co_usuario
      */
-	public function getCoUsuario()
+    public function getCoUsuario()
     {
         return $this->co_usuario;
     }
 
-	/**
+    /**
      * @param $co_usuario
      * @return mixed
      */
-	public function setCoUsuario($co_usuario)
+    public function setCoUsuario($co_usuario)
     {
         return $this->co_usuario = $co_usuario;
+    }
+
+    /**
+     * @return ProdutoEntidade $co_produto
+     */
+    public function getCoProduto()
+    {
+        return $this->co_produto;
+    }
+
+    /**
+     * @param $co_produto
+     * @return mixed
+     */
+    public function setCoProduto($co_produto)
+    {
+        return $this->co_produto = $co_produto;
     }
 
 }

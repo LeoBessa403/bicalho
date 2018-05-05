@@ -36,7 +36,7 @@
                         Modal::desativaProduto("ProdutoDesativar");
                         Modal::ativaProduto("ProdutoAtivar");
                         Modal::confirmacao("confirma_Produto");
-                        $arrColunas = array('Código', 'Nome do Produto', 'Estoque', 'Fabricante', 'Categoria', 'Valor R$', 'Ações');
+                        $arrColunas = array('Foto', 'Código', 'Nome do Produto', 'Estoque', 'Fabricante', 'Categoria', 'Valor R$', 'Ações');
                         $grid = new Grid();
                         echo $grid->PesquisaAvancada('Pesquisar Produtos');
                         $grid->setColunasIndeces($arrColunas);
@@ -65,6 +65,8 @@
                                             <i class="fa fa-unlock-alt"></i>
                                         </a>';
                             }
+//                            debug($res);
+                            $grid->setColunas($res->getCoImagem()->getDsCaminho(), 2);
                             $grid->setColunas($res->getNuCodigoInterno(), 2);
                             $grid->setColunas($res->getNoProduto());
                             $grid->setColunas(FuncoesSistema::ProdutoEstoque($res->getNuEstoque()), 2);

@@ -26,6 +26,8 @@ class  ProdutoService extends AbstractService
             $produtoImagemService = $this->getService(PRODUTO_IMAGEM_SERVICE);
             /** @var ProdutoDetalheService $produtoDetalheService */
             $produtoDetalheService = $this->getService(PRODUTO_DETALHE_SERVICE);
+            /** @var ImagemService $imagemService */
+            $imagemService = $this->getService(IMAGEM_SERVICE);
 
             $us = $_SESSION[SESSION_USER];
             $user = $us->getUser();
@@ -40,31 +42,45 @@ class  ProdutoService extends AbstractService
             $produto[CO_FABRICANTE] = $result[CO_FABRICANTE][0];
             $produto[CO_CATEGORIA] = $result[CO_CATEGORIA][0];
             $produto[CO_UNIDADE_VENDA] = $result[CO_UNIDADE_VENDA][0];
-            $produto[NO_PRODUTO] =  trim($result[NO_PRODUTO]);
-            $produto[DS_DESCRICAO] =  trim($result[DS_DESCRICAO]);
-            if (!empty($result[NU_ESTOQUE])){
+            $produto[NO_PRODUTO] = trim($result[NO_PRODUTO]);
+            $produto[DS_DESCRICAO] = trim($result[DS_DESCRICAO]);
+            if (!empty($result[NU_ESTOQUE])) {
                 $produto[NU_ESTOQUE] = 1; // Com Estoque
-            }else{
+            } else {
                 $produto[NU_ESTOQUE] = 0; // Sem Estoque
             }
-            $produto[NU_CODIGO_INTERNO] =  $result[NU_CODIGO_INTERNO];
-            $produto[DS_CAMINHO_MANUAL] =  $result[DS_CAMINHO_MANUAL];
-            $produto[DS_CAMINHO_VIDEO] =  $result[DS_CAMINHO_VIDEO];
-            $detalheProduto[NU_PRECO_VENDA] =  Valida::FormataMoedaBanco($result[NU_PRECO_VENDA]);
-            $detalheProduto[CO_USUARIO] =  $user[md5(CO_USUARIO)];
+            $produto[NU_CODIGO_INTERNO] = $result[NU_CODIGO_INTERNO];
+            $produto[DS_CAMINHO_MANUAL] = $result[DS_CAMINHO_MANUAL];
+            $produto[DS_CAMINHO_VIDEO] = $result[DS_CAMINHO_VIDEO];
+            $detalheProduto[NU_PRECO_VENDA] = Valida::FormataMoedaBanco($result[NU_PRECO_VENDA]);
+            $detalheProduto[CO_USUARIO] = $user[md5(CO_USUARIO)];
             $detalheProduto[DT_CADASTRO] = Valida::DataHoraAtualBanco();
+
+            $imagem[DS_CAMINHO] = "";
+            $nome = Valida::ValNome($produto[NO_PRODUTO]);
+            if ($files[DS_CAMINHO]["tmp_name"]):
+                $foto = $_FILES[DS_CAMINHO];
+                $up = new Upload();
+                $up->UploadImagens($foto, $nome, "ProdutosCapa");
+                $imagem[DS_CAMINHO] = $up->getNameImage();
+            endif;
 
             $PDO->beginTransaction();
             if (!empty($result[CO_PRODUTO])):
                 $coProduto = $result[CO_PRODUTO];
+                if ($imagem[DS_CAMINHO]) {
+                    $produto[CO_IMAGEM] = $result[CO_IMAGEM];
+                    $imagemService->Salva($imagem, $result[CO_IMAGEM]);
+                }
                 $this->Salva($produto, $coProduto);
                 $session->setSession(ATUALIZADO, "OK");
             else:
+                $produto[CO_IMAGEM] = $imagemService->Salva($imagem);
                 $produto[DT_CADASTRO] = Valida::DataHoraAtualBanco();
                 $produto[ST_STATUS] = StatusAcessoEnum::ATIVO;
                 $coProduto = $this->Salva($produto);
-                if (!empty($files)):
-                    $produtoImagemService->SalvaProdutoImagens($files, $coProduto);
+                if (!empty($files[CO_PRODUTO_IMAGEM])):
+                    $produtoImagemService->SalvaProdutoImagens($files, $coProduto, $nome);
                 endif;
                 $session->setSession(CADASTRADO, "OK");
             endif;
