@@ -129,6 +129,12 @@ class ProdutoForm
                 ->setId(CO_PRODUTO)
                 ->setValues($res[CO_PRODUTO])
                 ->CriaInpunt();
+
+            $formulario
+                ->setType("hidden")
+                ->setId(CO_IMAGEM)
+                ->setValues($res[CO_IMAGEM])
+                ->CriaInpunt();
         else:
             $formulario
                 ->setId(CO_PRODUTO_IMAGEM)

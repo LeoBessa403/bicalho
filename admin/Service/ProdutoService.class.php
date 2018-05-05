@@ -68,7 +68,7 @@ class  ProdutoService extends AbstractService
             $PDO->beginTransaction();
             if (!empty($result[CO_PRODUTO])):
                 $coProduto = $result[CO_PRODUTO];
-                if ($imagem[DS_CAMINHO]) {
+                if ($files[DS_CAMINHO]["tmp_name"]) {
                     $produto[CO_IMAGEM] = $result[CO_IMAGEM];
                     $imagemService->Salva($imagem, $result[CO_IMAGEM]);
                 }
@@ -178,6 +178,7 @@ class  ProdutoService extends AbstractService
         $dados[DS_CAMINHO_MANUAL] = $produto->getDsCaminhoManual();
         $dados[DS_CAMINHO_VIDEO] = $produto->getDsCaminhoVideo();
         $dados[DS_CAMINHO] = "ProdutosCapa/".$produto->getCoImagem()->getDsCaminho();
+        $dados[CO_IMAGEM] = $produto->getCoImagem()->getCoImagem();
         $dados[DS_DESCRICAO] = $produto->getDsDescricao();
 
         return $dados;
