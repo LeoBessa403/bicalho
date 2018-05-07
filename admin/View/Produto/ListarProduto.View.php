@@ -33,6 +33,7 @@
                     <div class="panel-body">
                         <?php
                         Modal::load();
+                        Modal::Foto();
                         Modal::desativaProduto("ProdutoDesativar");
                         Modal::ativaProduto("ProdutoAtivar");
                         Modal::confirmacao("confirma_Produto");
@@ -65,12 +66,19 @@
                                             <i class="fa fa-unlock-alt"></i>
                                         </a>';
                             }
+
                             $imagem = Valida::GetMiniatura(
-                                    'ProdutosCapa/'.$res->getCoImagem()->getDsCaminho(),
+                                'ProdutosCapa/' . $res->getCoImagem()->getDsCaminho(),
                                 Valida::ValNome($res->getNoProduto()),
                                 90, 90, "circle-img"
                             );
-                            $grid->setColunas($imagem, 2);
+
+                            $foto = '<a data-toggle="modal" class="fotos" 
+                                id="' . $res->getCoProduto() . '" 
+                                      href="#Foto" title="' . $res->getNoProduto() . '" 
+                                      data-placement="top">'.$imagem.'</a>';
+
+                            $grid->setColunas($foto, 2);
                             $grid->setColunas($res->getNuCodigoInterno(), 2);
                             $grid->setColunas($res->getNoProduto());
                             $grid->setColunas(FuncoesSistema::ProdutoEstoque($res->getNuEstoque()), 2);

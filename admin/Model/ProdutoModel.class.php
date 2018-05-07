@@ -38,4 +38,16 @@ class  ProdutoModel extends AbstractModel
         return $produtos;
     }
 
+    public static function getDsCaminhoFotoProduto($coProduto)
+    {
+        $tabela = ProdutoEntidade::TABELA." prod" .
+            " inner join ".ImagemEntidade::TABELA." img" .
+            " on prod.".ImagemEntidade::CHAVE." = img.".ImagemEntidade::CHAVE;
+        $campos = "img.".DS_CAMINHO . ' AS caminho';
+        $pesquisa = new Pesquisa();
+        $where = "where ".ProdutoEntidade::CHAVE. " = ".$coProduto;
+        $pesquisa->Pesquisar($tabela, $where, null, $campos);
+        return $pesquisa->getResult();
+    }
+
 }
