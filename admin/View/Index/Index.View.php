@@ -105,7 +105,7 @@
                                 <i class="fa-eur fa"></i>
                                 Mais procurados
                                 <span class="dados negrito dados-gray">
-                                    <?= $dados['NovosProdutos']; ?>
+                                    <?= $dados['MaisProdurados']; ?>
                                 </span>
                             </button>
                         </div>
