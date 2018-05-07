@@ -116,6 +116,14 @@ class  ProdutoService extends AbstractService
     }
 
     /**
+     * @return array
+     */
+    public function PesquisaProdutosSemEstoque()
+    {
+        return $this->ObjetoModel->PesquisaProdutosSemEstoque();
+    }
+
+    /**
      * @param $coProduto
      * @return array
      */

@@ -4,19 +4,29 @@ class Index extends AbstractController
 {
     function Index()
     {
-        $inscricoes = [];
-        $dados['TotalInscricoes'] = count($inscricoes);
-        $dados['TotalNaoMembros'] = 0;
-        $dados['TotalMembros'] = 0;
-        $dados['TotalServos'] = 0;
-        $dados['TotalNaoPago'] = 0;
-        $dados['TotalParcial'] = 0;
-        $dados['TotalConcluido'] = 0;
-        $dados['TotalInscricoesRestantes'] = 0;
-        $dados['TotalInscricoesCartao'] = 0;
-        $dados['TotalAArrecadar'] = 0;
-        $dados['TotalArrecadado'] = 0;
-        $dados['TotalRetirantes'] = 0;
+        /** @var ProdutoService $produtoService */
+        $produtoService = $this->getService(PRODUTO_SERVICE);
+        $produtos = $produtoService->PesquisaTodos();
+
+        /** @var CategoriaService $cartegoriaService */
+        $cartegoriaService = $this->getService(CATEGORIA_SERVICE);
+        $cartegorias = $cartegoriaService->PesquisaTodos();
+
+        /** @var FabricanteService $fabricanteService */
+        $fabricanteService = $this->getService(FABRICANTE_SERVICE);
+        $fabricantes = $fabricanteService->PesquisaTodos();
+
+        $produtosSemEstoque = $produtoService->PesquisaProdutosSemEstoque();
+
+        $dados['ProdutosCadastrados'] = count($produtos);
+        $dados['FabricantesCadastrados'] = count($fabricantes);
+        $dados['CategoriasCadastrados'] = count($cartegorias);
+        $dados['ProdutosDestaque'] = 0;
+        $dados['MaisVisitados'] = 0;
+        $dados['MaisVendidos'] = 0;
+        $dados['ProdutosSemEstoque'] = count($produtosSemEstoque);
+        $dados['NovosProdutos'] = 0;
+        $dados['MaisProdurados'] = 0;
 
         $this->dados = $dados;
     }

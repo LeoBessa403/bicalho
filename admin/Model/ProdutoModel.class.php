@@ -38,6 +38,10 @@ class  ProdutoModel extends AbstractModel
         return $produtos;
     }
 
+    /**
+     * @param $coProduto
+     * @return array
+     */
     public static function getDsCaminhoFotoProduto($coProduto)
     {
         $tabela = ProdutoEntidade::TABELA." prod" .
@@ -47,6 +51,17 @@ class  ProdutoModel extends AbstractModel
         $pesquisa = new Pesquisa();
         $where = "where ".ProdutoEntidade::CHAVE. " = ".$coProduto;
         $pesquisa->Pesquisar($tabela, $where, null, $campos);
+        return $pesquisa->getResult();
+    }
+
+    /**
+     * @return array
+     */
+    public function PesquisaProdutosSemEstoque()
+    {
+        $pesquisa = new Pesquisa();
+        $where = "where nu_estoque < '1'";
+        $pesquisa->Pesquisar(ProdutoEntidade::TABELA, $where);
         return $pesquisa->getResult();
     }
 
