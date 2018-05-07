@@ -40,7 +40,7 @@ class  UsuarioService extends AbstractService
     public function salvaUsuario($dados, $foto, $resgistrar = false)
     {
         $usuarioValidador = new UsuarioValidador();
-        /** @var InscricaoValidador $validador */
+        /** @var UsuarioValidador $validador */
         $validador = $usuarioValidador->validarUsuario($dados);
         if ($validador[SUCESSO]) {
             /** @var EnderecoService $enderecoService */
