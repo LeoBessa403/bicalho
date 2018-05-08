@@ -16,7 +16,6 @@ class ImagemEntidade extends AbstractEntidade
     private $co_empresa;
     private $co_funcionario;
     private $co_pessoa;
-    private $co_produto_destaque;
     private $co_produto_imagem;
     private $co_sugestao;
     private $co_usuario;
@@ -127,23 +126,6 @@ class ImagemEntidade extends AbstractEntidade
     public function setCoPessoa($co_pessoa)
     {
         return $this->co_pessoa = $co_pessoa;
-    }
-
-    /**
-     * @return ProdutoDestaqueEntidade $co_produto_destaque
-     */
-    public function getCoProdutoDestaque()
-    {
-        return $this->co_produto_destaque;
-    }
-
-    /**
-     * @param $co_produto_destaque
-     * @return mixed
-     */
-    public function setCoProdutoDestaque($co_produto_destaque)
-    {
-        return $this->co_produto_destaque = $co_produto_destaque;
     }
 
     /**
