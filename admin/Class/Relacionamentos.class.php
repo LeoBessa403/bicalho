@@ -274,11 +274,6 @@ class Relacionamentos
 					('Entidade') => 'ProdutoEntidade',
 					('Tipo') => '1',
 				),
-				(CO_PRODUTO_DESTAQUE) => Array(
-					('Campo') => CO_IMAGEM,
-					('Entidade') => 'ProdutoDestaqueEntidade',
-					('Tipo') => '1',
-				),
 				(CO_PRODUTO_IMAGEM) => Array(
 					('Campo') => CO_IMAGEM,
 					('Entidade') => 'ProdutoImagemEntidade',
@@ -553,11 +548,6 @@ class Relacionamentos
 				(CO_PRODUTO_DETALHE) => Array(
 					('Campo') => CO_PRODUTO_DETALHE,
 					('Entidade') => 'ProdutoDetalheEntidade',
-					('Tipo') => '1',
-				),
-				(CO_IMAGEM) => Array(
-					('Campo') => CO_IMAGEM,
-					('Entidade') => 'ImagemEntidade',
 					('Tipo') => '1',
 				),
 			),
