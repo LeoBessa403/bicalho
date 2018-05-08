@@ -3167,11 +3167,17 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 
 #owl-main .caption {
     letter-spacing: -3px;
-    color: #636363;
+    color: #353535;
     position: absolute;
     z-index: 100;
-    top: 11%;
-    left: 5%;
+    top: 5%;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: right;
+    text-shadow: #f2f2f2 0.5px 0 0.5px;
+    width: 60%;
+    margin-left: 50%;
 }
 
 #owl-main .caption.right {
@@ -3205,11 +3211,15 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     letter-spacing: -1px;
     margin-top: 15px;
     line-height: 28px;
+    width: 80%;
+    margin-left: 20%;
+    font-weight: bold;
 }
 
 #owl-main .caption .small {
     margin: 11px 0;
     letter-spacing: -1px;
+    font-size: 18px;
 }
 
 #owl-main .caption .button-holder {

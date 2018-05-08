@@ -1,3 +1,7 @@
+<?php
+    /** @var ProdutoEntidade $produto */
+    $prod = $produto;
+?>
 <div class="no-margin col-xs-12 col-sm-7 body-holder">
     <div class="body">
         <div class="star-holder inline">
@@ -5,14 +9,13 @@
         </div>
         <div class="availability"><label>Disponibilidade:</label><span class="available">  em estoque</span></div>
 
-        <div class="title"><a href="#">VAIO fit laptop - windows 8 SVF14322CXW</a></div>
+        <div class="title"><a href="#"><?= $prod->getNoProduto() ;?></a></div>
         <div class="brand">
-            <a href="<?php echo PASTASITE; ?>Marcas/Index">sony</a>
+            <a href="<?php echo PASTASITE; ?>Marcas/Index"><?= $prod->getCoFabricante()->getNoFabricante() ;?></a>
         </div>
         <?php
-        $produto = 'VAIO fit laptop - windows 8 SVF14322CXW - Marca - SONY'
+        $produto = $prod->getNoProduto().' - '. $prod->getCoFabricante()->getNoFabricante();
         ?>
-
         <div class="social-row">
             <span title="Compartilhe no Facebook" class="st_facebook_hcount"></span>
             <span title="Compartilhe no Twitter" class="st_twitter_hcount"></span>
@@ -29,13 +32,18 @@
         </div>
 
         <div class="excerpt">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare turpis non risus semper dapibus.
-                Quisque eu vehicula turpis. Donec sodales lacinia eros, sit amet auctor tellus volutpat non.</p>
+            <p><?= Valida::Resumi($prod->getDsDescricao(),300) ;?></p>
         </div>
 
         <div class="prices">
-            <div class="price-current">R$1740.00</div>
-            <div class="price-prev">de R$2199.00</div>
+            <div class="price-current"><?=
+                Valida::FormataMoeda($prod->getUltimoCoProdutoDetalhe()->getNuPrecoVenda(),'R$');
+                ?></div>
+            <div class="price-prev">de <?=
+                Valida::FormataMoeda(
+                        $prod->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 1.15
+                        ,'R$');
+                ?></div>
         </div>
 
         <div class="qnt-holder">

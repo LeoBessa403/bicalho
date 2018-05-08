@@ -1,51 +1,50 @@
-<!-- ========================================== SECTION – HERO ========================================= -->
+<?php
+/** @var Segmento $segmentoController */
+$produtoController = new Produto();
+/** @var ProdutoService $produtoService */
+$produtoService = $produtoController->getService(PRODUTO_SERVICE);
+?>
 
+<!-- ========================================== SECTION – HERO ========================================= -->
 <div id="hero">
     <div id="owl-main" class="owl-carousel height-lg owl-inner-nav owl-ui-lg">
+        <?php
+        /** @var ProdutoDestaqueEntidade $destaque */
+        foreach ($result as $destaque) {
+            /** @var ProdutoEntidade $produto */
+            $produto = $produtoService->PesquisaUmRegistro(
+                $destaque->getCoProdutoDetalhe()->getCoProduto()->getCoProduto()
+            );
+            $foto = Valida::GetMiniatura(
+                'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
+                $produto->getNoProduto(),
+                600,
+                500
+            );
+            ?>
 
-        <div class="item" style="background-image: url(<?php echo PASTASITE; ?>images/sliders/slider02.jpg);">
-            <div class="container-fluid">
-                <div class="caption vertical-center text-left right" style="padding-right:0;">
-                    <div class="big-text fadeInDown-1">
-                        Economize até<span class="big"><span class="sign">R$</span>400</span>
-                    </div>
-                    <div class="excerpt fadeInDown-2">
-                        on selected laptops<br>
-                        &amp; desktop pcs or<br>
-                        smartphones
-                    </div>
-                    <div class="small fadeInDown-2">
-                        aplicam-se termos e condições
-                    </div>
-                    <div class="button-holder fadeInDown-3">
-                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="big le-button ">Compre
-                            agora</a>
-                    </div>
-                </div><!-- /.caption -->
-            </div><!-- /.container-fluid -->
-
-        </div><!-- /.item -->
-
-        <div class="item" style="background-image: url(<?php echo PASTASITE; ?>assets/images/sliders/slider04.jpg);">
-            <div class="container-fluid">
-                <div class="caption vertical-center text-left left" style="padding-left:7%;">
-                    <div class="big-text fadeInDown-1">
-                        Quer<span class="big"><span class="sign">R$</span>200</span>de Desconto?
-                    </div>
-
-                    <div class="excerpt fadeInDown-2">
-                        on desktop pcs
-                    </div>
-                    <div class="small fadeInDown-2">
-                        aplicam-se termos e condições
-                    </div>
-                    <div class="button-holder fadeInDown-3">
-                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="big le-button ">Compre
-                            agora</a>
-                    </div>
-                </div><!-- /.caption -->
-            </div><!-- /.container-fluid -->
-        </div><!-- /.item -->
+            <div class="item">
+                <div class="container-fluid">
+                    <?= $foto; ?>
+                    <div class="caption vertical-center text-left right" style="padding-right:0;">
+                        <div class="big-text fadeInDown-1" style="text-align: right;">
+                            Super Desconto de <span class="big"><span class="sign">R$</span>250</span>
+                        </div>
+                        <div class="excerpt fadeInDown-2">
+                            <?= $produto->getNoProduto(); ?>
+                        </div>
+                        <div class="small fadeInDown-2">
+                            <?= $produto->getCoFabricante()->getNoFabricante(); ?>
+                        </div>
+                        <div class="button-holder fadeInDown-3">
+                            <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                Valida::GeraParametro(CO_PRODUTO . "/" . $produto->getCoProduto()); ?>"
+                               class="big le-button ">Mais Detalhes</a>
+                        </div>
+                    </div><!-- /.caption -->
+                </div><!-- /.container-fluid -->
+            </div><!-- /.item -->
+        <?php } ?>
 
     </div><!-- /.owl-carousel -->
 </div>

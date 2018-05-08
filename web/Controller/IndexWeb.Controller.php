@@ -8,6 +8,9 @@ class IndexWeb extends AbstractController
     
     public function Index()
     {
+        /** @var ProdutoDestaqueService $produtoDestaqueService */
+        $produtoDestaqueService = $this->getService(PRODUTO_DESTAQUE_SERVICE);
+        $this->result = $produtoDestaqueService->PesquisaTodos();
     }
 }
 ?>

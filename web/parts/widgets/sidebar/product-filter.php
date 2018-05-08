@@ -1,11 +1,3 @@
-<?php
-/** @var Fabricante $fabricanteController */
-$fabricanteController = new Fabricante();
-/** @var FabricanteService $fabricanteService */
-$fabricanteService = $fabricanteController->getService(FABRICANTE_SERVICE);
-
-$fabricantes = $fabricanteService->PesquisaTodos();
-?>
 <!-- ========================================= PRODUCT FILTER ========================================= -->
 <div class="widget">
     <h1>Pesquisa Produto</h1>
