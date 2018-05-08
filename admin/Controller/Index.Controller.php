@@ -8,9 +8,9 @@ class Index extends AbstractController
         $produtoService = $this->getService(PRODUTO_SERVICE);
         $produtos = $produtoService->PesquisaTodos();
 
-        /** @var CategoriaService $cartegoriaService */
-        $cartegoriaService = $this->getService(CATEGORIA_SERVICE);
-        $cartegorias = $cartegoriaService->PesquisaTodos();
+        /** @var CategoriaService $categoriaService */
+        $categoriaService = $this->getService(CATEGORIA_SERVICE);
+        $categorias = $categoriaService->PesquisaTodos();
 
         /** @var FabricanteService $fabricanteService */
         $fabricanteService = $this->getService(FABRICANTE_SERVICE);
@@ -20,7 +20,7 @@ class Index extends AbstractController
 
         $dados['ProdutosCadastrados'] = count($produtos);
         $dados['FabricantesCadastrados'] = count($fabricantes);
-        $dados['CategoriasCadastrados'] = count($cartegorias);
+        $dados['CategoriasCadastrados'] = count($categorias);
         $dados['ProdutosDestaque'] = 0;
         $dados['MaisVisitados'] = 0;
         $dados['MaisVendidos'] = 0;
