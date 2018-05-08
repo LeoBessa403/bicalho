@@ -117,5 +117,29 @@ class Produto extends AbstractController
         }
     }
 
+    public function AtivarDestaque()
+    {
+        /** @var ProdutoService $produtoService */
+        $produtoService = $this->getService(PRODUTO_SERVICE);
+
+        $coProdutoDetalhe = UrlAmigavel::PegaParametro(CO_PRODUTO_DETALHE);
+        $retorno = $produtoService->AtivarDestaque($coProdutoDetalhe);
+        if ($retorno[SUCESSO]) {
+            Redireciona(UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller . '/ListarProduto/');
+        }
+    }
+
+    public function DesativarDestaque()
+    {
+        /** @var ProdutoService $produtoService */
+        $produtoService = $this->getService(PRODUTO_SERVICE);
+
+        $coProdutoDetalhe = UrlAmigavel::PegaParametro(CO_PRODUTO_DETALHE);
+        $retorno = $produtoService->DesativarDestaque($coProdutoDetalhe);
+        if ($retorno[SUCESSO]) {
+            Redireciona(UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller . '/ListarProduto/');
+        }
+    }
+
 }
    

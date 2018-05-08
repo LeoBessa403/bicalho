@@ -164,7 +164,68 @@ class  ProdutoService extends AbstractService
         $dados = [
             ST_STATUS => $stStatus
         ];
+
         $coProdutoDetalhe = $this->Salva($dados, $coProduto);
+
+        if ($coProdutoDetalhe) {
+            $session->setSession(MENSAGEM, Mensagens::OK_ATUALIZADO);
+            $retorno[SUCESSO] = true;
+        } else {
+            $session->setSession(MENSAGEM, 'Não foi possível alterar o Produto');
+            $retorno[SUCESSO] = false;
+        }
+        return $retorno;
+    }
+
+    /**
+     * @param $coProdutoDetalhe
+     * @return array
+     */
+    public function AtivarDestaque($coProdutoDetalhe)
+    {
+        /** @var ProdutoDestaqueService $produtoDestaqueService */
+        $produtoDestaqueService = $this->getService(PRODUTO_DESTAQUE_SERVICE);
+
+        $session = new Session();
+        $retorno = [
+            SUCESSO => false,
+            MSG => null
+        ];
+        $dados = [
+            CO_PRODUTO_DETALHE => $coProdutoDetalhe,
+            DT_INICIO => Valida::DataHoraAtualBanco(),
+            DT_FIM => Valida::DataHoraAtualBanco(),
+        ];
+        $coProdutoDetalhe = $produtoDestaqueService->Salva($dados);
+
+        if ($coProdutoDetalhe) {
+            $session->setSession(MENSAGEM, Mensagens::OK_ATUALIZADO);
+            $retorno[SUCESSO] = true;
+        } else {
+            $session->setSession(MENSAGEM, 'Não foi possível alterar o Produto');
+            $retorno[SUCESSO] = false;
+        }
+        return $retorno;
+    }
+
+    /**
+     * @param $coProdutoDetalhe
+     * @return array
+     */
+    public function DesativarDestaque($coProdutoDetalhe)
+    {
+        /** @var ProdutoDestaqueService $produtoDestaqueService */
+        $produtoDestaqueService = $this->getService(PRODUTO_DESTAQUE_SERVICE);
+
+        $session = new Session();
+        $retorno = [
+            SUCESSO => false,
+            MSG => null
+        ];
+        $dados = [
+            CO_PRODUTO_DETALHE => $coProdutoDetalhe,
+        ];
+        $coProdutoDetalhe = $produtoDestaqueService->DeletaQuando($dados);
 
         if ($coProdutoDetalhe) {
             $session->setSession(MENSAGEM, Mensagens::OK_ATUALIZADO);

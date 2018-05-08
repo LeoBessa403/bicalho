@@ -16,12 +16,16 @@ class Index extends AbstractController
         $fabricanteService = $this->getService(FABRICANTE_SERVICE);
         $fabricantes = $fabricanteService->PesquisaTodos();
 
+        /** @var ProdutoDestaqueService $produtoDestaqueService */
+        $produtoDestaqueService = $this->getService(PRODUTO_DESTAQUE_SERVICE);
+        $produtosDestaque = $produtoDestaqueService->PesquisaTodos();
+
         $produtosSemEstoque = $produtoService->PesquisaProdutosSemEstoque();
 
         $dados['ProdutosCadastrados'] = count($produtos);
         $dados['FabricantesCadastrados'] = count($fabricantes);
         $dados['CategoriasCadastrados'] = count($categorias);
-        $dados['ProdutosDestaque'] = 0;
+        $dados['ProdutosDestaque'] = count($produtosDestaque);
         $dados['MaisVisitados'] = 0;
         $dados['MaisVendidos'] = 0;
         $dados['ProdutosSemEstoque'] = count($produtosSemEstoque);

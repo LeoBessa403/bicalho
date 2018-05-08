@@ -34,6 +34,8 @@
                         <?php
                         Modal::load();
                         Modal::Foto();
+                        Modal::desativaDestaque("DesativarDestaque");
+                        Modal::ativaDestaque("AtivarDestaque");
                         Modal::desativaProduto("ProdutoDesativar");
                         Modal::ativaProduto("ProdutoAtivar");
                         Modal::confirmacao("confirma_Produto");
@@ -51,15 +53,37 @@
                                  </a>';
                             if ($res->getStStatus() == StatusUsuarioEnum::ATIVO) {
                                 $acao .= ' <a data-toggle="modal" role="button" class="btn btn-bricky 
-                                        tooltips produto_acao" id="' . $res->getCoProduto() . '" data-msg-restricao="MSG02"
+                                        tooltips acao" id="' . $res->getCoProduto() . '" data-msg-restricao="MSG02"
                                            href="#ProdutoDesativar" data-original-title="Desativar Produto" data-placement="top"
                                             data-url-action="' . PASTAADMIN . 'Produto/DesativarProduto/' .
                                     Valida::GeraParametro(CO_PRODUTO . "/" . $res->getCoProduto()) . '">
                                             <i class="fa fa-lock"></i>
                                         </a>';
+
+                                // Botão de destaque
+                                $coDetalheProduto = $res->getUltimoCoProdutoDetalhe()->getCoProdutoDetalhe();
+
+                                if(!count($res->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())){
+                                    $acao .= ' <a data-toggle="modal" role="button" class="btn btn-green tooltips acao" 
+                                            id="' . $coDetalheProduto . '" data-msg-restricao="MSG03"
+                                           href="#AtivarDestaque" data-original-title="Ativar Destaque" data-placement="top"
+                                           data-url-action="' . PASTAADMIN . 'Produto/AtivarDestaque/' .
+                                        Valida::GeraParametro(CO_PRODUTO_DETALHE . "/" . $coDetalheProduto) . '">
+                                            <i class="fa fa-star"></i>
+                                        </a>';
+                                }else{
+                                    $acao .= ' <a data-toggle="modal" role="button" class="btn btn-warning tooltips acao" 
+                                            id="' . $coDetalheProduto . '" data-msg-restricao="MSG03"
+                                           href="#DesativarDestaque" data-original-title="Desativar Destaque" data-placement="top"
+                                           data-url-action="' . PASTAADMIN . 'Produto/DesativarDestaque/' .
+                                        Valida::GeraParametro(CO_PRODUTO_DETALHE . "/" . $coDetalheProduto) . '">
+                                            <i class="fa fa-star-o"></i>
+                                        </a>';
+                                }
+
                             } else {
                                 $acao .= ' <a data-toggle="modal" role="button" class="btn btn-success 
-                                        tooltips produto_acao" id="' . $res->getCoProduto() . '" data-msg-restricao="MSG03"
+                                        tooltips acao" id="' . $res->getCoProduto() . '" data-msg-restricao="MSG03"
                                            href="#ProdutoAtivar" data-original-title="Ativar Produto" data-placement="top"
                                            data-url-action="' . PASTAADMIN . 'Produto/AtivarProduto/' .
                                     Valida::GeraParametro(CO_PRODUTO . "/" . $res->getCoProduto()) . '">
@@ -76,7 +100,7 @@
                             $foto = '<a data-toggle="modal" class="fotos" 
                                 id="' . $res->getCoProduto() . '" 
                                       href="#Foto" title="' . $res->getNoProduto() . '" 
-                                      data-placement="top">'.$imagem.'</a>';
+                                      data-placement="top">' . $imagem . '</a>';
 
                             $grid->setColunas($foto, 2);
                             $grid->setColunas($res->getNuCodigoInterno(), 2);
@@ -87,7 +111,7 @@
                             $grid->setColunas('<b>' . Valida::FormataMoeda(
                                     $res->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
                                 ) . '</b>');
-                            $grid->setColunas($acao, 2);
+                            $grid->setColunas($acao, 3);
                             $grid->criaLinha($res->getCoProduto());
                         endforeach;
                         $grid->finalizaGrid();

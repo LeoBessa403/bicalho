@@ -562,6 +562,11 @@ class Relacionamentos
 					('Entidade') => 'ProdutoEntidade',
 					('Tipo') => '1',
 				),
+                (CO_PRODUTO_DESTAQUE) => Array(
+                    ('Campo') => CO_PRODUTO_DETALHE,
+                    ('Entidade') => 'ProdutoDestaqueEntidade',
+                    ('Tipo') => '1',
+                ),
 			),
 			(ProdutoImagemEntidade::TABELA) => Array(
 				(CO_PRODUTO) => Array(
