@@ -39,6 +39,15 @@ class  ProdutoService extends AbstractService
                 MSG => null
             ];
 
+            $produto[NU_CODIGO_INTERNO] = $result[NU_CODIGO_INTERNO];
+            $produtoJaCadastrado = $this->PesquisaUmQuando($produto);
+            if (count($produtoJaCadastrado)) {
+                $session->setSession(
+                    MENSAGEM,
+                    "Já exite um produto cadastro com esse código, favor verificar"
+                );
+                return $retorno;
+            }
             $produto[CO_FABRICANTE] = $result[CO_FABRICANTE][0];
             $produto[CO_CATEGORIA] = $result[CO_CATEGORIA][0];
             $produto[CO_UNIDADE_VENDA] = $result[CO_UNIDADE_VENDA][0];
@@ -49,7 +58,6 @@ class  ProdutoService extends AbstractService
             } else {
                 $produto[NU_ESTOQUE] = 0; // Sem Estoque
             }
-            $produto[NU_CODIGO_INTERNO] = $result[NU_CODIGO_INTERNO];
             $produto[DS_CAMINHO_MANUAL] = $result[DS_CAMINHO_MANUAL];
             $produto[DS_CAMINHO_VIDEO] = $result[DS_CAMINHO_VIDEO];
             $detalheProduto[NU_PRECO_VENDA] = Valida::FormataMoedaBanco($result[NU_PRECO_VENDA]);
@@ -185,7 +193,7 @@ class  ProdutoService extends AbstractService
         $dados[NU_PRECO_VENDA] = Valida::FormataMoeda($produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda());
         $dados[DS_CAMINHO_MANUAL] = $produto->getDsCaminhoManual();
         $dados[DS_CAMINHO_VIDEO] = $produto->getDsCaminhoVideo();
-        $dados[DS_CAMINHO] = "ProdutosCapa/".$produto->getCoImagem()->getDsCaminho();
+        $dados[DS_CAMINHO] = "ProdutosCapa/" . $produto->getCoImagem()->getDsCaminho();
         $dados[CO_IMAGEM] = $produto->getCoImagem()->getCoImagem();
         $dados[DS_DESCRICAO] = $produto->getDsDescricao();
 

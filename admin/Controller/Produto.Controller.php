@@ -20,9 +20,9 @@ class Produto extends AbstractController
                 "prod." . CO_FABRICANTE => $_POST[CO_FABRICANTE][0],
                 "prod." . CO_CATEGORIA => $_POST[CO_CATEGORIA][0],
             );
-            if(!empty($_POST[NU_ESTOQUE])){
+            if (!empty($_POST[NU_ESTOQUE])) {
                 $Condicoes[">=#prod." . NU_ESTOQUE] = 1;
-            }else{
+            } else {
                 $Condicoes["<#prod." . NU_ESTOQUE] = 1;
             }
             $this->result = $produtoService->PesquisaAvancada($Condicoes);
@@ -41,14 +41,14 @@ class Produto extends AbstractController
 
         if (!empty($_POST[$id])):
             $retorno = $produtoService->salvaProduto($_POST, $_FILES);
-            if($retorno[SUCESSO]){
-                Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarProduto/');
+            if ($retorno[SUCESSO]) {
+                Redireciona(UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller . '/ListarProduto/');
             }
         endif;
 
         $coProduto = UrlAmigavel::PegaParametro(CO_PRODUTO);
         $res = [];
-        if($coProduto){
+        if ($coProduto) {
             /** @var ProdutoEntidade $produto */
             $produto = $produtoService->PesquisaUmRegistro($coProduto);
             $res = $produtoService->getArrayDadosProduto($produto, $res);
@@ -64,7 +64,7 @@ class Produto extends AbstractController
         $session = new Session();
         if ($session->CheckSession(PESQUISA_AVANCADA)) {
             $Condicoes = $session->getSession(PESQUISA_AVANCADA);
-            $result =  $produtoService->PesquisaAvancada($Condicoes);
+            $result = $produtoService->PesquisaAvancada($Condicoes);
         } else {
             $result = $produtoService->PesquisaTodos();
         }
@@ -80,7 +80,7 @@ class Produto extends AbstractController
             $res[$i][NU_PRECO_VENDA] = Valida::FormataMoeda($produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda());
             $i++;
         }
-        $Colunas = array('Produto','Estoque', 'Código do Produto', 'Fabricante', 'Categoria', 'Preço');
+        $Colunas = array('Produto', 'Estoque', 'Código do Produto', 'Fabricante', 'Categoria', 'Preço');
         $exporta = new Exportacao($formato);
         $exporta->setPapelOrientacao("paisagem");
         $exporta->setColunas($Colunas);
@@ -100,8 +100,8 @@ class Produto extends AbstractController
 
         $coProduto = UrlAmigavel::PegaParametro(CO_PRODUTO);
         $retorno = $produtoService->desativarProduto($coProduto);
-        if($retorno[SUCESSO]){
-            Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarProduto/');
+        if ($retorno[SUCESSO]) {
+            Redireciona(UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller . '/ListarProduto/');
         }
     }
 
@@ -112,8 +112,8 @@ class Produto extends AbstractController
 
         $coProduto = UrlAmigavel::PegaParametro(CO_PRODUTO);
         $retorno = $produtoService->ativarProduto($coProduto);
-        if($retorno[SUCESSO]){
-            Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarProduto/');
+        if ($retorno[SUCESSO]) {
+            Redireciona(UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller . '/ListarProduto/');
         }
     }
 
