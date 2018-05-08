@@ -329,12 +329,11 @@
         // Price Slider
         if ($('.price-slider').length > 0) {
             $('.price-slider').slider({
-                min: 100,
-                max: 700,
+                min: 30,
+                max: 10000,
                 step: 10,
-                value: [100, 400],
+                value: [50, 7000],
                 handle: "square"
-
             });
         }
 

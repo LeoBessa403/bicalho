@@ -1,7 +1,7 @@
 <?php
 $pages = array(
     'IndexWeb/Index' => 'Home',
-    'Cartegorias/Index' => 'Cartegorias',
+    'Categorias/Index' => 'Categorias',
     'Marcas/Index' => 'Marcas',
     'Institucional/SobreNos' => 'Sobre nós',
     'Institucional/Contatos' => 'Contatos',
@@ -105,6 +105,8 @@ $pages = array(
 <script src="<?php echo PASTASITE; ?>js/jquery.raty.min.js"></script>
 <script src="<?php echo PASTASITE; ?>js/jquery.prettyPhoto.min.js"></script>
 <script src="<?php echo PASTASITE; ?>js/jquery.customSelect.min.js"></script>
+<script type="text/javascript" src="<?= INCLUDES; ?>jquery.mask.js"></script>
+<script type="text/javascript" src="<?= INCLUDES; ?>jquery.maskMoney.js"></script>
 <script src="<?php echo PASTASITE; ?>js/wow.min.js"></script>
 <script src="<?php echo PASTASITE; ?>js/buttons.js"></script>
 <script src="<?php echo PASTASITE; ?>js/scripts.js"></script>

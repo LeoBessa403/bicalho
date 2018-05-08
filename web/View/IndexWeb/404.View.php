@@ -16,7 +16,7 @@
                         </form>
                     </div>
                     <div class="text-center">
-                        <a href="#" class="btn-lg huge"><i class="fa fa-home"></i> Retornar ao começo</a>
+                        <a href="<?= PASTASITE; ?>" class="btn-lg huge"><i class="fa fa-home"></i> Retornar ao começo</a>
                     </div>
                 </div>
             </div>
