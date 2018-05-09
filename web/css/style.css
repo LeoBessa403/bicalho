@@ -5292,6 +5292,15 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     color: red !important;
 }
 
+.item .container-fluid{
+    /*position: flex;*/
+}
+
+.img-destaque{
+    max-width: 70%;
+    height: 80%;
+}
+
 /*===================================================================================*/
 /*  Responsive Layout
 /*===================================================================================*/

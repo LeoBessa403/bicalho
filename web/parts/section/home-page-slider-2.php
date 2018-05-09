@@ -19,7 +19,8 @@ $produtoService = $produtoController->getService(PRODUTO_SERVICE);
                 'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
                 $produto->getNoProduto(),
                 600,
-                500
+                500,
+                'img-destaque'
             );
             ?>
 
