@@ -490,6 +490,8 @@ h1, h2, h3, h4, h5 {
     padding: 6px;
     background-color: #3D3D3D;
     border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
 }
 
 .social-icons li a:before {
@@ -651,6 +653,8 @@ label.error {
     border: 1px solid #e0e0e0;
     color: #3D3D3D !important;
     border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
     padding: 9px 17px !important;
     font-size: 18px;
     margin: 0 4px 0 0;
@@ -658,6 +662,8 @@ label.error {
 
 .le-input, .inline-input input {
     border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
     background-color: #ececec;
     border: none;
     color: #3D3D3D;
@@ -676,6 +682,8 @@ label.error {
     font-size: 13px;
     line-height: 20px;
     border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
     float: left;
 }
 
@@ -684,6 +692,8 @@ label.error {
     width: 27%;
     float: right;
     border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
 }
 
 .block {
@@ -851,6 +861,8 @@ img[src="images/blank.gif"] {
 .top-bar ul > li.dropdown .dropdown-menu {
     top: 135%;
     border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
 }
 
 .top-bar ul > li.dropdown .dropdown-menu li {
@@ -923,6 +935,8 @@ header .top-search-holder .contact-row i {
 header .top-search-holder .search-area {
     border: 3px solid #c6c6c6;
     border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
     margin: 8px 0 0 0;
     background-color: #ffffff;
 }
@@ -933,6 +947,8 @@ header .top-search-holder .search-area .search-field, header .top-search-holder 
 
 header .top-search-holder .search-area .search-field {
     border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
     border: none;
     width: 65%;
     padding: 13px;
@@ -945,6 +961,8 @@ header .top-search-holder .search-area .search-button {
     padding: 15px;
     margin: -3px -3px 0 0;
     border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
 }
 
 header .top-search-holder .search-area .search-button:hover {
@@ -1047,6 +1065,8 @@ header .top-cart-row .top-cart-holder .basket-item-count .count {
     top: 5px;
     right: 12px;
     border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
     width: 21px;
     height: 21px;
     line-height: 21px;
@@ -1162,6 +1182,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     padding: 17px;
     color: #fff;
     border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
     text-transform: capitalize;
     font-weight: bold;
     font-size: 16px;
@@ -1173,6 +1195,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 
 .sidemenu-holder .side-menu nav {
     border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
 }
 
 .sidemenu-holder .side-menu nav .nav > li {
@@ -1230,10 +1254,14 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 .sidemenu-holder .side-menu nav .nav > li:last-child {
     border-bottom: 1px solid #e0e0e0;
     border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
 }
 
 .sidemenu-holder .side-menu nav .nav > li:last-child a {
     border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
 }
 
 .sidemenu-holder .side-menu nav .nav > li:first-child a, .sidemenu-holder .side-menu nav .nav > li:last-child a {
@@ -1391,6 +1419,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 #top-mega-nav nav {
     background-color: #F9F9F9;
     border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
 #top-mega-nav nav .le-dropdown {
@@ -1723,6 +1753,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 
 .le-radio + .fake-box {
     border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
     position: relative;
     display: inline-block;
     width: 15px;
@@ -1763,12 +1795,16 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 
 .le-checkbox.big + .fake-box {
     border-radius: 0;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
     width: 15px;
     height: 15px;
 }
 
 .le-checkbox + .fake-box {
     border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -1951,6 +1987,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     width: 20px;
     height: 20px;
     border-radius: 400px;
+    -moz-border-radius: 400px;
+    -webkit-border-radius: 400px;
     background-color: #fff;
     top: -3px;
     background-repeat: repeat-x;
@@ -1965,6 +2003,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 
 .le-button {
     border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
     font-weight: bold;
     padding: 10px 20px;
     display: inline-block;
@@ -2031,12 +2071,16 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 
 .dropdown .dropdown-menu {
     border-radius: 0;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
     top: 120% !important;
 }
 
 .le-dropdown {
     position: relative;
     border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
 .le-dropdown i {
@@ -2065,6 +2109,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     padding: 0;
     border: 1px solid #e0e0e0 !important;
     border-radius: 0 0 5px 5px !important;
+    -moz-border-radius: 0 0 5px 5px !important;
+    -webkit-border-radius: 0 0 5px 5px !important;
 }
 
 .le-dropdown .dropdown-menu li:first-child a, .le-dropdown .dropdown-menu li:last-child a {
@@ -2073,6 +2119,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 
 .le-dropdown .dropdown-menu li:last-child, .le-dropdown .dropdown-menu li:last-child a {
     border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px !important;
+    -webkit-border-radius: 0 0 5px 5px !important;
 }
 
 .le-dropdown .dropdown-menu li a {
