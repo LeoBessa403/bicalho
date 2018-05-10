@@ -5,193 +5,63 @@
 
         <div class="product-grid-holder medium">
             <div class="col-xs-12 col-md-7 no-margin">
-
                 <div class="row no-margin">
-                    <div class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
-                        <div class="product-item">
-                            <div class="image">
-                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                         data-echo="<?php echo PASTASITE; ?>images/products/product-05.jpg"/>
-                                </a>
-                            </div>
-                            <div class="body">
-                                <div class="label-discount clear"></div>
-                                <div class="title">
-                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">beats studio headphones
-                                        official one</a>
+                    <?php
+                    /** @var ProdutoEntidade $produto */
+                    foreach ($maisVendidos as $produto) {
+                        ?>
+                        <div class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
+                            <div class="product-item">
+                                <div class="image">
+                                    <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                    Valida::GeraParametro(CO_PRODUTO . "/" .
+                                        $produto->getCoProduto()); ?>">
+                                        <?php
+                                        echo Valida::GetMiniatura(
+                                            'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
+                                            $produto->getNoProduto(),
+                                            194,
+                                            143,
+                                            'img-responsive'
+                                        );
+                                        ?>
+                                    </a>
                                 </div>
-                                <div class="brand">beats</div>
+                                <div class="body">
+                                    <div class="label-discount clear"></div>
+                                    <div class="title">
+                                        <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                        Valida::GeraParametro(CO_PRODUTO . "/" .
+                                            $produto->getCoProduto()); ?>"><?=
+                                            Valida::Resumi($produto->getNoProduto(), 100);
+                                            ?></a>
+                                    </div>
+                                    <div class="brand"><?= $produto->getCoFabricante()->getNoFabricante(); ?></div>
+                                </div>
+                                <div class="prices">
+                                    <div class="price-current text-right">por <?=
+                                        Valida::FormataMoeda(
+                                            $produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
+                                        );
+                                        ?></div>
+                                </div>
+                                <div class="hover-area">
+                                    <div class="add-cart-button">
+                                        <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                        Valida::GeraParametro(CO_PRODUTO . "/" .
+                                            $produto->getCoProduto()); ?>"
+                                           class="le-button">Ver Detalhes</a>
+                                    </div>
+                                    <div class="wish-compare">
+                                        <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
+                                        <a class="btn-add-to-compare" href="#">Compare</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="prices">
+                        </div><!-- /.product-item-holder -->
 
-                                <div class="price-current text-right">por R$1199.00</div>
-                            </div>
-                            <div class="hover-area">
-                                <div class="add-cart-button">
-                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                        ao carrinho</a>
-                                </div>
-                                <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                    <a class="btn-add-to-compare" href="#">Compare</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.product-item-holder -->
+                    <?php } ?>
 
-                    <div class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
-                        <div class="product-item">
-                            <div class="image">
-                                <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                     data-echo="<?php echo PASTASITE; ?>images/products/product-06.jpg"/>
-                            </div>
-                            <div class="body">
-                                <div class="label-discount clear"></div>
-                                <div class="title">
-                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">playstasion 4 with four
-                                        games and pad</a>
-                                </div>
-                                <div class="brand">acer</div>
-                            </div>
-                            <div class="prices">
-                                <div class="price-current text-right">por R$1199.00</div>
-                            </div>
-                            <div class="hover-area">
-                                <div class="add-cart-button">
-                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                        ao carrinho</a>
-                                </div>
-                                <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                    <a class="btn-add-to-compare" href="#">Compare</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.product-item-holder -->
-
-                    <div class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
-                        <div class="product-item">
-                            <div class="image">
-                                <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                     data-echo="<?php echo PASTASITE; ?>images/products/product-07.jpg"/>
-                            </div>
-                            <div class="body">
-                                <div class="label-discount clear"></div>
-                                <div class="title">
-                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">EOS rebel t5i DSLR
-                                        Camera with 18-55mm IS STM lens</a>
-                                </div>
-                                <div class="brand">canon</div>
-                            </div>
-                            <div class="prices">
-                                <div class="price-current text-right">por R$1199.00</div>
-                            </div>
-                            <div class="hover-area">
-                                <div class="add-cart-button">
-                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                        ao carrinho</a>
-                                </div>
-                                <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                    <a class="btn-add-to-compare" href="#">Compare</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.product-item-holder -->
-                </div><!-- /.row -->
-
-                <div class="row no-margin">
-
-                    <div class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
-                        <div class="product-item">
-                            <div class="image">
-                                <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                     data-echo="<?php echo PASTASITE; ?>images/products/product-08.jpg"/>
-                            </div>
-                            <div class="body">
-                                <div class="label-discount clear"></div>
-                                <div class="title">
-                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">fitbit zip wireless
-                                        activity tracker - lime</a>
-                                </div>
-                                <div class="brand">fitbit zip</div>
-                            </div>
-                            <div class="prices">
-                                <div class="price-current text-right">por R$1199.00</div>
-                            </div>
-                            <div class="hover-area">
-                                <div class="add-cart-button">
-                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                        ao carrinho</a>
-                                </div>
-                                <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                    <a class="btn-add-to-compare" href="#">Compare</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.product-item-holder -->
-
-                    <div class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
-                        <div class="product-item">
-                            <div class="image">
-                                <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                     data-echo="<?php echo PASTASITE; ?>images/products/product-09.jpg"/>
-                            </div>
-                            <div class="body">
-                                <div class="label-discount clear"></div>
-                                <div class="title">
-                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">PowerShot elph 115 16MP
-                                        digital camera</a>
-                                </div>
-                                <div class="brand">canon</div>
-                            </div>
-                            <div class="prices">
-                                <div class="price-current text-right">por R$1199.00</div>
-                            </div>
-                            <div class="hover-area">
-                                <div class="add-cart-button">
-                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                        ao carrinho</a>
-                                </div>
-                                <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                    <a class="btn-add-to-compare" href="#">Compare</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.product-item-holder -->
-
-                    <div class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
-                        <div class="product-item">
-                            <div class="image">
-                                <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                     data-echo="<?php echo PASTASITE; ?>images/products/product-10.jpg"/>
-                            </div>
-                            <div class="body">
-                                <div class="label-discount clear"></div>
-                                <div class="title">
-                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">netbook acer travelMate
-                                        b113-E-10072</a>
-                                </div>
-                                <div class="brand">acer</div>
-                            </div>
-                            <div class="prices">
-                                <div class="price-current text-right">por R$1199.00</div>
-                            </div>
-                            <div class="hover-area">
-                                <div class="add-cart-button">
-                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                        ao carrinho</a>
-                                </div>
-                                <div class="wish-compare">
-                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                    <a class="btn-add-to-compare" href="#">Compare</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /.product-item-holder -->
 
                 </div><!-- /.row -->
             </div><!-- /.col -->
@@ -199,64 +69,95 @@
                 <div class="product-item-holder size-big single-product-gallery small-gallery">
 
                     <div id="best-seller-single-product-slider" class="single-product-slider owl-carousel">
-                        <div class="single-product-gallery-item" id="slide1">
-                            <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
-                                <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                     data-echo="<?php echo PASTASITE; ?>images/products/product-gallery-01.jpg"/>
+                        <div class="single-product-gallery-item" id="slide<?=
+                        $bemMaisVendidos->getCoImagem()->getCoImagem();
+                        ?>">
+                            <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                            Valida::GeraParametro(CO_PRODUTO . "/" .
+                                $bemMaisVendidos->getCoProduto()); ?>">
+                                <?php
+                                echo Valida::GetMiniatura(
+                                    'ProdutosCapa/' . $bemMaisVendidos->getCoImagem()->getDsCaminho(),
+                                    $bemMaisVendidos->getNoProduto(),
+                                    433,
+                                    325,
+                                    'img-responsive'
+                                );
+                                ?>
                             </a>
                         </div><!-- /.single-product-gallery-item -->
 
-                        <div class="single-product-gallery-item" id="slide2">
-                            <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
-                                <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                     data-echo="<?php echo PASTASITE; ?>images/products/product-gallery-01.jpg"/>
+
+                        <!--    CARREGA OUTRAS IMAGENS DO PRODUTO        -->
+                        <?php
+                        if (count($bemMaisVendidos->getCoProdutoImagem())) {
+                        /** @var ProdutoImagemEntidade $imagemProduto */
+                        foreach ($bemMaisVendidos->getCoProdutoImagem() as $imagemProduto) {
+                        ?>
+                        <div class="single-product-gallery-item" id="slide<?=
+                        $imagemProduto->getCoImagem()->getCoImagem();
+                        ?>">
+                            <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                            Valida::GeraParametro(CO_PRODUTO . "/" .
+                                $imagemProduto->getCoProduto()); ?>">
+                                <?php
+                                echo Valida::GetMiniatura(
+                                    $imagemProduto->getCoImagem()->getDsCaminho(),
+                                    $bemMaisVendidos->getNoProduto(),
+                                    433,
+                                    325,
+                                    'img-responsive'
+                                );
+                                ?>
                             </a>
-                        </div><!-- /.single-product-gallery-item -->
+                            <?php }
+                            } ?>
+                        </div><!-- /.single-product-slider -->
 
-                        <div class="single-product-gallery-item" id="slide3">
-                            <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
-                                <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                     data-echo="<?php echo PASTASITE; ?>images/products/product-gallery-01.jpg"/>
-                            </a>
-                        </div><!-- /.single-product-gallery-item -->
-                    </div><!-- /.single-product-slider -->
+                        <div class="gallery-thumbs clearfix">
+                            <ul>
+                                <li><a class="horizontal-thumb active" data-target="#best-seller-single-product-slider"
+                                       data-slide="0" href="#slide1"><img alt=""
+                                                                          src="<?php echo PASTASITE; ?>images/blank.gif"
+                                                                          data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg"/></a>
+                                </li>
+                                <li><a class="horizontal-thumb" data-target="#best-seller-single-product-slider"
+                                       data-slide="1" href="#slide2"><img alt=""
+                                                                          src="<?php echo PASTASITE; ?>images/blank.gif"
+                                                                          data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg"/></a>
+                                </li>
+                                <li><a class="horizontal-thumb" data-target="#best-seller-single-product-slider"
+                                       data-slide="2" href="#slide3"><img alt=""
+                                                                          src="<?php echo PASTASITE; ?>images/blank.gif"
+                                                                          data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg"/></a>
+                                </li>
+                            </ul>
+                        </div><!-- /.gallery-thumbs -->
 
-                    <div class="gallery-thumbs clearfix">
-                        <ul>
-                            <li><a class="horizontal-thumb active" data-target="#best-seller-single-product-slider"
-                                   data-slide="0" href="#slide1"><img alt=""
-                                                                      src="<?php echo PASTASITE; ?>images/blank.gif"
-                                                                      data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg"/></a>
-                            </li>
-                            <li><a class="horizontal-thumb" data-target="#best-seller-single-product-slider"
-                                   data-slide="1" href="#slide2"><img alt=""
-                                                                      src="<?php echo PASTASITE; ?>images/blank.gif"
-                                                                      data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg"/></a>
-                            </li>
-                            <li><a class="horizontal-thumb" data-target="#best-seller-single-product-slider"
-                                   data-slide="2" href="#slide3"><img alt=""
-                                                                      src="<?php echo PASTASITE; ?>images/blank.gif"
-                                                                      data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg"/></a>
-                            </li>
-                        </ul>
-                    </div><!-- /.gallery-thumbs -->
-
-                    <div class="body">
-                        <div class="label-discount clear"></div>
-                        <div class="title">
-                            <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">CPU intel core i5-4670k 3.4GHz
-                                BOX B82-12-122-41</a>
+                        <div class="body">
+                            <div class="label-discount clear"></div>
+                            <div class="title">
+                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto"><?=
+                                    Valida::Resumi($bemMaisVendidos->getNoProduto(), 100);
+                                    ?></a>
+                            </div>
+                            <div class="brand"><?= $bemMaisVendidos->getCoFabricante()->getNoFabricante(); ?></div>
                         </div>
-                        <div class="brand">sony</div>
-                    </div>
-                    <div class="prices text-right">
-                        <div class="price-current inline">R$1199.00</div>
-                        <a href="cart.html" class="le-button big inline">add ao carrinho</a>
-                    </div>
-                </div><!-- /.product-item-holder -->
-            </div><!-- /.col -->
+                        <div class="prices text-right">
+                            <div class="price-current inline"><?=
+                                Valida::FormataMoeda(
+                                    $bemMaisVendidos->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
+                                );
+                                ?></div>
+                            <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                            Valida::GeraParametro(CO_PRODUTO . "/" .
+                                $bemMaisVendidos->getCoProduto()); ?>"
+                               class="le-button big inline">Ver Detalhes</a>
+                        </div>
+                    </div><!-- /.product-item-holder -->
+                </div><!-- /.col -->
 
-        </div><!-- /.product-grid-holder -->
-    </div><!-- /.container -->
+            </div><!-- /.product-grid-holder -->
+        </div><!-- /.container -->
 </section><!-- /#bestsellers -->
 <!-- ========================================= BEST SELLERS : END ========================================= -->

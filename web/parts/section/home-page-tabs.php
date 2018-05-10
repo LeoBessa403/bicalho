@@ -6,7 +6,6 @@
                 <li class="active"><a href="#featured" data-toggle="tab">destaque</a></li>
                 <li><a href="#new-arrivals" data-toggle="tab">novas chegadas</a></li>
             </ul>
-
             <!-- Tab panes -->
             <div class="tab-content">
                 <div class="tab-pane active" id="featured">
