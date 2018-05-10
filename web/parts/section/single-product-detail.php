@@ -7,20 +7,22 @@
         <div class="star-holder inline">
             <div class="star" data-score="4"></div>
         </div>
-        <div class="availability"><label>Disponibilidade:</label><span class="available">  em estoque</span></div>
+        <div class="availability"><label>Disponibilidade:</label><span> <?=
+                FuncoesSistema::ProdutoEstoqueLabel($prod->getNuEstoque());
+                ?></span></div>
 
         <div class="title"><a href="#"><?= $prod->getNoProduto() ;?></a></div>
         <div class="brand">
             <a href="<?php echo PASTASITE; ?>Marcas/Index"><?= $prod->getCoFabricante()->getNoFabricante() ;?></a>
         </div>
         <?php
-        $produto = $prod->getNoProduto().' - '. $prod->getCoFabricante()->getNoFabricante();
+        $noProduto = $prod->getNoProduto().' - '. $prod->getCoFabricante()->getNoFabricante();
         ?>
         <div class="social-row">
             <span title="Compartilhe no Facebook" class="st_facebook_hcount"></span>
             <span title="Compartilhe no Twitter" class="st_twitter_hcount"></span>
             <a class="whatsapp" title="Nos chame no WhatSapp"
-               href="<?php Valida::geraLinkWhatSapp(Mensagens::ZAP05, [$produto]) ?>"
+               href="<?php Valida::geraLinkWhatSapp(Mensagens::ZAP05, [$noProduto]) ?>"
                target="_blank">
                 <i class="fa fa-whatsapp"></i> WhatSapp
             </a>
@@ -32,7 +34,7 @@
         </div>
 
         <div class="excerpt">
-            <p><?= Valida::Resumi($prod->getDsDescricao(),300) ;?></p>
+            <p><?= Valida::Resumi($prod->getDsDescricao(),280) ;?></p>
         </div>
 
         <div class="prices">
@@ -41,7 +43,7 @@
                 ?></div>
             <div class="price-prev">de <?=
                 Valida::FormataMoeda(
-                        $prod->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 1.15
+                        $prod->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 1.10
                         ,'R$');
                 ?></div>
         </div>
@@ -54,7 +56,9 @@
                     <a class="plus" href="#add"></a>
                 </form>
             </div>
-            <a id="addto-cart" href="index.php?page=cart" class="le-button huge">add ao carrinho</a>
+            <a class="le-button huge" title="Nos chame no WhatSapp"
+               href="<?php Valida::geraLinkWhatSapp(Mensagens::ZAP05, [$noProduto]) ?>"
+               target="_blank">Saber Mais</a>
         </div><!-- /.qnt-holder -->
     </div><!-- /.body -->
 

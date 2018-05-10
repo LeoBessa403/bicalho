@@ -1,10 +1,3 @@
-<?php
-/** @var Segmento $segmentoController */
-$produtoController = new Produto();
-/** @var ProdutoService $produtoService */
-$produtoService = $produtoController->getService(PRODUTO_SERVICE);
-?>
-
 <!-- ========================================== SECTION – HERO ========================================= -->
 <div id="hero">
     <div id="owl-main" class="owl-carousel height-lg owl-inner-nav owl-ui-lg">
@@ -29,7 +22,11 @@ $produtoService = $produtoController->getService(PRODUTO_SERVICE);
                     <?= $foto; ?>
                     <div class="caption vertical-center text-left right" style="padding-right:0;">
                         <div class="big-text fadeInDown-1" style="text-align: right;">
-                            Super Desconto de <span class="big"><span class="sign">R$</span>250</span>
+                            Super Desconto de <span class="big"><span class="sign">R$</span><?=
+                                Valida::FormataMoeda(
+                                    floor($produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 0.10)
+                                );
+                                ?></span>
                         </div>
                         <div class="excerpt fadeInDown-2">
                             <?= $produto->getNoProduto(); ?>
@@ -39,7 +36,7 @@ $produtoService = $produtoController->getService(PRODUTO_SERVICE);
                         </div>
                         <div class="button-holder fadeInDown-3">
                             <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                                Valida::GeraParametro(CO_PRODUTO . "/" . $produto->getCoProduto()); ?>"
+                            Valida::GeraParametro(CO_PRODUTO . "/" . $produto->getCoProduto()); ?>"
                                class="big le-button ">Mais Detalhes</a>
                         </div>
                     </div><!-- /.caption -->

@@ -256,8 +256,8 @@
 
                     if($star.hasClass('big')){
                         $star.raty({
-                            starOff: '../images/star-big-off.png',
-                            starOn: '../images/star-big-on.png',
+                            starOff: '../../images/star-big-off.png',
+                            starOn: '../../images/star-big-on.png',
                             space: false,
                             score: function() {
                                 return $(this).attr('data-score');
@@ -265,8 +265,8 @@
                         });
                     }else{
                      $star.raty({
-                        starOff: '../images/star-off.png',
-                        starOn: '../images/star-on.png',
+                        starOff: '../../images/star-off.png',
+                        starOn: '../../images/star-on.png',
                         space: false,
                         score: function() {
                             return $(this).attr('data-score');

@@ -1,6 +1,8 @@
 <?php
     $containerClass = isset($containerClass) ? $containerClass : 'container';
     $hasSidebar = isset($hasSidebar) ? $hasSidebar : false;
+    /** @var ProdutoEntidade $produto */
+    $prod = $produto;
 ?>
 <!-- ========================================= SINGLE PRODUCT TAB ========================================= -->
 <section id="single-product-tab">
@@ -9,92 +11,32 @@
             
             <ul class="nav nav-tabs simple" >
                 <li class="active"><a href="#description" data-toggle="tab">Descrição</a></li>
-                <li><a href="#additional-info" data-toggle="tab">informação adicional</a></li>
-                <li><a href="#reviews" data-toggle="tab">Rever (3)</a></li>
             </ul><!-- /.nav-tabs -->
 
             <div class="tab-content">
                 <div class="tab-pane active" id="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet porttitor eros. Praesent quis diam placerat, accumsan velit interdum, accumsan orci. Nunc libero sem, elementum in semper in, sollicitudin vitae dolor. Etiam sed tempus nisl. Integer vel diam nulla. Suspendisse et aliquam est. Nulla molestie ante et tortor sollicitudin, at elementum odio lobortis. Pellentesque neque enim, feugiat in elit sed, pharetra tempus metus. Pellentesque non lorem nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-
-                    <p>Sed consequat orci vel rutrum blandit. Nam non leo vel risus cursus porta quis non nulla. Vestibulum vitae pellentesque nunc. In hac habitasse platea dictumst. Cras egestas, turpis a malesuada mollis, magna tortor scelerisque urna, in pellentesque diam tellus sit amet velit. Donec vel rhoncus nisi, eget placerat elit. Phasellus dignissim nisl vel lectus vehicula, eget vehicula nisl egestas. Duis pretium sed risus dapibus egestas. Nam lectus felis, sodales sit amet turpis se.</p>
-
+                    <?= $prod->getDsDescricao(); ?>
                     <div class="meta-row">
                         <div class="inline">
                             <label>Código:</label>
-                            <span>54687621</span>
+                            <span><?= $prod->getNuCodigoInterno(); ?></span>
                         </div><!-- /.inline -->
 
                         <span class="seperator">/</span>
 
                         <div class="inline">
                             <label>categorias:</label>
-                            <span><a href="#">50% desconto</a>,</span>
-                            <span><a href="#">jogos</a>,</span>
-                            <span><a href="#">desktop PC</a></span>
+                            <span><a href="#"><?= $prod->getCoCategoria()->getNoCategoria(); ?></a></span>
                         </div><!-- /.inline -->
 
                         <span class="seperator">/</span>
 
                         <div class="inline">
-                            <label>tag:</label>
-                            <span><a href="#">fast</a>,</span>
-                            <span><a href="#">gaming</a>,</span>
-                            <span><a href="#">strong</a></span>
+                            <label>Segmento:</label>
+                            <span><a href="#"><?= $prod->getCoCategoria()->getCoSegmento()->getDsSegmento(); ?></a></span>
                         </div><!-- /.inline -->
                     </div><!-- /.meta-row -->
                 </div><!-- /.tab-pane #description -->
-
-                <div class="tab-pane" id="additional-info">
-                    <ul class="tabled-data">
-                        <li>
-                            <label>peso</label>
-                            <div class="value">7.25 kg</div>
-                        </li>
-                        <li>
-                            <label>dimensões</label>
-                            <div class="value">90x60x90 cm</div>
-                        </li>
-                        <li>
-                            <label>Tamanho</label>
-                            <div class="value">um tamanho serve para todos</div>
-                        </li>
-                        <li>
-                            <label>cor</label>
-                            <div class="value">brnaco</div>
-                        </li>
-                        <li>
-                            <label>garantia</label>
-                            <div class="value">5 anos</div>
-                        </li>
-                    </ul><!-- /.tabled-data -->
-
-                    <div class="meta-row">
-                        <div class="inline">
-                            <label>Código:</label>
-                            <span>54687621</span>
-                        </div><!-- /.inline -->
-
-                        <span class="seperator">/</span>
-
-                        <div class="inline">
-                            <label>categorias:</label>
-                            <span><a href="#">50% desconto</a>,</span>
-                            <span><a href="#">jogos</a>,</span>
-                            <span><a href="#">desktop PC</a></span>
-                        </div><!-- /.inline -->
-
-                        <span class="seperator">/</span>
-
-                        <div class="inline">
-                            <label>tag:</label>
-                            <span><a href="#">fast</a>,</span>
-                            <span><a href="#">gaming</a>,</span>
-                            <span><a href="#">strong</a></span>
-                        </div><!-- /.inline -->
-                    </div><!-- /.meta-row -->
-                </div><!-- /.tab-pane #additional-info -->
-
 
                 <div class="tab-pane" id="reviews">
                     <div class="comments">
