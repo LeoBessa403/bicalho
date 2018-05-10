@@ -25,15 +25,19 @@
                                         <!--                                        <div class="ribbon green"><span>mais vendidos</span></div>-->
                                     <?php } ?>
                                     <div class="image">
-                                        <?php
-                                        echo Valida::GetMiniatura(
-                                            'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
-                                            $produto->getNoProduto(),
-                                            280,
-                                            210,
-                                            'img-responsive'
-                                        );
-                                        ?>
+                                        <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                        Valida::GeraParametro(CO_PRODUTO . "/" .
+                                            $produto->getCoProduto()); ?>">
+                                            <?php
+                                            echo Valida::GetMiniatura(
+                                                'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
+                                                $produto->getNoProduto(),
+                                                280,
+                                                210,
+                                                'img-responsive'
+                                            );
+                                            ?>
+                                        </a>
                                     </div>
                                     <div class="body">
                                         <?php
@@ -65,9 +69,10 @@
 
                                     <div class="hover-area">
                                         <div class="add-cart-button">
-                                            <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto"
-                                               class="le-button">
-                                                add ao carrinho</a>
+                                            <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                            Valida::GeraParametro(CO_PRODUTO . "/" .
+                                                $produto->getCoProduto()); ?>"
+                                               class="le-button">Ver Detalhes</a>
                                         </div>
                                         <div class="wish-compare">
                                             <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
@@ -96,15 +101,19 @@
                                     <div class="ribbon green"><span>novo!</span></div>
                                     <!--                                        <div class="ribbon blue"><span>mais vendidos</span></div>-->
                                     <div class="image">
-                                        <?php
-                                        echo Valida::GetMiniatura(
-                                            'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
-                                            $produto->getNoProduto(),
-                                            280,
-                                            210,
-                                            'img-responsive'
-                                        );
-                                        ?>
+                                        <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                        Valida::GeraParametro(CO_PRODUTO . "/" .
+                                            $produto->getCoProduto()); ?>">
+                                            <?php
+                                            echo Valida::GetMiniatura(
+                                                'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
+                                                $produto->getNoProduto(),
+                                                280,
+                                                210,
+                                                'img-responsive'
+                                            );
+                                            ?>
+                                        </a>
                                     </div>
                                     <div class="body">
                                         <?php
@@ -136,9 +145,10 @@
 
                                     <div class="hover-area">
                                         <div class="add-cart-button">
-                                            <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto"
-                                               class="le-button">
-                                                add ao carrinho</a>
+                                            <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                            Valida::GeraParametro(CO_PRODUTO . "/" .
+                                                $produto->getCoProduto()); ?>"
+                                               class="le-button">Ver Detalhes</a>
                                         </div>
                                         <div class="wish-compare">
                                             <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
