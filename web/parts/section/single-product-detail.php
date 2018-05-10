@@ -43,7 +43,7 @@
                 ?></div>
             <div class="price-prev">de <?=
                 Valida::FormataMoeda(
-                        $prod->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 1.10
+                        floor($prod->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 1.10)
                         ,'R$');
                 ?></div>
         </div>
