@@ -59,16 +59,15 @@
                                 </div>
                             </div>
                         </div><!-- /.product-item-holder -->
-
                     <?php } ?>
-
-
                 </div><!-- /.row -->
             </div><!-- /.col -->
             <div class="col-xs-12 col-md-5 no-margin">
                 <div class="product-item-holder size-big single-product-gallery small-gallery">
-
                     <div id="best-seller-single-product-slider" class="single-product-slider owl-carousel">
+
+
+
                         <div class="single-product-gallery-item" id="slide<?=
                         $bemMaisVendidos->getCoImagem()->getCoImagem();
                         ?>">
@@ -115,7 +114,7 @@
                         } ?>
                     </div><!-- /.single-product-slider -->
 
-                    <li class="gallery-thumbs clearfix">
+                    <div class="gallery-thumbs clearfix">
                         <ul>
                             <li>
                                 <a class="horizontal-thumb active" data-target="#best-seller-single-product-slider"
@@ -134,8 +133,6 @@
                                     ?>
                                 </a>
                             </li>
-
-                            <!--    CARREGA OUTRAS IMAGENS DO PRODUTO        -->
                             <?php
                             if (count($bemMaisVendidos->getCoProdutoImagem())) {
                                 /** @var ProdutoImagemEntidade $imagemProduto */
@@ -161,33 +158,33 @@
                                 <?php }
                             } ?>
                         </ul>
-                    </li>
-                </div><!-- /.gallery-thumbs -->
+                    </div><!-- /.gallery-thumbs -->
 
-                <div class="body">
-                    <div class="label-discount clear"></div>
-                    <div class="title">
+                    <div class="body">
+                        <div class="label-discount clear"></div>
+                        <div class="title">
+                            <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                            Valida::GeraParametro(CO_PRODUTO . "/" .
+                                $bemMaisVendidos->getCoProduto()); ?>"><?=
+                                Valida::Resumi($bemMaisVendidos->getNoProduto(), 100);
+                                ?></a>
+                        </div>
+                        <div class="brand"><?= $bemMaisVendidos->getCoFabricante()->getNoFabricante(); ?></div>
+                    </div>
+                    <div class="prices text-right">
+                        <div class="price-current inline"><?=
+                            Valida::FormataMoeda(
+                                $bemMaisVendidos->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
+                            );
+                            ?></div>
                         <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
                         Valida::GeraParametro(CO_PRODUTO . "/" .
-                            $bemMaisVendidos->getCoProduto()); ?>"><?=
-                            Valida::Resumi($bemMaisVendidos->getNoProduto(), 100);
-                            ?></a>
+                            $bemMaisVendidos->getCoProduto()); ?>"
+                           class="le-button big inline">Ver Detalhes</a>
                     </div>
-                    <div class="brand"><?= $bemMaisVendidos->getCoFabricante()->getNoFabricante(); ?></div>
-                </div>
-                <div class="prices text-right">
-                    <div class="price-current inline"><?=
-                        Valida::FormataMoeda(
-                            $bemMaisVendidos->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
-                        );
-                        ?></div>
-                    <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                    Valida::GeraParametro(CO_PRODUTO . "/" .
-                        $bemMaisVendidos->getCoProduto()); ?>"
-                       class="le-button big inline">Ver Detalhes</a>
-                </div>
-            </div><!-- /.product-item-holder -->
-        </div><!-- /.col -->
-    </div><!-- /.product-grid-holder -->
+                </div><!-- /.product-item-holder -->
+            </div><!-- /.col -->
+        </div><!-- /.product-grid-holder -->
+    </div><!-- /.container -->
 </section><!-- /#bestsellers -->
 <!-- ========================================= BEST SELLERS : END ========================================= -->
