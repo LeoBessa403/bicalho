@@ -5,6 +5,7 @@ class Produtos extends AbstractController
 
     public $fabricantes;
     public $produto;
+    public $segmentos;
 
 
     function DetalharProduto()
@@ -14,6 +15,9 @@ class Produtos extends AbstractController
         /** @var FabricanteService $fabricanteService */
         $fabricanteService = $this->getService(FABRICANTE_SERVICE);
         $this->fabricantes = $fabricanteService->PesquisaTodos();
+        /** @var SegmentoService $segmentoService */
+        $segmentoService = $this->getService(SEGMENTO_SERVICE);
+        $this->segmentos = $segmentoService->PesquisaTodos();
 
         $coProduto = UrlAmigavel::PegaParametro(CO_PRODUTO);
         $this->produto = [];

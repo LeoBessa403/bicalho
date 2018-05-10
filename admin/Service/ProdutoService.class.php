@@ -260,4 +260,26 @@ class  ProdutoService extends AbstractService
 
         return $dados;
     }
+
+    /**
+     * @param $limite
+     * @return array
+     */
+    public function pesquisaProdutos($limite)
+    {
+        $coProdutos = $this->ObjetoModel->pesquisaProdutos();
+        foreach ($coProdutos as $coProduto) {
+            $pesqProdutos[] = $coProduto[CO_PRODUTO];
+        }
+        $coProdutos = [];
+        for ($i = 0; $i < $limite; $i++) {
+            $coProduto = rand(0, count($pesqProdutos) - 1);
+            if (!in_array($pesqProdutos[$coProduto], $coProdutos)) {
+                $coProdutos[] = $pesqProdutos[$coProduto];
+            } else {
+                $limite = $limite + 1;
+            }
+        }
+        return $this->ObjetoModel->pesquisaProdutosAleatorios(implode(", ", $coProdutos));
+    }
 }

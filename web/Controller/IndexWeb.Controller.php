@@ -6,6 +6,8 @@ class IndexWeb extends AbstractController
     public $resultAlt;
     public $form;
     public $produtoService;
+    public $produtosDestaque;
+    public $novasChegadas;
 
     public function Index()
     {
@@ -13,7 +15,17 @@ class IndexWeb extends AbstractController
         $produtoDestaqueService = $this->getService(PRODUTO_DESTAQUE_SERVICE);
         $this->result = $produtoDestaqueService->PesquisaTodos();
         /** @var ProdutoService $produtoService */
-        $this->produtoService = $this->getService(PRODUTO_SERVICE);
+        $produtoService = $this->getService(PRODUTO_SERVICE);
+
+        $this->produtosDestaque =  $produtoService->pesquisaProdutos(4);
+        $this->novasChegadas =  $produtoService->pesquisaProdutos(4);
+
+
+
+
+
+        $this->produtoService = $produtoService;
+
     }
 }
 ?>
