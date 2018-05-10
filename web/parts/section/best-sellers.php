@@ -91,73 +91,74 @@
                         <!--    CARREGA OUTRAS IMAGENS DO PRODUTO        -->
                         <?php
                         if (count($bemMaisVendidos->getCoProdutoImagem())) {
-                        /** @var ProdutoImagemEntidade $imagemProduto */
-                        foreach ($bemMaisVendidos->getCoProdutoImagem() as $imagemProduto) {
-                        ?>
-                        <div class="single-product-gallery-item" id="slide<?=
-                        $imagemProduto->getCoImagem()->getCoImagem();
-                        ?>">
-                            <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                            Valida::GeraParametro(CO_PRODUTO . "/" .
-                                $imagemProduto->getCoProduto()); ?>">
-                                <?php
-                                echo Valida::GetMiniatura(
-                                    $imagemProduto->getCoImagem()->getDsCaminho(),
-                                    $bemMaisVendidos->getNoProduto(),
-                                    433,
-                                    325,
-                                    'img-responsive'
-                                );
+                            /** @var ProdutoImagemEntidade $imagemProduto */
+                            foreach ($bemMaisVendidos->getCoProdutoImagem() as $imagemProduto) {
                                 ?>
-                            </a>
+                                <div class="single-product-gallery-item" id="slide<?=
+                                $imagemProduto->getCoImagem()->getCoImagem();
+                                ?>">
+                                    <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                    Valida::GeraParametro(CO_PRODUTO . "/" .
+                                        $imagemProduto->getCoProduto()); ?>">
+                                        <?php
+                                        echo Valida::GetMiniatura(
+                                            $imagemProduto->getCoImagem()->getDsCaminho(),
+                                            $bemMaisVendidos->getNoProduto(),
+                                            433,
+                                            325,
+                                            'img-responsive'
+                                        );
+                                        ?>
+                                    </a>
+                                </div><!-- /.single-product-gallery-item -->
                             <?php }
-                            } ?>
-                        </div><!-- /.single-product-slider -->
+                        } ?>
+                    </div><!-- /.single-product-slider -->
 
-                        <div class="gallery-thumbs clearfix">
-                            <ul>
-                                <li><a class="horizontal-thumb active" data-target="#best-seller-single-product-slider"
-                                       data-slide="0" href="#slide1"><img alt=""
-                                                                          src="<?php echo PASTASITE; ?>images/blank.gif"
-                                                                          data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg"/></a>
-                                </li>
-                                <li><a class="horizontal-thumb" data-target="#best-seller-single-product-slider"
-                                       data-slide="1" href="#slide2"><img alt=""
-                                                                          src="<?php echo PASTASITE; ?>images/blank.gif"
-                                                                          data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg"/></a>
-                                </li>
-                                <li><a class="horizontal-thumb" data-target="#best-seller-single-product-slider"
-                                       data-slide="2" href="#slide3"><img alt=""
-                                                                          src="<?php echo PASTASITE; ?>images/blank.gif"
-                                                                          data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg"/></a>
-                                </li>
-                            </ul>
-                        </div><!-- /.gallery-thumbs -->
+                    <div class="gallery-thumbs clearfix">
+                        <ul>
+                            <li><a class="horizontal-thumb active" data-target="#best-seller-single-product-slider"
+                                   data-slide="0" href="#slide1"><img alt=""
+                                                                      src="<?php echo PASTASITE; ?>images/blank.gif"
+                                                                      data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg"/></a>
+                            </li>
+                            <li><a class="horizontal-thumb" data-target="#best-seller-single-product-slider"
+                                   data-slide="1" href="#slide2"><img alt=""
+                                                                      src="<?php echo PASTASITE; ?>images/blank.gif"
+                                                                      data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg"/></a>
+                            </li>
+                            <li><a class="horizontal-thumb" data-target="#best-seller-single-product-slider"
+                                   data-slide="2" href="#slide3"><img alt=""
+                                                                      src="<?php echo PASTASITE; ?>images/blank.gif"
+                                                                      data-echo="<?php echo PASTASITE; ?>images/products/gallery-thumb-01.jpg"/></a>
+                            </li>
+                        </ul>
+                    </div><!-- /.gallery-thumbs -->
 
-                        <div class="body">
-                            <div class="label-discount clear"></div>
-                            <div class="title">
-                                <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto"><?=
-                                    Valida::Resumi($bemMaisVendidos->getNoProduto(), 100);
-                                    ?></a>
-                            </div>
-                            <div class="brand"><?= $bemMaisVendidos->getCoFabricante()->getNoFabricante(); ?></div>
+                    <div class="body">
+                        <div class="label-discount clear"></div>
+                        <div class="title">
+                            <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto"><?=
+                                Valida::Resumi($bemMaisVendidos->getNoProduto(), 100);
+                                ?></a>
                         </div>
-                        <div class="prices text-right">
-                            <div class="price-current inline"><?=
-                                Valida::FormataMoeda(
-                                    $bemMaisVendidos->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
-                                );
-                                ?></div>
-                            <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                            Valida::GeraParametro(CO_PRODUTO . "/" .
-                                $bemMaisVendidos->getCoProduto()); ?>"
-                               class="le-button big inline">Ver Detalhes</a>
-                        </div>
-                    </div><!-- /.product-item-holder -->
-                </div><!-- /.col -->
+                        <div class="brand"><?= $bemMaisVendidos->getCoFabricante()->getNoFabricante(); ?></div>
+                    </div>
+                    <div class="prices text-right">
+                        <div class="price-current inline"><?=
+                            Valida::FormataMoeda(
+                                $bemMaisVendidos->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
+                            );
+                            ?></div>
+                        <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                        Valida::GeraParametro(CO_PRODUTO . "/" .
+                            $bemMaisVendidos->getCoProduto()); ?>"
+                           class="le-button big inline">Ver Detalhes</a>
+                    </div>
+                </div><!-- /.product-item-holder -->
+            </div><!-- /.col -->
 
-            </div><!-- /.product-grid-holder -->
-        </div><!-- /.container -->
+        </div><!-- /.product-grid-holder -->
+    </div><!-- /.container -->
 </section><!-- /#bestsellers -->
 <!-- ========================================= BEST SELLERS : END ========================================= -->
