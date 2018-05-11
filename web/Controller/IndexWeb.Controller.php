@@ -15,9 +15,7 @@ class IndexWeb extends AbstractController
     {
         /** @var ProdutoDestaqueService $produtoDestaqueService */
         $produtoDestaqueService = $this->getService(PRODUTO_DESTAQUE_SERVICE);
-        $this->result = $produtoDestaqueService->PesquisaTodos([
-            ST_STATUS => StatusAcessoEnum::ATIVO
-        ]);
+        $this->result = $produtoDestaqueService->PesquisaTodos();
         /** @var ProdutoService $produtoService */
         $produtoService = $this->getService(PRODUTO_SERVICE);
 
