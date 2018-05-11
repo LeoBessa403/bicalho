@@ -7,59 +7,65 @@
             <div class="col-xs-12 col-md-7 no-margin">
                 <div class="row no-margin">
                     <?php
+                    $i = 0;
                     /** @var ProdutoEntidade $produto */
-                    foreach ($maisVendidos as $produto) {
-                        ?>
-                        <div class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
-                            <div class="product-item">
-                                <div class="image">
+                    foreach ($maisVendidos  as $produto) {
+                    ?>
+                    <div class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
+                        <div class="product-item">
+                            <div class="image">
+                                <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                Valida::GeraParametro(CO_PRODUTO . "/" .
+                                    $produto->getCoProduto()); ?>">
+                                    <?php
+                                    echo Valida::GetMiniatura(
+                                        'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
+                                        $produto->getNoProduto(),
+                                        194,
+                                        143,
+                                        'img-responsive'
+                                    );
+                                    ?>
+                                </a>
+                            </div>
+                            <div class="body">
+                                <div class="label-discount clear"></div>
+                                <div class="title">
                                     <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
                                     Valida::GeraParametro(CO_PRODUTO . "/" .
-                                        $produto->getCoProduto()); ?>">
-                                        <?php
-                                        echo Valida::GetMiniatura(
-                                            'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
-                                            $produto->getNoProduto(),
-                                            194,
-                                            143,
-                                            'img-responsive'
-                                        );
-                                        ?>
-                                    </a>
+                                        $produto->getCoProduto()); ?>"><?=
+                                        Valida::Resumi($produto->getNoProduto(), 40);
+                                        ?></a>
                                 </div>
-                                <div class="body">300
-                                    <div class="label-discount clear"></div>
-                                    <div class="title">
-                                        <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                                        Valida::GeraParametro(CO_PRODUTO . "/" .
-                                            $produto->getCoProduto()); ?>"><?=
-                                            Valida::Resumi($produto->getNoProduto(), 100);
-                                            ?></a>
-                                    </div>
-                                    <div class="brand"><?= $produto->getCoFabricante()->getNoFabricante(); ?></div>
+                                <div class="brand"><?= $produto->getCoFabricante()->getNoFabricante(); ?></div>
+                            </div>
+                            <div class="prices">
+                                <div class="price-current text-right">por <?=
+                                    Valida::FormataMoeda(
+                                        $produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
+                                    );
+                                    ?></div>
+                            </div>
+                            <div class="hover-area">
+                                <div class="add-cart-button">
+                                    <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                    Valida::GeraParametro(CO_PRODUTO . "/" .
+                                        $produto->getCoProduto()); ?>"
+                                       class="le-button">Ver Detalhes</a>
                                 </div>
-                                <div class="prices">
-                                    <div class="price-current text-right">por <?=
-                                        Valida::FormataMoeda(
-                                            $produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
-                                        );
-                                        ?></div>
-                                </div>
-                                <div class="hover-area">
-                                    <div class="add-cart-button">
-                                        <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                                        Valida::GeraParametro(CO_PRODUTO . "/" .
-                                            $produto->getCoProduto()); ?>"
-                                           class="le-button">Ver Detalhes</a>
-                                    </div>
-                                    <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                        <a class="btn-add-to-compare" href="#">Compare</a>
-                                    </div>
+                                <div class="wish-compare">
+                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
+                                    <a class="btn-add-to-compare" href="#">Compare</a>
                                 </div>
                             </div>
-                        </div><!-- /.product-item-holder -->
-                    <?php } ?>
+                        </div>
+                    </div><!-- /.product-item-holder -->
+                    <?php if ($i == 2) { ?>
+                </div><!-- /.row -->
+                <div class="row no-margin">
+                    <?php }
+                    $i++;
+                    } ?>
                 </div><!-- /.row -->
             </div><!-- /.col -->
             <div class="col-xs-12 col-md-5 no-margin">

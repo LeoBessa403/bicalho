@@ -1,7 +1,13 @@
+<?php
+/** @var CategoriaEntidade $cat */
+$cat = $categoria;
+?>
 <section id="gaming">
     <div class="grid-list-products">
-        <h2 class="section-title">Categoria</h2>
-
+        <h2 class="section-title">Categoria <?php
+            if (count($cat) == 1)
+                echo $cat->getNoCategoria();
+            ?></h2>
         <div class="control-bar">
             <div id="popularity-sort" class="le-select">
                 <select data-placeholder="sort by popularity">
@@ -13,9 +19,9 @@
 
             <div id="item-count" class="le-select">
                 <select>
-                    <option value="1">24 por página</option>
-                    <option value="2">48 por página</option>
-                    <option value="3">32 por página</option>
+                    <option value="1">12 por página</option>
+                    <option value="2">24 por página</option>
+                    <option value="3">36 por página</option>
                 </select>
             </div>
 
@@ -33,291 +39,92 @@
 
         <div class="tab-content">
             <div id="grid-view" class="products-grid fade tab-pane <?php if (!$isListView) echo 'in active'; ?>">
-
                 <div class="product-grid-holder">
                     <div class="row no-margin">
 
-                        <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
-                            <div class="product-item">
-                                <div class="ribbon red"><span>destaque</span></div>
-                                <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                         data-echo="<?php echo PASTASITE; ?>images/products/product-01.jpg"/>
-                                </div>
-                                <div class="body">
-                                    <div class="label-discount green">50% desconto</div>
-                                    <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop -
-                                            Windows 8 SVF14322CXW</a>
-                                    </div>
-                                    <div class="brand">sony</div>
-                                </div>
-                                <div class="prices">
-                                    <div class="price-prev">de R$1399.00</div>
-                                    <div class="price-current pull-right">por R$1199.00</div>
-                                </div>
-                                <div class="hover-area">
-                                    <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                            ao carrinho</a>
-                                    </div>
-                                    <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                        <a class="btn-add-to-compare" href="#">compare</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.product-item -->
-                        </div><!-- /.product-item-holder -->
+                        <?php
+                        /** @var CategoriaEntidade $categ */
+                        foreach ($cat as $categ) {
+                            if (count($categ->getCoProduto())) {
+                                /** @var ProdutoEntidade $prod */
+                                foreach ($categ->getCoProduto() as $prod) {
+                                    /** @var ProdutoEntidade $produto */
+                                    $produto = $produtoService->PesquisaUmRegistro($prod->getCoProduto());
+                                    ?>
+                                    <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
+                                        <div class="product-item">
+                                            <?php
+                                            if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
+                                                ?>
+                                                <div class="ribbon red"><span>destaque</span></div>
+                                            <?php } ?>
+                                            <!--                                            <div class="ribbon green"><span>mais vendido</span></div>-->
+                                            <!--                                            <div class="ribbon blue"><span>novo</span></div>-->
 
-                        <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
-                            <div class="product-item">
-                                <div class="ribbon blue"><span>novo</span></div>
-                                <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                         data-echo="<?php echo PASTASITE; ?>images/products/product-02.jpg"/>
-                                </div>
-                                <div class="body">
-                                    <div class="label-discount clear"></div>
-                                    <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">White lumia 9001</a>
-                                    </div>
-                                    <div class="brand">nokia</div>
-                                </div>
-                                <div class="prices">
-                                    <div class="price-prev">de R$1399.00</div>
-                                    <div class="price-current pull-right">por R$1199.00</div>
-                                </div>
-                                <div class="hover-area">
-                                    <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                            ao carrinho</a>
-                                    </div>
-                                    <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                        <a class="btn-add-to-compare" href="#">compare</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.product-item -->
-                        </div><!-- /.product-item-holder -->
+                                            <div class="image">
+                                                <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                                Valida::GeraParametro(CO_PRODUTO . "/" .
+                                                    $produto->getCoProduto()); ?>">
+                                                    <?php
+                                                    echo Valida::GetMiniatura(
+                                                        'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
+                                                        $produto->getNoProduto(),
+                                                        260,
+                                                        200,
+                                                        'img-responsive'
+                                                    );
+                                                    ?>
+                                                </a>
+                                            </div>
+                                            <div class="body">
+                                                <?php
+                                                if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
+                                                    ?>
+                                                    <div class="label-discount green">10% desconto</div>
+                                                <?php } else { ?>
+                                                    <div class="label-discount clear"></div>
+                                                <?php } ?>
+                                                <div class="title">
+                                                    <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                                    Valida::GeraParametro(CO_PRODUTO . "/" .
+                                                        $produto->getCoProduto()); ?>"><?=
+                                                        Valida::Resumi($produto->getNoProduto(), 40);
+                                                        ?></a>
+                                                </div>
+                                                <div class="brand"><?= $produto->getCoFabricante()->getNoFabricante(); ?></div>
+                                            </div>
+                                            <div class="prices">
+                                                <div class="price-prev">de <?=
+                                                    Valida::FormataMoeda(
+                                                        floor($produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 1.10)
+                                                        , 'R$');
+                                                    ?></div>
+                                                <div class="price-current pull-right">por <?=
+                                                    Valida::FormataMoeda(
+                                                        $produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
+                                                    );
+                                                    ?></div>
+                                            </div>
+                                            <div class="hover-area">
+                                                <div class="add-cart-button">
+                                                    <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                                    Valida::GeraParametro(CO_PRODUTO . "/" .
+                                                        $produto->getCoProduto()); ?>"
+                                                       class="le-button">Ver Detalhes</a>
+                                                </div>
+                                                <div class="wish-compare">
+                                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
+                                                    <a class="btn-add-to-compare" href="#">compare</a>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.product-item -->
+                                    </div><!-- /.product-item-holder -->
 
-                        <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
-                            <div class="product-item">
-                                <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                         data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg"/>
-                                </div>
-                                <div class="body">
-                                    <div class="label-discount clear"></div>
-                                    <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">POV Action Cam</a>
-                                    </div>
-                                    <div class="brand">sony</div>
-                                </div>
-                                <div class="prices">
-                                    <div class="price-prev">de R$1399.00</div>
-                                    <div class="price-current pull-right">por R$1199.00</div>
-                                </div>
-                                <div class="hover-area">
-                                    <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                            ao carrinho</a>
-                                    </div>
-                                    <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                        <a class="btn-add-to-compare" href="#">compare</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.product-item -->
-                        </div><!-- /.product-item-holder -->
 
-                        <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
-                            <div class="product-item">
-                                <div class="ribbon red"><span>destaque</span></div>
-                                <div class="ribbon green"><span>mais vendido</span></div>
-                                <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                         data-echo="<?php echo PASTASITE; ?>images/products/product-04.jpg"/>
-                                </div>
-                                <div class="body">
-                                    <div class="label-discount clear"></div>
-                                    <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">Netbook Acer
-                                            TravelMate B113-E-10072</a>
-                                    </div>
-                                    <div class="brand">acer</div>
-                                </div>
-                                <div class="prices">
-                                    <div class="price-prev">de R$1399.00</div>
-                                    <div class="price-current pull-right">por R$1199.00</div>
-                                </div>
-                                <div class="hover-area">
-                                    <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                            ao carrinho</a>
-                                    </div>
-                                    <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                        <a class="btn-add-to-compare" href="#">compare</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.product-item -->
-                        </div><!-- /.product-item-holder -->
+                                <?php }
+                            }
+                        } ?>
 
-                        <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
-                            <div class="product-item">
-                                <div class="ribbon red"><span>destaque</span></div>
-                                <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                         data-echo="<?php echo PASTASITE; ?>images/products/product-01.jpg"/>
-                                </div>
-                                <div class="body">
-                                    <div class="label-discount green">50% desconto</div>
-                                    <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop -
-                                            Windows 8 SVF14322CXW</a>
-                                    </div>
-                                    <div class="brand">sony</div>
-                                </div>
-                                <div class="prices">
-                                    <div class="price-prev">de R$1399.00</div>
-                                    <div class="price-current pull-right">por R$1199.00</div>
-                                </div>
-                                <div class="hover-area">
-                                    <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                            ao carrinho</a>
-                                    </div>
-                                    <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                        <a class="btn-add-to-compare" href="#">compare</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.product-item -->
-                        </div><!-- /.product-item-holder -->
-
-                        <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
-                            <div class="product-item">
-                                <div class="ribbon blue"><span>novo</span></div>
-                                <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                         data-echo="<?php echo PASTASITE; ?>images/products/product-02.jpg"/>
-                                </div>
-                                <div class="body">
-                                    <div class="label-discount clear"></div>
-                                    <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">White lumia 9001</a>
-                                    </div>
-                                    <div class="brand">nokia</div>
-                                </div>
-                                <div class="prices">
-                                    <div class="price-prev">de R$1399.00</div>
-                                    <div class="price-current pull-right">por R$1199.00</div>
-                                </div>
-                                <div class="hover-area">
-                                    <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                            ao carrinho</a>
-                                    </div>
-                                    <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                        <a class="btn-add-to-compare" href="#">compare</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.product-item -->
-                        </div><!-- /.product-item-holder -->
-
-                        <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
-                            <div class="product-item">
-                                <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                         data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg"/>
-                                </div>
-                                <div class="body">
-                                    <div class="label-discount clear"></div>
-                                    <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">POV Action Cam</a>
-                                    </div>
-                                    <div class="brand">sony</div>
-                                </div>
-                                <div class="prices">
-                                    <div class="price-prev">de R$1399.00</div>
-                                    <div class="price-current pull-right">por R$1199.00</div>
-                                </div>
-                                <div class="hover-area">
-                                    <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                            ao carrinho</a>
-                                    </div>
-                                    <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                        <a class="btn-add-to-compare" href="#">compare</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.product-item -->
-                        </div><!-- /.product-item-holder -->
-
-                        <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
-                            <div class="product-item">
-                                <div class="ribbon red"><span>destaque</span></div>
-                                <div class="ribbon green"><span>mais vendido</span></div>
-                                <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                         data-echo="<?php echo PASTASITE; ?>images/products/product-04.jpg"/>
-                                </div>
-                                <div class="body">
-                                    <div class="label-discount clear"></div>
-                                    <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">Netbook Acer
-                                            TravelMate B113-E-10072</a>
-                                    </div>
-                                    <div class="brand">acer</div>
-                                </div>
-                                <div class="prices">
-                                    <div class="price-prev">de R$1399.00</div>
-                                    <div class="price-current pull-right">por R$1199.00</div>
-                                </div>
-                                <div class="hover-area">
-                                    <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                            ao carrinho</a>
-                                    </div>
-                                    <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                        <a class="btn-add-to-compare" href="#">compare</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.product-item -->
-                        </div><!-- /.product-item-holder -->
-
-                        <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
-                            <div class="product-item">
-                                <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                         data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg"/>
-                                </div>
-                                <div class="body">
-                                    <div class="label-discount clear"></div>
-                                    <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">POV Action Cam</a>
-                                    </div>
-                                    <div class="brand">sony</div>
-                                </div>
-                                <div class="prices">
-                                    <div class="price-prev">de R$1399.00</div>
-                                    <div class="price-current pull-right">por R$1199.00</div>
-                                </div>
-                                <div class="hover-area">
-                                    <div class="add-cart-button">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="le-button">add
-                                            ao carrinho</a>
-                                    </div>
-                                    <div class="wish-compare">
-                                        <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                        <a class="btn-add-to-compare" href="#">compare</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.product-item -->
-                        </div><!-- /.product-item-holder -->
 
                     </div><!-- /.row -->
                 </div><!-- /.product-grid-holder -->
