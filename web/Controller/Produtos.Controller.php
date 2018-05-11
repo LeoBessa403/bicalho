@@ -4,12 +4,13 @@ class Produtos extends AbstractController
 {
 
     public $fabricantes;
-    public $produto;
+    public $produtoPrincipal;
     public $segmentos;
     public $maisVendidos;
 
     function DetalharProduto()
     {
+        $coProduto = null;
         /** @var ProdutoService $produtoService */
         $produtoService = $this->getService(PRODUTO_SERVICE);
         /** @var FabricanteService $fabricanteService */
@@ -24,7 +25,7 @@ class Produtos extends AbstractController
         $this->produto = [];
         if ($coProduto) {
             /** @var ProdutoEntidade $produto */
-            $this->produto = $produtoService->PesquisaUmRegistro($coProduto);
+            $this->produtoPrincipal = $produtoService->PesquisaUmRegistro($coProduto);
         }
     }
 

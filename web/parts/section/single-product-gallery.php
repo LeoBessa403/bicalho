@@ -4,13 +4,13 @@
         <div id="owl-single-product" class="owl-carousel">
 
             <!--    CARREGA A CAPA DO PRODUTO        -->
-            <div class="single-product-gallery-item" id="slide<?= $produto->getCoImagem()->getCoImagem(); ?>">
+            <div class="single-product-gallery-item" id="slide<?= $produtoPrincipal->getCoImagem()->getCoImagem(); ?>">
                 <a data-rel="prettyphoto" target="_blank"
-                   href="<?= HOME . 'uploads/ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(); ?>">
+                   href="<?= HOME . 'uploads/ProdutosCapa/' . $produtoPrincipal->getCoImagem()->getDsCaminho(); ?>">
                     <?=
                     Valida::GetMiniatura(
-                        'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
-                        $produto->getNoProduto(),
+                        'ProdutosCapa/' . $produtoPrincipal->getCoImagem()->getDsCaminho(),
+                        $produtoPrincipal->getNoProduto(),
                         500,
                         400,
                         'img-responsive'
@@ -21,9 +21,9 @@
 
             <!--    CARREGA OUTRAS IMAGENS DO PRODUTO        -->
             <?php
-            if (count($produto->getCoProdutoImagem())) {
+            if (count($produtoPrincipal->getCoProdutoImagem())) {
                 /** @var ProdutoImagemEntidade $imagemProduto */
-                foreach ($produto->getCoProdutoImagem() as $imagemProduto) {
+                foreach ($produtoPrincipal->getCoProdutoImagem() as $imagemProduto) {
                     echo '<div class="single-product-gallery-item" 
                                 id="slide' . $imagemProduto->getCoImagem()->getCoImagem() . '">';
                     echo '<a data-rel="prettyphoto" target="_blank"
@@ -40,11 +40,11 @@
             }
 
             // CARREGA VÍDEO
-            if ($produto->getDsCaminhoVideo()) {
+            if ($produtoPrincipal->getDsCaminhoVideo()) {
                 echo '<div class="single-product-gallery-item" 
-                                id="slide-video' . $produto->getCoImagem()->getCoImagem() . '">';
+                                id="slide-video' . $produtoPrincipal->getCoImagem()->getCoImagem() . '">';
                 echo '<a data-rel="prettyphoto" target="_blank"
-                   href="' . $produto->getDsCaminhoVideo() . '">';
+                   href="' . $produtoPrincipal->getDsCaminhoVideo() . '">';
                 echo Valida::GetMiniatura(
                     'youtube-vid.jpg',
                     'Ver Vídeo',
@@ -62,19 +62,19 @@
                 <!-- CARREGA A MINIATURA DA IMAGEM DE CAPA DO PRODUTO-->
                 <?php
                 echo '<div class="single-product-gallery-item" 
-                                data-id="slide' . $produto->getCoImagem()->getCoImagem() . '">';
+                                data-id="slide' . $produtoPrincipal->getCoImagem()->getCoImagem() . '">';
                 echo Valida::GetMiniatura(
-                    'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
-                    $produto->getNoProduto(),
+                    'ProdutosCapa/' . $produtoPrincipal->getCoImagem()->getDsCaminho(),
+                    $produtoPrincipal->getNoProduto(),
                     50,
                     50,
                     'img-responsive'
                 );
                 echo '</div>';
                 // CARREGA A MINIATURA DAS IMAGEM DO PRODUTO
-                if (count($produto->getCoProdutoImagem())) {
+                if (count($produtoPrincipal->getCoProdutoImagem())) {
                     /** @var ProdutoImagemEntidade $imagemProduto */
-                    foreach ($produto->getCoProdutoImagem() as $imagemProduto) {
+                    foreach ($produtoPrincipal->getCoProdutoImagem() as $imagemProduto) {
                         echo '<div class="single-product-gallery-item" 
                                 data-id="slide' . $imagemProduto->getCoImagem()->getCoImagem() . '">';
                         echo Valida::GetMiniatura(
@@ -89,9 +89,9 @@
                 }
 
                 // CARREGA VÍDEO
-                if ($produto->getDsCaminhoVideo()) {
+                if ($produtoPrincipal->getDsCaminhoVideo()) {
                     echo '<div class="single-product-gallery-item" 
-                                data-id="slide-video' . $produto->getCoImagem()->getCoImagem() . '">';
+                                data-id="slide-video' . $produtoPrincipal->getCoImagem()->getCoImagem() . '">';
                     echo Valida::GetMiniatura(
                         'youtube-vid.jpg',
                         'Ver Vídeo',
@@ -103,11 +103,11 @@
                 }
 
                 // CARREGA MANUAL
-                if ($produto->getDsCaminhoManual()) {
+                if ($produtoPrincipal->getDsCaminhoManual()) {
                     echo '<div class="single-product-gallery-item" 
-                                data-id="slide-manual' . $produto->getCoImagem()->getCoImagem() . '">';
+                                data-id="slide-manual' . $produtoPrincipal->getCoImagem()->getCoImagem() . '">';
                     echo '<a data-rel="prettyphoto" target="_blank"
-                   href="' . $produto->getDsCaminhoManual() . '">';
+                   href="' . $produtoPrincipal->getDsCaminhoManual() . '">';
                     echo Valida::GetMiniatura(
                         'download.jpg',
                         'Ver Vídeo',
