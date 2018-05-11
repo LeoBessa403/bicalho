@@ -2,6 +2,11 @@
 $carouselID = isset($carouselID) ? $carouselID : 'owl-recently-viewed';
 $containerClass = isset($containerClass) ? $containerClass : 'container';
 $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
+
+$produtoController = new Produto();
+/** @var ProdutoService $produtoService */
+$produtoService = $produtoController->getService(PRODUTO_SERVICE);
+$vistosRecentemente =  $produtoService->pesquisaProdutos(8);
 ?>
 <!-- ========================================= RECENTLY VIEWED ========================================= -->
 <section id="recently-reviewd" class="wow fadeInUp">

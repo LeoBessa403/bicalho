@@ -10,7 +10,6 @@ class IndexWeb extends AbstractController
     public $novasChegadas;
     public $maisVendidos;
     public $bemMaisVendidos;
-    public $vistosRecentemente;
 
     public function Index()
     {
@@ -23,7 +22,6 @@ class IndexWeb extends AbstractController
         $this->produtosDestaque =  $produtoService->pesquisaProdutos(4);
         $this->novasChegadas =  $produtoService->pesquisaProdutos(4);
         $this->maisVendidos =  $produtoService->pesquisaProdutos(6);
-        $this->vistosRecentemente =  $produtoService->pesquisaProdutos(8);
         $bemMaisVendidos =  $produtoService->pesquisaProdutos(1);
 
         /** @var ProdutoEntidade $this->bemMaisVendidos */

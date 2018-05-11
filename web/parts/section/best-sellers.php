@@ -66,8 +66,6 @@
                 <div class="product-item-holder size-big single-product-gallery small-gallery">
                     <div id="best-seller-single-product-slider" class="single-product-slider owl-carousel">
 
-
-
                         <div class="single-product-gallery-item" id="slide<?=
                         $bemMaisVendidos->getCoImagem()->getCoImagem();
                         ?>">
@@ -85,7 +83,6 @@
                                 ?>
                             </a>
                         </div><!-- /.single-product-gallery-item -->
-
 
                         <!--    CARREGA OUTRAS IMAGENS DO PRODUTO        -->
                         <?php
