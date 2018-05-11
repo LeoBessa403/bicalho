@@ -2,7 +2,7 @@
 $pages = array(
     'IndexWeb/Index' => 'Home',
     'Categorias/ListarCategorias' => 'Categorias',
-    'Marcas/ListarMarcas' => 'Marcas',
+    'Fabricantes/ListarFabricantes' => 'Fabricantes',
     'Institucional/SobreNos' => 'Sobre nós',
     'Institucional/Contatos' => 'Contatos',
     'Institucional/Duvidas' => 'Dúvidas',

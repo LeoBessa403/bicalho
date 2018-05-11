@@ -9,7 +9,11 @@
 
         <div class="title"><a href="#"><?= $produtoPrincipal->getNoProduto() ;?></a></div>
         <div class="brand">
-            <a href="<?php echo PASTASITE; ?>Marcas/Index"><?= $produtoPrincipal->getCoFabricante()->getNoFabricante() ;?></a>
+            <a href="<?php echo PASTASITE; ?>Fabricantes/ListarFabricantes/<?=
+            Valida::GeraParametro(CO_FABRICANTE . "/" .
+                $produtoPrincipal->getCoFabricante()->getCoFabricante()); ?>"><?=
+                $produtoPrincipal->getCoFabricante()->getNoFabricante();
+                ?></a>
         </div>
         <?php
         $noProduto = $produtoPrincipal->getNoProduto().' - '. $produtoPrincipal->getCoFabricante()->getNoFabricante();

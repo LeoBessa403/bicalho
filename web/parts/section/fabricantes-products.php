@@ -1,14 +1,14 @@
 <?php
-/** @var CategoriaEntidade $categor */
-$categor = $categoria[0];
-/** @var CategoriaEntidade $cat */
-$cat = $categoria;
+/** @var FabricanteEntidade $listaFabric */
+$listaFabric = $listaFabricantes[0];
+/** @var FabricanteEntidade $fab */
+$listaFab = $listaFabricantes;
 ?>
 <section id="gaming">
     <div class="grid-list-products">
-        <h2 class="section-title">Categoria <?php
-            if (count($categoria) == 1)
-                echo $categor->getNoCategoria();
+        <h2 class="section-title">Fabricante <?php
+            if (count($listaFabricantes) == 1)
+                echo $listaFabric->getNoFabricante();
             ?></h2>
         <div class="control-bar">
             <div id="popularity-sort" class="le-select">
@@ -45,11 +45,11 @@ $cat = $categoria;
                     <div class="row no-margin">
 
                         <?php
-                        /** @var CategoriaEntidade $categ */
-                        foreach ($cat as $categ) {
-                            if (count($categ->getCoProduto())) {
+                        /** @var FabricanteEntidade $listaFabri */
+                        foreach ($listaFab as $listaFabri) {
+                            if (count($listaFabri->getCoProduto())) {
                                 /** @var ProdutoEntidade $prod */
-                                foreach ($categ->getCoProduto() as $prod) {
+                                foreach ($listaFabri->getCoProduto() as $prod) {
                                     /** @var ProdutoEntidade $produto */
                                     $produto = $produtoService->PesquisaUmRegistro($prod->getCoProduto());
                                     ?>
@@ -84,11 +84,11 @@ $cat = $categoria;
             <div id="list-view" class="products-grid fade tab-pane <?php if ($isListView) echo 'active in'; ?>">
                 <div class="products-list">
                     <?php
-                    /** @var CategoriaEntidade $categ */
-                    foreach ($cat as $categ) {
-                        if (count($categ->getCoProduto())) {
+                    /** @var FabricanteEntidade $listaFabri */
+                    foreach ($listaFab as $listaFabri) {
+                        if (count($listaFabri->getCoProduto())) {
                             /** @var ProdutoEntidade $prod */
-                            foreach ($categ->getCoProduto() as $prod) {
+                            foreach ($listaFabri->getCoProduto() as $prod) {
                                 /** @var ProdutoEntidade $produto */
                                 $produto = $produtoService->PesquisaUmRegistro($prod->getCoProduto());
                                 ?>
@@ -96,6 +96,7 @@ $cat = $categoria;
                             <?php }
                         }
                     } ?>
+
                 </div><!-- /.products-list -->
 
                 <div class="pagination-holder">
