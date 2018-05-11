@@ -40,8 +40,9 @@ class  ProdutoService extends AbstractService
             ];
 
             $produto[NU_CODIGO_INTERNO] = $result[NU_CODIGO_INTERNO];
+            /** @var ProdutoEntidade $produtoJaCadastrado */
             $produtoJaCadastrado = $this->PesquisaUmQuando($produto);
-            if (count($produtoJaCadastrado)) {
+            if (count($produtoJaCadastrado) && $result[CO_PRODUTO] != $produtoJaCadastrado->getCoProduto()) {
                 $session->setSession(
                     MENSAGEM,
                     "Já exite um produto cadastro com esse código, favor verificar"
