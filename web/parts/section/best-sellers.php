@@ -27,7 +27,7 @@
                                         ?>
                                     </a>
                                 </div>
-                                <div class="body">
+                                <div class="body">300
                                     <div class="label-discount clear"></div>
                                     <div class="title">
                                         <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
@@ -65,7 +65,6 @@
             <div class="col-xs-12 col-md-5 no-margin">
                 <div class="product-item-holder size-big single-product-gallery small-gallery">
                     <div id="best-seller-single-product-slider" class="single-product-slider owl-carousel">
-
                         <div class="single-product-gallery-item" id="slide<?=
                         $bemMaisVendidos->getCoImagem()->getCoImagem();
                         ?>">
@@ -130,6 +129,8 @@
                                     ?>
                                 </a>
                             </li>
+
+                            <!--    CARREGA OUTRAS IMAGENS DO PRODUTO        -->
                             <?php
                             if (count($bemMaisVendidos->getCoProdutoImagem())) {
                                 /** @var ProdutoImagemEntidade $imagemProduto */
