@@ -155,217 +155,100 @@ $cat = $categoria;
             <div id="list-view" class="products-grid fade tab-pane <?php if ($isListView) echo 'active in'; ?>">
                 <div class="products-list">
 
-                    <div class="product-item product-item-holder">
-                        <div class="ribbon red"><span>destaque</span></div>
-                        <div class="ribbon blue"><span>novo</span></div>
-                        <div class="row">
-                            <div class="no-margin col-xs-12 col-sm-4 image-holder">
-                                <div class="image">
-                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
-                                        <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                             data-echo="<?php echo PASTASITE; ?>images/products/product-01.jpg"/>
-                                    </a>
-                                </div>
-                            </div><!-- /.image-holder -->
-                            <div class="no-margin col-xs-12 col-sm-5 body-holder">
-                                <div class="body">
-                                    <div class="label-discount green">50% desconto</div>
-                                    <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop -
-                                            Windows 8 SVF14322CXW</a>
-                                    </div>
-                                    <div class="brand">sony</div>
-                                    <div class="excerpt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod
-                                            erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan
-                                            consectetur odio ut tincidunt.</p>
-                                    </div>
-                                    <div class="addto-compare">
-                                        <a class="btn-add-to-compare" href="#">comparar</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.body-holder -->
-                            <div class="no-margin col-xs-12 col-sm-3 price-area">
-                                <div class="right-clmn">
-                                    <div class="price-current">R$1199.00</div>
-                                    <div class="price-prev">de R$1399.00</div>
-                                    <div class="availability"><label>avaliação:</label><span class="available">  com estoque</span>
-                                    </div>
-                                    <a class="le-button" href="#">add ao carrinho</a>
-                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                </div>
-                            </div><!-- /.price-area -->
-                        </div><!-- /.row -->
-                    </div><!-- /.product-item -->
+
+                    <?php
+                    /** @var CategoriaEntidade $categ */
+                    foreach ($cat as $categ) {
+                        if (count($categ->getCoProduto())) {
+                            /** @var ProdutoEntidade $prod */
+                            foreach ($categ->getCoProduto() as $prod) {
+                                /** @var ProdutoEntidade $produto */
+                                $produto = $produtoService->PesquisaUmRegistro($prod->getCoProduto());
+                                ?>
+
+                                <div class="product-item product-item-holder">
+                                    <?php
+                                    if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
+                                        ?>
+                                        <div class="ribbon red"><span>destaque</span></div>
+                                    <?php } ?>
+<!--                                    <div class="ribbon blue"><span>novo</span></div>-->
+<!--                                    <div class="ribbon green"><span>mais vendidos</span></div>-->
+                                    <div class="row">
+                                        <div class="no-margin col-xs-12 col-sm-4 image-holder">
+                                            <div class="image">
+                                                <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                                Valida::GeraParametro(CO_PRODUTO . "/" .
+                                                    $produto->getCoProduto()); ?>">
+                                                    <?php
+                                                    echo Valida::GetMiniatura(
+                                                        'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
+                                                        $produto->getNoProduto(),
+                                                        260,
+                                                        200,
+                                                        'img-responsive'
+                                                    );
+                                                    ?>
+                                                </a>
+                                            </div>
+                                        </div><!-- /.image-holder -->
+                                        <div class="no-margin col-xs-12 col-sm-5 body-holder">
+                                            <div class="body">
+                                                <?php
+                                                if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
+                                                    ?>
+                                                    <div class="label-discount green">10% desconto</div>
+                                                <?php } else { ?>
+                                                    <div class="label-discount clear"></div>
+                                                <?php } ?>
+                                                <div class="title">
+                                                    <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                                    Valida::GeraParametro(CO_PRODUTO . "/" .
+                                                        $produto->getCoProduto()); ?>"><?=
+                                                        Valida::Resumi($produto->getNoProduto(), 100);
+                                                        ?></a>
+                                                </div>
+                                                <div class="brand"><?= $produto->getCoFabricante()->getNoFabricante(); ?></div>
+                                                <div class="excerpt">
+                                                    <?= Valida::Resumi($produto->getDsDescricao(), 50);?>
+                                                </div>
+                                                <div class="addto-compare">
+                                                    <a class="btn-add-to-compare" href="#">comparar</a>
+                                                </div>
+                                            </div>
+                                        </div><!-- /.body-holder -->
+                                        <div class="no-margin col-xs-12 col-sm-3 price-area">
+                                            <div class="right-clmn">
+                                                <div class="price-current"> <?=
+                                                    Valida::FormataMoeda(
+                                                        $produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
+                                                    );
+                                                    ?></div>
+                                                <div class="price-prev"><?=
+                                                    Valida::FormataMoeda(
+                                                        floor($produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 1.10)
+                                                        , 'R$');
+                                                    ?></div>
+                                                <div class="availability"><span
+                                                            class="available"><?=
+                                                        FuncoesSistema::ProdutoEstoqueLabel($produto->getNuEstoque())
+                                                        ?></span>
+                                                </div>
+                                                <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                                Valida::GeraParametro(CO_PRODUTO . "/" .
+                                                    $produto->getCoProduto()); ?>"
+                                                   class="le-button">Ver Detalhes</a>
+                                                <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
+                                            </div>
+                                        </div><!-- /.price-area -->
+                                    </div><!-- /.row -->
+                                </div><!-- /.product-item -->
 
 
-                    <div class="product-item product-item-holder">
-                        <div class="ribbon green"><span>mais vendidos</span></div>
-                        <div class="row">
-                            <div class="no-margin col-xs-12 col-sm-4 image-holder">
-                                <div class="image">
-                                    <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">
-                                        <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                             data-echo="<?php echo PASTASITE; ?>images/products/product-02.jpg"/>
-                                    </a>
-                                </div>
-                            </div><!-- /.image-holder -->
-                            <div class="no-margin col-xs-12 col-sm-5 body-holder">
-                                <div class="body">
-                                    <div class="label-discount clear"></div>
-                                    <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop -
-                                            Windows 8 SVF14322CXW</a>
-                                    </div>
-                                    <div class="brand">sony</div>
-                                    <div class="excerpt">
-                                        <div class="star-holder">
-                                            <div class="star" data-score="4"></div>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod
-                                            erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan
-                                            consectetur odio ut tincidunt.</p>
-                                    </div>
-                                    <div class="addto-compare">
-                                        <a class="btn-add-to-compare" href="#">comparar</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.body-holder -->
-                            <div class="no-margin col-xs-12 col-sm-3 price-area">
-                                <div class="right-clmn">
-                                    <div class="price-current">R$1199.00</div>
-                                    <div class="price-prev">de R$1399.00</div>
-                                    <div class="availability"><label>avaliação:</label><span class="not-available">sem estoque</span>
-                                    </div>
-                                    <a class="le-button disabled" href="#">add ao carrinho</a>
-                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                </div>
-                            </div><!-- /.price-area -->
-                        </div><!-- /.row -->
-                    </div><!-- /.product-item -->
+                            <?php }
+                        }
+                    } ?>
 
-
-                    <div class="product-item product-item-holder">
-                        <div class="ribbon red"><span>vender</span></div>
-                        <div class="row">
-                            <div class="no-margin col-xs-12 col-sm-4 image-holder">
-                                <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                         data-echo="<?php echo PASTASITE; ?>images/products/product-03.jpg"/>
-                                </div>
-                            </div><!-- /.image-holder -->
-                            <div class="no-margin col-xs-12 col-sm-5 body-holder">
-                                <div class="body">
-                                    <div class="label-discount clear"></div>
-                                    <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop -
-                                            Windows 8 SVF14322CXW</a>
-                                    </div>
-                                    <div class="brand">sony</div>
-                                    <div class="excerpt">
-                                        <div class="star-holder">
-                                            <div class="star" data-score="2"></div>
-                                        </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod
-                                            erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan
-                                            consectetur odio ut tincidunt. </p>
-                                    </div>
-                                    <div class="addto-compare">
-                                        <a class="btn-add-to-compare" href="#">comparar</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.body-holder -->
-                            <div class="no-margin col-xs-12 col-sm-3 price-area">
-                                <div class="right-clmn">
-                                    <div class="price-current">R$1199.00</div>
-                                    <div class="price-prev">de R$1399.00</div>
-                                    <div class="availability"><label>avaliação:</label><span class="available">com estoque</span>
-                                    </div>
-                                    <a class="le-button" href="#">add ao carrinho</a>
-                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                </div>
-                            </div><!-- /.price-area -->
-                        </div><!-- /.row -->
-                    </div><!-- /.product-item -->
-
-                    <div class="product-item product-item-holder">
-                        <div class="row">
-                            <div class="no-margin col-xs-12 col-sm-4 image-holder">
-                                <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                         data-echo="<?php echo PASTASITE; ?>images/products/product-04.jpg"/>
-                                </div>
-                            </div><!-- /.image-holder -->
-                            <div class="no-margin col-xs-12 col-sm-5 body-holder">
-                                <div class="body">
-                                    <div class="label-discount green">50% desconto</div>
-                                    <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop -
-                                            Windows 8 SVF14322CXW</a>
-                                    </div>
-                                    <div class="brand">sony</div>
-                                    <div class="excerpt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod
-                                            erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan
-                                            consectetur odio ut tincidunt. </p>
-                                    </div>
-                                    <div class="addto-compare">
-                                        <a class="btn-add-to-compare" href="#">comparar</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.body-holder -->
-                            <div class="no-margin col-xs-12 col-sm-3 price-area">
-                                <div class="right-clmn">
-                                    <div class="price-current">R$1199.00</div>
-                                    <div class="price-prev">de R$1399.00</div>
-                                    <div class="availability"><label>avaliação:</label><span class="available"> com estoque</span>
-                                    </div>
-                                    <a class="le-button" href="#">add ao carrinho</a>
-                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                </div>
-                            </div><!-- /.price-area -->
-                        </div><!-- /.row -->
-                    </div><!-- /.product-item -->
-
-                    <div class="product-item product-item-holder">
-                        <div class="ribbon green"><span>mais vendido</span></div>
-                        <div class="row">
-                            <div class="no-margin col-xs-12 col-sm-4 image-holder">
-                                <div class="image">
-                                    <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                         data-echo="<?php echo PASTASITE; ?>images/products/product-05.jpg"/>
-                                </div>
-                            </div><!-- /.image-holder -->
-                            <div class="no-margin col-xs-12 col-sm-5 body-holder">
-                                <div class="body">
-                                    <div class="label-discount clear"></div>
-                                    <div class="title">
-                                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">VAIO Fit Laptop -
-                                            Windows 8 SVF14322CXW</a>
-                                    </div>
-                                    <div class="brand">sony</div>
-                                    <div class="excerpt">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis euismod
-                                            erat sit amet porta. Etiam venenatis ac diam ac tristique. Morbi accumsan
-                                            consectetur odio ut tincidunt.</p>
-                                    </div>
-                                    <div class="addto-compare">
-                                        <a class="btn-add-to-compare" href="#">comparar</a>
-                                    </div>
-                                </div>
-                            </div><!-- /.body-holder -->
-                            <div class="no-margin col-xs-12 col-sm-3 price-area">
-                                <div class="right-clmn">
-                                    <div class="price-current">R$1199.00</div>
-                                    <div class="price-prev">de R$1399.00</div>
-                                    <div class="availability"><label>avaliação:</label><span class="available"> com estoque</span>
-                                    </div>
-                                    <a class="le-button" href="#">add ao carrinho</a>
-                                    <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
-                                </div>
-                            </div><!-- /.price-area -->
-                        </div><!-- /.row -->
-                    </div><!-- /.product-item -->
 
                 </div><!-- /.products-list -->
 
