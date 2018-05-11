@@ -6,7 +6,7 @@ class Categorias extends AbstractController
     public $categoria;
     public $produtoService;
 
-    public function Index()
+    public function ListarCategorias()
     {
         /** @var CategoriaService $categoriaService */
         $categoriaService = $this->getService(CATEGORIA_SERVICE);
@@ -20,7 +20,7 @@ class Categorias extends AbstractController
         $coCategoria = UrlAmigavel::PegaParametro(CO_CATEGORIA);
         if ($coCategoria) {
             /** @var CategoriaEntidade $categoria */
-            $categoria = $categoriaService->PesquisaUmRegistro($coCategoria);
+            $categoria[] = $categoriaService->PesquisaUmRegistro($coCategoria);
         }else{
             /** @var CategoriaEntidade $categoria */
             $categoria = $categoriaService->PesquisaTodos();

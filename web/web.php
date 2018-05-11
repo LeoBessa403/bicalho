@@ -1,8 +1,8 @@
 <?php
 $pages = array(
     'IndexWeb/Index' => 'Home',
-    'Categorias/Index' => 'Categorias',
-    'Marcas/Index' => 'Marcas',
+    'Categorias/ListarCategorias' => 'Categorias',
+    'Marcas/ListarMarcas' => 'Marcas',
     'Institucional/SobreNos' => 'Sobre nós',
     'Institucional/Contatos' => 'Contatos',
     'Institucional/Duvidas' => 'Dúvidas',

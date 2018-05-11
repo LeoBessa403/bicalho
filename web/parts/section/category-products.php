@@ -1,12 +1,14 @@
 <?php
+/** @var CategoriaEntidade $categor */
+$categor = $categoria[0];
 /** @var CategoriaEntidade $cat */
 $cat = $categoria;
 ?>
 <section id="gaming">
     <div class="grid-list-products">
         <h2 class="section-title">Categoria <?php
-            if (count($cat) == 1)
-                echo $cat->getNoCategoria();
+            if (count($categoria) == 1)
+                echo $categor->getNoCategoria();
             ?></h2>
         <div class="control-bar">
             <div id="popularity-sort" class="le-select">
