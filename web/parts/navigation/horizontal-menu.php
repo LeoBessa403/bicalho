@@ -34,7 +34,10 @@ $segmentos = $segmentoService->PesquisaTodos();
                                     /** @var CategoriaEntidade $categoria */
                                     foreach ($segmento->getCoCategoria() as $categoria) {
                                         ?>
-                                        <li><a href="#"><?= $categoria->getNoCategoria(); ?></a></li>
+                                        <li><a href="<?= PASTASITE; ?>Categorias/ListarCategorias/<?=
+                                            Valida::GeraParametro(CO_CATEGORIA . "/" .
+                                                $categoria->getCoCategoria());
+                                            ?>"><?= $categoria->getNoCategoria(); ?></a></li>
                                     <?php } ?>
                                 </ul>
                             </li>
