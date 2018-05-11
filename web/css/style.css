@@ -3303,6 +3303,7 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     top: 30%;
     left: 4%;
     z-index: 200;
+    text-shadow: #f2f2f2 1px 0 2px;
 }
 
 .banner .banner-text.theblue h1, .banner .banner-text.theblue .tagline {
@@ -3324,6 +3325,7 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     font-weight: 100;
     font-size: 20px;
     line-height: 33px;
+    text-shadow: #f2f2f2 1px 0 1px;
 }
 
 #banner-holder {
@@ -5290,10 +5292,6 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 
 .remove-item:hover {
     color: red !important;
-}
-
-.item .container-fluid{
-    /*position: flex;*/
 }
 
 .img-destaque{

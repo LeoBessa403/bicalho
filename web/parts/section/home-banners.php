@@ -5,8 +5,8 @@
             <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 banner">
                 <a href="<?php echo PASTASITE; ?>Categorias/Index">
                     <div class="banner-text theblue">
-                        <h1>Smartphones</h1>
-                        <span class="tagline">Novos smartphones</span>
+                        <h1>Equipamentos</h1>
+                        <span class="tagline">Toda Linha de refrigeração</span>
                     </div>
                     <img class="banner-image img-responsive" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/banners/banner-narrow-01.jpg" />
                 </a>
@@ -14,8 +14,8 @@
             <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6 text-right banner">
                 <a href="<?php echo PASTASITE; ?>Categorias/Index">
                     <div class="banner-text right">
-                        <h1>Time &amp; Style</h1>
-                        <span class="tagline">Chegada de novos produtos</span>
+                        <h1>Refrigeração Comercial</h1>
+                        <span class="tagline">Nossa linha completa</span>
                     </div>
                     <img class="banner-image img-responsive" alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/banners/banner-narrow-02.jpg" />
                 </a>
