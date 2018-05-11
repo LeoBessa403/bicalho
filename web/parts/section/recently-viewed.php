@@ -39,8 +39,8 @@ $productItemSize = isset($productItemSize) ? $productItemSize : 'size-small';
                                     echo Valida::GetMiniatura(
                                         'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
                                         $produto->getNoProduto(),
-                                        280,
-                                        210,
+                                        194,
+                                        134,
                                         'img-responsive'
                                     );
                                     ?>

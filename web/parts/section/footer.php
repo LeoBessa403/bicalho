@@ -1,3 +1,11 @@
+<?php
+$produtoController = new Produto();
+/** @var ProdutoService $produtoService */
+$produtoService = $produtoController->getService(PRODUTO_SERVICE);
+$produtosDestacados =  $produtoService->pesquisaProdutos(3);
+$produtosMaisVendidos =  $produtoService->pesquisaProdutos(3);
+$produtosMaisProcurados =  $produtoService->pesquisaProdutos(3);
+?>
 <!-- ============================================================= FOOTER ============================================================= -->
 <footer id="footer" class="color-bg">
 

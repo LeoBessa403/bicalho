@@ -3,63 +3,49 @@
     <h2>Produtos em destaque</h2>
     <div class="body">
         <ul>
-            <li>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">Netbook Acer Travel B113-E-10072</a>
-                        <div class="price">
-                            <div class="price-prev">de R$2000</div>
-                            <div class="price-current">R$1873</div>
+            <?php
+            /** @var ProdutoEntidade $produto */
+            foreach ($produtosDestacados as $produto) {
+                ?>
+                <li>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9 no-margin">
+                            <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                            Valida::GeraParametro(CO_PRODUTO . "/" .
+                                $produto->getCoProduto()); ?>"><?=
+                                Valida::Resumi($produto->getNoProduto(), 60);
+                                ?></a>
+                            <div class="price">
+                                <div class="price-prev">de <?=
+                                    Valida::FormataMoeda(
+                                        floor($produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 1.10)
+                                        , 'R$');
+                                    ?></div>
+                                <div class="price-current">por <?=
+                                    Valida::FormataMoeda(
+                                        $produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
+                                    );
+                                    ?></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3 no-margin">
+                            <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                            Valida::GeraParametro(CO_PRODUTO . "/" .
+                                $produto->getCoProduto()); ?>">
+                                <?php
+                                echo Valida::GetMiniatura(
+                                    'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
+                                    $produto->getNoProduto(),
+                                    73,
+                                    73,
+                                    'img-responsive'
+                                );
+                                ?>
+                            </a>
                         </div>
                     </div>
-
-                    <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="thumb-holder">
-                            <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                 data-echo="<?php echo PASTASITE; ?>images/products/product-small-01.jpg"/>
-                        </a>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">PowerShot Elph 115 16MP Digital
-                            Camera</a>
-                        <div class="price">
-                            <div class="price-prev">de R$2000</div>
-                            <div class="price-current">R$1873</div>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="thumb-holder">
-                            <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                 data-echo="<?php echo PASTASITE; ?>images/products/product-small-02.jpg"/>
-                        </a>
-                    </div>
-                </div>
-            </li>
-
-            <li>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-9 no-margin">
-                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto">PowerShot Elph 115 16MP Digital
-                            Camera</a>
-                        <div class="price">
-                            <div class="price-prev">de R$2000</div>
-                            <div class="price-current">R$1873</div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-3 no-margin">
-                        <a href="<?php echo PASTASITE; ?>Produtos/DetalharProduto" class="thumb-holder">
-                            <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif"
-                                 data-echo="<?php echo PASTASITE; ?>images/products/product-small-03.jpg"/>
-                        </a>
-                    </div>
-                </div>
-            </li>
+                </li>
+            <?php } ?>
         </ul>
     </div><!-- /.body -->
 </div> <!-- /.widget -->
