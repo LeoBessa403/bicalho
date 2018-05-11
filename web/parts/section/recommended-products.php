@@ -2,7 +2,7 @@
 $produtoRecController = new Produto();
 /** @var ProdutoService $produtoRecService */
 $produtoRecService = $produtoRecController->getService(PRODUTO_SERVICE);
-$vistosRecentementes =  $produtoRecService->pesquisaProdutos(8);
+$vistosRecentementes = $produtoRecService->pesquisaProdutos(8);
 ?>
 <section id="recommended-products" class="carousel-holder hover small">
 
@@ -15,7 +15,6 @@ $vistosRecentementes =  $produtoRecService->pesquisaProdutos(8);
     </div><!-- /.title-nav -->
 
     <div id="owl-recommended-products" class="owl-carousel product-grid-holder">
-
 
 
         <?php
@@ -49,6 +48,10 @@ $vistosRecentementes =  $produtoRecService->pesquisaProdutos(8);
                         if (count($produtoRec->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
                             ?>
                             <div class="label-discount blue">10% desconto</div>
+                        <?php }
+                        if ($produtoPrincipal->getNuEstoque() < 1) {
+                            ?>
+                            <div class="label-discount red">Sem Estoque</div>
                         <?php } ?>
                         <div class="title">
                             <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=

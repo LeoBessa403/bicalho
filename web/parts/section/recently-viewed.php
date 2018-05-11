@@ -56,6 +56,10 @@ $vistosRecentemente =  $produtoService->pesquisaProdutos(8);
                                 if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
                                     ?>
                                     <div class="label-discount blue">10% desconto</div>
+                                <?php }
+                                if ($produtoPrincipal->getNuEstoque() < 1) {
+                                    ?>
+                                    <div class="label-discount red">Sem Estoque</div>
                                 <?php } ?>
                                 <div class="title">
                                     <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
