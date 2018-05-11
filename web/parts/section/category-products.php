@@ -224,7 +224,7 @@ $cat = $categoria;
                                                         $produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
                                                     );
                                                     ?></div>
-                                                <div class="price-prev"><?=
+                                                <div class="price-prev">de <?=
                                                     Valida::FormataMoeda(
                                                         floor($produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 1.10)
                                                         , 'R$');
