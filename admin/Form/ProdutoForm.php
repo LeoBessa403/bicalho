@@ -107,12 +107,17 @@ class ProdutoForm
             ->setInfo("Link para o Manual")
             ->CriaInpunt();
 
+        $ob = "ob";
+        if (!empty($res[CO_PRODUTO])):
+            $ob = "";
+        endif;
+
         $formulario
             ->setId(DS_CAMINHO)
             ->setType("singlefile")
             ->setInfo("Principal imagem do produto")
             ->setTamanhoInput(12)
-            ->setClasses("ob")
+            ->setClasses($ob)
             ->setLabel("Foto principal")
             ->CriaInpunt();
 
