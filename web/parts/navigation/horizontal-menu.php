@@ -27,8 +27,11 @@ $segmentos = $segmentoService->PesquisaTodos();
                         if (count($segmento->getCoCategoria())) {
                             ?>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-hover="dropdown"
-                                   data-toggle="dropdown"><?= $segmento->getDsSegmento(); ?></a>
+                                <a href="<?= PASTASITE; ?>Segmentos/ListarSegmentos/<?=
+                                Valida::GeraParametro(CO_SEGMENTO . "/" .
+                                    $segmento->getCoSegmento()); ?>"
+                                   class="dropdown-toggle" data-hover="dropdown"
+                                  ><?= $segmento->getDsSegmento(); ?></a>
                                 <ul class="dropdown-menu">
                                     <?php
                                     /** @var CategoriaEntidade $categoria */
