@@ -2,7 +2,7 @@
 $containerClass = isset($containerClass) ? $containerClass : 'container';
 $hasSidebar = isset($hasSidebar) ? $hasSidebar : false;
 /** @var ProdutoEntidade $produto */
-$prod = $produto;
+$prod = $produtoPrincipal;
 ?>
 <!-- ========================================= SINGLE PRODUCT TAB ========================================= -->
 <section id="single-product-tab">
