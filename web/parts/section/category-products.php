@@ -210,14 +210,14 @@ $cat = $categoria;
                                                 </div>
                                                 <div class="brand"><?= $produto->getCoFabricante()->getNoFabricante(); ?></div>
                                                 <div class="excerpt">
-                                                    <?= Valida::Resumi($produto->getDsDescricao(), 50);?>
+                                                    <?= Valida::Resumi($produto->getDsDescricao(), 300);?>
                                                 </div>
                                                 <div class="addto-compare">
                                                     <a class="btn-add-to-compare" href="#">comparar</a>
                                                 </div>
                                             </div>
                                         </div><!-- /.body-holder -->
-                                        <div class="no-margin col-xs-12 col-sm-3 price-area">
+                                        <div class="no-margin col-xs-12 col-sm-3 price-area"">
                                             <div class="right-clmn">
                                                 <div class="price-current"> <?=
                                                     Valida::FormataMoeda(
@@ -239,6 +239,7 @@ $cat = $categoria;
                                                     $produto->getCoProduto()); ?>"
                                                    class="le-button">Ver Detalhes</a>
                                                 <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
+                                                <div class="clear"></div>
                                             </div>
                                         </div><!-- /.price-area -->
                                     </div><!-- /.row -->
