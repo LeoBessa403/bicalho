@@ -1,89 +1,54 @@
+<?php
+$produtoOfertaController = new Produto();
+/** @var ProdutoService $produtoOfertaService */
+$produtoOfertaService = $produtoOfertaController->getService(PRODUTO_SERVICE);
+$ofertas = $produtoOfertaService->pesquisaProdutos(6);
+?>
 <div class="widget">
-	<h1 class="border">ofertas especiais</h1>
-	<ul class="product-list">
-        <li>
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 no-margin">
-                    <a href="#" class="thumb-holder">
-                        <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-small-01.jpg" />
-                    </a>
-                </div>
-                <div class="col-xs-8 col-sm-8 no-margin">
-                    <a href="#">Netbook Acer </a>
-                    <div class="price">
-                        <div class="price-prev">de R$2000</div>
-                        <div class="price-current">R$1873</div>
+    <h1 class="border">ofertas especiais</h1>
+    <ul class="product-list">
+        <?php
+        /** @var ProdutoEntidade $produtoOferta */
+        foreach ($ofertas as $produtoOferta) {
+            ?>
+            <li>
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4 no-margin">
+                        <a class="thumb-holder" href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                        Valida::GeraParametro(CO_PRODUTO . "/" .
+                            $produtoOferta->getCoProduto()); ?>">
+                            <?php
+                            echo Valida::GetMiniatura(
+                                'ProdutosCapa/' . $produtoOferta->getCoImagem()->getDsCaminho(),
+                                $produtoOferta->getNoProduto(),
+                                73,
+                                73,
+                                'img-responsive'
+                            );
+                            ?>
+                        </a>
                     </div>
-                </div>  
-            </div>
-        </li>
-
-        <li>
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 no-margin">
-                    <a href="#" class="thumb-holder">
-                        <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-small-02.jpg" />
-                    </a>
-                </div>
-                <div class="col-xs-8 col-sm-8 no-margin">
-                    <a href="#">PowerShot Elph 115 16MP Digital Camera</a>
-                    <div class="price">
-                        <div class="price-prev">de R$2000</div>
-                        <div class="price-current">R$1873</div>
-                    </div>
-                </div>  
-            </div>
-        </li>
-
-        <li>
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 no-margin">
-                    <a href="#" class="thumb-holder">
-                        <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-small-03.jpg" />
-                    </a>
-                </div>
-                <div class="col-xs-8 col-sm-8 no-margin">
-                    <a href="#">PowerShot Elph 115 16MP Digital Camera</a>
-                    <div class="price">
-                        <div class="price-prev">de R$2000</div>
-                        <div class="price-current">R$1873</div>
-                    </div>
-                </div>  
-            </div>
-        </li>
-
-        <li>
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 no-margin">
-                    <a href="#" class="thumb-holder">
-                        <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-small-01.jpg" />
-                    </a>
-                </div>
-                <div class="col-xs-8 col-sm-8 no-margin">
-                    <a href="#">Netbook Acer</a>
-                    <div class="price">
-                        <div class="price-prev">de R$2000</div>
-                        <div class="price-current">R$1873</div>
-                    </div>
-                </div>  
-            </div>
-        </li>
-        
-        <li>
-            <div class="row">
-                <div class="col-xs-4 col-sm-4 no-margin">
-                    <a href="#" class="thumb-holder">
-                        <img alt="" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/products/product-small-02.jpg" />
-                    </a>
-                </div>
-                <div class="col-xs-8 col-sm-8 no-margin">
-                    <a href="#">PowerShot Elph 115 16MP Digital Camera</a>
+                    <div class="col-xs-8 col-sm-8 no-margin">
+                        <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                        Valida::GeraParametro(CO_PRODUTO . "/" .
+                            $produtoOferta->getCoProduto()); ?>"><?=
+                            Valida::Resumi($produtoOferta->getNoProduto(), 40);
+                            ?></a>
                         <div class="price">
-                            <div class="price-prev">de R$2000</div>
-                            <div class="price-current">R$1873</div>
+                            <div class="price-prev"><?=
+                                Valida::FormataMoeda(
+                                    floor($produtoOferta->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 1.10)
+                                    ,'R$');
+                                ?></div>
+                            <div class="price-current"> <?=
+                                Valida::FormataMoeda(
+                                    $produtoOferta->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
+                                );
+                                ?></div>
                         </div>
-                </div>  
-            </div>
-        </li>
+                    </div>
+                </div>
+            </li>
+        <?php } ?>
     </ul>
 </div><!-- /.widget -->

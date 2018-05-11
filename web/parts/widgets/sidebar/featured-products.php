@@ -1,3 +1,9 @@
+<?php
+$produtoController = new Produto();
+/** @var ProdutoService $produtoService */
+$produtoService = $produtoController->getService(PRODUTO_SERVICE);
+$maisVendidos =  $produtoService->pesquisaProdutos(8);
+?>
 <!-- ========================================= FEATURED PRODUCTS ========================================= -->
 <div class="widget">
     <h1 class="border">Mais vendidos</h1>
