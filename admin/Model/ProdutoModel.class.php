@@ -45,7 +45,9 @@ class  ProdutoModel extends AbstractModel
     {
         $campos = CO_PRODUTO;
         $pesquisa = new Pesquisa();
-        $pesquisa->Pesquisar(ProdutoEntidade::TABELA, null, null, $campos);
+        $pesquisa->Pesquisar(ProdutoEntidade::TABELA,
+            'Where ' . ST_STATUS . ' = "' . StatusAcessoEnum::ATIVO.'"',
+            null, $campos);
         $produtos = $pesquisa->getResult();
         return $produtos;
     }
@@ -59,7 +61,7 @@ class  ProdutoModel extends AbstractModel
         $pesquisa = new Pesquisa();
         $pesquisa->Pesquisar(
             ProdutoEntidade::TABELA,
-            'where ' . ProdutoEntidade::CHAVE.' in ('.$coProdutos.')'
+            'where ' . ProdutoEntidade::CHAVE . ' in (' . $coProdutos . ')'
         );
         $produtos = [];
         /** @var ProdutoEntidade $produto */

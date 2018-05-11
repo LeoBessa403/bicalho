@@ -57,7 +57,7 @@ $vistosRecentemente =  $produtoService->pesquisaProdutos(8);
                                     ?>
                                     <div class="label-discount blue">10% desconto</div>
                                 <?php }
-                                if ($produtoPrincipal->getNuEstoque() < 1) {
+                                if ($produto->getNuEstoque() < 1) {
                                     ?>
                                     <div class="label-discount red">Sem Estoque</div>
                                 <?php } ?>

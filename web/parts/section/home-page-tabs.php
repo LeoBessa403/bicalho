@@ -44,7 +44,7 @@
                                             ?>
                                             <div class="label-discount green">10% desconto</div>
                                         <?php }
-                                        if ($produtoPrincipal->getNuEstoque() < 1) {
+                                        if ($produto->getNuEstoque() < 1) {
                                             ?>
                                             <div class="label-discount red">Sem Estoque</div>
                                         <?php } ?>
@@ -122,9 +122,9 @@
                                         <?php
                                         if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
                                             ?>
-                                            <div class="label-discount red">10% desconto</div>
+                                            <div class="label-discount blue">10% desconto</div>
                                         <?php }
-                                        if ($produtoPrincipal->getNuEstoque() < 1) {
+                                        if ($produto->getNuEstoque() < 1) {
                                             ?>
                                             <div class="label-discount red">Sem Estoque</div>
                                         <?php } ?>
