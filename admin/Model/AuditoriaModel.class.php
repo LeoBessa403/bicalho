@@ -12,7 +12,6 @@ class  AuditoriaModel extends AbstractModel
         parent::__construct(AuditoriaEntidade::ENTIDADE);
     }
 
-
     public function PesquisaAvancada($Condicoes)
     {
         $tabela = AuditoriaEntidade::TABELA." aud" .
