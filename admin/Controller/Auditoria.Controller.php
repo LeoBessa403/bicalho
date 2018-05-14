@@ -18,11 +18,7 @@ class Auditoria extends AbstractController
 
     public function ListarAuditoriaPesquisaAvancada()
     {
-        /** @var UsuarioService $usuarioService */
-        $usuarioService = $this->getService(USUARIO_SERVICE);
-        /** @var AuditoriaService $auditoriaService */
-        $auditoriaService = $this->getService(AUDITORIA_SERVICE);
-        echo AuditoriaForm::Pesquisar($usuarioService, $auditoriaService);
+        echo AuditoriaForm::Pesquisar();
     }
 
 }

@@ -12,6 +12,7 @@ class  AuditoriaModel extends AbstractModel
         parent::__construct(AuditoriaEntidade::ENTIDADE);
     }
 
+
     public function PesquisaAvancada($Condicoes)
     {
         $tabela = AuditoriaEntidade::TABELA." aud" .
@@ -28,6 +29,9 @@ class  AuditoriaModel extends AbstractModel
         }
         if(!empty($Condicoes[NO_TABELA])){
             $where = $where . " and audTab.".NO_TABELA." in ('".implode("', '",$Condicoes[NO_TABELA])."')" ;
+        }
+        if(!empty($Condicoes[CO_REGISTRO])){
+            $where = $where . " and audTab.".CO_REGISTRO." = ".$Condicoes[CO_REGISTRO];
         }
         if(!empty($Condicoes['dt1'])){
             $where = $where . " and aud.".DT_REALIZADO." >= '".
@@ -47,4 +51,5 @@ class  AuditoriaModel extends AbstractModel
         }
         return $auditorias;
     }
+
 }

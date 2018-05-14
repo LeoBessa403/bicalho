@@ -1,8 +1,5 @@
 <?php
-/**
- * AuditoriaForm [ FORM ]
- * @copyright (c) 2017, Leo Bessa
- */
+
 class AuditoriaForm
 {
 
@@ -31,6 +28,13 @@ class AuditoriaForm
             ->setInfo("Pode selecionar várias TABELAS.")
             ->setType("select")
             ->setOptions($tabelas)
+            ->CriaInpunt();
+
+        $formulario
+            ->setId(CO_REGISTRO)
+            ->setTamanhoInput(6)
+            ->setClasses("numero")
+            ->setLabel("Código do Registro")
             ->CriaInpunt();
 
         $formulario
