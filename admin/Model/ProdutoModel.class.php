@@ -46,7 +46,7 @@ class  ProdutoModel extends AbstractModel
         $campos = CO_PRODUTO;
         $pesquisa = new Pesquisa();
         $pesquisa->Pesquisar(ProdutoEntidade::TABELA,
-            'Where ' . ST_STATUS . ' = "' . StatusAcessoEnum::ATIVO.'"',
+            'Where ' . ST_STATUS . ' = "' . StatusAcessoEnum::ATIVO . '"',
             null, $campos);
         $produtos = $pesquisa->getResult();
         return $produtos;
@@ -99,4 +99,23 @@ class  ProdutoModel extends AbstractModel
         return $pesquisa->getResult();
     }
 
+    /**
+     * @param $coProduto
+     * @return array
+     */
+    public static function getSeoProdutos($coProduto)
+    {
+        $tabela = ProdutoEntidade::TABELA . " prod" .
+            " inner join " . ImagemEntidade::TABELA . " img" .
+            " on prod." . ImagemEntidade::CHAVE . " = img." . ImagemEntidade::CHAVE;
+        $campos = "img." . DS_CAMINHO . ' AS imagem, prod.' . DS_DESCRICAO . ' AS descricao , prod.' .
+            NO_PRODUTO . ' AS titulo';
+        $pesquisa = new Pesquisa();
+        $where = "where " . ProdutoEntidade::CHAVE . " = :coProduto";
+        $pesquisa->Pesquisar($tabela, $where, "coProduto={$coProduto}", $campos);
+        $dadosSeo = $pesquisa->getResult()[0];
+
+        $dadosSeo['imagem'] = HOME . 'uploads/ProdutosCapa/' . $dadosSeo['imagem'];
+        return $dadosSeo;
+    }
 }

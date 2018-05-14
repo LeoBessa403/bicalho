@@ -9,49 +9,48 @@ $pages = array(
     'Produtos/DetalharFavoritos' => 'Favoritos',
     'Produtos/ComparaProdutos' => 'Comparação de produtos',
 );
+/** @var UrlAmigavel $url */
+$url = new UrlAmigavel();
+/** @var Seo $seo */
+$seo = new Seo($url);
 ?>
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br" itemscope itemtype="https://schema.org/WebSite">
 <head>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height,target-densitydpi=medium-dpi, user-scalable=0"/>
-    <meta name="description"
-          content="Equipamentos para Lanchonetes, Padarias, Açougues, Ambulantes. Automação e Refrigeração Comercial, Ar Condicionados e Muito Mais!"/>
-    <meta name="Abstract" content="Bicalho Refrigeração"/>
-    <meta name="author" content="Bicalho Refrigeração"/>
-    <meta name="copyright" content="Bicalho Refrigeração"/>
-    <meta name="keywords"
-          content="Equipamentos para Lanchonetes, Padarias, Açougues, Ambulantes. Automação e Refrigeração Comercial, Ar Condicionados e Muito Mais!">
-    <meta name="robots" content="all">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=0">
+
+    <title><?= $seo->getTitulo(); ?></title>
+    <meta name="description" content="<?= $seo->getDescricao(); ?>"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="Abstract" content="<?= DESC; ?>"/>
+    <meta name="author" content="Leonardo Bessa"/>
+    <meta name="copyright" content="<?= DESC; ?>"/>
     <meta name="language" content="pt-BR"/>
     <meta name="country" content="BRA"/>
     <meta name="currency" content="R$"/>
 
+    <link rel="base" href="<?= HOME; ?>"/>
+    <link rel="canonical" href="<?= $seo->getUrl(); ?>"/>
 
-    <meta property="og:locale" content="pt_BR"/>
+    <meta itemprop="name" content="<?= $seo->getTitulo(); ?>"/>
+    <meta itemprop="description" content="<?= $seo->getDescricao(); ?>"/>
+    <meta itemprop="image" content="<?= $seo->getImagem() ?>"/>
+    <meta itemprop="url" content="<?= $seo->getUrl(); ?>"/>
+
     <meta property="og:type" content="article"/>
-    <meta property="og:title"
-          content="Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio"/>
-    <meta property="og:description"
-          content="Equipamentos para Lanchonetes, Padarias, Açougues, Ambulantes. Automação e Refrigeração Comercial, Ar Condicionados e Muito Mais!"/>
-    <meta property="og:url" content="https://www.bicalhorefrigeracao.com/"/>
-    <meta property="og:site_name" content="Bicalho Refrigeração"/>
-    <meta property="og:image" content="<?php echo PASTASITE; ?>images/image_apresentacao.png"/>
-    <meta property="og:image:secure_url" content="<?php echo PASTASITE; ?>images/image_apresentacao.png"/>
-    <meta property="og:image:width" content="1200"/>
-    <meta property="og:image:height" content="660"/>
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:description"
-          content="Equipamentos para Lanchonetes, Padarias, Açougues, Ambulantes. Automação e Refrigeração Comercial, Ar Condicionados e Muito Mais!"/>
-    <meta name="twitter:title"
-          content="Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio"/>
-    <meta name="twitter:image" content="<?php echo PASTASITE; ?>images/image_apresentacao.png"/>
-    <link rel="canonical" href="https://www.bicalhorefrigeracao.com/"/>
+    <meta property="og:title" content="<?= $seo->getTitulo(); ?>"/>
+    <meta property="og:description" content="<?= $seo->getDescricao(); ?>"/>
+    <meta property="og:image" content="<?= $seo->getImagem(); ?>"/>
+    <meta property="og:url" content="<?= $seo->getUrl(); ?>"/>
+    <meta property="og:site_name" content="<?= DESC; ?>"/>
+    <meta property="og:locale" content="pt_BR"/>
 
-    <title>Bicalho Refrigeração - Equipamentos de Automação e Refrigeração Comercial para o seu negócio</title>
+    <meta property="twitter:domain" content="<?= HOME; ?>"/>
+    <meta property="twitter:title" content="<?= $seo->getTitulo(); ?>"/>
+    <meta property="twitter:description" content="<?= $seo->getDescricao(); ?>"/>
+    <meta property="twitter:image" content="<?= $seo->getImagem(); ?>"/>
+    <meta property="twitter:url" content="<?= $seo->getUrl(); ?>"/>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/bootstrap.min.css">
@@ -82,14 +81,13 @@ $pages = array(
 
 <div class="wrapper">
     <?php
-    require PASTA_RAIZ.SITE. '/parts/navigation/top-menu-bar.php';
-    require PASTA_RAIZ.SITE. '/parts/section/header-2.php';
+    require PASTA_RAIZ . SITE . '/parts/navigation/top-menu-bar.php';
+    require PASTA_RAIZ . SITE . '/parts/section/header-2.php';
 
-    $url = new UrlAmigavel();
     $url->pegaControllerAction();
     ?>
 
-    <?php require PASTA_RAIZ.SITE. '/parts/section/footer.php'; ?>
+    <?php require PASTA_RAIZ . SITE . '/parts/section/footer.php'; ?>
 </div><!-- /.wrapper -->
 
 <!-- JavaScripts placed at the end of the document so the pages load faster -->

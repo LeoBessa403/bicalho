@@ -5,7 +5,7 @@ class Produtos extends AbstractController
     public $produtoPrincipal;
     public $segmentos;
 
-    function DetalharProduto()
+    public function DetalharProduto()
     {
         $coProduto = null;
         /** @var ProdutoService $produtoService */
@@ -24,12 +24,20 @@ class Produtos extends AbstractController
         }
     }
 
-    function ComparaProdutos()
+    public function ComparaProdutos()
     {
     }
 
-    function DetalharFavoritos()
+    public function DetalharFavoritos()
     {
+    }
+
+    public function getSeoProdutos()
+    {
+        /** @var ProdutoService $produtoService */
+        $produtoService = $this->getService(PRODUTO_SERVICE);
+        $coProduto = UrlAmigavel::PegaParametro(CO_PRODUTO);
+        return $produtoService->getSeoProdutos($coProduto);
     }
 
 }

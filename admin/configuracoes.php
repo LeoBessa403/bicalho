@@ -34,7 +34,7 @@ function servidor_inicial()
     //////////////////////////////////////////////
 
     // Título do Site
-    define('DESC', 'Sistema Bicalho');
+    define('DESC', 'Bicalho Refrigeração');
     // Tabela de pesquisa de usuário para validação
     define('TABLE_USER', 'tb_usuario');
     // Campo de login na Tabela de pesquisa de usuário para validação
@@ -60,6 +60,12 @@ function servidor_inicial()
     define('TABELA_AUDITORIA', AuditoriaEntidade::TABELA);
     // NÚMERO PADRÃO DE ENVIO DO WHATSAPP
     define('WHATSAPP', '5561993704240');
+    // DESCRIÇÃO PADRÃO DO SITE
+    define('DESC_SITE', 'Equipamentos para Lanchonetes, Padarias, Açougues, Ambulantes. Automação e Refrigeração Comercial, Ar Condicionados e Muito Mais!');
+    // TÍTULO PADRÃO DO SITE
+    define('TITULO_SITE', 'Equipamentos de Automação e Refrigeração Comercial para o seu negócio!');
+    // CONTROLLERS PARA GERAR O SEO DIFERENCIADO
+    define('CONTROLLER_SEO', 'Produtos');
 
     //////////////////////////////////////////////
     // ******* CONFIGURAÇÕES DE EMAIL ********** //
@@ -73,15 +79,8 @@ function servidor_inicial()
     //////////////////////////////////////////////
     // *********** GOOGLE ANALITCS  *********** //
     //////////////////////////////////////////////
-
     define('ID_ANALITCS', 'UA-71215942-1');
 
-
-    //////////////////////////////////////////////
-    // ***** SERVIDOR DE LOCALIZAÇÃO DE IP **** //
-    //////////////////////////////////////////////
-
-    define('IP_LOCALIZACAO', 'http://ip-api.com/php/');
 
     include_once('Class/Constantes.class.php');
 

@@ -145,6 +145,15 @@ class  ProdutoService extends AbstractService
      * @param $coProduto
      * @return array
      */
+    public function getSeoProdutos($coProduto)
+    {
+        return $this->ObjetoModel->getSeoProdutos($coProduto);
+    }
+
+    /**
+     * @param $coProduto
+     * @return array
+     */
     public function ativarProduto($coProduto)
     {
         return $this->mudarStatusProduto($coProduto, StatusUsuarioEnum::ATIVO);
