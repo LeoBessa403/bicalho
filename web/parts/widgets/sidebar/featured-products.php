@@ -16,8 +16,7 @@ $maisVendidos =  $produtoService->pesquisaProdutos(8);
                 <div class="row">
                     <div class="col-xs-4 col-sm-4 no-margin">
                         <a class="thumb-holder" href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                        Valida::GeraParametro(CO_PRODUTO . "/" .
-                            $produto->getCoProduto()); ?>">
+                        $produto->getNoProdutoUrlAmigavel(); ?>">
                             <?php
                             echo Valida::GetMiniatura(
                                 'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
@@ -31,8 +30,7 @@ $maisVendidos =  $produtoService->pesquisaProdutos(8);
                     </div>
                     <div class="col-xs-8 col-sm-8 no-margin">
                         <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                        Valida::GeraParametro(CO_PRODUTO . "/" .
-                            $produto->getCoProduto()); ?>"><?=
+                        $produto->getNoProdutoUrlAmigavel(); ?>"><?=
                             Valida::Resumi($produto->getNoProduto(), 40);
                             ?></a>
                         <div class="price">

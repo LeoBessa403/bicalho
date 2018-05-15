@@ -13,6 +13,7 @@ class ProdutoEntidade extends AbstractEntidade
 
     private $co_produto;
     private $no_produto;
+    private $no_produto_url_amigavel;
     private $ds_descricao;
     private $nu_estoque;
     private $nu_codigo;
@@ -38,6 +39,7 @@ class ProdutoEntidade extends AbstractEntidade
         return [
             CO_PRODUTO,
             NO_PRODUTO,
+            NO_PRODUTO_URL_AMIGAVEL,
             DS_DESCRICAO,
             NU_ESTOQUE,
             NU_CODIGO,
@@ -94,6 +96,23 @@ class ProdutoEntidade extends AbstractEntidade
     public function setNoProduto($no_produto)
     {
         $this->no_produto = $no_produto;
+    }
+
+    /**
+     * @param $no_produto_url_amigavel
+     * @return mixed
+     */
+    public function setNoProdutoUrlAmigavel($no_produto_url_amigavel)
+    {
+        return $this->no_produto_url_amigavel = $no_produto_url_amigavel;
+    }
+
+    /**
+     * @return mixed $no_produto_url_amigavel
+     */
+    public function getNoProdutoUrlAmigavel()
+    {
+        return $this->no_produto_url_amigavel;
     }
 
     /**

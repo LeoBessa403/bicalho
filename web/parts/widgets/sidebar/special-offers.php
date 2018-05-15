@@ -15,8 +15,7 @@ $ofertas = $produtoOfertaService->pesquisaProdutos(6);
                 <div class="row">
                     <div class="col-xs-4 col-sm-4 no-margin">
                         <a class="thumb-holder" href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                        Valida::GeraParametro(CO_PRODUTO . "/" .
-                            $produtoOferta->getCoProduto()); ?>">
+                        $produtoOferta->getNoProdutoUrlAmigavel(); ?>">
                             <?php
                             echo Valida::GetMiniatura(
                                 'ProdutosCapa/' . $produtoOferta->getCoImagem()->getDsCaminho(),
@@ -30,8 +29,7 @@ $ofertas = $produtoOfertaService->pesquisaProdutos(6);
                     </div>
                     <div class="col-xs-8 col-sm-8 no-margin">
                         <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                        Valida::GeraParametro(CO_PRODUTO . "/" .
-                            $produtoOferta->getCoProduto()); ?>"><?=
+                        $produtoOferta->getNoProdutoUrlAmigavel(); ?>"><?=
                             Valida::Resumi($produtoOferta->getNoProduto(), 40);
                             ?></a>
                         <div class="price">

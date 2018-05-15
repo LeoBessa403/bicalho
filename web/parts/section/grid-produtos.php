@@ -11,8 +11,7 @@
 
         <div class="image">
             <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-            Valida::GeraParametro(CO_PRODUTO . "/" .
-                $produto->getCoProduto()); ?>">
+            $produto->getNoProdutoUrlAmigavel(); ?>">
                 <?php
                 echo Valida::GetMiniatura(
                     'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
@@ -34,8 +33,7 @@
             <?php } ?>
             <div class="title">
                 <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                Valida::GeraParametro(CO_PRODUTO . "/" .
-                    $produto->getCoProduto()); ?>"><?=
+                $produto->getNoProdutoUrlAmigavel(); ?>"><?=
                     Valida::Resumi($produto->getNoProduto(), 40);
                     ?></a>
             </div>
@@ -56,8 +54,7 @@
         <div class="hover-area">
             <div class="add-cart-button">
                 <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                Valida::GeraParametro(CO_PRODUTO . "/" .
-                    $produto->getCoProduto()); ?>"
+                $produto->getNoProdutoUrlAmigavel(); ?>"
                    class="le-button">Ver Detalhes</a>
             </div>
             <div class="wish-compare">

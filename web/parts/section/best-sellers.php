@@ -15,8 +15,7 @@
                         <div class="product-item">
                             <div class="image">
                                 <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                                Valida::GeraParametro(CO_PRODUTO . "/" .
-                                    $produto->getCoProduto()); ?>">
+                                Valida::ValNome($produto->getNoProdutO()); ?>">
                                     <?php
                                     echo Valida::GetMiniatura(
                                         'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
@@ -32,8 +31,7 @@
                                 <div class="label-discount clear"></div>
                                 <div class="title">
                                     <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                                    Valida::GeraParametro(CO_PRODUTO . "/" .
-                                        $produto->getCoProduto()); ?>"><?=
+                                    Valida::ValNome($produto->getNoProdutO()); ?>"><?=
                                         Valida::Resumi($produto->getNoProduto(), 40);
                                         ?></a>
                                 </div>
@@ -49,8 +47,7 @@
                             <div class="hover-area">
                                 <div class="add-cart-button">
                                     <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                                    Valida::GeraParametro(CO_PRODUTO . "/" .
-                                        $produto->getCoProduto()); ?>"
+                                    $produto->getNoProdutoUrlAmigavel(); ?>"
                                        class="le-button">Ver Detalhes</a>
                                 </div>
                                 <div class="wish-compare">
@@ -75,8 +72,7 @@
                         $bemMaisVendidos->getCoImagem()->getCoImagem();
                         ?>">
                             <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                            Valida::GeraParametro(CO_PRODUTO . "/" .
-                                $bemMaisVendidos->getCoProduto()); ?>">
+                            Valida::ValNome($produto->getNoProdutO()); ?>">
                                 <?php
                                 echo Valida::GetMiniatura(
                                     'ProdutosCapa/' . $bemMaisVendidos->getCoImagem()->getDsCaminho(),
@@ -99,8 +95,7 @@
                                 $imagemProduto->getCoImagem()->getCoImagem();
                                 ?>">
                                     <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                                    Valida::GeraParametro(CO_PRODUTO . "/" .
-                                        $imagemProduto->getCoProduto()->getCoProduto()); ?>">
+                                        $imagemProduto->getCoProduto()->getNoProdutoUrlAmigavel(); ?>">
                                         <?php
                                         echo Valida::GetMiniatura(
                                             $imagemProduto->getCoImagem()->getDsCaminho(),
@@ -122,8 +117,7 @@
                                 <a class="horizontal-thumb active" data-target="#best-seller-single-product-slider"
                                    data-slide="0" href="#slide<?= $bemMaisVendidos->getCoProduto(); ?>"
                                    href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                                   Valida::GeraParametro(CO_PRODUTO . "/" .
-                                       $bemMaisVendidos->getCoProduto()); ?>">
+                                   Valida::ValNome($bemMaisVendidos->getNoProdutO()); ?>">
                                     <?php
                                     echo Valida::GetMiniatura(
                                         'ProdutosCapa/' . $bemMaisVendidos->getCoImagem()->getDsCaminho(),
@@ -147,8 +141,7 @@
                                            data-slide="0"
                                            href="#slide<?= $imagemProduto->getCoProduto()->getCoProduto(); ?>"
                                            href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                                           Valida::GeraParametro(CO_PRODUTO . "/" .
-                                               $bemMaisVendidos->getCoProduto()); ?>">
+                                           Valida::ValNome($bemMaisVendidos->getNoProdutO()); ?>">
                                             <?php
                                             echo Valida::GetMiniatura(
                                                 $imagemProduto->getCoImagem()->getDsCaminho(),
@@ -168,8 +161,7 @@
                         <div class="label-discount clear"></div>
                         <div class="title">
                             <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                            Valida::GeraParametro(CO_PRODUTO . "/" .
-                                $bemMaisVendidos->getCoProduto()); ?>"><?=
+                            $bemMaisVendidos->getNoProdutoUrlAmigavel(); ?>"><?=
                                 Valida::Resumi($bemMaisVendidos->getNoProduto(), 100);
                                 ?></a>
                         </div>
@@ -182,8 +174,7 @@
                             );
                             ?></div>
                         <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                        Valida::GeraParametro(CO_PRODUTO . "/" .
-                            $bemMaisVendidos->getCoProduto()); ?>"
+                        Valida::ValNome($bemMaisVendidos->getNoProdutO()); ?>"
                            class="le-button big inline">Ver Detalhes</a>
                     </div>
                 </div><!-- /.product-item-holder -->

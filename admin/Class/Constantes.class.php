@@ -31,6 +31,7 @@
 	define('CO_CATEGORIA', 'co_categoria');
 	define('NO_CATEGORIA', 'no_categoria');
 	define('NO_PRODUTO', 'no_produto');
+	define('NO_PRODUTO_URL_AMIGAVEL', 'no_produto_url_amigavel');
 	define('ST_STATUS', 'st_status');
 	define('CO_SEGMENTO', 'co_segmento');
 	define('CO_CLIENTE', 'co_cliente');

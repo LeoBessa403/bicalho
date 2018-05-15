@@ -11,8 +11,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-9 no-margin">
                         <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                        Valida::GeraParametro(CO_PRODUTO . "/" .
-                            $produto->getCoProduto()); ?>"><?=
+                        $produto->getNoProdutoUrlAmigavel(); ?>"><?=
                             Valida::Resumi($produto->getNoProduto(), 60);
                             ?></a>
                         <div class="price">
@@ -30,8 +29,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-3 no-margin">
                         <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                        Valida::GeraParametro(CO_PRODUTO . "/" .
-                            $produto->getCoProduto()); ?>">
+                        $produto->getNoProdutoUrlAmigavel(); ?>">
                             <?php
                             echo Valida::GetMiniatura(
                                 'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),

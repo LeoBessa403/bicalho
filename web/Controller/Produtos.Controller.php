@@ -15,12 +15,13 @@ class Produtos extends AbstractController
         $segmentoService = $this->getService(SEGMENTO_SERVICE);
         $this->segmentos = $segmentoService->PesquisaTodos();
 
-
-        $coProduto = UrlAmigavel::PegaParametro(CO_PRODUTO);
+        $noProduto = UrlAmigavel::PegaParametroUrlAmigavel();
         $this->produto = [];
-        if ($coProduto) {
+        if ($noProduto) {
             /** @var ProdutoEntidade $produto */
-            $this->produtoPrincipal = $produtoService->PesquisaUmRegistro($coProduto);
+            $this->produtoPrincipal = $produtoService->PesquisaUmQuando([
+                NO_PRODUTO_URL_AMIGAVEL => $noProduto
+            ]);
         }
     }
 
@@ -36,8 +37,8 @@ class Produtos extends AbstractController
     {
         /** @var ProdutoService $produtoService */
         $produtoService = $this->getService(PRODUTO_SERVICE);
-        $coProduto = UrlAmigavel::PegaParametro(CO_PRODUTO);
-        return $produtoService->getSeoProdutos($coProduto);
+        $noProduto = UrlAmigavel::PegaParametroUrlAmigavel();
+        return $produtoService->getSeoProdutos($noProduto);
     }
 
 }

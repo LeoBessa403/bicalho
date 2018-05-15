@@ -30,8 +30,7 @@ $vistosRecentementes = $produtoRecService->pesquisaProdutos(8);
                     <?php } ?>
                     <div class="image">
                         <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                        Valida::GeraParametro(CO_PRODUTO . "/" .
-                            $produtoRec->getCoProduto()); ?>">
+                        $produtoRec->getNoProdutoUrlAmigavel(); ?>">
                             <?php
                             echo Valida::GetMiniatura(
                                 'ProdutosCapa/' . $produtoRec->getCoImagem()->getDsCaminho(),
@@ -55,8 +54,7 @@ $vistosRecentementes = $produtoRecService->pesquisaProdutos(8);
                         <?php } ?>
                         <div class="title">
                             <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                            Valida::GeraParametro(CO_PRODUTO . "/" .
-                                $produtoRec->getCoProduto()); ?>"><?=
+                            $produtoRec->getNoProdutoUrlAmigavel(); ?>"><?=
                                 Valida::Resumi($produtoRec->getNoProduto(), 30);
                                 ?></a>
                         </div>
@@ -72,8 +70,7 @@ $vistosRecentementes = $produtoRecService->pesquisaProdutos(8);
                     <div class="hover-area">
                         <div class="add-cart-button">
                             <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                            Valida::GeraParametro(CO_PRODUTO . "/" .
-                                $produtoRec->getCoProduto()); ?>"
+                            $produtoRec->getNoProdutoUrlAmigavel(); ?>"
                                class="le-button">Ver Detalhes</a>
                         </div>
                         <div class="wish-compare">

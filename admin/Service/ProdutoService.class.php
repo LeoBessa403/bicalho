@@ -142,12 +142,12 @@ class  ProdutoService extends AbstractService
     }
 
     /**
-     * @param $coProduto
-     * @return array
+     * @param $noProduto
+     * @return mixed
      */
-    public function getSeoProdutos($coProduto)
+    public function getSeoProdutos($noProduto)
     {
-        return $this->ObjetoModel->getSeoProdutos($coProduto);
+        return $this->ObjetoModel->getSeoProdutos($noProduto);
     }
 
     /**

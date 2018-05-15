@@ -36,7 +36,7 @@
                             </div>
                             <div class="button-holder fadeInDown-3">
                                 <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                                Valida::GeraParametro(CO_PRODUTO . "/" . $produto->getCoProduto()); ?>"
+                                $produto->getNoProdutoUrlAmigavel(); ?>"
                                    class="big le-button ">Mais Detalhes</a>
                             </div>
                         </div><!-- /.caption -->

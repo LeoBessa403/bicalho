@@ -100,10 +100,10 @@ class  ProdutoModel extends AbstractModel
     }
 
     /**
-     * @param $coProduto
-     * @return array
+     * @param $noProduto
+     * @return mixed
      */
-    public static function getSeoProdutos($coProduto)
+    public static function getSeoProdutos($noProduto)
     {
         $tabela = ProdutoEntidade::TABELA . " prod" .
             " inner join " . ImagemEntidade::TABELA . " img" .
@@ -111,8 +111,8 @@ class  ProdutoModel extends AbstractModel
         $campos = "img." . DS_CAMINHO . ' AS imagem, prod.' . DS_DESCRICAO . ' AS descricao , prod.' .
             NO_PRODUTO . ' AS titulo';
         $pesquisa = new Pesquisa();
-        $where = "where " . ProdutoEntidade::CHAVE . " = :coProduto";
-        $pesquisa->Pesquisar($tabela, $where, "coProduto={$coProduto}", $campos);
+        $where = "where " . NO_PRODUTO_URL_AMIGAVEL . " = :noProduto";
+        $pesquisa->Pesquisar($tabela, $where, "noProduto={$noProduto}", $campos);
         $dadosSeo = $pesquisa->getResult()[0];
 
         $dadosSeo['imagem'] = HOME . 'uploads/ProdutosCapa/' . $dadosSeo['imagem'];
