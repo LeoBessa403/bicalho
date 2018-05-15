@@ -105,6 +105,7 @@ class  ProdutoModel extends AbstractModel
      */
     public static function getSeoProdutos($noProduto)
     {
+        $dadosSeo = [];
         $tabela = ProdutoEntidade::TABELA . " prod" .
             " inner join " . ImagemEntidade::TABELA . " img" .
             " on prod." . ImagemEntidade::CHAVE . " = img." . ImagemEntidade::CHAVE;
@@ -113,9 +114,11 @@ class  ProdutoModel extends AbstractModel
         $pesquisa = new Pesquisa();
         $where = "where " . NO_PRODUTO_URL_AMIGAVEL . " = :noProduto";
         $pesquisa->Pesquisar($tabela, $where, "noProduto={$noProduto}", $campos);
-        $dadosSeo = $pesquisa->getResult()[0];
+        if (!empty($pesquisa->getResult())) {
+            $dadosSeo = $pesquisa->getResult()[0];
+            $dadosSeo['imagem'] = HOME . 'uploads/ProdutosCapa/' . $dadosSeo['imagem'];
+        }
 
-        $dadosSeo['imagem'] = HOME . 'uploads/ProdutosCapa/' . $dadosSeo['imagem'];
         return $dadosSeo;
     }
 }

@@ -22,6 +22,9 @@ class Produtos extends AbstractController
             $this->produtoPrincipal = $produtoService->PesquisaUmQuando([
                 NO_PRODUTO_URL_AMIGAVEL => $noProduto
             ]);
+            if (empty($this->produtoPrincipal)) {
+                Redireciona('web/Produtos/ProdutoNaoEncontrado/');
+            }
         }
     }
 
