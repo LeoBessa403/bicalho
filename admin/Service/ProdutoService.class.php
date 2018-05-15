@@ -53,6 +53,7 @@ class  ProdutoService extends AbstractService
             $produto[CO_CATEGORIA] = $result[CO_CATEGORIA][0];
             $produto[CO_UNIDADE_VENDA] = $result[CO_UNIDADE_VENDA][0];
             $produto[NO_PRODUTO] = trim($result[NO_PRODUTO]);
+            $produto[NO_PRODUTO_URL_AMIGAVEL] = Valida::ValNome(trim($result[NO_PRODUTO]));
             $produto[DS_DESCRICAO] = trim($result[DS_DESCRICAO]);
             if (!empty($result[NU_ESTOQUE])) {
                 $produto[NU_ESTOQUE] = 1; // Com Estoque
