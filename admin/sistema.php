@@ -117,15 +117,16 @@ endif;
                                     $fotoPerfil = "avatar-mulher.jpg";
                                 endif;
                             endif;
-
-                            echo Valida::GetMiniatura("usuarios/" . $fotoPerfil,
-                                'Leonardo', 35, 35, "circle-img");
+                            echo '<img src="' . HOME . 'library/Helpers/Timthumb.class.php?src=' . HOME .
+                                'library/Imagens/' . $fotoPerfil . '&w=35&h=35" 
+                                alt="' . $user[md5(NO_PESSOA)] . '" title="' . $user[md5(NO_PESSOA)] . '" 
+                                class="circle-img" />';
                             ?>
                             <span class="username">
                             <?php
-                            echo Valida::Resumi($user[md5(NO_PESSOA)], 25);;
+                            echo Valida::Resumi($user[md5(NO_PESSOA)], 25);
                             ?>
-                        </span>
+                            </span>
                             <i class="clip-chevron-down"></i>
                         </a>
                         <ul class="dropdown-menu">
