@@ -9,7 +9,8 @@ function servidor_inicial()
             'USER' => 'root',
             'PASS' => '',
             'DBSA' => 'bicalhor_bd',
-            'DEBUG' => true
+            'DEBUG' => true,
+            'PROD' => false
         );
     } else {
         $config = array(
@@ -18,7 +19,8 @@ function servidor_inicial()
             'USER' => 'bicalhor_bd',
             'PASS' => 'Admin101*',
             'DBSA' => 'bicalhor_bd',
-            'DEBUG' => false
+            'DEBUG' => false,
+            'PROD' => true
         );
     }
 
@@ -28,6 +30,7 @@ function servidor_inicial()
     define('PASS', $config['PASS']);
     define('DBSA', $config['DBSA']);
     define('DEBUG', $config['DEBUG']);
+    define('PROD', $config['PROD']);
 
     //////////////////////////////////////////////
     // ******* CONFIGURAÇÕES DO SITE ********** //
