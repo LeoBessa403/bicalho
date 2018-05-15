@@ -1,13 +1,13 @@
 <div class="no-margin col-xs-12 col-sm-7 body-holder">
     <div class="body">
         <div class="star-holder inline">
-            <div class="star" data-score="4"></div>
+            <div class="star" data-score="<?= rand(3, 5); ?>"></div>
         </div>
         <div class="availability"><label>Disponibilidade:</label><span> <?=
                 FuncoesSistema::ProdutoEstoqueLabel($produtoPrincipal->getNuEstoque());
                 ?></span></div>
 
-        <div class="title"><a href="#"><?= $produtoPrincipal->getNoProduto() ;?></a></div>
+        <div class="title"><a href="#"><?= $produtoPrincipal->getNoProduto(); ?></a></div>
         <div class="brand">
             <a href="<?php echo PASTASITE; ?>Fabricantes/ListarFabricantes/<?=
             Valida::GeraParametro(CO_FABRICANTE . "/" .
@@ -16,7 +16,7 @@
                 ?></a>
         </div>
         <?php
-        $noProduto = $produtoPrincipal->getNoProduto().' - '. $produtoPrincipal->getCoFabricante()->getNoFabricante();
+        $noProduto = $produtoPrincipal->getNoProduto() . ' - ' . $produtoPrincipal->getCoFabricante()->getNoFabricante();
         ?>
         <div class="social-row">
             <span title="Compartilhe no Facebook" class="st_facebook_hcount"></span>
@@ -34,17 +34,17 @@
         </div>
 
         <div class="excerpt">
-            <p><?= Valida::Resumi($produtoPrincipal->getDsDescricao(),280) ;?></p>
+            <p><?= Valida::Resumi($produtoPrincipal->getDsDescricao(), 280); ?></p>
         </div>
 
         <div class="prices">
             <div class="price-current"><?=
-                Valida::FormataMoeda($produtoPrincipal->getUltimoCoProdutoDetalhe()->getNuPrecoVenda(),'R$');
+                Valida::FormataMoeda($produtoPrincipal->getUltimoCoProdutoDetalhe()->getNuPrecoVenda(), 'R$');
                 ?></div>
             <div class="price-prev">de <?=
                 Valida::FormataMoeda(
-                        floor($produtoPrincipal->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 1.10)
-                        ,'R$');
+                    floor($produtoPrincipal->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 1.10)
+                    , 'R$');
                 ?></div>
         </div>
 
