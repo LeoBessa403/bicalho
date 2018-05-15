@@ -15,7 +15,7 @@
                         <div class="product-item">
                             <div class="image">
                                 <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                                Valida::ValNome($produto->getNoProdutO()); ?>">
+                                $produto->getNoProdutoUrlAmigavel(); ?>">
                                     <?php
                                     echo Valida::GetMiniatura(
                                         'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
@@ -31,7 +31,7 @@
                                 <div class="label-discount clear"></div>
                                 <div class="title">
                                     <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                                    Valida::ValNome($produto->getNoProdutO()); ?>"><?=
+                                    $produto->getNoProdutoUrlAmigavel(); ?>"><?=
                                         Valida::Resumi($produto->getNoProduto(), 40);
                                         ?></a>
                                 </div>
@@ -72,7 +72,7 @@
                         $bemMaisVendidos->getCoImagem()->getCoImagem();
                         ?>">
                             <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                            Valida::ValNome($produto->getNoProdutO()); ?>">
+                            $bemMaisVendidos->getNoProdutoUrlAmigavel(); ?>">
                                 <?php
                                 echo Valida::GetMiniatura(
                                     'ProdutosCapa/' . $bemMaisVendidos->getCoImagem()->getDsCaminho(),
@@ -117,7 +117,7 @@
                                 <a class="horizontal-thumb active" data-target="#best-seller-single-product-slider"
                                    data-slide="0" href="#slide<?= $bemMaisVendidos->getCoProduto(); ?>"
                                    href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                                   Valida::ValNome($bemMaisVendidos->getNoProdutO()); ?>">
+                                   $bemMaisVendidos->getNoProdutoUrlAmigavel(); ?>">
                                     <?php
                                     echo Valida::GetMiniatura(
                                         'ProdutosCapa/' . $bemMaisVendidos->getCoImagem()->getDsCaminho(),
@@ -141,7 +141,7 @@
                                            data-slide="0"
                                            href="#slide<?= $imagemProduto->getCoProduto()->getCoProduto(); ?>"
                                            href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                                           Valida::ValNome($bemMaisVendidos->getNoProdutO()); ?>">
+                                           $bemMaisVendidos->getNoProdutoUrlAmigavel(); ?>">
                                             <?php
                                             echo Valida::GetMiniatura(
                                                 $imagemProduto->getCoImagem()->getDsCaminho(),
@@ -161,7 +161,8 @@
                         <div class="label-discount clear"></div>
                         <div class="title">
                             <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                            $bemMaisVendidos->getNoProdutoUrlAmigavel(); ?>"><?=
+                            Valida::GeraParametro(CO_PRODUTO . "/" .
+                                $bemMaisVendidos->getCoProduto()); ?>"><?=
                                 Valida::Resumi($bemMaisVendidos->getNoProduto(), 100);
                                 ?></a>
                         </div>
@@ -174,7 +175,7 @@
                             );
                             ?></div>
                         <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
-                        Valida::ValNome($bemMaisVendidos->getNoProdutO()); ?>"
+                        $bemMaisVendidos->getNoProdutoUrlAmigavel(); ?>"
                            class="le-button big inline">Ver Detalhes</a>
                     </div>
                 </div><!-- /.product-item-holder -->
