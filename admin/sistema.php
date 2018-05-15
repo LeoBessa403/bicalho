@@ -2,8 +2,6 @@
 ob_start();
 $url = new UrlAmigavel();
 $back = new Backup();
-$SiteMap = new Sitemap;
-$SiteMap->exeSitemap();
 //$entidade = new GerarEntidades();
 if (in_array(UrlAmigavel::$action, UrlAmigavel::$ACESSO_PERMITIDO)):
     $url->pegaControllerAction();
