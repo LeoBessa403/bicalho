@@ -47,7 +47,7 @@
                         /** @var ProdutoEntidade $res */
                         foreach ($result as $res):
                             $acao = '<a href="' . PASTAADMIN . 'Produto/CadastroProduto/' .
-                                $res->getNoProdutoUrlAmigavel() . '" class="btn btn-primary tooltips" 
+                                Valida::GeraParametro(CO_PRODUTO . "/" . $res->getCoProduto()) . '" class="btn btn-primary tooltips" 
                                     data-original-title="Editar Registro" data-placement="top">
                                      <i class="fa fa-clipboard"></i>
                                  </a>';
@@ -56,7 +56,7 @@
                                         tooltips acao" id="' . $res->getCoProduto() . '" data-msg-restricao="MSG02"
                                            href="#ProdutoDesativar" data-original-title="Desativar Produto" data-placement="top"
                                             data-url-action="' . PASTAADMIN . 'Produto/DesativarProduto/' .
-                                    $res->getNoProdutoUrlAmigavel() . '">
+                                    Valida::GeraParametro(CO_PRODUTO . "/" . $res->getCoProduto()) . '">
                                             <i class="fa fa-lock"></i>
                                         </a>';
 
@@ -86,7 +86,7 @@
                                         tooltips acao" id="' . $res->getCoProduto() . '" data-msg-restricao="MSG03"
                                            href="#ProdutoAtivar" data-original-title="Ativar Produto" data-placement="top"
                                            data-url-action="' . PASTAADMIN . 'Produto/AtivarProduto/' .
-                                    $res->getNoProdutoUrlAmigavel() . '">
+                                    Valida::GeraParametro(CO_PRODUTO . "/" . $res->getCoProduto()) . '">
                                             <i class="fa fa-unlock-alt"></i>
                                         </a>';
                             }
