@@ -128,7 +128,7 @@ class Index extends AbstractController
                             ".</b></p>";
 
                         $email->setEmailDestinatario($emails)
-                            ->setTitulo("[WEB GEJ] - Recuperação de senha")
+                            ->setTitulo("[Sistema ".DESC."] - Recuperação de senha")
                             ->setMensagem($Mensagem);
 
                         // Variável para validação de Emails Enviados com Sucesso.
