@@ -54,6 +54,8 @@ $seo = new Seo($url);
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/bootstrap.min.css">
+    <link rel="alternate" type="application/rss+xml" href="<?= HOME; ?>rss.php"/>
+    <link rel="sitemap" type="application/xml" href="<?= HOME; ?>sitemap.xml" />
 
     <!-- Customizable CSS -->
     <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/style.css">
