@@ -13,6 +13,17 @@ $pages = array(
 $url = new UrlAmigavel();
 /** @var Seo $seo */
 $seo = new Seo($url);
+//Gera SITEMAP (1X / dia)
+$SiteMapCheck = fopen('sitemap.txt', "a+");
+$SiteMapCheckDate = fgets($SiteMapCheck);
+if ($SiteMapCheckDate != date('Y-m-d')):
+    $SiteMapCheck = fopen('sitemap.txt', "w");
+    fwrite($SiteMapCheck, date('Y-m-d'));
+    fclose($SiteMapCheck);
+
+    $SiteMap = new Sitemap;
+    $SiteMap->exeSitemap();
+endif;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br" itemscope itemtype="https://schema.org/WebSite">
