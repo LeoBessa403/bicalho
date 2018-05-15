@@ -25,6 +25,8 @@ class Produtos extends AbstractController
             if (empty($this->produtoPrincipal)) {
                 Redireciona('web/Produtos/ProdutoNaoEncontrado/');
             }
+        }else{
+            Redireciona('web/Produtos/ProdutoNaoEncontrado/');
         }
     }
 

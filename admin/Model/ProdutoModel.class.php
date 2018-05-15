@@ -114,7 +114,7 @@ class  ProdutoModel extends AbstractModel
         $pesquisa = new Pesquisa();
         $where = "where " . NO_PRODUTO_URL_AMIGAVEL . " = :noProduto";
         $pesquisa->Pesquisar($tabela, $where, "noProduto={$noProduto}", $campos);
-        if (!empty($pesquisa->getResult())) {
+        if (count($pesquisa->getResult())) {
             $dadosSeo = $pesquisa->getResult()[0];
             $dadosSeo['imagem'] = HOME . 'uploads/ProdutosCapa/' . $dadosSeo['imagem'];
         }
