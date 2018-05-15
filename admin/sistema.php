@@ -108,23 +108,32 @@ endif;
                             /** @var Session $us */
                             $us = $_SESSION[SESSION_USER];
                             $user = $us->getUser();
-                            $fotoPerfil = $user[md5('ds_caminho')];
-                            if ($fotoPerfil == ""):
+                            $noPessoa = $user[md5(NO_PESSOA)];
+                            $foto = $user[md5('ds_caminho')];
+                            if ($foto == ""):
                                 $sexo = $user[md5('st_sexo')];
                                 if ($sexo == "M"):
                                     $fotoPerfil = "avatar-homem.jpg";
                                 else:
                                     $fotoPerfil = "avatar-mulher.jpg";
                                 endif;
+                            else:
+                                $fotoPerfil = $foto;
                             endif;
-                            echo '<img src="' . HOME . 'library/Helpers/Timthumb.class.php?src=' . HOME .
-                                'library/Imagens/' . $fotoPerfil . '&w=35&h=35" 
-                                alt="' . $user[md5(NO_PESSOA)] . '" title="' . $user[md5(NO_PESSOA)] . '" 
+
+                            if ($foto == ""){
+                                echo '<img src="' . HOME . 'library/Helpers/Timthumb.class.php?src=' . HOME .
+                                    'library/Imagens/' . $fotoPerfil . '&w=35&h=35" 
+                                alt="' . $noPessoa . '" title="' . $noPessoa . '" 
                                 class="circle-img" />';
+                            }else{
+                                echo Valida::GetMiniatura("usuarios/" . $fotoPerfil,
+                                    'Leonardo', 35, 35, "circle-img");
+                            }
                             ?>
                             <span class="username">
                             <?php
-                            echo Valida::Resumi($user[md5(NO_PESSOA)], 25);
+                            echo Valida::Resumi($noPessoa, 25);
                             ?>
                             </span>
                             <i class="clip-chevron-down"></i>
