@@ -22,6 +22,7 @@ $siteMap = new Sitemap();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=0">
 
+    <!-- Inclução das tags do Seo -->
     <?php require_once 'library/includes/SeoTags.php' ; ?>
 
     <!-- Bootstrap Core CSS -->
