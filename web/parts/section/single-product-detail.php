@@ -28,11 +28,10 @@
                     fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));</script>
             <div class="fb-share-button"
-                 data-href="<?=
-                 urlencode('https://bicalhorefrigeracao.com/'); ?>"
+                 data-href="https://bicalhorefrigeracao.com/"
                  data-layout="button_count" data-size="small" data-mobile-iframe="true">
-                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?=
-                urlencode('https://bicalhorefrigeracao.com/'); ?>"
+                <a target="_blank"
+                   href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbicalhorefrigeracao.com%2F&amp;src=sdkpreparse"
                    class="fb-xfbml-parse-ignore">Compartilhar</a>
             </div>
             <span title="Compartilhe no Twitter" target="_blank" rel="nofollow"

@@ -49,7 +49,7 @@ endif;
     <meta itemprop="image" content="<?= $seo->getImagem() ?>"/>
     <meta itemprop="url" content="<?= $seo->getUrl(); ?>"/>
 
-    <meta property="og:type" content="article"/>
+    <meta property="og:type" content="WebSite"/>
     <meta property="og:title" content="<?= $seo->getTitulo(); ?>"/>
     <meta property="og:description" content="<?= $seo->getDescricao(); ?>"/>
     <meta property="og:image" content="<?= $seo->getImagem(); ?>"/>
