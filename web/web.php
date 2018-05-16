@@ -91,7 +91,19 @@ endif;
     <![endif]-->
 </head>
 <body>
+<!-- GOOGLE ANALITCS -->
+<?php if (ID_ANALITCS): ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo ID_ANALITCS; ?>"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', '<?php echo ID_ANALITCS; ?>');
+    </script>
+<?php endif; ?>
+<!-- FIM / GOOGLE ANALITCS -->
 <div class="wrapper">
     <?php
     require PASTA_RAIZ . SITE . '/parts/navigation/top-menu-bar.php';
