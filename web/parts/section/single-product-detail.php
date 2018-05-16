@@ -30,7 +30,7 @@
             <div class="fb-share-button"
                  data-href="https://bicalhorefrigeracao.com"
                  data-layout="button_count" data-size="small" data-mobile-iframe="true">
-                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://bicalhorefrigeracao.com"
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://bicalhorefrigeracao.com/"
                    class="fb-xfbml-parse-ignore">Compartilhar</a>
             </div>
             <span title="Compartilhe no Twitter" target="_blank" rel="nofollow"
