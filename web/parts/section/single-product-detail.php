@@ -1,3 +1,7 @@
+<?php
+    $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
+        '/' . UrlAmigavel::$action . '/' . UrlAmigavel::PegaParametroUrlAmigavel();
+?>
 <div class="no-margin col-xs-12 col-sm-7 body-holder">
     <div class="body">
         <div class="star-holder inline">
@@ -28,12 +32,15 @@
                     fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));</script>
             <div class="fb-share-button"
-                 data-href="https://bicalhorefrigeracao.com/"
+                 data-href="<?= $url; ?>"
                  data-layout="button_count" data-size="small" data-mobile-iframe="true">
                 <a target="_blank"
-                   href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbicalhorefrigeracao.com%2F&amp;src=sdkpreparse"
+                   href="https://www.facebook.com/sharer/sharer.php?u=<?=
+                   urlencode($url); ?>&amp;src=sdkpreparse"
                    class="fb-xfbml-parse-ignore">Compartilhar</a>
             </div>
+            <span title="Compartilhe no Twitter" target="_blank" rel="nofollow"
+               class="st_twitter_hcount sharebox" href=""></span>
             <a class="whatsapp" title="Nos chame no WhatSapp"
                href="<?php Valida::geraLinkWhatSapp(Mensagens::ZAP05, [$noProduto]) ?>"
                target="_blank">
