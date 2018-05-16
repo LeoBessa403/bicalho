@@ -16,7 +16,7 @@ $seo = new Seo($url);
 //Gera SITEMAP (1X / dia)
 $SiteMapCheck = fopen('sitemap.txt', "a+");
 $SiteMapCheckDate = fgets($SiteMapCheck);
-if ($SiteMapCheckDate != date('Y-m-d') && PROD):
+if ($SiteMapCheckDate != date('Y-m-d')):
     $SiteMapCheck = fopen('sitemap.txt', "w");
     fwrite($SiteMapCheck, date('Y-m-d'));
     fclose($SiteMapCheck);
