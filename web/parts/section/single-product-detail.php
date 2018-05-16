@@ -18,7 +18,7 @@
         <?php
         $noProduto = $produtoPrincipal->getNoProduto() . ' - ' . $produtoPrincipal->getCoFabricante()->getNoFabricante();
         ?>
-        <div class="social-row">
+        <div class="social-row col-lg-12">
             <div id="fb-root"></div>
             <script>(function(d, s, id) {
                     var js, fjs = d.getElementsByTagName(s)[0];
@@ -34,13 +34,10 @@
                    href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fbicalhorefrigeracao.com%2F&amp;src=sdkpreparse"
                    class="fb-xfbml-parse-ignore">Compartilhar</a>
             </div>
-            <span title="Compartilhe no Twitter" target="_blank" rel="nofollow"
-               class="st_twitter_hcount sharebox" href="http://www.twitter.com/UpInsideBr"></span>
             <a class="whatsapp" title="Nos chame no WhatSapp"
                href="<?php Valida::geraLinkWhatSapp(Mensagens::ZAP05, [$noProduto]) ?>"
                target="_blank">
-                <i class="fa fa-whatsapp"></i> WhatSapp
-            </a>
+                <i class="fa fa-whatsapp"></i> WhatSapp</a>
         </div>
 
         <div class="buttons-holder">
