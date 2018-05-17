@@ -38,6 +38,8 @@ function servidor_inicial()
 
     // Título do Site
     define('DESC', 'Bicalho Refrigeração');
+    // Título do Sistema
+    define('DESC_SIS', 'Sistema Bicalho');
     // Tabela de pesquisa de usuário para validação
     define('TABLE_USER', 'tb_usuario');
     // Campo de login na Tabela de pesquisa de usuário para validação

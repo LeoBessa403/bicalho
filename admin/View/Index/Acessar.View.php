@@ -9,7 +9,7 @@
 <!--<![endif]-->
 <!-- start: HEAD -->
 <head>
-    <title><?= DESC; ?></title>
+    <title>SISTEMA | <?= DESC_SIS; ?></title>
     <!-- start: META -->
     <meta charset="utf-8"/>
     <!--[if IE]>
@@ -50,7 +50,7 @@
 <body class="login example1">
 <div class="main-login col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3" style="padding: 20px 50px;">
     <div class="logo" style="color: white;">
-        <?= DESC; ?>
+        <?= DESC_SIS; ?>
     </div>
     <!-- start: LOGIN BOX -->
     <div class="box-login" style="padding: 10px 20px;">

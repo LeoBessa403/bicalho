@@ -26,7 +26,7 @@ endif;
     <!--<![endif]-->
     <!-- start: HEAD -->
     <head>
-        <title>SISTEMA | <?= DESC; ?></title>
+        <title>SISTEMA | <?= DESC_SIS; ?></title>
         <!-- start: META -->
         <meta charset="utf-8"/>
         <!--[if IE]>
@@ -93,7 +93,7 @@ endif;
                 <!-- end: RESPONSIVE MENU TOGGLER -->
                 <!-- start: LOGO -->
                 <a class="navbar-brand" href="<?= PASTAADMIN; ?>Index/Index">
-                    <?= DESC; ?>
+                    <?= DESC_SIS; ?>
                 </a>
                 <!-- end: LOGO -->
             </div>

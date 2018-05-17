@@ -9,7 +9,7 @@
 <!--<![endif]-->
 <!-- start: HEAD -->
 <head>
-    <title><?php echo DESC; ?></title>
+    <title>SISTEMA | <?= DESC_SIS; ?></title>
     <!-- start: META -->
     <meta charset="utf-8"/>
     <!--[if IE]>
@@ -67,7 +67,7 @@
 <div class="main-login col-md-4 col-md-offset-4" style="margin-top: 0; padding: 10px 0;">
     <div class="logo">
         <a style="color: whitesmoke;" href="<?php echo PASTASITE; ?>">
-            <?php echo DESC; ?>
+            <?= DESC_SIS; ?>
         </a>
     </div>
     <!-- start: LOGIN BOX -->
