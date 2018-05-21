@@ -88,6 +88,7 @@ function servidor_inicial()
 
 
     include_once('Class/Constantes.class.php');
+    include_once('library/Constantes.class.php');
 
 }
 
