@@ -67,7 +67,12 @@ $produtosMaisProcurados =  $produtoService->pesquisaProdutos(3);
         <div class="container">
             <div class="col-xs-12 col-sm-6 no-margin">
                 <div class="copyright">
-                    &copy; Desenvolvimento Leo Bessa <?php echo date("Y"); ?>
+                    <?php
+                    $linhas = fopen('versao.txt', "a+");
+                    $versoes = fgets($linhas);
+                    $versao = explode('//',$versoes);
+                    ?>
+                    <?= date("Y"); ?> &copy; Leo Bessa Desenvolvimento. <b>Versão: <?= $versao[4]; ?></b>
                 </div><!-- /.copyright -->
             </div>
         </div><!-- /.container -->

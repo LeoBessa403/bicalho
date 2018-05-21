@@ -201,7 +201,12 @@ endif;
     <!-- start: FOOTER -->
     <div class="footer clearfix">
         <div class="footer-inner">
-            <?= date("Y"); ?> &copy; Leo Bessa Desenvolvimento.
+            <?php
+            $linhas = fopen('versao.txt', "a+");
+            $versoes = fgets($linhas);
+            $versao = explode('//',$versoes);
+            ?>
+            <?= date("Y"); ?> &copy; Leo Bessa Desenvolvimento. <b>Versão: <?= $versao[2]; ?></b>
         </div>
         <div class="footer-items">
             <span class="go-top"><i class="clip-chevron-up"></i></span>
