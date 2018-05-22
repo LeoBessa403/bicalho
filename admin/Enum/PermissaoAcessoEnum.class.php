@@ -24,6 +24,10 @@ class PermissaoAcessoEnum extends AbstractEnum
     const LISTAR_FABRICANTE = 17;
     const CADASTRO_PRODUTO = 18;
     const LISTAR_PRODUTO = 19;
+    const DESATIVAR_PRODUTO = 20;
+    const ATIVAR_PRODUTO = 21;
+    const ATIVAR_DESTAQUE = 22;
+    const DESATIVAR_DESTAQUE = 23;
 
     public static $descricao = [
         PermissaoAcessoEnum::PERFIL_MASTER => 'Perfil Master',
@@ -45,6 +49,10 @@ class PermissaoAcessoEnum extends AbstractEnum
         PermissaoAcessoEnum::LISTAR_FABRICANTE => 'Listar Fabricante',
         PermissaoAcessoEnum::CADASTRO_PRODUTO => 'Cadastro Produto',
         PermissaoAcessoEnum::LISTAR_PRODUTO => 'Listar Produto',
+        PermissaoAcessoEnum::DESATIVAR_PRODUTO => 'Desativar Produto',
+        PermissaoAcessoEnum::ATIVAR_PRODUTO => 'Ativar Produto',
+        PermissaoAcessoEnum::ATIVAR_DESTAQUE => 'Ativar Destaque',
+        PermissaoAcessoEnum::DESATIVAR_DESTAQUE => 'Desativar Destaque',
     ];
 
     public static $actions = [
@@ -67,5 +75,9 @@ class PermissaoAcessoEnum extends AbstractEnum
         PermissaoAcessoEnum::LISTAR_FABRICANTE => 'ListarFabricante',
         PermissaoAcessoEnum::CADASTRO_PRODUTO => 'CadastroProduto',
         PermissaoAcessoEnum::LISTAR_PRODUTO => 'ListarProduto',
+        PermissaoAcessoEnum::DESATIVAR_PRODUTO => 'DesativarProduto',
+        PermissaoAcessoEnum::ATIVAR_PRODUTO => 'AtivarProduto',
+        PermissaoAcessoEnum::ATIVAR_DESTAQUE => 'AtivarDestaque',
+        PermissaoAcessoEnum::DESATIVAR_DESTAQUE => 'DesativarDestaque',
     ];
 }
