@@ -88,7 +88,11 @@ function servidor_inicial()
 
 
     include_once('Class/Constantes.class.php');
-    include_once('library/Constantes.class.php');
+    if (file_exists('library/Constantes.class.php')):
+        include_once "library/Constantes.class.php";
+    else:
+        include_once "../../library/Constantes.class.php";
+    endif;
 
 }
 
