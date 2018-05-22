@@ -47,7 +47,7 @@ function servidor_inicial()
     // Campo da senha na Tabela de pesquisa de usuário para validação
     define('CAMPO_PASS', 'ds_code');
     // Action do primeiro acesso
-    define('PRIMEIRO_ACESSO', 'Index/Index');
+    define('PRIMEIRO_ACESSO', '/Index/Index');
     // Campo do ID (Chave Primaria) na Tabela de pesquisa de usuário para validação
     define('CAMPO_ID', 'co_usuario');
     // Campo do Perfil na Tabela de pesquisa de usuário para validação dos perfis 
