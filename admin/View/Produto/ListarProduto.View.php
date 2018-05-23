@@ -112,7 +112,8 @@
                                     $res->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
                                 ) . '</b>');
                             $grid->setColunas($acao, 3);
-                            $grid->criaLinha($res->getCoProduto());
+                            $grid->criaLinha($res->getCoProduto(),
+                                ($res->getStStatus() == StatusUsuarioEnum::INATIVO) ? true : false);
                         endforeach;
                         $grid->finalizaGrid();
                         ?>
