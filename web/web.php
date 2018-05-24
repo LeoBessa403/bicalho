@@ -15,6 +15,9 @@ $url = new UrlAmigavel();
 $seo = new Seo($url);
 /** @var Sitemap $siteMap */
 $siteMap = new Sitemap();
+/** @var VisitaService $visitaService */
+$visitaService = new VisitaService();
+$visitaService->gestaoVisita();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br" itemscope itemtype="https://schema.org/WebSite">
