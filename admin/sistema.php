@@ -179,7 +179,7 @@ endif;
                     "Fabricante" => array("fa fa-cogs", "CadastroFabricante", "ListarFabricante"),
                     "Categoria" => array("clip-list-6", "CadastroCategoria", "ListarCategoria"),
                     "Segmento" => array("clip-tree", "CadastroSegmento", "ListarSegmento"),
-                    "Visita" => array("clip-tree", "ListarVisita"),
+                    "Visita" => array("clip-airplane", "ListarVisita"),
                     "Usuario" => array("fa fa-group", "MeuPerfilUsuario", "CadastroUsuario", "ListarUsuario"),
                     "Perfil" => array("clip-stack-empty", "CadastroPerfil", "ListarPerfil"),
                     "Funcionalidade" => array("fa fa-outdent", "CadastroFuncionalidade", "ListarFuncionalidade"),
