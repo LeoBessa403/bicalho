@@ -90,7 +90,8 @@
                                                 <span class="timeline_date"></span>
                                             </div>
                                             <div class="content">
-                                                Valor de Venda: <b><?= $produtoDetalhe->getNuPrecoVenda(); ?></b></br>
+                                                Valor de Venda: <b><?=
+                                                    Valida::FormataMoeda($produtoDetalhe->getNuPrecoVenda()); ?></b></br>
                                                 Alterado Por: <b><?= $pessoa->getNoPessoa(); ?></b></br>
                                                 Modificado: <b><?=
                                                     "{$dia} de " . $mes_extenso["$mes"] . " de {$ano} as {$hor}:{$min}";
