@@ -3,6 +3,7 @@
 class Produto extends AbstractController
 {
     public $result;
+    public $produto;
 
     function ListarProduto()
     {
@@ -138,6 +139,20 @@ class Produto extends AbstractController
         $retorno = $produtoService->DesativarDestaque($coProdutoDetalhe);
         if ($retorno[SUCESSO]) {
             Redireciona(UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller . '/ListarProduto/');
+        }
+    }
+
+    function HistoricoProduto()
+    {
+        /** @var ProdutoService $produtoService */
+        $produtoService = $this->getService(PRODUTO_SERVICE);
+
+        $coProduto = UrlAmigavel::PegaParametro(CO_PRODUTO);
+        if ($coProduto) {
+            /** @var ProdutoEntidade $produto */
+            $this->produto = $produtoService->PesquisaUmRegistro($coProduto);
+        } else {
+            Redireciona(UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller . '/ProdutoNaoEncontrado/');
         }
     }
 

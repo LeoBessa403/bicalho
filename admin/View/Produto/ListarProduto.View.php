@@ -91,6 +91,13 @@
                                         </a>';
                             }
 
+                            $acao .= ' <a href="' . PASTAADMIN . 'Produto/HistoricoProduto/' .
+                                Valida::GeraParametro(CO_PRODUTO . "/" . $res->getCoProduto()) . '" 
+                                class="btn btn-blue tooltips" 
+                                    data-original-title="Historico do Produto" data-placement="top">
+                                     <i class="clip-folder-open"></i>
+                                 </a>';
+
                             $imagem = Valida::GetMiniatura(
                                 'ProdutosCapa/' . $res->getCoImagem()->getDsCaminho(),
                                 Valida::ValNome($res->getNoProduto()),
@@ -111,7 +118,7 @@
                             $grid->setColunas('<b>' . Valida::FormataMoeda(
                                     $res->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
                                 ) . '</b>');
-                            $grid->setColunas($acao, 3);
+                            $grid->setColunas($acao, 4);
                             $grid->criaLinha($res->getCoProduto(),
                                 ($res->getStStatus() == StatusUsuarioEnum::INATIVO) ? true : false);
                         endforeach;
