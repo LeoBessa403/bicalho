@@ -5294,15 +5294,40 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     color: red !important;
 }
 
-.img-destaque{
-    max-width: 70%;
-    height: 80%;
-}
-
 .img-responsive{
     cursor: pointer;
+    position: center;
 }
 
+.container-fluid img{
+    height: 600px !important;
+}
+
+.product-item, .image{
+    height: 200px !important;
+}
+
+.thumb-holder{
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.product-item img{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#featured .product-item, #featured .image, #new-arrivals .product-item, #new-arrivals .image{
+    height: 250px !important;
+}
+
+.owl-stage-outer .product-item, .owl-stage-outer .image{
+    height: 180px !important;
+}
+
+#grid-view .product-item, #grid-view .image{
+    height: 250px !important;
+}
 /*===================================================================================*/
 /*  Responsive Layout
 /*===================================================================================*/
