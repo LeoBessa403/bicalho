@@ -18,6 +18,14 @@
                     <h1>Produto
                         <small>Historico Produto</small>
                     </h1>
+                    <span class="pull-right" style="float: right; margin-right: 10px; margin-top: -30px;">
+                        <?php
+                        echo '<a href="' . PASTAADMIN . UrlAmigavel::$controller . '/Listar' . UrlAmigavel::$controller . '"
+                               class="btn btn-primary tooltips" data-original-title="Voltar" data-placement="top">
+                                Voltar <i class="clip-arrow-right-2"></i>
+                            </a>';
+                        ?>
+                    </span>
                 </div>
                 <!-- end: PAGE TITLE & BREADCRUMB -->
             </div>
@@ -60,7 +68,7 @@
                                 $corI = 0;
                                 $controle = true;
                                 /** @var ProdutoDetalheEntidade $produtoDetalhe */
-                                foreach ($produtoDet  as $produtoDetalhe) {
+                                foreach ($produtoDet as $produtoDetalhe) {
 
                                 /** @var PessoaService $pessoaService */
                                 $pessoaService = new PessoaService();
@@ -87,7 +95,7 @@
                                     <?php } else {
                                         $fechamento = '';
                                     }
-                                    if($corI == 5)
+                                    if ($corI == 5)
                                         $corI = 0;
                                     ?>
 
@@ -121,6 +129,14 @@
                                     <?php } ?>
                             </div>
                         </div>
+                        <span class="pull-right" style="margin-right: 10px; margin-bottom: 10px; display: block;">
+                        <?php
+                        echo '<a href="' . PASTAADMIN . UrlAmigavel::$controller . '/Listar' . UrlAmigavel::$controller . '"
+                               class="btn btn-primary tooltips" data-original-title="Voltar" data-placement="top">
+                                Voltar <i class="clip-arrow-right-2"></i>
+                            </a>';
+                        ?>
+                    </span>
                     </div>
                 </div>
                 <!-- end: DYNAMIC TABLE PANEL -->
