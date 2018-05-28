@@ -5303,7 +5303,7 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     height: 600px !important;
 }
 
-.product-item, .image{
+.image{
     height: 200px !important;
 }
 
@@ -5317,15 +5317,15 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     margin-bottom: auto;
 }
 
-#featured .product-item, #featured .image, #new-arrivals .product-item, #new-arrivals .image{
+#featured .image, #new-arrivals .image{
     height: 250px !important;
 }
 
-.owl-stage-outer .product-item, .owl-stage-outer .image{
+.owl-stage-outer .image{
     height: 180px !important;
 }
 
-#grid-view .product-item, #grid-view .image{
+#grid-view .image{
     height: 250px !important;
 }
 /*===================================================================================*/
