@@ -50,7 +50,7 @@
                                 $mes_extenso = array(
                                     'Jan' => 'Janeiro',
                                     'Feb' => 'Fevereiro',
-                                    'Mar' => 'Marco',
+                                    'Mar' => 'Março',
                                     'Apr' => 'Abril',
                                     'May' => 'Maio',
                                     'Jun' => 'Junho',
