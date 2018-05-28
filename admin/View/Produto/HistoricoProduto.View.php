@@ -35,6 +35,10 @@
                             <div class="timeline">
                                 <div class="spine"></div>
                                 <?php
+
+                                $cor = array('green', 'teal', 'bricky', 'purple', '');
+                                $corBtn = array('warning', 'danger', 'dark-beige', 'info', 'dark-grey');
+
                                 $mes_extenso = array(
                                     'Jan' => 'Janeiro',
                                     'Feb' => 'Fevereiro',
@@ -49,43 +53,46 @@
                                     'Oct' => 'Outubro',
                                     'Dec' => 'Dezembro'
                                 );
-
-                                /** @var ProdutoEntidade $produto */
-                                $produtoDet = array_reverse($produto->getCoProdutoDetalhe());
+                                $produtoDet = $produto->getCoProdutoDetalhe();
 
                                 $meses = '';
-                                $controle = false;
-                                $i = 0;
+                                $fechamento = '';
+                                $corI = 0;
+                                $controle = true;
                                 /** @var ProdutoDetalheEntidade $produtoDetalhe */
-                                foreach ($produtoDet as $produtoDetalhe) {
+                                foreach ($produtoDet  as $produtoDetalhe) {
 
-                                    /** @var PessoaService $pessoaService */
-                                    $pessoaService = new PessoaService();
-                                    /** @var PessoaEntidade $pessoa */
-                                    $pessoa = $pessoaService->PesquisaUmRegistro(
-                                        $produtoDetalhe->getCoUsuario()->getCoPessoa()
-                                    );
-                                    $data = strtotime($produtoDetalhe->getDtCadastro());
-                                    if ($meses != Valida::DataShow($produtoDetalhe->getDtCadastro(), 'Y/m')) {
-                                        $controle = true;
-                                        $meses = Valida::DataShow($produtoDetalhe->getDtCadastro(), 'Y/m')
-                                        ?>
-                                        <div class="date_separator">
+                                /** @var PessoaService $pessoaService */
+                                $pessoaService = new PessoaService();
+                                /** @var PessoaEntidade $pessoa */
+                                $pessoa = $pessoaService->PesquisaUmRegistro(
+                                    $produtoDetalhe->getCoUsuario()->getCoPessoa()
+                                );
+                                $data = strtotime($produtoDetalhe->getDtCadastro());
+                                if ($meses != Valida::DataShow($produtoDetalhe->getDtCadastro(), 'Y/m')) {
+                                if (!$controle)
+                                    $fechamento = '</ul>';
+                                $controle = false;
+                                $meses = Valida::DataShow($produtoDetalhe->getDtCadastro(), 'Y/m')
+                                ?>
+                                <div class="date_separator">
                                             <span><?php
                                                 $mes = date('M', $data);
                                                 $dia = date('d', $data);
                                                 $ano = date('Y', $data);
-                                                $hor = date('H', $data);
-                                                $min = date('i', $data);
                                                 echo $mes_extenso["$mes"] . " de {$ano}";
                                                 ?></span>
-                                        </div>
-                                        <ul class="columns">
-                                    <?php }
-//                                debug($produtoDetalhe);
+                                </div>
+                                <ul class="columns">
+                                    <?php } else {
+                                        $fechamento = '';
+                                    }
+                                    if($corI == 5)
+                                        $corI = 0;
                                     ?>
+
                                     <li>
-                                        <div class="timeline_element teal">
+                                        <div class="timeline_element <?= $cor[$corI]; ?>">
                                             <div class="timeline_title">
                                                 <span class="timeline_date"></span>
                                             </div>
@@ -94,26 +101,24 @@
                                                     Valida::FormataMoeda($produtoDetalhe->getNuPrecoVenda()); ?></b></br>
                                                 Alterado Por: <b><?= $pessoa->getNoPessoa(); ?></b></br>
                                                 Modificado: <b><?=
-                                                    "{$dia} de " . $mes_extenso["$mes"] . " de {$ano} as {$hor}:{$min}";
+                                                    Valida::DataShow(
+                                                        $produtoDetalhe->getDtCadastro(), 'd/m/Y H:i'
+                                                    )
                                                     ?></b>
                                             </div>
                                             <div class="readmore">
                                                 <a href="<?= HOME . SITE . '/Produtos/DetalharProduto/' .
                                                 $produto->getNoProdutoUrlAmigavel(); ?>"
-                                                   class="btn btn-default" target="_blank">
+                                                   class="btn btn-<?= $corBtn[$corI]; ?>" target="_blank">
                                                     Ver Produto <i class="fa fa-arrow-circle-right"></i>
                                                 </a>
                                             </div>
                                         </div>
                                     </li>
-                                    <?php
-                                    if ($controle && (($i + 1) > count($produto))) {
-                                        $controle = false;
-                                        ?>
-                                        </ul>
-                                    <?php }
-                                    $i++;
-                                } ?>
+                                    <?= $fechamento;
+                                    $corI++;
+                                    ?>
+                                    <?php } ?>
                             </div>
                         </div>
                     </div>
