@@ -61,7 +61,7 @@
                                     'Oct' => 'Outubro',
                                     'Dec' => 'Dezembro'
                                 );
-                                $produtoDet = $produto->getCoProdutoDetalhe();
+                                $produtoDet = array_reverse($produto->getCoProdutoDetalhe());
 
                                 $meses = '';
                                 $fechamento = '';
