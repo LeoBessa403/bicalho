@@ -5431,6 +5431,69 @@ select.top-drop-menu {
         margin: 0;
     }
 
+    #owl-main.height-lg .item {
+        height: 350px;
+    }
+
+    .height-lg {
+        height: 350px;
+    }
+
+    #top-banner-and-menu .container{
+        padding: 0 !important;
+    }
+
+    #top-banner-and-menu .container .col-xs-12{
+        padding: 3px 5px !important;
+    }
+
+    #top-banner-and-menu .container-fluid img {
+        height: 300px !important;
+    }
+
+    #top-banner-and-menu .caption {
+        width: 200px !important;
+        height: 100%;
+    }
+
+    #owl-main .caption.right {
+        top: 0 !important;
+    }
+
+    #owl-main .caption .big-text, #owl-main .caption .excerpt {
+        font-size: 18px !important;
+        letter-spacing: -1px;
+        margin-top: 0px;
+    }
+
+    #owl-main .caption .big-text {
+        font-weight: bolder;
+    }
+
+    #owl-main .caption .big {
+        font-size: 25px !important;
+        margin-right: 15px;
+        line-height: 30px;
+    }
+
+    #owl-main .caption .sign {
+        font-size: 12px !important;
+        margin: 5px 5px 0 0 !important;
+    }
+
+    #owl-main .caption .button-holder {
+        float: right;
+        bottom: 10px !important;
+        right: 0;
+        position: absolute;
+    }
+
+    #owl-main .le-button.big {
+        padding: 3px 6px;
+        font-size: 14px !important;
+        font-weight: normal;
+        margin-right: 0;
+    }
 }
 
 /* Extra small devices (phones, less than 768px) */
