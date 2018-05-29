@@ -3219,7 +3219,7 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     position: absolute;
     z-index: 100;
     top: 5%;
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     padding: 20px;
     text-align: right;
@@ -4070,9 +4070,9 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     padding: 55px 30px 30px 30px;
     position: relative;
     height: 220px;
-    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .services .service .service-icon {
@@ -5294,40 +5294,41 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     color: red !important;
 }
 
-.img-responsive{
+.img-responsive {
     cursor: pointer;
     position: center;
 }
 
-.container-fluid img{
+.container-fluid img {
     height: 600px !important;
 }
 
-.image{
+.image {
     height: 200px !important;
 }
 
-.thumb-holder{
+.thumb-holder {
     width: 50px !important;
     height: 50px !important;
 }
 
-.product-item img{
+.product-item img {
     margin-top: auto;
     margin-bottom: auto;
 }
 
-#featured .image, #new-arrivals .image{
+#featured .image, #new-arrivals .image {
     height: 250px !important;
 }
 
-.owl-stage-outer .image{
+.owl-stage-outer .image {
     height: 180px !important;
 }
 
-#grid-view .image{
+#grid-view .image {
     height: 250px !important;
 }
+
 /*===================================================================================*/
 /*  Responsive Layout
 /*===================================================================================*/
@@ -5356,6 +5357,80 @@ select.top-drop-menu {
 
 .navbar-collapse {
     max-height: none;
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 500px) {
+
+    .top-bar {
+        padding: 0px;
+    }
+
+    .top-bar .container {
+        padding: 0px;
+    }
+
+    header {
+        padding: 0px;
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    header .contact-row {
+        padding: 0px;
+    }
+
+    header .contact-row .inline {
+        margin: 5px !important;
+    }
+
+    header .top-search-holder .contact-row {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    header .top-search-holder .search-area {
+        height: 80px;
+    }
+
+    header .top-search-holder .search-field {
+        height: 38px;
+        width: 98% !important;
+    }
+
+    header .top-search-holder .dropdown {
+        line-height: 0 !important;
+        margin-top: 10px;
+    }
+
+    header .top-search-holder .search-area .search-button {
+        margin: -32px -3px 0 0;
+        border-radius: 0 0 5px 0;
+        height: 40px;
+        width: 40px;
+    }
+
+    header .top-search-holder .search-area .search-button:after {
+        font-size: 18px !important;
+        vertical-align: middle !important;
+        text-align: center !important;
+        margin-top: -12px;
+        margin-left: -3px !important;
+    }
+
+    header .top-cart-row {
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: 0;
+    }
+
+    #top-megamenu-nav{
+        padding: 0;
+        margin: 0;
+    }
+
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -5416,20 +5491,9 @@ select.top-drop-menu {
         padding-right: 15px;
     }
 
-    header .top-search-holder .contact-row {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
     header .top-search-holder .contact-row > div, header .top-search-holder .contact-row .phone, header .top-search-holder .contact-row .contact {
         margin: 0;
         margin-bottom: 5px;
-        display: block !important;
-    }
-
-    header .top-search-holder .search-area .search-button {
-        margin: -51px -3px 0 0;
-        border-radius: 0 0 5px 0;
     }
 
     header .top-search-holder .search-area .categories-filter {
