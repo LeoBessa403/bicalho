@@ -207,10 +207,10 @@ h2, a, a:hover, a:focus, a:active, .primary-color, .le-color, .breadcrumb-nav-ho
 
 .whatsapp:hover, .whatsapp:active, .whatsapp:after, .whatsapp:before {
     color: #f5f5f5 !important;
+    background-color: green; !important;
 }
 
 .whatsapp i{
-    background-color: green; !important;
     padding: 4px 5px;
     border-radius: 50px;
 }
