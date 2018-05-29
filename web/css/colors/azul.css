@@ -200,15 +200,19 @@ h2, a, a:hover, a:focus, a:active, .primary-color, .le-color, .breadcrumb-nav-ho
 
 .whatsapp {
     font-size: 11px;
-    background-color: green;
     color: white;
     padding: 4px 5px;
     border-radius: 5px;
 }
 
 .whatsapp:hover, .whatsapp:active, .whatsapp:after, .whatsapp:before {
-    background-color: #339153 !important;
-    color: white !important;
+    color: #f5f5f5 !important;
+}
+
+.whatsapp i{
+    background-color: green; !important;
+    padding: 4px 5px;
+    border-radius: 50px;
 }
 
 #footer .sub-form-row-2 {
