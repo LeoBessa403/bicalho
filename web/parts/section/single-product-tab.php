@@ -36,9 +36,7 @@ $prod = $produtoPrincipal;
 
                         <div class="inline">
                             <label>Segmento:</label>
-                            <span><a href="<?= PASTASITE; ?>Segmentos/ListarSegmentos/<?=
-                                Valida::GeraParametro(CO_SEGMENTO . "/" .
-                                    $prod->getCoCategoria()->getCoSegmento()->getCoSegmento()); ?>">
+                            <span><a href="<?= PASTASITE; ?>Segmentos/ListarSegmentos/<?=  $segmento->getNoSegmentoUrlAmigavel(); ?>">
                                     <?= $prod->getCoCategoria()->getCoSegmento()->getDsSegmento(); ?></a>
                             </span>
                         </div><!-- /.inline -->

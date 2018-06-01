@@ -64,8 +64,7 @@ if ($segmentos):
     /** @var SegmentoEntidade $segmento */
     foreach ($segmentos as $segmento):
         $this->Sitemap .= '<url>' . "\r\n";
-        $this->Sitemap .= '<loc>' .  PASTASITE. 'Segmentos/ListarSegmentos/'. Valida::GeraParametro(CO_SEGMENTO . "/" .
-                $segmento->getCoSegmento()) . '</loc>' . "\r\n";
+        $this->Sitemap .= '<loc>' .  PASTASITE. 'Segmentos/ListarSegmentos/'. $segmento->getNoSegmentoUrlAmigavel() . '</loc>' . "\r\n";
         $this->Sitemap .= '<lastmod>' . date('Y-m-d\TH:i:sP') . '</lastmod>' . "\r\n";
         $this->Sitemap .= '<changefreq>weekly</changefreq>' . "\r\n";
         $this->Sitemap .= '<priority>0.7</priority >' . "\r\n";

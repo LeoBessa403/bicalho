@@ -17,15 +17,6 @@ class Segmentos extends AbstractController
 
         $this->result = $fabricanteService->PesquisaTodos();
 
-        $segmentos = $segmentoService->PesquisaTodos();
-        /** @var SegmentoEntidade $segmento */
-        foreach ($segmentos as $segmento) {
-            $nocatUrlAm[NO_SEGMENTO_URL_AMIGAVEL] = Valida::ValNome($segmento->getDsSegmento());
-            $segmentoService->Salva($nocatUrlAm, $segmento->getCoSegmento());
-        }
-
-        debug(1);
-
         $noSegmento = UrlAmigavel::PegaParametroUrlAmigavel();
         if ($noSegmento) {
             /** @var SegmentoEntidade $segmentoPrincipal */
