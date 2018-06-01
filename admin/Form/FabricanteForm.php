@@ -27,11 +27,24 @@ class FabricanteForm
             ->setClasses("ob numero")
             ->CriaInpunt();
 
+//        $formulario
+//            ->setId(DS_CAMINHO)
+//            ->setType("singlefile")
+//            ->setTamanhoInput(12)
+//            ->setLabel("Logo do Fabricante")
+//            ->CriaInpunt();
+
         if ($res):
             $formulario
                 ->setType("hidden")
                 ->setId(CO_FABRICANTE)
                 ->setValues($res[CO_FABRICANTE])
+                ->CriaInpunt();
+
+            $formulario
+                ->setType("hidden")
+                ->setId(CO_IMAGEM)
+                ->setValues($res[CO_IMAGEM])
                 ->CriaInpunt();
         endif;
 

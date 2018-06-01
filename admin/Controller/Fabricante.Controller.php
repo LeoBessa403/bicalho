@@ -19,7 +19,7 @@ class Fabricante extends AbstractController
         $id = "cadastroFabricante";
 
         if (!empty($_POST[$id])):
-            $retorno = $fabricanteService->salvaFabricante($_POST);
+            $retorno = $fabricanteService->salvaFabricante($_POST, $_FILES);
             if($retorno[SUCESSO]){
                 Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarFabricante/');
             }
@@ -33,6 +33,10 @@ class Fabricante extends AbstractController
             $res[CO_FABRICANTE] = $fabricante->getCoFabricante();
             $res[NO_FABRICANTE] = $fabricante->getNoFabricante();
             $res[NU_CODIGO_FABRICANTE] = $fabricante->getNuCodigoFabricante();
+//            $res[CO_IMAGEM] = (count($fabricante->getCoImagem())) ? $fabricante->getCoImagem()->getCoImagem()
+//                : null;
+//            $res[DS_CAMINHO] = (count($fabricante->getCoImagem())) ? $fabricante->getCoImagem()->getDsCaminho()
+//                : null;
         }
         $this->form = FabricanteForm::Cadastrar($res);
     }

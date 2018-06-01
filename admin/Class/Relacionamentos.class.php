@@ -344,6 +344,11 @@ class Relacionamentos
 					('Entidade') => 'ProdutoEntidade',
 					('Tipo') => '2',
 				),
+                (CO_IMAGEM) => Array(
+                    ('Campo') => CO_IMAGEM,
+                    ('Entidade') => 'ImagemEntidade',
+                    ('Tipo') => '1',
+                ),
 			),
 			(FornecedorEntidade::TABELA) => Array(
 				(CO_FABRICANTE) => Array(
