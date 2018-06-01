@@ -33,9 +33,9 @@ class Fabricante extends AbstractController
             $res[CO_FABRICANTE] = $fabricante->getCoFabricante();
             $res[NO_FABRICANTE] = $fabricante->getNoFabricante();
             $res[NU_CODIGO_FABRICANTE] = $fabricante->getNuCodigoFabricante();
-            $res[CO_IMAGEM] = (count($fabricante->getCoImagem())) ? $fabricante->getCoImagem()->getCoImagem()
+            $res[CO_IMAGEM] = ($fabricante->getCoImagem()) ? $fabricante->getCoImagem()->getCoImagem()
                 : null;
-            $res[DS_CAMINHO] = (count($fabricante->getCoImagem())) ? "Fabricantes/" . $fabricante->getCoImagem()->getDsCaminho()
+            $res[DS_CAMINHO] = ($fabricante->getCoImagem()) ? "Fabricantes/" . $fabricante->getCoImagem()->getDsCaminho()
                 : null;
         }
         $this->form = FabricanteForm::Cadastrar($res);
