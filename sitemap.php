@@ -28,7 +28,7 @@ if ($produtos):
         $this->Sitemap .= '<loc>' . HOME . SITE . '/Produtos/DetalharProduto/' . $produto->getNoProdutoUrlAmigavel() . '</loc>' . "\r\n";
         $this->Sitemap .= '<lastmod>' . date('Y-m-d\TH:i:sP', strtotime($produto->getDtCadastro())) . '</lastmod>' . "\r\n";
         $this->Sitemap .= '<changefreq>daily</changefreq>' . "\r\n";
-        $this->Sitemap .= '<priority>0.9</priority >' . "\r\n";
+        $this->Sitemap .= '<priority>1.0</priority >' . "\r\n";
         $this->Sitemap .= '</url>' . "\r\n";
     endforeach;
 endif;
@@ -38,11 +38,10 @@ if ($categorias):
     /** @var CategoriaEntidade $categoria */
     foreach ($categorias as $categoria):
         $this->Sitemap .= '<url>' . "\r\n";
-        $this->Sitemap .= '<loc>' .  PASTASITE. 'Categorias/ListarCategorias/'. Valida::GeraParametro(CO_FABRICANTE . "/" .
-                $categoria->getCoCategoria()) . '</loc>' . "\r\n";
+        $this->Sitemap .= '<loc>' . PASTASITE . 'Categorias/ListarCategorias/' . $categoria->getNoCategoriaUrlAmigavel() . '</loc>' . "\r\n";
         $this->Sitemap .= '<lastmod>' . date('Y-m-d\TH:i:sP') . '</lastmod>' . "\r\n";
         $this->Sitemap .= '<changefreq>weekly</changefreq>' . "\r\n";
-        $this->Sitemap .= '<priority>0.8</priority >' . "\r\n";
+        $this->Sitemap .= '<priority>0.9</priority >' . "\r\n";
         $this->Sitemap .= '</url>' . "\r\n";
     endforeach;
 endif;
@@ -51,11 +50,10 @@ if ($fabricantes):
     /** @var FabricanteEntidade $fabricante */
     foreach ($fabricantes as $fabricante):
         $this->Sitemap .= '<url>' . "\r\n";
-        $this->Sitemap .= '<loc>' .  PASTASITE. 'Fabricantes/ListarFabricantes/'. Valida::GeraParametro(CO_FABRICANTE . "/" .
-                $fabricante->getCoFabricante()) . '</loc>' . "\r\n";
+        $this->Sitemap .= '<loc>' . PASTASITE . 'Fabricantes/ListarFabricantes/' . $fabricante->getNoFabricanteUrlAmigavel() . '</loc>' . "\r\n";
         $this->Sitemap .= '<lastmod>' . date('Y-m-d\TH:i:sP', strtotime($fabricante->getDtCadastro())) . '</lastmod>' . "\r\n";
         $this->Sitemap .= '<changefreq>weekly</changefreq>' . "\r\n";
-        $this->Sitemap .= '<priority>0.8</priority >' . "\r\n";
+        $this->Sitemap .= '<priority>0.9</priority >' . "\r\n";
         $this->Sitemap .= '</url>' . "\r\n";
     endforeach;
 endif;
@@ -64,10 +62,10 @@ if ($segmentos):
     /** @var SegmentoEntidade $segmento */
     foreach ($segmentos as $segmento):
         $this->Sitemap .= '<url>' . "\r\n";
-        $this->Sitemap .= '<loc>' .  PASTASITE. 'Segmentos/ListarSegmentos/'. $segmento->getNoSegmentoUrlAmigavel() . '</loc>' . "\r\n";
+        $this->Sitemap .= '<loc>' . PASTASITE . 'Segmentos/ListarSegmentos/' . $segmento->getNoSegmentoUrlAmigavel() . '</loc>' . "\r\n";
         $this->Sitemap .= '<lastmod>' . date('Y-m-d\TH:i:sP') . '</lastmod>' . "\r\n";
         $this->Sitemap .= '<changefreq>weekly</changefreq>' . "\r\n";
-        $this->Sitemap .= '<priority>0.7</priority >' . "\r\n";
+        $this->Sitemap .= '<priority>0.9</priority >' . "\r\n";
         $this->Sitemap .= '</url>' . "\r\n";
     endforeach;
 endif;

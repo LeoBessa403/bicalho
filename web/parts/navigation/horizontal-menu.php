@@ -27,16 +27,17 @@ $segmentos = $segmentoService->PesquisaTodos();
                         if (count($segmento->getCoCategoria())) {
                             ?>
                             <li class="dropdown">
-                                <a href="<?= PASTASITE; ?>Segmentos/ListarSegmentos/<?=  $segmento->getNoSegmentoUrlAmigavel(); ?>"
+                                <a href="<?= PASTASITE; ?>Segmentos/ListarSegmentos/<?= $segmento->getNoSegmentoUrlAmigavel(); ?>"
                                    class="dropdown-toggle" data-hover="dropdown"
-                                  ><?= $segmento->getDsSegmento(); ?></a>
+                                ><?= $segmento->getDsSegmento(); ?></a>
                                 <ul class="dropdown-menu">
                                     <?php
                                     /** @var CategoriaEntidade $categoria */
                                     foreach ($segmento->getCoCategoria() as $categoria) {
                                         ?>
-                                        <li><a href="<?= PASTASITE; ?>Categorias/ListarCategorias/<?=
-                                            $categoria->getNoCategoriaUrlAmigavel(); ?>"><?= $categoria->getNoCategoria(); ?></a></li>
+                                        <li>
+                                            <a href="<?= PASTASITE; ?>Categorias/ListarCategorias/<?= $categoria->getNoCategoriaUrlAmigavel();
+                                            ?>"><?= $categoria->getNoCategoria(); ?></a></li>
                                     <?php } ?>
                                 </ul>
                             </li>

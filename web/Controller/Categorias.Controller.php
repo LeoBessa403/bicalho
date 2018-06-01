@@ -17,10 +17,15 @@ class Categorias extends AbstractController
 
         $this->result = $fabricanteService->PesquisaTodos();
 
-        $coCategoria = UrlAmigavel::PegaParametro(CO_CATEGORIA);
-        if ($coCategoria) {
+        $noCategoria = UrlAmigavel::PegaParametroUrlAmigavel();
+        if ($noCategoria) {
             /** @var CategoriaEntidade $categoria */
-            $categoria[] = $categoriaService->PesquisaUmRegistro($coCategoria);
+            $categoria[] = $categoriaService->PesquisaUmQuando([
+                NO_CATEGORIA_URL_AMIGAVEL => $noCategoria
+            ]);
+            if (!count($categoria)) {
+                Redireciona('web/Categorias/CategoriaNaoEncontrado/');
+            }
         }else{
             /** @var CategoriaEntidade $categoria */
             $categoria = $categoriaService->PesquisaTodos();

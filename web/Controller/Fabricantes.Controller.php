@@ -15,15 +15,20 @@ class Fabricantes extends AbstractController
 
         $this->result = $fabricanteService->PesquisaTodos();
 
-        $coFabricante = UrlAmigavel::PegaParametro(CO_FABRICANTE);
-        if ($coFabricante) {
+        $noFabricante = UrlAmigavel::PegaParametroUrlAmigavel();
+        if ($noFabricante) {
             /** @var FabricanteEntidade $fabricante */
-            $fabricantes[] = $fabricanteService->PesquisaUmRegistro($coFabricante);
+            $fabricantes[] = $fabricanteService->PesquisaUmQuando([
+                NO_FABRICANTE_URL_AMIGAVEL => $noFabricante
+            ]);
+            if (!count($fabricantes)) {
+                Redireciona('web/Fabricantes/FabricanteNaoEncontrado/');
+            }
         }else{
-            /** @var FabricanteEntidade $fabricante */
+            /** @var FabricanteEntidade $fabricantes */
             $fabricantes = $fabricanteService->PesquisaTodos();
         }
-        /** @var FabricanteEntidade $this->fabricante */
+        /** @var CategoriaEntidade $this->categoria */
         $this->listaFabricantes = $fabricantes;
         $this->produtoService = $produtoService;
     }

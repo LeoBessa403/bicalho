@@ -21,10 +21,9 @@
                                 /** @var CategoriaEntidade $categoria */
                                 foreach ($segmento->getCoCategoria() as $categoria) {
                                     ?>
-                                    <li><a href="<?= PASTASITE; ?>Categorias/ListarCategorias/<?=
-                                        Valida::GeraParametro(CO_CATEGORIA . "/" . $categoria->getCoCategoria()); ?>"><?=
-                                            $categoria->getNoCategoria();
-                                            ?></a></li>
+                                    <li>
+                                        <a href="<?= PASTASITE; ?>Categorias/ListarCategorias/<?= $categoria->getNoCategoriaUrlAmigavel();
+                                        ?>"><?= $categoria->getNoCategoria(); ?></a></li>
                                 <?php } ?>
                             </ul>
                         </div><!-- /.accordion-inner -->
