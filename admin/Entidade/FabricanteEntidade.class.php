@@ -31,7 +31,8 @@ class FabricanteEntidade extends AbstractEntidade
 			DT_CADASTRO,
 			NO_FABRICANTE,
 			NU_CODIGO_FABRICANTE,
-            NO_FABRICANTE_URL_AMIGAVEL
+            NO_FABRICANTE_URL_AMIGAVEL,
+            CO_IMAGEM
 		];
     }
 

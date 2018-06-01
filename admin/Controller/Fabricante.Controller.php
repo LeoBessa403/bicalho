@@ -20,23 +20,23 @@ class Fabricante extends AbstractController
 
         if (!empty($_POST[$id])):
             $retorno = $fabricanteService->salvaFabricante($_POST, $_FILES);
-            if($retorno[SUCESSO]){
-                Redireciona(UrlAmigavel::$modulo.'/'.UrlAmigavel::$controller.'/ListarFabricante/');
+            if ($retorno[SUCESSO]) {
+                Redireciona(UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller . '/ListarFabricante/');
             }
         endif;
 
         $coFabricante = UrlAmigavel::PegaParametro(CO_FABRICANTE);
         $res = [];
-        if($coFabricante){
+        if ($coFabricante) {
             /** @var FabricanteEntidade $fabricante */
             $fabricante = $fabricanteService->PesquisaUmRegistro($coFabricante);
             $res[CO_FABRICANTE] = $fabricante->getCoFabricante();
             $res[NO_FABRICANTE] = $fabricante->getNoFabricante();
             $res[NU_CODIGO_FABRICANTE] = $fabricante->getNuCodigoFabricante();
-//            $res[CO_IMAGEM] = (count($fabricante->getCoImagem())) ? $fabricante->getCoImagem()->getCoImagem()
-//                : null;
-//            $res[DS_CAMINHO] = (count($fabricante->getCoImagem())) ? $fabricante->getCoImagem()->getDsCaminho()
-//                : null;
+            $res[CO_IMAGEM] = (count($fabricante->getCoImagem())) ? $fabricante->getCoImagem()->getCoImagem()
+                : null;
+            $res[DS_CAMINHO] = (count($fabricante->getCoImagem())) ? "Fabricantes/" . $fabricante->getCoImagem()->getDsCaminho()
+                : null;
         }
         $this->form = FabricanteForm::Cadastrar($res);
     }

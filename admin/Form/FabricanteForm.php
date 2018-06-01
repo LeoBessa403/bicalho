@@ -1,4 +1,5 @@
 <?php
+
 /**
  * FabricanteForm [ FORM ]
  * @copyright (c) 2018, Leo Bessa
@@ -27,12 +28,12 @@ class FabricanteForm
             ->setClasses("ob numero")
             ->CriaInpunt();
 
-//        $formulario
-//            ->setId(DS_CAMINHO)
-//            ->setType("singlefile")
-//            ->setTamanhoInput(12)
-//            ->setLabel("Logo do Fabricante")
-//            ->CriaInpunt();
+        $formulario
+            ->setId(DS_CAMINHO)
+            ->setType("singlefile")
+            ->setTamanhoInput(12)
+            ->setLabel("Logo do Fabricante")
+            ->CriaInpunt();
 
         if ($res):
             $formulario
@@ -41,15 +42,18 @@ class FabricanteForm
                 ->setValues($res[CO_FABRICANTE])
                 ->CriaInpunt();
 
-            $formulario
-                ->setType("hidden")
-                ->setId(CO_IMAGEM)
-                ->setValues($res[CO_IMAGEM])
-                ->CriaInpunt();
+            if (!empty($res[CO_IMAGEM])):
+                $formulario
+                    ->setType("hidden")
+                    ->setId(CO_IMAGEM)
+                    ->setValues($res[CO_IMAGEM])
+                    ->CriaInpunt();
+            endif;
         endif;
 
         return $formulario->finalizaForm();
     }
 }
+
 ?>
    

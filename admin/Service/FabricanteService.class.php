@@ -36,25 +36,29 @@ class  FabricanteService extends AbstractService
             $fabricante[NU_CODIGO_FABRICANTE] = $dados[NU_CODIGO_FABRICANTE];
             $fabricante[NO_FABRICANTE_URL_AMIGAVEL] = Valida::ValNome(trim($dados[NO_FABRICANTE]));
 
-//            $imagem[DS_CAMINHO] = "";
-//            $nome = Valida::ValNome($fabricante[NO_FABRICANTE]);
-//            if ($files[DS_CAMINHO]["tmp_name"]):
-//                $foto = $_FILES[DS_CAMINHO];
-//                $up = new Upload();
-//                $up->UploadImagens($foto, $nome, "Fabricantes");
-//                $imagem[DS_CAMINHO] = $up->getNameImage();
-//            endif;
+            $imagem[DS_CAMINHO] = "";
+            $nome = Valida::ValNome($fabricante[NO_FABRICANTE]);
+            if ($files[DS_CAMINHO]["tmp_name"]):
+                $foto = $_FILES[DS_CAMINHO];
+                $up = new Upload();
+                $up->UploadImagens($foto, $nome, "Fabricantes");
+                $imagem[DS_CAMINHO] = $up->getNameImage();
+            endif;
 
             $PDO->beginTransaction();
             if (!empty($_POST[CO_FABRICANTE])):
                 $coFabricante = $dados[CO_FABRICANTE];
-//                if ($files[DS_CAMINHO]["tmp_name"]) {
-//                    $fabricante[CO_IMAGEM] = $dados[CO_IMAGEM];
-//                    $imagemService->Salva($imagem, $dados[CO_IMAGEM]);
-//                }
+                if ($files[DS_CAMINHO]["tmp_name"]) {
+                    if(empty($dados[CO_IMAGEM])) {
+                        $fabricante[CO_IMAGEM] = $dados[CO_IMAGEM];
+                        $imagemService->Salva($imagem, $dados[CO_IMAGEM]);
+                    }else{
+                        $fabricante[CO_IMAGEM] = $imagemService->Salva($imagem);
+                    }
+                }
                 $retorno[SUCESSO] = $this->Salva($fabricante, $coFabricante);
             else:
-//                $fabricante[CO_IMAGEM] = $imagemService->Salva($imagem);
+                $fabricante[CO_IMAGEM] = $imagemService->Salva($imagem);
                 $fabricante[DT_CADASTRO] = Valida::DataHoraAtualBanco();
                 $retorno[SUCESSO] = $this->Salva($fabricante);
             endif;
