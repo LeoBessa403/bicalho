@@ -29,6 +29,7 @@ class  SegmentoService extends AbstractService
         if ($validador[SUCESSO]) {
             $segmento[DS_SEGMENTO] = trim($dados[DS_SEGMENTO]);
             $segmento[CO_CATEGORIA] = $dados[CO_CATEGORIA][0];
+            $segmento[NO_SEGMENTO_URL_AMIGAVEL] = Valida::ValNome(trim($dados[DS_SEGMENTO]));
 
             if (!empty($_POST[CO_SEGMENTO])):
                 $coSegmento = $dados[CO_SEGMENTO];

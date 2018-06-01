@@ -28,6 +28,7 @@ class  FabricanteService extends AbstractService
         if ($validador[SUCESSO]) {
             $fabricante[NO_FABRICANTE] = trim($dados[NO_FABRICANTE]);
             $fabricante[NU_CODIGO_FABRICANTE] = $dados[NU_CODIGO_FABRICANTE];
+            $fabricante[NO_FABRICANTE_URL_AMIGAVEL] = Valida::ValNome(trim($dados[NO_FABRICANTE]));
 
             if (!empty($_POST[CO_FABRICANTE])):
                 $coFabricante = $dados[CO_FABRICANTE];

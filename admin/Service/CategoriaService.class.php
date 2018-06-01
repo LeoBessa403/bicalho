@@ -28,6 +28,7 @@ class  CategoriaService extends AbstractService
         if ($validador[SUCESSO]) {
             $categoria[NO_CATEGORIA] = trim($dados[NO_CATEGORIA]);
             $categoria[CO_SEGMENTO] = $dados[CO_SEGMENTO][0];
+            $categoria[NO_CATEGORIA_URL_AMIGAVEL] = Valida::ValNome(trim($dados[NO_CATEGORIA]));
 
             if (!empty($_POST[CO_CATEGORIA])):
                 $coCategoria = $dados[CO_CATEGORIA];
