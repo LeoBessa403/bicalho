@@ -17,16 +17,27 @@ class Segmentos extends AbstractController
 
         $this->result = $fabricanteService->PesquisaTodos();
 
-        $coSegmento = UrlAmigavel::PegaParametro(CO_SEGMENTO);
-        if ($coSegmento) {
-            /** @var SegmentoEntidade $segmento */
-            $segmento[] = $segmentoService->PesquisaUmRegistro($coSegmento);
-        }else{
-            /** @var SegmentoEntidade $segmento */
-            $segmento = $segmentoService->PesquisaTodos();
+        $segmentos = $segmentoService->PesquisaTodos();
+        /** @var SegmentoEntidade $segmento */
+        foreach ($segmentos as $segmento) {
+            $nocatUrlAm[NO_SEGMENTO_URL_AMIGAVEL] = Valida::ValNome($segmento->getDsSegmento());
+            $segmentoService->Salva($nocatUrlAm, $segmento->getCoSegmento());
         }
-        /** @var SegmentoEntidade $this->segmento */
-        $this->segmento = $segmento;
+
+        debug(1);
+
+        $noSegmento = UrlAmigavel::PegaParametroUrlAmigavel();
+        if ($noSegmento) {
+            /** @var SegmentoEntidade $segmentoPrincipal */
+            $this->segmento = $segmentoService->PesquisaUmQuando([
+                NO_SEGMENTO_URL_AMIGAVEL => $noSegmento
+            ]);
+            if (empty($this->segmento)) {
+                Redireciona('web/Segmentos/SegmentoNaoEncontrado/');
+            }
+        }else{
+            Redireciona('web/Segmentos/SegmentoNaoEncontrado/');
+        }
         $this->produtoService = $produtoService;
     }
 }

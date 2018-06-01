@@ -1,6 +1,6 @@
 <?php
 /** @var SegmentoEntidade $segment */
-$segment = $segmento[0];
+$segment = $segmento;
 /** @var SegmentoEntidade $seg */
 $seg = $segmento;
 ?>
@@ -45,20 +45,17 @@ $seg = $segmento;
                     <div class="row no-margin">
 
                         <?php
-                        /** @var SegmentoEntidade $segmen */
-                        foreach ($seg as $segmen) {
-                            if (count($segmen->getCoCategoria())) {
-                                /** @var CategoriaEntidade $cat */
-                                foreach ($segmen->getCoCategoria() as $cat) {
-                                    if (count($cat->getCoProduto())) {
-                                        /** @var ProdutoEntidade $prod */
-                                        foreach ($cat->getCoProduto() as $prod) {
-                                            /** @var ProdutoEntidade $produto */
-                                            $produto = $produtoService->PesquisaUmRegistro($prod->getCoProduto());
-                                            ?>
-                                            <?php require PASTA_RAIZ . SITE . '/parts/section/grid-produtos.php'; ?>
-                                        <?php }
-                                    }
+                        if (count($seg->getCoCategoria())) {
+                            /** @var CategoriaEntidade $cat */
+                            foreach ($seg->getCoCategoria() as $cat) {
+                                if (count($cat->getCoProduto())) {
+                                    /** @var ProdutoEntidade $prod */
+                                    foreach ($cat->getCoProduto() as $prod) {
+                                        /** @var ProdutoEntidade $produto */
+                                        $produto = $produtoService->PesquisaUmRegistro($prod->getCoProduto());
+                                        ?>
+                                        <?php require PASTA_RAIZ . SITE . '/parts/section/grid-produtos.php'; ?>
+                                    <?php }
                                 }
                             }
                         } ?>

@@ -13,6 +13,7 @@ class CategoriaEntidade extends AbstractEntidade
 
 	private $co_categoria;
 	private $no_categoria;
+	private $no_categoria_url_amigavel;
 	private $st_status;
 	private $co_segmento;
 	private $co_produto;
@@ -26,6 +27,7 @@ class CategoriaEntidade extends AbstractEntidade
     	return [
 			CO_CATEGORIA,
 			NO_CATEGORIA,
+			NO_CATEGORIA_URL_AMIGAVEL,
 			ST_STATUS,
 			CO_SEGMENTO,
 		];
@@ -125,5 +127,22 @@ class CategoriaEntidade extends AbstractEntidade
     {
         return $this->co_produto = $co_produto;
     }
+
+    /**
+     * @return mixed $no_categoria_url_amigavel
+     */
+    public function getNoCategoriaUrlAmigavel()
+    {
+        return $this->no_categoria_url_amigavel;
+    }
+
+    /**
+     * @param mixed $no_categoria_url_amigavel
+     */
+    public function setNoCategoriaUrlAmigavel($no_categoria_url_amigavel)
+    {
+        $this->no_categoria_url_amigavel = $no_categoria_url_amigavel;
+    }
+
 
 }

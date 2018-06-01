@@ -14,6 +14,7 @@ class SegmentoEntidade extends AbstractEntidade
 	private $co_segmento;
 	private $ds_segmento;
 	private $co_categoria;
+	private $no_segmento_url_amigavel;
 
 
 	/**
@@ -24,6 +25,7 @@ class SegmentoEntidade extends AbstractEntidade
     	return [
 			CO_SEGMENTO,
 			DS_SEGMENTO,
+			NO_SEGMENTO_URL_AMIGAVEL,
 		];
     }
 
@@ -87,5 +89,23 @@ class SegmentoEntidade extends AbstractEntidade
     {
         return $this->co_categoria = $co_categoria;
     }
+
+    /**
+     * @return mixed $no_segmento_url_amigavel
+     */
+    public function getNoSegmentoUrlAmigavel()
+    {
+        return $this->no_segmento_url_amigavel;
+    }
+
+    /**
+     * @param mixed $no_segmento_url_amigavel
+     */
+    public function setNoSegmentoUrlAmigavel($no_segmento_url_amigavel)
+    {
+        $this->no_segmento_url_amigavel = $no_segmento_url_amigavel;
+    }
+
+
 
 }

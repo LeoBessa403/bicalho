@@ -259,41 +259,6 @@ class Relacionamentos
 				),
 			),
 			(ImagemEntidade::TABELA) => Array(
-				(CO_EMPRESA) => Array(
-					('Campo') => CO_IMAGEM,
-					('Entidade') => 'EmpresaEntidade',
-					('Tipo') => '1',
-				),
-				(CO_FUNCIONARIO) => Array(
-					('Campo') => CO_IMAGEM,
-					('Entidade') => 'FuncionarioEntidade',
-					('Tipo') => '1',
-				),
-				(CO_PESSOA) => Array(
-					('Campo') => CO_IMAGEM,
-					('Entidade') => 'PessoaEntidade',
-					('Tipo') => '1',
-				),
-				(CO_PRODUTO) => Array(
-					('Campo') => CO_IMAGEM,
-					('Entidade') => 'ProdutoEntidade',
-					('Tipo') => '1',
-				),
-				(CO_PRODUTO_IMAGEM) => Array(
-					('Campo') => CO_IMAGEM,
-					('Entidade') => 'ProdutoImagemEntidade',
-					('Tipo') => '1',
-				),
-				(CO_SUGESTAO) => Array(
-					('Campo') => CO_IMAGEM,
-					('Entidade') => 'SugestaoEntidade',
-					('Tipo') => '1',
-				),
-				(CO_USUARIO) => Array(
-					('Campo') => CO_IMAGEM,
-					('Entidade') => 'UsuarioEntidade',
-					('Tipo') => '1',
-				),
 			),
 			(EntregaPedidoEntidade::TABELA) => Array(
 				(CO_SIT_ENTREG_PED) => Array(

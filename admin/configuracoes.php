@@ -72,7 +72,7 @@ function servidor_inicial()
     // TÍTULO PADRÃO DO SITE
     define('TITULO_SITE', 'Equipamentos de Automação e Refrigeração Comercial para o seu negócio!');
     // CONTROLLERS PARA GERAR O SEO DIFERENCIADO
-    define('CONTROLLER_SEO', 'Produtos');
+    define('CONTROLLER_SEO', 'Produtos, Segmentos, Fabricantes, Categorias');
 
     //////////////////////////////////////////////
     // ******* CONFIGURAÇÕES DE EMAIL ********** //

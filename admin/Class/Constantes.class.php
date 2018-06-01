@@ -12,6 +12,9 @@
 	define('NO_CATEGORIA', 'no_categoria');
 	define('NO_PRODUTO', 'no_produto');
 	define('NO_PRODUTO_URL_AMIGAVEL', 'no_produto_url_amigavel');
+	define('NO_SEGMENTO_URL_AMIGAVEL', 'no_segmento_url_amigavel');
+	define('NO_CATEGORIA_URL_AMIGAVEL', 'no_categoria_url_amigavel');
+	define('NO_FABRICANTE_URL_AMIGAVEL', 'no_fabricante_url_amigavel');
 	define('CO_SEGMENTO', 'co_segmento');
 	define('CO_CLIENTE', 'co_cliente');
 	define('DS_OBSERVACAO', 'ds_observacao');

@@ -27,9 +27,7 @@ $segmentos = $segmentoService->PesquisaTodos();
                         if (count($segmento->getCoCategoria())) {
                             ?>
                             <li class="dropdown">
-                                <a href="<?= PASTASITE; ?>Segmentos/ListarSegmentos/<?=
-                                Valida::GeraParametro(CO_SEGMENTO . "/" .
-                                    $segmento->getCoSegmento()); ?>"
+                                <a href="<?= PASTASITE; ?>Segmentos/ListarSegmentos/<?=  $segmento->getNoSegmentoUrlAmigavel(); ?>"
                                    class="dropdown-toggle" data-hover="dropdown"
                                   ><?= $segmento->getDsSegmento(); ?></a>
                                 <ul class="dropdown-menu">
@@ -38,9 +36,7 @@ $segmentos = $segmentoService->PesquisaTodos();
                                     foreach ($segmento->getCoCategoria() as $categoria) {
                                         ?>
                                         <li><a href="<?= PASTASITE; ?>Categorias/ListarCategorias/<?=
-                                            Valida::GeraParametro(CO_CATEGORIA . "/" .
-                                                $categoria->getCoCategoria());
-                                            ?>"><?= $categoria->getNoCategoria(); ?></a></li>
+                                            $categoria->getNoCategoriaUrlAmigavel(); ?>"><?= $categoria->getNoCategoria(); ?></a></li>
                                     <?php } ?>
                                 </ul>
                             </li>

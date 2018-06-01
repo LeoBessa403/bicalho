@@ -17,6 +17,17 @@ class Categorias extends AbstractController
 
         $this->result = $fabricanteService->PesquisaTodos();
 
+
+        $segmentos = $categoriaService->PesquisaTodos();
+        /** @var CategoriaEntidade $segmento */
+        foreach ($segmentos as $segmento) {
+            $nocatUrlAm[NO_CATEGORIA_URL_AMIGAVEL] = Valida::ValNome($segmento->getNoCategoria());
+            $categoriaService->Salva($nocatUrlAm, $segmento->getCoCategoria());
+        }
+
+        debug(1);
+
+
         $coCategoria = UrlAmigavel::PegaParametro(CO_CATEGORIA);
         if ($coCategoria) {
             /** @var CategoriaEntidade $categoria */

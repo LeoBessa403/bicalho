@@ -14,9 +14,11 @@ class FabricanteEntidade extends AbstractEntidade
 	private $co_fabricante;
 	private $dt_cadastro;
 	private $no_fabricante;
+	private $no_fabricante_url_amigavel;
 	private $co_fornecedor;
 	private $co_produto;
 	private $nu_codigo_fabricante;
+	private $co_imagem;
 
 
 	/**
@@ -28,8 +30,8 @@ class FabricanteEntidade extends AbstractEntidade
 			CO_FABRICANTE,
 			DT_CADASTRO,
 			NO_FABRICANTE,
-			CO_FORNECEDOR,
 			NU_CODIGO_FABRICANTE,
+            NO_FABRICANTE_URL_AMIGAVEL
 		];
     }
 
@@ -149,5 +151,39 @@ class FabricanteEntidade extends AbstractEntidade
     {
         $this->nu_codigo_fabricante = $nu_codigo_fabricante;
     }
+
+    /**
+     * @return ImagemEntidade $co_imagem
+     */
+    public function getCoImagem()
+    {
+        return $this->co_imagem;
+    }
+
+    /**
+     * @param mixed $co_imagem
+     */
+    public function setCoImagem($co_imagem)
+    {
+        $this->co_imagem = $co_imagem;
+    }
+
+    /**
+     * @return mixed $no_fabricante_url_amigavel
+     */
+    public function getNoFabricanteUrlAmigavel()
+    {
+        return $this->no_fabricante_url_amigavel;
+    }
+
+    /**
+     * @param mixed $no_fabricante_url_amigavel
+     */
+    public function setNoFabricanteUrlAmigavel($no_fabricante_url_amigavel)
+    {
+        $this->no_fabricante_url_amigavel = $no_fabricante_url_amigavel;
+    }
+
+
 
 }

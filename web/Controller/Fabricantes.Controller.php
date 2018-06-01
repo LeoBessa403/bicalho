@@ -15,6 +15,15 @@ class Fabricantes extends AbstractController
 
         $this->result = $fabricanteService->PesquisaTodos();
 
+        $segmentos = $fabricanteService->PesquisaTodos();
+        /** @var FabricanteEntidade $segmento */
+        foreach ($segmentos as $segmento) {
+            $nocatUrlAm[NO_FABRICANTE_URL_AMIGAVEL] = Valida::ValNome($segmento->getNoFabricante());
+            $fabricanteService->Salva($nocatUrlAm, $segmento->getCoFabricante());
+        }
+
+        debug(1);
+
         $coFabricante = UrlAmigavel::PegaParametro(CO_FABRICANTE);
         if ($coFabricante) {
             /** @var FabricanteEntidade $fabricante */
