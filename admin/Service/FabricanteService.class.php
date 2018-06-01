@@ -49,7 +49,7 @@ class  FabricanteService extends AbstractService
             if (!empty($_POST[CO_FABRICANTE])):
                 $coFabricante = $dados[CO_FABRICANTE];
                 if ($files[DS_CAMINHO]["tmp_name"]) {
-                    if(empty($dados[CO_IMAGEM])) {
+                    if(!empty($dados[CO_IMAGEM])) {
                         $fabricante[CO_IMAGEM] = $dados[CO_IMAGEM];
                         $imagemService->Salva($imagem, $dados[CO_IMAGEM]);
                     }else{
