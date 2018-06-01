@@ -49,10 +49,10 @@ class  FabricanteService extends AbstractService
             if (!empty($_POST[CO_FABRICANTE])):
                 $coFabricante = $dados[CO_FABRICANTE];
                 if ($files[DS_CAMINHO]["tmp_name"]) {
-                    if(!empty($dados[CO_IMAGEM])) {
+                    if (!empty($dados[CO_IMAGEM])) {
                         $fabricante[CO_IMAGEM] = $dados[CO_IMAGEM];
                         $imagemService->Salva($imagem, $dados[CO_IMAGEM]);
-                    }else{
+                    } else {
                         $fabricante[CO_IMAGEM] = $imagemService->Salva($imagem);
                     }
                 }
@@ -63,10 +63,10 @@ class  FabricanteService extends AbstractService
                 $retorno[SUCESSO] = $this->Salva($fabricante);
             endif;
 
-            if($retorno[SUCESSO]){
+            if ($retorno[SUCESSO]) {
                 $session->setSession(MENSAGEM, Mensagens::OK_SALVO);
                 $PDO->commit();
-            }else{
+            } else {
                 $session->setSession(MENSAGEM, 'Não foi possível cadastrar o Fabricante');
                 $PDO->rollBack();
             }
@@ -76,5 +76,27 @@ class  FabricanteService extends AbstractService
             $retorno = $validador;
         }
         return $retorno;
+    }
+
+    /**
+     * @param $limite
+     * @return mixed
+     */
+    public function pesquisaFabricantesParceiros($limite)
+    {
+        $fabricantes = $this->ObjetoModel->pesquisaFabricantes();
+        foreach ($fabricantes as $fabricante) {
+            $pesqFabricantes[] = $fabricante[CO_FABRICANTE];
+        }
+        $coFabricantes = [];
+        for ($i = 0; $i < $limite; $i++) {
+            $coFabricante = rand(0, count($pesqFabricantes) - 1);
+            if (!in_array($pesqFabricantes[$coFabricante], $coFabricantes)) {
+                $coFabricantes[] = $pesqFabricantes[$coFabricante];
+            } else {
+                $limite = $limite + 1;
+            }
+        }
+        return $this->ObjetoModel->pesquisaFabricantesAleatorios(implode(", ", $coFabricantes));
     }
 }

@@ -12,5 +12,31 @@ class  FabricanteModel extends AbstractModel
         parent::__construct(FabricanteEntidade::ENTIDADE);
     }
 
+    /**
+     * @return array
+     */
+    public function pesquisaFabricantes()
+    {
+        $campos = CO_FABRICANTE;
+        $pesquisa = new Pesquisa();
+        $pesquisa->Pesquisar(FabricanteEntidade::TABELA, null, null, $campos);
+        return $pesquisa->getResult();
+    }
 
+    /**
+     * @param $coFabricante
+     * @return array
+     */
+    public function pesquisaFabricantesAleatorios($coFabricante)
+    {
+        $tabela = FabricanteEntidade::TABELA . " fab" .
+            " inner join " . ImagemEntidade::TABELA . " img" .
+            " on img." . ImagemEntidade::CHAVE . " = fab." . ImagemEntidade::CHAVE;
+
+        $campos = NO_FABRICANTE_URL_AMIGAVEL . ", " . DS_CAMINHO;
+        $pesquisa = new Pesquisa();
+        $where = 'where ' . FabricanteEntidade::CHAVE . ' in (' . $coFabricante . ")";
+        $pesquisa->Pesquisar($tabela, $where, null, $campos);
+        return $pesquisa->getResult();
+    }
 }
