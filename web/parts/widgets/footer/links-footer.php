@@ -1,16 +1,23 @@
+<?php
+$categoriaController = new Produto();
+/** @var CategoriaService $categoriaService */
+$categoriaService = $categoriaController->getService(CATEGORIA_SERVICE);
+$categorias = $categoriaService->PesquisaTodos();
+?>
 <!-- ============================================================= LINKS FOOTER ============================================================= -->
 <div class="link-widget">
     <div class="widget">
         <h3>Encontre rápido</h3>
         <ul>
-            <li><a href="<?php echo PASTASITE; ?>Categorias/Index">laptops &amp; computers</a></li>
-            <li><a href="<?php echo PASTASITE; ?>Categorias/Index">Cameras &amp; Photography</a></li>
-            <li><a href="<?php echo PASTASITE; ?>Categorias/Index">Smart Phones &amp; Tablets</a></li>
-            <li><a href="<?php echo PASTASITE; ?>Categorias/Index">Video Games &amp; Consoles</a></li>
-            <li><a href="<?php echo PASTASITE; ?>Categorias/Index">TV &amp; Audio</a></li>
-            <li><a href="<?php echo PASTASITE; ?>Categorias/Index">Gadgets</a></li>
-            <li><a href="<?php echo PASTASITE; ?>Categorias/Index">Car Electronic &amp; GPS</a></li>
-            <li><a href="<?php echo PASTASITE; ?>Categorias/Index">Accesories</a></li>
+            <?php
+            /** @var CategoriaEntidade $categoria */
+            foreach ($categorias as $categoria) {
+                ?>
+                <li><a href="<?= PASTASITE; ?>Categorias/ListarCategorias/<?=
+                                           $categoria->getNoCategoriaUrlAmigavel(); ?>"><?=
+                        $categoria->getNoCategoria(); ?></a>
+                </li>
+            <?php } ?>
         </ul>
     </div><!-- /.widget -->
 </div><!-- /.link-widget -->

@@ -1,3 +1,9 @@
+<?php
+$categoriaController = new Produto();
+/** @var CategoriaService $categoriaService */
+$categoriaService = $categoriaController->getService(CATEGORIA_SERVICE);
+$categorias = $categoriaService->PesquisaTodos();
+?>
 <div class="contact-row">
     <div class="phone inline">
         <a class="link-phone" href="tel:06130461009" target="_blank">
@@ -26,10 +32,16 @@
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="category-grid.html">Categorias</a>
                     <ul class="dropdown-menu" role="menu">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">laptops</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">tv &amp; audio</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">gadgets</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="category-grid.html">cameras</a></li>
+                        <?php
+                        /** @var CategoriaEntidade $categoria */
+                        foreach ($categorias as $categoria) {
+                            ?>
+                            <li role="presentation"><a role="menuitem" tabindex="-1"
+                                                       href="<?= PASTASITE; ?>Categorias/ListarCategorias/<?=
+                                                       $categoria->getNoCategoriaUrlAmigavel(); ?>"><?=
+                                    $categoria->getNoCategoria(); ?></a>
+                            </li>
+                        <?php } ?>
                     </ul>
                 </li>
             </ul>
