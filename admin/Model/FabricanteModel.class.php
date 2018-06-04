@@ -39,4 +39,17 @@ class  FabricanteModel extends AbstractModel
         $pesquisa->Pesquisar($tabela, $where, null, $campos);
         return $pesquisa->getResult();
     }
+
+    /**
+     * @param $pesquisado
+     * @return array
+     */
+    public static function getPesquisaSite($pesquisado)
+    {
+        $campos = NO_FABRICANTE . ", " . NO_FABRICANTE_URL_AMIGAVEL;
+        $pesquisa = new Pesquisa();
+        $where = "where " . NO_FABRICANTE . " LIKE ('%" . $pesquisado . "%')";
+        $pesquisa->Pesquisar(FabricanteEntidade::TABELA, $where, null, $campos);
+        return $pesquisa->getResult();
+    }
 }
