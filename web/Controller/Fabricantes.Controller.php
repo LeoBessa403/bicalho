@@ -21,7 +21,7 @@ class Fabricantes extends AbstractController
             $fabricantes[] = $fabricanteService->PesquisaUmQuando([
                 NO_FABRICANTE_URL_AMIGAVEL => $noFabricante
             ]);
-            if (!count($fabricantes)) {
+            if (!count($fabricantes[0])) {
                 Redireciona('web/Fabricantes/FabricanteNaoEncontrado/');
             }
         }else{

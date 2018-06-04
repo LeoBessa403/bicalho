@@ -23,7 +23,7 @@ class Categorias extends AbstractController
             $categoria[] = $categoriaService->PesquisaUmQuando([
                 NO_CATEGORIA_URL_AMIGAVEL => $noCategoria
             ]);
-            if (!count($categoria)) {
+            if (!count($categoria[0])) {
                 Redireciona('web/Categorias/CategoriaNaoEncontrado/');
             }
         }else{
