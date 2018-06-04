@@ -18,7 +18,8 @@ class IndexWeb extends AbstractController
         $produtoDestaqueService = $this->getService(PRODUTO_DESTAQUE_SERVICE);
         /** @var FabricanteService $fabricanteService */
         $fabricanteService = $this->getService(FABRICANTE_SERVICE);
-        $this->result = $produtoDestaqueService->PesquisaTodos();
+        $result = $produtoDestaqueService->PesquisaTodos();
+        $this->result = array_reverse($result);
         /** @var ProdutoService $produtoService */
         $produtoService = $this->getService(PRODUTO_SERVICE);
 
