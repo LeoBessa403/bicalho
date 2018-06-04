@@ -26,14 +26,14 @@ $visitaService->gestaoVisita();
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=0">
 
     <!-- Inclução das tags do Seo -->
-    <?php require_once 'library/includes/SeoTags.php' ; ?>
+    <?php require_once 'library/includes/SeoTags.php'; ?>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/bootstrap.min.css">
 
     <!-- Customizable CSS -->
-    <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/style.css">
     <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/colors/azul.css">
+    <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/style.css">
     <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/owl.carousel.css">
     <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/owl.transitions.css">
     <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/animate.min.css">
@@ -60,7 +60,11 @@ $visitaService->gestaoVisita();
     <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo ID_ANALITCS; ?>"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', '<?php echo ID_ANALITCS; ?>');
@@ -76,6 +80,13 @@ $visitaService->gestaoVisita();
     ?>
 
     <?php require PASTA_RAIZ . SITE . '/parts/section/footer.php'; ?>
+    <div class="icon-whats">
+        <a class="pulse" title="Nos chame no WhatSapp"
+           href="<?php Valida::geraLinkWhatSapp(Mensagens::ZAP01) ?>"
+           target="_blank">
+            <i class="fa fa-whatsapp"></i>
+        </a>
+    </div>
 </div><!-- /.wrapper -->
 
 <!-- JavaScripts placed at the end of the document so the pages load faster -->

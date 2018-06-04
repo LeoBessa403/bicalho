@@ -2100,6 +2100,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 
 .le-dropdown.open {
     border-radius: 5px 5px 0 0 !important;
+    -moz-border-radius:  5px 5px 0 0 !important;
+    -webkit-border-radius:  5px 5px 0 0 !important;
 }
 
 .le-dropdown .dropdown-menu {
@@ -2621,8 +2623,9 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     height: 15px;
     background: lightgray;
     border: none;
-    -webkit-border-radius: 50%;
     border-radius: 50%;
+    -moz-border-radius:  50%;
+    -webkit-border-radius:  50%;
     margin: 0 5px;
     -webkit-transition: all 200ms ease-out;
     -moz-transition: all 200ms ease-out;
@@ -2966,6 +2969,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 .single-product-gallery .gallery-thumbs .next-btn, .single-product-gallery .gallery-thumbs .prev-btn {
     background-color: #e0e0e0;
     border-radius: 2px;
+    -moz-border-radius:  2px;
+    -webkit-border-radius:  2px;
     position: absolute;
     z-index: 100;
     height: 90%;
@@ -3050,6 +3055,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 .grid-list-products .control-bar {
     background-color: #F9F9F9;
     border-radius: 5px;
+    -moz-border-radius:  5px;
+    -webkit-border-radius: 5px;
     padding: 13px;
 }
 
@@ -3222,6 +3229,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     top: 5%;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 20px;
+    -moz-border-radius:   20px;
+    -webkit-border-radius:  20px;
     padding: 20px;
     text-align: right;
     text-shadow: #f2f2f2 0.5px 0 0.5px;
@@ -3417,6 +3426,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     display: inline-block;
     background-color: #F9F9F9;
     border-radius: 5px;
+    -moz-border-radius:   5px;
+    -webkit-border-radius:  5px;
     width: 22px;
     height: 22px;
     position: relative;
@@ -4080,6 +4091,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     height: 70px;
     width: 70px;
     border-radius: 4px;
+    -moz-border-radius:   4px;
+    -webkit-border-radius:  4px;
     font-size: 40px;
     position: absolute;
     margin-bottom: 20px;
@@ -4155,6 +4168,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 .cf-style-1 .le-input, .cf-style-1 .inline-input input, .inline-input .cf-style-1 input {
     background-color: #f6f6f6;
     border-radius: 0;
+    -moz-border-radius:   0;
+    -webkit-border-radius:  0;
     padding: 9px;
 }
 
@@ -4347,6 +4362,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     display: table-cell;
     vertical-align: middle;
     border-radius: 4px;
+    -moz-border-radius:   4px;
+    -webkit-border-radius:  4px;
     width: 52px;
     height: 71px;
     background-color: #59B210;
@@ -4591,6 +4608,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     border: none;
     height: 42px;
     border-radius: 0px;
+    -moz-border-radius:   0px;
+    -webkit-border-radius:  0px;
     background: none repeat scroll 0 0 #f6f6f6;
     box-shadow: none;
     color: #1A1A1A;
@@ -4916,10 +4935,14 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     color: #3d3d3d;
     width: 82%;
     border-radius: 5px 0 0 5px;
+    -moz-border-radius:  5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
 }
 
 .info-404 .sub-form-row .le-button {
     border-radius: 0 5px 5px 0;
+    -moz-border-radius:  0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
     padding: 19px 31px 20px 31px;
     margin: 0 0 0 -5px;
 }
@@ -5058,6 +5081,9 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 .sidebar .widget .bordered {
     border: 2px solid #ececec;
     border-radius: 10px;
+    -moz-border-radius:   10px;
+    -webkit-border-radius:  10px;
+
 }
 
 .sidebar .widget hr {
@@ -5162,16 +5188,19 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 }
 
 #footer .sub-form-row input {
-    border-radius: 5px;
     border: 1px solid #e0e0e0;
     padding: 18px;
     color: #3D3D3D;
     width: 80%;
     border-radius: 5px 0 0 5px;
+    -moz-border-radius:   5px 0 0 5px;
+    -webkit-border-radius:  5px 0 0 5px;
 }
 
 #footer .sub-form-row button {
     border-radius: 0 5px 5px 0;
+    moz-border-radius:   0 5px 5px 0;
+    -webkit-border-radius:  0 5px 5px 0;
     padding: 19px 31px 20px 31px;
     margin: 0 0 0 -5px;
 }
@@ -5237,6 +5266,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     width: 32%;
     background-color: #fff;
     border-radius: 2px;
+    moz-border-radius:   2px;
+    -webkit-border-radius:  2px;
     text-align: center;
     padding: 0px 5px;
 }
@@ -5329,6 +5360,31 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 #grid-view .image {
     height: 250px !important;
 }
+
+
+.icon-whats{
+    background-color: green;
+    position: fixed;
+    bottom: 1.5%;
+    right: 1%;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    -moz-border-radius:    50%;
+    -webkit-border-radius:   50%;
+    color: white !important;
+    text-align: center;
+    font-size: 30px;
+    z-index: 9999;
+}
+
+.icon-whats:hover, .icon-whats:active {
+    box-shadow: 2px 2px 10px black;
+    cursor: pointer;
+    background-color: #007000;
+    color: white !important;
+}
+
 
 /*===================================================================================*/
 /*  Responsive Layout
