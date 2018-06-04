@@ -121,4 +121,17 @@ class  ProdutoModel extends AbstractModel
 
         return $dadosSeo;
     }
+
+    /**
+     * @param $pesquisado
+     * @return array
+     */
+    public static function getPesquisaSite($pesquisado)
+    {
+        $campos = NO_PRODUTO . ", " . NO_PRODUTO_URL_AMIGAVEL;
+        $pesquisa = new Pesquisa();
+        $where = "where " . NO_PRODUTO . " LIKE ('%" . $pesquisado . "%')";
+        $pesquisa->Pesquisar(ProdutoEntidade::TABELA, $where, null, $campos);
+        return $pesquisa->getResult();
+    }
 }

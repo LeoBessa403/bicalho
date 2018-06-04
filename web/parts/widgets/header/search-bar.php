@@ -48,5 +48,7 @@ $categorias = $categoriaService->PesquisaTodos();
             <a class="search-button" href="#"></a>
         </div>
     </form>
+    <ul class="pesquisados">
+    </ul>
 </div><!-- /.search-area -->
 <!-- ============================================================= SEARCH AREA : END ============================================================= -->

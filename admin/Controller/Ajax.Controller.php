@@ -33,30 +33,18 @@ if (isset($_GET['valida'])) {
             echo json_encode($dsCaminho[0]);
             break;
 
-//        case 'capa_livro':
-//            $id = $_GET['id'];
-//            $livro = BibliotecaModel::PesquisaUmLivro($id);
-//            $capa = $livro[0];
-//            echo json_encode($capa);
-//            break;
-//
-//        case 'pesquisa_livro':
-//            $id = $_GET['id'];
-//            $livro = BibliotecaModel::PesquisaUmLivro($id);
-//            echo $livro[0]['no_titulo'];
-//            break;
-//
-//        case 'reservar':
-//            $id = $_GET['id'];
-//            $co_codigo_livro = BibliotecaModel::PesquisaLivroDisponivel($id);
-//            $dados['co_codigo_livro'] = $co_codigo_livro[0]['co_codigo_livro'];
-//            $dados['dt_reserva'] = Valida::DataAtualBanco();
-//            $dados['st_situacao'] = "R";
-//            $us = $_SESSION[SESSION_USER];
-//            $user = $us->getUser();
-//            $dados['co_usuario'] = $user[md5('co_usuario')];
-//            echo BibliotecaModel::CadastraResevaLivro($dados);
-//            break;
+
+        case 'pesquisa_site':
+            $pesquisa = $_GET['pesquisa'];
+            $resultados = ProdutoModel::getPesquisaSite($pesquisa);
+            $pesquisas = '';
+            foreach ($resultados as $resultado){
+                $pesquisas .= "<li><a href='". PASTASITE."Produtos/DetalharProduto/".$resultado['no_produto_url_amigavel']."'>".$resultado['no_produto']."</a></li>";
+            }
+            echo $pesquisas;
+            break;
+
+
 
 
     }
