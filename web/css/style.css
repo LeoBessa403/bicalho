@@ -5386,17 +5386,18 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     color: white !important;
 }
 
+.icon-whats i{
+    color: white !important;
+}
+
 .pesquisados {
     position: relative;
     background-color: white;
     top: 7px;
     left: 0;
     z-index: 9999;
-    /*display: none;*/
 }
 
-.pesquisados li {
-}
 
 .pesquisados li a{
     display: block;
@@ -5634,6 +5635,9 @@ select.top-drop-menu {
         width: 30%;
     }
 
+    a .whatsapp{
+        color: white !important;
+    }
     .whatsapp {
         padding: 2px 5px !important;
         font-size: 18px !important;
