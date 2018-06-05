@@ -5368,14 +5368,14 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     position: fixed;
     bottom: 1.5%;
     right: 1%;
-    width: 45px;
-    height: 45px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     color: white !important;
     text-align: center;
-    font-size: 30px;
+    font-size: 29px;
     z-index: 9999;
 }
 

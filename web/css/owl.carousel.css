@@ -35,15 +35,15 @@
     -webkit-backface-visibility: hidden;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none; }
-  .owl-carousel .owl-item img {
-    display: block;
-    -webkit-transform-style: preserve-3d; }
-  .owl-carousel .owl-nav.disabled,
-  .owl-carousel .owl-dots.disabled {
-    display: none; }
-  .owl-carousel .owl-dots {
-    display: block;
-  }
+  /*.owl-carousel .owl-item img {*/
+    /*display: block;*/
+    /*-webkit-transform-style: preserve-3d; }*/
+  /*.owl-carousel .owl-nav.disabled,*/
+  /*.owl-carousel .owl-dots.disabled {*/
+    /*display: none; }*/
+  /*.owl-carousel .owl-dots {*/
+    /*display: block;*/
+  /*}*/
   .owl-carousel .owl-nav .owl-prev,
   .owl-carousel .owl-nav .owl-next,
   .owl-carousel .owl-dot {
@@ -75,6 +75,20 @@
     direction: rtl; }
   .owl-carousel.owl-rtl .owl-item {
     float: right; }
+
+  #owl-main .owl-nav div{
+    background-color: #2c4591;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    width: 4%;
+    height: 7%;
+    font-size: 2.2em;
+  }
+
+  #owl-main .owl-nav div:hover{
+    color: white;
+  }
 
 /* No Js */
 .no-js .owl-carousel {
