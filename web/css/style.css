@@ -5652,6 +5652,19 @@ select.top-drop-menu {
         margin-right: 1% !important;
         width: 14% !important;
     }
+
+    #owl-main .owl-nav div{
+        font-size: 1.3em !important;
+        width: 6% !important;
+    }
+
+    .owl-inner-nav:hover .owl-prev {
+        left: 10px !important;
+    }
+
+    .owl-inner-nav:hover .owl-next {
+        right: 10px !important;
+    }
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -5990,6 +6003,20 @@ select.top-drop-menu {
     .page-main-content .body-holder {
         width: 98% !important;
         float: left;
+    }
+
+    #owl-main .owl-nav div{
+        font-size: 1.4em !important;
+        width: 5% !important;
+        height: 8% !important;
+    }
+
+    .owl-inner-nav:hover .owl-prev {
+        left: 12px !important;
+    }
+
+    .owl-inner-nav:hover .owl-next {
+        right: 12px !important;
     }
 }
 
@@ -6343,6 +6370,20 @@ select.top-drop-menu {
     .owl-buttons {
         display: block;
     }
+
+    #owl-main .owl-nav div{
+        font-size: 2.2em !important;
+        width: 5% !important;
+        height: 6% !important;
+    }
+
+    .owl-inner-nav:hover .owl-prev {
+        left: 12px !important;
+    }
+
+    .owl-inner-nav:hover .owl-next {
+        right: 12px !important;
+    }
 }
 
 
@@ -6376,5 +6417,38 @@ select.top-drop-menu {
         padding: 10px !important;
         margin-top: -15px;
         font-size: 14px;
+    }
+
+    #owl-main .owl-nav div{
+        font-size: 1.8em !important;
+        width: 5% !important;
+        height: 8% !important;
+    }
+
+    .owl-inner-nav:hover .owl-prev {
+        left: 12px !important;
+    }
+
+    .owl-inner-nav:hover .owl-next {
+        right: 12px !important;
+    }
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) {
+
+    #owl-main .owl-nav div{
+        font-size: 2.2em !important;
+        width: 5% !important;
+        height: 7% !important;
+    }
+
+    .owl-inner-nav:hover .owl-prev {
+        left: 12px !important;
+    }
+
+    .owl-inner-nav:hover .owl-next {
+        right: 12px !important;
     }
 }
