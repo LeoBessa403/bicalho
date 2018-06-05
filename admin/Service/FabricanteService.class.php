@@ -99,4 +99,13 @@ class  FabricanteService extends AbstractService
         }
         return $this->ObjetoModel->pesquisaFabricantesAleatorios(implode(", ", $coFabricantes));
     }
+
+    /**
+     * @param $noFabricante
+     * @return mixed
+     */
+    public function getSeoFabricantes($noFabricante)
+    {
+        return $this->ObjetoModel->getSeoFabricantes($noFabricante);
+    }
 }

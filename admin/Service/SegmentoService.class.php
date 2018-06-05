@@ -44,5 +44,13 @@ class  SegmentoService extends AbstractService
         return $retorno;
     }
 
+    /**
+     * @param $noSegmento
+     * @return array
+     */
+    public function getSeoSegmentos($noSegmento)
+    {
+        return $this->ObjetoModel->getSeoSegmentos($noSegmento);
+    }
 
 }

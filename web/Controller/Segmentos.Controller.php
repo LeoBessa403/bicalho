@@ -31,6 +31,12 @@ class Segmentos extends AbstractController
         }
         $this->produtoService = $produtoService;
     }
+
+    public function getSeoSegmentos()
+    {
+        /** @var SegmentoService $segmentoService */
+        $segmentoService = $this->getService(SEGMENTO_SERVICE);
+        $noSegmento = UrlAmigavel::PegaParametroUrlAmigavel();
+        return $segmentoService->getSeoSegmentos($noSegmento);
+    }
 }
-?>
-   

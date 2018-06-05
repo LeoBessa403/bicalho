@@ -32,4 +32,12 @@ class Fabricantes extends AbstractController
         $this->listaFabricantes = $fabricantes;
         $this->produtoService = $produtoService;
     }
+
+    public function getSeoFabricantes()
+    {
+        /** @var FabricanteService $fabricanteService */
+        $fabricanteService = $this->getService(FABRICANTE_SERVICE);
+        $noFabricante = UrlAmigavel::PegaParametroUrlAmigavel();
+        return $fabricanteService->getSeoFabricantes($noFabricante);
+    }
 }

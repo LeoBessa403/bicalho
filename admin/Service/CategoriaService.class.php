@@ -43,4 +43,13 @@ class  CategoriaService extends AbstractService
         }
         return $retorno;
     }
+
+    /**
+     * @param $noCategoria
+     * @return mixed
+     */
+    public function getSeoCategorias($noCategoria)
+    {
+        return $this->ObjetoModel->getSeoCategorias($noCategoria);
+    }
 }

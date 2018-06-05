@@ -34,7 +34,12 @@ class Categorias extends AbstractController
         $this->categoria = $categoria;
         $this->produtoService = $produtoService;
     }
-}
 
-?>
-   
+    public function getSeoCategorias()
+    {
+        /** @var CategoriaService $categoriaService */
+        $categoriaService = $this->getService(CATEGORIA_SERVICE);
+        $noCategoria = UrlAmigavel::PegaParametroUrlAmigavel();
+        return $categoriaService->getSeoCategorias($noCategoria);
+    }
+}

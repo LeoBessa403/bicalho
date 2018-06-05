@@ -41,6 +41,27 @@ class  FabricanteModel extends AbstractModel
     }
 
     /**
+     * @param $noFabricante
+     * @return array
+     */
+    public static function getSeoFabricantes($noFabricante)
+    {
+        $dadosSeo = [];
+        $campos = NO_FABRICANTE . ' AS titulo';
+        $pesquisa = new Pesquisa();
+        $where = "where " . NO_FABRICANTE_URL_AMIGAVEL . " = :noFabricante";
+        $pesquisa->Pesquisar(FabricanteEntidade::TABELA, $where, "noFabricante={$noFabricante}", $campos);
+        if (count($pesquisa->getResult())) {
+            $dadosSeo = $pesquisa->getResult()[0];
+        }else{
+            $dadosSeo['titulo'] = "Fabricantes";
+        }
+        $dadosSeo['imagem'] = null;
+        $dadosSeo['descricao'] = TITULO_SITE . " - " . DESC_SITE;
+        return $dadosSeo;
+    }
+
+    /**
      * @param $pesquisado
      * @return array
      */
