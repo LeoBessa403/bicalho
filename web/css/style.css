@@ -6175,35 +6175,6 @@ select.top-drop-menu {
         font-size: 13px;
     }
 
-    .header-alt .search-area {
-        float: right;
-        margin-top: 20px;
-        width: 100%;
-        height: 40px;
-        padding: 0;
-    }
-
-    .header-alt .search-area .search-field {
-        height: 10px;
-        padding: 10px !important;
-        margin-top: -25px;
-        border-right: 10px solid gray;
-    }
-
-    .header-alt .search-area .categories-filter {
-        height: 15px;
-        padding: 10px !important;
-        margin-top: -15px;
-        border: none;
-    }
-
-    .header-alt .search-area .search-button {
-        height: 40px;
-        padding: 10px !important;
-        margin-top: -15px;
-        font-size: 14px;
-    }
-
     .header-alt .top-cart-row {
         padding: 0 !important;
         margin: 0 !important;
@@ -6376,7 +6347,7 @@ select.top-drop-menu {
 
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 
     .header-alt .search-area {
         float: right;
