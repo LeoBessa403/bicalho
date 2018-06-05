@@ -33,5 +33,3 @@ class Fabricantes extends AbstractController
         $this->produtoService = $produtoService;
     }
 }
-?>
-   
