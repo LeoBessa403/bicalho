@@ -326,18 +326,38 @@
                     data: {valida: "pesquisa_site", pesquisa: pesquisa},
                     type: "get",
                     dataType: "html",
-                    beforeSend: function () {
-                    },
                     success: function (data) {
                         $(".pesquisados").empty().html(data);
                     }
                 });
-            }else{
+            } else {
                 $(".pesquisados").empty();
             }
         });
 
-
+        $(".buttons-holder .btn-add-to-wishlist").on('click', function () {
+            var coProduto = $(this).attr('data-co-produto');
+            var elemento = $(this);
+            var evento = 'add-favo';
+            if(elemento.hasClass('add-favo')){
+                evento = 'remove-favo';
+            }
+            alert("add");
+            elemento.val('Remove dos favoritos');
+            elemento.removeClass('add-favo');
+            elemento.addClass('remove-favo');
+            // if (coProduto) {
+            //     $.ajax({
+            //         url: urlValida,
+            //         data: {valida: "add_favorito", coProduto: coProduto},
+            //         type: "get",
+            //         success: function () {
+            //             elemento.removeClass('add-favo').addClass('remove-favo').val('Remove dos favoritos');
+            //         }
+            //     });
+            // }
+            return false
+        });
     });
 
     /*===================================================================================*/

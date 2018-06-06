@@ -293,4 +293,44 @@ class  ProdutoService extends AbstractService
         }
         return $this->ObjetoModel->pesquisaProdutosAleatorios(implode(", ", $coProdutos));
     }
+
+
+    /**
+     * @param $coProduto
+     */
+    public static function addProdutoFavorito($coProduto)
+    {
+        $session = new Session();
+        $noCookie = Valida::ValNome(DESC . '-favoritos');
+
+        if (!$session::CheckCookie($noCookie)) {
+            $produtos = $coProduto;
+        }else{
+            $produtos = $session::getCookie($noCookie) . ", " . $coProduto;
+        }
+        $session::setCookie($noCookie, $produtos,  60 * 24 * 30);//Dura 1 mês
+    }
+
+    /**
+     * @param $coProduto
+     */
+    public static function removeProdutoFavorito($coProduto)
+    {
+        $session = new Session();
+        $noCookie = Valida::ValNome(DESC . '-favoritos');
+
+        if ($session::CheckCookie($noCookie)) {
+            $produtos = $session::getCookie($noCookie);
+            $produtos = explode(', ', $produtos);
+            $i = 0;
+            foreach ($produtos as $produto){
+                if($produto == $coProduto){
+                    unset($produtos[$i]);
+                }
+                $i++;
+            }
+            $produtos = implode(', ', $produtos);
+            $session::setCookie($noCookie, $produtos,  60 * 24 * 30);//Dura 1 mês
+        }
+    }
 }

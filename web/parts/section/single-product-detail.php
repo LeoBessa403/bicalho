@@ -1,6 +1,6 @@
 <?php
-    $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
-        '/' . UrlAmigavel::$action . '/' . UrlAmigavel::PegaParametroUrlAmigavel();
+$url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
+    '/' . UrlAmigavel::$action . '/' . UrlAmigavel::PegaParametroUrlAmigavel();
 ?>
 <div class="no-margin col-xs-12 col-sm-7 body-holder">
     <div class="body">
@@ -20,13 +20,18 @@
         </div>
         <?php
         $noProduto = $produtoPrincipal->getNoProduto() . ' - ' . $produtoPrincipal->getCoFabricante()->getNoFabricante();
+        $session = new Session();
+        $noCookie = Valida::ValNome(DESC . '-favoritos');
+        echo $session::getCookie($noCookie);
+        //        $session::FinalizaCookie($noCookie);
         ?>
         <div class="social-row col-lg-12">
             <div id="fb-root"></div>
-            <script>(function(d, s, id) {
+            <script>(function (d, s, id) {
                     var js, fjs = d.getElementsByTagName(s)[0];
                     if (d.getElementById(id)) return;
-                    js = d.createElement(s); js.id = id;
+                    js = d.createElement(s);
+                    js.id = id;
                     js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.0';
                     fjs.parentNode.insertBefore(js, fjs);
                 }(document, 'script', 'facebook-jssdk'));</script>
@@ -39,7 +44,7 @@
                    class="fb-xfbml-parse-ignore">Compartilhar</a>
             </div>
             <span title="Compartilhe no Twitter" target="_blank" rel="nofollow"
-               class="st_twitter_hcount sharebox" href=""></span>
+                  class="st_twitter_hcount sharebox" href=""></span>
             <a class="whatsapp" title="Nos chame no WhatSapp"
                href="<?php Valida::geraLinkWhatSapp(Mensagens::ZAP05, [$noProduto]) ?>"
                target="_blank">
@@ -47,7 +52,8 @@
         </div>
 
         <div class="buttons-holder">
-            <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
+            <a class="btn-add-to-wishlist add-favo" href="#" title="Adicionar aos favoritos"
+               data-co-produto="<?= $produtoPrincipal->getCoProduto(); ?>"> add aos favoritos</a>
             <a class="btn-add-to-compare" href="#">comparar</a>
         </div>
 

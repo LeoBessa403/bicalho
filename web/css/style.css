@@ -5442,6 +5442,18 @@ select.top-drop-menu {
     max-height: none;
 }
 
+.remove-favo::before, .remove-favo{
+    color: #2c4591 !important;
+    font-weight: bolder;
+}
+
+/*.iconic-link::before, .btn-add-to-compare::before, .btn-add-to-wishlist::before {*/
+    /*margin: 0 5px 0 0;*/
+    /*font-size: 18px;*/
+    /*transition: 0.3s ease;*/
+    /*color: #c6c6c6;*/
+/*}*/
+
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 500px) {
 
