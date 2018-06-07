@@ -83,11 +83,11 @@ $vistosRecentementes = $produtoRecService->pesquisaProdutos(8);
                                     ? 'Remove dos Favoritos' : 'Add aos Favoritos';
                                 ;?></a>
                             <a class="btn-add-to-compare <?=
-                            (in_array($produtoPrincipal->getCoProduto(), $comparados))
+                            (in_array($produtoRec->getCoProduto(), $comparados))
                                 ? 'remove-compare' : 'add-compare';
                             ;?>" href="#" title="Remove dos comparados"
-                               data-co-produto="<?= $produtoPrincipal->getCoProduto(); ?>"> <?=
-                                (in_array($produtoPrincipal->getCoProduto(), $comparados))
+                               data-co-produto="<?= $produtoRec->getCoProduto(); ?>"> <?=
+                                (in_array($produtoRec->getCoProduto(), $comparados))
                                     ? 'Remove dos Comparados' : 'Add aos Comparados';
                                 ;?></a>
                         </div>
