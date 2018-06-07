@@ -4,6 +4,7 @@ class Produtos extends AbstractController
 {
     public $produtoPrincipal;
     public $segmentos;
+    public $favoritos;
 
     public function DetalharProduto()
     {
@@ -25,9 +26,10 @@ class Produtos extends AbstractController
             if (empty($this->produtoPrincipal)) {
                 Redireciona('web/Produtos/ProdutoNaoEncontrado/');
             }
-        }else{
+        } else {
             Redireciona('web/Produtos/ProdutoNaoEncontrado/');
         }
+        $this->favoritos = $this->getProdutosFavoritos();
     }
 
     public function ComparaProdutos()
@@ -36,6 +38,25 @@ class Produtos extends AbstractController
 
     public function DetalharFavoritos()
     {
+        $produto = new Produtos();
+        $this->favoritos = $produto->getProdutosFavoritos();
+    }
+
+    public function getProdutosFavoritos()
+    {
+        $session = new Session();
+        $favoritos = [];
+        if ($session::CheckCookie('bicalho-favoritos'))
+            $favoritos = explode('-', $session::getCookie('bicalho-favoritos'));
+        $i = 0;
+        foreach ($favoritos as $favorito){
+            if(empty($favorito)){
+                unset($favoritos[$i]);
+            }
+            $i++;
+        }
+
+        return $favoritos;
     }
 
     public function getSeoProdutos()

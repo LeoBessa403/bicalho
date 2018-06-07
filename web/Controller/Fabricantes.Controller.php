@@ -5,6 +5,7 @@ class Fabricantes extends AbstractController
     public $result;
     public $listaFabricantes;
     public $produtoService;
+    public $favoritos;
     
     public function ListarFabricantes()
     {
@@ -31,6 +32,8 @@ class Fabricantes extends AbstractController
         /** @var CategoriaEntidade $this->categoria */
         $this->listaFabricantes = $fabricantes;
         $this->produtoService = $produtoService;
+        $produto = new Produtos();
+        $this->favoritos = $produto->getProdutosFavoritos();
     }
 
     public function getSeoFabricantes()

@@ -73,7 +73,14 @@
                 <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
                 $produto->getNoProdutoUrlAmigavel(); ?>"
                    class="le-button">Ver Detalhes</a>
-                <a class="btn-add-to-wishlist" href="#">add aos favoritos</a>
+                <a id="teste" class="btn-add-to-wishlist <?=
+                (in_array($produtoRec->getCoProduto(), $favoritos))
+                    ? 'remove-favo' : 'add-favo';
+                ;?>" href="#" title="Adicionar aos favoritos"
+                   data-co-produto="<?= $produtoRec->getCoProduto(); ?>"> <?=
+                    (in_array($produtoRec->getCoProduto(), $favoritos))
+                        ? 'Remove dos Favoritos' : 'Add aos Favoritos';
+                    ;?></a>
                 <div class="clear"></div>
             </div>
         </div><!-- /.price-area -->

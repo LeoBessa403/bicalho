@@ -1,4 +1,5 @@
 <?php
+ob_start();
 $pages = array(
     'IndexWeb/Index' => 'Home',
     'Categorias/ListarCategorias' => 'Categorias',
@@ -128,3 +129,5 @@ $visitaService->gestaoVisita();
 </script>
 </body>
 </html>
+<?php
+ob_end_flush();

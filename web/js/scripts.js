@@ -19,6 +19,7 @@
         var dados = constantes();
 
         var urlValida = dados['HOME'] + 'admin/Controller/Ajax.Controller.php';
+        var cookieFavotitos = 'bicalho-favoritos';
 
         var dragging = true;
         var owlElementID = "#owl-main";
@@ -335,29 +336,103 @@
             }
         });
 
-        $(".buttons-holder .btn-add-to-wishlist").on('click', function () {
+        $(".btn-add-to-wishlist , .remove_from_wishlist").click(function () {
             var coProduto = $(this).attr('data-co-produto');
             var elemento = $(this);
-            var evento = 'add-favo';
-            if(elemento.hasClass('add-favo')){
-                evento = 'remove-favo';
+            var evento = 'remove_favorito';
+            if (elemento.hasClass('add-favo')) {
+                evento = 'add_favorito';
             }
-            alert("add");
-            elemento.val('Remove dos favoritos');
-            elemento.removeClass('add-favo');
-            elemento.addClass('remove-favo');
-            // if (coProduto) {
-            //     $.ajax({
-            //         url: urlValida,
-            //         data: {valida: "add_favorito", coProduto: coProduto},
-            //         type: "get",
-            //         success: function () {
-            //             elemento.removeClass('add-favo').addClass('remove-favo').val('Remove dos favoritos');
-            //         }
-            //     });
-            // }
+
+            if (coProduto) {
+                if (checkCookie(cookieFavotitos)) {
+                    var favoritos = getCookie(cookieFavotitos);
+                    if (evento == 'add_favorito') {
+                        setCookie(favoritos + coProduto + "-");
+                    } else {
+                        var novo_cookie = '';
+                        var pf = favoritos.split('-');
+                        for (var i = 0; i < pf.length; i++) {
+                            var p = pf[i];
+                            while (p.charAt(0) == ' ') {
+                                p = p.substring(1);
+                            }
+                            if (p != coProduto && p) {
+                                novo_cookie = novo_cookie + p + '-';
+                            }
+                        }
+                        setCookie(novo_cookie);
+                    }
+                } else {
+                    setCookie(coProduto + "-");
+                }
+                // document.cookie = cookieFavotitos+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+                var elementFavorito = $(".wishlist .value");
+                var totalFavorito = parseInt(elementFavorito.text());
+
+                elementFavorito.animate({
+                    fontSize : '24px'
+                }, 1000, function() {
+                    elementFavorito.animate({
+                        fontSize : '13px'
+                    })
+                });
+
+                if (evento == 'add_favorito') {
+                    elementFavorito.text(totalFavorito + 1);
+                    elemento.text('Remove dos favoritos');
+                    elemento.removeClass('add-favo');
+                    elemento.addClass('remove-favo');
+                } else {
+                    elementFavorito.text(totalFavorito - 1);
+                    if (elemento.hasClass('btn-add-to-wishlist')) {
+                        elemento.text('Add aos favoritos');
+                        elemento.addClass('add-favo');
+                        elemento.removeClass('remove-favo');
+                    }else{
+                        $("#yith-wcwl-row-" + coProduto).fadeToggle('slow');
+                        if(parseInt(totalFavorito - 1) == 0){
+                            $("#nenhum-favorito").fadeToggle(2000);
+                        }
+                    }
+
+                }
+            }
             return false
         });
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var ca = decodedCookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            var username = getCookie(cookieFavotitos);
+            if (username != "") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function setCookie(valor) {
+            var d = new Date();
+            d.setTime(d.getTime() + (30 * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cookieFavotitos + "=" + valor + ";" + expires + ";path=/";
+        }
     });
 
     /*===================================================================================*/

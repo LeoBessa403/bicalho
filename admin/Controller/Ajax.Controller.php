@@ -60,16 +60,5 @@ if (isset($_GET['valida'])) {
             echo $pesquisas;
             break;
 
-        case 'add_favorito':
-            $coProduto = $_GET['coProduto'];
-            $favoritos = ProdutoService::addProdutoFavorito($coProduto);
-            break;
-
-        case 'remove_favorito':
-            $coProduto = $_GET['coProduto'];
-            $favoritos = ProdutoService::removeProdutoFavorito($coProduto);
-            break;
-
-
     }
 } // FIM SWITCH

@@ -20,10 +20,6 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
         </div>
         <?php
         $noProduto = $produtoPrincipal->getNoProduto() . ' - ' . $produtoPrincipal->getCoFabricante()->getNoFabricante();
-        $session = new Session();
-        $noCookie = Valida::ValNome(DESC . '-favoritos');
-        echo $session::getCookie($noCookie);
-        //        $session::FinalizaCookie($noCookie);
         ?>
         <div class="social-row col-lg-12">
             <div id="fb-root"></div>
@@ -52,8 +48,14 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
         </div>
 
         <div class="buttons-holder">
-            <a class="btn-add-to-wishlist add-favo" href="#" title="Adicionar aos favoritos"
-               data-co-produto="<?= $produtoPrincipal->getCoProduto(); ?>"> add aos favoritos</a>
+            <a id="teste" class="btn-add-to-wishlist <?=
+            (in_array($produtoPrincipal->getCoProduto(), $favoritos))
+            ? 'remove-favo' : 'add-favo';
+            ;?>" href="#" title="Adicionar aos favoritos"
+               data-co-produto="<?= $produtoPrincipal->getCoProduto(); ?>"> <?=
+                (in_array($produtoPrincipal->getCoProduto(), $favoritos))
+                    ? 'Remove dos Favoritos' : 'Add aos Favoritos';
+                ;?></a>
             <a class="btn-add-to-compare" href="#">comparar</a>
         </div>
 

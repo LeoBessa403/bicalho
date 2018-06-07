@@ -5,6 +5,7 @@ class Segmentos extends AbstractController
     public $result;
     public $segmento;
     public $produtoService;
+    public $favoritos;
     
     public function ListarSegmentos()
     {
@@ -30,6 +31,8 @@ class Segmentos extends AbstractController
             Redireciona('web/Segmentos/SegmentoNaoEncontrado/');
         }
         $this->produtoService = $produtoService;
+        $produto = new Produtos();
+        $this->favoritos = $produto->getProdutosFavoritos();
     }
 
     public function getSeoSegmentos()
