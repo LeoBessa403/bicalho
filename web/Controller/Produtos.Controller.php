@@ -5,6 +5,7 @@ class Produtos extends AbstractController
     public $produtoPrincipal;
     public $segmentos;
     public $favoritos;
+    public $comparados;
 
     public function DetalharProduto()
     {
@@ -30,6 +31,7 @@ class Produtos extends AbstractController
             Redireciona('web/Produtos/ProdutoNaoEncontrado/');
         }
         $this->favoritos = $this->getProdutosFavoritos();
+        $this->comparados = $this->getProdutosComparados();
     }
 
     public function ComparaProdutos()
@@ -55,8 +57,23 @@ class Produtos extends AbstractController
             }
             $i++;
         }
-
         return $favoritos;
+    }
+
+    public function getProdutosComparados()
+    {
+        $session = new Session();
+        $comparados = [];
+        if ($session::CheckCookie('bicalho-comparados'))
+            $comparados = explode('-', $session::getCookie('bicalho-comparados'));
+        $i = 0;
+        foreach ($comparados as $comparado){
+            if(empty($comparado)){
+                unset($comparados[$i]);
+            }
+            $i++;
+        }
+        return $comparados;
     }
 
     public function getSeoProdutos()

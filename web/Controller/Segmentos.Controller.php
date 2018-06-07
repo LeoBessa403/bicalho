@@ -6,6 +6,7 @@ class Segmentos extends AbstractController
     public $segmento;
     public $produtoService;
     public $favoritos;
+    public $comparados;
     
     public function ListarSegmentos()
     {
@@ -33,6 +34,7 @@ class Segmentos extends AbstractController
         $this->produtoService = $produtoService;
         $produto = new Produtos();
         $this->favoritos = $produto->getProdutosFavoritos();
+        $this->comparados = $produto->getProdutosComparados();
     }
 
     public function getSeoSegmentos()

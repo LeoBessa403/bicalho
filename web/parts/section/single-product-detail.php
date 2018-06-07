@@ -46,9 +46,8 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
                target="_blank">
                 <i class="fa fa-whatsapp"></i> WhatSapp</a>
         </div>
-
         <div class="buttons-holder">
-            <a id="teste" class="btn-add-to-wishlist <?=
+            <a  class="btn-add-to-wishlist <?=
             (in_array($produtoPrincipal->getCoProduto(), $favoritos))
             ? 'remove-favo' : 'add-favo';
             ;?>" href="#" title="Adicionar aos favoritos"
@@ -56,7 +55,14 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
                 (in_array($produtoPrincipal->getCoProduto(), $favoritos))
                     ? 'Remove dos Favoritos' : 'Add aos Favoritos';
                 ;?></a>
-            <a class="btn-add-to-compare" href="#">comparar</a>
+            <a class="btn-add-to-compare <?=
+            (in_array($produtoPrincipal->getCoProduto(), $comparados))
+                ? 'remove-compare' : 'add-compare';
+            ;?>" href="#" title="Remove dos comparados"
+               data-co-produto="<?= $produtoPrincipal->getCoProduto(); ?>"> <?=
+                (in_array($produtoPrincipal->getCoProduto(), $comparados))
+                    ? 'Remove dos Comparados' : 'Add aos Comparados';
+                ;?></a>
         </div>
 
         <div class="excerpt">

@@ -58,7 +58,7 @@
                    class="le-button">Ver Detalhes</a>
             </div>
             <div class="wish-compare">
-                <a id="teste" class="btn-add-to-wishlist <?=
+                <a  class="btn-add-to-wishlist <?=
                 (in_array($produtoRec->getCoProduto(), $favoritos))
                     ? 'remove-favo' : 'add-favo';
                 ;?>" href="#" title="Adicionar aos favoritos"

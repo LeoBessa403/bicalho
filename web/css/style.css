@@ -5447,6 +5447,11 @@ select.top-drop-menu {
     font-weight: bolder;
 }
 
+.remove-compare::before, .remove-compare{
+    color: #2c4591 !important;
+    font-weight: bolder;
+}
+
 .image-favorito img{
     height: 80px !important;
 }

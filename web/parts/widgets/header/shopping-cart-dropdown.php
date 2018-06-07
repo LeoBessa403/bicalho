@@ -1,6 +1,7 @@
 <?php
     $produto = new Produtos();
     $favoritos = $produto->getProdutosFavoritos();
+    $comparados = $produto->getProdutosComparados();
 ?>
 <div class="top-cart-row-container">
     <div class="wishlist-compare-holder">
@@ -9,8 +10,8 @@
                         class="value"><?= count($favoritos); ?></span>) </a>
         </div>
         <div class="compare">
-            <a href="<?php echo PASTASITE; ?>Produtos/ComparaProdutos"><i class="fa fa-exchange"></i>Compare <span
-                        class="value">(2)</span> </a>
+            <a href="<?php echo PASTASITE; ?>Produtos/ComparaProdutos"><i class="fa fa-exchange"></i>Compare (<span
+                        class="value"><?= count($comparados); ?></span>) </a>
         </div>
     </div>
 

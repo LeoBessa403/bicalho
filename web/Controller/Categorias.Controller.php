@@ -6,6 +6,7 @@ class Categorias extends AbstractController
     public $categoria;
     public $produtoService;
     public $favoritos;
+    public $comparados;
 
     public function ListarCategorias()
     {
@@ -36,6 +37,7 @@ class Categorias extends AbstractController
         $this->produtoService = $produtoService;
         $produto = new Produtos();
         $this->favoritos = $produto->getProdutosFavoritos();
+        $this->comparados = $produto->getProdutosComparados();
     }
 
     public function getSeoCategorias()

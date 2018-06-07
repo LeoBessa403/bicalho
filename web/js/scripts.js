@@ -20,6 +20,7 @@
 
         var urlValida = dados['HOME'] + 'admin/Controller/Ajax.Controller.php';
         var cookieFavotitos = 'bicalho-favoritos';
+        var cookieComparados = 'bicalho-comparados';
 
         var dragging = true;
         var owlElementID = "#owl-main";
@@ -348,7 +349,7 @@
                 if (checkCookie(cookieFavotitos)) {
                     var favoritos = getCookie(cookieFavotitos);
                     if (evento == 'add_favorito') {
-                        setCookie(favoritos + coProduto + "-");
+                        setCookie(favoritos + coProduto + "-" , cookieFavotitos);
                     } else {
                         var novo_cookie = '';
                         var pf = favoritos.split('-');
@@ -361,10 +362,10 @@
                                 novo_cookie = novo_cookie + p + '-';
                             }
                         }
-                        setCookie(novo_cookie);
+                        setCookie(novo_cookie , cookieFavotitos);
                     }
                 } else {
-                    setCookie(coProduto + "-");
+                    setCookie(coProduto + "-" , cookieFavotitos);
                 }
                 // document.cookie = cookieFavotitos+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
@@ -402,6 +403,72 @@
             return false
         });
 
+
+        $(".btn-add-to-compare").click(function () {
+            var coProduto = $(this).attr('data-co-produto');
+            var elemento = $(this);
+            var evento = 'remove_compare';
+            if (elemento.hasClass('add-compare')) {
+                evento = 'add_compare';
+            }
+            if (coProduto) {
+                if (checkCookie(cookieComparados)) {
+                    var comparados = getCookie(cookieComparados);
+                    if (evento == 'add_compare') {
+                        setCookie(comparados + coProduto + "-" , cookieComparados);
+                    } else {
+                        var novo_cookie_comp = '';
+                        var pc = comparados.split('-');
+                        for (var i = 0; i < pc.length; i++) {
+                            var pcom = pc[i];
+                            while (pcom.charAt(0) == ' ') {
+                                pcom = pcom.substring(1);
+                            }
+                            if (pcom != coProduto && pcom) {
+                                novo_cookie_comp = novo_cookie_comp + pcom + '-';
+                            }
+                        }
+                        setCookie(novo_cookie_comp , cookieComparados);
+                    }
+                } else {
+                    setCookie(coProduto + "-" , cookieComparados);
+                }
+                // document.cookie = cookieComparados+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+                var elementComparado = $(".compare .value");
+                var totalComparado = parseInt(elementComparado.text());
+
+                elementComparado.animate({
+                    fontSize : '24px'
+                }, 1000, function() {
+                    elementComparado.animate({
+                        fontSize : '13px'
+                    })
+                });
+
+                if (evento == 'add_compare') {
+                    elementComparado.text(totalComparado + 1);
+                    elemento.text('Remove dos comparados');
+                    elemento.removeClass('add-compare');
+                    elemento.addClass('remove-compare');
+                } else {
+                    elementComparado.text(totalComparado - 1);
+                    if (elemento.hasClass('btn-add-to-compare')) {
+                        elemento.text('Add aos comparados');
+                        elemento.addClass('add-compare');
+                        elemento.removeClass('remove-compare');
+                    }else{
+                        // $("#yith-wcwl-row-" + coProduto).fadeToggle('slow');
+                        // if(parseInt(totalComparado - 1) == 0){
+                        //     $("#nenhum-favorito").fadeToggle(2000);
+                        // }
+                    }
+
+                }
+            }
+            return false
+        });
+
         function getCookie(cname) {
             var name = cname + "=";
             var decodedCookie = decodeURIComponent(document.cookie);
@@ -427,11 +494,11 @@
             }
         }
 
-        function setCookie(valor) {
+        function setCookie(valor, noCookie) {
             var d = new Date();
             d.setTime(d.getTime() + (30 * 24 * 60 * 60 * 1000));
             var expires = "expires=" + d.toUTCString();
-            document.cookie = cookieFavotitos + "=" + valor + ";" + expires + ";path=/";
+            document.cookie = noCookie + "=" + valor + ";" + expires + ";path=/";
         }
     });
 

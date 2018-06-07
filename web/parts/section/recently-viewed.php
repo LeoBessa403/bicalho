@@ -82,7 +82,7 @@ $vistosRecentemente =  $produtoService->pesquisaProdutos(8);
                                        class="le-button">Ver Detalhes</a>
                                 </div>
                                 <div class="wish-compare">
-                                    <a id="teste" class="btn-add-to-wishlist <?=
+                                    <a  class="btn-add-to-wishlist <?=
                                     (in_array($produto->getCoProduto(), $favoritos))
                                         ? 'remove-favo' : 'add-favo';
                                     ;?>" href="#" title="Adicionar aos favoritos"
@@ -90,7 +90,14 @@ $vistosRecentemente =  $produtoService->pesquisaProdutos(8);
                                         (in_array($produto->getCoProduto(), $favoritos))
                                             ? 'Remove dos Favoritos' : 'Add aos Favoritos';
                                         ;?></a>
-                                    <a class="btn-add-to-compare" href="#">Compare</a>
+                                    <a class="btn-add-to-compare <?=
+                                    (in_array($produto->getCoProduto(), $comparados))
+                                        ? 'remove-compare' : 'add-compare';
+                                    ;?>" href="#" title="Remove dos comparados"
+                                       data-co-produto="<?= $produto->getCoProduto(); ?>"> <?=
+                                        (in_array($produto->getCoProduto(), $comparados))
+                                            ? 'Remove dos Comparados' : 'Add aos Comparados';
+                                        ;?></a>
                                 </div>
                             </div>
                         </div><!-- /.product-item -->

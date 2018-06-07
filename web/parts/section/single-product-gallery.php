@@ -66,8 +66,8 @@
                 echo Valida::GetMiniatura(
                     'ProdutosCapa/' . $produtoPrincipal->getCoImagem()->getDsCaminho(),
                     $produtoPrincipal->getNoProduto(),
-                    50,
-                    50,
+                    100,
+                    100,
                     'img-responsive'
                 );
                 echo '</div>';
@@ -80,8 +80,8 @@
                         echo Valida::GetMiniatura(
                             $imagemProduto->getCoImagem()->getDsCaminho(),
                             $imagemProduto->getCoProduto()->getNoProduto(),
-                            50,
-                            50,
+                            100,
+                            100,
                             'img-responsive'
                         );
                         echo '</div>';
@@ -95,8 +95,8 @@
                     echo Valida::GetMiniatura(
                         'youtube-vid.jpg',
                         'Ver Vídeo',
-                        50,
-                        50,
+                        100,
+                        100,
                         'img-responsive'
                     );
                     echo '</div>';
@@ -111,8 +111,8 @@
                     echo Valida::GetMiniatura(
                         'download.jpg',
                         'Ver Vídeo',
-                        50,
-                        50,
+                        100,
+                        100,
                         'img-responsive'
                     );
                     echo '</a></div>';

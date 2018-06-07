@@ -12,6 +12,7 @@ class IndexWeb extends AbstractController
     public $bemMaisVendidos;
     public $fabricantesDestaque;
     public $favoritos;
+    public $comparados;
 
     public function Index()
     {
@@ -34,6 +35,7 @@ class IndexWeb extends AbstractController
         $this->produtoService = $produtoService;
         $produto = new Produtos();
         $this->favoritos = $produto->getProdutosFavoritos();
+        $this->comparados = $produto->getProdutosComparados();
     }
 }
 ?>
