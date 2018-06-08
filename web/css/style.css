@@ -5481,10 +5481,10 @@ select.top-drop-menu {
 
 .overlay-model .captura-email {
     position: fixed;
-    width: 43%;
-    height: 50%;
-    top: 25%;
-    left: 30%;
+    width: 95%;
+    height: 80%;
+    top: 10%;
+    left: 2.5%;
     background-color: white;
     border-radius: 2%;
     -moz-border-radius: 2%;
@@ -5496,14 +5496,14 @@ select.top-drop-menu {
 
 .overlay-model .fechar {
     position: relative;
-    top: -12px;
-    right: -12px;
+    top: 0px;
+    right: 0px;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 14px;
     background-color: #2c4591;
     color: #E7DCD0;
     float: right;
-    padding: 1px 11px 5px;
+    padding: 1px 8px 4px;
     border-radius: 100%;
     -moz-border-radius: 100%;
     -webkit-border-radius: 100%;
@@ -5515,33 +5515,35 @@ select.top-drop-menu {
 }
 
 .overlay-model .captura-email img {
-    height: 100%;
-    width: 50%;
+    height: 60%;
+    width: 100%;
     float: left;
-    border-radius: 8px;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    margin-top: -26px;
 }
 
 .overlay-model .captura-email .form {
-    height: 100%;
-    width: 48%;
+    height: 40%;
+    width: 100%;
     float: right;
+    padding-left: 5px;
 }
 
 .overlay-model .captura-email h3 {
-    font-size: 3em;
+    font-size: 1.6em;
     font-weight: bolder;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .overlay-model .captura-email h4 {
-    font-size: 1.8em;
+    font-size: 1.1em;
     font-weight: bolder;
 }
 
 .overlay-model .captura-email p {
-    font-size: 1em;
+    font-size: 0.7em;
     font-weight: 500;
 }
 
@@ -6513,24 +6515,60 @@ select.top-drop-menu {
     }
 }
 
+
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .owl-buttons {
-        display: block;
+@media (min-width: 500px) {
+
+    .overlay-model .captura-email {
+        height: 90%;
+        top: 5%;
     }
 
-    #owl-main .owl-nav div {
-        font-size: 2.2em !important;
-        width: 5% !important;
-        height: 6% !important;
+    .overlay-model .captura-email h3 {
+        font-size: 1.8em;
     }
 
-    .owl-inner-nav:hover .owl-prev {
-        left: 12px !important;
+    .overlay-model .captura-email h4 {
+        font-size: 1.3em;
     }
 
-    .owl-inner-nav:hover .owl-next {
-        right: 12px !important;
+    .overlay-model .captura-email p {
+        font-size: 0.8em;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 600px) {
+
+    .overlay-model .captura-email {
+        height: 60%;
+        width: 90%;
+        top: 20%;
+        left: 5%;
+    }
+
+    .overlay-model .captura-email img {
+        height: 100%;
+        width: 50%;
+        float: left;
+        margin-top: 0;
+    }
+
+    .overlay-model .captura-email .form {
+        height: 100%;
+        width: 48%;
+    }
+
+    .overlay-model .captura-email h3 {
+        font-size: 2.2em;
+    }
+
+    .overlay-model .captura-email h4 {
+        font-size: 1.6em;
+    }
+
+    .overlay-model .captura-email p {
+        font-size: 1em;
     }
 }
 
@@ -6579,7 +6617,15 @@ select.top-drop-menu {
     .owl-inner-nav:hover .owl-next {
         right: 12px !important;
     }
+
+    .overlay-model .fechar {
+        top: -12px !important;
+        right: -12px !important;
+        font-size: 20px !important;
+        padding: 1px 11px 5px !important;
+    }
 }
+
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 992px) {
@@ -6597,4 +6643,61 @@ select.top-drop-menu {
     .owl-inner-nav:hover .owl-next {
         right: 12px !important;
     }
+
+    .overlay-model .captura-email {
+        width: 70% !important;
+        left: 15% !important;
+    }
+
+    .overlay-model .captura-email h3 {
+        font-size: 2.6em !important;
+    }
+
+    .overlay-model .captura-email h4 {
+        font-size: 1.6em !important;
+    }
 }
+
+
+@media (min-width: 1200px) {
+    .owl-buttons {
+        display: block;
+    }
+
+    #owl-main .owl-nav div {
+        font-size: 2.2em !important;
+        width: 5% !important;
+        height: 6% !important;
+    }
+
+    .owl-inner-nav:hover .owl-prev {
+        left: 12px !important;
+    }
+
+    .owl-inner-nav:hover .owl-next {
+        right: 12px !important;
+    }
+
+    .overlay-model .captura-email {
+        height: 50% !important;
+        width: 43% !important;
+        top: 25% !important;
+        left: 30% !important;
+    }
+
+    .overlay-model .captura-email img {
+        border-radius: 8px !important;
+        -moz-border-radius: 8px !important;
+        -webkit-border-radius: 8px !important;
+    }
+
+
+    .overlay-model .captura-email h3 {
+        font-size: 3em !important;
+    }
+
+    .overlay-model .captura-email h4 {
+        font-size: 1.8em !important;
+    }
+}
+
