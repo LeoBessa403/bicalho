@@ -101,7 +101,7 @@ $visitaService->gestaoVisita();
                      alt="Captura de Email" title="Captura de Email" class="img-responsive">
                 <div class="form">
                   <h4>Aproveite</h4>
-                    <h3>Ofertas<br>Exclusivas</h3>
+                    <h3>Ofertas Exclusivas</h3>
                     <h4>Em seu email <i class="fa fa-envelope"></i></h4>
                     <p>Digite seu e-mail abaixo e receba ofertas exclusivas e muito mais...</p>
                     <p>Para Saber das novidades deixe seu email</p>
