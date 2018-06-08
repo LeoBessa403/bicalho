@@ -1,7 +1,7 @@
 <?php
 $containerClass = isset($containerClass) ? $containerClass : 'container';
 $hasSidebar = isset($hasSidebar) ? $hasSidebar : false;
-/** @var ProdutoEntidade $produto */
+/** @var ProdutoEntidade $prod */
 $prod = $produtoPrincipal;
 ?>
 <!-- ========================================= SINGLE PRODUCT TAB ========================================= -->
