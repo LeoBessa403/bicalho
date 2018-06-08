@@ -90,7 +90,7 @@ $visitaService->gestaoVisita();
         </div>
         <?php
         $display = 'block';
-            if (!Session::CheckCookie('sem-lead-bicalho') || !Session::CheckCookie('lead-bicalho'))
+            if (Session::CheckCookie('sem-lead-bicalho') || Session::CheckCookie('lead-bicalho'))
                 $display = 'none';
         ?>
         <div class="overlay-model" style="display: <?= $display; ?>">
