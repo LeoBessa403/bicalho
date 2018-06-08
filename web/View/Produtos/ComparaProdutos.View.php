@@ -9,146 +9,159 @@
         </div><!-- /.section-page-title -->
 
         <div class="table-responsive inner-bottom-xs inner-top-xs">
+            <?php
+            if (count($comparados)) {
+                ?>
+                <table class="table table-bordered table-striped compare-list">
+                    <thead>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <?php
+                        $produtoControl = new Produtos();
+                        /** @var ProdutoService $produtoService */
+                        $produtoService = $produtoControl->getService(PRODUTO_SERVICE);
+                        foreach ($comparados as $comparado) {
+                            /** @var ProdutoEntidade $produto */
+                            $produto = $produtoService->PesquisaUmRegistro($comparado);
+                            ?>
+                            <td class="text-center produto-<?= $produto->getCoProduto(); ?>">
+                                <div class="image-wrap">
+                                    <a data-co-produto="<?= $produto->getCoProduto(); ?>" href="#"
+                                       class="remove-link remove-compare"><i title="Remover produto"
+                                                                             class="fa fa-times-circle"></i></a>
+                                    <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                    $produto->getNoProdutoUrlAmigavel(); ?>">
+                                        <?php
+                                        echo Valida::GetMiniatura(
+                                            'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),
+                                            $produto->getNoProduto(),
+                                            220,
+                                            154,
+                                            'img-responsive'
+                                        );
+                                        ?>
+                                    </a>
+                                </div>
+                                <p><strong><a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                        $produto->getNoProdutoUrlAmigavel(); ?>"><?=
+                                            Valida::Resumi($produto->getNoProduto(), 150);
+                                            ?></a></strong></p>
+                            </td>
+                            <?php
+                        } ?>
+                    </tr>
+                    <tr class="tr-add-to-cart">
+                        <th style="border: none;">Produtos</th>
+                        <?php
+                        $produtoControl = new Produtos();
+                        /** @var ProdutoService $produtoService */
+                        $produtoService = $produtoControl->getService(PRODUTO_SERVICE);
+                        foreach ($comparados as $comparado) {
+                            /** @var ProdutoEntidade $produto */
+                            $produto = $produtoService->PesquisaUmRegistro($comparado);
+                            ?>
+                            <td class="text-center produto-<?= $produto->getCoProduto(); ?>">
+                                <a class="le-button add_to_cart_button  product_type_simple"
+                                   style="margin-bottom: 7px;"
+                                   href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
+                                   $produto->getNoProdutoUrlAmigavel(); ?>"> Ver detalhes</a>
+                            </td>
+                            <?php
+                        } ?>
+                    </tr>
+                    </thead>
+                    <tbody>
 
-            <table class="table table-bordered table-striped compare-list">
-                <thead>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td class="text-center">
-                        <div class="image-wrap">
-                            <a data-product_id="39" href="#" class="remove-link"><i class="fa fa-times-circle"></i></a>
-                            <img width="220" height="154" alt="Iconia W700" class="attachment-yith-woocompare-image"
-                                 src="<?php echo PASTASITE; ?>images/products/product-01.jpg">
-                        </div>
-                        <p><strong>Iconia W700</strong></p>
-                    </td>
-                    <td class="text-center">
-                        <div class="image-wrap">
-                            <a data-product_id="34" href="#" class="remove-link"><i class="fa fa-times-circle"></i></a>
-                            <img width="220" height="154" alt="POV Action Cam" class="attachment-yith-woocompare-image"
-                                 src="<?php echo PASTASITE; ?>images/products/product-02.jpg">
-                        </div>
-                        <p><strong>AS100V Action Cam</strong></p>
-                    </td>
-                    <td class="text-center">
-                        <div class="image-wrap">
-                            <a data-product_id="30" href="#" class="remove-link"><i class="fa fa-times-circle"></i></a>
-                            <img width="220" height="154" alt="PlayStation 4" class="attachment-yith-woocompare-image"
-                                 src="<?php echo PASTASITE; ?>images/products/product-03.jpg">
-                        </div>
-                        <p><strong>PlayStation 4</strong></p>
-                    </td>
-                    <td class="text-center">
-                        <div class="image-wrap">
-                            <a data-product_id="20" href="#" class="remove-link"><i class="fa fa-times-circle"></i></a>
-                            <img width="220" height="154" alt="Cyber-shot Digital Camera WX300"
-                                 class="attachment-yith-woocompare-image"
-                                 src="<?php echo PASTASITE; ?>images/products/product-04.jpg">
-                        </div>
-                        <p><strong>Cyber-shot Digital Camera WX300</strong></p>
-                    </td>
-                </tr>
-                <tr class="tr-add-to-cart">
-                    <td>&nbsp;</td>
-                    <td class="text-center">
-                        <div class="add-cart-button">
-                            <a class="le-button add_to_cart_button  product_type_simple" href="index.php?page=cart">add
-                                ao carrinho</a>
-                        </div>
-                    </td>
-                    <td class="text-center">
-                        <div class="add-cart-button">
-                            <a class="le-button add_to_cart_button  product_type_simple" href="index.php?page=cart">add
-                                ao carrinho</a>
-                        </div>
-                    </td>
-                    <td class="text-center">
-                        <div class="add-cart-button">
-                            <a class="le-button add_to_cart_button  product_type_simple" href="index.php?page=cart">add
-                                ao carrinho</a>
-                        </div>
-                    </td>
-                    <td class="text-center">
-                        <div class="add-cart-button">
-                            <a class="le-button add_to_cart_button  product_type_variable" href="index.php?page=cart">add
-                                ao carrinho</a>
-                        </div>
-                    </td>
-                </tr>
-                </thead>
-                <tbody>
+                    <tr class="comparison-item price">
+                        <th>Preço</th>
+                        <?php
+                        $produtoControl = new Produtos();
+                        /** @var ProdutoService $produtoService */
+                        $produtoService = $produtoControl->getService(PRODUTO_SERVICE);
+                        foreach ($comparados as $comparado) {
+                            /** @var ProdutoEntidade $produto */
+                            $produto = $produtoService->PesquisaUmRegistro($comparado);
+                            ?>
+                            <td class="comparison-item-cell odd product_39 produto-<?= $produto->getCoProduto(); ?>">
+                                <span class="amount">R$ <?=
+                                    Valida::FormataMoeda(
+                                        $produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
+                                    );
+                                    ?></span>
+                            </td>
+                            <?php
+                        } ?>
+                    </tr>
 
-                <tr class="comparison-item price">
-                    <th>preço</th>
-                    <td class="comparison-item-cell odd product_39">
-                        <span class="amount">R$629.99</span>
-                    </td>
-                    <td class="comparison-item-cell even product_34">
-                        <del><span class="amount">R$299.99</span></del>
-                        <ins><span class="amount">R$269.99</span></ins>
-                    </td>
-                    <td class="comparison-item-cell odd product_30">
-                        <span class="amount">R$399.99</span>
-                    </td>
-                    <td class="comparison-item-cell even product_20">
-                        <del><span class="amount">R$329.99</span></del>
-                        <ins><span class="amount">R$249.99</span>&ndash;<span class="amount">R$329.99</span></ins>
-                    </td>
-                </tr>
+                    <tr class="comparison-item description">
+                        <th>Descrição</th>
+                        <?php
+                        $produtoControl = new Produtos();
+                        /** @var ProdutoService $produtoService */
+                        $produtoService = $produtoControl->getService(PRODUTO_SERVICE);
+                        foreach ($comparados as $comparado) {
+                            /** @var ProdutoEntidade $produto */
+                            $produto = $produtoService->PesquisaUmRegistro($comparado);
+                            ?>
+                            <td class="comparison-item-cell odd product_39 produto-<?= $produto->getCoProduto(); ?>">
+                                <p><?=
+                                    Valida::Resumi($produto->getDsDescricao(), 300);
+                                    ?></p>
+                            </td>
+                            <?php
+                        } ?>
+                    </tr>
 
-                <tr class="comparison-item description">
-                    <th>Description</th>
-                    <td class="comparison-item-cell odd product_39">
-                        <p>Nulla sed sapien a ligula auctor maximus. Aliquam eget condimentum nunc. Maecenas efficitur
-                            pretium nunc in semper. Nullam ac luctus nisl. </p>
-                    </td>
-                    <td class="comparison-item-cell even product_34">
-                        <p>Nulla sed sapien a ligula auctor maximus. Aliquam eget condimentum nunc. Maecenas efficitur
-                            pretium nunc in semper. Nullam ac luctus nisl. </p>
-                    </td>
-                    <td class="comparison-item-cell odd product_30">
-                        <p>Nulla sed sapien a ligula auctor maximus. Aliquam eget condimentum nunc. Maecenas efficitur
-                            pretium nunc in semper. Nullam ac luctus nisl. </p>
-                    </td>
-                    <td class="comparison-item-cell even product_20">
-                        <p>Nulla sed sapien a ligula auctor maximus. Aliquam eget condimentum nunc. Maecenas efficitur
-                            pretium nunc in semper. Nullam ac luctus nisl. </p>
-                    </td>
-                </tr>
+                    <tr class="comparison-item stock">
+                        <th>Disponibilidade</th>
+                        <?php
+                        $produtoControl = new Produtos();
+                        /** @var ProdutoService $produtoService */
+                        $produtoService = $produtoControl->getService(PRODUTO_SERVICE);
+                        foreach ($comparados as $comparado) {
+                            /** @var ProdutoEntidade $produto */
+                            $produto = $produtoService->PesquisaUmRegistro($comparado);
+                            ?>
+                            <td class="comparison-item-cell odd product_39 produto-<?= $produto->getCoProduto(); ?>">
+                                <?php
+                                if ($produto->getNuEstoque() > 0) {
+                                    ?>
+                                    <span class="label label-success"><span class="">Com estoque</span></span>
+                                <?php } else { ?>
+                                    <span class="label label-danger"><span class="">Sem estoque</span></span>
+                                <?php } ?>
+                            </td>
+                            <?php
+                        } ?>
+                    </tr>
 
-                <tr class="comparison-item stock">
-                    <th>Avaliação</th>
-
-                    <td class="comparison-item-cell odd product_39">
-                        <span class="label label-success"><span class="">Com estoque</span></span>
-                    </td>
-                    <td class="comparison-item-cell even product_34">
-                        <span class="label label-success"><span class="">Com estoque</span></span>
-                    </td>
-                    <td class="comparison-item-cell odd product_30">
-                        <span class="label label-success"><span class="">Com estoque</span></span>
-                    </td>
-                    <td class="comparison-item-cell even product_20">
-                        <span class="label label-success"><span class="">Com estoque</span></span>
-                    </td>
-                </tr>
-
-                <tr class="price repeated">
-                    <th>preço</th>
-                    <td class="odd product_39"><span class="amount">R$629.99</span></td>
-                    <td class="even product_34">
-                        <del><span class="amount">R$299.99</span></del>
-                        <ins><span class="amount">R$269.99</span></ins>
-                    </td>
-                    <td class="odd product_30"><span class="amount">R$399.99</span></td>
-                    <td class="even product_20">
-                        <del><span class="amount">R$329.99</span></del>
-                        <ins><span class="amount">R$249.99</span>&ndash;<span class="amount">R$329.99</span></ins>
-                    </td>
-                </tr>
-
-                </tbody>
-            </table>
+                    <tr class="price repeated">
+                        <th>Fabricante</th>
+                        <?php
+                        $produtoControl = new Produtos();
+                        /** @var ProdutoService $produtoService */
+                        $produtoService = $produtoControl->getService(PRODUTO_SERVICE);
+                        foreach ($comparados as $comparado) {
+                            /** @var ProdutoEntidade $produto */
+                            $produto = $produtoService->PesquisaUmRegistro($comparado);
+                            ?>
+                            <td class="even product_39 produto-<?= $produto->getCoProduto(); ?>"><span class="amount"><?=
+                                    $produto->getCoFabricante()->getNoFabricante();
+                                    ?></span></td>
+                            <?php
+                        }
+                        ?>
+                    </tr>
+                    </tbody>
+                </table>
+            <?php }
+            $display = 'block';
+            if (count($comparados)) {
+                $display = 'none';
+            } ?>
+            <div style="text-align: center; display: <?= $display; ?>" id="nenhum-comparado">
+                <h2>Nenhum produto adicionado para comparar!</h2>
+            </div>
         </div><!-- /.table-responsive -->
     </div><!-- /.container -->
 </div>

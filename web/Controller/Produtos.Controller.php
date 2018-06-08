@@ -36,12 +36,12 @@ class Produtos extends AbstractController
 
     public function ComparaProdutos()
     {
+        $this->comparados = $this->getProdutosComparados();
     }
 
     public function DetalharFavoritos()
     {
-        $produto = new Produtos();
-        $this->favoritos = $produto->getProdutosFavoritos();
+        $this->favoritos = $this->getProdutosFavoritos();
     }
 
     public function getProdutosFavoritos()

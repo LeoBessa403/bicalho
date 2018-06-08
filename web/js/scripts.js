@@ -404,7 +404,7 @@
         });
 
 
-        $(".btn-add-to-compare").click(function () {
+        $(".btn-add-to-compare, .remove-link").click(function () {
             var coProduto = $(this).attr('data-co-produto');
             var elemento = $(this);
             var evento = 'remove_compare';
@@ -458,10 +458,10 @@
                         elemento.addClass('add-compare');
                         elemento.removeClass('remove-compare');
                     }else{
-                        // $("#yith-wcwl-row-" + coProduto).fadeToggle('slow');
-                        // if(parseInt(totalComparado - 1) == 0){
-                        //     $("#nenhum-favorito").fadeToggle(2000);
-                        // }
+                        $(".produto-" + coProduto).fadeToggle('slow');
+                        if(parseInt(totalComparado - 1) == 0){
+                            $("#nenhum-comparado, .compare-list").fadeToggle(2000);
+                        }
                     }
 
                 }
@@ -485,8 +485,8 @@
             return "";
         }
 
-        function checkCookie() {
-            var username = getCookie(cookieFavotitos);
+        function checkCookie(cookie) {
+            var username = getCookie(cookie);
             if (username != "") {
                 return true;
             } else {
