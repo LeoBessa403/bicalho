@@ -90,6 +90,7 @@
 	define('SG_UNIDADE_VENDA', 'sg_unidade_venda');
 	define('DS_CAMINHO_VIDEO', 'ds_caminho_video');
 	define('DS_CAMINHO_MANUAL', 'ds_caminho_manual');
+	define('CO_LEAD', 'co_lead');
 
 
 	// SERVICES
@@ -117,5 +118,6 @@
 	define('TIPO_PAGAMENTO_SERVICE', 'TipoPagamentoService');
 	define('TRANSPORTADORA_SERVICE', 'TransportadoraService');
 	define('UNIDADE_VENDA_SERVICE', 'UnidadeVendaService');
+	define('LEAD_SERVICE', 'LeadService');
 
 

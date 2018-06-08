@@ -19,6 +19,7 @@
         var dados = constantes();
 
         var urlValida = dados['HOME'] + 'admin/Controller/Ajax.Controller.php';
+        var validaEmail = dados['HOME'] + 'library/Helpers/Valida.Controller.php';
         var cookieFavotitos = 'bicalho-favoritos';
         var cookieComparados = 'bicalho-comparados';
 
@@ -349,7 +350,7 @@
                 if (checkCookie(cookieFavotitos)) {
                     var favoritos = getCookie(cookieFavotitos);
                     if (evento == 'add_favorito') {
-                        setCookie(favoritos + coProduto + "-" , cookieFavotitos);
+                        setCookie(favoritos + coProduto + "-", cookieFavotitos);
                     } else {
                         var novo_cookie = '';
                         var pf = favoritos.split('-');
@@ -362,10 +363,10 @@
                                 novo_cookie = novo_cookie + p + '-';
                             }
                         }
-                        setCookie(novo_cookie , cookieFavotitos);
+                        setCookie(novo_cookie, cookieFavotitos);
                     }
                 } else {
-                    setCookie(coProduto + "-" , cookieFavotitos);
+                    setCookie(coProduto + "-", cookieFavotitos);
                 }
                 // document.cookie = cookieFavotitos+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
@@ -373,10 +374,10 @@
                 var totalFavorito = parseInt(elementFavorito.text());
 
                 elementFavorito.animate({
-                    fontSize : '24px'
-                }, 1000, function() {
+                    fontSize: '24px'
+                }, 1000, function () {
                     elementFavorito.animate({
-                        fontSize : '13px'
+                        fontSize: '13px'
                     })
                 });
 
@@ -391,9 +392,9 @@
                         elemento.text('Add aos favoritos');
                         elemento.addClass('add-favo');
                         elemento.removeClass('remove-favo');
-                    }else{
+                    } else {
                         $("#yith-wcwl-row-" + coProduto).fadeToggle('slow');
-                        if(parseInt(totalFavorito - 1) == 0){
+                        if (parseInt(totalFavorito - 1) == 0) {
                             $("#nenhum-favorito").fadeToggle(2000);
                         }
                     }
@@ -415,7 +416,7 @@
                 if (checkCookie(cookieComparados)) {
                     var comparados = getCookie(cookieComparados);
                     if (evento == 'add_compare') {
-                        setCookie(comparados + coProduto + "-" , cookieComparados);
+                        setCookie(comparados + coProduto + "-", cookieComparados);
                     } else {
                         var novo_cookie_comp = '';
                         var pc = comparados.split('-');
@@ -428,10 +429,10 @@
                                 novo_cookie_comp = novo_cookie_comp + pcom + '-';
                             }
                         }
-                        setCookie(novo_cookie_comp , cookieComparados);
+                        setCookie(novo_cookie_comp, cookieComparados);
                     }
                 } else {
-                    setCookie(coProduto + "-" , cookieComparados);
+                    setCookie(coProduto + "-", cookieComparados);
                 }
                 // document.cookie = cookieComparados+"=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
@@ -439,10 +440,10 @@
                 var totalComparado = parseInt(elementComparado.text());
 
                 elementComparado.animate({
-                    fontSize : '24px'
-                }, 1000, function() {
+                    fontSize: '24px'
+                }, 1000, function () {
                     elementComparado.animate({
-                        fontSize : '13px'
+                        fontSize: '13px'
                     })
                 });
 
@@ -457,9 +458,9 @@
                         elemento.text('Add aos comparados');
                         elemento.addClass('add-compare');
                         elemento.removeClass('remove-compare');
-                    }else{
+                    } else {
                         $(".produto-" + coProduto).fadeToggle('slow');
-                        if(parseInt(totalComparado - 1) == 0){
+                        if (parseInt(totalComparado - 1) == 0) {
                             $("#nenhum-comparado, .compare-list").fadeToggle(2000);
                         }
                     }
@@ -494,12 +495,49 @@
             }
         }
 
-        function setCookie(valor, noCookie) {
+        function setCookie(valor, noCookie, dias = 30) {
             var d = new Date();
-            d.setTime(d.getTime() + (30 * 24 * 60 * 60 * 1000));
+            d.setTime(d.getTime() + (dias * 24 * 60 * 60 * 1000));
             var expires = "expires=" + d.toUTCString();
             document.cookie = noCookie + "=" + valor + ";" + expires + ";path=/";
         }
+
+        // Fecha Model de Lead
+        $(".overlay-model .fechar").click(function () {
+            $(".captura-email").fadeToggle('slow', function () {
+                $(".overlay-model").fadeToggle('fast');
+                setCookie("sem-model-bicalho", "sem-lead-bicalho", 2);
+            });
+        });
+
+        // Envia o Email de Lead
+        $('#envia-email').click(function () {
+            $(this).hide();
+            var email = $("#email-lead").val();
+            $.get(validaEmail, {valida: 'valemail', email: email}, function (retorno) {
+                if (retorno == 2) {
+                    $('#envia-email').show();
+                    $(".captura-email .mensagem-erro").fadeIn('fast');
+                    $(".captura-email .mensagem-success").fadeOut('fast');
+                } else {
+                    $.get(urlValida, {valida: 'cadastro_lead', email: email}, function (retorno) {
+                        if (retorno) {
+                            $("#envia-email").attr('id','-');
+                            $(".captura-email .mensagem-success").fadeIn('fast');
+                            $(".captura-email .mensagem-erro").fadeOut('fast');
+                            setTimeout(function () {
+                                $(".captura-email").fadeToggle('slow', function () {
+                                    $(".overlay-model").fadeToggle('fast');
+                                    setCookie(email, "lead-bicalho", 60);
+                                });
+                            }, 3000);
+                        } else {
+                            Funcoes.Alerta("Erro ao Salvar o Email");
+                        }
+                    });
+                }
+            });
+        });
     });
 
     /*===================================================================================*/

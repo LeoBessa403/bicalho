@@ -294,19 +294,4 @@ class  ProdutoService extends AbstractService
         return $this->ObjetoModel->pesquisaProdutosAleatorios(implode(", ", $coProdutos));
     }
 
-
-    /**
-     * @param $coProduto
-     */
-    public static function addProdutoFavorito($coProduto)
-    {
-        $noCookie = static::getNoCookieProdutosFavoritos();
-
-        if (!Session::CheckCookie($noCookie)) {
-            $produtos = $coProduto;
-        }else{
-            $produtos = Session::getCookie($noCookie) . "-" . $coProduto;
-        }
-        Session::setCookie($noCookie, $produtos,  60 * 24 * 30);//Dura 1 mês
-    }
 }

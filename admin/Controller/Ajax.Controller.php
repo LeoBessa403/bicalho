@@ -60,5 +60,11 @@ if (isset($_GET['valida'])) {
             echo $pesquisas;
             break;
 
+        case 'cadastro_lead':
+            $email = $_GET['email'];
+            $cadastroLeaad = LeadService::salvaLead($email);
+            echo $cadastroLeaad;
+            break;
+
     }
 } // FIM SWITCH
