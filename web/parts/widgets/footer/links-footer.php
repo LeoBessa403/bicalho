@@ -7,7 +7,7 @@ $categorias = $categoriaService->PesquisaTodos();
 <!-- ============================================================= LINKS FOOTER ============================================================= -->
 <div class="link-widget">
     <div class="widget">
-        <h3>Encontre rápido</h3>
+        <h3>Categorias</h3>
         <ul>
             <?php
             /** @var CategoriaEntidade $categoria */
