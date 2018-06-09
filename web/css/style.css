@@ -5562,6 +5562,8 @@ select.top-drop-menu {
 
 .overlay-model .captura-email .le-button {
     margin-top: 10px;
+    padding: 4px 8px !important;
+    font-size: 13px;
 }
 
 .remove_from_wishlist {
@@ -6009,8 +6011,7 @@ select.top-drop-menu {
     }
 
     header .top-search-holder .contact-row > div, header .top-search-holder .contact-row .phone, header .top-search-holder .contact-row .contact {
-        margin: 0;
-        margin-bottom: 5px;
+        margin: 0 0 5px;
     }
 
     header .top-search-holder .search-area .categories-filter {
@@ -6524,6 +6525,13 @@ select.top-drop-menu {
         top: 5%;
     }
 
+    .overlay-model .captura-email img {
+        height: 60%;
+        width: 80%;
+        margin-top: 0;
+        margin-left: 10%;
+    }
+
     .overlay-model .captura-email h3 {
         font-size: 1.8em;
     }
@@ -6552,6 +6560,7 @@ select.top-drop-menu {
         width: 50%;
         float: left;
         margin-top: 0;
+        margin-left: 0;
     }
 
     .overlay-model .captura-email .form {
@@ -6569,6 +6578,11 @@ select.top-drop-menu {
 
     .overlay-model .captura-email p {
         font-size: 1em;
+    }
+
+    .overlay-model .captura-email .le-button {
+        padding: 8px 12px !important;
+        font-size: 16px;
     }
 }
 
@@ -6679,10 +6693,10 @@ select.top-drop-menu {
     }
 
     .overlay-model .captura-email {
-        height: 50% !important;
-        width: 43% !important;
-        top: 25% !important;
-        left: 30% !important;
+        height: 58% !important;
+        width: 50% !important;
+        top: 21% !important;
+        left: 25% !important;
     }
 
     .overlay-model .captura-email img {
@@ -6691,13 +6705,13 @@ select.top-drop-menu {
         -webkit-border-radius: 8px !important;
     }
 
+    .overlay-model .captura-email .form {
+        margin-top: -26px;
+    }
 
     .overlay-model .captura-email h3 {
-        font-size: 3em !important;
+        font-size: 2.8em !important;
     }
 
-    .overlay-model .captura-email h4 {
-        font-size: 1.8em !important;
-    }
 }
 
