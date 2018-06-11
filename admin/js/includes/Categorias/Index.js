@@ -1,5 +1,4 @@
 $(function () {
-    alert('aqui');
     // Price Slider
     if ($('.price-sliderdd').length > 0) {
         $('.price-slider').slider({
