@@ -22,9 +22,8 @@
                         <?= $foto; ?>
                         <div class="caption vertical-center text-left right" style="padding-right:0;">
                             <div class="big-text fadeInDown-1" style="text-align: right;">
-                                Super Desconto de <span class="big"><span class="sign">R$</span><?=
-                                    Valida::FormataMoeda(
-                                        floor($produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 0.10)
+                                Super Promoção de <span class="big"><span class="sign">R$</span><?=
+                                    Valida::FormataMoeda($produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
                                     );
                                     ?></span>
                             </div>
