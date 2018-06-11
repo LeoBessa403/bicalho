@@ -1670,7 +1670,8 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 }
 
 #bestsellers {
-    padding: 24px 0 63px 0;
+    padding: 12px 0 63px 0;
+    margin-top: 20px;
 }
 
 #bestsellers .size-medium {
@@ -2888,6 +2889,7 @@ header .top-cart-row .top-cart-holder .total-price-basket {
     background-color: #fff;
     border: 1px solid #ececec;
     position: relative;
+    margin-bottom: 25px;
 }
 
 .product-item-holder .ribbon {
@@ -3345,7 +3347,7 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 }
 
 #products-tab {
-    margin: 50px 0 20px 0;
+    margin: 50px 0 60px 0;
 }
 
 #products-tab .image {
