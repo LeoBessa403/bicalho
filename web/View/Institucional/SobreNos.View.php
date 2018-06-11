@@ -18,7 +18,7 @@
                         <li class="team-member">
                             <img src="<?php echo PASTASITE; ?>images/download.jpg" alt="" class="profile-pic img-responsive">
                             <div class="profile">
-                                <h3>Tudo para seu supermercado <small class="designation"></small></h3>
+                                <h3>Tudo para sua Drogaria <small class="designation"></small></h3>
                             </div><!-- /.profile -->
                         </li><!-- /.team-member -->
                     </ul><!-- /.team-members -->
