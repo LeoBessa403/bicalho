@@ -1,5 +1,7 @@
 <div class="widget">
 	<div class="simple-banner">
-		<a href="#"><img alt="" class="img-responsive" src="<?php echo PASTASITE; ?>images/blank.gif" data-echo="<?php echo PASTASITE; ?>images/banners/banner-simple.jpg" /></a>
+		<a href="#"><img src="<?= HOME; ?>library/Helpers/Timthumb.class.php?src=<?=
+            HOME; ?>uploads/captura.jpg&amp;w=500&amp;h=600&amp;zc=3"
+                 alt="Captura de Email" title="Captura de Email" class="img-responsive"></a>
 	</div>
 </div>
