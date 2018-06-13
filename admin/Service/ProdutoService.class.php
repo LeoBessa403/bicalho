@@ -89,10 +89,11 @@ class  ProdutoService extends AbstractService
                 $produto[DT_CADASTRO] = Valida::DataHoraAtualBanco();
                 $produto[ST_STATUS] = StatusAcessoEnum::ATIVO;
                 $coProduto = $this->Salva($produto);
-                if (!empty($files[CO_PRODUTO_IMAGEM])):
-                    $produtoImagemService->SalvaProdutoImagens($files, $coProduto, $nome);
-                endif;
                 $session->setSession(CADASTRADO, "OK");
+            endif;
+
+            if (!empty($files[CO_PRODUTO_IMAGEM])):
+                $produtoImagemService->SalvaProdutoImagens($files, $coProduto, $nome);
             endif;
 
             $detalheProduto[CO_PRODUTO] = $coProduto;

@@ -128,6 +128,15 @@ class ProdutoForm
             ->setClasses("ckeditor")
             ->CriaInpunt();
 
+        $formulario
+            ->setId(CO_PRODUTO_IMAGEM)
+            ->setLabel("Fotos do Produto")
+            ->setType("file")
+            ->setClasses("multipla")
+            ->setLimite(10)
+            ->setInfo("No máximo de 10 Fotos")
+            ->CriaInpunt();
+
         if (!empty($res[CO_PRODUTO])):
             $formulario
                 ->setType("hidden")
@@ -139,15 +148,6 @@ class ProdutoForm
                 ->setType("hidden")
                 ->setId(CO_IMAGEM)
                 ->setValues($res[CO_IMAGEM])
-                ->CriaInpunt();
-        else:
-            $formulario
-                ->setId(CO_PRODUTO_IMAGEM)
-                ->setLabel("Fotos do Produto")
-                ->setType("file")
-                ->setClasses("multipla")
-                ->setLimite(10)
-                ->setInfo("No máximo de 10 Fotos")
                 ->CriaInpunt();
         endif;
 
