@@ -12,26 +12,33 @@
         <div class="row">
             <div class="col-md-8">
                 <section class="section leave-a-message">
-                    <h2 class="bordered">Deixe um recado</h2>
+                    <h2 class="bordered">Deixe um recado / sugestão</h2>
+                    <?php
+                        $display = 'none';
+                        if($resultEmail)
+                            $display = 'block';
+                    ?>
+                    <p class="mensagem-success mensagem-email alert-success"
+                       style="display: <?= $display; ?>;">E-mail enviado com sucesso, em breve entraremos em contato!</p>
                     <p>Dicas e sugestões.</p>
                     <form id="contact-form" class="contact-form cf-style-1 inner-top-xs" method="post">
                         <div class="row field-row">
                             <div class="col-xs-12 col-sm-6">
                                 <label>Seu Nome*</label>
-                                <input class="le-input">
+                                <input class="le-input" name="nome" id="nome" />
                             </div>
                             <div class="col-xs-12 col-sm-6">
                                 <label>Seu Email*</label>
-                                <input class="le-input">
+                                <input class="le-input" name="mail" id="mail" />
                             </div>
                         </div><!-- /.field-row -->
                         <div class="field-row">
                             <label>Título</label>
-                            <input type="text" class="le-input">
+                            <input type="text" class="le-input" name="titulo" id="titulo" />
                         </div><!-- /.field-row -->
                         <div class="field-row">
                             <label>Mensagem</label>
-                            <textarea rows="8" class="le-input"></textarea>
+                            <textarea rows="8" class="le-input" name="mensagem" id="mensagem"></textarea>
                         </div><!-- /.field-row -->
                         <div class="buttons-holder">
                             <button type="submit" class="le-button huge">Enviar Mensagem</button>

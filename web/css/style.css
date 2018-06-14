@@ -5605,6 +5605,15 @@ select.top-drop-menu {
     font-weight: 600;
 }
 
+.mensagem-email{
+    font-weight: bold;
+    color: darkgreen !important;
+    margin: 20px 0;
+    padding: 15px 10px;
+    width: 100%;
+}
+
+
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 500px) {
 
