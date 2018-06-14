@@ -16,8 +16,8 @@ class Institucional extends AbstractController
 
              $email->setEmailDestinatario($emails)
                  ->setTitulo("Autor: ".$_POST['nome']." - ".$_POST['titulo'])
-//                 ->setEmailReplayTo($_POST['mail'])
-//                 ->setNomeReplayTo($_POST['nome'])
+                 ->setEmailReplayTo($_POST['mail'])
+                 ->setNomeReplayTo($_POST['nome'])
                  ->setMensagem($Mensagem);
 
              // Variável para validação de Emails Enviados com Sucesso.
