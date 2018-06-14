@@ -80,8 +80,8 @@ function servidor_inicial()
 
     define('HOST_EMAIL', 'mail.bicalho.com');
     define('PORTA_EMAIL', 587);
-    define('USER_EMAIL', 'sistema@bicalho.com');
-    define('PASS_EMAIL', 'Admin101**');
+    define('USER_EMAIL', 'contato@bicalhorefrigeracao.com');
+    define('PASS_EMAIL', 'bicalho10*');
 
     //////////////////////////////////////////////
     // *********** GOOGLE ANALITCS  *********** //
