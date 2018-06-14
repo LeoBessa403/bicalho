@@ -100,6 +100,31 @@ class  ProdutoModel extends AbstractModel
     }
 
     /**
+     * @param $dias
+     * @return array
+     */
+    public function PesquisaProdutosNovos($dias)
+    {
+        $dataComparar = Valida::DataDB(Valida::CalculaData(
+                date('d/m/Y'), $dias, '-') . ' 00:00:00');
+        $pesquisa = new Pesquisa();
+        $where = "where " . DT_CADASTRO . " >= '" . $dataComparar . "'";
+        $pesquisa->Pesquisar(ProdutoEntidade::TABELA, $where);
+        return $pesquisa->getResult();
+    }
+
+    /**
+     * @return array
+     */
+    public function PesquisaProdutosMaisVisitados()
+    {
+        $pesquisa = new Pesquisa();
+        $where = "where ". DS_TITULO_URL_AMIGAVEL." LIKE '%DetalharProduto%' and ".NU_VISUALIZACAO." >= 15";
+        $pesquisa->Pesquisar(PaginaEntidade::TABELA, $where);
+        return $pesquisa->getResult();
+    }
+
+    /**
      * @param $noProduto
      * @return mixed
      */

@@ -135,6 +135,23 @@ class  ProdutoService extends AbstractService
     }
 
     /**
+     * @param $dias
+     * @return array
+     */
+    public function PesquisaProdutosNovos($dias)
+    {
+        return $this->ObjetoModel->PesquisaProdutosNovos($dias);
+    }
+
+    /**
+     * @return array
+     */
+    public function PesquisaProdutosMaisVisitados()
+    {
+        return $this->ObjetoModel->PesquisaProdutosMaisVisitados();
+    }
+
+    /**
      * @param $coProduto
      * @return array
      */

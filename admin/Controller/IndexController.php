@@ -21,15 +21,17 @@ class IndexController extends AbstractController
         $produtosDestaque = $produtoDestaqueService->PesquisaTodos();
 
         $produtosSemEstoque = $produtoService->PesquisaProdutosSemEstoque();
+        $produtosNovos = $produtoService->PesquisaProdutosNovos(30); // Dias passados para compara
+        $produtosMaisVisitados = $produtoService->PesquisaProdutosMaisVisitados();
 
         $dados['ProdutosCadastrados'] = count($produtos);
         $dados['FabricantesCadastrados'] = count($fabricantes);
         $dados['CategoriasCadastrados'] = count($categorias);
         $dados['ProdutosDestaque'] = count($produtosDestaque);
-        $dados['MaisVisitados'] = 0;
+        $dados['MaisVisitados'] = count($produtosMaisVisitados);
         $dados['MaisVendidos'] = 0;
         $dados['ProdutosSemEstoque'] = count($produtosSemEstoque);
-        $dados['NovosProdutos'] = 0;
+        $dados['NovosProdutos'] = count($produtosNovos);
         $dados['MaisProdurados'] = 0;
 
         return $dados;
