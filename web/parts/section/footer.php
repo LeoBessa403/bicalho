@@ -30,8 +30,10 @@ $produtosMaisProcurados =  $produtoService->pesquisaProdutos(3);
         <div class="container">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 no-padding">
                 <form role="form">
-                    <input placeholder="Receba nossas promoções, digite aqui seu e-mail e aproveite!">
-                    <button class="le-button">Cadastrar</button>
+                    <input id="email-lead2" placeholder="Receba nossas promoções, digite aqui seu e-mail e aproveite!">
+                    <button class="le-button" id="cadastra-email">Cadastrar</button>
+                    <p class="mensagem-erro2 alert-danger">Email Inválido!</p>
+                    <p class="mensagem-success2 alert-success">Cadastrado com Sucesso!</p>
                 </form>
             </div>
         </div><!-- /.container -->

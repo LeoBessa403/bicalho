@@ -538,6 +538,36 @@
                 }
             });
         });
+
+        // Envia o Email de Lead
+        $('#cadastra-email').click(function () {
+            $(this).hide();
+            var email = $("#email-lead2").val();
+            $.get(validaEmail, {valida: 'valemail', email: email}, function (retorno) {
+                if (retorno == 2) {
+                    $('#cadastra-email').show();
+                    $(".sub-form-row .mensagem-erro2").fadeIn('fast');
+                    $(".sub-form-row .mensagem-success2").fadeOut('fast');
+                    setTimeout(function () {
+                        $(".sub-form-row .mensagem-erro2").fadeToggle('slow');
+                    }, 4000);
+                } else {
+                    $.get(urlValida, {valida: 'cadastro_lead', email: email}, function (retorno) {
+                        if (retorno) {
+                            $("#cadastra-email").show().attr('id','-');
+                            $(".sub-form-row .mensagem-success2").fadeIn('fast');
+                            $(".sub-form-row .mensagem-erro2").fadeOut('fast');
+                            setTimeout(function () {
+                                $(".sub-form-row .mensagem-success2").fadeToggle('slow');
+                            }, 4000);
+                        } else {
+                            Funcoes.Alerta("Erro ao Salvar o Email");
+                        }
+                    });
+                }
+            });
+            return false;
+        });
     });
 
     /*===================================================================================*/

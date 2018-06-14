@@ -5594,6 +5594,17 @@ select.top-drop-menu {
     display: none;
 }
 
+.mensagem-success2, .mensagem-erro2{
+    margin-bottom: 0px;
+    width: 95%;
+    padding: 5px 3px !important;
+    display: none;
+    border-radius: 3%;
+    -moz-border-radius: 3%;
+    -webkit-border-radius: 3%;
+    font-weight: 600;
+}
+
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 500px) {
 
