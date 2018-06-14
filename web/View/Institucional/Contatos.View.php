@@ -76,7 +76,7 @@
                         </a>
                     </div>
                     <div class="phone" style="margin-top: 10px;">
-                        <a class="link-phone" title="Nos chame no WhatSapp"
+                        <a class="link-phone" title="Nos chame no WhatSapp"  style="color: green !important;"
                            href="<?php Valida::geraLinkWhatSapp(Mensagens::ZAP04) ?>"
                            target="_blank">
                             <i class="fa fa-whatsapp"></i> (61) 99370-4240
