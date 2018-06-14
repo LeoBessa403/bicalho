@@ -11,7 +11,7 @@ class Institucional extends AbstractController
              $email = new Email();
 
              // Índice = Nome, e Valor = Email.
-             $emails = array($_POST['nome'] => USER_EMAIL);
+             $emails = array(DESC => USER_EMAIL);
              $Mensagem = "<p>".$_POST['mensagem']."</p>";
 
              $email->setEmailDestinatario($emails)
