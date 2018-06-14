@@ -554,7 +554,8 @@
                 } else {
                     $.get(urlValida, {valida: 'cadastro_lead', email: email}, function (retorno) {
                         if (retorno) {
-                            $("#cadastra-email").show().attr('id','-');
+                            $("#cadastra-email").attr('id','-');
+                            $("#cadastra-email").show();
                             $(".sub-form-row .mensagem-success2").fadeIn('fast');
                             $(".sub-form-row .mensagem-erro2").fadeOut('fast');
                             setTimeout(function () {
