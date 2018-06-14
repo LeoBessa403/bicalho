@@ -79,7 +79,7 @@ function servidor_inicial()
     //////////////////////////////////////////////
 
     define('HOST_EMAIL', 'mail.bicalho.com');
-    define('PORTA_EMAIL', 465);
+    define('PORTA_EMAIL', 25);
     define('USER_EMAIL', 'contato@bicalhorefrigeracao.com');
     define('PASS_EMAIL', 'bicalho10*');
 
