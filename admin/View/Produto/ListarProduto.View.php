@@ -115,7 +115,7 @@
 
                             $url = HOME . SITE . '/Produtos/DetalharProduto/' .
                                 $res->getNoProdutoUrlAmigavel();
-                            $acao .= ' <a target="_blank" class="fb-xfbml-parse-ignore btn btn-default tooltips" 
+                            $acao .= ' <a target="_blank" class="btn btn-default tooltips" title="Compartilhar no Facebook"
                                    href="https://www.facebook.com/sharer/sharer.php?u=' .
                                 urlencode($url) . '&amp;src=sdkpreparse"><i class="fa fa-facebook"></i></a>';
 
