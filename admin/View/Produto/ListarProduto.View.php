@@ -31,6 +31,15 @@
                         Produtos
                     </div>
                     <div class="panel-body">
+                        <div id="fb-root"></div>
+                        <script>(function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.0';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
                         <?php
                         Modal::load();
                         Modal::Foto();
@@ -46,6 +55,8 @@
                         $grid->criaGrid();
                         /** @var ProdutoEntidade $res */
                         foreach ($result as $res):
+
+
                             $acao = '<a href="' . PASTAADMIN . 'Produto/CadastroProduto/' .
                                 Valida::GeraParametro(CO_PRODUTO . "/" . $res->getCoProduto()) . '" class="btn btn-primary tooltips" 
                                     data-original-title="Editar Registro" data-placement="top">
@@ -63,7 +74,7 @@
                                 // Botão de destaque
                                 $coDetalheProduto = $res->getUltimoCoProdutoDetalhe()->getCoProdutoDetalhe();
 
-                                if(!count($res->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())){
+                                if (!count($res->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
                                     $acao .= ' <a data-toggle="modal" role="button" class="btn btn-green tooltips acao" 
                                             id="' . $coDetalheProduto . '" data-msg-restricao="MSG03"
                                            href="#AtivarDestaque" data-original-title="Ativar Destaque" data-placement="top"
@@ -71,7 +82,7 @@
                                         Valida::GeraParametro(CO_PRODUTO_DETALHE . "/" . $coDetalheProduto) . '">
                                             <i class="fa fa-star"></i>
                                         </a>';
-                                }else{
+                                } else {
                                     $acao .= ' <a data-toggle="modal" role="button" class="btn btn-warning tooltips acao" 
                                             id="' . $coDetalheProduto . '" data-msg-restricao="MSG03"
                                            href="#DesativarDestaque" data-original-title="Desativar Destaque" data-placement="top"
@@ -103,6 +114,15 @@
                                 Valida::ValNome($res->getNoProduto()),
                                 90, 90, "circle-img"
                             );
+                            $url = HOME . SITE . '/Produtos/DetalharProduto/' .
+                                $res->getNoProdutoUrlAmigavel();
+                            $acao .= ' <div class="fb-share-button"
+                                 data-href="' . $url . '"
+                                 data-layout="button_count" data-size="small" data-mobile-iframe="true">
+                                <a target="_blank"
+                                   href="https://www.facebook.com/sharer/sharer.php?u=' .
+                                urlencode($url) . '&amp;src=sdkpreparse"><i class="fa fa-facebook-square"></i></a>
+                            </div>';
 
                             $foto = '<a data-toggle="modal" class="fotos" 
                                 id="' . $res->getCoProduto() . '" 
@@ -118,7 +138,7 @@
                             $grid->setColunas('<b>' . Valida::FormataMoeda(
                                     $res->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
                                 ) . '</b>');
-                            $grid->setColunas($acao, 4);
+                            $grid->setColunas($acao, 5);
                             $grid->criaLinha($res->getCoProduto(),
                                 ($res->getStStatus() == StatusUsuarioEnum::INATIVO) ? true : false);
                         endforeach;
