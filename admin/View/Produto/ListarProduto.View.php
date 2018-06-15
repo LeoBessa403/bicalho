@@ -31,7 +31,6 @@
                         Produtos
                     </div>
                     <div class="panel-body">
-                        <div id="fb-root"></div>
                         <script>(function (d, s, id) {
                                 var js, fjs = d.getElementsByTagName(s)[0];
                                 if (d.getElementById(id)) return;
@@ -55,7 +54,6 @@
                         $grid->criaGrid();
                         /** @var ProdutoEntidade $res */
                         foreach ($result as $res):
-
 
                             $acao = '<a href="' . PASTAADMIN . 'Produto/CadastroProduto/' .
                                 Valida::GeraParametro(CO_PRODUTO . "/" . $res->getCoProduto()) . '" class="btn btn-primary tooltips" 
@@ -114,15 +112,12 @@
                                 Valida::ValNome($res->getNoProduto()),
                                 90, 90, "circle-img"
                             );
+
                             $url = HOME . SITE . '/Produtos/DetalharProduto/' .
                                 $res->getNoProdutoUrlAmigavel();
-                            $acao .= ' <div class="fb-share-button"
-                                 data-href="' . $url . '"
-                                 data-layout="button_count" data-size="small" data-mobile-iframe="true">
-                                <a target="_blank"
+                            $acao .= ' <a target="_blank" class="fb-xfbml-parse-ignore btn btn-default tooltips" 
                                    href="https://www.facebook.com/sharer/sharer.php?u=' .
-                                urlencode($url) . '&amp;src=sdkpreparse"><i class="fa fa-facebook-square"></i></a>
-                            </div>';
+                                urlencode($url) . '&amp;src=sdkpreparse"><i class="fa fa-facebook"></i></a>';
 
                             $foto = '<a data-toggle="modal" class="fotos" 
                                 id="' . $res->getCoProduto() . '" 
