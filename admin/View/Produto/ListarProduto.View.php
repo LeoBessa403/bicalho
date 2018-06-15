@@ -133,7 +133,7 @@
                             $grid->setColunas('<b>' . Valida::FormataMoeda(
                                     $res->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
                                 ) . '</b>');
-                            $grid->setColunas($acao, 5);
+                            $grid->setColunas($acao, 4.2);
                             $grid->criaLinha($res->getCoProduto(),
                                 ($res->getStStatus() == StatusUsuarioEnum::INATIVO) ? true : false);
                         endforeach;
