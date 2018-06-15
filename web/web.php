@@ -38,6 +38,7 @@ $visitaService->gestaoVisita();
         <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/owl.carousel.css">
         <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/owl.transitions.css">
         <link rel="stylesheet" href="<?php echo PASTASITE; ?>css/animate.min.css">
+        <link rel="stylesheet" href="<?= PASTAADMIN; ?>plugins/select2/select2.css">
 
         <!-- Fonts -->
         <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
@@ -132,6 +133,7 @@ $visitaService->gestaoVisita();
     <script src="<?php echo PASTASITE; ?>js/wow.min.js"></script>
     <script src="<?php echo PASTASITE; ?>js/buttons.js"></script>
     <script src="<?php echo PASTASITE; ?>js/scripts.js"></script>
+    <script src="<?= PASTAADMIN; ?>plugins/select2/select2.min.js"></script>
     <?= '<script type="text/javascript">
                         function constantes(){    
                                 var dados = {
@@ -146,7 +148,10 @@ $visitaService->gestaoVisita();
     <?php carregaJs($url); ?>
     <script>
         jQuery(document).ready(function () {
-            Funcoes.init();
+            //function to initiate Select2
+            $(".search-select").select2({
+                allowClear: false
+            });
         });
     </script>
     </body>

@@ -11,20 +11,23 @@ $fabricantes = $fabricanteService->PesquisaTodos();
         <div class="category-filter">
             <h2>Fabricantes</h2>
             <hr>
-            <ul>
+            <?php
+            $form = "<select multiple='multiple' id='" . CO_FABRICANTE . "' name='" .
+                CO_FABRICANTE . "[]'  placeholder='Selecionar Fabricantes' class='form-control search-select'>";
+            /** @var FabricanteEntidade $fabricante */
+            foreach ($fabricantes as $fabricante) {
+                if (count($fabricante->getCoProduto())) {
+                    $form .= '<option value="' . $fabricante->getCoFabricante() . '" >' .
+                        $fabricante->getNoFabricante() . ' (' . count($fabricante->getCoProduto()) . ')</option>';
+                }
+                ?>
                 <?php
-                /** @var FabricanteEntidade $fabricante */
-                foreach ($fabricantes as $fabricante) {
-                    ?>
-                    <li>
-                        <input class="le-checkbox" type="checkbox"/>
-                        <label><?= $fabricante->getNoFabricante(); ?></label>
-                        <span class="pull-right">(<?= count($fabricante->getCoProduto()); ?>)</span>
-                    </li>
-                <?php } ?>
-            </ul>
+            }
+            $form .= "</select>";
+            echo $form;
+            ?>
         </div><!-- /.category-filter -->
-
+        <div class="clear"></div>
         <div class="price-filter">
             <h2>Preço</h2>
             <hr>
@@ -40,4 +43,6 @@ $fabricantes = $fabricanteService->PesquisaTodos();
         </div><!-- /.price-filter -->
     </div><!-- /.body -->
 </div><!-- /.widget -->
+<!--<link rel="stylesheet" href="--><? //= HOME; ?><!--admin/plugins/select2/select2.css">-->
+<!--<script src="--><? //= HOME; ?><!--admin/plugins/select2/select2.min.js"></script>-->
 <!-- ========================================= PRODUCT FILTER : END ========================================= -->
