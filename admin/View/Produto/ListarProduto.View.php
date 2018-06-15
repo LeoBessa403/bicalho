@@ -102,7 +102,7 @@
 
                             $acao .= ' <a href="' . PASTAADMIN . 'Produto/HistoricoProduto/' .
                                 Valida::GeraParametro(CO_PRODUTO . "/" . $res->getCoProduto()) . '" 
-                                class="btn btn-blue tooltips" 
+                                class="btn btn-med-grey tooltips" 
                                     data-original-title="Historico do Produto" data-placement="top">
                                      <i class="clip-folder-open"></i>
                                  </a>';
@@ -115,7 +115,7 @@
 
                             $url = HOME . SITE . '/Produtos/DetalharProduto/' .
                                 $res->getNoProdutoUrlAmigavel();
-                            $acao .= ' <a target="_blank" class="btn btn-default tooltips" title="Compartilhar no Facebook"
+                            $acao .= ' <a target="_blank" class="btn btn-blue tooltips" title="Compartilhar no Facebook"
                                    href="https://www.facebook.com/sharer/sharer.php?u=' .
                                 urlencode($url) . '&amp;src=sdkpreparse"><i class="fa fa-facebook"></i></a>';
 
