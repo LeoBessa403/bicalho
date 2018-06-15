@@ -80,6 +80,14 @@ class  ProdutoService extends AbstractService
                 $coProduto = $result[CO_PRODUTO];
                 if ($files[DS_CAMINHO]["tmp_name"]) {
                     $produto[CO_IMAGEM] = $result[CO_IMAGEM];
+                    /** @var ProdutoEntidade $produtoEdicao */
+                    $produtoEdicao = $this->PesquisaUmRegistro($coProduto);
+                    $fotoApaga = $produtoEdicao->getCoImagem()->getDsCaminho();
+                    if($fotoApaga){
+                        if(file_exists(PASTA_RAIZ. 'uploads/ProdutosCapa/'.$fotoApaga)){
+                            unlink(PASTA_RAIZ. 'uploads/ProdutosCapa/'.$fotoApaga);
+                        }
+                    }
                     $imagemService->Salva($imagem, $result[CO_IMAGEM]);
                 }
                 $this->Salva($produto, $coProduto);
