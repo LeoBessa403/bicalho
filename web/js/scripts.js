@@ -569,6 +569,15 @@
             });
             return false;
         });
+
+        $('.tooltip-inner').change(function () {
+           alert($('.tooltip-inner').text()) ;
+        });
+
+        $(".pesquisa").click(function () {
+            var valorPesquisa = $('.tooltip-inner').text();
+            $('#preco').val(valorPesquisa);
+        });
     });
 
     /*===================================================================================*/

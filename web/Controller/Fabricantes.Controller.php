@@ -28,8 +28,20 @@ class Fabricantes extends AbstractController
                 Redireciona('web/Fabricantes/FabricanteNaoEncontrado/');
             }
         }else{
-            /** @var FabricanteEntidade $fabricantes */
-            $fabricantes = $fabricanteService->PesquisaTodos();
+            if (!empty($_POST)){
+                $preco =  explode(' : ', $_POST['preco']);
+                $Condicoes = array(
+                    "in#fab." . CO_FABRICANTE => (!empty($_POST[CO_FABRICANTE]))
+                    ? implode(", ", $_POST[CO_FABRICANTE]) : null,
+                    ">=#proddet." . NU_PRECO_VENDA => $preco[0],
+                    "<=#proddet." . NU_PRECO_VENDA => $preco[1],
+                );
+                /** @var FabricanteEntidade $fabricantes */
+                $fabricantes = $fabricanteService->PesquisaAvancada($Condicoes);
+            }else{
+                /** @var FabricanteEntidade $fabricantes */
+                $fabricantes = $fabricanteService->PesquisaTodos();
+            }
         }
         /** @var CategoriaEntidade $this->categoria */
         $this->listaFabricantes = $fabricantes;

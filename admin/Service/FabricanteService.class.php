@@ -108,4 +108,13 @@ class  FabricanteService extends AbstractService
     {
         return $this->ObjetoModel->getSeoFabricantes($noFabricante);
     }
+
+    /**
+     * @param $Condicoes
+     * @return mixed
+     */
+    public function PesquisaAvancada($Condicoes)
+    {
+        return $this->ObjetoModel->PesquisaAvancada($Condicoes);
+    }
 }

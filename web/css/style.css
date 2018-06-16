@@ -5028,6 +5028,10 @@ header .top-cart-row .top-cart-holder .total-price-basket {
 
 .sidebar .price-range-holder .filter-button {
     float: right;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius:5px;
 }
 
 .sidebar .simple-banner {
