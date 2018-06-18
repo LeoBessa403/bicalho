@@ -133,6 +133,15 @@ class  ProdutoService extends AbstractService
     }
 
     /**
+     * @param $Condicoes
+     * @return mixed
+     */
+    public function PesquisaAvancadaForm($Condicoes)
+    {
+        return $this->ObjetoModel->PesquisaAvancadaForm($Condicoes);
+    }
+
+    /**
      * @return array
      */
     public function PesquisaProdutosSemEstoque()

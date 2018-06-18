@@ -8,7 +8,7 @@ $fabricantes = $fabricanteService->PesquisaTodos();
 <div class="widget">
     <h1>Pesquisa Produto</h1>
     <div class="body bordered">
-        <form action="<?= PASTASITE; ?>Fabricantes/ListarFabricantes" method="post">
+        <form action="<?= PASTASITE; ?>Produtos/PesquisaProdutos" method="post">
             <div class="category-filter">
                 <h2>Fabricantes</h2>
                 <hr>

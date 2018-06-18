@@ -159,4 +159,29 @@ class  ProdutoModel extends AbstractModel
         $pesquisa->Pesquisar(ProdutoEntidade::TABELA, $where, null, $campos);
         return $pesquisa->getResult();
     }
+
+    /**
+     * @param $Condicoes
+     * @return array
+     */
+    public function PesquisaAvancadaForm($Condicoes)
+    {
+        $tabela = "tb_produto prod
+                    INNER JOIN tb_produto_detalhe proddet
+                        on prod.co_produto = proddet.co_produto
+                    AND proddet.co_produto_detalhe = (SELECT max(co_produto_detalhe) FROM tb_produto pro
+                        INNER JOIN tb_produto_detalhe prodd
+                          on pro.co_produto = prodd.co_produto  WHERE pro.co_produto = prod.co_produto
+                           GROUP BY prodd.co_produto)";
+        $pesquisa = new Pesquisa();
+        $where = $pesquisa->getClausula($Condicoes);
+        $pesquisa->Pesquisar($tabela, $where);
+        $produtos = [];
+        /** @var ProdutoEntidade $produto */
+        foreach ($pesquisa->getResult() as $produto) {
+            $prod[0] = $produto;
+            $produtos[] = $this->getUmObjeto(ProdutoEntidade::ENTIDADE, $prod);
+        }
+        return $produtos;
+    }
 }

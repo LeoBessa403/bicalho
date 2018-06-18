@@ -3,6 +3,7 @@
 class Produtos extends AbstractController
 {
     public $produtoPrincipal;
+    public $produtos;
     public $segmentos;
     public $favoritos;
     public $comparados;
@@ -82,6 +83,28 @@ class Produtos extends AbstractController
         $produtoService = $this->getService(PRODUTO_SERVICE);
         $noProduto = UrlAmigavel::PegaParametroUrlAmigavel();
         return $produtoService->getSeoProdutos($noProduto);
+    }
+
+    public function PesquisaProdutos()
+    {
+        /** @var ProdutoService $produtoService */
+        $produtoService = $this->getService(PRODUTO_SERVICE);
+        if (!empty($_POST)){
+            $preco =  explode(' : ', $_POST['preco']);
+            $Condicoes = array(
+                "in#prod." . CO_FABRICANTE => (!empty($_POST[CO_FABRICANTE]))
+                    ? implode(", ", $_POST[CO_FABRICANTE]) : null,
+                ">=#proddet." . NU_PRECO_VENDA => $preco[0],
+                "<=#proddet." . NU_PRECO_VENDA => $preco[1],
+            );
+            /** @var ProdutoEntidade $produtos */
+            $produtos = $produtoService->PesquisaAvancadaForm($Condicoes);
+        }else{
+            /** @var ProdutoEntidade $produtos */
+            $produtos = $produtoService->PesquisaTodos();
+        }
+        $this->produtos = $produtos;
+        $this->favoritos = $this->getProdutosFavoritos();
     }
 
 }

@@ -59,11 +59,11 @@
             </div>
             <div class="wish-compare">
                 <a  class="btn-add-to-wishlist <?=
-                (in_array($produtoRec->getCoProduto(), $favoritos))
+                (in_array($produto->getCoProduto(), $favoritos))
                     ? 'remove-favo' : 'add-favo';
                 ;?>" href="#" title="Adicionar aos favoritos"
-                   data-co-produto="<?= $produtoRec->getCoProduto(); ?>"> <?=
-                    (in_array($produtoRec->getCoProduto(), $favoritos))
+                   data-co-produto="<?= $produto->getCoProduto(); ?>"> <?=
+                    (in_array($produto->getCoProduto(), $favoritos))
                         ? 'Remove dos Favoritos' : 'Add aos Favoritos';
                     ;?></a>
                 <a class="btn-add-to-compare" href="#">compare</a>
