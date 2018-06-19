@@ -1,5 +1,5 @@
 <!-- ============================================================= TOP NAVIGATION ============================================================= -->
-<nav class="top-bar animate-dropdown">
+<div class="top-bar animate-dropdown">
     <div class="container">
         <div class="col-xs-12 col-sm-6 no-margin">
             <ul>
@@ -19,5 +19,5 @@
             </ul>
         </div><!-- /.col -->
     </div><!-- /.container -->
-</nav><!-- /.top-bar -->
+</div><!-- /.top-bar -->
 <!-- ============================================================= TOP NAVIGATION : END ============================================================= -->

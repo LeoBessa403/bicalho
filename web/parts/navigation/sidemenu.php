@@ -1,7 +1,7 @@
 <!-- ================================== TOP NAVIGATION ================================== -->
 <div class="side-menu animate-dropdown">
     <div class="head"><i class="fa fa-list"></i>Todas Categorias</div>
-    <nav class="yamm megamenu-horizontal" role="navigation">
+    <div class="yamm megamenu-horizontal" role="navigation">
         <ul class="nav">
             <li class="dropdown menu-item">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Páginas</a>
@@ -110,6 +110,6 @@
                 </ul>
             </li><!-- /.menu-item -->
         </ul><!-- /.nav -->
-    </nav><!-- /.megamenu-horizontal -->
+    </div><!-- /.megamenu-horizontal -->
 </div><!-- /.side-menu -->
 <!-- ================================== TOP NAVIGATION : END ================================== -->

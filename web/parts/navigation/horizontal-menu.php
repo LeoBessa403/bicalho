@@ -7,7 +7,7 @@ $segmentos = $segmentoService->PesquisaTodos();
 
 ?>
 <!-- ========================================= NAVIGATION ========================================= -->
-<nav id="top-megamenu-nav" class="megamenu-vertical animate-dropdown">
+<div id="top-megamenu-nav" class="megamenu-vertical animate-dropdown">
     <div class="container">
         <div class="yamm navbar">
             <div class="navbar-header">
@@ -47,5 +47,5 @@ $segmentos = $segmentoService->PesquisaTodos();
             </div><!-- /.navbar-collapse -->
         </div><!-- /.navbar -->
     </div><!-- /.container -->
-</nav><!-- /.megamenu-vertical -->
+</div><!-- /.megamenu-vertical -->
 <!-- ========================================= NAVIGATION : END ========================================= -->
