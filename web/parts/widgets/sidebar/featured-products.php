@@ -14,6 +14,8 @@ $maisVendidos =  $produtoService->pesquisaProdutos(8);
             ?>
             <li class="sidebar-product-list-item">
                 <article class="row">
+                    <h1 style="display: none;"><?= $produto->getNoProduto() . ' - ' .
+                        $produto->getCoFabricante()->getNoFabricante() . ' | ' . DESC; ?></h1>
                     <div class="col-xs-4 col-sm-4 no-margin">
                         <a class="thumb-holder" href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
                         $produto->getNoProdutoUrlAmigavel(); ?>">

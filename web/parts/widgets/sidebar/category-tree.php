@@ -1,6 +1,6 @@
 <!-- ========================================= CATEGORY TREE ========================================= -->
-<div class="widget accordion-widget category-accordions">
-    <h1 class="border">Categorias</h1>
+<aside class="widget accordion-widget category-accordions">
+    <h3 class="border">Categorias</h3>
     <div id="accordion" class="accordion">
         <?php
         /** @var SegmentoEntidade $segmento */
@@ -32,6 +32,6 @@
             <?php }
         } ?>
     </div><!-- /.accordion -->
-</div><!-- /.category-accordions -->
+</aside><!-- /.category-accordions -->
 <!-- ========================================= CATEGORY TREE : END ========================================= -->
 

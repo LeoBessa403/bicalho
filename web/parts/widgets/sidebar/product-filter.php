@@ -5,12 +5,12 @@ $fabricanteService = $fabricanteControlle->getService(FABRICANTE_SERVICE);
 $fabricantes = $fabricanteService->PesquisaTodos();
 ?>
 <!-- ========================================= PRODUCT FILTER ========================================= -->
-<div class="widget">
-    <h1>Pesquisa Produto</h1>
+<aside class="widget">
+    <h3 style="font-weight: bolder; margin-top: 20px;">Pesquisa Produto</h3>
     <div class="body bordered">
         <form action="<?= PASTASITE; ?>Produtos/PesquisaProdutos" method="post">
             <div class="category-filter">
-                <h2>Fabricantes</h2>
+                <h4>Fabricantes</h4>
                 <hr>
                 <?php
                 $form = "<select multiple='multiple' id='" . CO_FABRICANTE . "' name='" .
@@ -30,7 +30,7 @@ $fabricantes = $fabricanteService->PesquisaTodos();
             </div><!-- /.category-filter -->
             <div class="clear"></div>
             <div class="price-filter">
-                <h2>Preço</h2>
+                <h4>Preço</h4>
                 <hr>
                 <div class="price-range-holder">
                     <input type="text" class="price-slider" name="preco" id="preco" value="50 : 7000"/>
@@ -44,7 +44,7 @@ $fabricantes = $fabricanteService->PesquisaTodos();
             </div><!-- /.price-filter -->
         </form>
     </div><!-- /.body -->
-</div><!-- /.widget -->
+</aside><!-- /.widget -->
 <!--<link rel="stylesheet" href="--><? //= HOME; ?><!--admin/plugins/select2/select2.css">-->
 <!--<script src="--><? //= HOME; ?><!--admin/plugins/select2/select2.min.js"></script>-->
 <!-- ========================================= PRODUCT FILTER : END ========================================= -->
