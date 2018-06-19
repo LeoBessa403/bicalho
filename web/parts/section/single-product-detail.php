@@ -8,7 +8,7 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
     <meta itemprop="sku" content="<?= $produtoPrincipal->getCoProduto(); ?>">
     <meta itemprop="image" content=""<?= HOME . 'uploads/ProdutosCapa/' . $produtoPrincipal->getCoImagem()->getDsCaminho(); ?>"/>
     <meta itemprop="name" content="<?= $produtoPrincipal->getNoProduto(); ?>">
-    <meta itemprop="description" content="<?= $produtoPrincipal->getDsDescricao(); ?>">
+    <meta itemprop="description" content="<?= Valida::Resumi($produtoPrincipal->getDsDescricao(), 150); ?>">
     <meta itemprop="brand" content="<?= $produtoPrincipal->getCoFabricante()->getNoFabricante(); ?>">
 
     <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
