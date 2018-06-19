@@ -56,6 +56,7 @@ $visitaService->gestaoVisita();
         <![endif]-->
     </head>
     <body>
+    <h1 style="display: none;"><?= $seo->getTitulo(); ?></h1>
     <!-- GOOGLE ANALITCS -->
     <?php if (ID_ANALITCS): ?>
         <!-- Global site tag (gtag.js) - Google Analytics -->
