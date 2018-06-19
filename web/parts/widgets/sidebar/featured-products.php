@@ -5,7 +5,7 @@ $produtoService = $produtoController->getService(PRODUTO_SERVICE);
 $maisVendidos =  $produtoService->pesquisaProdutos(8);
 ?>
 <!-- ========================================= FEATURED PRODUCTS ========================================= -->
-<div class="widget">
+<aside class="widget">
     <h1 class="border">Mais vendidos</h1>
     <ul class="product-list">
         <?php
@@ -13,7 +13,7 @@ $maisVendidos =  $produtoService->pesquisaProdutos(8);
         foreach ($maisVendidos as $produto) {
             ?>
             <li class="sidebar-product-list-item">
-                <div class="row">
+                <article class="row">
                     <div class="col-xs-4 col-sm-4 no-margin">
                         <a class="thumb-holder" href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
                         $produto->getNoProdutoUrlAmigavel(); ?>">
@@ -46,9 +46,9 @@ $maisVendidos =  $produtoService->pesquisaProdutos(8);
                                 ?></div>
                         </div>
                     </div>
-                </div>
+                </article>
             </li><!-- /.sidebar-product-list-item -->
         <?php } ?>
     </ul><!-- /.product-list -->
-</div><!-- /.widget -->
+</aside><!-- /.widget -->
 <!-- ========================================= FEATURED PRODUCTS : END ========================================= -->

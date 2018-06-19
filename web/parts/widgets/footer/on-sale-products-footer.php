@@ -8,7 +8,7 @@
             foreach ($produtosMaisVendidos as $produto) {
             ?>
             <li>
-                <div class="row">
+                <article class="row">
                     <div class="col-xs-12 col-sm-9 no-margin">
                         <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
                         $produto->getNoProdutoUrlAmigavel(); ?>"><?=
@@ -41,7 +41,7 @@
                             ?>
                         </a>
                     </div>
-                </div>
+                </article>
             </li>
             <?php } ?>
         </ul>

@@ -5712,6 +5712,12 @@ select.form-control option {
     background-color: #FFFFFF !important;
 }
 
+.title2{
+    background: none !important;
+    padding: 5px;
+    border: none;
+}
+
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 500px) {

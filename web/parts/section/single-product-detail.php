@@ -33,7 +33,7 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
                 FuncoesSistema::ProdutoEstoqueLabel($produtoPrincipal->getNuEstoque());
                 ?></span></div>
 
-        <header class="title"><a href="#"><?= $produtoPrincipal->getNoProduto(); ?></a></header>
+        <header class="title title2"><a href="#"><?= $produtoPrincipal->getNoProduto(); ?></a></header>
         <div class="brand">
             <a href="<?php echo PASTASITE; ?>Fabricantes/ListarFabricantes/<?=
             $produtoPrincipal->getCoFabricante()->getNoFabriCanteUrlAmigavel(); ?>"><?=

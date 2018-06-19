@@ -4,7 +4,7 @@ $produtoOfertaController = new Produto();
 $produtoOfertaService = $produtoOfertaController->getService(PRODUTO_SERVICE);
 $ofertas = $produtoOfertaService->pesquisaProdutos(6);
 ?>
-<div class="widget">
+<aside class="widget">
     <h1 class="border">ofertas especiais</h1>
     <ul class="product-list">
         <?php
@@ -12,7 +12,7 @@ $ofertas = $produtoOfertaService->pesquisaProdutos(6);
         foreach ($ofertas as $produtoOferta) {
             ?>
             <li>
-                <div class="row">
+                <article class="row">
                     <div class="col-xs-4 col-sm-4 no-margin">
                         <a class="thumb-holder" href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
                         $produtoOferta->getNoProdutoUrlAmigavel(); ?>">
@@ -45,8 +45,8 @@ $ofertas = $produtoOfertaService->pesquisaProdutos(6);
                                 ?></div>
                         </div>
                     </div>
-                </div>
+                </article>
             </li>
         <?php } ?>
     </ul>
-</div><!-- /.widget -->
+</aside><!-- /.widget -->
