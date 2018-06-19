@@ -1,5 +1,5 @@
 <!-- ============================================================= CONTACT INFO ============================================================= -->
-<section class="contact-info">
+<section class="contact-info" itemscope itemprop="https://schema.org/Organization">
     <div class="footer-logo">
         <a itemprop="sameAs" href="<?php echo HOME; ?>">
             <img itemprop="image" alt="logo" src="<?php echo PASTASITE; ?>images/logo.png" width="233" height="54"/>
