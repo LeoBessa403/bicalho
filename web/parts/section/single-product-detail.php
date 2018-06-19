@@ -3,6 +3,21 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
     '/' . UrlAmigavel::$action . '/' . UrlAmigavel::PegaParametroUrlAmigavel();
 ?>
 <div class="no-margin col-xs-12 col-sm-7 body-holder">
+    <!--  Servindo os Micro Formatos dos produtos  -->
+    <span itemscope itemtype="http://schema.org/Product">
+    <meta itemprop="sku" content="<?= $produtoPrincipal->getCoProduto(); ?>">
+    <meta itemprop="image" content=""<?= HOME . 'uploads/ProdutosCapa/' . $produtoPrincipal->getCoImagem()->getDsCaminho(); ?>"/>
+    <meta itemprop="name" content="<?= $produtoPrincipal->getNoProduto(); ?>">
+    <meta itemprop="description" content="<?= $produtoPrincipal->getDsDescricao(); ?>">
+    <meta itemprop="brand" content="<?= $produtoPrincipal->getCoFabricante()->getNoFabricante(); ?>">
+
+    <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+        <meta itemprop="priceCurrency" content="BRL"/>
+        <meta itemprop="price" content="<?= $produtoPrincipal->getUltimoCoProdutoDetalhe()->getNuPrecoVenda(); ?>">
+        <link itemprop="itemCondition" href="http://schema.org/UsedCondition"/>
+        <link itemprop="availability" href="http://schema.org/InStock"/>
+    </span>
+</span>
     <div class="body">
         <div class="star-holder inline">
             <div class="star" data-score="<?= rand(3, 5); ?>"></div>
@@ -47,22 +62,18 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
                 <i class="fa fa-whatsapp"></i> WhatSapp</a>
         </div>
         <div class="buttons-holder">
-            <a  class="btn-add-to-wishlist <?=
+            <a class="btn-add-to-wishlist <?=
             (in_array($produtoPrincipal->getCoProduto(), $favoritos))
-            ? 'remove-favo' : 'add-favo';
-            ;?>" href="#" title="Adicionar aos favoritos"
+                ? 'remove-favo' : 'add-favo';; ?>" href="#" title="Adicionar aos favoritos"
                data-co-produto="<?= $produtoPrincipal->getCoProduto(); ?>"> <?=
                 (in_array($produtoPrincipal->getCoProduto(), $favoritos))
-                    ? 'Remove dos Favoritos' : 'Add aos Favoritos';
-                ;?></a>
+                    ? 'Remove dos Favoritos' : 'Add aos Favoritos';; ?></a>
             <a class="btn-add-to-compare <?=
             (in_array($produtoPrincipal->getCoProduto(), $comparados))
-                ? 'remove-compare' : 'add-compare';
-            ;?>" href="#" title="Remove dos comparados"
+                ? 'remove-compare' : 'add-compare';; ?>" href="#" title="Remove dos comparados"
                data-co-produto="<?= $produtoPrincipal->getCoProduto(); ?>"> <?=
                 (in_array($produtoPrincipal->getCoProduto(), $comparados))
-                    ? 'Remove dos Comparados' : 'Add aos Comparados';
-                ;?></a>
+                    ? 'Remove dos Comparados' : 'Add aos Comparados';; ?></a>
         </div>
 
         <div class="excerpt">
