@@ -14,7 +14,7 @@
                     <meta itemprop="longitude" content="-48.065047">
                 </span>
     </p>
-    <p><?php echo DESC_SITE; ?></p>
+    <p itemprop="description"><?php echo DESC_SITE; ?></p>
     <p class="regular-bold"> Entre em contato conosco através de nossos telefones <span itemprop="telephone">(61) 99370-4240</span> / (61) 3046-1009 ou em um de nossos endereços e
         agende uma visita. Seremos gratos em atendê-los..</p>
 
