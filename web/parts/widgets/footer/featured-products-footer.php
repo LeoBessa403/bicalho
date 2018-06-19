@@ -9,6 +9,8 @@
                 ?>
                 <li>
                     <article class="row">
+                        <h1 style="display: none;"><?= $produto->getNoProduto() . ' - ' .
+                            $produto->getCoFabricante()->getNoFabricante() . ' | ' . DESC; ?></h1>
                         <div class="col-xs-12 col-sm-9 no-margin">
                             <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
                             $produto->getNoProdutoUrlAmigavel(); ?>"><?=
