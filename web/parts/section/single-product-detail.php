@@ -19,7 +19,7 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
             <?php
                 $estoque = 'InStock';
                 if($produtoPrincipal->getNuEstoque() == 0){
-                    $estoque = 'OnStock';
+                    $estoque = 'OutOfStock';
                 }
             ?>
             <link itemprop="availability" href="http://schema.org/<?= $estoque; ?>"/>
