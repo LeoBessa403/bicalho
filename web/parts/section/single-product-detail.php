@@ -16,7 +16,13 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
             <meta itemprop="priceCurrency" content="BRL"/>
             <meta itemprop="price" content="<?= $produtoPrincipal->getUltimoCoProdutoDetalhe()->getNuPrecoVenda(); ?>">
             <link itemprop="itemCondition" href="http://schema.org/UsedCondition"/>
-            <link itemprop="availability" href="http://schema.org/InStock"/>
+            <?php
+                $estoque = 'InStock';
+                if($produtoPrincipal->getNuEstoque() == 0){
+                    $estoque = 'OnStock';
+                }
+            ?>
+            <link itemprop="availability" href="http://schema.org/<?= $estoque; ?>"/>
         </span>
     </span>
     <div class="body">
