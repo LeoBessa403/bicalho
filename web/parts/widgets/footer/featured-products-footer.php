@@ -1,7 +1,7 @@
 <!-- ============================================================= FEATURED PRODUCTS ============================================================= -->
 <section class="widget">
     <h2>Produtos em destaque</h2>
-    <div class="body">
+    <div class="body"  itemscope itemtype="https://schema.org/WebPage">
         <ul>
             <?php
             /** @var ProdutoEntidade $produto */
