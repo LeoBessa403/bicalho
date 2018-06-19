@@ -14,7 +14,7 @@
                         /** @var ProdutoEntidade $produto */
                         foreach ($produtosDestaque as $produto) {
                             ?>
-                            <div class="col-sm-4 col-md-3  no-margin product-item-holder hover">
+                            <article class="col-sm-4 col-md-3  no-margin product-item-holder hover">
                                 <div class="product-item">
                                     <?php
                                     if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
@@ -92,7 +92,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         <?php } ?>
                     </div>
                     <div class="loadmore-holder text-center">
@@ -107,7 +107,7 @@
                         /** @var ProdutoEntidade $produto */
                         foreach ($novasChegadas as $produto) {
                             ?>
-                            <div class="col-sm-4 col-md-3  no-margin product-item-holder hover">
+                            <article class="col-sm-4 col-md-3  no-margin product-item-holder hover">
                                 <div class="product-item">
                                     <!--                                        <div class="ribbon red"><span>destaque</span></div>-->
                                     <div class="ribbon green"><span>novo!</span></div>
@@ -181,7 +181,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
                         <?php } ?>
                     </div>
                     <div class="loadmore-holder text-center">

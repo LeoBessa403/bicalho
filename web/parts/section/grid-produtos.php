@@ -1,5 +1,5 @@
 <!-- ========================================= GRID PRODUTOS ========================================= -->
-<div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
+<article class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
     <div class="product-item">
         <?php
         if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
@@ -70,5 +70,5 @@
             </div>
         </div>
     </div><!-- /.product-item -->
-</div><!-- /.product-item-holder -->
+</article><!-- /.product-item-holder -->
 <!-- ========================================= GRID PRODUTOS : END ========================================= -->

@@ -11,7 +11,7 @@
                     /** @var ProdutoEntidade $produto */
                     foreach ($maisVendidos  as $produto) {
                     ?>
-                    <div class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
+                    <article class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
                         <div class="product-item">
                             <div class="image">
                                 <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
@@ -70,7 +70,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- /.product-item-holder -->
+                    </article><!-- /.product-item-holder -->
                     <?php if ($i == 2) { ?>
                 </div><!-- /.row -->
                 <div class="row no-margin">
@@ -105,7 +105,7 @@
                             /** @var ProdutoImagemEntidade $imagemProduto */
                             foreach ($bemMaisVendidos->getCoProdutoImagem() as $imagemProduto) {
                                 ?>
-                                <div class="single-product-gallery-item" id="slide<?=
+                                <article class="single-product-gallery-item" id="slide<?=
                                 $imagemProduto->getCoImagem()->getCoImagem();
                                 ?>">
                                     <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=
@@ -120,7 +120,7 @@
                                         );
                                         ?>
                                     </a>
-                                </div><!-- /.single-product-gallery-item -->
+                                </article><!-- /.single-product-gallery-item -->
                             <?php }
                         } ?>
                     </div><!-- /.single-product-slider -->

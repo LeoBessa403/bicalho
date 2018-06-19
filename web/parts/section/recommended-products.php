@@ -21,7 +21,7 @@ $vistosRecentementes = $produtoRecService->pesquisaProdutos(8);
         /** @var ProdutoEntidade $produtoRec */
         foreach ($vistosRecentementes as $produtoRec) {
             ?>
-            <div class="no-margin carousel-item product-item-holder <?php echo $productItemSize; ?> hover">
+            <article class="no-margin carousel-item product-item-holder <?php echo $productItemSize; ?> hover">
                 <div class="product-item">
                     <?php
                     if (count($produtoRec->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
@@ -93,7 +93,7 @@ $vistosRecentementes = $produtoRecService->pesquisaProdutos(8);
                         </div>
                     </div>
                 </div><!-- /.product-item -->
-            </div><!-- /.product-item-holder -->
+            </article><!-- /.product-item-holder -->
         <?php } ?>
 
 

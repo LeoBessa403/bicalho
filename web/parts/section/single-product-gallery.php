@@ -1,4 +1,4 @@
-<div class="no-margin col-xs-12 col-sm-6 col-md-5 gallery-holder">
+<article class="no-margin col-xs-12 col-sm-6 col-md-5 gallery-holder">
     <div class="product-item-holder size-big single-product-gallery small-gallery">
 
         <div id="owl-single-product" class="owl-carousel">
@@ -131,4 +131,4 @@
         </div><!-- /.gallery-thumbs -->
 
     </div><!-- /.single-product-gallery -->
-</div><!-- /.gallery-holder -->
+</article><!-- /.gallery-holder -->

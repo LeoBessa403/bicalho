@@ -17,7 +17,7 @@
                     'img-destaque'
                 );
                 ?>
-                <div class="item">
+                <article class="item">
                     <div class="container-fluid">
                         <?= $foto; ?>
                         <div class="caption vertical-center text-left right" style="padding-right:0;">
@@ -40,7 +40,7 @@
                             </div>
                         </div><!-- /.caption -->
                     </div><!-- /.container-fluid -->
-                </div><!-- /.item -->
+                </article><!-- /.item -->
             <?php }
         } ?>
     </div><!-- /.owl-carousel -->

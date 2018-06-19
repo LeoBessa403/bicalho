@@ -2,7 +2,7 @@
 $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
     '/' . UrlAmigavel::$action . '/' . UrlAmigavel::PegaParametroUrlAmigavel();
 ?>
-<div class="no-margin col-xs-12 col-sm-7 body-holder">
+<article class="no-margin col-xs-12 col-sm-7 body-holder">
     <!--  Servindo os Micro Formatos dos produtos  -->
     <span itemscope itemtype="http://schema.org/Product">
         <meta itemprop="sku" content="<?= $produtoPrincipal->getCoProduto(); ?>">
@@ -33,7 +33,7 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
                 FuncoesSistema::ProdutoEstoqueLabel($produtoPrincipal->getNuEstoque());
                 ?></span></div>
 
-        <div class="title"><a href="#"><?= $produtoPrincipal->getNoProduto(); ?></a></div>
+        <header class="title"><a href="#"><?= $produtoPrincipal->getNoProduto(); ?></a></header>
         <div class="brand">
             <a href="<?php echo PASTASITE; ?>Fabricantes/ListarFabricantes/<?=
             $produtoPrincipal->getCoFabricante()->getNoFabriCanteUrlAmigavel(); ?>"><?=
@@ -87,7 +87,7 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
             <p><?= Valida::Resumi($produtoPrincipal->getDsDescricao(), 280); ?></p>
         </div>
 
-        <div class="prices">
+        <footer class="prices">
             <div class="price-current"><?=
                 Valida::FormataMoeda($produtoPrincipal->getUltimoCoProdutoDetalhe()->getNuPrecoVenda(), 'R$');
                 ?></div>
@@ -96,7 +96,7 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
                     floor($produtoPrincipal->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() * 1.10)
                     , 'R$');
                 ?></div>
-        </div>
+        </footer>
 
         <div class="qnt-holder">
             <div class="le-quantity">
@@ -112,4 +112,4 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
         </div><!-- /.qnt-holder -->
     </div><!-- /.body -->
 
-</div><!-- /.body-holder -->
+</article><!-- /.body-holder -->

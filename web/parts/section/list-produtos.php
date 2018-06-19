@@ -1,5 +1,5 @@
 <!-- ========================================= HOME BANNERS ========================================= -->
-<div class="product-item product-item-holder">
+<article class="product-item product-item-holder">
     <?php
     if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
         ?>
@@ -85,5 +85,5 @@
             </div>
         </div><!-- /.price-area -->
     </div><!-- /.row -->
-</div><!-- /.product-item -->
+</article><!-- /.product-item -->
 <!-- ========================================= HOME BANNERS : END ========================================= -->
