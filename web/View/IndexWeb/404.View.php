@@ -1,4 +1,4 @@
-<main id="faq" class="inner">
+<main id="faq" class="inner search-area2" style="padding: 30px 0 0px;">
     <div class="container">
         <div class="row">
             <div class="col-md-8 center-block">
@@ -10,9 +10,12 @@
                         <br>
                         Verifique a URL digitada por quaisquer erros e tente novamente.</p>
                     <div class="sub-form-row inner-top-xs inner-bottom-xs">
+                        <h3 class="primary-color inner-bottom-xs">Pesquise aqui o que voçê procura!</h3>
                         <form role="form">
-                            <input placeholder="Pesquisa nossos produtos" autocomplete="off">
+                            <input class="search-field2" placeholder="Pesquisa nossos produtos" autocomplete="off">
                             <button class="le-button">Buscar</button>
+                            <ul class="pesquisados2">
+                            </ul>
                         </form>
                     </div>
                     <div class="text-center">
@@ -21,5 +24,6 @@
                 </div>
             </div>
         </div>
+        <?php require PASTA_RAIZ.SITE. '/parts/section/recently-viewed.php';?>
     </div>
 </main>

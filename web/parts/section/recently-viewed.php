@@ -81,6 +81,9 @@ $vistosRecentemente =  $produtoService->pesquisaProdutos(8);
                                     $produto->getNoProdutoUrlAmigavel(); ?>"
                                        class="le-button">Ver Detalhes</a>
                                 </div>
+                                <?php
+                                    if(!empty($favoritos)){
+                                ?>
                                 <div class="wish-compare">
                                     <a  class="btn-add-to-wishlist <?=
                                     (in_array($produto->getCoProduto(), $favoritos))
@@ -99,6 +102,7 @@ $vistosRecentemente =  $produtoService->pesquisaProdutos(8);
                                             ? 'Remove dos Comparados' : 'Add aos Comparados';
                                         ;?></a>
                                 </div>
+                                <?php } ?>
                             </div>
                         </div><!-- /.product-item -->
                     </div><!-- /.product-item-holder -->

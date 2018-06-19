@@ -323,6 +323,15 @@
 
         $('.search-area .search-field').keyup(function () {
             var pesquisa = $(this).val();
+            pesquisaSite(pesquisa, "pesquisados");
+        });
+
+        $('.search-area2 .search-field2').keyup(function () {
+            var pesquisa = $(this).val();
+            pesquisaSite(pesquisa, "pesquisados2");
+        });
+
+        function pesquisaSite(pesquisa, div) {
             if (pesquisa.length > 1) {
                 $.ajax({
                     url: urlValida,
@@ -330,13 +339,13 @@
                     type: "get",
                     dataType: "html",
                     success: function (data) {
-                        $(".pesquisados").empty().html(data);
+                        $("." + div).empty().html(data);
                     }
                 });
             } else {
-                $(".pesquisados").empty();
+                $("." + div).empty();
             }
-        });
+        }
 
         $(".btn-add-to-wishlist , .remove_from_wishlist").click(function () {
             var coProduto = $(this).attr('data-co-produto');
@@ -522,7 +531,7 @@
                 } else {
                     $.get(urlValida, {valida: 'cadastro_lead', email: email}, function (retorno) {
                         if (retorno) {
-                            $("#envia-email").attr('id','-');
+                            $("#envia-email").attr('id', '-');
                             $(".captura-email .mensagem-success").fadeIn('fast');
                             $(".captura-email .mensagem-erro").fadeOut('fast');
                             setTimeout(function () {
@@ -554,7 +563,7 @@
                 } else {
                     $.get(urlValida, {valida: 'cadastro_lead', email: email}, function (retorno) {
                         if (retorno) {
-                            $("#cadastra-email").attr('id','-');
+                            $("#cadastra-email").attr('id', '-');
                             $("#cadastra-email").show();
                             $(".sub-form-row .mensagem-success2").fadeIn('fast');
                             $(".sub-form-row .mensagem-erro2").fadeOut('fast');
@@ -571,7 +580,7 @@
         });
 
         $('.tooltip-inner').change(function () {
-           alert($('.tooltip-inner').text()) ;
+            alert($('.tooltip-inner').text());
         });
 
         $(".pesquisa").click(function () {
