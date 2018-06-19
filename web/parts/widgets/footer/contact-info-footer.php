@@ -8,7 +8,7 @@
     <p class="regular-bold" itemscope itemprop="https://schema.org/PostalAddress">
         <span itemprop="name">Bicalho Refrigeração Comercial</span>, <span itemprop="streetAddress">QNE 16 lote 08 Loja
                     01 Avenida Comercial Norte Taguatinga</span> <span itemprop="addressLocality">Brasília</span> /
-                <span itemprop="addressCountry">DF</span> - CEP:  <span itemprop="postalCode">72125-160</span>
+                <span itemprop="addressRegion">DF</span> - CEP:  <span itemprop="postalCode">72125-160</span>
                 <span itemscope itemprop="https://schema.org/GeoCoordinates">
                     <meta itemprop="latitude" content="-15.810952">
                     <meta itemprop="longitude" content="-48.065047">
