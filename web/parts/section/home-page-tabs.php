@@ -1,4 +1,5 @@
 <section id="products-tab" class="wow fadeInUp">
+    <h1 style="display: none;">Sessão de Destaque | <?= DESC; ?></h1>
     <div class="container">
         <div class="tab-holder">
             <!-- Nav tabs -->
@@ -15,6 +16,8 @@
                         foreach ($produtosDestaque as $produto) {
                             ?>
                             <article class="col-sm-4 col-md-3  no-margin product-item-holder hover">
+                                <h2 style="display: none;"><?= $produto->getNoProduto() . ' - ' .
+                                    $produto->getCoFabricante()->getNoFabricante() . ' | ' . DESC; ?></h2>
                                 <div class="product-item">
                                     <?php
                                     if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
@@ -108,6 +111,8 @@
                         foreach ($novasChegadas as $produto) {
                             ?>
                             <article class="col-sm-4 col-md-3  no-margin product-item-holder hover">
+                                <h2 style="display: none;"><?= $produto->getNoProduto() . ' - ' .
+                                    $produto->getCoFabricante()->getNoFabricante() . ' | ' . DESC; ?></h2>
                                 <div class="product-item">
                                     <!--                                        <div class="ribbon red"><span>destaque</span></div>-->
                                     <div class="ribbon green"><span>novo!</span></div>

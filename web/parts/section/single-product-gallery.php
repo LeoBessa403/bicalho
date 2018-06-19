@@ -1,4 +1,5 @@
 <article class="no-margin col-xs-12 col-sm-6 col-md-5 gallery-holder">
+    <h1 style="display: none;"><?= $produtoPrincipal->getNoProduto(); ?></h1>
     <div class="product-item-holder size-big single-product-gallery small-gallery">
 
         <div id="owl-single-product" class="owl-carousel">

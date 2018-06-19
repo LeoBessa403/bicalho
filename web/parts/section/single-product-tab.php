@@ -6,9 +6,10 @@ $prod = $produtoPrincipal;
 ?>
 <!-- ========================================= SINGLE PRODUCT TAB ========================================= -->
 <section id="single-product-tab">
+
     <div class="<?php echo $containerClass; ?>">
         <div class="tab-holder">
-
+            <h2 style="display: none;">Descrição Produto</h2>
             <ul class="nav nav-tabs simple">
                 <li class="active"><a href="#description" data-toggle="tab">Descrição</a></li>
             </ul><!-- /.nav-tabs -->

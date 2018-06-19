@@ -30,6 +30,8 @@ $vistosRecentemente =  $produtoService->pesquisaProdutos(8);
                 foreach ($vistosRecentemente as $produto) {
                     ?>
                     <article class="no-margin carousel-item product-item-holder <?php echo $productItemSize; ?> hover">
+                        <h1 style="display: none;"><?= $produto->getNoProduto() . ' - ' .
+                            $produto->getCoFabricante()->getNoFabricante() . ' | ' . DESC; ?></h1>
                         <div class="product-item">
                             <?php
                             if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {

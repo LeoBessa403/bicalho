@@ -3,6 +3,7 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
     '/' . UrlAmigavel::$action . '/' . UrlAmigavel::PegaParametroUrlAmigavel();
 ?>
 <article class="no-margin col-xs-12 col-sm-7 body-holder">
+    <h1 style="display: none;"><?= $produtoPrincipal->getNoProduto(); ?></h1>
     <!--  Servindo os Micro Formatos dos produtos  -->
     <span itemscope itemtype="http://schema.org/Product">
         <meta itemprop="sku" content="<?= $produtoPrincipal->getCoProduto(); ?>">
@@ -33,7 +34,7 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
                 FuncoesSistema::ProdutoEstoqueLabel($produtoPrincipal->getNuEstoque());
                 ?></span></div>
 
-        <header class="title title2"><a href="#"><?= $produtoPrincipal->getNoProduto(); ?></a></header>
+        <div class="title"><a href="#"><?= $produtoPrincipal->getNoProduto(); ?></a></div>
         <div class="brand">
             <a href="<?php echo PASTASITE; ?>Fabricantes/ListarFabricantes/<?=
             $produtoPrincipal->getCoFabricante()->getNoFabriCanteUrlAmigavel(); ?>"><?=

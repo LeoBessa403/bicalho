@@ -12,6 +12,8 @@
                     foreach ($maisVendidos  as $produto) {
                     ?>
                     <article class="col-xs-12 col-sm-4 no-margin product-item-holder size-medium hover">
+                        <h1 style="display: none;"><?= $produto->getNoProduto() . ' - ' .
+                            $produto->getCoFabricante()->getNoFabricante() . ' | ' . DESC; ?></h1>
                         <div class="product-item">
                             <div class="image">
                                 <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=

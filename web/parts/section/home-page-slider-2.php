@@ -18,6 +18,8 @@
                 );
                 ?>
                 <article class="item">
+                    <h1 style="display: none;"><?= $produto->getNoProduto() . ' - ' .
+                        $produto->getCoFabricante()->getNoFabricante() . ' | ' . DESC; ?></h1>
                     <div class="container-fluid">
                         <?= $foto; ?>
                         <div class="caption vertical-center text-left right" style="padding-right:0;">
