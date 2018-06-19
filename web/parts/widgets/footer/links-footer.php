@@ -46,7 +46,7 @@ $categorias = $categoriaService->PesquisaTodos();
         <div class="social-icons">
             <h3>Redes Sociais</h3>
             <ul>
-                <li><a title="Facebook" href="https://www.facebook.com.br/bicalhobalancas.77" class="fa fa-facebook"></a></li>
+                <li><a itemprop="url" title="Facebook" href="https://www.facebook.com.br/bicalhobalancas.77" class="fa fa-facebook"></a></li>
             </ul>
         </div><!-- /.social-icons -->
     </div><!-- /.widget -->

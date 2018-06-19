@@ -1,4 +1,4 @@
-<div id="products-tab" class="wow fadeInUp">
+<section id="products-tab" class="wow fadeInUp">
     <div class="container">
         <div class="tab-holder">
             <!-- Nav tabs -->
@@ -75,22 +75,20 @@
                                                class="le-button">Ver Detalhes</a>
                                         </div>
                                         <div class="wish-compare">
-                                            <a  class="btn-add-to-wishlist <?=
+                                            <a class="btn-add-to-wishlist <?=
                                             (in_array($produto->getCoProduto(), $favoritos))
-                                                ? 'remove-favo' : 'add-favo';
-                                            ;?>" href="#" title="Adicionar aos favoritos"
+                                                ? 'remove-favo' : 'add-favo';; ?>" href="#"
+                                               title="Adicionar aos favoritos"
                                                data-co-produto="<?= $produto->getCoProduto(); ?>"> <?=
                                                 (in_array($produto->getCoProduto(), $favoritos))
-                                                    ? 'Remove dos Favoritos' : 'Add aos Favoritos';
-                                                ;?></a>
+                                                    ? 'Remove dos Favoritos' : 'Add aos Favoritos';; ?></a>
                                             <a class="btn-add-to-compare <?=
                                             (in_array($produto->getCoProduto(), $comparados))
-                                                ? 'remove-compare' : 'add-compare';
-                                            ;?>" href="#" title="Remove dos comparados"
+                                                ? 'remove-compare' : 'add-compare';; ?>" href="#"
+                                               title="Remove dos comparados"
                                                data-co-produto="<?= $produto->getCoProduto(); ?>"> <?=
                                                 (in_array($produto->getCoProduto(), $comparados))
-                                                    ? 'Remove dos Comparados' : 'Add aos Comparados';
-                                                ;?></a>
+                                                    ? 'Remove dos Comparados' : 'Add aos Comparados';; ?></a>
                                         </div>
                                     </div>
                                 </div>
@@ -166,22 +164,20 @@
                                                class="le-button">Ver Detalhes</a>
                                         </div>
                                         <div class="wish-compare">
-                                            <a  class="btn-add-to-wishlist <?=
+                                            <a class="btn-add-to-wishlist <?=
                                             (in_array($produto->getCoProduto(), $favoritos))
-                                                ? 'remove-favo' : 'add-favo';
-                                            ;?>" href="#" title="Adicionar aos favoritos"
+                                                ? 'remove-favo' : 'add-favo';; ?>" href="#"
+                                               title="Adicionar aos favoritos"
                                                data-co-produto="<?= $produto->getCoProduto(); ?>"> <?=
                                                 (in_array($produto->getCoProduto(), $favoritos))
-                                                    ? 'Remove dos Favoritos' : 'Add aos Favoritos';
-                                                ;?></a>
+                                                    ? 'Remove dos Favoritos' : 'Add aos Favoritos';; ?></a>
                                             <a class="btn-add-to-compare <?=
                                             (in_array($produto->getCoProduto(), $comparados))
-                                                ? 'remove-compare' : 'add-compare';
-                                            ;?>" href="#" title="Remove dos comparados"
+                                                ? 'remove-compare' : 'add-compare';; ?>" href="#"
+                                               title="Remove dos comparados"
                                                data-co-produto="<?= $produto->getCoProduto(); ?>"> <?=
                                                 (in_array($produto->getCoProduto(), $comparados))
-                                                    ? 'Remove dos Comparados' : 'Add aos Comparados';
-                                                ;?></a>
+                                                    ? 'Remove dos Comparados' : 'Add aos Comparados';; ?></a>
                                         </div>
                                     </div>
                                 </div>
@@ -190,11 +186,10 @@
                     </div>
                     <div class="loadmore-holder text-center">
                         <a class="btn-loadmore" href="#">
-                            <i class="fa fa-plus"></i>
-                            carregar mais produtos</a>
+                            <i class="fa fa-plus"></i> carregar mais produtos</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</section>
