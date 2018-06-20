@@ -15,8 +15,8 @@ class Marketing extends AbstractController
             $emailss2 = $leadService->PesquisaTodos();
             $emails = [];
             /** @var LeadEntidade $email */
-            foreach ($emailss2 as $email){
-                $emails['ff'] = $email->getDsEmail();
+            foreach ($emailss2 as $email1){
+                $emails['ff'] = $email1->getDsEmail();
             }
 
             $Mensagem = "<div style='max-width: 600px'>".$_POST[DS_DESCRICAO]."</div>";

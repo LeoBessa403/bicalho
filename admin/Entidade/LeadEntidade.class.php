@@ -30,9 +30,8 @@ class LeadEntidade extends AbstractEntidade
 	* @return array $relacionamentos
      */
 	public static function getRelacionamentos() 
-        {
-    	$relacionamentos = Relacionamentos::getRelacionamentos();
-		return $relacionamentos[static::TABELA];
+    {
+		return [];
 	}
 
     /**
