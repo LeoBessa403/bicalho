@@ -180,6 +180,7 @@ endif;
                     "Categoria" => array("clip-list-6", "CadastroCategoria", "ListarCategoria"),
                     "Segmento" => array("clip-tree", "CadastroSegmento", "ListarSegmento"),
                     "Visita" => array("clip-airplane", "ListarVisita"),
+                    "Marketing" => array("fa-envelope fa", "Email"),
                     "Usuario" => array("fa fa-group", "MeuPerfilUsuario", "CadastroUsuario", "ListarUsuario"),
                     "Perfil" => array("clip-stack-empty", "CadastroPerfil", "ListarPerfil"),
                     "Funcionalidade" => array("fa fa-outdent", "CadastroFuncionalidade", "ListarFuncionalidade"),
