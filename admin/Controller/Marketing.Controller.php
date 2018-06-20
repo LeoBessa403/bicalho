@@ -12,7 +12,12 @@ class Marketing extends AbstractController
 
             /** @var LeadService $leadService */
             $leadService = $this->getService(LEAD_SERVICE);
-            $emails = $leadService->PesquisaTodos();
+            $emailss2 = $leadService->PesquisaTodos();
+            $emails = [];
+            /** @var LeadEntidade $email */
+            foreach ($emailss2 as $email){
+                $emails[] = $email->getDsEmail();
+            }
 
             $Mensagem = "<div style='max-width: 600px'>".$_POST[DS_DESCRICAO]."</div>";
 
