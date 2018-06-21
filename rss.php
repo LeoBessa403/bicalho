@@ -32,7 +32,7 @@ if ($produtos):
         echo '<price>' .  Valida::FormataMoeda(
                 $produto->getUltimoCoProdutoDetalhe()->getNuPrecoVenda()
             ) . '</price>' . "\r\n";
-        if ($produto->getNuEstoque() > 0) :
+        if ($produto->getUltimoCoProdutoDetalhe()->getNuEstoque() > 0) :
             echo '<availability>Com Estoque</availability>' . "\r\n";
         else:
             echo '<availability>Sem Estoque</availability>' . "\r\n";

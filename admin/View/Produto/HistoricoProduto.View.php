@@ -68,7 +68,9 @@
                                 $corI = 0;
                                 $controle = true;
                                 /** @var ProdutoDetalheEntidade $produtoDetalhe */
-                                foreach ($produtoDet as $produtoDetalhe) {
+                                foreach ($produtoDet
+
+                                as $produtoDetalhe) {
 
                                 /** @var PessoaService $pessoaService */
                                 $pessoaService = new PessoaService();
@@ -112,14 +114,11 @@
                                                     Valida::DataShow(
                                                         $produtoDetalhe->getDtCadastro(), 'd/m/Y H:i'
                                                     )
-                                                    ?></b>
-                                            </div>
-                                            <div class="readmore">
-                                                <a href="<?= HOME . SITE . '/Produtos/DetalharProduto/' .
-                                                $produto->getNoProdutoUrlAmigavel(); ?>"
-                                                   class="btn btn-<?= $corBtn[$corI]; ?>" target="_blank">
-                                                    Ver Produto <i class="fa fa-arrow-circle-right"></i>
-                                                </a>
+                                                    ?></b></br>
+                                                Produto em
+                                                Destaque: <?= FuncoesSistema::SituacaoSimNao($produtoDetalhe->getStDestaque()); ?></br>
+                                                Produto com
+                                                Estoque: <?= FuncoesSistema::ProdutoEstoque($produtoDetalhe->getNuEstoque()); ?></br>
                                             </div>
                                         </div>
                                     </li>
@@ -130,13 +129,13 @@
                             </div>
                         </div>
                         <span class="pull-right" style="margin-right: 10px; margin-bottom: 10px; display: block;">
-                        <?php
-                        echo '<a href="' . PASTAADMIN . UrlAmigavel::$controller . '/Listar' . UrlAmigavel::$controller . '"
-                               class="btn btn-primary tooltips" data-original-title="Voltar" data-placement="top">
-                                Voltar <i class="clip-arrow-right-2"></i>
-                            </a>';
-                        ?>
-                    </span>
+                            <?php
+                            echo '<a href="' . PASTAADMIN . UrlAmigavel::$controller . '/Listar' . UrlAmigavel::$controller . '"
+                                   class="btn btn-primary tooltips" data-original-title="Voltar" data-placement="top">
+                                    Voltar <i class="clip-arrow-right-2"></i>
+                                </a>';
+                            ?>
+                        </span>
                     </div>
                 </div>
                 <!-- end: DYNAMIC TABLE PANEL -->

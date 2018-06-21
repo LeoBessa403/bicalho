@@ -24,7 +24,7 @@ $vistosRecentementes = $produtoRecService->pesquisaProdutos(8);
             <article class="no-margin carousel-item product-item-holder <?php echo $productItemSize; ?> hover">
                 <div class="product-item">
                     <?php
-                    if (count($produtoRec->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
+                    if ($produtoRec->getUltimoCoProdutoDetalhe()->getStDestaque() == SimNaoEnum::SIM) {
                         ?>
                         <div class="ribbon red"><span>destaque</span></div>
                     <?php } ?>
@@ -44,11 +44,11 @@ $vistosRecentementes = $produtoRecService->pesquisaProdutos(8);
                     </div>
                     <div class="body">
                         <?php
-                        if (count($produtoRec->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
+                        if ($produtoRec->getUltimoCoProdutoDetalhe()->getStDestaque() == SimNaoEnum::SIM) {
                             ?>
                             <div class="label-discount blue">10% desconto</div>
                         <?php }
-                        if ($produtoRec->getNuEstoque() < 1) {
+                        if ($produtoRec->getUltimoCoProdutoDetalhe()->getNuEstoque() < 1) {
                             ?>
                             <div class="label-discount red">Sem Estoque</div>
                         <?php } ?>

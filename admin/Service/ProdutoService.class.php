@@ -29,6 +29,7 @@ class  ProdutoService extends AbstractService
             /** @var ImagemService $imagemService */
             $imagemService = $this->getService(IMAGEM_SERVICE);
 
+            /** @var Session $us */
             $us = $_SESSION[SESSION_USER];
             $user = $us->getUser();
 
@@ -56,9 +57,9 @@ class  ProdutoService extends AbstractService
             $produto[NO_PRODUTO_URL_AMIGAVEL] = Valida::ValNome(trim($result[NO_PRODUTO]));
             $produto[DS_DESCRICAO] = trim($result[DS_DESCRICAO]);
             if (!empty($result[NU_ESTOQUE])) {
-                $produto[NU_ESTOQUE] = 1; // Com Estoque
+                $detalheProduto[NU_ESTOQUE] = 1; // Com Estoque
             } else {
-                $produto[NU_ESTOQUE] = 0; // Sem Estoque
+                $detalheProduto[NU_ESTOQUE] = 0; // Sem Estoque
             }
             $produto[DS_CAMINHO_MANUAL] = $result[DS_CAMINHO_MANUAL];
             $produto[DS_CAMINHO_VIDEO] = $result[DS_CAMINHO_VIDEO];
@@ -78,10 +79,10 @@ class  ProdutoService extends AbstractService
             $PDO->beginTransaction();
             if (!empty($result[CO_PRODUTO])):
                 $coProduto = $result[CO_PRODUTO];
+                /** @var ProdutoEntidade $produtoEdicao */
+                $produtoEdicao = $this->PesquisaUmRegistro($coProduto);
                 if ($files[DS_CAMINHO]["tmp_name"]) {
                     $produto[CO_IMAGEM] = $result[CO_IMAGEM];
-                    /** @var ProdutoEntidade $produtoEdicao */
-                    $produtoEdicao = $this->PesquisaUmRegistro($coProduto);
                     $fotoApaga = $produtoEdicao->getCoImagem()->getDsCaminho();
                     if (($fotoApaga) && (file_exists(PASTA_RAIZ . 'uploads/ProdutosCapa/' . $fotoApaga))) {
                         unlink(PASTA_RAIZ . 'uploads/ProdutosCapa/' . $fotoApaga);
@@ -89,12 +90,22 @@ class  ProdutoService extends AbstractService
                     $imagemService->Salva($imagem, $result[CO_IMAGEM]);
                 }
                 $this->Salva($produto, $coProduto);
+
+                if($produtoEdicao->getUltimoCoProdutoDetalhe()->getNuPrecoVenda() != $detalheProduto[NU_PRECO_VENDA] ||
+                    $produtoEdicao->getUltimoCoProdutoDetalhe()->getNuEstoque() != $detalheProduto[NU_ESTOQUE] ){
+                    $detalheProduto[CO_PRODUTO] = $coProduto;
+                    $detalheProduto[ST_DESTAQUE] = $produtoEdicao->getUltimoCoProdutoDetalhe()->getStDestaque();
+                    $coProdutoDetalhe = $produtoDetalheService->Salva($detalheProduto);
+                }
                 $session->setSession(ATUALIZADO, "OK");
             else:
                 $produto[CO_IMAGEM] = $imagemService->Salva($imagem);
                 $produto[DT_CADASTRO] = Valida::DataHoraAtualBanco();
                 $produto[ST_STATUS] = StatusAcessoEnum::ATIVO;
                 $coProduto = $this->Salva($produto);
+                $detalheProduto[CO_PRODUTO] = $coProduto;
+                $detalheProduto[ST_DESTAQUE] = SimNaoEnum::NAO;
+                $coProdutoDetalhe = $produtoDetalheService->Salva($detalheProduto);
                 $session->setSession(CADASTRADO, "OK");
             endif;
 
@@ -102,8 +113,6 @@ class  ProdutoService extends AbstractService
                 $produtoImagemService->SalvaProdutoImagens($files, $coProduto, $nome);
             endif;
 
-            $detalheProduto[CO_PRODUTO] = $coProduto;
-            $coProdutoDetalhe = $produtoDetalheService->Salva($detalheProduto);
 
             if ($coProdutoDetalhe) {
                 $session->setSession(MENSAGEM, Mensagens::OK_SALVO);
@@ -223,26 +232,36 @@ class  ProdutoService extends AbstractService
 
     /**
      * @param $coProdutoDetalhe
+     * @param $stStatus
      * @return array
      */
-    public function AtivarDestaque($coProdutoDetalhe)
+    private function mudarDestaqueProduto($coProdutoDetalhe, $stStatus)
     {
-        /** @var ProdutoDestaqueService $produtoDestaqueService */
-        $produtoDestaqueService = $this->getService(PRODUTO_DESTAQUE_SERVICE);
+        /** @var Session $us */
+        $us = $_SESSION[SESSION_USER];
+        $user = $us->getUser();
+
+        /** @var ProdutoDetalheService $produtoDetalheService */
+        $produtoDetalheService = $this->getService(PRODUTO_DETALHE_SERVICE);
+        /** @var ProdutoDetalheEntidade $produtoDetalhe */
+        $produtoDetalhe = $produtoDetalheService->PesquisaUmRegistro($coProdutoDetalhe);
 
         $session = new Session();
         $retorno = [
             SUCESSO => false,
             MSG => null
         ];
-        $dados = [
-            CO_PRODUTO_DETALHE => $coProdutoDetalhe,
-            DT_INICIO => Valida::DataHoraAtualBanco(),
-            DT_FIM => Valida::DataHoraAtualBanco(),
-        ];
-        $coProdutoDetalhe = $produtoDestaqueService->Salva($dados);
 
-        if ($coProdutoDetalhe) {
+        $detalheProduto[NU_PRECO_VENDA] = $produtoDetalhe->getNuPrecoVenda();
+        $detalheProduto[CO_USUARIO] = $user[md5(CO_USUARIO)];
+        $detalheProduto[DT_CADASTRO] = Valida::DataHoraAtualBanco();
+        $detalheProduto[CO_PRODUTO] = $produtoDetalhe->getCoProduto()->getCoProduto();
+        $detalheProduto[ST_DESTAQUE] = $stStatus;
+        $detalheProduto[NU_ESTOQUE] = $produtoDetalhe->getNuEstoque();
+
+        $coProdDet = $produtoDetalheService->Salva($detalheProduto);
+
+        if ($coProdDet) {
             $session->setSession(MENSAGEM, Mensagens::OK_ATUALIZADO);
             $retorno[SUCESSO] = true;
         } else {
@@ -256,29 +275,18 @@ class  ProdutoService extends AbstractService
      * @param $coProdutoDetalhe
      * @return array
      */
+    public function AtivarDestaque($coProdutoDetalhe)
+    {
+        return $this->mudarDestaqueProduto($coProdutoDetalhe, SimNaoEnum::SIM);
+    }
+
+    /**
+     * @param $coProdutoDetalhe
+     * @return array
+     */
     public function DesativarDestaque($coProdutoDetalhe)
     {
-        /** @var ProdutoDestaqueService $produtoDestaqueService */
-        $produtoDestaqueService = $this->getService(PRODUTO_DESTAQUE_SERVICE);
-
-        $session = new Session();
-        $retorno = [
-            SUCESSO => false,
-            MSG => null
-        ];
-        $dados = [
-            CO_PRODUTO_DETALHE => $coProdutoDetalhe,
-        ];
-        $coProdutoDetalhe = $produtoDestaqueService->DeletaQuando($dados);
-
-        if ($coProdutoDetalhe) {
-            $session->setSession(MENSAGEM, Mensagens::OK_ATUALIZADO);
-            $retorno[SUCESSO] = true;
-        } else {
-            $session->setSession(MENSAGEM, 'Não foi possível alterar o Produto');
-            $retorno[SUCESSO] = false;
-        }
-        return $retorno;
+        return $this->mudarDestaqueProduto($coProdutoDetalhe, SimNaoEnum::NAO);
     }
 
     /**
@@ -290,7 +298,7 @@ class  ProdutoService extends AbstractService
     {
         $dados[CO_PRODUTO] = $produto->getCoProduto();
         $dados[NO_PRODUTO] = $produto->getNoProduto();
-        $dados[NU_ESTOQUE] = $produto->getNuEstoque();
+        $dados[NU_ESTOQUE] = $produto->getUltimoCoProdutoDetalhe()->getNuEstoque();
         $dados[NU_CODIGO_INTERNO] = $produto->getNuCodigoInterno();
         $dados[CO_FABRICANTE] = $produto->getCoFabricante()->getCoFabricante();
         $dados[CO_CATEGORIA] = $produto->getCoCategoria()->getCoCategoria();

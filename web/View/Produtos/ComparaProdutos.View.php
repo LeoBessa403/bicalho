@@ -124,7 +124,7 @@
                             ?>
                             <td class="comparison-item-cell odd product_39 produto-<?= $produto->getCoProduto(); ?>">
                                 <?php
-                                if ($produto->getNuEstoque() > 0) {
+                                if ($produto->getUltimoCoProdutoDetalhe()->getNuEstoque() > 0) {
                                     ?>
                                     <span class="label label-success"><span class="">Com estoque</span></span>
                                 <?php } else { ?>

@@ -53,7 +53,7 @@
                                     </div><!-- /.title -->
                                     <div>
                                         <?php
-                                        if ($produto->getNuEstoque() > 0) {
+                                        if ($produto->getUltimoCoProdutoDetalhe()->getNuEstoque() > 0) {
                                             ?>
                                             <span class="label label-success wishlist-in-stock">Com estoque</span>
                                         <?php } else { ?>

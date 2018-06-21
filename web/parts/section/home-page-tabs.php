@@ -20,7 +20,7 @@
                                     $produto->getCoFabricante()->getNoFabricante() . ' | ' . DESC; ?></h2>
                                 <div class="product-item">
                                     <?php
-                                    if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
+                                    if ($produto->getUltimoCoProdutoDetalhe()->getStDestaque() == SimNaoEnum::SIM) {
                                         ?>
                                         <div class="ribbon red"><span>destaque</span></div>
                                         <!--                                        <div class="ribbon blue"><span>novo!</span></div>-->
@@ -42,11 +42,11 @@
                                     </div>
                                     <div class="body">
                                         <?php
-                                        if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
+                                        if ($produto->getUltimoCoProdutoDetalhe()->getStDestaque() == SimNaoEnum::SIM) {
                                             ?>
                                             <div class="label-discount green">10% desconto</div>
                                         <?php }
-                                        if ($produto->getNuEstoque() < 1) {
+                                        if ($produto->getUltimoCoProdutoDetalhe()->getNuEstoque() < 1) {
                                             ?>
                                             <div class="label-discount red">Sem Estoque</div>
                                         <?php } ?>
@@ -133,11 +133,11 @@
                                     </div>
                                     <div class="body">
                                         <?php
-                                        if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
+                                        if ($produto->getUltimoCoProdutoDetalhe()->getStDestaque() == SimNaoEnum::SIM) {
                                             ?>
                                             <div class="label-discount blue">10% desconto</div>
                                         <?php }
-                                        if ($produto->getNuEstoque() < 1) {
+                                        if ($produto->getUltimoCoProdutoDetalhe()->getNuEstoque() < 1) {
                                             ?>
                                             <div class="label-discount red">Sem Estoque</div>
                                         <?php } ?>

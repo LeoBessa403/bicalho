@@ -16,5 +16,12 @@ class  ProdutoDetalheService extends AbstractService
         $this->ObjetoModel = New ProdutoDetalheModel();
     }
 
+    /**
+     * @return array
+     */
+    public function PesquisaProdutosDestaque()
+    {
+        return $this->ObjetoModel->PesquisaProdutosDestaque();
+    }
 
 }

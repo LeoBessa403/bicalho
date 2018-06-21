@@ -14,11 +14,13 @@ class ProdutoDetalheEntidade extends AbstractEntidade
 	private $co_produto_detalhe;
 	private $nu_estoque_baixo;
 	private $nu_preco_venda;
+    private $nu_estoque;
 	private $nu_valor_lucro;
 	private $nu_porc_valor_lucro;
 	private $nu_valor_desconto_maximo;
 	private $nu_porc_desc_max;
 	private $nu_preco_atacado;
+	private $st_destaque;
 	private $nu_quantidade_atacado;
 	private $dt_cadastro;
 	private $co_usuario;
@@ -37,9 +39,11 @@ class ProdutoDetalheEntidade extends AbstractEntidade
 			NU_PRECO_VENDA,
 			NU_VALOR_LUCRO,
 			NU_PORC_VALOR_LUCRO,
+            NU_ESTOQUE,
 			NU_VALOR_DESCONTO_MAXIMO,
 			NU_PORC_DESC_MAX,
 			NU_PRECO_ATACADO,
+            ST_DESTAQUE,
 			NU_QUANTIDADE_ATACADO,
 			DT_CADASTRO,
 			CO_USUARIO,
@@ -92,7 +96,7 @@ class ProdutoDetalheEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return NuPrevendaEntidade $nu_preco_venda
+	* @return mixed $nu_preco_venda
      */
 	public function getNuPrecoVenda()
     {
@@ -262,20 +266,45 @@ class ProdutoDetalheEntidade extends AbstractEntidade
     }
 
 	/**
-	* @return ProdutoDestaqueEntidade $co_produto_destaque
-     */
-	public function getCoProdutoDestaque()
-    {
-        return $this->co_produto_destaque;
-    }
-
-	/**
      * @param $co_produto_destaque
      * @return mixed
      */
 	public function setCoProdutoDestaque($co_produto_destaque)
     {
         return $this->co_produto_destaque = $co_produto_destaque;
+    }
+
+    /**
+     * @return mixed $nu_estoque
+     */
+    public function getNuEstoque()
+    {
+        return $this->nu_estoque;
+    }
+
+    /**
+     * @param $nu_estoque
+     * @return mixed
+     */
+    public function setNuEstoque($nu_estoque)
+    {
+        return $this->nu_estoque = $nu_estoque;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStDestaque()
+    {
+        return $this->st_destaque;
+    }
+
+    /**
+     * @param mixed $st_destaque
+     */
+    public function setStDestaque($st_destaque)
+    {
+        $this->st_destaque = $st_destaque;
     }
 
 }

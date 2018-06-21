@@ -1,7 +1,7 @@
 <!-- ========================================= HOME BANNERS ========================================= -->
 <article class="product-item product-item-holder">
     <?php
-    if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
+    if ($produto->getUltimoCoProdutoDetalhe()->getStDestaque() == SimNaoEnum::SIM) {
         ?>
         <div class="ribbon red"><span>destaque</span></div>
     <?php } ?>
@@ -27,7 +27,7 @@
         <div class="no-margin col-xs-12 col-sm-5 body-holder">
             <div class="body">
                 <?php
-                if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
+                if ($produto->getUltimoCoProdutoDetalhe()->getStDestaque() == SimNaoEnum::SIM) {
                     ?>
                     <div class="label-discount green">10% desconto</div>
                 <?php } else { ?>
@@ -67,7 +67,7 @@
                     ?></div>
                 <div class="availability"><span
                             class="available"><?=
-                        FuncoesSistema::ProdutoEstoqueLabel($produto->getNuEstoque())
+                        FuncoesSistema::ProdutoEstoqueLabel($produto->getUltimoCoProdutoDetalhe()->getNuEstoque())
                         ?></span>
                 </div>
                 <a href="<?= PASTASITE; ?>Produtos/DetalharProduto/<?=

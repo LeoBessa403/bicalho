@@ -72,7 +72,7 @@
                                 // Botão de destaque
                                 $coDetalheProduto = $res->getUltimoCoProdutoDetalhe()->getCoProdutoDetalhe();
 
-                                if (!count($res->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
+                                if ($res->getUltimoCoProdutoDetalhe()->getStDestaque() == SimNaoEnum::NAO) {
                                     $acao .= ' <a data-toggle="modal" role="button" class="btn btn-green tooltips acao" 
                                             id="' . $coDetalheProduto . '" data-msg-restricao="MSG03"
                                            href="#AtivarDestaque" data-original-title="Ativar Destaque" data-placement="top"
@@ -127,7 +127,7 @@
                             $grid->setColunas($foto, 2);
                             $grid->setColunas($res->getNuCodigoInterno(), 2);
                             $grid->setColunas($res->getNoProduto());
-                            $grid->setColunas(FuncoesSistema::ProdutoEstoque($res->getNuEstoque()), 2);
+                            $grid->setColunas(FuncoesSistema::ProdutoEstoque($res->getUltimoCoProdutoDetalhe()->getNuEstoque()), 2);
                             $grid->setColunas($res->getCoFabricante()->getNoFabricante(), 2);
                             $grid->setColunas($res->getCoCategoria()->getNoCategoria(), 2);
                             $grid->setColunas('<b>' . Valida::FormataMoeda(

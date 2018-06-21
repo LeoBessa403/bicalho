@@ -20,9 +20,7 @@ class  ProdutoModel extends AbstractModel
     {
         $tabela = ProdutoEntidade::TABELA . " prod" .
             " inner join " . ProdutoDetalheEntidade::TABELA . " prdt" .
-            " on prod." . ProdutoEntidade::CHAVE . " = prdt." . ProdutoEntidade::CHAVE .
-            " left join " . ProdutoDestaqueEntidade::TABELA . " prdes" .
-            " on prdt." . ProdutoDetalheEntidade::CHAVE . " = prdes." . ProdutoDetalheEntidade::CHAVE;
+            " on prod." . ProdutoEntidade::CHAVE . " = prdt." . ProdutoEntidade::CHAVE ;
 
         $campos = "DISTINCT prod.*";
         $pesquisa = new Pesquisa();
@@ -95,7 +93,7 @@ class  ProdutoModel extends AbstractModel
     {
         $pesquisa = new Pesquisa();
         $where = "where nu_estoque < '1'";
-        $pesquisa->Pesquisar(ProdutoEntidade::TABELA, $where);
+        $pesquisa->Pesquisar(ProdutoDetalheEntidade::TABELA, $where);
         return $pesquisa->getResult();
     }
 

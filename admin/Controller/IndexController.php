@@ -16,9 +16,9 @@ class IndexController extends AbstractController
         $fabricanteService = $this->getService(FABRICANTE_SERVICE);
         $fabricantes = $fabricanteService->PesquisaTodos();
 
-        /** @var ProdutoDestaqueService $produtoDestaqueService */
-        $produtoDestaqueService = $this->getService(PRODUTO_DESTAQUE_SERVICE);
-        $produtosDestaque = $produtoDestaqueService->PesquisaTodos();
+        /** @var ProdutoDetalheService $produtoDetalheService */
+        $produtoDetalheService = $this->getService(PRODUTO_DETALHE_SERVICE);
+        $produtosDestaque = $produtoDetalheService->PesquisaProdutosDestaque();
 
         $produtosSemEstoque = $produtoService->PesquisaProdutosSemEstoque();
         $produtosNovos = $produtoService->PesquisaProdutosNovos(30); // Dias passados para compara

@@ -2,12 +2,12 @@
 <div id="hero">
     <div id="owl-main" class="owl-carousel height-lg owl-inner-nav owl-ui-lg">
         <?php
-        /** @var ProdutoDestaqueEntidade $destaque */
+        /** @var ProdutoDetalheEntidade $destaque */
         foreach ($result as $destaque) {
-            if ($destaque->getCoProdutoDetalhe()->getCoProduto()->getStStatus() == StatusAcessoEnum::ATIVO) {
+            if ($destaque->getCoProduto()->getStStatus() == StatusAcessoEnum::ATIVO) {
                 /** @var ProdutoEntidade $produto */
                 $produto = $produtoService->PesquisaUmRegistro(
-                    $destaque->getCoProdutoDetalhe()->getCoProduto()->getCoProduto()
+                    $destaque->getCoProduto()->getCoProduto()
                 );
                 $foto = Valida::GetMiniatura(
                     'ProdutosCapa/' . $produto->getCoImagem()->getDsCaminho(),

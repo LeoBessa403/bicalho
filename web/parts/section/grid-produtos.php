@@ -2,7 +2,7 @@
 <article class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
     <div class="product-item">
         <?php
-        if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
+        if ($produto->getUltimoCoProdutoDetalhe()->getStDestaque() == SimNaoEnum::SIM) {
             ?>
             <div class="ribbon red"><span>destaque</span></div>
         <?php } ?>
@@ -25,7 +25,7 @@
         </div>
         <div class="body">
             <?php
-            if (count($produto->getUltimoCoProdutoDetalhe()->getCoProdutoDestaque())) {
+            if ($produto->getUltimoCoProdutoDetalhe()->getStDestaque() == SimNaoEnum::SIM) {
                 ?>
                 <div class="label-discount green">10% desconto</div>
             <?php } else { ?>

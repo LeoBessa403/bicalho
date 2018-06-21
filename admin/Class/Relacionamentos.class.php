@@ -519,13 +519,6 @@ class Relacionamentos
 					('Tipo') => '2',
 				),
 			),
-			(ProdutoDestaqueEntidade::TABELA) => Array(
-				(CO_PRODUTO_DETALHE) => Array(
-					('Campo') => CO_PRODUTO_DETALHE,
-					('Entidade') => 'ProdutoDetalheEntidade',
-					('Tipo') => '1',
-				),
-			),
 			(ProdutoDetalheEntidade::TABELA) => Array(
 				(CO_USUARIO) => Array(
 					('Campo') => CO_USUARIO,
@@ -537,11 +530,6 @@ class Relacionamentos
 					('Entidade') => 'ProdutoEntidade',
 					('Tipo') => '1',
 				),
-                (CO_PRODUTO_DESTAQUE) => Array(
-                    ('Campo') => CO_PRODUTO_DETALHE,
-                    ('Entidade') => 'ProdutoDestaqueEntidade',
-                    ('Tipo') => '1',
-                ),
 			),
 			(ProdutoImagemEntidade::TABELA) => Array(
 				(CO_PRODUTO) => Array(

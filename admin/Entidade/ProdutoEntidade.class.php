@@ -15,7 +15,6 @@ class ProdutoEntidade extends AbstractEntidade
     private $no_produto;
     private $no_produto_url_amigavel;
     private $ds_descricao;
-    private $nu_estoque;
     private $nu_codigo;
     private $nu_codigo_interno;
     private $dt_cadastro;
@@ -41,7 +40,6 @@ class ProdutoEntidade extends AbstractEntidade
             NO_PRODUTO,
             NO_PRODUTO_URL_AMIGAVEL,
             DS_DESCRICAO,
-            NU_ESTOQUE,
             NU_CODIGO,
             NU_CODIGO_INTERNO,
             DT_CADASTRO,
@@ -130,23 +128,6 @@ class ProdutoEntidade extends AbstractEntidade
     public function setDsDescricao($ds_descricao)
     {
         return $this->ds_descricao = $ds_descricao;
-    }
-
-    /**
-     * @return mixed $nu_estoque
-     */
-    public function getNuEstoque()
-    {
-        return $this->nu_estoque;
-    }
-
-    /**
-     * @param $nu_estoque
-     * @return mixed
-     */
-    public function setNuEstoque($nu_estoque)
-    {
-        return $this->nu_estoque = $nu_estoque;
     }
 
     /**

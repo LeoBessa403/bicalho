@@ -74,7 +74,7 @@ class Produto extends AbstractController
         /** @var ProdutoEntidade $produto */
         foreach ($result as $produto) {
             $res[$i][NO_PRODUTO] = $produto->getNoProduto();
-            $res[$i][NU_ESTOQUE] = FuncoesSistema::ProdutoEstoque($produto->getNuEstoque());
+            $res[$i][NU_ESTOQUE] = FuncoesSistema::ProdutoEstoque($produto->getUltimoCoProdutoDetalhe()->getNuEstoque());
             $res[$i][NU_CODIGO_INTERNO] = $produto->getNuCodigoInterno();
             $res[$i][NO_FABRICANTE] = $produto->getCoFabricante()->getNoFabricante();
             $res[$i][NO_CATEGORIA] = $produto->getCoCategoria()->getNoCategoria();

@@ -16,11 +16,11 @@ class IndexWeb extends AbstractController
 
     public function Index()
     {
-        /** @var ProdutoDestaqueService $produtoDestaqueService */
-        $produtoDestaqueService = $this->getService(PRODUTO_DESTAQUE_SERVICE);
+        /** @var ProdutoDetalheService $produtoDetalheService */
+        $produtoDetalheService = $this->getService(PRODUTO_DETALHE_SERVICE);
         /** @var FabricanteService $fabricanteService */
         $fabricanteService = $this->getService(FABRICANTE_SERVICE);
-        $result = $produtoDestaqueService->PesquisaTodos();
+        $result = $produtoDetalheService->PesquisaProdutosDestaque();
         $this->result = array_reverse($result);
         /** @var ProdutoService $produtoService */
         $produtoService = $this->getService(PRODUTO_SERVICE);

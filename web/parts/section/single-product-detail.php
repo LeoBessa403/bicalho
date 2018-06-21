@@ -19,7 +19,7 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
             <link itemprop="itemCondition" href="http://schema.org/UsedCondition"/>
             <?php
                 $estoque = 'InStock';
-                if($produtoPrincipal->getNuEstoque() == 0){
+                if($produtoPrincipal->getUltimoCoProdutoDetalhe()->getNuEstoque() == 0){
                     $estoque = 'OutOfStock';
                 }
             ?>
@@ -31,7 +31,7 @@ $url = HOME . UrlAmigavel::$modulo . '/' . UrlAmigavel::$controller .
             <div class="star" data-score="<?= rand(3, 5); ?>"></div>
         </div>
         <div class="availability"><label>Disponibilidade:</label><span> <?=
-                FuncoesSistema::ProdutoEstoqueLabel($produtoPrincipal->getNuEstoque());
+                FuncoesSistema::ProdutoEstoqueLabel($produtoPrincipal->getUltimoCoProdutoDetalhe()->getNuEstoque());
                 ?></span></div>
 
         <div class="title"><a href="#"><?= $produtoPrincipal->getNoProduto(); ?></a></div>

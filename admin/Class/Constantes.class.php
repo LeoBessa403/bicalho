@@ -62,7 +62,7 @@
 	define('NU_CODIGO_INTERNO', 'nu_codigo_interno');
 	define('NU_CODIGO_FABRICANTE', 'nu_codigo_fabricante');
 	define('CO_UNIDADE_VENDA', 'co_unidade_venda');
-	define('CO_PRODUTO_DESTAQUE', 'co_produto_destaque');
+	define('ST_DESTAQUE', 'st_destaque');
 	define('DT_INICIO', 'dt_inicio');
 	define('DT_FIM', 'dt_fim');
 	define('CO_PRODUTO_DETALHE', 'co_produto_detalhe');
@@ -107,7 +107,6 @@
 	define('PAGAMENTO_SERVICE', 'PagamentoService');
 	define('PARCELAMENTO_SERVICE', 'ParcelamentoService');
 	define('PRODUTO_SERVICE', 'ProdutoService');
-	define('PRODUTO_DESTAQUE_SERVICE', 'ProdutoDestaqueService');
 	define('PRODUTO_DETALHE_SERVICE', 'ProdutoDetalheService');
 	define('PRODUTO_IMAGEM_SERVICE', 'ProdutoImagemService');
 	define('REPRESENTANTE_SERVICE', 'RepresentanteService');
