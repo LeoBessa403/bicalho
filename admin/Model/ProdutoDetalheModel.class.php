@@ -16,9 +16,16 @@ class  ProdutoDetalheModel extends AbstractModel
      */
     public function PesquisaProdutosDestaque()
     {
+        $tabela = 'tb_produto_detalhe prdt
+                          INNER JOIN tb_produto pr
+                            ON pr.co_produto = prdt.co_produto
+                          AND prdt.co_produto_detalhe = (SELECT
+                              max(co_produto_detalhe)
+                            from tb_produto_detalhe tpd
+                            WHERE tpd.co_produto = pr.co_produto)';
         $pesquisa = new Pesquisa();
-        $pesquisa->Pesquisar(ProdutoDetalheEntidade::TABELA,
-            'Where ' . ST_DESTAQUE . ' = "' . SimNaoEnum::SIM . '" GROUP BY '. CO_PRODUTO);
+        $pesquisa->Pesquisar($tabela,
+            'Where ' . ST_DESTAQUE . ' = "' . SimNaoEnum::SIM . '"');
         $produtos = [];
         /** @var ProdutoEntidade $produto */
         foreach ($pesquisa->getResult() as $produto) {
