@@ -16,12 +16,12 @@ class  ProdutoDetalheModel extends AbstractModel
      */
     public function PesquisaProdutosDestaque()
     {
-        $tabela = 'tb_produto_detalhe prdt
-                          INNER JOIN tb_produto pr
+        $tabela = 'TB_PRODUTO_DETALHE prdt
+                          INNER JOIN TB_PRODUTO pr
                             ON pr.co_produto = prdt.co_produto
                           AND prdt.co_produto_detalhe = (SELECT
                               max(co_produto_detalhe)
-                            from tb_produto_detalhe tpd
+                            from TB_PRODUTO_DETALHE tpd
                             WHERE tpd.co_produto = pr.co_produto)';
         $pesquisa = new Pesquisa();
         $pesquisa->Pesquisar($tabela,
