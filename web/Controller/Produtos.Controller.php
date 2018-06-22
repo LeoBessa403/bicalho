@@ -105,6 +105,7 @@ class Produtos extends AbstractController
         }
         $this->produtos = $produtos;
         $this->favoritos = $this->getProdutosFavoritos();
+        $this->comparados = $this->getProdutosComparados();
     }
 
 }

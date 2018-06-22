@@ -1,8 +1,9 @@
 <?php
 if ($produto->getStStatus() == StatusAcessoEnum::ATIVO) {
+    $i++
     ?>
     <!-- ========================================= GRID PRODUTOS ========================================= -->
-    <article class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
+    <article class="col-xs-12 col-sm-4 no-margin product-item-holder hover prod-grid" id="grid-<?= $i; ?>">
         <div class="product-item">
             <?php
             if ($produto->getUltimoCoProdutoDetalhe()->getStDestaque() == SimNaoEnum::SIM) {

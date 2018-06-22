@@ -1,8 +1,9 @@
 <?php
 if ($produto->getStStatus() == StatusAcessoEnum::ATIVO) {
+    $i++
     ?>
     <!-- ========================================= HOME BANNERS ========================================= -->
-    <article class="product-item product-item-holder">
+    <article class="product-item product-item-holder prod-list" id="list-<?= $i; ?>">
         <?php
         if ($produto->getUltimoCoProdutoDetalhe()->getStDestaque() == SimNaoEnum::SIM) {
             ?>

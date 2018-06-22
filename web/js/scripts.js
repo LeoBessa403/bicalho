@@ -579,14 +579,51 @@
             return false;
         });
 
-        $('.tooltip-inner').change(function () {
-            alert($('.tooltip-inner').text());
-        });
-
         $(".pesquisa").click(function () {
             var valorPesquisa = $('.tooltip-inner').text();
             $('#preco').val(valorPesquisa);
         });
+
+        ///// PAGINAÇÃO
+        var inicio_pag = 9;
+        var tempo_efeito = 3000;
+        var total_grid = $('#total-grid').text();
+        var i;
+
+        for (i = 1; i <= total_grid; i++) {
+            if (i > inicio_pag) {
+                $('#grid-' + i + ', #list-' + i).hide();
+            }
+        }
+
+        $(".carrega-mais").click(function () {
+            $(".carrega-mais").hide();
+            $('.modal-body').show();
+            $(".progress-bar").animate({width: "100%"}, tempo_efeito);
+            setTimeout(function () {
+                $('.modal-body').fadeOut('fast');
+                var pagina = parseInt($("#pagina").val());
+                var inicio = (inicio_pag * (pagina - 1)) + 1;
+                var fim = inicio_pag * pagina;
+                var proxima_pagina = pagina + 1;
+
+                for (i=1;i<=total_grid;i++){
+                    if((i >= inicio) && (i <= fim)){
+                        $('#grid-'+i+', #list-'+i).show();
+                    }
+                }
+                $("#pagina").val(proxima_pagina);
+                if(fim < total_grid){
+                    $(".progress-bar").css({"width": "0%"});
+                    $(".total-max").text(fim);
+                    $(".carrega-mais").show();
+                }else{
+                    $(".total-max").text(total_grid);
+                }
+            }, tempo_efeito);
+            return false;
+        })
+
     });
 
     /*===================================================================================*/
@@ -597,8 +634,6 @@
 
         //VARIÁVEIS GLOBAIS
         var dados = constantes();
-
-        var urlValida = dados['HOME'] + 'admin/Controller/Ajax.Controller.php';
 
         if ($('.star').length > 0) {
             $('.star').each(function () {
