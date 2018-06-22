@@ -1,12 +1,8 @@
 <div class="pagination-holder">
     <div class="row">
         <div class="col-xs-12 col-sm-12">
-            <div class="modal-body" style="padding: 0 20px; display: none;">
-                <div class="progress progress-striped active progress-sm">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                         aria-valuemax="80" style="width: 0%">
-                    </div>
-                </div>
+            <div class="modal-body text-center" style="padding: 0 20px; display: none;">
+               <img src="<?= PASTASITE; ?>images/ajax-loader.gif" width="30" />
             </div>
             <div class="text-center">
                 <a class="btn-loadmore carrega-mais" href="#">

@@ -599,9 +599,7 @@
         $(".carrega-mais").click(function () {
             $(".carrega-mais").hide();
             $('.modal-body').show();
-            $(".progress-bar").animate({width: "100%"}, tempo_efeito);
             setTimeout(function () {
-                $(".progress-bar").css("width", "0%");
                 $('.modal-body').fadeOut('fast');
                 var pagina = parseInt($("#pagina").val());
                 var inicio = (inicio_pag * (pagina - 1)) + 1;
