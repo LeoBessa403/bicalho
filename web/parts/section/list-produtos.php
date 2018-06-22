@@ -45,9 +45,7 @@ if ($produto->getStStatus() == StatusAcessoEnum::ATIVO) {
                     <div class="brand"><?= $produto->getCoFabricante()->getNoFabricante(); ?></div>
                     <div class="excerpt">
                         <div class="star-holder inline">
-                            <div class="star" data-score="<?=
-                            rand(3, 5);
-                            ?>"></div>
+                            <div class="star" data-score="<?= rand(3, 5); ?>"></div>
                         </div>
                         <?= Valida::Resumi($produto->getDsDescricao(), 300); ?>
                     </div>

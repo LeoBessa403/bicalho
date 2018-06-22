@@ -595,14 +595,19 @@
 
     $(document).ready(function () {
 
+        //VARIÁVEIS GLOBAIS
+        var dados = constantes();
+
+        var urlValida = dados['HOME'] + 'admin/Controller/Ajax.Controller.php';
+
         if ($('.star').length > 0) {
             $('.star').each(function () {
                 var $star = $(this);
 
                 if ($star.hasClass('big')) {
                     $star.raty({
-                        starOff: '../../images/star-big-off.png',
-                        starOn: '../../images/star-big-on.png',
+                        starOff: dados['HOME'] + 'web/images/star-big-off.png',
+                        starOn: dados['HOME'] + 'web/images/star-big-on.png',
                         space: false,
                         score: function () {
                             return $(this).attr('data-score');
@@ -610,8 +615,8 @@
                     });
                 } else {
                     $star.raty({
-                        starOff: '../../images/star-off.png',
-                        starOn: '../../images/star-on.png',
+                        starOff: dados['HOME'] + 'web/images/star-off.png',
+                        starOn: dados['HOME'] + 'web/images/star-on.png',
                         space: false,
                         score: function () {
                             return $(this).attr('data-score');
