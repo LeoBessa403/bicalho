@@ -99,7 +99,7 @@
                         <?php } ?>
                     </div>
                     <div class="loadmore-holder text-center">
-                        <a class="btn-loadmore" href="#">
+                        <a class="btn-loadmore" href="<?= PASTASITE; ?>Categorias/ListarCategorias">
                             <i class="fa fa-plus"></i>
                             carregar mais produtos</a>
                     </div>
@@ -190,7 +190,7 @@
                         <?php } ?>
                     </div>
                     <div class="loadmore-holder text-center">
-                        <a class="btn-loadmore" href="#">
+                        <a class="btn-loadmore" href="<?= PASTASITE; ?>Categorias/ListarCategorias">
                             <i class="fa fa-plus"></i> carregar mais produtos</a>
                     </div>
                 </div>
