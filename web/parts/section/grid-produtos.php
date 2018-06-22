@@ -67,7 +67,13 @@ if ($produto->getStStatus() == StatusAcessoEnum::ATIVO) {
                        data-co-produto="<?= $produto->getCoProduto(); ?>"> <?=
                         (in_array($produto->getCoProduto(), $favoritos))
                             ? 'Remove dos Favoritos' : 'Add aos Favoritos';; ?></a>
-                    <a class="btn-add-to-compare" href="#">compare</a>
+                    <a class="btn-add-to-compare <?=
+                    (in_array($produto->getCoProduto(), $comparados))
+                        ? 'remove-compare' : 'add-compare';; ?>" href="#"
+                       title="Remove dos comparados"
+                       data-co-produto="<?= $produto->getCoProduto(); ?>"> <?=
+                        (in_array($produto->getCoProduto(), $comparados))
+                            ? 'Remove dos Comparados' : 'Add aos Comparados';; ?></a>
                 </div>
             </div>
         </div><!-- /.product-item -->
