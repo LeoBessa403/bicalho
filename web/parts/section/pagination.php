@@ -5,11 +5,15 @@
                <img src="<?= PASTASITE; ?>images/ajax-loader.gif" width="30" />
             </div>
             <div class="text-center">
-                <a class="btn-loadmore carrega-mais" href="#">
+                <?php
+                $display = 'block';
+                if($i < 10)
+                    $display = 'none'; ?>
+                <a class="btn-loadmore carrega-mais" href="#" style="display: <?= $display; ?>">
                     <i class="fa fa-plus"></i> carregar mais produtos</a>
             </div>
             <div class="result-counter  text-right">
-                <h4>de <span class="total-min">1</span> a <span class="total-max">9</span> de <span
+                <h4>de <span class="total-min"><?= ($i > 0)? 1 : 0; ?></span> a <span class="total-max"><?= ($i > 9)? 9 : $i; ?></span> de <span
                             id="total-grid"><?= $i; ?></span> Encontrados</h4>
                 <input type="hidden" id="pagina" value="2"/>
             </div>
