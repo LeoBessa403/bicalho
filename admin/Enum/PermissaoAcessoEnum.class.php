@@ -30,6 +30,7 @@ class PermissaoAcessoEnum extends AbstractEnum
     const DESATIVAR_DESTAQUE = 23;
     const HISTORICO_PRODUTO = 24;
     const LISTAR_VISITA = 25;
+    const EMAIL_MARKETING = 26;
 
     public static $descricao = [
         PermissaoAcessoEnum::PERFIL_MASTER => 'Perfil Master',
@@ -57,6 +58,7 @@ class PermissaoAcessoEnum extends AbstractEnum
         PermissaoAcessoEnum::DESATIVAR_DESTAQUE => 'Desativar Destaque',
         PermissaoAcessoEnum::HISTORICO_PRODUTO => 'Historico Produto',
         PermissaoAcessoEnum::LISTAR_VISITA => 'Listar Visita',
+        PermissaoAcessoEnum::EMAIL_MARKETING => 'E-mail Marketing',
     ];
 
     public static $actions = [
@@ -84,6 +86,6 @@ class PermissaoAcessoEnum extends AbstractEnum
         PermissaoAcessoEnum::ATIVAR_DESTAQUE => 'AtivarDestaque',
         PermissaoAcessoEnum::DESATIVAR_DESTAQUE => 'DesativarDestaque',
         PermissaoAcessoEnum::HISTORICO_PRODUTO => 'HistoricoProduto',
-        PermissaoAcessoEnum::LISTAR_VISITA => 'ListarVisita',
+        PermissaoAcessoEnum::EMAIL_MARKETING => 'Email',
     ];
 }
