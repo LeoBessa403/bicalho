@@ -25,7 +25,6 @@ class ProdutoDetalheEntidade extends AbstractEntidade
 	private $dt_cadastro;
 	private $co_usuario;
 	private $co_produto;
-	private $co_produto_destaque;
 
 
 	/**
@@ -265,14 +264,6 @@ class ProdutoDetalheEntidade extends AbstractEntidade
         return $this->co_produto = $co_produto;
     }
 
-	/**
-     * @param $co_produto_destaque
-     * @return mixed
-     */
-	public function setCoProdutoDestaque($co_produto_destaque)
-    {
-        return $this->co_produto_destaque = $co_produto_destaque;
-    }
 
     /**
      * @return mixed $nu_estoque
