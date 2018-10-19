@@ -31,7 +31,7 @@
                    href="' . HOME . 'uploads/' . $imagemProduto->getCoImagem()->getDsCaminho() . '">';
                     echo Valida::GetMiniatura(
                         $imagemProduto->getCoImagem()->getDsCaminho(),
-                        $imagemProduto->getCoProduto()->getNoProduto(),
+                        $produtoPrincipal->getNoProduto(),
                         500,
                         400,
                         'img-responsive'
@@ -80,7 +80,7 @@
                                 data-id="slide' . $imagemProduto->getCoImagem()->getCoImagem() . '">';
                         echo Valida::GetMiniatura(
                             $imagemProduto->getCoImagem()->getDsCaminho(),
-                            $imagemProduto->getCoProduto()->getNoProduto(),
+                            $produtoPrincipal->getNoProduto(),
                             100,
                             100,
                             'img-responsive'
