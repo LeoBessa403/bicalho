@@ -2,9 +2,603 @@
 <?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://localhost/workcontrol</loc>
-<lastmod>2018-05-09T19:30:06+02:00</lastmod>
+<loc>http://localhost/bicalho/</loc>
+<lastmod>2018-12-06T13:18:45-02:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/black-friday-balanca-refresqueira</loc>
+<lastmod>2018-11-23T09:49:01-02:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/black-friday-balanca</loc>
+<lastmod>2018-11-23T09:38:47-02:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/promocao-fogao-eletrico</loc>
+<lastmod>2018-09-17T14:24:39-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/promocao-fogao-eletrico</loc>
+<lastmod>2018-09-17T14:23:40-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/promocao-churrasqueira-eletrica</loc>
+<lastmod>2018-09-17T14:19:42-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/promocao-panela-eletrica</loc>
+<lastmod>2018-09-17T14:14:58-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/torre-de-chopp-marchesoni-3-5-litros</loc>
+<lastmod>2018-06-16T09:46:08-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/jogos-de-mesas-de-madeira-bistro</loc>
+<lastmod>2018-06-16T09:38:43-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/jogo-de-mesas-de-madeira</loc>
+<lastmod>2018-06-16T09:30:55-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/ilha-de-2-metros</loc>
+<lastmod>2018-06-11T10:49:55-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/etiquetas-e-rotulos</loc>
+<lastmod>2018-06-08T16:53:57-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/rotulos-e-etiquetas</loc>
+<lastmod>2018-06-08T16:39:31-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/estufa-curva-de-12-bandejas-dupla</loc>
+<lastmod>2018-06-06T11:50:33-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/check-out-c-kit</loc>
+<lastmod>2018-06-06T11:45:08-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/cafeteira-profissional-2-reservatorios-6-litros</loc>
+<lastmod>2018-06-06T11:41:44-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/batedor-de-milk-shake</loc>
+<lastmod>2018-06-06T11:20:14-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/balcao-refrigerado-boreal-220v-inox-bbrc175-2-placas</loc>
+<lastmod>2018-06-06T11:14:55-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/balanca-toledo-prix-4-uno-web</loc>
+<lastmod>2018-06-06T09:38:27-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/balanca-elgin-15kg-com-bateria</loc>
+<lastmod>2018-06-06T09:34:44-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/auto-servico-top-frios-e-laticinios-5pts-asfl-3000</loc>
+<lastmod>2018-06-06T09:30:56-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/armario-de-pao-de-sal-ou-de-doce-completa-com-assadeiras</loc>
+<lastmod>2018-06-06T09:26:01-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/jogo-de-mesa-de-madeira-70x70-dobravel</loc>
+<lastmod>2018-05-22T15:50:03-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/liquidificador-industrial-skymsem-l-b-25-mbr-n</loc>
+<lastmod>2018-05-22T15:13:14-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/liquidificador-industrial-skymsem-l-s-03-mb-n</loc>
+<lastmod>2018-05-22T15:08:41-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/amassadeira-semi-rapida-m-b-i-25-220v-gastromaq</loc>
+<lastmod>2018-05-22T14:35:18-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/batedeira-b-p-12-220v-gastromaq</loc>
+<lastmod>2018-05-22T14:17:07-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/cilindro-390-cl-390-c-pe-220-v</loc>
+<lastmod>2018-05-22T10:42:40-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/serra-fita-para-osso-com-guia-de-protecao-de-corte</loc>
+<lastmod>2018-05-11T09:58:55-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/liquidificador-alta-rotacao-2l-127-ou-220v</loc>
+<lastmod>2018-05-11T09:48:45-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/balcao-vitrine-aquecida-black</loc>
+<lastmod>2018-05-11T09:47:15-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/forno-lastro-eletrico-duplo-monofasico</loc>
+<lastmod>2018-05-08T16:47:35-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/picador-de-carne-monofasico-bc-98s</loc>
+<lastmod>2018-05-08T16:45:55-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/lavadora-nt-210-3t</loc>
+<lastmod>2018-05-08T16:44:51-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/fruteira-central-2700</loc>
+<lastmod>2018-05-08T16:43:08-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/ilha-super-top-3-metros</loc>
+<lastmod>2018-05-08T16:41:58-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/check-out</loc>
+<lastmod>2018-05-08T16:40:58-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/despolpador-de-polpador</loc>
+<lastmod>2018-05-08T16:40:02-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/cortador-de-frios-automatico-inox-anodizado</loc>
+<lastmod>2018-05-08T16:38:51-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/visa-master-cervejeira-bipartida-4-portas-p-22-cxs</loc>
+<lastmod>2018-05-07T15:50:20-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Produtos/DetalharProduto/condicionador-de-ar-tipo-split-fit-ccs9f-r4</loc>
+<lastmod>2018-05-05T00:41:33-03:00</lastmod>
+<changefreq>daily</changefreq>
+<priority>1.0</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Categorias/ListarCategorias/grafica</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Categorias/ListarCategorias/equipamentos</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Categorias/ListarCategorias/maplan</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Categorias/ListarCategorias/portateis-induistriais</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Categorias/ListarCategorias/pessagem-de-medicao</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Categorias/ListarCategorias/maquinario-de-producao</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Categorias/ListarCategorias/mesa-buffet</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Categorias/ListarCategorias/refrigeracao-comercial</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Categorias/ListarCategorias/equipamentos-para-embalagens</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Categorias/ListarCategorias/equipamentos-para-coaccao</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/urano</loc>
+<lastmod>2018-11-23T09:35:24-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/urano</loc>
+<lastmod>2018-11-23T09:35:20-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/assitencia-tecnica</loc>
+<lastmod>2018-06-14T15:35:32-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/mor</loc>
+<lastmod>2018-05-23T15:04:06-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/ramuza</loc>
+<lastmod>2018-05-23T15:01:28-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/elgin</loc>
+<lastmod>2018-05-23T15:00:59-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/balmak</loc>
+<lastmod>2018-05-23T15:00:23-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/toledo</loc>
+<lastmod>2018-05-23T14:59:48-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/braesi</loc>
+<lastmod>2018-05-23T14:59:04-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/baronesa</loc>
+<lastmod>2018-05-23T14:58:32-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/yole</loc>
+<lastmod>2018-05-23T14:57:07-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/ibbl</loc>
+<lastmod>2018-05-23T14:56:06-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/goiana-plastico</loc>
+<lastmod>2018-05-23T14:54:49-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/beccaro</loc>
+<lastmod>2018-05-23T14:54:02-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/metalcubas</loc>
+<lastmod>2018-05-23T14:53:08-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/metalcubas</loc>
+<lastmod>2018-05-23T14:53:04-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/pinheiro</loc>
+<lastmod>2018-05-23T14:52:36-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/spolu</loc>
+<lastmod>2018-05-23T14:52:04-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/polar</loc>
+<lastmod>2018-05-23T14:51:28-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/metvisa</loc>
+<lastmod>2018-05-23T14:50:48-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/progas</loc>
+<lastmod>2018-05-23T14:49:43-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/gural</loc>
+<lastmod>2018-05-23T14:48:54-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/colombo</loc>
+<lastmod>2018-05-23T14:48:14-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/marchesoni</loc>
+<lastmod>2018-05-23T14:47:39-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/r-baiao</loc>
+<lastmod>2018-05-23T14:46:58-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/venancio</loc>
+<lastmod>2018-05-23T13:51:51-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/fricon</loc>
+<lastmod>2018-05-23T13:51:17-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/gelopar</loc>
+<lastmod>2018-05-23T13:50:42-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/refrimate</loc>
+<lastmod>2018-05-23T13:50:05-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/maplan</loc>
+<lastmod>2018-05-22T15:47:56-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/skymsen</loc>
+<lastmod>2018-05-22T14:39:50-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/gastromaq</loc>
+<lastmod>2018-05-22T10:39:35-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/klima</loc>
+<lastmod>2018-05-07T15:48:33-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/arbel</loc>
+<lastmod>2018-04-30T10:46:16-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/arge</loc>
+<lastmod>2018-04-30T10:46:09-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/agratto</loc>
+<lastmod>2018-04-30T10:45:59-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/aluminios-abc</loc>
+<lastmod>2018-04-30T10:45:49-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/amapa</loc>
+<lastmod>2018-04-30T10:45:35-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Fabricantes/ListarFabricantes/bicalho-etiquetas</loc>
+<lastmod>2018-04-30T10:45:01-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Segmentos/ListarSegmentos/assistencia-tecnica</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Segmentos/ListarSegmentos/rotulos-etiquetas</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Segmentos/ListarSegmentos/automocao-comercial</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Segmentos/ListarSegmentos/farmacia-drogaria</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Segmentos/ListarSegmentos/supermercado-acougue</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Segmentos/ListarSegmentos/lanchonete-food-truck</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Segmentos/ListarSegmentos/panificadora-confeitaria</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Segmentos/ListarSegmentos/restaurante-bar</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Institucional/Contatos</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority >
+</url>
+<url>
+<loc>http://localhost/bicalho/web/Institucional/SobreNos</loc>
+<lastmod>2018-12-06T13:18:46-02:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority >
 </url>
 </urlset>
